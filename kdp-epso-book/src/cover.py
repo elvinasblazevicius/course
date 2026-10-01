@@ -77,34 +77,29 @@ def glow(c, cx, cy, r):
     c.restoreState()
 
 
-def building_lines(c, cx, base, W, H):
+def building_lines(c, cx, base, W, H, x0, panel_w):
     """Tone-on-tone line drawing of a Brussels-style institutional building (curved wings, louvres, central core)."""
     core = W * 0.055
     floors = 11
     c.saveState()
-    c.setStrokeColor(LINE)
+    c.setStrokeColor(HexColor("#7FA6F0"))
     for sign, hmul in ((-1, 1.05), (1, 0.97)):
         x_in, x_out = cx + sign * core, cx + sign * W / 2
         top_in, top_out = base + H * hmul, base + H * 0.78 * hmul
         p = c.beginPath()
         p.moveTo(x_in, base); p.lineTo(x_out, base); p.lineTo(x_out, top_out)
         p.curveTo(x_out - sign * W * 0.12, top_out + H * 0.1 * hmul, x_in + sign * W * 0.12, top_in + H * 0.01, x_in, top_in)
-        c.setStrokeAlpha(0.75); c.setLineWidth(1.2)
+        c.setStrokeAlpha(0.95); c.setLineWidth(1.5)
         c.drawPath(p, stroke=1, fill=0)
         for i in range(1, floors + 1):
             t = i / (floors + 1)
-            c.setStrokeAlpha(0.42); c.setLineWidth(0.85)
+            c.setStrokeAlpha(0.55); c.setLineWidth(0.9)
             c.line(x_in, base + H * hmul * t, x_out, base + H * 0.78 * hmul * t)
-        for j in range(1, 12):
-            frac = j / 12
-            xx = x_in + (x_out - x_in) * frac
-            top = base + (H * hmul - (H * hmul - H * 0.78 * hmul) * frac)
-            c.setStrokeAlpha(0.18); c.setLineWidth(0.5)
-            c.line(xx, base, xx, top - H * 0.02)
-    c.setStrokeAlpha(0.65); c.setLineWidth(1.1)
+    c.setStrokeAlpha(0.95); c.setLineWidth(1.5)
     c.rect(cx - core, base, 2 * core, H * 1.12, stroke=1, fill=0)
     c.line(cx - core * 1.4, base + H * 1.12, cx + core * 1.4, base + H * 1.12)
-    c.setStrokeAlpha(0.6); c.line(cx - W * 0.62, base, cx + W * 0.62, base)
+    half = min(W / 2 + 0.15 * inch, panel_w / 2 - 0.3 * inch)
+    c.line(cx - half, base, cx + half, base)
     c.restoreState()
 
 
@@ -117,10 +112,11 @@ def tick_o(c, x, base, size):
     p = c.beginPath()
     p.moveTo(cx - ow * 0.30, cy - cap * 0.02)
     p.lineTo(cx - ow * 0.04, cy - cap * 0.26)
-    p.lineTo(cx + ow * 0.62, cy + cap * 0.48)
+    p.lineTo(cx + ow * 0.55, cy + cap * 0.50)
     c.saveState()
-    c.setStrokeColor(WHITE); c.setLineWidth(size * 0.075); c.setLineCap(1); c.setLineJoin(1)
-    c.drawPath(p, stroke=1, fill=0)
+    c.setLineCap(1); c.setLineJoin(1)
+    c.setStrokeColor(BLUE); c.setLineWidth(size * 0.115); c.drawPath(p, stroke=1, fill=0)
+    c.setStrokeColor(WHITE); c.setLineWidth(size * 0.075); c.drawPath(p, stroke=1, fill=0)
     c.restoreState()
 
 
@@ -128,49 +124,51 @@ def front(c, x0, y0, H_in=TRIM_H):
     W, H = TRIM_W * inch, H_in * inch
     extra = (H_in - TRIM_H) * inch
     cx = x0 + W / 2
-    glow(c, cx, y0 + H * 0.62, W * 0.62)
-    building_lines(c, cx, y0 + 1.40 * inch + extra * 0.05, W * 0.88, 2.0 * inch + extra * 0.35)
+    glow(c, cx, y0 + H * 0.62, W * (0.62 if extra == 0 else 0.72))
 
     top = y0 + H - 0.78 * inch - extra * 0.18
-    tracked(c, cx, top, "THE COMPLETE PRACTICE WORKBOOK", "Mont-Bold", 12.5, 3.2, GOLD)
-
     title_w = W - 1.2 * inch
     s1 = fit_size("REASONING", "Anton", title_w)
     cap1 = s1 * ANTON_CAP
     b1 = top - 0.48 * inch - cap1
+    b2 = b1 - cap1 - 0.20 * inch
+    b3 = b2 - 0.55 * inch
+    s3 = fit_size("EPSO EXAMS", "Anton", title_w * 0.80)
+    b4 = b3 - 0.28 * inch - s3 * ANTON_CAP
+    b5 = b4 - 0.55 * inch
+    # lower third: building fills the space under the text (core top 0.39-0.45 in below the categories line)
+    base = y0 + 1.40 * inch + extra * 0.05
+    gap = 0.39 * inch if extra == 0 else 0.45 * inch
+    bh = (b5 - gap - base) / 1.12
+    building_lines(c, cx, base, W * 0.88, bh, x0, W)
+
+    tracked(c, cx, top, "400+ QUESTIONS · FULL WORKED SOLUTIONS", "Mont-Bold", 12.5, 3.2, GOLD)
     xs = cx - stringWidth("REASONING", "Anton", s1) / 2
     c.setFillColor(WHITE); c.setFont("Anton", s1); c.drawString(xs, b1, "REAS")
     xo = xs + stringWidth("REAS", "Anton", s1)
     tick_o(c, xo, b1, s1)
     c.setFillColor(WHITE); c.setFont("Anton", s1)
     c.drawString(xo + stringWidth("O", "Anton", s1), b1, "NING")
-    b2 = b1 - cap1 - 0.20 * inch
-    c.drawCentredString(cx, b2, "TESTS")
-    b3 = b2 - 0.55 * inch
+    # TESTS + seal balanced as one unit; seal diameter = cap height
+    tests_w = stringWidth("TESTS", "Anton", s1)
+    r = cap1 / 2
+    sgap = 0.25 * inch
+    gx = cx - (tests_w + sgap + 2 * r) / 2
+    c.drawString(gx, b2, "TESTS")
+    sx, sy = gx + tests_w + sgap + r, b2 + cap1 / 2
+    c.saveState()
+    c.setFillColor(GOLD); c.circle(sx, sy, r, stroke=0, fill=1)
+    c.setStrokeColor(BLUE_DEEP); c.setLineWidth(1.2); c.circle(sx, sy, r - 6, stroke=1, fill=0)
+    c.setFillColor(BLUE_DEEP); c.setFont("Anton", 44); c.drawCentredString(sx, sy + 4, "3")
+    c.setFont("Mont-XBold", 10); c.drawCentredString(sx, sy - 14, "TIMED MOCK")
+    c.drawCentredString(sx, sy - 26, "EXAMS")
+    c.restoreState()
     w = tracked(c, cx, b3, "WORKBOOK FOR", "Mont-Bold", 15, 4, WHITE)
     c.setStrokeColor(GOLD); c.setLineWidth(1.6)
     c.line(x0 + 0.6 * inch, b3 + 5, cx - w / 2 - 14, b3 + 5)
     c.line(cx + w / 2 + 14, b3 + 5, x0 + W - 0.6 * inch, b3 + 5)
-    s3 = fit_size("EPSO EXAMS", "Anton", title_w * 0.80)
-    b4 = b3 - 0.28 * inch - s3 * ANTON_CAP
     c.setFillColor(GOLD); c.setFont("Anton", s3); c.drawCentredString(cx, b4, "EPSO EXAMS")
-    b5 = b4 - 0.55 * inch - extra * 0.10
-    tracked(c, cx, b5, "400+ PRACTICE QUESTIONS WITH FULL WORKED SOLUTIONS", "Mont-Bold", 13, 1.2, WHITE)
-    tracked(c, cx, b5 - 0.30 * inch, "VERBAL · NUMERICAL · ABSTRACT · SITUATIONAL JUDGEMENT", "Mont-Semi", 11.5, 1.5, PALE)
-    tests_w = stringWidth("TESTS", "Anton", s1)
-    sx = min(cx + tests_w / 2 + 1.0 * inch, x0 + W - 0.9 * inch)
-    sy = b2 + cap1 * 0.5
-    r = 0.66 * inch
-    c.saveState()
-    c.setFillColor(GOLD); c.circle(sx, sy, r, stroke=0, fill=1)
-    c.setStrokeColor(BLUE_DEEP); c.setLineWidth(1.1); c.circle(sx, sy, r - 5, stroke=1, fill=0)
-    c.setFillColor(BLUE_DEEP); c.setFont("Anton", 34); c.drawCentredString(sx, sy + 2, "3")
-    c.setFont("Mont-XBold", 8.6); c.drawCentredString(sx, sy - 12, "TIMED MOCK")
-    c.drawCentredString(sx, sy - 22.5, "EXAMS")
-    c.restoreState()
-    lx = max(cx - tests_w / 2 - 0.95 * inch, x0 + 0.95 * inch)
-    for dx, dy, rr in ((0, 0.18, 0.15), (-0.38, -0.12, 0.08), (0.30, -0.30, 0.06)):
-        star(c, lx + dx * inch, sy + dy * inch, rr * inch)
+    tracked(c, cx, b5, "VERBAL · NUMERICAL · ABSTRACT · SITUATIONAL JUDGEMENT", "Mont-Semi", 12, 1.6, PALE)
     tracked(c, cx, y0 + 0.92 * inch, AUTHOR, "Mont-XBold", 17, 4.5, WHITE)
     tracked(c, cx, y0 + 0.58 * inch, "INDEPENDENT GUIDE · NOT AFFILIATED WITH OR ENDORSED BY EPSO OR THE EU",
             "Mont-Med", 8.6, 0.8, PALE)
@@ -249,7 +247,6 @@ def spine(c, x, w, y_trim, trim_h):
     c.setFillColor(GOLD); c.drawString(start + tw + 12, -capoff, "FOR EPSO EXAMS")
     tracked(c, half - 0.5 * inch, -fs * 0.22, AUTHOR, "Mont-XBold", fs * 0.5, 1.5, PALE, anchor="right")
     c.restoreState()
-    star(c, cx, top - 0.5 * inch, min(0.12 * inch, w * 0.24))
 
 
 def make_wrap(path, pages, kind="paperback", hc_width=None, hc_height=None, hc_spine=None):
