@@ -247,8 +247,8 @@ def front(c, x0, y0, H_in=TRIM_H):
     c.line(cx + w / 2 + 14, b3 + 5, x0 + W - 0.6 * inch, b3 + 5)
     c.setFillColor(GOLD); c.setFont("Display", s3); c.drawCentredString(cx, b4, "EPSO EXAMS")
     tracked(c, cx, b5, "VERBAL · NUMERICAL · ABSTRACT · SITUATIONAL JUDGEMENT", "Frank-Semi", 12, 1.6, PALE)
-    tracked(c, cx, y0 + 0.92 * inch, AUTHOR, "Frank-XBold", 17, 4.5, WHITE)
-    tracked(c, cx, y0 + 0.58 * inch, "INDEPENDENT GUIDE · NOT AFFILIATED WITH OR ENDORSED BY EPSO OR THE EU",
+    tracked(c, cx, y0 + 0.80 * inch, AUTHOR, "Frank-XBold", 17, 4.5, WHITE)
+    tracked(c, cx, y0 + 0.48 * inch, "INDEPENDENT GUIDE · NOT AFFILIATED WITH OR ENDORSED BY EPSO OR THE EU",
             "Frank-Med", 8.6, 0.8, PALE)
 
 
