@@ -112,7 +112,7 @@ def tick_o(c, x, base, size):
     p = c.beginPath()
     p.moveTo(cx - ow * 0.30, cy - cap * 0.02)
     p.lineTo(cx - ow * 0.04, cy - cap * 0.26)
-    p.lineTo(cx + ow * 0.55, cy + cap * 0.50)
+    p.lineTo(cx + ow * 0.52, cy + cap * 0.45)
     c.saveState()
     c.setLineCap(1); c.setLineJoin(1)
     c.setStrokeColor(BLUE); c.setLineWidth(size * 0.115); c.drawPath(p, stroke=1, fill=0)
