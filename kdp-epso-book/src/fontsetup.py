@@ -17,9 +17,9 @@ if "Sans" not in pdfmetrics.getRegisteredFontNames():
         pdfmetrics.registerFont(TTFont(f"{fam}-BoldIt", str(FONT_DIR / f"{short}-700i.ttf")))
         addMapping(fam, 0, 0, fam); addMapping(fam, 0, 1, f"{fam}-It")
         addMapping(fam, 1, 0, f"{fam}-Bold"); addMapping(fam, 1, 1, f"{fam}-BoldIt")
-    pdfmetrics.registerFont(TTFont("Anton", str(FONT_DIR / "Anton-400.ttf")))
-    for w, nm in (("500", "Mont-Med"), ("600", "Mont-Semi"), ("700", "Mont-Bold"), ("800", "Mont-XBold")):
-        pdfmetrics.registerFont(TTFont(nm, str(FONT_DIR / f"Montserrat-{w}.ttf")))
+    pdfmetrics.registerFont(TTFont("Display", str(FONT_DIR / "LeagueGothic-400.ttf")))
+    for w, nm in (("500", "Frank-Med"), ("600", "Frank-Semi"), ("700", "Frank-Bold"), ("800", "Frank-XBold"), ("900", "Frank-Black")):
+        pdfmetrics.registerFont(TTFont(nm, str(FONT_DIR / f"LibreFranklin-{w}.ttf")))
     pdfmetrics.registerFont(TTFont("DejaVu", "/usr/share/fonts/truetype/dejavu/DejaVuSans.ttf"))
     addMapping("DejaVu", 0, 0, "DejaVu"); addMapping("DejaVu", 1, 0, "DejaVu")
     addMapping("DejaVu", 0, 1, "DejaVu"); addMapping("DejaVu", 1, 1, "DejaVu")

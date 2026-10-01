@@ -1,6 +1,6 @@
 """Bestseller-style covers: paperback full wrap, hardcover case laminate and Kindle front (native 1:1.6). All vector.
 
-Design: one rich EU-blue field, huge stacked condensed title (Anton), one graphic idea (the "O" of REASONING is a
+Design: one rich EU-blue field, huge stacked condensed title (League Gothic; small type in Libre Franklin), one graphic idea (the "O" of REASONING is a
 gold ring ticked through), gold accent line, tone-on-tone line drawing of a Brussels-style building for recognition.
 Paperback: width = 0.125 + 8.25 + spine + 8.25 + 0.125 in, height 11.25 in, spine = pages x 0.002252 in.
 Hardcover: wrap 0.591 in, hinge 0.394 in, spine = pages x 0.002252 + 0.187 in; verify against KDP's template and
@@ -34,7 +34,7 @@ GOLD = HexColor("#FFC72C")
 WHITE = Color(1, 1, 1)
 PALE = HexColor("#D6E2FF")
 AUTHOR = "CONCOURS PREP"
-ANTON_CAP = 0.859  # cap height / font size for Anton (OS/2 sCapHeight)
+ANTON_CAP = 0.735  # cap height / font size for League Gothic (OS/2 sCapHeight)
 
 
 def tracked(c, x, y, text, font, size, track, color, anchor="middle"):
@@ -146,9 +146,9 @@ def building_hero(c, cx, base, W, H, panel_w):
 
 
 def tick_o(c, x, base, size):
-    """Gold 'O' (set in Anton for a perfect type match) with a white check mark sweeping through it."""
-    c.setFillColor(GOLD); c.setFont("Anton", size); c.drawString(x, base, "O")
-    ow = stringWidth("O", "Anton", size)
+    """Gold 'O' (set in the display face for a perfect type match) with a white check mark sweeping through it."""
+    c.setFillColor(GOLD); c.setFont("Display", size); c.drawString(x, base, "O")
+    ow = stringWidth("O", "Display", size)
     cap = size * ANTON_CAP
     cx, cy = x + ow / 2, base + cap / 2
     p = c.beginPath()
@@ -169,13 +169,13 @@ def front(c, x0, y0, H_in=TRIM_H):
     glow(c, cx, y0 + H * 0.62, W * (0.62 if extra == 0 else 0.72))
 
     top = y0 + H - 0.78 * inch - extra * 0.18
-    title_w = W - 1.2 * inch
-    s1 = fit_size("REASONING", "Anton", title_w)
+    title_w = W - 1.55 * inch
+    s1 = fit_size("REASONING", "Display", title_w)
     cap1 = s1 * ANTON_CAP
     b1 = top - 0.48 * inch - cap1
     b2 = b1 - cap1 - 0.20 * inch
     b3 = b2 - 0.55 * inch
-    s3 = fit_size("EPSO EXAMS", "Anton", title_w * 0.80)
+    s3 = fit_size("EPSO EXAMS", "Display", title_w * 0.80)
     b4 = b3 - 0.28 * inch - s3 * ANTON_CAP
     b5 = b4 - 0.55 * inch
     # lower third: building fills the space under the text (core top 0.39-0.45 in below the categories line)
@@ -184,36 +184,43 @@ def front(c, x0, y0, H_in=TRIM_H):
     bh = (b5 - gap - base) / 1.12
     building_hero(c, cx, base, W * 0.88, bh, W)
 
-    tracked(c, cx, top, "400+ QUESTIONS · FULL WORKED SOLUTIONS", "Mont-Bold", 12.5, 3.2, GOLD)
-    xs = cx - stringWidth("REASONING", "Anton", s1) / 2
-    c.setFillColor(WHITE); c.setFont("Anton", s1); c.drawString(xs, b1, "REAS")
-    xo = xs + stringWidth("REAS", "Anton", s1)
+    tracked(c, cx, top, "400+ QUESTIONS · FULL WORKED SOLUTIONS", "Frank-Bold", 12.5, 3.2, GOLD)
+    xs = cx - stringWidth("REASONING", "Display", s1) / 2
+    c.setFillColor(WHITE); c.setFont("Display", s1); c.drawString(xs, b1, "REAS")
+    xo = xs + stringWidth("REAS", "Display", s1)
     tick_o(c, xo, b1, s1)
-    c.setFillColor(WHITE); c.setFont("Anton", s1)
-    c.drawString(xo + stringWidth("O", "Anton", s1), b1, "NING")
+    c.setFillColor(WHITE); c.setFont("Display", s1)
+    c.drawString(xo + stringWidth("O", "Display", s1), b1, "NING")
     # TESTS + seal balanced as one unit; seal diameter = cap height
-    tests_w = stringWidth("TESTS", "Anton", s1)
+    tests_w = stringWidth("TESTS", "Display", s1)
     r = cap1 / 2
     sgap = 0.25 * inch
     gx = cx - (tests_w + sgap + 2 * r) / 2
     c.drawString(gx, b2, "TESTS")
     sx, sy = gx + tests_w + sgap + r, b2 + cap1 / 2
     c.saveState()
-    c.setFillColor(GOLD); c.circle(sx, sy, r, stroke=0, fill=1)
-    c.setStrokeColor(BLUE_DEEP); c.setLineWidth(1.2); c.circle(sx, sy, r - 6, stroke=1, fill=0)
-    c.setFillColor(BLUE_DEEP); c.setFont("Anton", 44); c.drawCentredString(sx, sy + 4, "3")
-    c.setFont("Mont-XBold", 10); c.drawCentredString(sx, sy - 14, "TIMED MOCK")
-    c.drawCentredString(sx, sy - 26, "EXAMS")
+    c.translate(sx, sy); c.rotate(8)
+    c.setFillColor(GOLD); c.circle(0, 0, r, stroke=0, fill=1)
+    c.setStrokeColor(BLUE_DEEP); c.setLineWidth(2.2); c.circle(0, 0, r - 7, stroke=1, fill=0)
+    c.setLineWidth(0.8); c.circle(0, 0, r - 11, stroke=1, fill=0)
+    c.setFillColor(BLUE_DEEP); c.setFont("Display", r * 0.92)
+    c.drawCentredString(0, -r * 0.06, "3")
+    c.setStrokeColor(BLUE_DEEP); c.setLineWidth(1.0); c.line(-r * 0.34, -r * 0.17, r * 0.34, -r * 0.17)
+    lab = r * 0.135
     c.restoreState()
-    w = tracked(c, cx, b3, "WORKBOOK FOR", "Mont-Bold", 15, 4, WHITE)
+    c.saveState(); c.translate(sx, sy); c.rotate(8)
+    tracked(c, 0, -r * 0.36, "TIMED MOCK", "Frank-Black", lab, 1.0, BLUE_DEEP)
+    tracked(c, 0, -r * 0.36 - lab * 1.25, "EXAMS", "Frank-Black", lab, 1.0, BLUE_DEEP)
+    c.restoreState()
+    w = tracked(c, cx, b3, "WORKBOOK FOR", "Frank-Bold", 15, 4, WHITE)
     c.setStrokeColor(GOLD); c.setLineWidth(1.6)
     c.line(x0 + 0.6 * inch, b3 + 5, cx - w / 2 - 14, b3 + 5)
     c.line(cx + w / 2 + 14, b3 + 5, x0 + W - 0.6 * inch, b3 + 5)
-    c.setFillColor(GOLD); c.setFont("Anton", s3); c.drawCentredString(cx, b4, "EPSO EXAMS")
-    tracked(c, cx, b5, "VERBAL · NUMERICAL · ABSTRACT · SITUATIONAL JUDGEMENT", "Mont-Semi", 12, 1.6, PALE)
-    tracked(c, cx, y0 + 0.92 * inch, AUTHOR, "Mont-XBold", 17, 4.5, WHITE)
+    c.setFillColor(GOLD); c.setFont("Display", s3); c.drawCentredString(cx, b4, "EPSO EXAMS")
+    tracked(c, cx, b5, "VERBAL · NUMERICAL · ABSTRACT · SITUATIONAL JUDGEMENT", "Frank-Semi", 12, 1.6, PALE)
+    tracked(c, cx, y0 + 0.92 * inch, AUTHOR, "Frank-XBold", 17, 4.5, WHITE)
     tracked(c, cx, y0 + 0.58 * inch, "INDEPENDENT GUIDE · NOT AFFILIATED WITH OR ENDORSED BY EPSO OR THE EU",
-            "Mont-Med", 8.6, 0.8, PALE)
+            "Frank-Med", 8.6, 0.8, PALE)
 
 
 BACK_BLURB = (
@@ -235,7 +242,7 @@ BACK_BULLETS = [
 def back(c, x0, y0):
     W, H = TRIM_W * inch, TRIM_H * inch
     left = x0 + 0.65 * inch
-    c.setFillColor(WHITE); c.setFont("Anton", 34)
+    c.setFillColor(WHITE); c.setFont("Display", 34)
     c.drawString(left, y0 + H - 1.25 * inch, "PRACTISE LIKE IT’S")
     c.setFillColor(GOLD); c.drawString(left, y0 + H - 1.25 * inch - 40, "THE REAL TEST.")
     st = ParagraphStyle("b", fontName="Serif", fontSize=11.8, leading=16.6, textColor=WHITE)
@@ -260,13 +267,13 @@ def back(c, x0, y0):
     colw = (W - 1.3 * inch) / 4
     for i, (n, lab) in enumerate(items):
         cxx = left + colw * (i + 0.5)
-        c.setFillColor(GOLD); c.setFont("Anton", 20); c.drawCentredString(cxx, sy + 0.30 * inch, n)
-        tracked(c, cxx, sy + 0.11 * inch, lab, "Mont-Semi", 7.5, 0.8, WHITE)
-    tracked(c, left, y0 + 2.72 * inch, AUTHOR, "Mont-XBold", 12.5, 3, WHITE, anchor="left")
+        c.setFillColor(GOLD); c.setFont("Display", 20); c.drawCentredString(cxx, sy + 0.30 * inch, n)
+        tracked(c, cxx, sy + 0.11 * inch, lab, "Frank-Semi", 7.5, 0.8, WHITE)
+    tracked(c, left, y0 + 2.72 * inch, AUTHOR, "Frank-XBold", 12.5, 3, WHITE, anchor="left")
     c.setFillColor(PALE); c.setFont("Serif-It", 10.5)
     c.drawString(left, y0 + 2.49 * inch, "Every question checked for a single, defensible correct answer,")
     c.drawString(left, y0 + 2.31 * inch, "with explanations written to teach the method, not just the result.")
-    c.setFont("Mont-Med", 8.2)
+    c.setFont("Frank-Med", 8.2)
     c.drawString(left, y0 + 0.78 * inch, "Independent publication. Not affiliated with, authorised or endorsed by the European")
     c.drawString(left, y0 + 0.63 * inch, "Personnel Selection Office (EPSO), the European Union or any EU institution.")
     c.drawString(left, y0 + 0.48 * inch, "All questions are original.")
@@ -284,10 +291,10 @@ def spine(c, x, w, y_trim, trim_h):
     fs = min(22, w / inch * 27)
     capoff = fs * ANTON_CAP / 2
     start = -half + 0.9 * inch
-    c.setFillColor(WHITE); c.setFont("Anton", fs); c.drawString(start, -capoff, "REASONING TESTS WORKBOOK")
-    tw = stringWidth("REASONING TESTS WORKBOOK", "Anton", fs)
+    c.setFillColor(WHITE); c.setFont("Display", fs); c.drawString(start, -capoff, "REASONING TESTS WORKBOOK")
+    tw = stringWidth("REASONING TESTS WORKBOOK", "Display", fs)
     c.setFillColor(GOLD); c.drawString(start + tw + 12, -capoff, "FOR EPSO EXAMS")
-    tracked(c, half - 0.5 * inch, -fs * 0.22, AUTHOR, "Mont-XBold", fs * 0.5, 1.5, PALE, anchor="right")
+    tracked(c, half - 0.5 * inch, -fs * 0.22, AUTHOR, "Frank-XBold", fs * 0.5, 1.5, PALE, anchor="right")
     c.restoreState()
 
 
