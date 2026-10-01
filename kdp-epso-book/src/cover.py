@@ -103,6 +103,87 @@ def building_lines(c, cx, base, W, H, x0, panel_w):
     c.restoreState()
 
 
+def building_hero(c, cx, base, W, H, panel_w):
+    """Filled illustration of a Brussels-style EU institutional building (cross plan, curved glass wings, louvres)
+    with a row of flagpoles in front. Abstract flags only: no national flags, no EU emblem."""
+    core = W * 0.06
+    floors = 12
+    c.saveState()
+    # soft shadow / plaza glow
+    c.setFillColor(HexColor("#0B2766")); c.setFillAlpha(0.45)
+    c.ellipse(cx - W * 0.6, base - H * 0.10, cx + W * 0.6, base + H * 0.06, stroke=0, fill=1)
+    c.restoreState()
+    # rear wings of the cross plan, receding behind the core
+    for sign in (-1, 1):
+        q = c.beginPath()
+        q.moveTo(cx + sign * core, base + H * 0.50)
+        q.lineTo(cx + sign * W * 0.20, base + H * 0.86)
+        q.lineTo(cx + sign * W * 0.20, base + H * 0.98)
+        q.lineTo(cx + sign * core, base + H * 1.04)
+        q.close()
+        c.saveState(); c.setFillColor(HexColor("#6F94E0")); c.drawPath(q, stroke=0, fill=1); c.restoreState()
+
+    def wing(sign, hmul, c_top, c_bot, louvre):
+        x_in, x_out = cx + sign * core, cx + sign * W / 2
+        top_in, top_out = base + H * hmul, base + H * 0.80 * hmul
+        p = c.beginPath()
+        p.moveTo(x_in, base); p.lineTo(x_out, base); p.lineTo(x_out, top_out)
+        p.curveTo(x_out - sign * W * 0.12, top_out + H * 0.1 * hmul, x_in + sign * W * 0.12, top_in + H * 0.01, x_in, top_in)
+        p.close()
+        c.saveState()
+        c.clipPath(p, stroke=0)
+        c.linearGradient(x_in, top_in, x_in, base, (c_top, c_bot), extend=True)
+        for i in range(1, floors + 1):
+            t = i / (floors + 1)
+            c.setStrokeColor(louvre); c.setStrokeAlpha(0.55); c.setLineWidth(1.6)
+            c.line(x_in, base + H * hmul * t, x_out, base + H * 0.80 * hmul * t)
+        # glass reflection band
+        c.setFillColor(WHITE); c.setFillAlpha(0.22)
+        r = c.beginPath()
+        r.moveTo(x_in + sign * W * 0.10, base); r.lineTo(x_in + sign * W * 0.17, base)
+        r.lineTo(x_in + sign * W * 0.27, base + H * 1.1); r.lineTo(x_in + sign * W * 0.20, base + H * 1.1); r.close()
+        c.drawPath(r, stroke=0, fill=1)
+        c.restoreState()
+        c.saveState(); c.setStrokeColor(WHITE); c.setStrokeAlpha(0.9); c.setLineWidth(1.4)
+        c.drawPath(p, stroke=1, fill=0); c.restoreState()
+
+    wing(-1, 1.05, HexColor("#F4F8FF"), HexColor("#B8CDF6"), HexColor("#3D6CC9"))   # sunlit
+    wing(1, 0.97, HexColor("#C9D9F8"), HexColor("#8EAAE6"), HexColor("#2C59B5"))    # shade
+    # central core
+    c.saveState()
+    c.setFillColor(BLUE_DEEP); c.rect(cx - core, base, 2 * core, H * 1.14, stroke=0, fill=1)
+    for i in range(1, floors + 1):
+        y = base + H * 1.08 * i / (floors + 1)
+        c.setStrokeColor(GOLD); c.setStrokeAlpha(0.75); c.setLineWidth(1.0)
+        c.line(cx - core * 0.62, y, cx + core * 0.62, y)
+    c.setFillColor(WHITE); c.rect(cx - core * 1.4, base + H * 1.14, core * 2.8, H * 0.03, stroke=0, fill=1)
+    c.restoreState()
+    # plaza line
+    half = min(W / 2 + 0.15 * inch, panel_w / 2 - 0.3 * inch)
+    c.saveState(); c.setStrokeColor(WHITE); c.setStrokeAlpha(0.85); c.setLineWidth(1.6)
+    c.line(cx - half, base, cx + half, base); c.restoreState()
+    # flagpoles in front of the building, abstract gold/white flags
+    n = 7
+    span = W * 0.74
+    pole_h = H * 0.58
+    for k in range(n):
+        px = cx - span / 2 + span * k / (n - 1)
+        if abs(px - cx) < core * 1.2:
+            continue
+        c.saveState()
+        c.setStrokeColor(BLUE_DEEP); c.setLineWidth(1.6); c.line(px, base - 2, px, base + pole_h)
+        fw, fh = W * 0.05, H * 0.13
+        fy = base + pole_h - fh
+        f = c.beginPath()
+        f.moveTo(px, fy + fh)
+        f.curveTo(px + fw * 0.35, fy + fh * 1.12, px + fw * 0.65, fy + fh * 0.88, px + fw, fy + fh)
+        f.lineTo(px + fw, fy)
+        f.curveTo(px + fw * 0.65, fy - fh * 0.12, px + fw * 0.35, fy + fh * 0.12, px, fy)
+        f.close()
+        c.setFillColor(GOLD if k % 2 == 0 else BLUE_DEEP); c.drawPath(f, stroke=0, fill=1)
+        c.restoreState()
+
+
 def tick_o(c, x, base, size):
     """Gold 'O' (set in Anton for a perfect type match) with a white check mark sweeping through it."""
     c.setFillColor(GOLD); c.setFont("Anton", size); c.drawString(x, base, "O")
@@ -140,7 +221,7 @@ def front(c, x0, y0, H_in=TRIM_H):
     base = y0 + 1.40 * inch + extra * 0.05
     gap = 0.39 * inch if extra == 0 else 0.45 * inch
     bh = (b5 - gap - base) / 1.12
-    building_lines(c, cx, base, W * 0.88, bh, x0, W)
+    building_hero(c, cx, base, W * 0.88, bh, W)
 
     tracked(c, cx, top, "400+ QUESTIONS · FULL WORKED SOLUTIONS", "Mont-Bold", 12.5, 3.2, GOLD)
     xs = cx - stringWidth("REASONING", "Anton", s1) / 2
