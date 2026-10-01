@@ -1,0 +1,1263 @@
+[
+ {
+  "kind": "meeting",
+  "grid": {
+   "columns": [
+    "Start",
+    "Mon",
+    "Tue",
+    "Wed",
+    "Thu",
+    "Fri"
+   ],
+   "rows": [
+    [
+     "09:00",
+     "C E",
+     "B F",
+     "B C E",
+     "F",
+     "B C F"
+    ],
+    [
+     "10:00",
+     "C E",
+     "B C",
+     "—",
+     "B F",
+     "C F"
+    ],
+    [
+     "11:00",
+     "C E",
+     "B C E F",
+     "E F",
+     "B",
+     "B E"
+    ],
+    [
+     "14:00",
+     "E",
+     "B C",
+     "B E F",
+     "B C",
+     "E F"
+    ],
+    [
+     "15:00",
+     "E F",
+     "B C E",
+     "B C",
+     "—",
+     "B C E"
+    ],
+    [
+     "16:00",
+     "B C E F",
+     "B C",
+     "C F",
+     "C F",
+     "C E F"
+    ]
+   ],
+   "legend": "B = Bruno, C = Chiara, E = Eleni, F = Filip",
+   "note": "The table shows who is BUSY (unavailable) during the one-hour slot starting at the time shown; — means that all four colleagues are free. No meetings are held between 12:00 and 14:00."
+  },
+  "question": "A one-hour meeting must be attended by Bruno, Chiara and Eleni; Filip’s attendance is optional, so Filip’s availability can be ignored. The room is unavailable on Wednesday, and the meeting must start no later than 15:00. What is the earliest suitable slot in the week?",
+  "options": [
+   "Thursday 09:00",
+   "Wednesday 10:00",
+   "Tuesday 09:00",
+   "Thursday 15:00"
+  ],
+  "answer": "A",
+  "explanation": "Check the slots in time order, applying every condition. Thursday 09:00: Bruno, Chiara, Eleni are all free and no earlier slot meets every condition — correct (Filip is busy, but attendance is optional); Wednesday 10:00: everyone required is free, but Wednesday is excluded; Tuesday 09:00: Bruno is busy; Thursday 15:00: possible, but not the earliest suitable slot.",
+  "difficulty": "intermediate",
+  "id": "PO-01"
+ },
+ {
+  "kind": "meeting",
+  "grid": {
+   "columns": [
+    "Start",
+    "Mon",
+    "Tue",
+    "Wed",
+    "Thu",
+    "Fri"
+   ],
+   "rows": [
+    [
+     "09:00",
+     "—",
+     "F C B",
+     "E",
+     "C E",
+     "F C B"
+    ],
+    [
+     "10:00",
+     "F B",
+     "C",
+     "C E",
+     "E",
+     "C"
+    ],
+    [
+     "11:00",
+     "C B E",
+     "F E",
+     "F C B",
+     "E",
+     "C"
+    ],
+    [
+     "14:00",
+     "—",
+     "F C B",
+     "B E",
+     "B",
+     "C"
+    ],
+    [
+     "15:00",
+     "—",
+     "F C B",
+     "C",
+     "F",
+     "F C E"
+    ],
+    [
+     "16:00",
+     "C E",
+     "F B",
+     "F B E",
+     "F C",
+     "—"
+    ]
+   ],
+   "legend": "F = Filip, C = Chiara, B = Bruno, E = Eleni",
+   "note": "The table shows who is BUSY (unavailable) during the one-hour slot starting at the time shown; — means that all four colleagues are free. No meetings are held between 12:00 and 14:00."
+  },
+  "question": "A one-hour meeting must be attended by Filip, Chiara and Bruno; Eleni’s attendance is optional, so Eleni’s availability can be ignored. The room is unavailable on Monday, and the meeting must start no later than 14:00. What is the earliest suitable slot in the week?",
+  "options": [
+   "Monday 09:00",
+   "Tuesday 10:00",
+   "Thursday 10:00",
+   "Wednesday 09:00"
+  ],
+  "answer": "D",
+  "explanation": "Check the slots in time order, applying every condition. Monday 09:00: everyone required is free, but Monday is excluded; Tuesday 10:00: Chiara is busy; Thursday 10:00: possible, but not the earliest suitable slot; Wednesday 09:00: Filip, Chiara, Bruno are all free and no earlier slot meets every condition — correct (Eleni is busy, but attendance is optional).",
+  "difficulty": "intermediate",
+  "id": "PO-02"
+ },
+ {
+  "kind": "meeting",
+  "grid": {
+   "columns": [
+    "Start",
+    "Mon",
+    "Tue",
+    "Wed",
+    "Thu",
+    "Fri"
+   ],
+   "rows": [
+    [
+     "09:00",
+     "B",
+     "F",
+     "B D C",
+     "D F",
+     "B"
+    ],
+    [
+     "10:00",
+     "—",
+     "D F",
+     "—",
+     "C",
+     "C"
+    ],
+    [
+     "11:00",
+     "B D F",
+     "B D C",
+     "B D F",
+     "F C",
+     "D F C"
+    ],
+    [
+     "14:00",
+     "D C",
+     "B F C",
+     "B C",
+     "F",
+     "D"
+    ],
+    [
+     "15:00",
+     "B D F",
+     "C",
+     "D C",
+     "D",
+     "D F C"
+    ],
+    [
+     "16:00",
+     "—",
+     "B D",
+     "D F C",
+     "C",
+     "C"
+    ]
+   ],
+   "legend": "B = Bruno, D = Dawid, F = Filip, C = Chiara",
+   "note": "The table shows who is BUSY (unavailable) during the one-hour slot starting at the time shown; — means that all four colleagues are free. No meetings are held between 12:00 and 14:00."
+  },
+  "question": "A one-hour meeting must be attended by Bruno, Dawid and Filip; Chiara’s attendance is optional, so Chiara’s availability can be ignored. The room is unavailable on Monday, and the meeting must start no later than 15:00. What is the earliest suitable slot in the week?",
+  "options": [
+   "Monday 10:00",
+   "Tuesday 09:00",
+   "Tuesday 15:00",
+   "Thursday 10:00"
+  ],
+  "answer": "C",
+  "explanation": "Check the slots in time order, applying every condition. Monday 10:00: everyone required is free, but Monday is excluded; Tuesday 09:00: Filip is busy; Tuesday 15:00: Bruno, Dawid, Filip are all free and no earlier slot meets every condition — correct (Chiara is busy, but attendance is optional); Thursday 10:00: possible, but not the earliest suitable slot.",
+  "difficulty": "intermediate",
+  "id": "PO-03"
+ },
+ {
+  "kind": "meeting",
+  "grid": {
+   "columns": [
+    "Start",
+    "Mon",
+    "Tue",
+    "Wed",
+    "Thu",
+    "Fri"
+   ],
+   "rows": [
+    [
+     "09:00",
+     "F E C D",
+     "C",
+     "F",
+     "E D",
+     "E C"
+    ],
+    [
+     "10:00",
+     "E",
+     "E D",
+     "—",
+     "F D",
+     "E C"
+    ],
+    [
+     "11:00",
+     "F D",
+     "F E D",
+     "F E",
+     "D",
+     "E D"
+    ],
+    [
+     "14:00",
+     "C D",
+     "F C D",
+     "F C D",
+     "F D",
+     "C D"
+    ],
+    [
+     "15:00",
+     "F C",
+     "F E D",
+     "F",
+     "F E C",
+     "F D"
+    ],
+    [
+     "16:00",
+     "—",
+     "F E",
+     "F E",
+     "—",
+     "F E"
+    ]
+   ],
+   "legend": "F = Filip, E = Eleni, C = Chiara, D = Dawid",
+   "note": "The table shows who is BUSY (unavailable) during the one-hour slot starting at the time shown; — means that all four colleagues are free. No meetings are held between 12:00 and 14:00."
+  },
+  "question": "A one-hour meeting must be attended by Filip, Eleni and Chiara; Dawid’s attendance is optional, so Dawid’s availability can be ignored. The room is unavailable on Wednesday, and the meeting must start no later than 15:00. What is the earliest suitable slot in the week?",
+  "options": [
+   "Wednesday 10:00",
+   "Thursday 11:00",
+   "Monday 16:00",
+   "Monday 11:00"
+  ],
+  "answer": "B",
+  "explanation": "Check the slots in time order, applying every condition. Wednesday 10:00: everyone required is free, but Wednesday is excluded; Thursday 11:00: Filip, Eleni, Chiara are all free and no earlier slot meets every condition — correct (Dawid is busy, but attendance is optional); Monday 16:00: everyone required is free, but it starts after 15:00; Monday 11:00: Filip is busy.",
+  "difficulty": "intermediate",
+  "id": "PO-04"
+ },
+ {
+  "kind": "meeting",
+  "grid": {
+   "columns": [
+    "Start",
+    "Mon",
+    "Tue",
+    "Wed",
+    "Thu",
+    "Fri"
+   ],
+   "rows": [
+    [
+     "09:00",
+     "E",
+     "F",
+     "C F",
+     "C B",
+     "C B F"
+    ],
+    [
+     "10:00",
+     "B E",
+     "C F E",
+     "—",
+     "B F E",
+     "F E"
+    ],
+    [
+     "11:00",
+     "B F E",
+     "E",
+     "B",
+     "C F E",
+     "B F E"
+    ],
+    [
+     "14:00",
+     "C F E",
+     "C F E",
+     "C F",
+     "C F",
+     "C B F"
+    ],
+    [
+     "15:00",
+     "C B",
+     "C",
+     "B F E",
+     "B",
+     "C B F E"
+    ],
+    [
+     "16:00",
+     "F",
+     "—",
+     "C B E",
+     "F E",
+     "F E"
+    ]
+   ],
+   "legend": "C = Chiara, B = Bruno, F = Filip, E = Eleni",
+   "note": "The table shows who is BUSY (unavailable) during the one-hour slot starting at the time shown; — means that all four colleagues are free. No meetings are held between 12:00 and 14:00."
+  },
+  "question": "A one-hour meeting must be attended by Chiara, Bruno and Filip; Eleni’s attendance is optional, so Eleni’s availability can be ignored. The room is unavailable on Monday, and the meeting must start no later than 15:00. What is the earliest suitable slot in the week?",
+  "options": [
+   "Monday 09:00",
+   "Tuesday 09:00",
+   "Tuesday 11:00",
+   "Wednesday 10:00"
+  ],
+  "answer": "C",
+  "explanation": "Check the slots in time order, applying every condition. Monday 09:00: everyone required is free, but Monday is excluded; Tuesday 09:00: Filip is busy; Tuesday 11:00: Chiara, Bruno, Filip are all free and no earlier slot meets every condition — correct (Eleni is busy, but attendance is optional); Wednesday 10:00: possible, but not the earliest suitable slot.",
+  "difficulty": "intermediate",
+  "id": "PO-05"
+ },
+ {
+  "kind": "meeting",
+  "grid": {
+   "columns": [
+    "Start",
+    "Mon",
+    "Tue",
+    "Wed",
+    "Thu",
+    "Fri"
+   ],
+   "rows": [
+    [
+     "09:00",
+     "F C",
+     "C A",
+     "D F C",
+     "—",
+     "D F A"
+    ],
+    [
+     "10:00",
+     "C",
+     "D F C",
+     "A",
+     "D F C A",
+     "F C"
+    ],
+    [
+     "11:00",
+     "A",
+     "D C A",
+     "D C A",
+     "D C A",
+     "C A"
+    ],
+    [
+     "14:00",
+     "D F C A",
+     "C",
+     "C A",
+     "D F C",
+     "D F C"
+    ],
+    [
+     "15:00",
+     "A",
+     "D A",
+     "F C A",
+     "D C A",
+     "—"
+    ],
+    [
+     "16:00",
+     "F",
+     "F C A",
+     "C",
+     "F C A",
+     "D F C"
+    ]
+   ],
+   "legend": "D = Dawid, F = Filip, C = Chiara, A = Anna",
+   "note": "The table shows who is BUSY (unavailable) during the one-hour slot starting at the time shown; — means that all four colleagues are free. No meetings are held between 12:00 and 14:00."
+  },
+  "question": "A one-hour meeting must be attended by Dawid, Filip and Chiara; Anna’s attendance is optional, so Anna’s availability can be ignored. The room is unavailable on Monday, and the meeting must start no later than 15:00. What is the earliest suitable slot in the week?",
+  "options": [
+   "Monday 11:00",
+   "Thursday 09:00",
+   "Tuesday 09:00",
+   "Wednesday 10:00"
+  ],
+  "answer": "D",
+  "explanation": "Check the slots in time order, applying every condition. Monday 11:00: everyone required is free, but Monday is excluded; Thursday 09:00: possible, but not the earliest suitable slot; Tuesday 09:00: Chiara is busy; Wednesday 10:00: Dawid, Filip, Chiara are all free and no earlier slot meets every condition — correct (Anna is busy, but attendance is optional).",
+  "difficulty": "intermediate",
+  "id": "PO-06"
+ },
+ {
+  "kind": "meeting",
+  "grid": {
+   "columns": [
+    "Start",
+    "Mon",
+    "Tue",
+    "Wed",
+    "Thu",
+    "Fri"
+   ],
+   "rows": [
+    [
+     "09:00",
+     "A",
+     "D",
+     "A E",
+     "—",
+     "A E D"
+    ],
+    [
+     "10:00",
+     "A B",
+     "E D",
+     "E",
+     "E B",
+     "B"
+    ],
+    [
+     "11:00",
+     "B",
+     "E B",
+     "—",
+     "A E",
+     "D"
+    ],
+    [
+     "14:00",
+     "A",
+     "E D",
+     "—",
+     "E",
+     "E D"
+    ],
+    [
+     "15:00",
+     "E B",
+     "—",
+     "—",
+     "—",
+     "A E D"
+    ],
+    [
+     "16:00",
+     "D",
+     "—",
+     "D",
+     "D",
+     "A B"
+    ]
+   ],
+   "legend": "A = Anna, E = Eleni, B = Bruno, D = Dawid",
+   "note": "The table shows who is BUSY (unavailable) during the one-hour slot starting at the time shown; — means that all four colleagues are free. No meetings are held between 12:00 and 14:00."
+  },
+  "question": "A one-hour meeting must be attended by Anna, Eleni and Bruno; Dawid’s attendance is optional, so Dawid’s availability can be ignored. The room is unavailable on Wednesday, and the meeting must start no later than 15:00. What is the earliest suitable slot in the week?",
+  "options": [
+   "Thursday 15:00",
+   "Tuesday 09:00",
+   "Monday 16:00",
+   "Monday 14:00"
+  ],
+  "answer": "B",
+  "explanation": "Check the slots in time order, applying every condition. Thursday 15:00: possible, but not the earliest suitable slot; Tuesday 09:00: Anna, Eleni, Bruno are all free and no earlier slot meets every condition — correct (Dawid is busy, but attendance is optional); Monday 16:00: everyone required is free, but it starts after 15:00; Monday 14:00: Anna is busy.",
+  "difficulty": "intermediate",
+  "id": "PO-07"
+ },
+ {
+  "kind": "meeting",
+  "grid": {
+   "columns": [
+    "Start",
+    "Mon",
+    "Tue",
+    "Wed",
+    "Thu",
+    "Fri"
+   ],
+   "rows": [
+    [
+     "09:00",
+     "B C D",
+     "C D",
+     "A",
+     "D",
+     "A"
+    ],
+    [
+     "10:00",
+     "B C",
+     "D",
+     "B A C D",
+     "D",
+     "B A C D"
+    ],
+    [
+     "11:00",
+     "A C D",
+     "B A C",
+     "A D",
+     "B C",
+     "B"
+    ],
+    [
+     "14:00",
+     "B C D",
+     "B A D",
+     "A C D",
+     "A",
+     "B A C"
+    ],
+    [
+     "15:00",
+     "B C D",
+     "D",
+     "A D",
+     "B C D",
+     "B"
+    ],
+    [
+     "16:00",
+     "B C D",
+     "B A C D",
+     "B A C D",
+     "B",
+     "B A D"
+    ]
+   ],
+   "legend": "B = Bruno, A = Anna, C = Chiara, D = Dawid",
+   "note": "The table shows who is BUSY (unavailable) during the one-hour slot starting at the time shown; — means that all four colleagues are free. No meetings are held between 12:00 and 14:00."
+  },
+  "question": "A one-hour meeting must be attended by Bruno, Anna and Chiara; Dawid’s attendance is optional, so Dawid’s availability can be ignored. The room is unavailable on Tuesday, and the meeting must start no later than 15:00. What is the earliest suitable slot in the week?",
+  "options": [
+   "Thursday 09:00",
+   "Tuesday 10:00",
+   "Wednesday 09:00",
+   "Thursday 10:00"
+  ],
+  "answer": "A",
+  "explanation": "Check the slots in time order, applying every condition. Thursday 09:00: Bruno, Anna, Chiara are all free and no earlier slot meets every condition — correct (Dawid is busy, but attendance is optional); Tuesday 10:00: everyone required is free, but Tuesday is excluded; Wednesday 09:00: Anna is busy; Thursday 10:00: possible, but not the earliest suitable slot.",
+  "difficulty": "intermediate",
+  "id": "PO-08"
+ },
+ {
+  "kind": "meeting",
+  "grid": {
+   "columns": [
+    "Start",
+    "Mon",
+    "Tue",
+    "Wed",
+    "Thu",
+    "Fri"
+   ],
+   "rows": [
+    [
+     "09:00",
+     "D",
+     "B F A",
+     "B D",
+     "F A",
+     "B F A"
+    ],
+    [
+     "10:00",
+     "—",
+     "B F A D",
+     "A D",
+     "—",
+     "F A"
+    ],
+    [
+     "11:00",
+     "B F D",
+     "B F D",
+     "F A",
+     "F A",
+     "B A D"
+    ],
+    [
+     "14:00",
+     "B A",
+     "B F A D",
+     "B F A D",
+     "D",
+     "A"
+    ],
+    [
+     "15:00",
+     "B F",
+     "B F A",
+     "D",
+     "F",
+     "B F D"
+    ],
+    [
+     "16:00",
+     "F A D",
+     "B F",
+     "A",
+     "F A",
+     "A D"
+    ]
+   ],
+   "legend": "B = Bruno, F = Filip, A = Anna, D = Dawid",
+   "note": "The table shows who is BUSY (unavailable) during the one-hour slot starting at the time shown; — means that all four colleagues are free. No meetings are held between 12:00 and 14:00."
+  },
+  "question": "A one-hour meeting must be attended by Bruno, Filip and Anna; Dawid’s attendance is optional, so Dawid’s availability can be ignored. The room is unavailable on Monday, and the meeting must start no later than 15:00. What is the earliest suitable slot in the week?",
+  "options": [
+   "Monday 09:00",
+   "Thursday 10:00",
+   "Wednesday 15:00",
+   "Wednesday 09:00"
+  ],
+  "answer": "C",
+  "explanation": "Check the slots in time order, applying every condition. Monday 09:00: everyone required is free, but Monday is excluded; Thursday 10:00: possible, but not the earliest suitable slot; Wednesday 15:00: Bruno, Filip, Anna are all free and no earlier slot meets every condition — correct (Dawid is busy, but attendance is optional); Wednesday 09:00: Bruno is busy.",
+  "difficulty": "intermediate",
+  "id": "PO-09"
+ },
+ {
+  "kind": "critical",
+  "table": {
+   "columns": [
+    "Task",
+    "Working days",
+    "Can start only after"
+   ],
+   "rows": [
+    [
+     "Collect data",
+     "6",
+     "—"
+    ],
+    [
+     "Draft analysis",
+     "6",
+     "Collect data"
+    ],
+    [
+     "Legal check",
+     "4",
+     "Draft analysis"
+    ],
+    [
+     "Translation",
+     "6",
+     "Draft analysis"
+    ],
+    [
+     "Layout",
+     "6",
+     "Translation"
+    ],
+    [
+     "Final approval",
+     "5",
+     "Legal check, Layout"
+    ]
+   ]
+  },
+  "question": "A unit must publish a policy report. Tasks can run in parallel as soon as all their prerequisites are complete, and there are enough staff to work on any number of tasks at once. What is the minimum number of working days needed to complete everything?",
+  "options": [
+   "33",
+   "24",
+   "21",
+   "29"
+  ],
+  "answer": "D",
+  "explanation": "Earliest finish of each task = its duration + the latest finish among its prerequisites: Collect data 6; Draft analysis 12; Legal check 16; Translation 18; Layout 24; Final approval 29. The longest chain (the critical path) is Collect data → Draft analysis → Translation → Layout → Final approval, so the project needs 29 days. Typical errors: adding all durations (33) wrongly assumes that nothing runs in parallel; following a shorter branch underestimates the time; forgetting the final task, or adding a parallel task in series, also gives a wrong total.",
+  "difficulty": "advanced",
+  "id": "PO-10"
+ },
+ {
+  "kind": "critical",
+  "table": {
+   "columns": [
+    "Task",
+    "Working days",
+    "Can start only after"
+   ],
+   "rows": [
+    [
+     "Book venue",
+     "4",
+     "—"
+    ],
+    [
+     "Draft programme",
+     "1",
+     "—"
+    ],
+    [
+     "Invite speakers",
+     "3",
+     "Draft programme"
+    ],
+    [
+     "Open registration",
+     "4",
+     "Book venue, Invite speakers"
+    ],
+    [
+     "Print materials",
+     "6",
+     "Draft programme"
+    ],
+    [
+     "Final briefing",
+     "4",
+     "Open registration, Print materials"
+    ]
+   ]
+  },
+  "question": "A team is organising a stakeholder conference. Tasks can run in parallel as soon as all their prerequisites are complete, and there are enough staff to work on any number of tasks at once. What is the minimum number of working days needed to complete everything?",
+  "options": [
+   "12",
+   "18",
+   "22",
+   "8"
+  ],
+  "answer": "A",
+  "explanation": "Earliest finish of each task = its duration + the latest finish among its prerequisites: Book venue 4; Draft programme 1; Invite speakers 4; Open registration 8; Print materials 7; Final briefing 12. The longest chain (the critical path) is Draft programme → Invite speakers → Open registration → Final briefing, so the project needs 12 days. Typical errors: adding all durations (22) wrongly assumes that nothing runs in parallel; following a shorter branch underestimates the time; forgetting the final task, or adding a parallel task in series, also gives a wrong total.",
+  "difficulty": "advanced",
+  "id": "PO-11"
+ },
+ {
+  "kind": "critical",
+  "table": {
+   "columns": [
+    "Task",
+    "Working days",
+    "Can start only after"
+   ],
+   "rows": [
+    [
+     "Gather requirements",
+     "3",
+     "—"
+    ],
+    [
+     "Configure system",
+     "3",
+     "Gather requirements"
+    ],
+    [
+     "Security review",
+     "2",
+     "Configure system"
+    ],
+    [
+     "Migrate data",
+     "6",
+     "Configure system"
+    ],
+    [
+     "Train users",
+     "5",
+     "Configure system"
+    ],
+    [
+     "Go-live check",
+     "3",
+     "Security review, Migrate data, Train users"
+    ]
+   ]
+  },
+  "question": "An IT team is rolling out a new case-management tool. Tasks can run in parallel as soon as all their prerequisites are complete, and there are enough staff to work on any number of tasks at once. What is the minimum number of working days needed to complete everything?",
+  "options": [
+   "22",
+   "15",
+   "11",
+   "12"
+  ],
+  "answer": "B",
+  "explanation": "Earliest finish of each task = its duration + the latest finish among its prerequisites: Gather requirements 3; Configure system 6; Security review 8; Migrate data 12; Train users 11; Go-live check 15. The longest chain (the critical path) is Gather requirements → Configure system → Migrate data → Go-live check, so the project needs 15 days. Typical errors: adding all durations (22) wrongly assumes that nothing runs in parallel; following a shorter branch underestimates the time; forgetting the final task, or adding a parallel task in series, also gives a wrong total.",
+  "difficulty": "advanced",
+  "id": "PO-12"
+ },
+ {
+  "kind": "critical",
+  "table": {
+   "columns": [
+    "Task",
+    "Working days",
+    "Can start only after"
+   ],
+   "rows": [
+    [
+     "Publish vacancy",
+     "6",
+     "—"
+    ],
+    [
+     "Screen applications",
+     "2",
+     "Publish vacancy"
+    ],
+    [
+     "Prepare tests",
+     "4",
+     "—"
+    ],
+    [
+     "Run tests",
+     "6",
+     "Screen applications, Prepare tests"
+    ],
+    [
+     "Hold interviews",
+     "4",
+     "Run tests"
+    ],
+    [
+     "Final decision",
+     "5",
+     "Hold interviews"
+    ]
+   ]
+  },
+  "question": "A selection board is running a recruitment exercise. Tasks can run in parallel as soon as all their prerequisites are complete, and there are enough staff to work on any number of tasks at once. What is the minimum number of working days needed to complete everything?",
+  "options": [
+   "18",
+   "27",
+   "19",
+   "23"
+  ],
+  "answer": "D",
+  "explanation": "Earliest finish of each task = its duration + the latest finish among its prerequisites: Publish vacancy 6; Screen applications 8; Prepare tests 4; Run tests 14; Hold interviews 18; Final decision 23. The longest chain (the critical path) is Publish vacancy → Screen applications → Run tests → Hold interviews → Final decision, so the project needs 23 days. Typical errors: adding all durations (27) wrongly assumes that nothing runs in parallel; following a shorter branch underestimates the time; forgetting the final task, or adding a parallel task in series, also gives a wrong total.",
+  "difficulty": "advanced",
+  "id": "PO-13"
+ },
+ {
+  "kind": "critical",
+  "table": {
+   "columns": [
+    "Task",
+    "Working days",
+    "Can start only after"
+   ],
+   "rows": [
+    [
+     "Collect data",
+     "1",
+     "—"
+    ],
+    [
+     "Draft analysis",
+     "2",
+     "Collect data"
+    ],
+    [
+     "Legal check",
+     "4",
+     "Draft analysis"
+    ],
+    [
+     "Translation",
+     "2",
+     "Draft analysis"
+    ],
+    [
+     "Layout",
+     "6",
+     "Translation"
+    ],
+    [
+     "Final approval",
+     "6",
+     "Legal check, Layout"
+    ]
+   ]
+  },
+  "question": "A unit must publish a policy report. Tasks can run in parallel as soon as all their prerequisites are complete, and there are enough staff to work on any number of tasks at once. What is the minimum number of working days needed to complete everything?",
+  "options": [
+   "13",
+   "11",
+   "17",
+   "21"
+  ],
+  "answer": "C",
+  "explanation": "Earliest finish of each task = its duration + the latest finish among its prerequisites: Collect data 1; Draft analysis 3; Legal check 7; Translation 5; Layout 11; Final approval 17. The longest chain (the critical path) is Collect data → Draft analysis → Translation → Layout → Final approval, so the project needs 17 days. Typical errors: adding all durations (21) wrongly assumes that nothing runs in parallel; following a shorter branch underestimates the time; forgetting the final task, or adding a parallel task in series, also gives a wrong total.",
+  "difficulty": "advanced",
+  "id": "PO-14"
+ },
+ {
+  "kind": "critical",
+  "table": {
+   "columns": [
+    "Task",
+    "Working days",
+    "Can start only after"
+   ],
+   "rows": [
+    [
+     "Book venue",
+     "2",
+     "—"
+    ],
+    [
+     "Draft programme",
+     "3",
+     "—"
+    ],
+    [
+     "Invite speakers",
+     "5",
+     "Draft programme"
+    ],
+    [
+     "Open registration",
+     "3",
+     "Book venue, Draft programme"
+    ],
+    [
+     "Print materials",
+     "4",
+     "Invite speakers"
+    ],
+    [
+     "Final briefing",
+     "6",
+     "Open registration, Print materials"
+    ]
+   ]
+  },
+  "question": "A team is organising a stakeholder conference. Tasks can run in parallel as soon as all their prerequisites are complete, and there are enough staff to work on any number of tasks at once. What is the minimum number of working days needed to complete everything?",
+  "options": [
+   "23",
+   "18",
+   "12",
+   "11"
+  ],
+  "answer": "B",
+  "explanation": "Earliest finish of each task = its duration + the latest finish among its prerequisites: Book venue 2; Draft programme 3; Invite speakers 8; Open registration 6; Print materials 12; Final briefing 18. The longest chain (the critical path) is Draft programme → Invite speakers → Print materials → Final briefing, so the project needs 18 days. Typical errors: adding all durations (23) wrongly assumes that nothing runs in parallel; following a shorter branch underestimates the time; forgetting the final task, or adding a parallel task in series, also gives a wrong total.",
+  "difficulty": "advanced",
+  "id": "PO-15"
+ },
+ {
+  "kind": "critical",
+  "table": {
+   "columns": [
+    "Task",
+    "Working days",
+    "Can start only after"
+   ],
+   "rows": [
+    [
+     "Gather requirements",
+     "1",
+     "—"
+    ],
+    [
+     "Configure system",
+     "1",
+     "Gather requirements"
+    ],
+    [
+     "Security review",
+     "2",
+     "Configure system"
+    ],
+    [
+     "Migrate data",
+     "6",
+     "Configure system"
+    ],
+    [
+     "Train users",
+     "4",
+     "Configure system"
+    ],
+    [
+     "Go-live check",
+     "3",
+     "Security review, Migrate data, Train users"
+    ]
+   ]
+  },
+  "question": "An IT team is rolling out a new case-management tool. Tasks can run in parallel as soon as all their prerequisites are complete, and there are enough staff to work on any number of tasks at once. What is the minimum number of working days needed to complete everything?",
+  "options": [
+   "11",
+   "17",
+   "9",
+   "7"
+  ],
+  "answer": "A",
+  "explanation": "Earliest finish of each task = its duration + the latest finish among its prerequisites: Gather requirements 1; Configure system 2; Security review 4; Migrate data 8; Train users 6; Go-live check 11. The longest chain (the critical path) is Gather requirements → Configure system → Migrate data → Go-live check, so the project needs 11 days. Typical errors: adding all durations (17) wrongly assumes that nothing runs in parallel; following a shorter branch underestimates the time; forgetting the final task, or adding a parallel task in series, also gives a wrong total.",
+  "difficulty": "advanced",
+  "id": "PO-16"
+ },
+ {
+  "kind": "critical",
+  "table": {
+   "columns": [
+    "Task",
+    "Working days",
+    "Can start only after"
+   ],
+   "rows": [
+    [
+     "Publish vacancy",
+     "6",
+     "—"
+    ],
+    [
+     "Screen applications",
+     "4",
+     "Publish vacancy"
+    ],
+    [
+     "Prepare tests",
+     "2",
+     "Publish vacancy"
+    ],
+    [
+     "Run tests",
+     "5",
+     "Screen applications, Prepare tests"
+    ],
+    [
+     "Hold interviews",
+     "4",
+     "Run tests"
+    ],
+    [
+     "Final decision",
+     "6",
+     "Hold interviews"
+    ]
+   ]
+  },
+  "question": "A selection board is running a recruitment exercise. Tasks can run in parallel as soon as all their prerequisites are complete, and there are enough staff to work on any number of tasks at once. What is the minimum number of working days needed to complete everything?",
+  "options": [
+   "19",
+   "25",
+   "23",
+   "27"
+  ],
+  "answer": "B",
+  "explanation": "Earliest finish of each task = its duration + the latest finish among its prerequisites: Publish vacancy 6; Screen applications 10; Prepare tests 8; Run tests 15; Hold interviews 19; Final decision 25. The longest chain (the critical path) is Publish vacancy → Screen applications → Run tests → Hold interviews → Final decision, so the project needs 25 days. Typical errors: adding all durations (27) wrongly assumes that nothing runs in parallel; following a shorter branch underestimates the time; forgetting the final task, or adding a parallel task in series, also gives a wrong total.",
+  "difficulty": "advanced",
+  "id": "PO-17"
+ },
+ {
+  "kind": "assign",
+  "constraints": [
+   "Dawid cannot take the event logistics.",
+   "Dawid cannot take the website update.",
+   "Dawid cannot take the budget report.",
+   "Bruno must take either the press summary or the event logistics.",
+   "Chiara cannot take the website update."
+  ],
+  "question": "Four colleagues — Bruno, Chiara, Dawid, Filip — must each take exactly one of four tasks: the budget report, the event logistics, the website update and the press summary. Taking all the constraints below into account, who must take the budget report?",
+  "options": [
+   "Bruno",
+   "Dawid",
+   "Filip",
+   "Chiara"
+  ],
+  "answer": "D",
+  "explanation": "List, for each task, who is still allowed to take it, and start with the task or person that has the fewest possibilities; each forced choice removes that person from the other tasks. The only allocation that satisfies every constraint is: budget report — Chiara; event logistics — Bruno; website update — Filip; press summary — Dawid. So the budget report must go to Chiara.",
+  "difficulty": "advanced",
+  "id": "PO-18"
+ },
+ {
+  "kind": "assign",
+  "constraints": [
+   "Filip cannot take the event logistics.",
+   "Dawid cannot take the event logistics.",
+   "Chiara cannot take the press summary.",
+   "Dawid cannot take the budget report.",
+   "Chiara cannot take the event logistics.",
+   "Chiara cannot take the budget report."
+  ],
+  "question": "Four colleagues — Bruno, Chiara, Dawid, Filip — must each take exactly one of four tasks: the budget report, the event logistics, the website update and the press summary. Taking all the constraints below into account, who must take the press summary?",
+  "options": [
+   "Dawid",
+   "Chiara",
+   "Bruno",
+   "Filip"
+  ],
+  "answer": "A",
+  "explanation": "List, for each task, who is still allowed to take it, and start with the task or person that has the fewest possibilities; each forced choice removes that person from the other tasks. The only allocation that satisfies every constraint is: budget report — Filip; event logistics — Bruno; website update — Chiara; press summary — Dawid. So the press summary must go to Dawid.",
+  "difficulty": "advanced",
+  "id": "PO-19"
+ },
+ {
+  "kind": "assign",
+  "constraints": [
+   "Filip cannot take the budget report.",
+   "Dawid cannot take the press summary.",
+   "Eleni must take either the press summary or the budget report.",
+   "Dawid cannot take the budget report.",
+   "Filip cannot take the event logistics.",
+   "Dawid cannot take the event logistics."
+  ],
+  "question": "Four colleagues — Dawid, Filip, Eleni, Chiara — must each take exactly one of four tasks: the budget report, the event logistics, the website update and the press summary. Taking all the constraints below into account, who must take the press summary?",
+  "options": [
+   "Chiara",
+   "Dawid",
+   "Filip",
+   "Eleni"
+  ],
+  "answer": "C",
+  "explanation": "List, for each task, who is still allowed to take it, and start with the task or person that has the fewest possibilities; each forced choice removes that person from the other tasks. The only allocation that satisfies every constraint is: budget report — Eleni; event logistics — Chiara; website update — Dawid; press summary — Filip. So the press summary must go to Filip.",
+  "difficulty": "advanced",
+  "id": "PO-20"
+ },
+ {
+  "kind": "assign",
+  "constraints": [
+   "Filip cannot take the event logistics.",
+   "Filip cannot take the press summary.",
+   "Anna cannot take the press summary.",
+   "Bruno cannot take the press summary.",
+   "Bruno cannot take the website update.",
+   "Bruno cannot take the event logistics."
+  ],
+  "question": "Four colleagues — Dawid, Anna, Bruno, Filip — must each take exactly one of four tasks: the budget report, the event logistics, the website update and the press summary. Taking all the constraints below into account, who must take the event logistics?",
+  "options": [
+   "Filip",
+   "Bruno",
+   "Dawid",
+   "Anna"
+  ],
+  "answer": "D",
+  "explanation": "List, for each task, who is still allowed to take it, and start with the task or person that has the fewest possibilities; each forced choice removes that person from the other tasks. The only allocation that satisfies every constraint is: budget report — Bruno; event logistics — Anna; website update — Filip; press summary — Dawid. So the event logistics must go to Anna.",
+  "difficulty": "advanced",
+  "id": "PO-21"
+ },
+ {
+  "kind": "assign",
+  "constraints": [
+   "Anna cannot take the press summary.",
+   "Anna cannot take the budget report.",
+   "Chiara cannot take the press summary.",
+   "Chiara cannot take the website update.",
+   "Dawid must take either the budget report or the press summary.",
+   "Anna cannot take the website update."
+  ],
+  "question": "Four colleagues — Chiara, Dawid, Filip, Anna — must each take exactly one of four tasks: the budget report, the event logistics, the website update and the press summary. Taking all the constraints below into account, who must take the budget report?",
+  "options": [
+   "Anna",
+   "Dawid",
+   "Chiara",
+   "Filip"
+  ],
+  "answer": "C",
+  "explanation": "List, for each task, who is still allowed to take it, and start with the task or person that has the fewest possibilities; each forced choice removes that person from the other tasks. The only allocation that satisfies every constraint is: budget report — Chiara; event logistics — Anna; website update — Filip; press summary — Dawid. So the budget report must go to Chiara.",
+  "difficulty": "advanced",
+  "id": "PO-22"
+ },
+ {
+  "kind": "assign",
+  "constraints": [
+   "Bruno cannot take the website update.",
+   "Bruno cannot take the press summary.",
+   "Filip cannot take the website update.",
+   "Filip cannot take the budget report.",
+   "Filip cannot take the press summary.",
+   "Anna cannot take the website update."
+  ],
+  "question": "Four colleagues — Dawid, Filip, Bruno, Anna — must each take exactly one of four tasks: the budget report, the event logistics, the website update and the press summary. Taking all the constraints below into account, who must take the press summary?",
+  "options": [
+   "Filip",
+   "Anna",
+   "Bruno",
+   "Dawid"
+  ],
+  "answer": "B",
+  "explanation": "List, for each task, who is still allowed to take it, and start with the task or person that has the fewest possibilities; each forced choice removes that person from the other tasks. The only allocation that satisfies every constraint is: budget report — Bruno; event logistics — Filip; website update — Dawid; press summary — Anna. So the press summary must go to Anna.",
+  "difficulty": "advanced",
+  "id": "PO-23"
+ },
+ {
+  "kind": "assign",
+  "constraints": [
+   "Anna cannot take the event logistics.",
+   "Anna cannot take the website update.",
+   "Filip cannot take the event logistics.",
+   "Eleni cannot take the event logistics.",
+   "Filip cannot take the budget report.",
+   "Anna cannot take the budget report."
+  ],
+  "question": "Four colleagues — Eleni, Filip, Anna, Dawid — must each take exactly one of four tasks: the budget report, the event logistics, the website update and the press summary. Taking all the constraints below into account, who must take the budget report?",
+  "options": [
+   "Eleni",
+   "Anna",
+   "Dawid",
+   "Filip"
+  ],
+  "answer": "A",
+  "explanation": "List, for each task, who is still allowed to take it, and start with the task or person that has the fewest possibilities; each forced choice removes that person from the other tasks. The only allocation that satisfies every constraint is: budget report — Eleni; event logistics — Dawid; website update — Filip; press summary — Anna. So the budget report must go to Eleni.",
+  "difficulty": "advanced",
+  "id": "PO-24"
+ }
+]

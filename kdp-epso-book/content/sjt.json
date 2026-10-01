@@ -1,0 +1,506 @@
+[
+  {
+    "id": "S-01",
+    "competency": "Working with others",
+    "role": "AST",
+    "scenario": "You are an assistant in a unit of a Directorate-General and share responsibility for the unit’s functional mailbox with your colleague Aoife, following an agreed weekly rota. Over the past three weeks, requests that arrive on Aoife’s days have often gone unanswered, and several external stakeholders have now written to you directly to complain about delays. You know that Aoife recently took on extra work for a high-profile file and seems stretched. Your head of unit is not aware of the problem. Your own workload is also full, but the backlog in the mailbox keeps growing.",
+    "options": [
+      "Reply to the stakeholders who complained, explaining that the delays occurred on days when the mailbox was covered by a colleague, so they know you are not responsible.",
+      "Clear the most urgent pending requests yourself this week so that stakeholders are not kept waiting any longer, and then let your head of unit know that the mailbox is under strain.",
+      "Talk privately with Aoife, acknowledging her extra workload, and propose a temporary rota adjustment that the two of you then put to your head of unit.",
+      "Leave the requests that arrive on Aoife’s days for her to deal with, since the rota is clear, and concentrate on keeping your own days up to date."
+    ],
+    "most": "C",
+    "least": "A",
+    "ranking": "C > B > D > A",
+    "explanations": {
+      "A": "Least effective. Blaming a colleague in front of external stakeholders damages trust within the team and the image of the service, and does nothing to clear the backlog.",
+      "B": "Fairly effective. It maintains the service to stakeholders and alerts the manager, but it goes round Aoife rather than working with her, so the underlying problem may continue.",
+      "C": "Most effective. It shows good collaboration: it addresses the problem directly but supportively with the colleague, looks for a practical shared solution and involves the manager in agreeing the change.",
+      "D": "Weak. Sticking rigidly to the rota ignores a shared responsibility and lets the service to stakeholders keep deteriorating, although it at least avoids conflict."
+    }
+  },
+  {
+    "id": "S-02",
+    "competency": "Analysing & problem solving",
+    "role": "AD",
+    "scenario": "You are a policy officer preparing a briefing on the uptake of an EU funding programme for small businesses. Monitoring data show that applications from three Member States fell sharply last year. Your colleague Jonas says the reason is obvious: businesses in those countries lost interest after the eligibility rules were tightened. Your director needs the briefing in ten days and wants to know whether the programme design should be revised. While looking at the data, you notice that the same three countries also replaced their national contact points for the programme during the same period.",
+    "options": [
+      "Compare the timing of both changes with the monthly application figures and ask the new national contact points for their view before concluding on the cause.",
+      "Present Jonas’s explanation as the most likely cause in the briefing, adding a footnote that other factors may also have played a role.",
+      "Report the fall in applications and set out both possible explanations neutrally, recommending that an external evaluation be commissioned to establish the cause before any change is made to the programme design.",
+      "Recommend that the eligibility rules be relaxed again, since that change is well documented and reversing it is the quickest way to restore applications from those countries."
+    ],
+    "most": "A",
+    "least": "D",
+    "ranking": "A > C > B > D",
+    "explanations": {
+      "A": "Most effective. It tests the competing explanations against the evidence within the time available, which is exactly what sound analysis requires before advising on a design change.",
+      "B": "Weak. It adopts an untested explanation and only hedges in a footnote, so the director may take a decision on a cause that has not been verified.",
+      "C": "Fairly effective. It is balanced and transparent, but it defers analysis that could largely be done within the ten days, so the briefing gives the director less than it could.",
+      "D": "Least effective. It recommends a costly policy change on the basis of an unverified assumption, ignoring a plausible alternative cause."
+    }
+  },
+  {
+    "id": "S-03",
+    "competency": "Prioritising & organising",
+    "role": "AST",
+    "scenario": "You work as a secretary in a unit of an EU agency. At 9:00 on Monday your inbox contains, in order of arrival: several routine meeting invitations to file; a reminder that last month’s mission expense claims must be submitted by Friday; a message from your colleague Marie asking for help formatting a long report ‘whenever you have time’; and, received last, a request from your head of unit to book a meeting room for a 40-person stakeholder workshop on Thursday. Rooms of that size are usually booked several days ahead. You have no other fixed commitments this week.",
+    "options": [
+      "Complete the mission expense claims first, as they have a firm deadline, then book the workshop room and help Marie with her report.",
+      "Start with Marie’s report, as it is the largest task, and leave both the room booking and the expense claims until the formatting is finished.",
+      "Deal with the messages strictly in the order in which they arrived, finishing each one before moving on to the next, so that nothing is overlooked and every request is treated equally.",
+      "Book the room now, schedule the expense claims for midweek, give Marie a realistic time for her report and file the invitations when convenient."
+    ],
+    "most": "D",
+    "least": "B",
+    "ranking": "D > A > C > B",
+    "explanations": {
+      "A": "Fairly effective. The claims deadline is respected, but the most time-sensitive task is the room booking, and delaying it risks there being no suitable room for the workshop.",
+      "B": "Least effective. It puts the one explicitly non-urgent request first and leaves both time-bound tasks waiting behind a long job, risking both Thursday’s workshop and the Friday deadline.",
+      "C": "Weak. Working in arrival order is systematic and protects the Friday deadline, but it ignores urgency: the room booking, received last, would be handled last and possibly too late.",
+      "D": "Most effective. It deals first with the task where delay has the greatest consequences and plans the remaining tasks against their deadlines, keeping Marie informed."
+    }
+  },
+  {
+    "id": "S-04",
+    "competency": "Communicating",
+    "role": "AD",
+    "scenario": "You are a policy officer asked to present the results of a technical evaluation of water-quality monitoring to a meeting of national officials. Many of them are not specialists, and most are working in their second or third language. The evaluation report runs to 120 pages and is full of statistical tables. You have 15 minutes on the agenda. Your colleague Piotr, who co-authored the report, suggests showing as many of the tables as possible ‘so nobody can say we hid anything’.",
+    "options": [
+      "Read out the executive summary of the report word for word, since its wording has already been approved and this avoids any risk of misrepresenting the findings.",
+      "Present the three main findings and what they mean for national authorities in plain language, with a simple chart or two, and point to the full report for detail.",
+      "Follow Piotr’s suggestion and show as many of the statistical tables as fit into the 15 minutes, since completeness protects the team from any later criticism.",
+      "Circulate the full report a few days before the meeting and use the 15 minutes to answer questions on it."
+    ],
+    "most": "B",
+    "least": "C",
+    "ranking": "B > D > A > C",
+    "explanations": {
+      "A": "Weak. The content is accurate, but reading out approved text is not adapted to a non-specialist, multilingual audience and is unlikely to hold attention or aid understanding.",
+      "B": "Most effective. It tailors the message to the audience, focuses on what matters to them and stays transparent by signposting the full evidence.",
+      "C": "Least effective. Overloading a non-specialist audience with tables obscures the key messages; transparency is better ensured by making the full report available.",
+      "D": "Fairly effective. It is transparent and gives participants a chance to raise their concerns, but few non-specialists will work through a 120-page report, so the key messages may not reach everyone."
+    }
+  },
+  {
+    "id": "S-05",
+    "competency": "Resilience",
+    "role": "AST",
+    "scenario": "You work in the finance team of an EU agency, processing payments to contractors. During the busy year-end closing period, the payment system is down for a full day. When it comes back, you face a backlog of 60 invoices, several of them close to their legal payment deadline. A contractor, Henrik, phones you and speaks aggressively, saying his invoice is late and threatening to make a formal complaint. You feel tired and stressed after several weeks of overtime.",
+    "options": [
+      "Stay calm, acknowledge his frustration, check his invoice and its legal deadline, give him a realistic payment date, and then sort the backlog by deadline.",
+      "Process his invoice straight away so that he stops calling and does not make a formal complaint, even though other invoices are closer to their deadlines.",
+      "Explain firmly that the delay was caused by a system failure that is not your responsibility, and that a complaint will not make the payment go any faster.",
+      "Tell him politely that you are dealing with a large backlog and will call him back, then ask your team leader whether extra help can be found."
+    ],
+    "most": "A",
+    "least": "C",
+    "ranking": "A > D > B > C",
+    "explanations": {
+      "A": "Most effective. It shows composure under pressure, handles the caller professionally with concrete information and puts the backlog into a sensible order.",
+      "B": "Weak. It gives way to pressure rather than to objective priorities, which may cause other invoices to miss their legal deadline.",
+      "C": "Least effective. The defensive, dismissive reply is likely to escalate the conflict and lead to a complaint, and it reflects poorly on the agency.",
+      "D": "Fairly effective. It stays courteous and seeks support for an unmanageable load, but leaves the caller without any concrete information."
+    }
+  },
+  {
+    "id": "S-06",
+    "competency": "Leadership",
+    "role": "AD",
+    "scenario": "You were appointed team leader of six policy officers in a Directorate-General a month ago. You notice that Luca, an experienced member of the team, regularly dominates meetings and dismisses ideas from newer colleagues; two of them have since stopped contributing, and one has told you privately that she no longer feels her views are welcome. Luca’s technical work is excellent and he is well respected by external stakeholders. The team must soon prepare a joint proposal that needs input from everyone.",
+    "options": [
+      "Hold back from intervening for now, as Luca’s expertise is essential for the proposal and challenging him so early could harm your working relationship.",
+      "Introduce a meeting format in which each member presents their input in turn before open discussion, without raising the issue with Luca directly.",
+      "Ask the newer colleagues to send you their ideas in writing so that you can make sure they are reflected in the proposal.",
+      "Speak to Luca privately: recognise his expertise, explain the effect his behaviour is having and ask him to help bring out newer colleagues’ ideas."
+    ],
+    "most": "D",
+    "least": "A",
+    "ranking": "D > B > C > A",
+    "explanations": {
+      "A": "Least effective. Avoiding the issue lets disengagement grow and signals that the behaviour is acceptable, which undermines the new team leader’s authority.",
+      "B": "Fairly effective. A structured format gives everyone a voice, but without feedback Luca may not change his behaviour outside the format.",
+      "C": "Weak. Ideas are captured, but contributors are sidelined and the team dynamic that needs to change is left untouched.",
+      "D": "Most effective. Direct, respectful feedback combined with a constructive role for Luca addresses the root cause while preserving his commitment, which is what good leadership requires."
+    }
+  },
+  {
+    "id": "S-07",
+    "competency": "Delivering quality & results",
+    "role": "AST",
+    "scenario": "You are an assistant responsible for compiling a register of grant agreements that will be published on the agency’s website next week. During a final check, you find that around ten entries show beneficiary names or amounts that do not match the signed agreements. The data were entered by another team several months ago. Your head of unit, Elena, has stressed that publication must go ahead on schedule. Correcting the ten entries would take you about half a day.",
+    "options": [
+      "Correct the ten entries yourself against the signed agreements and publish the register on schedule without mentioning the issue, since the problem has now been solved.",
+      "Correct the ten entries, spot-check other entries for similar errors, and tell Elena and the other team what you found and corrected.",
+      "Tell Elena about the errors and suggest postponing publication by two weeks, so that the other team, which entered the data, can recheck the entire register against the signed agreements.",
+      "Publish the register as planned, since the data came from another team and its accuracy is their responsibility."
+    ],
+    "most": "B",
+    "least": "D",
+    "ranking": "B > A > C > D",
+    "explanations": {
+      "A": "Fairly effective. The known errors are fixed and the deadline is met, but other errors may remain undetected and the source of the problem is not reported, so it may recur.",
+      "B": "Most effective. It combines accuracy with timeliness: errors are fixed, the risk of further errors is checked proportionately, and the people concerned can address the cause.",
+      "C": "Weak. Raising the issue is right, but a two-week delay to recheck everything is disproportionate when the errors can be corrected within the schedule.",
+      "D": "Least effective. Knowingly publishing incorrect data damages the agency’s credibility; taking ownership of the quality of one’s output is central to this competency."
+    }
+  },
+  {
+    "id": "S-08",
+    "competency": "Learning & development",
+    "role": "AD",
+    "scenario": "You are a policy officer who has just moved to a unit dealing with digital policy, an area you know little about. Your new head of unit, Katarina, has asked you to represent the unit at an inter-service working group in six weeks’ time. Colleagues often use technical terms you do not yet understand, and you are reluctant to keep asking questions because you feel you ought to know the answers already.",
+    "options": [
+      "Read the unit’s key policy documents and recent working-group minutes in your own time, including evenings, over the coming weeks so that you are well prepared for the first meeting.",
+      "Avoid asking questions so as not to appear underqualified, and prepare speaking notes from the relevant documents the evening before each meeting.",
+      "Set yourself a six-week learning plan combining reading, a short weekly catch-up with an experienced colleague and relevant training, and check its priorities with Katarina.",
+      "Ask Katarina whether an experienced colleague could accompany you to the first working-group meetings, so that the unit is properly represented while you are still getting up to speed."
+    ],
+    "most": "C",
+    "least": "B",
+    "ranking": "C > A > D > B",
+    "explanations": {
+      "A": "Fairly effective. It shows initiative in self-study, but working alone and without guidance is slower and may miss what matters most for the working group.",
+      "B": "Least effective. Avoiding questions out of embarrassment blocks learning, and last-minute preparation leaves you poorly equipped to represent the unit.",
+      "C": "Most effective. It takes ownership of development in a structured way, uses colleagues’ expertise and aligns learning with the unit’s needs.",
+      "D": "Weak. Support at the first meetings is sensible, but it does not address the knowledge gap and relies on others to compensate for it."
+    }
+  },
+  {
+    "id": "S-09",
+    "competency": "Analysing & problem solving",
+    "role": "AST",
+    "scenario": "You work on the IT service desk of an EU agency. Over the past two days you have received eleven tickets from staff who cannot open shared files in the document management system. Each time, the standard fix of clearing the cache and restarting works for a while, but several users have called back the next day with the same problem. From the ticket details, it looks as if most of the affected users work on the same floor, although you have not checked this systematically.",
+    "options": [
+      "Advise users on that floor to save their files locally rather than in the document management system until the problem disappears, to avoid further disruption.",
+      "Review the eleven tickets together for common factors such as location or device type, and pass your findings to the second-level infrastructure team.",
+      "Escalate all eleven tickets to the second-level infrastructure team straight away, explaining that the standard fix only works temporarily and that users are becoming frustrated with the repeated interruptions.",
+      "Continue applying the standard fix and add a note to the knowledge base that users may need to repeat it."
+    ],
+    "most": "B",
+    "least": "A",
+    "ranking": "B > C > D > A",
+    "explanations": {
+      "A": "Least effective. It creates a workaround that bypasses document management rules and risks data loss, while nobody investigates the cause.",
+      "B": "Most effective. It looks for patterns across the evidence and gives specialists the analysis they need to find the root cause quickly.",
+      "C": "Fairly effective. Escalation brings in the right experts, but without the pattern analysis they will start from scratch and the diagnosis will take longer.",
+      "D": "Weak. It treats the symptom repeatedly and normalises a recurring fault instead of trying to solve it."
+    }
+  },
+  {
+    "id": "S-10",
+    "competency": "Working with others",
+    "role": "AD",
+    "scenario": "You are a policy officer coordinating the drafting of a joint report with colleagues from two other Directorates-General. Ana, who represents one of them, regularly sends her comments after the agreed deadlines, and her unit’s written positions sometimes contradict what was agreed in meetings. The representatives of the third Directorate-General are becoming frustrated. Several sections of the report still depend on input from Ana’s unit, and the final report is due to senior management in three weeks.",
+    "options": [
+      "Send all contributors a revised timetable with firm deadlines and circulate written conclusions after each meeting, making clear that comments received late cannot be taken into account.",
+      "Ask your head of unit to raise the problem with Ana’s head of unit.",
+      "Finalise the report on the basis of what was agreed in meetings, set aside Ana’s late comments and submit it to senior management by the agreed date.",
+      "Call Ana to understand her unit’s constraints, and agree with her a realistic timetable and a written confirmation of positions after each meeting."
+    ],
+    "most": "D",
+    "least": "C",
+    "ranking": "D > A > B > C",
+    "explanations": {
+      "A": "Fairly effective. Clear deadlines and written conclusions help, but a one-size-fits-all message does not uncover why Ana is struggling and may sound confrontational.",
+      "B": "Weak. Escalating before talking to the colleague is premature and may sour relations between the services.",
+      "C": "Least effective. Excluding a partner service’s input undermines the joint nature of the report and is likely to cause disagreement later at a higher level.",
+      "D": "Most effective. It builds a working relationship by understanding the other service’s constraints and agrees practical arrangements that keep everyone on board."
+    }
+  },
+  {
+    "id": "S-11",
+    "competency": "Communicating",
+    "role": "AST",
+    "scenario": "You work in an HR support team. Mihai, a newly recruited colleague who has moved from another country, emails you with several questions about his installation allowance and the documents he must provide. The rules are set out in a long internal guide written in legal language. Mihai says he has read the guide but found it confusing, and he is worried that he may miss the deadline for submitting his documents, which is in three weeks.",
+    "options": [
+      "Send him the relevant pages of the guide with the key passages highlighted.",
+      "Phone him the same day to walk him through the procedure step by step and answer all his questions directly, since a conversation is quicker and more reassuring than another email.",
+      "Reply with a short email listing the documents needed, the deadline and next steps, linking to the relevant part of the guide and offering a call if needed.",
+      "Reply that all the information he needs is in the guide, which applies to everyone, and that it is his responsibility to read it carefully and meet the deadline."
+    ],
+    "most": "C",
+    "least": "D",
+    "ranking": "C > B > A > D",
+    "explanations": {
+      "A": "Weak. It is a little more helpful than pointing to the guide, but he has already said the legal text is confusing, so the core problem remains.",
+      "B": "Fairly effective. A call is personal and lets him ask questions, but he is left without a written record of the documents and deadline.",
+      "C": "Most effective. It translates the rules into clear, actionable information, gives a written reference and keeps the door open for further questions.",
+      "D": "Least effective. The reply is unhelpful and dismissive towards a new colleague who has explicitly asked for clarification, and it risks him missing the deadline."
+    }
+  },
+  {
+    "id": "S-12",
+    "competency": "Prioritising & organising",
+    "role": "AD",
+    "scenario": "You are a policy officer. Your head of unit has asked you to finalise a position paper for a meeting with Member State experts in two weeks. This morning, the director’s office asks you for urgent input to a briefing for senior management, needed within 48 hours. At the same time, a colleague asks you to review a draft consultation document ‘by the end of the week’. You realise you cannot do all three tasks properly within the time available.",
+    "options": [
+      "Deliver the briefing input first, tell your head of unit how this affects the position paper, and agree a later review date with your colleague or suggest another reviewer.",
+      "Divide your time equally between the three tasks over the coming days so that each of them makes steady progress and nobody is kept waiting.",
+      "Explain the situation to your head of unit and ask her to decide which of the three tasks should take priority, since she has the best overall view of the unit’s commitments.",
+      "Do the briefing input first, then the position paper, and tell your colleague today that you will look at the review only if time allows."
+    ],
+    "most": "A",
+    "least": "B",
+    "ranking": "A > C > D > B",
+    "explanations": {
+      "A": "Most effective. It sets priorities by urgency and importance, and manages expectations early with everyone affected.",
+      "B": "Least effective. Spreading effort evenly ignores urgency and makes it likely that the 48-hour briefing will be late or of poor quality.",
+      "C": "Fairly effective. Involving the manager in a genuine conflict of priorities is reasonable, but the order here is fairly clear and you should come with a proposal rather than leave the whole decision to her.",
+      "D": "Weak. The order is sensible and the colleague is warned, but no firm date or alternative reviewer is offered."
+    }
+  },
+  {
+    "id": "S-13",
+    "competency": "Delivering quality & results",
+    "role": "AD",
+    "scenario": "You are a team leader in a unit managing a call for proposals. One week before the evaluation results must be sent to applicants, an evaluator, Sofia, alerts you that two evaluation reports contain identical paragraphs for different proposals, suggesting that text was copied and pasted. The scores appear consistent with the comments, but you have not checked this in detail. Postponing the notification would mean departing from the timetable published in the call.",
+    "options": [
+      "Send the results on time as published in the call, and note the issue so that guidance for evaluators on writing comments can be improved for the next call.",
+      "Edit the duplicated paragraphs yourself so that the two reports read differently, without changing the scores, and send the results on time.",
+      "Ask Sofia, who spotted the problem, to check all the evaluation reports for similar duplicated text before any results are sent, so that applicants receive reliable feedback across the whole call.",
+      "Have the two reports checked against the proposals at once, with the evaluators revising comments if needed, and assess whether the timetable can still be met."
+    ],
+    "most": "D",
+    "least": "B",
+    "ranking": "D > C > A > B",
+    "explanations": {
+      "A": "Weak. Meeting the deadline matters, but applicants may receive feedback that does not reflect their proposal, exposing the unit to complaints.",
+      "B": "Least effective. Cosmetic editing by someone who did not evaluate the proposals compromises the integrity of the evaluation and hides rather than fixes the problem.",
+      "C": "Fairly effective. It takes quality seriously, but checking every report may be disproportionate, and it hands the whole task to the person who simply raised the alert; giving one evaluator access to all other evaluations may also breach the confidentiality rules of the evaluation.",
+      "D": "Most effective. It targets the identified quality problem quickly through the proper people and balances accuracy with the published timetable."
+    }
+  },
+  {
+    "id": "S-14",
+    "competency": "Leadership",
+    "role": "AST",
+    "scenario": "You are the senior assistant coordinating a team of four assistants in a directorate. The director has decided that meeting files will now be managed through a new shared electronic workflow instead of paper folders. Two assistants who have worked in the directorate for many years are openly sceptical and continue to prepare paper files in parallel. This is creating duplicated work and confusion about which version of a file is current, and the director’s office has started to notice.",
+    "options": [
+      "Meet the team to explain the reasons for the change and hear concerns, agree a firm switch-over date, and pair each sceptic with a confident colleague.",
+      "Report the two colleagues to the director, explaining the duplication their paper files are causing, so that she can instruct them clearly to stop.",
+      "Organise a hands-on training session on the new workflow for the whole team.",
+      "Let the two colleagues keep their paper files for now while the rest of the team uses the new workflow, as forcing the change could damage team spirit."
+    ],
+    "most": "A",
+    "least": "D",
+    "ranking": "A > C > B > D",
+    "explanations": {
+      "A": "Most effective. It leads the change by giving it meaning, hearing objections, setting a clear expectation and providing peer support.",
+      "B": "Weak. It may force compliance, but escalating without first trying to bring colleagues on board damages trust and does not build commitment to the change.",
+      "C": "Fairly effective. Training addresses possible skills gaps, but on its own it may not tackle resistance or end the parallel paper system.",
+      "D": "Least effective. Tolerating two systems prolongs confusion and duplication and fails to implement the director’s decision."
+    }
+  },
+  {
+    "id": "S-15",
+    "competency": "Learning & development",
+    "role": "AST",
+    "scenario": "You are a finance assistant. In your annual appraisal, your reporting officer, Nils, mentions that several of your payment files were returned by the verification team during the year, mostly because supporting documents were missing. The returned files had to be corrected and resubmitted, which caused some payment delays. You were not aware of this pattern. You feel the comment is somewhat unfair, because the verification rules were changed during the year and the change was not well communicated.",
+    "options": [
+      "Explain during the appraisal that the verification rules changed during the year without proper notice, and ask for the comment to be reworded to reflect this.",
+      "Ask the verification team for examples of returned files, identify the recurring gaps and build a checklist based on the current rules, asking about relevant training.",
+      "Disregard the feedback, since the errors resulted from a rule change that was outside your control.",
+      "Accept the feedback openly in the appraisal and ask Nils to let you know whenever a file is returned in future, so that you can correct any problems as soon as they arise."
+    ],
+    "most": "B",
+    "least": "C",
+    "ranking": "B > D > A > C",
+    "explanations": {
+      "A": "Weak. Giving context is legitimate, but focusing on the wording of the appraisal rather than on improvement is defensive.",
+      "B": "Most effective. It turns feedback into concrete learning, uses the people best placed to help and prevents the same errors recurring.",
+      "C": "Least effective. Dismissing feedback means nothing changes and files will continue to be returned under the current rules.",
+      "D": "Fairly effective. Accepting feedback openly is positive, but relying on future alerts is passive and does not address the existing gaps."
+    }
+  },
+  {
+    "id": "S-16",
+    "competency": "Resilience",
+    "role": "AD",
+    "scenario": "You are a policy officer who has spent four months drafting a legislative proposal on product labelling. At a late stage, senior management decides to change the approach substantially in response to new political priorities, and much of your work will not be used. You have been asked to produce a revised draft within six weeks. You feel disappointed, and some colleagues in the unit are openly complaining about the decision.",
+    "options": [
+      "Tell your colleagues that the decision shows management does not value the team’s work, and do no more than the minimum required on the revised draft.",
+      "Wait until the new approach has been confirmed in writing by senior management before starting, in case it changes again.",
+      "Acknowledge your disappointment to yourself, identify which parts of your earlier analysis can be reused, and agree a plan for the revised draft with your head of unit.",
+      "Start the revised draft from scratch immediately, setting the earlier version aside entirely, so that you are sure of meeting the six-week deadline and are not influenced by the old approach."
+    ],
+    "most": "C",
+    "least": "A",
+    "ranking": "C > D > B > A",
+    "explanations": {
+      "A": "Least effective. It feeds negativity in the team and lowers the quality of your own work, showing poor adaptability to legitimate changes in direction.",
+      "B": "Weak. Some clarity is useful, but waiting passively loses valuable time from a tight deadline.",
+      "C": "Most effective. It recognises the setback, recovers quickly, builds on what still has value and plans the new work constructively.",
+      "D": "Fairly effective. It shows energy and adaptability, but discards useful earlier work and starts without agreeing the new direction with the manager."
+    }
+  },
+  {
+    "id": "S-17",
+    "competency": "Analysing & problem solving",
+    "role": "AD",
+    "scenario": "You are a programme officer in an EU delegation in a partner country, assessing whether an EU-funded training programme for local customs officials should be extended. The implementing partner’s final report is very positive, citing 400 officials trained and high satisfaction scores. However, an official you meet informally mentions that many of those trained have since moved to posts unrelated to customs. Your recommendation on the extension is due in a month.",
+    "options": [
+      "Recommend extending the programme, given the strong results in the report, on condition that the next phase includes systematic monitoring of whether trained staff remain in relevant posts.",
+      "Ask the implementing partner to clarify how many of the trained officials are still in customs posts.",
+      "Recommend against extension on the basis of the official’s comment, since it suggests that the training has had no lasting effect on the customs administration.",
+      "Request data from the customs administration on where trained staff now work and on relevant performance indicators, and compare them with the report."
+    ],
+    "most": "D",
+    "least": "C",
+    "ranking": "D > B > A > C",
+    "explanations": {
+      "A": "Weak. It builds in a safeguard for the future but commits funds before checking a credible concern about the current programme’s impact.",
+      "B": "Fairly effective. It follows up the concern, but relies on the party with an interest in a positive result rather than on independent evidence.",
+      "C": "Least effective. It draws a firm conclusion from a single anecdote and ignores the available evidence, which is the opposite of sound analysis.",
+      "D": "Most effective. It seeks independent data to test both the report and the anecdote, and judges the programme on outcomes rather than outputs."
+    }
+  },
+  {
+    "id": "S-18",
+    "competency": "Communicating",
+    "role": "AD",
+    "scenario": "You are a team leader. Your team has just been told that a reorganisation will merge it with another team, but decisions on individual roles and locations will only be taken in two months. Rumours are spreading, and two team members, Elif and Bram, have asked you directly whether their jobs are at risk. Your head of unit has said you may share what has been officially announced but should not speculate about the outcome.",
+    "options": [
+      "Hold a team meeting to share what is known and what is still undecided, say when more information is expected, and invite questions.",
+      "Forward the official announcement to the team by email without further comment.",
+      "Answer Elif and Bram individually and in confidence, telling them exactly what has been announced and that you will keep them informed as decisions are taken.",
+      "Reassure the team that nobody’s job will be affected, to stop the rumours and keep morale up."
+    ],
+    "most": "A",
+    "least": "D",
+    "ranking": "A > C > B > D",
+    "explanations": {
+      "A": "Most effective. It communicates openly and consistently with the whole team, is honest about uncertainty and creates a channel for questions.",
+      "B": "Weak. It is accurate, but impersonal and leaves people’s concerns unaddressed, so rumours are likely to continue.",
+      "C": "Fairly effective. It responds honestly to those who asked, but the rest of the team receives no information and may hear different versions.",
+      "D": "Least effective. Making promises you cannot guarantee goes beyond what you are authorised to say and will destroy trust if they prove untrue."
+    }
+  },
+  {
+    "id": "S-19",
+    "competency": "Prioritising & organising",
+    "role": "AST",
+    "scenario": "You are the assistant organising a two-day conference for 150 participants run by your unit. With three weeks to go, you realise that the catering contract, the interpretation booking and the participants’ travel reimbursements all need attention, and the deadlines for confirming final numbers with the caterer and the interpreters fall in the same week. Your colleague Joana has offered to help, but she is new to the unit and has no experience of organising events.",
+    "options": [
+      "Deal with each issue as suppliers contact you, since they will remind you of their deadlines.",
+      "Hand the interpretation booking over to Joana, as it is a self-contained task, so that you can concentrate fully on the catering contract and the reimbursements.",
+      "Draw up a timeline of remaining tasks and deadlines, give Joana well-defined tasks such as collecting travel details, and keep the supplier confirmations yourself.",
+      "Handle all the tasks yourself to avoid mistakes at this critical stage, working longer hours over the next three weeks and thanking Joana for her kind offer of help."
+    ],
+    "most": "C",
+    "least": "A",
+    "ranking": "C > D > B > A",
+    "explanations": {
+      "A": "Least effective. Relying on suppliers to set the pace is reactive and risks missed deadlines and last-minute problems; travel reimbursements have no supplier to send reminders at all.",
+      "B": "Weak. Delegating is right in principle, but giving a critical, complex booking to someone without experience creates a real risk of failure.",
+      "C": "Most effective. It plans the work against deadlines and delegates tasks matched to the colleague’s experience, while keeping critical items under control.",
+      "D": "Fairly effective. The tasks are likely to be done, but it is not sustainable, wastes available help and leaves no margin if something goes wrong."
+    }
+  },
+  {
+    "id": "S-20",
+    "competency": "Resilience",
+    "role": "AST",
+    "scenario": "You work on the IT service desk. A major update to the email system was rolled out overnight, and by mid-morning thirty callers are waiting in the phone queue. Your two colleagues are off sick. Many callers have the same known problem, for which there is a simple workaround. Several are impatient, and an assistant to a director insists that her issue must be dealt with first. You realise you will not be able to answer everyone today.",
+    "options": [
+      "Keep working through the queue as quickly as you can, staying polite and patient with every caller, and stay late if necessary so that as many people as possible are helped today.",
+      "Inform your team leader, post an intranet notice on the known issue and workaround to reduce calls, and then handle calls by business impact.",
+      "Deal with the director’s assistant first because of her director’s seniority, then continue with the queue.",
+      "Switch the phone line to ‘unavailable’ for an hour so that you can recover your composure and work through the backlog of email requests instead."
+    ],
+    "most": "B",
+    "least": "D",
+    "ranking": "B > A > C > D",
+    "explanations": {
+      "A": "Fairly effective. It shows perseverance and professionalism, but simply working harder does not reduce the overload.",
+      "B": "Most effective. It stays composed, seeks support and finds a smart way to reduce pressure, while applying objective priorities.",
+      "C": "Weak. Giving way to status rather than urgency is unfair to other callers and does little to manage the overall situation.",
+      "D": "Least effective. Withdrawing from the main channel during a crisis leaves users without support and will make the backlog worse."
+    }
+  },
+  {
+    "id": "S-21",
+    "competency": "Working with others",
+    "role": "AST",
+    "scenario": "You work as an assistant in a translation unit, allocating incoming documents to translators according to criteria agreed in the unit. Giulia, a translator, frequently asks you to give her shorter, easier texts, and other assistants often do so because they get on well with her. Kofi, a translator who joined the team recently, has mentioned to you that he always seems to receive the most difficult and urgent documents. Some colleagues are starting to comment on the situation.",
+    "options": [
+      "Apply the agreed criteria to everyone, explaining them politely to Giulia when she asks, and propose sharing the allocation log.",
+      "Continue giving Giulia the texts she prefers, as this keeps relations in the team pleasant.",
+      "Give Kofi easier documents for a while to make up for the imbalance.",
+      "Tell your head of unit that allocation may not be balanced, mentioning Kofi’s remark and colleagues’ comments, and suggest that the criteria be reviewed."
+    ],
+    "most": "A",
+    "least": "B",
+    "ranking": "A > D > C > B",
+    "explanations": {
+      "A": "Most effective. It treats colleagues fairly and respectfully, deals with the issue at your own level and builds trust through transparency.",
+      "B": "Least effective. Favouritism damages team cohesion and fairness, and leaves a newer colleague carrying an unequal share of the work.",
+      "C": "Weak. The intention is good, but it replaces one departure from the criteria with another rather than restoring fair allocation.",
+      "D": "Fairly effective. Raising the issue is legitimate, but it passes to the manager a problem you can largely solve yourself by applying the agreed criteria."
+    }
+  },
+  {
+    "id": "S-22",
+    "competency": "Leadership",
+    "role": "AD",
+    "scenario": "You lead a small team of policy officers working on a public consultation on urban mobility. Nuno, a capable member of the team, has missed two internal deadlines in recent weeks, and his latest draft was well below his usual standard. Colleagues have had to cover for him. You have heard informally that he may be going through a difficult personal situation, but he has not mentioned anything to you.",
+    "options": [
+      "Remind Nuno firmly of the team’s deadlines and the quality expected of his drafts, and arrange a meeting in two weeks to review his progress together.",
+      "Raise the missed deadlines at the next team meeting, so that everyone understands that the same standards apply to all.",
+      "Meet Nuno privately, describe what you have observed and its effect on the team, ask how he is, and agree on adjustments or support together.",
+      "Quietly reassign some of Nuno’s tasks to other team members for a few weeks, without discussing it with him, so that he is under less pressure."
+    ],
+    "most": "C",
+    "least": "B",
+    "ranking": "C > A > D > B",
+    "explanations": {
+      "A": "Fairly effective. It sets clear expectations and follows up, but it does not explore why a normally reliable colleague is struggling.",
+      "B": "Least effective. Criticising an individual in front of the team is demotivating and humiliating, and is unlikely to solve the problem.",
+      "C": "Most effective. It combines honest feedback with genuine care and agrees a way forward, which supports both the person and the team’s results.",
+      "D": "Weak. It may relieve short-term pressure, but it avoids the conversation, may be read as a loss of confidence and adds to colleagues’ workload."
+    }
+  },
+  {
+    "id": "S-23",
+    "competency": "Delivering quality & results",
+    "role": "AST",
+    "scenario": "You are an assistant who prepares the monthly statistics on processed requests for your unit’s management report. The figures come from a shared spreadsheet that several colleagues update. This month the total number of requests is 30% higher than in any previous month, although nothing suggests that the workload has increased significantly. The report is due to your head of unit, Matteo, tomorrow morning, and you have the afternoon available.",
+    "options": [
+      "Ask Matteo whether the report could be delayed by a few days so that every entry in the spreadsheet can be verified with each of the colleagues who made it.",
+      "Send the report on time as requested, adding a note that the total looks unusually high compared with previous months and may need to be checked by the colleagues who entered the data.",
+      "Replace this month’s total with the average of previous months, since the increase is probably an error.",
+      "Check the spreadsheet for duplicates and entry errors, correct what you can verify, and send the report on time, flagging any figures you could not confirm."
+    ],
+    "most": "D",
+    "least": "C",
+    "ranking": "D > B > A > C",
+    "explanations": {
+      "A": "Weak. It protects accuracy but misses the deadline without first trying to resolve the issue in the afternoon available.",
+      "B": "Fairly effective. It is transparent and on time, but passes on data you could have checked yourself, so the report may contain avoidable errors.",
+      "C": "Least effective. Replacing real data with an estimate without saying so produces misleading figures and is a serious breach of reliability.",
+      "D": "Most effective. It takes ownership of the quality of the output, uses the available time to check the data and is transparent about what remains uncertain."
+    }
+  },
+  {
+    "id": "S-24",
+    "competency": "Learning & development",
+    "role": "AD",
+    "scenario": "You are a team leader. After a high-profile stakeholder conference organised by your team, the feedback forms show that participants found the sessions well organised but felt there was too little time for discussion. Two speakers also told you that the briefing they had received beforehand was not useful. Your director, Ingrid, has praised the event overall, and your team is already starting to plan a similar conference for next year.",
+    "options": [
+      "Since the director was satisfied, keep the same format for next year’s conference.",
+      "Hold a short review with the team, using the feedback forms and speakers’ comments, and record specific changes for next year’s planning.",
+      "Write to the two speakers to thank them for their comments and ask what information they would have found useful in their briefing beforehand.",
+      "File the feedback forms and the speakers’ comments in the event folder, with a note to the team, so that they can be consulted when next year’s planning starts."
+    ],
+    "most": "B",
+    "least": "A",
+    "ranking": "B > C > D > A",
+    "explanations": {
+      "A": "Least effective. Relying on general praise ignores clear feedback and misses the opportunity to improve.",
+      "B": "Most effective. It involves the team in learning from experience and turns feedback into concrete improvements for the next event.",
+      "C": "Fairly effective. Seeking specific feedback is useful, but it covers only one issue and does not involve the team in drawing lessons.",
+      "D": "Weak. The feedback is kept, but nobody analyses it or decides on changes, so the same issues may recur."
+    }
+  }
+]

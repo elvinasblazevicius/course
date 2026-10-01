@@ -1,0 +1,502 @@
+[
+  {
+    "id": "V3-01",
+    "difficulty": "foundation",
+    "topic": "Languages – code-switching among bilingual speakers",
+    "passage": "Code-switching, the practice of alternating between two or more languages within a single conversation or even a single sentence, was long regarded by teachers and commentators as evidence that a speaker had not fully mastered either language. Research in sociolinguistics has largely overturned this view. Studies of bilingual communities show that switches tend to follow regular grammatical constraints: speakers rarely switch at points where the word orders of the two languages would clash. Switching also performs social functions. A speaker may change language to signal solidarity with a listener, to quote someone, to mark a shift in topic, or to express an emotion for which one language seems better suited. Fluent bilinguals, rather than learners, are often the most skilful code-switchers, because effective switching requires a command of the grammar of both languages. Attitudes nevertheless vary considerably. In some communities code-switching is an unremarkable feature of everyday speech, while in others it remains stigmatised, particularly in formal settings such as schools and public administration.",
+    "question": "Which of the following statements is correct?",
+    "options": [
+      "Code-switching occurs mainly among speakers who have not yet mastered either of their languages.",
+      "Code-switching is now widely accepted in formal settings such as schools and public administration.",
+      "Where the two languages order words differently, bilinguals seldom switch from one to the other.",
+      "Speakers switch language chiefly because one of their languages lacks the vocabulary needed to express certain emotions."
+    ],
+    "answer": "C",
+    "explanations": {
+      "A": "Incorrect — contradiction. This is the older view the passage says research has overturned; fluent bilinguals are often the most skilful switchers.",
+      "B": "Incorrect — contradiction. The passage says that in some communities code-switching remains stigmatised, particularly in formal settings such as schools and administration.",
+      "C": "Correct. The passage states that speakers rarely switch where the word orders of the two languages would clash.",
+      "D": "Incorrect — partial truth. Expressing emotion is only one of several functions listed, nothing makes it the chief reason, and the text speaks of one language seeming “better suited”, not of a lack of vocabulary."
+    }
+  },
+  {
+    "id": "V3-02",
+    "difficulty": "intermediate",
+    "topic": "Languages – intergenerational transmission and endangerment",
+    "passage": "Linguists generally consider a language to be endangered not when its number of speakers is small, but when children are no longer acquiring it at home. A language spoken by only a few thousand people may be perfectly secure if every new generation learns it, whereas one with hundreds of thousands of speakers can be in serious danger if those speakers are mostly elderly. Intergenerational transmission typically breaks down when parents come to believe that another language offers their children better economic or social prospects. Once this happens, decline can be rapid: within two or three generations, a community may retain only a handful of fluent speakers. Revitalisation efforts have had mixed results. Programmes that immerse young children in the language—such as so-called language nests, in which pre-school care is conducted entirely in the endangered language—have in several cases produced new fluent speakers. By contrast, initiatives limited to documentation, such as recording elderly speakers and compiling dictionaries, preserve valuable knowledge but do not, by themselves, create new speakers.",
+    "question": "Which of the following statements is correct?",
+    "options": [
+      "A language with a large number of speakers may nonetheless be endangered if few children are learning it.",
+      "Language nests have succeeded in producing new fluent speakers wherever they have been introduced.",
+      "Documentation projects are of little value to communities whose language is endangered.",
+      "Parents abandon a heritage language mainly because schools forbid its use."
+    ],
+    "answer": "A",
+    "explanations": {
+      "A": "Correct. The passage states that a language with hundreds of thousands of speakers can be in serious danger if they are mostly elderly, because the key criterion is acquisition by children.",
+      "B": "Incorrect — extreme wording. The passage says immersion programmes produced new speakers “in several cases”, not wherever they were introduced.",
+      "C": "Incorrect — contradiction. Documentation is said to “preserve valuable knowledge”, even though it does not create new speakers.",
+      "D": "Incorrect — outside knowledge. The passage attributes the breakdown to parents’ belief that another language offers better prospects; school prohibitions are not mentioned."
+    }
+  },
+  {
+    "id": "V3-03",
+    "difficulty": "foundation",
+    "topic": "History – the emergence of public libraries",
+    "passage": "For most of history, books were costly, and collections of any size belonged to monasteries, universities, rulers or wealthy individuals. Access was usually restricted to members or to those with personal connections. In the eighteenth century, subscription libraries spread in many European towns: members paid an annual fee and could borrow from a shared stock, which made reading cheaper for the middle classes but still excluded most working people. The idea of a library funded from public revenue and open to all residents free of charge gained ground during the nineteenth century. Its advocates argued that free access to books would encourage self-improvement, serve the growing number of literate workers and, some claimed, reduce drunkenness and crime. Opponents objected to the cost to ratepayers and questioned whether public money should be spent on novels, which were then often regarded as frivolous. Early public libraries frequently kept books behind counters, so that readers had to request each title from a librarian; open shelves, allowing readers to browse freely, became common only later.",
+    "question": "Which of the following statements is correct?",
+    "options": [
+      "Subscription libraries made books freely available to most working people.",
+      "Advocates of public libraries demonstrated that free access to books reduced drunkenness and crime.",
+      "Open shelves on which readers could browse were a feature of public libraries from the outset.",
+      "Some critics doubted that taxpayers’ money should pay for fiction."
+    ],
+    "answer": "D",
+    "explanations": {
+      "A": "Incorrect — contradiction. Subscription libraries charged an annual fee and “still excluded most working people”.",
+      "B": "Incorrect — cause and effect. The passage says only that “some claimed” such an effect; nothing indicates that it was demonstrated.",
+      "C": "Incorrect — contradiction. Early public libraries often kept books behind counters; open shelves “became common only later”.",
+      "D": "Correct. Opponents questioned whether public money should be spent on novels, then often regarded as frivolous."
+    }
+  },
+  {
+    "id": "V3-04",
+    "difficulty": "intermediate",
+    "topic": "Culture – museum admission charges and audiences",
+    "passage": "When museums abolish admission charges, visitor numbers usually rise, sometimes sharply. Studies of such changes suggest, however, that the composition of the audience shifts less than advocates of free entry often hope. Much of the increase tends to come from people who already visited museums—and now come more often—rather than from groups that previously stayed away. Researchers attribute this to the fact that price is only one barrier among several: lack of time, distance and a feeling that museums are “not for people like me” can matter as much as cost. Free admission also has financial consequences. A museum that loses ticket revenue must replace it through public subsidy, donations or income from shops and cafés, which may themselves benefit from higher footfall. Some institutions adopt intermediate approaches, such as free entry on particular evenings or reduced prices for young people, while charging for temporary exhibitions. Evaluations stress that outreach work with schools and community organisations is often more effective at widening participation than price changes alone.",
+    "question": "Which of the following statements is NOT supported by the passage?",
+    "options": [
+      "Abolishing admission charges tends to increase the number of museum visits.",
+      "Free admission mainly draws in people who had not previously visited museums.",
+      "Cost is not the only factor that deters people from visiting museums.",
+      "A museum that stops charging for entry may need other sources of income to make up for the revenue it has lost."
+    ],
+    "answer": "B",
+    "explanations": {
+      "A": "Incorrect — supported. Visitor numbers “usually rise, sometimes sharply” when charges are abolished.",
+      "B": "Correct — not supported. Much of the increase comes from people who already visited museums, rather than from groups that previously stayed away.",
+      "C": "Incorrect — supported. Price is “only one barrier among several”, alongside time, distance and a sense of exclusion.",
+      "D": "Incorrect — supported. Lost ticket revenue must be replaced through subsidy, donations or commercial income."
+    }
+  },
+  {
+    "id": "V3-05",
+    "difficulty": "foundation",
+    "topic": "Economics – seasonality in tourism",
+    "passage": "In many destinations, tourism is highly seasonal: coastal resorts may receive most of their annual visitors in a few summer months, and mountain areas during the skiing season. Seasonality creates distinctive economic problems. Hotels, restaurants and transport services must be large enough to cope with peak demand, yet much of this capacity stands idle for the rest of the year, which raises the average cost of each visitor served. Employment is often temporary, making it harder for businesses to retain trained staff and for workers to secure a stable income. Local infrastructure, such as water supply and waste collection, must be sized for the peak, while being paid for partly by a much smaller permanent population. Authorities therefore frequently try to spread demand by promoting events, conferences or cultural attractions outside the main season. Such efforts can lengthen the season, but they rarely eliminate the peak, since its timing is largely determined by climate and by the dates of school holidays.",
+    "question": "Which of the following statements is correct?",
+    "options": [
+      "Promoting events outside the main season usually removes the seasonal peak altogether.",
+      "Facilities left idle out of season make each visitor more expensive to serve on average.",
+      "Temporary tourism jobs mainly suit workers who prefer flexible working patterns.",
+      "The timing of the peak season is set mainly by the marketing decisions of hotels and tour operators."
+    ],
+    "answer": "B",
+    "explanations": {
+      "A": "Incorrect — contradiction. Such efforts can lengthen the season but “rarely eliminate the peak”.",
+      "B": "Correct. Capacity built for peak demand stands idle for much of the year, raising the average cost of each visitor served.",
+      "C": "Incorrect — outside knowledge. The passage presents temporary employment as a problem for workers seeking a stable income and says nothing about preferences for flexibility.",
+      "D": "Incorrect — contradiction. The timing of the peak is “largely determined by climate and by the dates of school holidays”."
+    }
+  },
+  {
+    "id": "V3-06",
+    "difficulty": "advanced",
+    "topic": "Culture – provenance research in a regional museum",
+    "passage": "The board of a regional museum of decorative arts has been reviewing how it handles objects whose ownership history contains gaps. At present, the museum’s acquisition policy requires curators to document an object’s provenance before purchase, but it imposes no obligation to research items already in the collection. Following a review, an advisory panel recommended three changes: that the museum systematically examine the history of all objects acquired before its current policy took effect; that it publish online any object whose provenance cannot be established; and that it establish a procedure for considering claims from individuals or communities who believe an object was taken from them unlawfully. The board has accepted the first recommendation and allocated funding for two research posts. It has deferred a decision on online publication pending legal advice, and has asked the panel to draft the claims procedure in more detail before it is considered. The panel noted that research of this kind rarely produces conclusive results quickly.",
+    "question": "Which of the following statements is correct?",
+    "options": [
+      "The museum now publishes online the details of objects with incomplete ownership histories.",
+      "The board has rejected the panel’s recommendation concerning claims from individuals or communities who believe that objects were taken from them unlawfully.",
+      "The museum’s current policy already requires research into objects acquired in the past.",
+      "Of the panel’s three recommendations, only the one concerning research into earlier acquisitions has so far been adopted."
+    ],
+    "answer": "D",
+    "explanations": {
+      "A": "Incorrect — contradiction. Online publication was only recommended; the board has deferred its decision pending legal advice.",
+      "B": "Incorrect — contradiction. The board has not rejected the claims procedure; it has asked the panel to draft it in more detail before considering it.",
+      "C": "Incorrect — contradiction. The current policy covers documentation before purchase and imposes no obligation to research items already in the collection.",
+      "D": "Correct. The board accepted the first recommendation and funded research posts, while the other two remain deferred or under development."
+    }
+  },
+  {
+    "id": "V3-07",
+    "difficulty": "intermediate",
+    "topic": "Culture – stability of oral tradition",
+    "passage": "Before the spread of mass literacy, much of a community’s knowledge—its genealogies, laws, songs and stories—was transmitted orally. Scholars once assumed that such transmission was inherently unreliable, producing ever-greater distortion with each retelling. Fieldwork among oral poets has complicated this picture. Performers of long epic songs were found not to memorise a fixed text word for word; instead, they recomposed the poem at each performance, drawing on a large stock of formulaic phrases and recurring scenes. Two performances of the “same” song by the same singer could differ considerably in length and wording, yet the singers themselves insisted that they were repeating it exactly. Where precise wording mattered, as in ritual formulae or certain legal pronouncements, communities often developed specific techniques—metre, rhyme and collective recitation—that helped to fix the text. Oral transmission is thus best understood not as uniformly reliable or unreliable, but as varying in stability according to the purpose for which a text is preserved.",
+    "question": "Which of the following statements is correct?",
+    "options": [
+      "How fixed an orally transmitted text remains can depend on the function it serves.",
+      "Epic singers memorised their songs word for word and reproduced them exactly.",
+      "Oral transmission is generally less reliable than written transmission.",
+      "Singers acknowledged that their performances of a song varied from one occasion to the next."
+    ],
+    "answer": "A",
+    "explanations": {
+      "A": "Correct. The passage concludes that stability varies “according to the purpose for which a text is preserved”, with special techniques used where precise wording mattered.",
+      "B": "Incorrect — contradiction. Singers did not memorise a fixed text but recomposed the poem at each performance.",
+      "C": "Incorrect — unsupported comparison. The passage makes no comparison with written transmission and rejects any uniform verdict on oral reliability.",
+      "D": "Incorrect — contradiction. The singers insisted that they were repeating the song exactly, even though performances differed."
+    }
+  },
+  {
+    "id": "V3-08",
+    "difficulty": "intermediate",
+    "topic": "Education – retrieval practice and the testing effect",
+    "passage": "Educational psychologists have repeatedly found that the act of retrieving information from memory strengthens learning more than simply reviewing it. In typical experiments, students who study a text and then attempt to recall its content perform better on a later test than students who spend the same time rereading it, even when the recall attempt is incomplete and receives no feedback. This “testing effect” is strongest when the final assessment takes place days or weeks later; on a test taken within minutes, rereading can produce equal or even superior results. Spacing study sessions over time, rather than concentrating them in a single block, has a similarly durable benefit. Intriguingly, students themselves tend to prefer rereading and massed study, which create a sense of fluency and therefore feel more effective. Researchers suggest that this mismatch between perceived and actual effectiveness helps to explain why the most efficient strategies are underused, and recommend that teachers build low-stakes quizzes into ordinary lessons.",
+    "question": "Which of the following statements is correct?",
+    "options": [
+      "Retrieval practice produces better results than rereading, whenever learning is assessed.",
+      "Retrieval practice is beneficial only when students receive feedback on their answers.",
+      "Students’ own impressions of which study methods work best are not a reliable guide to their effectiveness.",
+      "Researchers recommend replacing end-of-term examinations with frequent low-stakes quizzes."
+    ],
+    "answer": "C",
+    "explanations": {
+      "A": "Incorrect — extreme wording. On a test taken within minutes, rereading can produce equal or even superior results.",
+      "B": "Incorrect — contradiction. The benefit appears “even when the recall attempt … receives no feedback”.",
+      "C": "Correct. Students prefer methods that feel effective, and researchers point to a “mismatch between perceived and actual effectiveness”.",
+      "D": "Incorrect — scope shift. Researchers recommend building low-stakes quizzes into ordinary lessons; nothing is said about replacing examinations."
+    }
+  },
+  {
+    "id": "V3-09",
+    "difficulty": "advanced",
+    "topic": "Education – age of selection in secondary schooling",
+    "passage": "Education systems differ in the age at which pupils are separated into different types of school according to perceived ability. In some systems this occurs as early as ten; in others, all pupils follow a common curriculum until about sixteen. Comparative studies have generally found that early selection is associated with a closer link between pupils’ socio-economic background and their attainment. Supporters of early tracking argue that it allows teaching to be tailored to pupils’ needs and that high achievers benefit from being taught together. The evidence on this point is less clear-cut: some studies find modest gains for the highest-attaining pupils, but these appear to be offset by losses among lower-attaining pupils, so that average performance is not raised. Researchers caution, however, that countries which select early also differ from others in many respects, including funding and teacher training, which makes it difficult to isolate the effect of selection itself. Systems that have postponed selection have not always seen the expected reduction in inequality.",
+    "question": "Which of the following statements is correct?",
+    "options": [
+      "Early selection has been shown to cause greater inequality in pupils’ attainment.",
+      "Early tracking lowers the attainment of high-achieving pupils.",
+      "Postponing selection reliably weakens the link between socio-economic background and attainment.",
+      "The evidence described does not suggest that early tracking raises average attainment."
+    ],
+    "answer": "D",
+    "explanations": {
+      "A": "Incorrect — cause and effect. Early selection is only “associated with” greater inequality, and researchers warn that its effect is hard to isolate.",
+      "B": "Incorrect — contradiction. Some studies find modest gains for the highest-attaining pupils.",
+      "C": "Incorrect — extreme wording. Systems that postponed selection “have not always seen the expected reduction in inequality”.",
+      "D": "Correct. Gains for high attainers appear to be offset by losses among lower attainers, “so that average performance is not raised”."
+    }
+  },
+  {
+    "id": "V3-10",
+    "difficulty": "intermediate",
+    "topic": "Education – home-language instruction in the early years",
+    "passage": "In many parts of the world, children begin school in a language they do not speak at home. Research on early-years education suggests that this can impede learning, since pupils must master a new language and new content simultaneously. Programmes that teach literacy first in the home language and introduce the official language gradually have generally produced stronger reading skills—including, after several years, in the second language itself. Researchers attribute this to the transfer of underlying skills: a child who understands how written symbols represent sounds in one language can apply that understanding to another. Such programmes are not without difficulty. They require teaching materials in each language, teachers who are proficient in it and, in linguistically diverse areas, decisions about which of many home languages to support. Some parents also resist them, fearing that time spent on the home language will slow their children’s acquisition of the language needed for further education and employment—a concern that the research largely does not bear out.",
+    "question": "Which of the following statements is correct?",
+    "options": [
+      "Learning to read first in the home language can eventually strengthen reading in a second language.",
+      "Parents generally prefer home-language programmes to instruction in the official language.",
+      "Home-language programmes are straightforward to implement in linguistically diverse areas.",
+      "Children taught first in their home language show stronger reading skills in the official language from their first year of school."
+    ],
+    "answer": "A",
+    "explanations": {
+      "A": "Correct. Such programmes have produced stronger reading skills, “including, after several years, in the second language itself”, through the transfer of underlying skills.",
+      "B": "Incorrect — unsupported inference. The passage mentions only that some parents resist these programmes; it gives no evidence of general parental preference.",
+      "C": "Incorrect — contradiction. Diverse areas require difficult decisions about which of many home languages to support.",
+      "D": "Incorrect — partial truth. The benefit in the second language appears “after several years”, not from the first year."
+    }
+  },
+  {
+    "id": "V3-11",
+    "difficulty": "foundation",
+    "topic": "Education – dual vocational training",
+    "passage": "In a dual vocational training system, apprentices divide their time between a company, where they learn on the job, and a vocational school, where they receive theoretical and general instruction. The apprentice usually signs a contract with the employer and receives a wage, which is lower than that of a qualified worker but rises during the training period. Curricula are typically drawn up jointly by employers’ organisations, trade unions and public authorities, so that qualifications reflect the needs of the labour market while being recognised across a whole sector rather than by a single firm. Countries with well-established dual systems tend to record relatively low youth unemployment, although analysts point out that this may also reflect other features of their economies. Attempts to transplant the model elsewhere have met with varying success, often because it depends on employers being willing to invest in training young people whom they may not ultimately retain.",
+    "question": "Which of the following statements is NOT supported by the passage?",
+    "options": [
+      "Apprentices in a dual system are generally paid during their training.",
+      "Qualifications obtained in a dual system are intended to be valid beyond the company that provided the training.",
+      "Dual training is the main reason for low youth unemployment in the countries that use it.",
+      "The success of a dual system depends partly on employers’ willingness to invest in training."
+    ],
+    "answer": "C",
+    "explanations": {
+      "A": "Incorrect — supported. The apprentice “receives a wage”, lower than a qualified worker’s but rising during training.",
+      "B": "Incorrect — supported. Qualifications are designed to be recognised “across a whole sector rather than by a single firm”.",
+      "C": "Correct — not supported. The passage reports only an association and notes that low youth unemployment may also reflect other economic features.",
+      "D": "Incorrect — supported. Transplanting the model often depends on employers being willing to invest in training young people they may not retain."
+    }
+  },
+  {
+    "id": "V3-12",
+    "difficulty": "advanced",
+    "topic": "Environment – desertification in dry regions",
+    "passage": "Desertification is often imagined as the advance of sand dunes across fertile land, but the term is generally used for something broader: the degradation of land in dry regions, resulting in a lasting loss of biological and economic productivity. It can occur far from any existing desert. Both climatic variation and human activity contribute. Prolonged drought reduces plant cover, but land already under pressure from overgrazing, the clearing of vegetation or poorly managed irrigation is far less able to recover when the rains return. Irrigation can itself cause damage: where drainage is inadequate, water evaporates and leaves salts behind, gradually making the soil unfit for crops. Once vegetation is lost, exposed soil is more easily removed by wind and water, which further reduces the land’s capacity to support plants—a self-reinforcing process. Degradation is nonetheless not always irreversible. Controlled grazing, the planting of drought-resistant species and the revival of traditional water-harvesting techniques have, in some areas, allowed productivity to recover, although results depend heavily on local conditions.",
+    "question": "Which of the following statements is correct?",
+    "options": [
+      "Because desertification is self-reinforcing, degraded land cannot be restored once vegetation has been lost.",
+      "Drought tends to cause more lasting harm where land is already under pressure from human use.",
+      "Desertification is driven chiefly by climatic variation, with human activity playing only a minor role.",
+      "Restoration measures such as controlled grazing have reversed land degradation wherever they have been applied, whatever the local conditions."
+    ],
+    "answer": "B",
+    "explanations": {
+      "A": "Incorrect — contradiction. The passage states that degradation “is nonetheless not always irreversible” and gives examples of recovery.",
+      "B": "Correct. Land under pressure from overgrazing, clearing or poor irrigation is “far less able to recover” after drought.",
+      "C": "Incorrect — unsupported comparison. The passage says both factors contribute but does not rank them.",
+      "D": "Incorrect — extreme wording. Recovery has occurred “in some areas” and depends heavily on local conditions."
+    }
+  },
+  {
+    "id": "V3-13",
+    "difficulty": "advanced",
+    "topic": "Organisations – job rotation",
+    "passage": "Some public administrations and large companies move staff periodically between posts, a practice known as job rotation. Its supporters point to several benefits. Employees who have worked in different units develop a broader understanding of the organisation, which is considered valuable in those who later take on management responsibilities. Rotation can also reduce the risk that one person becomes indispensable, and in posts exposed to pressure from outside interests—such as those involving inspections or the award of contracts—it can limit the formation of relationships that might compromise impartiality. The practice nevertheless carries costs. Each move involves a period during which the newcomer is less productive, and specialist knowledge built up over years may be lost if the previous post-holder is moved too soon. Rotation is therefore generally considered most suitable where the knowledge required can be acquired relatively quickly or documented and handed over. Where a post demands deep technical expertise, organisations that rotate staff tend to do so at longer intervals, or rely on documentation and overlapping hand-over periods to limit the loss.",
+    "question": "Which of the following statements is correct?",
+    "options": [
+      "Rotation can support impartiality in some posts but may also cost specialist knowledge.",
+      "Job rotation is unsuitable for posts that require deep technical expertise.",
+      "Employees who have been rotated through several units go on to perform better as managers than colleagues who have remained in a single post.",
+      "The main purpose of job rotation in public administrations is to prepare staff for management roles."
+    ],
+    "answer": "A",
+    "explanations": {
+      "A": "Correct. In posts exposed to outside pressure, rotation can limit relationships that might compromise impartiality, yet moving post-holders too soon may lose specialist knowledge built up over years.",
+      "B": "Incorrect — extreme wording. For such posts, organisations tend to rotate at longer intervals or rely on documentation and hand-over periods; rotation is not ruled out.",
+      "C": "Incorrect — unsupported comparison. A broader understanding is “considered valuable” for future managers, but no performance comparison is reported.",
+      "D": "Incorrect — unsupported inference. Management preparation is one of several benefits listed; the passage does not identify any one as the main purpose."
+    }
+  },
+  {
+    "id": "V3-14",
+    "difficulty": "intermediate",
+    "topic": "Law – subsidiarity as a general principle",
+    "passage": "The principle of subsidiarity holds that decisions should be taken at the lowest level of government capable of handling them effectively, and that a higher level should act only where a lower one cannot adequately achieve the objective in question. The idea has roots in social and political philosophy, where it was originally applied to the relationship between the state and smaller associations such as families and voluntary bodies. In multi-level systems of government, it serves both as a guide for allocating responsibilities and as a check on the expansion of central power. Its application is rarely straightforward. Whether a lower level can “adequately” achieve an objective is often a matter of judgement, and the answer may change as circumstances do: problems that cross boundaries, such as river pollution, may be handled more effectively by a higher authority. Critics argue that the principle is too vague to be enforced by courts; supporters reply that its value lies chiefly in obliging decision-makers to justify why action at a higher level is needed.",
+    "question": "Which of the following statements is correct?",
+    "options": [
+      "Subsidiarity requires that every decision be taken by the lowest level of government.",
+      "The principle was originally developed to govern relations between national and international bodies.",
+      "Courts have generally found subsidiarity too vague to enforce.",
+      "The appropriate level for dealing with an issue may change if the issue comes to extend across several jurisdictions."
+    ],
+    "answer": "D",
+    "explanations": {
+      "A": "Incorrect — extreme wording. Decisions belong at the lowest level “capable of handling them effectively”, and higher levels may act where lower ones cannot.",
+      "B": "Incorrect — contradiction. The idea was originally applied to relations between the state and smaller associations such as families.",
+      "C": "Incorrect — partial truth. It is critics, not courts, who argue that the principle is too vague to be enforced.",
+      "D": "Correct. The passage says the answer may change with circumstances, citing cross-boundary problems that a higher authority may handle more effectively."
+    }
+  },
+  {
+    "id": "V3-15",
+    "difficulty": "intermediate",
+    "topic": "Law – offer, acceptance and invitations to treat",
+    "passage": "In general contract law, an agreement is formed when one party makes an offer and the other accepts it unconditionally. Not every proposal, however, amounts to an offer. Many legal systems distinguish an offer—a statement by which a person indicates willingness to be bound as soon as the terms are accepted—from an invitation to negotiate, sometimes called an invitation to treat. Goods displayed in a shop window with a price label, or advertised in a catalogue, are commonly treated as invitations: it is the customer who makes the offer by proposing to buy, and the seller who may accept or decline. The rationale is practical. If a display were an offer, a shopkeeper with limited stock could be bound to sell to more customers than the stock allowed. Where a reply to an offer introduces new or different terms, it is generally treated not as an acceptance but as a counter-offer, which rejects the original offer and may itself be accepted or refused.",
+    "question": "Which of the following statements is correct?",
+    "options": [
+      "A shop displaying goods with a price label is obliged to sell them to any customer who asks.",
+      "A reply that accepts an offer while altering one of its terms concludes a contract on the altered terms.",
+      "Where displayed goods are treated as an invitation to treat, it is the customer proposing to buy who makes the offer.",
+      "All legal systems treat catalogue advertisements as invitations to negotiate."
+    ],
+    "answer": "C",
+    "explanations": {
+      "A": "Incorrect — contradiction. A display is commonly an invitation, so the seller “may accept or decline” the customer’s offer.",
+      "B": "Incorrect — contradiction. A reply introducing different terms is a counter-offer that rejects the original offer; no contract is formed until it is itself accepted.",
+      "C": "Correct. The passage states that in such cases the customer makes the offer by proposing to buy.",
+      "D": "Incorrect — extreme wording. The passage refers to “many legal systems” and says such advertisements are “commonly” treated as invitations."
+    }
+  },
+  {
+    "id": "V3-16",
+    "difficulty": "foundation",
+    "topic": "Law – presumption of innocence and standards of proof",
+    "passage": "The presumption of innocence is a cornerstone of criminal justice in democratic societies. It means that a person accused of an offence is treated as innocent until proven guilty according to law. Its most important practical consequence concerns the burden of proof: it is for the prosecution to establish guilt, not for the accused to prove innocence. In most systems, the prosecution must do so to a high standard, often expressed as proof “beyond reasonable doubt”. Where doubt remains, it must benefit the accused. The presumption also has implications outside the courtroom. Public officials are expected to refrain from statements that present a suspect as guilty before a verdict, since such statements may prejudice the proceedings. Civil disputes between private parties, by contrast, are usually decided on a lower standard, under which a claim succeeds if it is shown to be more likely than not. As a result, the same facts may lead to an acquittal in criminal proceedings yet give rise to liability in civil proceedings.",
+    "question": "Which of the following statements is correct?",
+    "options": [
+      "An accused person must present evidence of innocence in order to be acquitted.",
+      "A criminal acquittal does not rule out civil liability for the same facts.",
+      "Civil courts usually apply the same standard of proof as criminal courts.",
+      "Public officials are prohibited from making any comment on a criminal investigation."
+    ],
+    "answer": "B",
+    "explanations": {
+      "A": "Incorrect — contradiction. The burden lies on the prosecution; it is not for the accused to prove innocence.",
+      "B": "Correct. Because civil claims are decided on the lower “more likely than not” standard, the same facts may lead to acquittal in criminal proceedings yet to liability in civil proceedings.",
+      "C": "Incorrect — contradiction. Civil disputes are usually decided on a lower standard.",
+      "D": "Incorrect — extreme wording. Officials are expected to refrain from statements presenting a suspect as guilty, not from any comment at all."
+    }
+  },
+  {
+    "id": "V3-17",
+    "difficulty": "advanced",
+    "topic": "Law – legal certainty and non-retroactivity",
+    "passage": "The principle of legal certainty requires that the law be clear, accessible and reasonably predictable, so that individuals and businesses can plan their affairs. One of its best-known expressions is the rule against retroactivity. In criminal law, this rule is applied strictly: no one may be punished for an act that did not constitute an offence when it was committed, nor receive a heavier penalty than the one applicable at the time. Many systems, however, allow a more lenient penalty introduced later to benefit the offender. Outside criminal law, the position is more nuanced. Retroactive rules in fields such as taxation are not automatically invalid, but courts tend to accept them only exceptionally—for example, where the objective requires it and the legitimate expectations of those concerned are duly respected. Legal certainty must also be balanced against other values: a law that could never be amended would protect expectations at the cost of preventing necessary reform.",
+    "question": "Which of the following statements is correct?",
+    "options": [
+      "Retroactive tax rules are prohibited under the principle of legal certainty.",
+      "A heavier criminal penalty introduced after an offence may be applied to it if the objective requires it.",
+      "Legal certainty requires that laws, once adopted, remain unchanged.",
+      "A later, milder penalty may benefit an offender in many systems."
+    ],
+    "answer": "D",
+    "explanations": {
+      "A": "Incorrect — contradiction. Retroactive rules in taxation are “not automatically invalid” and may be accepted exceptionally.",
+      "B": "Incorrect — partial truth. The “objective requires it” exception concerns fields outside criminal law; in criminal law no heavier penalty than the one applicable at the time may be imposed.",
+      "C": "Incorrect — contradiction. The passage warns that a law that could never be amended would prevent necessary reform.",
+      "D": "Correct. Many systems allow “a more lenient penalty introduced later to benefit the offender”."
+    }
+  },
+  {
+    "id": "V3-18",
+    "difficulty": "intermediate",
+    "topic": "Workplace – open-plan offices and interaction",
+    "passage": "Open-plan offices, in which most staff work in a shared space without walls or individual rooms, have been widely adopted on the grounds that they reduce accommodation costs and encourage communication. The first claim is generally accepted: more employees can be accommodated in a given floor area. The second has proved less straightforward. Several studies that tracked interactions before and after moves to open-plan layouts found that face-to-face conversation fell rather than rose, while electronic messaging increased. Researchers suggest that, lacking privacy, employees withdraw—wearing headphones, avoiding conversations that might be overheard or seeking quiet spaces elsewhere. Noise and frequent interruptions are also the most common complaints in surveys of open-plan workers, particularly among those whose tasks require sustained concentration. Some organisations have responded by providing a mixture of spaces: open areas for collaborative work, small rooms for confidential or focused tasks, and quiet zones. The effects of any layout appear to depend on how well it matches the nature of the work carried out in it.",
+    "question": "Which of the following statements is NOT supported by the passage?",
+    "options": [
+      "Moves to open-plan layouts have consistently increased face-to-face contact between colleagues.",
+      "Open-plan layouts allow more employees to be housed in the same floor area.",
+      "Staff in open-plan offices may adopt habits that limit their interaction with colleagues.",
+      "Employees whose work requires long periods of concentration appear particularly likely to complain about noise and interruptions in open-plan offices."
+    ],
+    "answer": "A",
+    "explanations": {
+      "A": "Correct — not supported. Several studies found that face-to-face conversation “fell rather than rose” after such moves.",
+      "B": "Incorrect — supported. The cost-saving claim is “generally accepted”, since more employees fit into a given floor area.",
+      "C": "Incorrect — supported. Lacking privacy, employees may wear headphones, avoid conversations or seek quiet spaces elsewhere.",
+      "D": "Incorrect — supported. Complaints about noise and interruptions are especially common among those whose tasks require sustained concentration."
+    }
+  },
+  {
+    "id": "V3-19",
+    "difficulty": "advanced",
+    "topic": "Education – repeating a school year",
+    "passage": "In some education systems, pupils who fail to reach a required standard repeat the school year; in others, almost all pupils progress automatically with their age group, receiving additional support where needed. Advocates of repetition argue that it gives struggling pupils time to master material before moving on. Research has generally been sceptical. Studies comparing pupils who repeated a year with similar pupils who were promoted often find that any initial improvement fades within a few years, and some find that repeaters are more likely to leave school early. Such comparisons are difficult, however, because teachers select pupils for repetition on the basis of characteristics that researchers may not observe. Repetition is also costly, since each repeated year adds a year of schooling to be funded. Several researchers conclude that the resources involved might achieve more if spent on targeted support during the year in which difficulties first appear. They acknowledge, even so, that the effects of repetition may vary with the age at which it occurs and the support that accompanies it.",
+    "question": "Which of the following statements is correct?",
+    "options": [
+      "Repeating a year causes pupils to leave school early.",
+      "Studies show that repetition brings no improvement in pupils’ attainment at any stage.",
+      "Comparisons between repeaters and promoted pupils may be distorted by differences that researchers cannot see.",
+      "Researchers have established that targeted support in the year in which difficulties appear is more effective than repetition."
+    ],
+    "answer": "C",
+    "explanations": {
+      "A": "Incorrect — cause and effect. Some studies find repeaters “more likely” to leave early, and the passage warns that such comparisons are hard to interpret.",
+      "B": "Incorrect — contradiction. Studies often find an “initial improvement” that later fades.",
+      "C": "Correct. Teachers select pupils for repetition on characteristics that researchers may not observe, which makes comparisons difficult.",
+      "D": "Incorrect — unsupported inference. Researchers say only that the resources “might achieve more” if spent on targeted support; this is a tentative conclusion, not an established finding."
+    }
+  },
+  {
+    "id": "V3-20",
+    "difficulty": "intermediate",
+    "topic": "Workplace – remote working and informal learning",
+    "passage": "When an organisation moves a large share of its staff to remote working, the effects on productivity are often measured through output indicators such as tasks completed or files processed. These indicators may capture routine work well, but they tend to overlook the informal exchanges through which much organisational knowledge circulates: the quick question to a colleague, the conversation overheard in a corridor, the advice offered to a newcomer. Studies of knowledge work suggest that such exchanges matter disproportionately for less experienced employees, who rely on them to learn tacit aspects of the job that are rarely written down. Experienced staff, whose networks are already established, may find their productivity unchanged or even improved when working remotely, since they face fewer interruptions. The resulting risk is that an organisation judging remote work solely by short-term output may conclude that it has no costs, while the learning of its junior staff quietly suffers. Some organisations have responded by designating regular office days for teams or by formalising mentoring.",
+    "question": "Which of the following statements is correct?",
+    "options": [
+      "Remote working reduces the productivity of experienced employees.",
+      "Output indicators may give an incomplete picture of the effects of remote working.",
+      "Organisations have generally responded to remote working by introducing compulsory office days.",
+      "Junior employees are less productive than experienced ones because they are interrupted more often."
+    ],
+    "answer": "B",
+    "explanations": {
+      "A": "Incorrect — contradiction. Experienced staff may find their productivity unchanged or even improved.",
+      "B": "Correct. Output indicators capture routine work but “tend to overlook” informal exchanges, so an organisation relying on them may miss the cost to junior staff’s learning.",
+      "C": "Incorrect — scope shift. Only “some organisations” have designated office days, and others have formalised mentoring instead.",
+      "D": "Incorrect — cause and effect. The passage mentions interruptions only as something experienced staff avoid when working remotely; it makes no claim about junior employees’ relative productivity."
+    }
+  },
+  {
+    "id": "V3-21",
+    "difficulty": "foundation",
+    "topic": "Organisations – span of control",
+    "passage": "The “span of control” refers to the number of employees who report directly to a single manager. Organisations with wide spans have fewer management layers and are often described as “flat”; those with narrow spans have more layers and are described as “tall”. Flat structures can speed up decision-making, because information passes through fewer levels, and they reduce the cost of management. They may also give employees greater autonomy. Yet a manager with too many direct reports may struggle to provide adequate supervision, feedback and support. The appropriate span depends on the nature of the work. Where tasks are routine and staff are experienced, a manager can oversee a large team effectively; where work is complex, varied or carried out by new recruits, closer supervision is usually needed. Many organisations have reduced their management layers in pursuit of efficiency, but some have later reintroduced intermediate posts after finding that the workloads of the remaining managers had become unsustainable.",
+    "question": "Which of the following statements is correct?",
+    "options": [
+      "Flat organisational structures are always more efficient than tall ones.",
+      "In a tall structure, each manager typically supervises a large number of employees.",
+      "Routine work by experienced staff suits a wide span of control.",
+      "Most organisations that removed management layers have since reinstated them."
+    ],
+    "answer": "C",
+    "explanations": {
+      "A": "Incorrect — extreme wording. The passage stresses that the appropriate span depends on the nature of the work and that wide spans can overload managers.",
+      "B": "Incorrect — contradiction. Tall structures have narrow spans, meaning fewer direct reports per manager.",
+      "C": "Correct. Where tasks are routine and staff experienced, “a manager can oversee a large team effectively”, which is what a wide span means.",
+      "D": "Incorrect — scope shift. The passage says “some” organisations reintroduced intermediate posts, not most."
+    }
+  },
+  {
+    "id": "V3-22",
+    "difficulty": "advanced",
+    "topic": "Workplace – a four-day week trial",
+    "passage": "A mid-sized engineering firm conducted a six-month trial in which employees in two of its four departments worked four days a week with no reduction in pay, while the other two departments continued on a five-day schedule. Participation was voluntary at departmental level. Over the trial, the participating departments maintained their output, and staff reported lower levels of fatigue. Absence through sickness also fell, although it fell slightly in the non-participating departments as well. Managers noted that meetings had been shortened and that some tasks previously considered essential had been discontinued without apparent loss. The firm’s board has welcomed the results but has not yet decided whether to extend the arrangement. In its report, the trial’s steering group observed that the departments which volunteered may have been those best suited to a shorter working week, and recommended a second trial in the remaining departments before any company-wide decision is taken. Client-facing teams, it noted, would need cover arrangements to ensure availability throughout the five-day week.",
+    "question": "Which of the following statements is NOT supported by the passage?",
+    "options": [
+      "The departments taking part in the trial did not experience a fall in output.",
+      "The reduction in sickness absence cannot confidently be attributed to the four-day week alone.",
+      "The steering group considered that the trial’s results might not apply equally to every department.",
+      "The board has decided to extend the four-day week to the whole company once a second trial has been held."
+    ],
+    "answer": "D",
+    "explanations": {
+      "A": "Incorrect — supported. The participating departments “maintained their output”.",
+      "B": "Incorrect — supported. Sickness absence also fell in the departments that kept the five-day schedule, so other factors may have contributed.",
+      "C": "Incorrect — supported. The steering group noted that volunteering departments may have been those best suited to a shorter week.",
+      "D": "Correct — not supported. A second trial is only a steering-group recommendation and the board “has not yet decided” whether to extend the arrangement."
+    }
+  },
+  {
+    "id": "V3-23",
+    "difficulty": "foundation",
+    "topic": "Organisations – matrix structures",
+    "passage": "In a matrix organisation, employees report to two managers at once: typically a functional manager, responsible for a specialist field such as engineering or finance, and a project manager, responsible for delivering a particular piece of work. The structure is intended to combine the depth of expertise found in functional departments with the flexibility needed to deliver projects that cut across them. Specialists can be assigned to several projects in turn without leaving their home department, which helps to keep their skills up to date and allows scarce expertise to be shared. The arrangement has well-known drawbacks. When the two managers disagree about priorities, employees may receive conflicting instructions, and decisions can slow down as issues are escalated for resolution. Clear rules on which manager decides what—for example, the project manager setting deadlines and the functional manager overseeing technical standards—are therefore often regarded as essential. Matrix structures are most common in organisations that run many complex projects at the same time.",
+    "question": "Which of the following statements is correct?",
+    "options": [
+      "Staff in a matrix structure may be given competing instructions by their two managers.",
+      "In a matrix organisation, specialists must leave their functional department in order to join a project.",
+      "Matrix structures speed up decision-making by giving every employee two sources of authority.",
+      "Matrix structures are found mainly in small organisations that run one project at a time, where lines of authority are easy to establish."
+    ],
+    "answer": "A",
+    "explanations": {
+      "A": "Correct. When the two managers disagree about priorities, employees “may receive conflicting instructions”.",
+      "B": "Incorrect — contradiction. Specialists can work on projects “without leaving their home department”.",
+      "C": "Incorrect — contradiction. Decisions “can slow down” as disagreements are escalated.",
+      "D": "Incorrect — contradiction. Matrix structures are most common in organisations running many complex projects at the same time."
+    }
+  },
+  {
+    "id": "V3-24",
+    "difficulty": "intermediate",
+    "topic": "Culture – the rise of the public concert",
+    "passage": "Until the eighteenth century, most professional musicians in Europe earned their living in the service of a court, a church or an aristocratic household. Music was composed for particular occasions, and the employer largely determined what was performed. During the eighteenth century, the public concert—an event open to anyone able to buy a ticket or subscription—became increasingly important, first in large commercial cities. This gave composers and performers a new source of income, although few could rely on it alone, and many combined concert work with teaching, publishing or remaining forms of patronage. The growth of a paying public also influenced the music itself. Organisers needed to attract audiences repeatedly, which favoured works that made a strong impression on first hearing, and the use of large halls encouraged larger orchestras. Over the following century, concert programmes increasingly included works by composers who were no longer living, contributing to the idea of a lasting repertoire of “classical” masterpieces.",
+    "question": "Which of the following statements is correct?",
+    "options": [
+      "Public concerts allowed most composers to give up teaching and patronage entirely.",
+      "The need to win paying audiences had some influence on the kind of music written.",
+      "Public concerts first became important in small rural communities before spreading to cities.",
+      "Orchestras grew larger mainly because composers of the period demanded greater volume and dramatic contrast in their music."
+    ],
+    "answer": "B",
+    "explanations": {
+      "A": "Incorrect — contradiction. Few could rely on concert income alone, and many combined it with teaching, publishing or patronage.",
+      "B": "Correct. The passage states that a paying public “also influenced the music itself”, favouring works that made a strong first impression.",
+      "C": "Incorrect — contradiction. Public concerts became important “first in large commercial cities”.",
+      "D": "Incorrect — cause and effect. The passage links larger orchestras to the use of large halls, not to composers’ demands."
+    }
+  },
+  {
+    "id": "V3-25",
+    "difficulty": "advanced",
+    "topic": "Culture – a literary translation grant scheme",
+    "passage": "A European cultural foundation offers grants to publishers to cover part of the cost of translating literary works written in less widely spoken languages. An external evaluation found that supported titles were frequently reviewed in the press of the countries where the translations appeared, but it could not determine whether the grants had increased sales, since many publishers did not report sales data. The evaluators also noted that most grants went to translations into a small number of widely spoken languages, partly because publishers in those markets submitted more applications. They recommended that the foundation make sales reporting a condition of future grants, and that it consider reserving a share of its budget for translations between less widely spoken languages. The foundation has agreed to require sales reporting from the next funding round. On the second recommendation, it has stated that it will consult publishers’ associations before reaching a decision.",
+    "question": "Which of the following statements is correct?",
+    "options": [
+      "The evaluation showed that the grant scheme had increased sales of translated works.",
+      "The foundation has decided to reserve part of its budget for translations between less widely spoken languages.",
+      "Publishers receiving grants from the next funding round onwards will be expected to report sales data.",
+      "The concentration of grants on widely spoken target languages results solely from the foundation’s selection criteria."
+    ],
+    "answer": "C",
+    "explanations": {
+      "A": "Incorrect — contradiction. The evaluation “could not determine” whether sales had increased because data were missing.",
+      "B": "Incorrect — contradiction. The foundation will consult publishers’ associations before deciding on this point.",
+      "C": "Correct. The foundation has agreed to require sales reporting from the next funding round, as the evaluators recommended.",
+      "D": "Incorrect — extreme wording. The passage attributes the concentration partly to the higher number of applications from those markets and does not mention selection criteria."
+    }
+  }
+]

@@ -1,0 +1,502 @@
+[
+ {
+  "id": "V5-01",
+  "difficulty": "foundation",
+  "topic": "Statistics and data literacy: mean and median",
+  "passage": "When analysts summarise a set of figures, they usually choose between two measures of the “typical” value. The arithmetic mean is obtained by adding all the values and dividing the total by their number; the median is the value that lies in the middle once the figures have been arranged in order. In many everyday datasets the two measures are close, but they can diverge sharply when a distribution is skewed. Household income is the textbook case: a small number of very high earners pull the mean upwards, while the median is barely affected by them. For this reason, statistical offices frequently prefer the median when describing the income of a typical household. The mean nonetheless remains valuable. Because it takes every observation into account, it is the appropriate measure when the total matters—for instance, when a regional authority wishes to estimate the total income of its residents from their average income. Neither measure is inherently superior; the choice depends on the question being asked, and careful reports often publish both.",
+  "question": "Which of the following statements is correct?",
+  "options": [
+   "The median is always a more accurate measure than the mean and should be preferred in official statistics.",
+   "With a few very high values, the mean can overstate what is typical; the median barely moves.",
+   "Statistical offices have abandoned the mean in favour of the median when reporting on household income.",
+   "The mean and the median of a dataset will always be identical unless some of the figures contain errors."
+  ],
+  "answer": "B",
+  "explanations": {
+   "A": "Incorrect — extreme wording. The passage says neither measure is inherently superior and that the mean is the right choice when totals matter.",
+   "B": "Correct. A small number of very high earners pull the mean upwards, while the median is hardly affected, which is why the median better describes a typical household.",
+   "C": "Incorrect — extreme wording. Offices “frequently prefer” the median for a typical household, and the mean “remains valuable”; nothing has been abandoned.",
+   "D": "Incorrect — cause and effect. The passage attributes divergence between the two measures to skewed distributions, not to errors in the data."
+  }
+ },
+ {
+  "id": "V5-02",
+  "difficulty": "intermediate",
+  "topic": "Archives and heritage: the principle of provenance",
+  "passage": "Archivists organise records according to a principle known as provenance, or respect des fonds. Under this principle, the documents created or accumulated by a single body—a ministry, a family, a trading company—are kept together as a distinct group and are not merged with records from other sources, even when their subjects overlap. A related rule, known as original order, holds that the arrangement given to the records by their creator should be preserved wherever it can still be identified. The reasoning is that the meaning of a document depends partly on its context: a letter filed among a department’s complaints says something different from the same letter filed among its commendations. Rearranging material by topic, as a library might arrange its books, can therefore destroy evidence of how an organisation actually worked. These principles do not prevent researchers from searching by subject. Archives produce catalogues, indexes and, increasingly, searchable databases that allow users to locate material on a given theme across many collections, while the arrangement of each collection remains intact.",
+  "question": "Which of the following statements is correct?",
+  "options": [
+   "The principle of respect des fonds was first formulated in France, which explains its French name.",
+   "Under the principle of provenance, records from different creators are combined whenever they concern the same subject.",
+   "Original order must be preserved in every case, even where the creator’s arrangement can no longer be identified.",
+   "Preserving a creator’s arrangement can reveal how the creating body actually worked."
+  ],
+  "answer": "D",
+  "explanations": {
+   "A": "Incorrect — outside knowledge. The passage gives the French name but says nothing about where or when the principle was first formulated.",
+   "B": "Incorrect — contradiction. Records from one creator are “not merged” with those of other sources, even when their subjects overlap.",
+   "C": "Incorrect — scope shift. Original order is to be kept only “wherever it can still be identified”, not in every case.",
+   "D": "Correct. Because context gives documents meaning, rearranging them by topic can destroy evidence of how an organisation worked; keeping the original arrangement preserves it."
+  }
+ },
+ {
+  "id": "V5-03",
+  "difficulty": "advanced",
+  "topic": "Migration history before 1900: chain migration",
+  "passage": "Historians of nineteenth-century transatlantic migration have long cautioned against picturing it as a single, permanent departure by isolated individuals. Much of it followed the pattern now called chain migration: early arrivals sent letters home describing conditions and wages, and frequently paid for the passage of relatives or neighbours, who in turn settled close to them. As a result, emigrants from a particular valley or district often clustered in a small number of destinations rather than dispersing across the continent. The replacement of sailing vessels by steamships during the century shortened the crossing from several weeks to a matter of days and made it markedly safer. Some historians argue that this change, by lowering the cost and risk of travel, encouraged a growing share of migrants to treat the journey as temporary, working abroad for a few seasons before returning home. Others caution that rates of return varied so widely between groups that no general rule can be drawn from shipping technology alone. What is not disputed is that letters and money sent home linked sending and receiving communities for decades.",
+  "question": "Which of the following statements is correct?",
+  "options": [
+   "Migrants who had already settled abroad often helped to pay for the journeys of people from their home area.",
+   "Chain migration developed only after steamships had made the crossing cheaper and safer.",
+   "Emigrants from the same district typically spread out widely across the continent in search of work.",
+   "Historians agree that the introduction of steamships made temporary migration more common."
+  ],
+  "answer": "A",
+  "explanations": {
+   "A": "Correct. Early arrivals “frequently paid for the passage of relatives or neighbours”.",
+   "B": "Incorrect — unsupported inference. The passage never links the origins of chain migration to steamships or says which came first.",
+   "C": "Incorrect — contradiction. Emigrants from one district often clustered in a few destinations rather than dispersing.",
+   "D": "Incorrect — unsupported inference. Only “some historians” hold this view and others dispute it, so there is no agreement."
+  }
+ },
+ {
+  "id": "V5-04",
+  "difficulty": "intermediate",
+  "topic": "History of mathematics: positional numerals",
+  "passage": "The numerals used throughout Europe today originated in India and reached the continent largely through the works of scholars writing in Arabic. Their decisive feature is not the shapes of the digits but the positional principle: the value of a symbol depends on where it stands, so that the same “3” can mean three, thirty or three hundred. Such a system requires a symbol for an empty position, and the development of zero as a placeholder made it workable. Roman numerals, by contrast, are not positional, which made written arithmetic cumbersome; in practice, calculations were usually performed on a counting board or abacus and only the results were written down. The new notation spread slowly in medieval Europe. It was taken up first by some scholars and by merchants who valued the ability to calculate directly on paper, while for a considerable time other merchants and officials continued to keep their accounts in the older notation. One reason sometimes given is a concern that the new digits could be altered more easily—turning a 0 into a 6 or a 9, for example.",
+  "question": "Which of the following statements is correct?",
+  "options": [
+   "It was chiefly the shapes of the Indian digits that made them better suited to calculation than Roman numerals.",
+   "Because Roman numerals were not positional, medieval Europeans were unable to carry out arithmetic before adopting the new system.",
+   "With Roman numerals, the intermediate steps of a calculation were generally not written down, only its result.",
+   "Fears about falsification led authorities throughout Europe to ban the new numerals in accounting."
+  ],
+  "answer": "C",
+  "explanations": {
+   "A": "Incorrect — contradiction. The decisive feature was “not the shapes of the digits but the positional principle”.",
+   "B": "Incorrect — extreme wording. Calculations were done on counting boards or the abacus; written arithmetic was cumbersome, not impossible.",
+   "C": "Correct. With Roman numerals, calculations were usually made on a counting board or abacus and only the outcome was recorded.",
+   "D": "Incorrect — outside knowledge. The passage mentions only a concern “sometimes given” for keeping the older notation, not any Europe-wide ban."
+  }
+ },
+ {
+  "id": "V5-05",
+  "difficulty": "advanced",
+  "topic": "Architecture: the structure of Gothic cathedrals",
+  "passage": "The great cathedrals built in western Europe from the twelfth century onwards are commonly described as Gothic, a label applied much later and originally intended as disparaging. Their builders sought height and light, and three structural devices made these aims attainable. The pointed arch directs the weight of the vault more steeply downwards than a semicircular arch does, reducing the outward thrust on the walls. The ribbed vault concentrates loads along a network of stone ribs, so that they are carried to particular points rather than spread evenly along the wall. At those points, flying buttresses—external arches springing from detached piers—receive the remaining thrust and transfer it to the ground. Because the walls no longer had to carry the whole load, large sections of them could be opened up and filled with stained glass. The techniques were not entirely new; pointed arches and rib vaults appear in earlier buildings. What distinguished the Gothic cathedral was the systematic combination of these elements, which allowed masons to build higher, and with thinner walls, than their predecessors had generally managed.",
+  "question": "Which of the following statements is NOT supported by the passage?",
+  "options": [
+   "The builders of these cathedrals did not themselves describe their work as “Gothic”.",
+   "The pointed arch was invented by Gothic builders as a means of reducing the outward thrust on walls.",
+   "Flying buttresses carry part of the thrust of the vault away from the walls and down to the ground.",
+   "Concentrating loads at particular points made it possible to replace much of the wall surface with glass."
+  ],
+  "answer": "B",
+  "explanations": {
+   "A": "Incorrect — supported. The label was “applied much later”, so it was not the builders’ own term.",
+   "B": "Correct — not supported. The techniques “were not entirely new” and pointed arches appear in earlier buildings, so Gothic builders did not invent them.",
+   "C": "Incorrect — supported. Flying buttresses “receive the remaining thrust and transfer it to the ground”.",
+   "D": "Incorrect — supported. Rib vaults carry loads to particular points, so the walls no longer bore the whole load and could be opened up for stained glass."
+  }
+ },
+ {
+  "id": "V5-06",
+  "difficulty": "foundation",
+  "topic": "Psychology of decision-making: anchoring",
+  "passage": "Psychologists use the term anchoring to describe the tendency of people to rely heavily on the first piece of numerical information they encounter when making an estimate. In a classic type of experiment, participants are first asked whether a quantity—the height of a tree, say, or the price of a bottle of wine—is higher or lower than a given figure, and are then asked for their own estimate. Their answers tend to move towards the initial figure, even when participants have been told that it was chosen at random. The effect has been observed among experts as well as among laypeople, although its strength varies from one study to another. Researchers have proposed several explanations. One is that people start from the anchor and then adjust insufficiently; another is that the anchor brings to mind information consistent with it. Practical advice for decision-makers follows from these findings: in negotiations or budgeting, it may be useful to form an independent estimate before looking at any figure proposed by the other side.",
+  "question": "Which of the following statements is correct?",
+  "options": [
+   "An initial figure can influence people’s estimates even when they know that it has no meaningful basis.",
+   "Experts are protected from anchoring because their specialist knowledge allows them to ignore irrelevant figures.",
+   "Anchoring has been found to have the same strength in every study that has tested it.",
+   "Researchers have firmly established that insufficient adjustment from the anchor is the only cause of the effect."
+  ],
+  "answer": "A",
+  "explanations": {
+   "A": "Correct. Estimates move towards the initial figure even when participants have been told it was picked at random.",
+   "B": "Incorrect — contradiction. The effect “has been observed among experts as well as among laypeople”.",
+   "C": "Incorrect — contradiction. The strength of the effect “varies from one study to another”.",
+   "D": "Incorrect — extreme wording. Insufficient adjustment is one of “several explanations” proposed; nothing has been established as the only cause."
+  }
+ },
+ {
+  "id": "V5-07",
+  "difficulty": "advanced",
+  "topic": "Public finance: deficit and debt",
+  "passage": "Public debates often blur two distinct concepts: the budget deficit and public debt. The deficit is a flow—the amount by which a government’s expenditure exceeds its revenue within a single year. The debt is a stock—the total amount the government owes at a given moment, accumulated through past borrowing. A deficit adds to the debt; a surplus, if used to repay creditors, reduces it. It follows that a government that cuts its deficit has not thereby reduced its debt: as long as any deficit remains, the debt continues to grow in absolute terms. Analysts usually express both figures as a share of national output, because a given sum is more manageable for a large economy than for a small one. This ratio can fall even while the debt rises in absolute terms, provided that the economy grows faster than the debt. Conversely, a recession can push the ratio up without any additional borrowing, simply by shrinking output. For this reason, budget rules that target the ratio rather than the absolute figure are sensitive to economic conditions that lie partly outside a government’s control.",
+  "question": "Which of the following statements is correct?",
+  "options": [
+   "Reducing the annual deficit is sufficient to bring down the total amount of public debt.",
+   "A fall in the ratio of debt to national output shows that the government has repaid part of its debt.",
+   "A recession raises the debt ratio because governments always borrow more during economic downturns.",
+   "A government in deficit every year can still see its debt shrink relative to national output."
+  ],
+  "answer": "D",
+  "explanations": {
+   "A": "Incorrect — contradiction. Cutting the deficit does not reduce the debt; while any deficit remains, the debt keeps growing.",
+   "B": "Incorrect — unsupported inference. The ratio can fall “even while the debt rises in absolute terms” if output grows faster, so a falling ratio does not prove repayment.",
+   "C": "Incorrect — cause and effect. A recession can raise the ratio “without any additional borrowing”, simply by shrinking output.",
+   "D": "Correct. Annual deficits add to the absolute debt, but the ratio can still fall if the economy grows faster than the debt."
+  }
+ },
+ {
+  "id": "V5-08",
+  "difficulty": "intermediate",
+  "topic": "Maritime trade history: marine insurance in coffee houses",
+  "passage": "In several European ports of the late seventeenth and eighteenth centuries, coffee houses became informal centres of commercial life. Merchants, shipowners and captains gathered there to exchange news of arrivals, departures and losses at sea, and some proprietors began to post shipping information for their customers. These gatherings proved well suited to marine insurance. A merchant seeking cover for a cargo would circulate a document describing the voyage and the vessel, and individuals willing to bear part of the risk would write their names beneath it, each stating the share he accepted. Because no single backer usually took on the whole risk, a loss could be absorbed by many people rather than ruining one. The premium depended on the information available: a sound ship on a familiar route in peacetime attracted a lower rate than an ageing vessel sailing in wartime. Access to reliable news was therefore a competitive advantage, and coffee houses that offered it attracted more business. Over time, some of these informal arrangements developed into formal institutions with membership rules and written procedures.",
+  "question": "Which of the following statements is correct?",
+  "options": [
+   "Coffee-house proprietors were responsible for paying merchants’ claims whenever an insured ship was lost.",
+   "Each individual backer normally accepted the whole risk of a voyage in return for a single premium payment.",
+   "Dividing a risk among several backers made it less likely that one loss would ruin any of them.",
+   "All of the informal insurance arrangements made in coffee houses eventually turned into formal institutions."
+  ],
+  "answer": "C",
+  "explanations": {
+   "A": "Incorrect — unsupported inference. Proprietors are described only as posting shipping information; the passage says nothing about them paying claims.",
+   "B": "Incorrect — contradiction. Backers each stated the share they accepted, and “no single backer usually took on the whole risk”.",
+   "C": "Correct. Because the risk was shared among several backers, a loss could be absorbed by many people instead of ruining one.",
+   "D": "Incorrect — extreme wording. Only “some of these informal arrangements” developed into formal institutions."
+  }
+ },
+ {
+  "id": "V5-09",
+  "difficulty": "intermediate",
+  "topic": "Astronomy: light travel time",
+  "passage": "Because light travels at a finite speed, astronomers never observe celestial objects as they are at the present moment, but as they were when the light left them. Light from the Sun takes roughly eight minutes to reach the Earth; light from the nearest stars beyond the Sun takes several years; and light from distant galaxies may have travelled for millions or even billions of years. Distances on this scale are therefore often expressed in light-years—a unit of distance, not of time, equal to the distance that light covers in one year. The delay has a consequence that astronomers exploit: by observing objects at increasing distances, they are in effect looking further into the past, and can compare young galaxies with older ones nearer to us. It also means that an object seen in the night sky may have changed considerably, or even ceased to exist in its observed form, by the time its light is detected. The principle applies equally to nearby objects, although there the delay is too short to matter for most purposes.",
+  "question": "Which of the following statements is correct?",
+  "options": [
+   "A light-year is a measure of the time that light takes to travel from a distant star to the Earth.",
+   "Distant galaxies show astronomers an earlier stage of cosmic history than nearby ones do.",
+   "Most of the stars that can be seen in the night sky have already ceased to exist.",
+   "The delay in the arrival of light affects only objects lying outside our own galaxy, not nearby ones."
+  ],
+  "answer": "B",
+  "explanations": {
+   "A": "Incorrect — contradiction. A light-year is “a unit of distance, not of time”.",
+   "B": "Correct. Observing more distant objects means “looking further into the past”, so young galaxies can be compared with older, nearer ones.",
+   "C": "Incorrect — extreme wording. The passage says only that an observed object “may” have changed or ceased to exist; it makes no claim about most stars.",
+   "D": "Incorrect — contradiction. The principle “applies equally to nearby objects”, such as the Sun, whose light takes about eight minutes to arrive."
+  }
+ },
+ {
+  "id": "V5-10",
+  "difficulty": "advanced",
+  "topic": "Linguistics: the comparative method",
+  "passage": "Linguists group languages into families on the basis of systematic correspondences rather than isolated resemblances. Two languages may share a word by chance, or because one has borrowed it from the other; neither case demonstrates common descent. What the comparative method looks for are regular sound correspondences recurring across large parts of the basic vocabulary—words for body parts, close kin, low numbers and the like, which are less often borrowed than terms for trade goods or technology. Where such correspondences are found, linguists infer that the languages descend from a common ancestor, and they can partly reconstruct that ancestor’s words, even if no written record of it survives. The Indo-European family, which includes most languages of Europe as well as several of Iran and northern India, was established in this way. The method has limits, however. Because sound and meaning change continuously, resemblances fade over time, and beyond a certain depth—usually estimated at several thousand years—the evidence becomes too thin to distinguish genuine relationship from coincidence. Claims about very ancient super-families therefore remain contested.",
+  "question": "Which of the following statements is correct?",
+  "options": [
+   "Linguists may reconstruct elements of an ancestral language for which no written evidence exists.",
+   "Words for trade goods and technology provide the strongest evidence that two languages are related.",
+   "If two languages share a word, this demonstrates that they descend from a common ancestor.",
+   "The comparative method has shown that every language of Europe belongs to the Indo-European family."
+  ],
+  "answer": "A",
+  "explanations": {
+   "A": "Correct. Linguists can partly reconstruct an ancestor’s words “even if no written record of it survives”.",
+   "B": "Incorrect — contradiction. Such terms are borrowed more often than basic vocabulary, so they are weaker evidence, not the strongest.",
+   "C": "Incorrect — contradiction. A shared word may arise by chance or borrowing, and “neither case demonstrates common descent”.",
+   "D": "Incorrect — scope shift. The family includes “most languages of Europe”, not every one."
+  }
+ },
+ {
+  "id": "V5-11",
+  "difficulty": "advanced",
+  "topic": "Ethics in administration: gifts and hospitality",
+  "passage": "An agency’s code of conduct regulates gifts and hospitality offered to officials in connection with their duties. Gifts of purely symbolic value—a pen, a calendar, a modest book—may be accepted without formality. Any other gift must be declined, unless refusing it would cause offence, as may happen during official visits abroad. In that case the official may accept the gift on behalf of the agency, but must register it within ten working days and hand it over; it then becomes the property of the agency. Hospitality is treated differently. Officials may accept a meal or an invitation to an event where their attendance serves the agency’s interests, but not where the host is a party to a procedure that the official is currently handling, such as a tender or an inspection. In cases of doubt, officials are expected to consult the ethics adviser before accepting, and a written opinion from the adviser protects them from later disciplinary action, provided they have followed it. A gift offered through a member of the official’s family is treated as if it had been offered to the official directly.",
+  "question": "Which of the following statements is correct?",
+  "options": [
+   "Officials may keep a gift of more than symbolic value if refusing it would cause offence.",
+   "An official handling a tender may accept a dinner from a bidding company if attending serves the agency’s interests.",
+   "A gift accepted to avoid causing offence ends up belonging to the agency, not to the official.",
+   "Officials are required to consult the ethics adviser before accepting any form of hospitality whatsoever."
+  ],
+  "answer": "C",
+  "explanations": {
+   "A": "Incorrect — partial truth. Such a gift may be accepted, but only on behalf of the agency; it must be registered and handed over, so the official cannot keep it.",
+   "B": "Incorrect — contradiction. Hospitality is excluded where the host is party to a procedure the official is handling, such as a tender, whatever the agency’s interest.",
+   "C": "Correct. A gift accepted because refusal would cause offence must be handed over and becomes the agency’s property.",
+   "D": "Incorrect — extreme wording. Consulting the adviser is expected only “in cases of doubt”, not before every acceptance of hospitality."
+  }
+ },
+ {
+  "id": "V5-12",
+  "difficulty": "foundation",
+  "topic": "History of standards and measurement: the metric system",
+  "passage": "Before the late eighteenth century, units of length and weight in Europe varied from one country, and often from one town, to the next. A “foot” or a “pound” in one market might differ noticeably from its namesake a day’s journey away, which complicated trade and invited fraud. The metric system, devised in France at the end of that century, aimed to replace this patchwork with units based on nature and related to one another by multiples of ten. The metre was originally defined as one ten-millionth of the distance from the North Pole to the Equator, measured along a meridian, and the unit of mass was linked to the mass of a given volume of water. Adoption was neither immediate nor universal. Even in France, traditional units persisted in everyday use for decades, and some countries never fully abandoned their customary measures. Over time, the definitions themselves were revised: physical reference objects were introduced, and later the units were redefined in terms of fundamental constants of nature, which can be reproduced in any properly equipped laboratory.",
+  "question": "Which of the following statements is correct?",
+  "options": [
+   "Once introduced, the metric system was immediately adopted in everyday use throughout France.",
+   "Every country eventually gave up its traditional units in favour of the metric system.",
+   "The metre was originally defined by reference to the speed of light.",
+   "One aim of the metric system was to simplify the relationships between different units."
+  ],
+  "answer": "D",
+  "explanations": {
+   "A": "Incorrect — contradiction. Adoption was “neither immediate nor universal”, and traditional units persisted in France for decades.",
+   "B": "Incorrect — extreme wording. Some countries “never fully abandoned their customary measures”.",
+   "C": "Incorrect — contradiction. The original definition was based on the distance from the North Pole to the Equator; the speed of light is never mentioned.",
+   "D": "Correct. The system was designed with units linked by multiples of ten, replacing an inconsistent patchwork of local measures."
+  }
+ },
+ {
+  "id": "V5-13",
+  "difficulty": "intermediate",
+  "topic": "Statistics and data literacy: correlation and causation",
+  "passage": "A team of education researchers compared library membership with school examination results across twenty districts of a region. The pattern was striking: the five districts with the highest proportion of residents holding a library card also recorded the highest average results, while the five with the lowest membership recorded the lowest. Some commentators cited the findings as proof that library use improves educational performance and called for new branches in districts with weaker results. The researchers themselves urged caution. They pointed out that the districts with high membership were also, on average, the most affluent, and that household income is itself associated with both library use and examination results. The data, they argued, were consistent with a causal effect of libraries but could not establish one. To test the hypothesis more directly, they proposed following the results of pupils in two districts where new branches are due to open, and comparing them with pupils in similar districts where no branch is planned. Even this design, they acknowledged, would not be perfect, since the districts receiving branches had not been selected at random.",
+  "question": "Which of the following statements is NOT supported by the passage?",
+  "options": [
+   "The researchers concluded that libraries have no effect on examination results.",
+   "Household income may help to explain why high library membership and high examination results occur in the same districts.",
+   "The proposed follow-up would compare pupils in districts gaining a branch with pupils in comparable districts that are not.",
+   "The researchers accepted that even their proposed follow-up study would have limitations."
+  ],
+  "answer": "A",
+  "explanations": {
+   "A": "Correct — not supported. The researchers said the data were “consistent with a causal effect” but could not establish one; they did not conclude that there is no effect.",
+   "B": "Incorrect — supported. High-membership districts were the most affluent, and income is associated with both library use and results.",
+   "C": "Incorrect — supported. The design compares pupils where new branches open with pupils in similar districts “where no branch is planned”.",
+   "D": "Incorrect — supported. The researchers acknowledged that the design would not be perfect because the districts had not been selected at random."
+  }
+ },
+ {
+  "id": "V5-14",
+  "difficulty": "advanced",
+  "topic": "Archives and heritage: principles of conservation",
+  "passage": "Modern conservation of historic buildings and artworks rests on a few widely shared principles, though their application is often debated. The first is minimal intervention: conservators should do no more than is necessary to stabilise an object and slow its deterioration. The second is reversibility—any material added should, as far as possible, be removable in future without damaging the original, so that later generations, with better techniques, can revisit today’s decisions. A third principle requires that new work be distinguishable from old on close inspection, even if it is designed to blend in at a normal viewing distance. These ideas emerged partly in reaction to nineteenth-century restorations, in which architects sometimes rebuilt medieval structures according to what they believed the building ought to have looked like, removing later additions in the process. Critics argue that perfect reversibility is rarely achievable in practice, since even cleaning removes material irreversibly. Most practitioners therefore treat reversibility as an aspiration that guides the choice between methods rather than as an absolute requirement.",
+  "question": "Which of the following statements is correct?",
+  "options": [
+   "Conservators are required to ensure that every intervention can be completely reversed.",
+   "A repair that is invisible from a normal distance may still meet the principles described.",
+   "Modern conservation principles arose entirely from a desire to undo the work of nineteenth-century restorers.",
+   "Most practitioners regard cleaning as a breach of the reversibility principle and therefore avoid it."
+  ],
+  "answer": "B",
+  "explanations": {
+   "A": "Incorrect — extreme wording. Reversibility applies “as far as possible” and is treated as an aspiration, not an absolute requirement.",
+   "B": "Correct. New work must be distinguishable “on close inspection” but may be designed to blend in when seen from a normal distance.",
+   "C": "Incorrect — extreme wording. The ideas emerged “partly” in reaction to nineteenth-century restorations, and nothing is said about undoing that work.",
+   "D": "Incorrect — unsupported inference. Critics cite cleaning to show that perfect reversibility is rarely achievable; the passage never says practitioners avoid cleaning."
+  }
+ },
+ {
+  "id": "V5-15",
+  "difficulty": "intermediate",
+  "topic": "Psychology of decision-making: loss aversion and framing",
+  "passage": "Research on decision-making has repeatedly shown that people do not evaluate outcomes in purely absolute terms. Instead, they tend to judge them as gains or losses relative to a reference point, often their current situation, and losses generally weigh more heavily than gains of the same size: losing a sum of money typically causes more dissatisfaction than finding the same sum causes pleasure. This asymmetry, known as loss aversion, helps to explain the framing effect, whereby logically equivalent options lead to different choices depending on whether they are described in terms of what may be gained or what may be lost. In experiments, a treatment described as having a ninety per cent survival rate is often chosen more readily than one described as having a ten per cent mortality rate, although the two descriptions convey the same information. For public bodies, the implication is not that framing can be avoided—every message must be phrased somehow—but that communications should be tested and, where important decisions are at stake, presented in more than one form.",
+  "question": "Which of the following statements is correct?",
+  "options": [
+   "Public bodies should aim to communicate important decisions without using any framing at all.",
+   "People generally feel a gain more intensely than they feel a loss of exactly the same size.",
+   "Doctors are more susceptible to the framing effect than their patients.",
+   "Two equivalent descriptions of a treatment can lead people to make different choices."
+  ],
+  "answer": "D",
+  "explanations": {
+   "A": "Incorrect — contradiction. Framing cannot be avoided because “every message must be phrased somehow”.",
+   "B": "Incorrect — contradiction. Losses “weigh more heavily than gains of the same size”, not the reverse.",
+   "C": "Incorrect — unsupported comparison. The passage never compares doctors with patients.",
+   "D": "Correct. The survival-rate and mortality-rate descriptions carry identical information, yet one is chosen more readily in experiments."
+  }
+ },
+ {
+  "id": "V5-16",
+  "difficulty": "advanced",
+  "topic": "Public finance: tax incidence",
+  "passage": "Economists distinguish between the legal incidence of a tax—who is formally required to pay it to the authorities—and its economic incidence, meaning who ultimately bears its cost. The two frequently differ. Suppose a regional authority imposes a levy on the sellers of a product. Sellers may respond by raising prices, in which case part of the burden passes to buyers; how large a part depends on how strongly each side reacts to changes in price. If buyers have few alternatives and continue to purchase almost the same quantity whatever the price, sellers can pass on most of the levy. If, on the other hand, buyers can easily switch to substitutes, sellers will find it harder to raise prices and will absorb a larger share themselves through lower margins. Over the longer term, part of the burden may also shift to workers or suppliers. One consequence is that a decision about whom to tax formally does not, by itself, determine who pays. Analysts assessing the fairness of a tax are therefore advised to examine market conditions rather than simply reading the text of the law.",
+  "question": "Which of the following statements is correct?",
+  "options": [
+   "A levy imposed on sellers is always borne entirely by those sellers.",
+   "When buyers can readily switch to substitutes, sellers are able to pass most of a levy on to them.",
+   "Two levies imposed on the same group could place their real burden on different groups, depending on the markets concerned.",
+   "An authority can ensure that buyers bear the full cost of a tax simply by making them legally liable for it."
+  ],
+  "answer": "C",
+  "explanations": {
+   "A": "Incorrect — extreme wording. Sellers may raise prices so that “part of the burden passes to buyers”.",
+   "B": "Incorrect — contradiction. Where substitutes are available, sellers find it harder to raise prices and absorb a larger share themselves.",
+   "C": "Correct. Legal and economic incidence “frequently differ”, and who bears the cost depends on how buyers and sellers react in each market.",
+   "D": "Incorrect — contradiction. Deciding whom to tax formally “does not, by itself, determine who pays”."
+  }
+ },
+ {
+  "id": "V5-17",
+  "difficulty": "foundation",
+  "topic": "Astronomy: the causes of the seasons",
+  "passage": "A common misconception holds that the seasons are caused by changes in the Earth’s distance from the Sun. In fact, the Earth’s orbit is nearly circular, and the planet is actually slightly closer to the Sun during the northern winter than during the northern summer. The seasons arise instead from the tilt of the Earth’s axis, which is inclined at roughly twenty-three and a half degrees relative to the plane of its orbit. As the Earth travels around the Sun, this tilt causes each hemisphere to lean towards the Sun for part of the year and away from it for another part. When a hemisphere is tilted towards the Sun, sunlight strikes it at a steeper angle, concentrating energy on a smaller area, and the days are longer. Both effects contribute to warmer conditions. This also explains why the seasons are reversed between the two hemispheres: when it is summer in Europe, it is winter in southern Africa and Australia. Near the Equator, where the angle of sunlight changes less over the year, seasonal differences in temperature are generally small.",
+  "question": "Which of the following statements is correct?",
+  "options": [
+   "Summer in the northern hemisphere occurs at the time of year when the Earth is closest to the Sun.",
+   "Longer days are the only reason why summers are warmer than winters.",
+   "The Earth’s axial inclination is why the hemispheres have opposite seasons simultaneously.",
+   "Regions near the Equator experience the largest seasonal differences in temperature."
+  ],
+  "answer": "C",
+  "explanations": {
+   "A": "Incorrect — contradiction. The Earth is slightly closer to the Sun during the northern winter.",
+   "B": "Incorrect — extreme wording. The passage names two effects, the steeper angle of sunlight and longer days.",
+   "C": "Correct. Because of the tilt, each hemisphere leans towards the Sun at a different time of year, so their seasons are reversed.",
+   "D": "Incorrect — contradiction. Seasonal temperature differences near the Equator are “generally small”."
+  }
+ },
+ {
+  "id": "V5-18",
+  "difficulty": "intermediate",
+  "topic": "Linguistics: borrowing and language contact",
+  "passage": "Languages constantly borrow words from one another, and the pattern of borrowing often reflects historical contact between communities. English offers a well-known example. After the Norman Conquest, French became for several centuries the language of the court, the law and much of the aristocracy, while English continued to be spoken by the great majority of the population. A trace of this division is often seen in pairs of words for animals and their meat: the living animals generally kept English names—cow, sheep, swine—while the meat served at table acquired names of French origin, such as beef, mutton and pork. Linguists caution, however, against treating such neat examples as a complete explanation, since some patterns have more than one cause. Borrowing is also not limited to vocabulary for new objects or ideas; it may replace existing native words, especially in prestigious domains. A large share of the English vocabulary is of French or Latin origin, yet the most frequently used words, such as articles, pronouns and common verbs, remain overwhelmingly Germanic.",
+  "question": "Which of the following statements is correct?",
+  "options": [
+   "After the Norman Conquest, most people in England switched to speaking French.",
+   "A borrowed word does not necessarily name something that was previously unknown to the borrowing community.",
+   "Because so much of its vocabulary comes from French or Latin, English is classified as a Romance language.",
+   "The animal and meat word pairs prove that every difference in English vocabulary can be traced to social class."
+  ],
+  "answer": "B",
+  "explanations": {
+   "A": "Incorrect — contradiction. English “continued to be spoken by the great majority of the population”.",
+   "B": "Correct. Borrowing is not confined to words for new things; it may replace existing native words.",
+   "C": "Incorrect — unsupported inference. The passage says nothing about how English is classified and notes that its most frequent words remain Germanic.",
+   "D": "Incorrect — extreme wording. Linguists warn against treating such examples as a complete explanation; nothing is proved about every difference."
+  }
+ },
+ {
+  "id": "V5-19",
+  "difficulty": "advanced",
+  "topic": "Statistics and data literacy: sampling error and bias",
+  "passage": "A statistics office that wishes to know what proportion of residents use public transport cannot ask everyone, so it surveys a sample. Provided the sample is selected at random from the whole population, the laws of probability allow the office to estimate how far its result is likely to deviate from the true figure—a range usually reported as the margin of error. That margin shrinks as the sample grows, but more slowly than one might expect: to halve it, the sample must be roughly quadrupled. Crucially, the margin of error measures only the uncertainty that arises from chance in random selection. It says nothing about systematic bias. If a survey is conducted by telephone during working hours, for example, people in full-time employment will be under-represented, and if they use public transport at a different rate from others, the result will be distorted in a consistent direction. Enlarging such a sample does not remove the bias; it merely produces a more precise estimate of the wrong quantity. For this reason, survey designers often devote more effort to how respondents are selected than to how many are selected.",
+  "question": "Which of the following statements is correct?",
+  "options": [
+   "Doubling the size of a random sample will halve its margin of error.",
+   "A small margin of error shows that a survey’s result is free from systematic bias.",
+   "Telephone surveys conducted during working hours will always overestimate the use of public transport.",
+   "Adding respondents to a survey with a biased selection method can make its estimate more precise without making it more accurate."
+  ],
+  "answer": "D",
+  "explanations": {
+   "A": "Incorrect — partial truth. To halve the margin of error the sample must be “roughly quadrupled”, not doubled.",
+   "B": "Incorrect — contradiction. The margin of error “says nothing about systematic bias”.",
+   "C": "Incorrect — extreme wording. The passage says only that the result will be distorted if employed people’s usage differs; it gives no direction.",
+   "D": "Correct. Enlarging a biased sample “merely produces a more precise estimate of the wrong quantity”."
+  }
+ },
+ {
+  "id": "V5-20",
+  "difficulty": "intermediate",
+  "topic": "Maritime history: the problem of longitude",
+  "passage": "For centuries, navigators on the open sea could determine their latitude—their position north or south of the Equator—with reasonable accuracy by measuring the height of the Sun or certain stars above the horizon. Longitude, their position east or west, posed a far harder problem. Because the Earth rotates through 360 degrees in twenty-four hours, each hour of difference between local time and the time at a reference port corresponds to fifteen degrees of longitude. Local time could be found from the Sun; the difficulty lay in knowing, far from land, what time it was at the reference port. Pendulum clocks, accurate on land, were unreliable on a moving ship. Two solutions emerged in the eighteenth century. One was the marine chronometer, a clock robust and precise enough to keep reference time throughout a long voyage. The other relied on astronomical tables that allowed navigators to deduce reference time from the position of the Moon relative to particular stars. Early chronometers were costly, and for some decades many ships continued to use the astronomical method, which required only instruments and tables but involved lengthy calculations.",
+  "question": "Which of the following statements is correct?",
+  "options": [
+   "If a navigator knew the time both on board and at the reference port, longitude could be worked out.",
+   "Until the eighteenth century, latitude was as difficult to establish at sea as longitude.",
+   "The marine chronometer immediately replaced the astronomical method on all ships.",
+   "A difference of two hours between local time and reference time corresponds to fifteen degrees of longitude."
+  ],
+  "answer": "A",
+  "explanations": {
+   "A": "Correct. Each hour of difference between the two times equals fifteen degrees of longitude, so knowing both times gives the ship’s longitude.",
+   "B": "Incorrect — contradiction. Latitude could be found “with reasonable accuracy”, while longitude “posed a far harder problem”.",
+   "C": "Incorrect — extreme wording. Early chronometers were costly, and many ships kept using the astronomical method for decades.",
+   "D": "Incorrect — partial truth. One hour equals fifteen degrees, so two hours correspond to thirty degrees."
+  }
+ },
+ {
+  "id": "V5-21",
+  "difficulty": "advanced",
+  "topic": "History of standards and measurement: screw threads",
+  "passage": "Until well into the nineteenth century, screws, nuts and bolts were largely made according to the individual practice of each workshop. The angle of the thread, its depth and the number of turns per inch varied from maker to maker, so that a bolt from one factory would rarely fit a nut from another. Repairing a machine far from where it had been built could therefore mean cutting replacement parts by hand. As mechanised production expanded, engineers began to argue that a limited set of agreed thread forms would reduce costs and make parts interchangeable. Proposals of this kind were taken up first by individual firms and engineering societies, and only gradually by governments and by major purchasers such as navies. Standardisation within countries did not end the problem. Different nations adopted different systems, and machinery assembled from parts made in more than one country could still require several sets of tools. Efforts to reconcile national systems continued for decades. The history of the screw thread is often cited as an example of how a seemingly minor technical detail can carry large economic consequences.",
+  "question": "Which of the following statements is NOT supported by the passage?",
+  "options": [
+   "Before standardisation, parts made by different workshops were often not interchangeable.",
+   "Agreed thread forms were promoted partly on the grounds that they would help to lower costs.",
+   "Governments were the first to adopt standard thread forms, and private firms followed their lead.",
+   "Standardisation within individual countries did not by itself remove every difficulty in combining parts."
+  ],
+  "answer": "C",
+  "explanations": {
+   "A": "Incorrect — supported. Threads varied from maker to maker, so a bolt from one factory would rarely fit a nut from another.",
+   "B": "Incorrect — supported. Engineers argued that agreed thread forms “would reduce costs and make parts interchangeable”.",
+   "C": "Correct — not supported. Standard forms were taken up “first by individual firms and engineering societies” and only gradually by governments, so the option reverses the order.",
+   "D": "Incorrect — supported. Different nations adopted different systems, so machinery with parts from several countries could still need several sets of tools."
+  }
+ },
+ {
+  "id": "V5-22",
+  "difficulty": "intermediate",
+  "topic": "Archives and heritage: digitising historical registers",
+  "passage": "A European research consortium has been digitising the handwritten registers of several regional archives, some of them centuries old. The project produces high-resolution images of every page and, for a selection of registers, a machine-generated transcription that users can search by keyword. The consortium stresses that digitisation is not a substitute for preservation. Digital files must be migrated to new formats and storage systems as technology changes, which requires continuous funding, whereas a well-kept paper register can survive for centuries with relatively little intervention. The originals will therefore remain in the archives, although access to them will be restricted to cases where the digital image is insufficient—for example, when a researcher needs to examine the paper or the ink. Early feedback from users has been positive, but the automatic transcriptions contain errors, particularly in passages written in older scripts. The consortium has accordingly advised users to check search results against the page images, and it has invited volunteers to correct transcriptions, a step that it hopes will improve accuracy over time.",
+  "question": "Which of the following statements is correct?",
+  "options": [
+   "A searchable transcription is being produced for every register that the consortium digitises.",
+   "Original registers may still be consulted when a digital image does not meet a researcher’s needs.",
+   "The consortium regards digital copies as a cheaper long-term alternative to keeping the original registers.",
+   "Corrections made by volunteers have already removed the errors from the automatic transcriptions."
+  ],
+  "answer": "B",
+  "explanations": {
+   "A": "Incorrect — scope shift. Transcriptions are produced only “for a selection of registers”; images are made for every page.",
+   "B": "Correct. Access to the originals is restricted to cases where the image is insufficient, such as examining the paper or ink.",
+   "C": "Incorrect — contradiction. Digitisation is “not a substitute for preservation”, and digital files need continuous funding.",
+   "D": "Incorrect — unsupported inference. Volunteers have only been invited, and the consortium “hopes” accuracy will improve over time."
+  }
+ },
+ {
+  "id": "V5-23",
+  "difficulty": "foundation",
+  "topic": "Architecture: Roman concrete",
+  "passage": "The builders of ancient Rome made extensive use of a form of concrete, a material that allowed them to create structures that would have been difficult or impossible to build in cut stone alone. Its key ingredients were lime, water, rubble and, in many cases, a volcanic ash found near the Bay of Naples. The ash reacted with the lime to produce a mortar that could set even under water, which made it especially valuable for harbour construction. Concrete also gave architects freedom of form: it could be poured into wooden moulds or between facings of brick to produce vaults and domes of great span. The best-known example is the dome of the Pantheon in Rome, which remains one of the largest unreinforced concrete domes in the world. Its builders reduced the weight of the structure by using progressively lighter materials towards the top. Roman concrete was not identical to the modern material, which normally relies on a different kind of cement and on steel reinforcement, but it shared the same basic principle of a binder holding together an aggregate.",
+  "question": "Which of the following statements is correct?",
+  "options": [
+   "The volcanic ash used in some Roman concrete allowed it to harden in water.",
+   "Roman concrete was made with the same type of cement and steel reinforcement as modern concrete.",
+   "The dome of the Pantheon is the largest concrete dome ever built.",
+   "The Pantheon’s builders used heavier materials towards the top of the dome to strengthen it."
+  ],
+  "answer": "A",
+  "explanations": {
+   "A": "Correct. The ash reacted with lime to give a mortar that could set even under water.",
+   "B": "Incorrect — contradiction. Modern concrete uses “a different kind of cement” and steel reinforcement; only the basic principle is shared.",
+   "C": "Incorrect — extreme wording. The dome is “one of the largest unreinforced concrete domes”, not the largest ever built.",
+   "D": "Incorrect — contradiction. The builders used “progressively lighter materials towards the top” to reduce weight."
+  }
+ },
+ {
+  "id": "V5-24",
+  "difficulty": "advanced",
+  "topic": "History of mathematics: non-Euclidean geometry",
+  "passage": "For more than two thousand years, Euclid’s geometry was regarded not merely as a useful system but as a description of the necessary structure of space. Most of its postulates seemed self-evident, but the fifth—the parallel postulate, which in one common formulation states that through a point not on a given line exactly one parallel to that line can be drawn—appeared less obvious, and many mathematicians tried to prove it from the others. In the nineteenth century, several mathematicians working independently showed that this effort was bound to fail: consistent geometries could be constructed in which the parallel postulate is replaced by an alternative, allowing either no parallel lines or infinitely many. In such geometries, the angles of a triangle no longer add up to exactly two right angles. The discovery was at first regarded by many as a mathematical curiosity. Its significance grew considerably when physicists later found that curved geometries of this kind describe space and time on very large scales better than Euclid’s does, although Euclidean geometry remains an excellent approximation for everyday purposes.",
+  "question": "Which of the following statements is NOT supported by the passage?",
+  "options": [
+   "Attempts to derive the parallel postulate from Euclid’s other postulates could not have succeeded.",
+   "The importance of the new geometries for physics was not recognised as soon as they were discovered.",
+   "In some geometries, the angles of a triangle do not add up to two right angles.",
+   "Physicists’ use of non-Euclidean geometry has shown that Euclidean geometry gives unreliable results in everyday applications."
+  ],
+  "answer": "D",
+  "explanations": {
+   "A": "Incorrect — supported. The effort to prove the postulate from the others “was bound to fail”.",
+   "B": "Incorrect — supported. The discovery was first seen as a curiosity, and its significance grew only when physicists later applied it.",
+   "C": "Incorrect — supported. In such geometries the angles of a triangle “no longer add up to exactly two right angles”.",
+   "D": "Correct — not supported. Euclidean geometry “remains an excellent approximation for everyday purposes”, so it is not shown to be unreliable in daily use."
+  }
+ },
+ {
+  "id": "V5-25",
+  "difficulty": "intermediate",
+  "topic": "Ethics in administration: reporting wrongdoing",
+  "passage": "A national agency has issued internal guidance for staff who suspect wrongdoing at work. Staff are encouraged to raise concerns first with their line manager. If that is inappropriate—for example, because the manager is involved—they may report directly to an independent integrity office within the agency. Reports may be made anonymously, although the guidance notes that anonymous reports can be harder to investigate, since the office cannot ask follow-up questions. The guidance protects staff who report in good faith from disciplinary action or other detriment, even if the concern proves unfounded. It does not protect those who knowingly make false allegations. Where a member of staff has reported internally and the integrity office has not responded within three months, he or she may take the matter to an external oversight body. The guidance emphasises that it does not replace the general duty of all staff to report suspected criminal offences to the relevant authorities, a duty that applies regardless of internal procedures.",
+  "question": "Which of the following statements is correct?",
+  "options": [
+   "Staff must in all cases raise their concern with their line manager first, before they may contact the integrity office.",
+   "Staff who report a concern in good faith lose their protection if the concern turns out to be unfounded.",
+   "If the integrity office leaves an internal report unanswered for three months, staff may go to an external body.",
+   "The integrity office does not accept anonymous reports, because they cannot be investigated."
+  ],
+  "answer": "C",
+  "explanations": {
+   "A": "Incorrect — extreme wording. Staff are only “encouraged” to go to their manager first and may report directly where that is inappropriate.",
+   "B": "Incorrect — contradiction. Good-faith reporters are protected “even if the concern proves unfounded”.",
+   "C": "Correct. Where an internal report has had no response within three months, the matter may be taken to an external oversight body.",
+   "D": "Incorrect — contradiction. Anonymous reports are allowed; they are only “harder to investigate”."
+  }
+ }
+]

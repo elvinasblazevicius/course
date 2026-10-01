@@ -1,0 +1,502 @@
+[
+  {
+    "id": "V1-01",
+    "difficulty": "foundation",
+    "topic": "Public administration – digital permit applications",
+    "passage": "A regional authority replaced its paper-based system for building-permit applications with a single online portal. Under the previous arrangement, applicants had to submit separate forms to three departments – planning, environmental health and fire safety – each of which kept its own file and applied its own deadline. The new portal allows an applicant to upload documents once, after which they are shared automatically with all three departments. An internal review, conducted after the first full year of operation, found that the average time taken to reach a decision had fallen by roughly a third. However, the review noted that the improvement was concentrated among straightforward residential applications; complex commercial projects, which often require site visits and consultation with neighbours, showed little change in processing time. Staff reported that the main benefit was the elimination of duplicate data entry rather than any change in the way applications were assessed. The authority has kept a paper option available for applicants without internet access, although relatively few people have chosen to use it.",
+    "question": "Which of the following statements is correct?",
+    "options": [
+      "The portal reduced the average decision time by about a third for every category of application, including complex commercial projects.",
+      "Staff saw the main gain as ending repeated entry of the same data, not changing how applications are assessed.",
+      "Paper applications are no longer accepted now that the online portal is in operation.",
+      "The faster decisions resulted mainly from departments changing the way in which they assess applications."
+    ],
+    "answer": "B",
+    "explanations": {
+      "A": "Incorrect — extreme wording. The one-third fall is an average; complex commercial projects showed little change.",
+      "B": "Correct. Staff said the main benefit was the end of duplicate data entry, not any change in how applications are assessed.",
+      "C": "Incorrect — contradiction. A paper option has been kept for applicants without internet access.",
+      "D": "Incorrect — contradiction. Staff attributed the benefit to removing duplicate data entry rather than to changes in assessment."
+    }
+  },
+  {
+    "id": "V1-02",
+    "difficulty": "intermediate",
+    "topic": "Economics – the paradox of thrift",
+    "passage": "The so-called paradox of thrift describes a situation in which a decision that is sensible for each household becomes harmful when everyone takes it at once. If a single family decides to spend less and save more, its own financial position improves and the wider economy is scarcely affected. If, however, most households cut their spending simultaneously – for example, because they fear losing their jobs – businesses face a fall in demand for their goods and services. Firms may respond by reducing output and laying off workers, which lowers incomes. With lower incomes, households may be unable to save as much as they had planned, so that total saving in the economy does not rise and may even fall. The argument is most closely associated with economists who stress the role of demand in determining output in the short run. Critics point out that the paradox applies chiefly when an economy has unused capacity; when resources are fully employed, higher saving can finance investment and support growth over the longer term.",
+    "question": "Which of the following statements is correct?",
+    "options": [
+      "Higher saving is always damaging to the economy as a whole.",
+      "A single household that decides to save more will cause firms to cut their output.",
+      "Critics of the paradox of thrift maintain that it is invalid under all economic conditions.",
+      "When many households try to save more at once, total saving may fail to rise."
+    ],
+    "answer": "D",
+    "explanations": {
+      "A": "Incorrect — extreme wording. The passage says that when resources are fully employed, higher saving can finance investment and support growth.",
+      "B": "Incorrect — scope shift. One family’s decision scarcely affects the wider economy; the harm arises only when most households act together.",
+      "C": "Incorrect — extreme wording. Critics say the paradox applies chiefly when there is unused capacity, so they accept it in some conditions.",
+      "D": "Correct. Falling incomes may leave total saving unchanged or even lower when households cut spending at the same time."
+    }
+  },
+  {
+    "id": "V1-03",
+    "difficulty": "advanced",
+    "topic": "Environment – coastal flood defence options",
+    "passage": "A coastal municipality has been debating how to respond to repeated flooding of low-lying farmland near an estuary. Engineers initially recommended raising the existing sea wall, but a study commissioned by the council suggested that “managed realignment” – deliberately allowing the sea to reclaim a strip of farmland behind a new, lower embankment further inland – would be cheaper to maintain over several decades. The study added that the resulting salt marsh could absorb wave energy and provide habitat for wading birds, provided that the land was not subsequently drained. In its formal response, the council approved funding for a detailed feasibility assessment of realignment on one section of the coast, while agreeing to carry out urgent repairs to the sea wall elsewhere. Landowners whose fields would be affected have asked for compensation; the council has stated that it will consider compensation arrangements only if the feasibility assessment recommends proceeding. Environmental groups have welcomed the study but cautioned that a salt marsh can take many years to become fully established.",
+    "question": "Which of the following statements is correct?",
+    "options": [
+      "So far, the council’s only step towards realignment is to fund a feasibility study for part of the coastline.",
+      "The council has agreed to compensate the landowners whose fields would be affected by realignment.",
+      "The study concluded that managed realignment would be cheaper to construct than raising the sea wall.",
+      "Once the farmland is flooded, the new salt marsh will immediately provide habitat for wading birds."
+    ],
+    "answer": "A",
+    "explanations": {
+      "A": "Correct. The council has funded only a feasibility assessment on one section; implementation depends on that assessment, so realignment itself has not been approved.",
+      "B": "Incorrect — unsupported inference. The council will merely consider compensation, and only if the assessment recommends proceeding.",
+      "C": "Incorrect — partial truth. The study said realignment would be cheaper to maintain over several decades, not cheaper to build.",
+      "D": "Incorrect — unsupported inference. Realignment has not been approved, the habitat benefit depends on the land not being drained, and a marsh may take many years to become established."
+    }
+  },
+  {
+    "id": "V1-04",
+    "difficulty": "foundation",
+    "topic": "History – the Hanseatic network of merchant towns",
+    "passage": "The Hanseatic League was a loose association of merchant communities and towns that dominated much of the trade of the North Sea and the Baltic during the late Middle Ages. Rather than a state with a single government, it functioned as a network: member towns sent representatives to occasional general assemblies, but decisions were not always applied uniformly, and individual towns frequently pursued their own interests. The League’s merchants maintained major trading posts, known as kontors, in several foreign cities, including Bergen and Novgorod, where they enjoyed privileges such as reduced tolls and the right to be governed by their own rules. Goods moving through the network included grain, timber, furs, wax and salted fish. The League’s influence declined gradually from the fifteenth century onwards, as stronger territorial monarchies asserted control over trade and as Dutch and English merchants became increasingly competitive. It was never formally dissolved in a single act; its last general assembly took place in the seventeenth century.",
+    "question": "Which of the following statements is correct?",
+    "options": [
+      "The League was run by a central government whose decisions were binding on every member town.",
+      "The League came to a sudden end when it was formally dissolved in the fifteenth century.",
+      "Hanseatic merchants operating abroad could benefit from special rights, including lower charges on trade.",
+      "The League declined chiefly because demand for grain and timber fell."
+    ],
+    "answer": "C",
+    "explanations": {
+      "A": "Incorrect — contradiction. The League was not a state with a single government, and decisions were not always applied uniformly.",
+      "B": "Incorrect — contradiction. Decline was gradual, the League was never formally dissolved, and its last assembly took place in the seventeenth century.",
+      "C": "Correct. Merchants at the kontors enjoyed privileges such as reduced tolls.",
+      "D": "Incorrect — cause and effect. The passage attributes the decline to stronger monarchies and Dutch and English competition, not to falling demand."
+    }
+  },
+  {
+    "id": "V1-05",
+    "difficulty": "intermediate",
+    "topic": "Public administration – participatory budgeting",
+    "passage": "A port town has run a participatory budgeting scheme for several years. Each year, a fixed share of the municipal capital budget – around five per cent – is set aside for projects proposed and selected by residents. Any resident aged sixteen or over may submit a proposal, which municipal officials then check for legal and technical feasibility and for cost. Proposals that pass this check are put to a public vote, and the highest-ranked projects are funded until the allocated sum is exhausted. The council retains a formal right to reject a winning project, although it has never exercised this right. An evaluation commissioned by the town found that turnout in the votes remained modest, typically below one in ten eligible residents, and that participants were disproportionately older and more highly educated than the population as a whole. Neighbourhoods with active residents’ associations tended to submit more proposals and to win a larger share of funding. The evaluation recommended targeted outreach in under-represented districts, but the council has not yet decided whether to adopt this recommendation.",
+    "question": "Which of the following statements is NOT supported by the passage?",
+    "options": [
+      "Targeted outreach in under-represented districts has helped to broaden participation in the scheme.",
+      "Proposals are reviewed by officials for feasibility before residents vote on them.",
+      "Some residents under the age of eighteen are entitled to put forward proposals.",
+      "The council has the power to set aside the result of the public vote on a project, even though it has never used it."
+    ],
+    "answer": "A",
+    "explanations": {
+      "A": "Correct — not supported. Outreach was only recommended, and the council has not decided whether to adopt it, so it cannot have broadened participation.",
+      "B": "Incorrect — supported. Officials check proposals for legal and technical feasibility and cost before they go to a public vote.",
+      "C": "Incorrect — supported. Any resident aged sixteen or over may submit a proposal, which includes sixteen- and seventeen-year-olds.",
+      "D": "Incorrect — supported. The council keeps a formal right to reject a winning project but has never used it."
+    }
+  },
+  {
+    "id": "V1-06",
+    "difficulty": "advanced",
+    "topic": "Economics – evaluating wage subsidies",
+    "passage": "Evaluations of wage subsidies – payments to employers who hire people from target groups such as the long-term unemployed – often distinguish between gross and net effects. The gross effect is simply the number of subsidised hires. The net effect is smaller, because some of those hires would have taken place anyway, a problem known as deadweight, and because subsidised workers may displace unsubsidised workers at the same or competing firms. An evaluation of a scheme run by a national employment service estimated that deadweight accounted for roughly half of all subsidised hires. It also found that participants were more likely than a comparable group of non-participants to be in work two years later, suggesting that the subsidy may have helped them to regain skills and contacts. The evaluators cautioned, however, that this finding could partly reflect the way employers selected participants, since firms may have chosen the most employable candidates. They concluded that the scheme’s cost per additional job was considerably higher than its cost per subsidised hire, and recommended that future schemes be more narrowly targeted.",
+    "question": "Which of the following statements is correct?",
+    "options": [
+      "The evaluation demonstrated that the subsidy was the cause of participants’ better employment prospects two years later.",
+      "Roughly half of the subsidised workers took the place of unsubsidised workers at competing firms.",
+      "Because of deadweight, each genuinely additional job cost the scheme more than each subsidised hire.",
+      "The evaluators recommended that wage subsidy schemes be discontinued because of their high cost."
+    ],
+    "answer": "C",
+    "explanations": {
+      "A": "Incorrect — cause and effect. The evaluators said the subsidy “may” have helped and warned that the result could partly reflect employers choosing the most employable candidates.",
+      "B": "Incorrect — partial truth. The “roughly half” figure refers to deadweight (hires that would have happened anyway), not to displacement.",
+      "C": "Correct. Deadweight means fewer additional jobs than subsidised hires, which is why the cost per additional job was considerably higher.",
+      "D": "Incorrect — contradiction. The evaluators recommended more narrowly targeted schemes, not ending them."
+    }
+  },
+  {
+    "id": "V1-07",
+    "difficulty": "intermediate",
+    "topic": "Environment – urban heat islands",
+    "passage": "Cities are often noticeably warmer than the surrounding countryside, a phenomenon known as the urban heat island effect. Several factors contribute to it. Dark surfaces such as asphalt and many roofing materials absorb a large proportion of incoming sunlight and release the stored heat slowly, particularly after sunset. Buildings reduce wind speeds and trap heat between them, while the replacement of vegetation and soil by impermeable surfaces reduces evaporation, a process that otherwise has a cooling effect. Heat produced directly by vehicles, air-conditioning units and industry adds to the total. The difference in temperature between a city and its surroundings is usually most pronounced at night and in calm, clear weather. Measures to reduce the effect include planting trees, creating green roofs and using lighter-coloured paving and roofing materials that reflect more sunlight. However, the effectiveness of such measures depends on local conditions: trees, for example, provide shade and cooling through evaporation, but they need an adequate supply of water to do so during dry periods.",
+    "question": "Which of the following statements is correct?",
+    "options": [
+      "The urban heat island effect is caused mainly by heat released from vehicles and air-conditioning units.",
+      "The city–countryside temperature gap is usually greatest on calm, clear nights.",
+      "Planting trees will lower urban temperatures whatever the amount of water available.",
+      "Light-coloured paving and roofing materials absorb more sunlight than dark surfaces such as asphalt."
+    ],
+    "answer": "B",
+    "explanations": {
+      "A": "Incorrect — unsupported inference. Heat from vehicles and air-conditioning is one factor that “adds to the total”, not the main cause.",
+      "B": "Correct. The difference is usually most pronounced at night and in calm, clear weather.",
+      "C": "Incorrect — contradiction. Trees need an adequate supply of water to provide cooling during dry periods.",
+      "D": "Incorrect — contradiction. Lighter-coloured materials reflect more sunlight, whereas dark surfaces absorb a large proportion of it."
+    }
+  },
+  {
+    "id": "V1-08",
+    "difficulty": "foundation",
+    "topic": "History – the uses of Roman roads",
+    "passage": "The road network of the Roman Empire was built primarily to allow the rapid movement of troops and officials, but over time it came to serve a much wider range of purposes. Major roads were typically constructed in layers, with a foundation of larger stones beneath finer material, and many were given a cambered surface so that rainwater would drain to the sides. Where possible, engineers favoured direct routes, although they adapted alignments to the terrain in hilly or marshy areas. Along the principal roads, the state maintained a system of stations where official messengers could change horses and travellers on government business could obtain lodging. This courier service was generally reserved for those carrying official authorisation rather than open to the public at large. Merchants and private travellers nonetheless used the roads extensively, and many towns grew up at junctions and river crossings. Sections of some Roman roads remained in use for centuries after the empire in the west had ceased to exist, and modern roads in several European countries still follow their courses.",
+    "question": "Which of the following statements is correct?",
+    "options": [
+      "Roman roads were built chiefly to encourage private trade between towns.",
+      "Any traveller could use the state stations to change horses and obtain lodging.",
+      "Roman engineers built every road in a straight line, regardless of hills, marshes or other features of the terrain.",
+      "Merchants and private travellers made wide use of roads designed mainly for military and official purposes."
+    ],
+    "answer": "D",
+    "explanations": {
+      "A": "Incorrect — contradiction. The roads were built primarily for moving troops and officials; trade was a wider use that developed over time.",
+      "B": "Incorrect — contradiction. The courier stations were generally reserved for those carrying official authorisation.",
+      "C": "Incorrect — extreme wording. Engineers favoured direct routes only “where possible” and adapted alignments in hilly or marshy areas.",
+      "D": "Correct. The roads were built primarily for troops and officials, yet merchants and private travellers used them extensively."
+    }
+  },
+  {
+    "id": "V1-09",
+    "difficulty": "advanced",
+    "topic": "Public administration – sunset clauses in regulation",
+    "passage": "A national government has introduced a requirement that all new regulations affecting businesses include a “sunset clause”, under which the regulation automatically lapses after a fixed period – normally seven years – unless it is reviewed and expressly renewed. The policy applies only to regulations adopted after the requirement came into force; existing rules are unaffected unless they are substantially amended. Exemptions may be granted where a regulation implements an international obligation or where a minister certifies that automatic expiry would create unacceptable risks to public safety. Supporters argue that sunset clauses oblige officials to check whether rules are still fit for purpose. Critics respond that reviews can become a box-ticking exercise, with regulations routinely renewed without serious scrutiny, and that the prospect of expiry may create uncertainty for firms planning long-term investments. A parliamentary committee has proposed extending the requirement to regulations that affect voluntary organisations, but the government has said only that it will consider the proposal once the first round of reviews has been completed.",
+    "question": "Which of the following statements is correct?",
+    "options": [
+      "Every regulation affecting businesses, whenever it was adopted, will now lapse after seven years unless it is renewed.",
+      "The sunset requirement has been extended to regulations affecting voluntary organisations.",
+      "Critics are concerned that sunset clauses will cause too many regulations to be abolished.",
+      "A new business regulation that implements an international obligation may be exempted from automatic expiry."
+    ],
+    "answer": "D",
+    "explanations": {
+      "A": "Incorrect — scope shift. The policy covers only regulations adopted after it came into force, exemptions exist, and the period is “normally” seven years.",
+      "B": "Incorrect — unsupported inference. The extension was only proposed by a committee; the government will merely consider it later.",
+      "C": "Incorrect — contradiction. Critics worry that regulations will be renewed routinely without scrutiny, not that too many will be abolished.",
+      "D": "Correct. Exemptions may be granted where a regulation implements an international obligation."
+    }
+  },
+  {
+    "id": "V1-10",
+    "difficulty": "intermediate",
+    "topic": "Science – how antibiotic resistance spreads",
+    "passage": "Antibiotic resistance arises through natural selection. Within any large population of bacteria, a small number of cells may carry genetic variations that make them less susceptible to a particular drug. When an antibiotic is used, susceptible bacteria are killed or prevented from multiplying, while resistant cells survive and reproduce, so that over time they come to make up a larger share of the population. Bacteria can also acquire resistance genes from other bacteria, including those of different species, through the exchange of small pieces of DNA. It is the bacteria, not the patients, that become resistant. Resistance can develop wherever antibiotics are used, in agriculture as well as in human medicine. Stopping a prescribed course early has long been discouraged, although some researchers now argue that the optimal length of treatment varies between infections and that shorter courses may be appropriate in certain cases. There is broad agreement, however, that unnecessary use of antibiotics – for example, against viral infections, on which they have no effect – increases the selective pressure that favours resistant strains.",
+    "question": "Which of the following statements is correct?",
+    "options": [
+      "Patients who take antibiotics often become resistant to them.",
+      "Antibiotics produce the genetic variations that make bacteria resistant.",
+      "Genes conferring resistance can be transferred between bacteria of different species.",
+      "Researchers now agree that shorter courses of antibiotics are preferable for all infections."
+    ],
+    "answer": "C",
+    "explanations": {
+      "A": "Incorrect — contradiction. The passage states that it is the bacteria, not the patients, that become resistant.",
+      "B": "Incorrect — cause and effect. The passage describes variations already carried by some cells, which antibiotics then select for; it does not say the drugs create them.",
+      "C": "Correct. Bacteria can acquire resistance genes from other bacteria, including those of different species.",
+      "D": "Incorrect — extreme wording. Only “some researchers” argue that shorter courses may suit “certain cases”."
+    }
+  },
+  {
+    "id": "V1-11",
+    "difficulty": "foundation",
+    "topic": "Economics – comparative advantage and trade",
+    "passage": "The principle of comparative advantage, developed by classical economists in the early nineteenth century, explains why countries can gain from trade even when one of them is more efficient at producing everything. What matters is not absolute efficiency but opportunity cost: what must be given up to produce one more unit of a good. Suppose that Country X can produce both cloth and wine using fewer workers than Country Y, but that its advantage is much greater in cloth than in wine. If X concentrates on cloth and Y on wine, and the two countries trade, total output of both goods can be higher than if each tried to produce everything for itself. The principle does not imply that every individual or industry within a country benefits from trade. Workers in industries that face new foreign competition may lose their jobs, and the overall gains depend partly on how easily resources can move from one sector to another. For this reason, many economists who support open trade also favour policies to help affected workers retrain.",
+    "question": "Which of the following statements is correct?",
+    "options": [
+      "A country that is less efficient at producing every good can still gain from specialising and trading.",
+      "According to the principle, every worker in a trading country benefits from trade.",
+      "What determines specialisation under the principle is which country can produce a good with the fewest workers.",
+      "Economists who favour open trade generally oppose schemes to retrain workers."
+    ],
+    "answer": "A",
+    "explanations": {
+      "A": "Correct. Countries can gain from trade even when one of them is more efficient at producing everything, as Country Y illustrates.",
+      "B": "Incorrect — contradiction. The principle does not imply that every individual benefits, and some workers may lose their jobs.",
+      "C": "Incorrect — contradiction. What matters is opportunity cost, not absolute efficiency: X uses fewer workers for both goods, yet Y should specialise in wine.",
+      "D": "Incorrect — contradiction. Many supporters of open trade favour policies to help affected workers retrain."
+    }
+  },
+  {
+    "id": "V1-12",
+    "difficulty": "advanced",
+    "topic": "Environment – protecting an island seabird colony",
+    "passage": "Conservation managers on a small offshore island have been trying to protect a colony of ground-nesting seabirds whose numbers have fallen sharply. Monitoring indicates that the main cause of nest failure is predation of eggs and chicks by rats, which were introduced accidentally by ships many decades ago. A programme to eradicate the rats was approved by the island’s management board after a public consultation, and baiting is scheduled to begin outside the breeding season, when the birds are at sea and less likely to be affected. Eradication on islands has a good record elsewhere, but success depends on removing every last individual: if even a few rats survive, the population can recover within a few years. For this reason, the plan includes two years of follow-up monitoring and permanent biosecurity measures, such as inspections of boats landing supplies. Some residents have argued that a fence around the colony would be cheaper. The managers’ view is that fencing would protect only part of the island and would require continual maintenance, but they have not ruled out using it as a temporary measure.",
+    "question": "Which of the following statements is NOT supported by the passage?",
+    "options": [
+      "Baiting has been timed to reduce the risk to the seabirds themselves.",
+      "The managers regard fencing as unsuitable even as a short-term measure.",
+      "The eradication programme was approved following a consultation of the public.",
+      "If some rats escape eradication, their numbers could rise again within a few years."
+    ],
+    "answer": "B",
+    "explanations": {
+      "A": "Incorrect — supported. Baiting will take place outside the breeding season, when the birds are at sea and less likely to be affected.",
+      "B": "Correct — not supported. The managers have not ruled out fencing as a temporary measure; their objections are that fencing would protect only part of the island and need continual maintenance.",
+      "C": "Incorrect — supported. The management board approved the programme after a public consultation.",
+      "D": "Incorrect — supported. If even a few rats survive, the population can recover within a few years."
+    }
+  },
+  {
+    "id": "V1-13",
+    "difficulty": "intermediate",
+    "topic": "History – railways and the standardisation of time",
+    "passage": "Until the nineteenth century, most towns set their clocks by the position of the sun, so that noon occurred when the sun was highest in the sky. Because the sun’s position changes as one travels east or west, towns only a short distance apart kept slightly different times. This caused few problems while journeys were slow, but the spread of railways made the variations inconvenient: timetables had to list arrival and departure times, and differing local times confused passengers and staff alike. Railway companies in several countries therefore adopted a single standard time across their networks, often based on the time of a capital city or a major observatory. At first, many towns continued to use local time for civil purposes, and some public clocks were fitted with two minute hands, one showing local time and the other railway time. Legal recognition of standard time followed in many countries only some years later. Towards the end of the century, an international conference recommended a single prime meridian from which time zones around the world could be calculated, although countries adopted the system at different speeds.",
+    "question": "Which of the following statements is correct?",
+    "options": [
+      "Standard time was first introduced by governments, which then required railway companies to adopt it.",
+      "For a time, some towns displayed railway time alongside their own local time.",
+      "Neighbouring towns kept different times because their clocks were poorly maintained.",
+      "After the international conference, every country immediately adopted the recommended system of time zones."
+    ],
+    "answer": "B",
+    "explanations": {
+      "A": "Incorrect — cause and effect. Railway companies adopted standard time first; legal recognition followed some years later.",
+      "B": "Correct. Some public clocks had two minute hands, showing both local time and railway time.",
+      "C": "Incorrect — cause and effect. The differences arose because local noon depends on the sun’s position, which changes from east to west.",
+      "D": "Incorrect — extreme wording. Countries adopted the system at different speeds."
+    }
+  },
+  {
+    "id": "V1-14",
+    "difficulty": "foundation",
+    "topic": "Transport – a city-centre congestion charge",
+    "passage": "A mid-sized city introduced a charge for private cars entering its historic centre on weekdays between seven in the morning and seven in the evening. Residents of the zone receive a substantial discount, and vehicles used by people with disabilities are exempt. Revenue from the charge is reserved by law for public transport and cycling infrastructure. In the first year, traffic entering the zone during charging hours fell by about a fifth, and bus journey times through the centre became more reliable. Some retailers in the zone reported fewer customers, although the city’s own analysis found that overall retail spending in the centre was broadly unchanged, with a shift from shoppers arriving by car towards pedestrians and cyclists. Traffic on the ring road around the zone increased slightly, as some drivers chose to travel around the centre rather than through it. The city intends to review the level of the charge after three years of operation.",
+    "question": "Which of the following statements is correct?",
+    "options": [
+      "Cars are charged for entering the centre at any time of the day or week.",
+      "Every retailer in the zone lost customers as a result of the charge.",
+      "Money raised by the charge must be spent on public transport and cycling infrastructure.",
+      "Traffic fell on all roads in and around the city centre."
+    ],
+    "answer": "C",
+    "explanations": {
+      "A": "Incorrect — contradiction. The charge applies only on weekdays between seven in the morning and seven in the evening.",
+      "B": "Incorrect — extreme wording. Only “some retailers” reported fewer customers, and overall retail spending was broadly unchanged.",
+      "C": "Correct. The revenue is reserved by law for public transport and cycling infrastructure.",
+      "D": "Incorrect — contradiction. Traffic on the ring road around the zone increased slightly."
+    }
+  },
+  {
+    "id": "V1-15",
+    "difficulty": "advanced",
+    "topic": "Law – the principle of proportionality",
+    "passage": "In many legal systems, courts reviewing measures that restrict individual rights apply a test of proportionality. Although formulations differ, the test usually involves several stages. First, the measure must pursue a legitimate aim, such as the protection of public health or public order. Second, it must be suitable for achieving that aim; a measure that does nothing to advance its stated purpose will fail at this stage. Third, it must be necessary, meaning that the aim could not be achieved by a less restrictive means that would be equally effective. Some courts add a final stage, sometimes called proportionality in the strict sense, at which they weigh the burden on the individual against the importance of the aim, even where no less restrictive alternative exists. Courts generally allow public authorities a margin of discretion, particularly in complex technical or economic matters, and the intensity of review may vary with the importance of the right affected. A measure that fails any one stage is regarded as disproportionate, however well it performs at the others.",
+    "question": "Which of the following statements is correct?",
+    "options": [
+      "A suitable measure with a legitimate aim may still fail the test if an equally effective, less restrictive option existed.",
+      "Under the test, a measure that pursues a legitimate aim will be upheld provided that it actually helps to achieve that aim.",
+      "All courts applying the test weigh the burden on the individual against the importance of the aim pursued.",
+      "Courts review measures that restrict rights with the same intensity, whichever right is affected and whatever the subject matter."
+    ],
+    "answer": "A",
+    "explanations": {
+      "A": "Correct. Such a measure would fail the necessity stage, and failing any one stage makes a measure disproportionate.",
+      "B": "Incorrect — unsupported inference. Suitability is only one stage; the measure must also be necessary, so advancing its aim does not guarantee that it will be upheld.",
+      "C": "Incorrect — extreme wording. Only “some courts” add the balancing stage of proportionality in the strict sense.",
+      "D": "Incorrect — contradiction. The intensity of review may vary with the importance of the right affected."
+    }
+  },
+  {
+    "id": "V1-16",
+    "difficulty": "intermediate",
+    "topic": "Health – benefits and harms of screening",
+    "passage": "Population screening programmes aim to detect disease in people who have no symptoms, so that treatment can begin earlier. Their value, however, depends on more than the accuracy of the test. A test with high sensitivity will identify most people who have the condition, but if it also produces many false positives, large numbers of healthy people may experience anxiety and undergo further investigations, some of which carry their own risks. A further concern is overdiagnosis: the detection of genuine conditions that would never have caused symptoms or shortened life. Treating such conditions brings side-effects without benefit. For these reasons, public health bodies typically recommend screening only where the condition is an important health problem, where an effective treatment exists, where earlier treatment improves outcomes and where the benefits of the programme as a whole are judged to outweigh its harms. Recommendations are often restricted to particular age groups in which the balance of benefit and harm is most favourable, and they are revised as new evidence emerges.",
+    "question": "Which of the following statements is correct?",
+    "options": [
+      "A screening test that detects most cases of a condition is necessarily worth introducing.",
+      "Overdiagnosis occurs when a test wrongly indicates that a healthy person has a condition.",
+      "Public health bodies usually recommend that screening be offered to the whole population regardless of age.",
+      "Even when a condition has been correctly detected, treating it may cause harm without bringing any benefit."
+    ],
+    "answer": "D",
+    "explanations": {
+      "A": "Incorrect — contradiction. A programme’s value depends on more than test accuracy, including false positives and overdiagnosis.",
+      "B": "Incorrect — partial truth. That describes a false positive; overdiagnosis is the detection of genuine conditions that would never have caused harm.",
+      "C": "Incorrect — contradiction. Recommendations are often restricted to particular age groups.",
+      "D": "Correct. Overdiagnosis detects genuine conditions that would never cause symptoms, and treating them brings side-effects without benefit."
+    }
+  },
+  {
+    "id": "V1-17",
+    "difficulty": "foundation",
+    "topic": "Environment – peatlands as carbon stores",
+    "passage": "Peatlands are wetlands in which waterlogged conditions slow the decomposition of dead plant material, so that it accumulates over thousands of years as peat. Although they cover only a small share of the world’s land surface, peatlands store a very large quantity of carbon – more, by many estimates, than all the world’s forests combined. When peatlands are drained for agriculture, for forestry or for the extraction of peat as fuel or for horticulture, the peat is exposed to air and begins to decompose, releasing carbon dioxide. Drained peat is also more vulnerable to fire. Restoring peatlands usually involves blocking drainage channels to raise the water table again, a process known as rewetting. Rewetting can greatly reduce emissions from degraded sites, but it does not immediately return a peatland to its original condition, and the recovery of characteristic vegetation such as sphagnum mosses may take many years. In some cases, rewetting may also cause a temporary increase in emissions of methane, another greenhouse gas.",
+    "question": "Which of the following statements is correct?",
+    "options": [
+      "Peatlands cover a large proportion of the earth’s land surface.",
+      "Rewetting a drained peatland quickly restores its original vegetation.",
+      "Peat forms because waterlogging speeds up the decay of plant material.",
+      "Draining a peatland can turn it into a source of carbon dioxide emissions."
+    ],
+    "answer": "D",
+    "explanations": {
+      "A": "Incorrect — contradiction. Peatlands cover only a small share of the world’s land surface.",
+      "B": "Incorrect — contradiction. Rewetting does not immediately restore the original condition, and vegetation may take many years to recover.",
+      "C": "Incorrect — cause and effect. Waterlogged conditions slow decomposition, which is why plant material accumulates as peat.",
+      "D": "Correct. Drained peat is exposed to air and begins to decompose, releasing carbon dioxide."
+    }
+  },
+  {
+    "id": "V1-18",
+    "difficulty": "intermediate",
+    "topic": "Economics – who gains and who loses from inflation",
+    "passage": "Unexpected inflation redistributes wealth between different groups in society. Borrowers whose debts are fixed in money terms benefit, because the real value of what they owe falls as prices rise. Lenders who receive fixed repayments lose for the same reason. Households living on incomes that are not adjusted for rising prices, such as some pensions or interest on fixed-rate savings, also see their purchasing power decline. Where inflation is anticipated, many of these effects can be reduced, since lenders can demand higher interest rates and wages and benefits can be linked to prices. Even anticipated inflation, however, imposes costs. Firms must update their prices more frequently, and people may spend time and effort managing their money to avoid holding cash. High and variable inflation also makes it harder for households and firms to distinguish changes in relative prices from changes in the general price level, which can lead to poor decisions about spending and investment. For these reasons, many central banks aim to keep inflation low and stable.",
+    "question": "Which of the following statements is NOT supported by the passage?",
+    "options": [
+      "Unexpected inflation tends to reduce the real burden of debts that are fixed in money terms.",
+      "Once inflation is fully anticipated, it no longer imposes any costs on the economy.",
+      "Linking incomes to prices can reduce the losses that inflation would otherwise cause.",
+      "Volatile inflation can make it more difficult to interpret changes in prices correctly."
+    ],
+    "answer": "B",
+    "explanations": {
+      "A": "Incorrect — supported. Borrowers with fixed debts benefit because the real value of what they owe falls as prices rise.",
+      "B": "Correct — not supported. The passage states that even anticipated inflation imposes costs, such as more frequent price changes and effort spent avoiding holding cash.",
+      "C": "Incorrect — supported. Where inflation is anticipated, wages and benefits can be linked to prices, reducing its effects.",
+      "D": "Incorrect — supported. High and variable inflation makes it harder to tell relative price changes from changes in the general price level."
+    }
+  },
+  {
+    "id": "V1-19",
+    "difficulty": "advanced",
+    "topic": "History – labour and serfdom after the fourteenth-century plague",
+    "passage": "The plague epidemic that swept across Europe in the mid-fourteenth century killed a very large proportion of the population; historians’ estimates vary, but many regions appear to have lost between a third and a half of their inhabitants. One consequence was a severe shortage of labour. With fewer workers available to till the land and practise crafts, surviving labourers were often able to demand higher wages or better terms from landlords. Authorities in several kingdoms responded with laws that attempted to hold wages at their pre-epidemic levels and to restrict the movement of workers seeking better pay. The effectiveness of these measures appears to have varied considerably, and in many places wages rose despite them. Many historians argue that, over the following century, the changed balance between land and labour contributed to the weakening of serfdom in much of western Europe. They caution, however, that the epidemic was not the sole cause of this change, and point out that in parts of eastern Europe the obligations imposed on peasants actually became heavier in later centuries.",
+    "question": "Which of the following statements is correct?",
+    "options": [
+      "The labour shortage caused by the epidemic brought serfdom to an end throughout Europe within the following century.",
+      "Laws limiting wages succeeded in keeping pay at pre-epidemic levels in most places.",
+      "Many historians see the epidemic as one of several causes of serfdom’s decline in much of western Europe.",
+      "Historians agree that about half of the population of Europe as a whole died during the mid-fourteenth-century epidemic."
+    ],
+    "answer": "C",
+    "explanations": {
+      "A": "Incorrect — scope shift. Serfdom weakened in much of western Europe, to which the labour shortage “contributed”, while peasant obligations grew heavier in parts of eastern Europe.",
+      "B": "Incorrect — contradiction. The laws’ effectiveness varied, and in many places wages rose despite them.",
+      "C": "Correct. Historians say the changed balance between land and labour contributed to the weakening of serfdom, but that the epidemic was not the sole cause.",
+      "D": "Incorrect — partial truth. Estimates vary, and the range of a third to a half refers to losses in many regions, not an agreed figure for Europe as a whole."
+    }
+  },
+  {
+    "id": "V1-20",
+    "difficulty": "intermediate",
+    "topic": "Public administration – anonymised recruitment pilot",
+    "passage": "A national civil service carried out a pilot in which the names, ages and addresses of candidates were removed from application forms for selected junior posts before the forms were assessed by selection panels. The aim was to reduce the risk that panels might, consciously or unconsciously, favour candidates from particular backgrounds. The pilot covered six ministries over eighteen months. Its evaluation found that the share of candidates from under-represented groups who were invited to interview rose in four of the six ministries but remained unchanged in the other two. The evaluators noted that the two ministries where no change occurred had already used structured scoring grids at the sifting stage, which may have limited the scope for bias. They also found that anonymisation had no measurable effect on who was eventually appointed, since interviews could not be conducted anonymously. The evaluation recommended extending anonymised sifting to all ministries, combined with training for interview panels. The civil service management board accepted the first part of the recommendation but asked for further analysis of the cost of the proposed training.",
+    "question": "Which of the following statements is correct?",
+    "options": [
+      "The board has accepted that every ministry should sift applications anonymously, but not yet the panel training.",
+      "The pilot increased the proportion of appointments going to candidates from under-represented groups.",
+      "Invitations to interview for under-represented candidates rose in every ministry taking part in the pilot.",
+      "The evaluators concluded that structured scoring grids had introduced bias in the two ministries where no change occurred."
+    ],
+    "answer": "A",
+    "explanations": {
+      "A": "Correct. The board accepted the first part of the recommendation, extending anonymised sifting, but asked for further cost analysis before deciding on the training.",
+      "B": "Incorrect — contradiction. Anonymisation had no measurable effect on who was eventually appointed.",
+      "C": "Incorrect — extreme wording. Interview invitations rose in four of the six ministries and were unchanged in the other two.",
+      "D": "Incorrect — cause and effect. The evaluators suggested that the scoring grids may have limited the scope for bias, not introduced it."
+    }
+  },
+  {
+    "id": "V1-21",
+    "difficulty": "foundation",
+    "topic": "Culture and languages – from pidgin to creole",
+    "passage": "When groups of people who share no common language need to communicate regularly – for example, in the course of trade – they sometimes develop a simplified form of speech known as a pidgin. A pidgin typically draws most of its vocabulary from one language, often that of the economically dominant group, while its grammar is reduced to essentials. Crucially, a pidgin has no native speakers: everyone who uses it has learned another language first. If, however, children grow up in a community where the pidgin is the main shared language, they may acquire it as their first language. In this process the language tends to expand rapidly, developing a fuller grammar and a larger vocabulary so that it can serve every purpose of daily life. Linguists call the resulting language a creole. Creoles are complete languages in their own right, and several are now used in education, broadcasting and government in the places where they are spoken. Not every pidgin becomes a creole, however; many disappear once the circumstances that produced them come to an end.",
+    "question": "Which of the following statements is correct?",
+    "options": [
+      "A pidgin is usually the first language of the children who speak it.",
+      "Unlike a pidgin, a creole has speakers who acquired it as their mother tongue.",
+      "Every pidgin eventually develops into a creole.",
+      "A pidgin usually takes its grammar, rather than its vocabulary, from the language of the economically dominant group."
+    ],
+    "answer": "B",
+    "explanations": {
+      "A": "Incorrect — contradiction. A pidgin has no native speakers; when children acquire it as a first language, it becomes a creole.",
+      "B": "Correct. A creole results when children acquire a pidgin as their first language, whereas a pidgin has no native speakers.",
+      "C": "Incorrect — extreme wording. Not every pidgin becomes a creole, and many disappear.",
+      "D": "Incorrect — partial truth. A pidgin draws most of its vocabulary from the dominant language, while its grammar is reduced to essentials."
+    }
+  },
+  {
+    "id": "V1-22",
+    "difficulty": "advanced",
+    "topic": "Economics – self-governed management of shared resources",
+    "passage": "The idea that shared resources are bound to be overused has long influenced policy. According to this view, when access to a pasture, fishery or forest is open to all, each user has an incentive to take as much as possible, since the benefits of doing so accrue to the individual while the costs of depletion are spread across everyone. The remedies usually proposed were either to place the resource under state control or to divide it into private property. Later research, based on detailed studies of communities around the world, challenged the assumption that these were the only options. It found that many user groups had sustained shared resources over long periods through rules they had developed themselves. Such arrangements tended to succeed where the boundaries of the resource and the membership of the group were clearly defined, where users could take part in changing the rules, where compliance was monitored, and where sanctions for breaking the rules were graduated rather than immediately severe. The research did not claim that community management always works; it identified conditions under which success is more likely.",
+    "question": "Which of the following statements is correct?",
+    "options": [
+      "The later research established that community management will succeed provided that the group’s membership is clearly defined.",
+      "According to the earlier view, overuse occurs because each user bears the full cost of depleting the resource.",
+      "Arrangements that endured tended to punish any breach of the rules severely from the outset.",
+      "Rules were likelier to endure when the people bound by them could help to revise them."
+    ],
+    "answer": "D",
+    "explanations": {
+      "A": "Incorrect — unsupported inference. A clearly defined membership is only one of several conditions that make success more likely, and the research did not claim that community management always works.",
+      "B": "Incorrect — contradiction. In the earlier view, the costs of depletion are spread across everyone, while the benefits accrue to the individual.",
+      "C": "Incorrect — contradiction. Successful arrangements used graduated sanctions rather than immediately severe ones.",
+      "D": "Correct. Users’ ability to take part in changing the rules is listed among the conditions under which such arrangements tended to succeed."
+    }
+  },
+  {
+    "id": "V1-23",
+    "difficulty": "intermediate",
+    "topic": "Education – a class-size experiment",
+    "passage": "A regional education authority reduced class sizes in the first two years of primary school from an average of around twenty-eight pupils to around twenty in a sample of schools, while comparable schools continued with larger classes. Schools were assigned to the two groups by lottery, so that differences in outcomes could more confidently be attributed to class size. After two years, pupils in the smaller classes scored moderately higher in reading tests, and the difference was larger for pupils from low-income families. In mathematics, the difference between the two groups was small and not statistically significant. Teachers in smaller classes reported spending less time managing behaviour, although classroom observations found that many continued to teach in much the same way as before. The authority estimated that extending smaller classes to all schools would require several hundred additional teachers, as well as extra classroom space. It has not yet decided whether to do so, and some advisers have suggested that the same money might achieve more if spent on targeted support for struggling readers.",
+    "question": "Which of the following statements is correct?",
+    "options": [
+      "Smaller classes produced significantly better results in both reading and mathematics.",
+      "Teachers in the smaller classes substantially changed their teaching methods.",
+      "The reading gap in favour of smaller classes was wider among pupils from low-income families.",
+      "The authority has decided to reduce class sizes in all of its primary schools."
+    ],
+    "answer": "C",
+    "explanations": {
+      "A": "Incorrect — partial truth. Reading scores were higher, but the mathematics difference was small and not statistically significant.",
+      "B": "Incorrect — contradiction. Classroom observations found that many teachers continued to teach in much the same way.",
+      "C": "Correct. The reading difference was larger for pupils from low-income families.",
+      "D": "Incorrect — unsupported inference. The authority has not yet decided whether to extend smaller classes to all schools."
+    }
+  },
+  {
+    "id": "V1-24",
+    "difficulty": "foundation",
+    "topic": "Environment – deposit-return schemes for drinks containers",
+    "passage": "Under a deposit-return scheme, consumers pay a small additional sum, or deposit, when they buy a drink in a can or bottle, and the deposit is refunded when the empty container is returned to a shop or collection point. The aim is to give consumers a financial incentive to return containers rather than discard them. Schemes of this kind have operated in a number of countries for many years, and where they are well established, return rates for the containers covered are typically very high. Because returned containers are collected separately from other waste, the material tends to be cleaner and therefore easier to recycle into new containers. Deposit-return schemes do, however, involve costs. Retailers may need to provide storage space for returned containers or install machines to accept them, and a central body is usually needed to manage the flow of deposits and materials. The design of a scheme – including which types of container are covered and the size of the deposit – has a strong influence on how well it performs.",
+    "question": "Which of the following statements is correct?",
+    "options": [
+      "Returned containers are generally easier to recycle because they are kept apart from other waste.",
+      "Deposit-return schemes impose no additional costs or obligations on the retailers that take part.",
+      "Consumers can obtain a refund for returning any kind of packaging.",
+      "Very high return rates are achieved as soon as a deposit-return scheme is first introduced in a country."
+    ],
+    "answer": "A",
+    "explanations": {
+      "A": "Correct. Returned containers are collected separately, so the material tends to be cleaner and easier to recycle.",
+      "B": "Incorrect — contradiction. Retailers may need storage space or machines to accept returned containers.",
+      "C": "Incorrect — scope shift. Deposits apply only to the containers a scheme covers, and its design determines which types are included.",
+      "D": "Incorrect — unsupported inference. Very high return rates are typical where schemes are well established, not necessarily when they are first introduced."
+    }
+  },
+  {
+    "id": "V1-25",
+    "difficulty": "advanced",
+    "topic": "Technology – automated risk scoring in tax audits",
+    "passage": "A regional tax authority has begun using an automated system to select returns for detailed audit. The system assigns each return a risk score based on patterns found in past cases in which errors or fraud were identified. Returns above a certain score are referred to human inspectors, who decide whether to open an audit; the system itself cannot impose penalties or reach conclusions about a taxpayer’s liability. Supporters argue that the approach allows limited staff to concentrate on the cases most likely to yield results. An internal review found that audits selected with the system’s help recovered more unpaid tax per inspector hour than those selected by the previous method. The review cautioned, however, that because the system learns from past audit decisions, it may reproduce any biases in how cases were chosen in the past, and that taxpayers in groups rarely audited before may be under-represented in the data. It recommended regular independent testing of the system’s outputs. The authority has also been asked by an oversight body to explain how taxpayers can find out whether an automated score contributed to their selection.",
+    "question": "Which of the following statements is NOT supported by the passage?",
+    "options": [
+      "The decision to open an audit rests with human inspectors rather than with the automated system.",
+      "Audits picked with the system’s assistance brought in more unpaid tax per hour of inspectors’ time than those picked by the old method.",
+      "Groups that were seldom audited in the past may be poorly represented in the data on which the system relies.",
+      "The authority already has a procedure for telling taxpayers whether an automated score contributed to their selection."
+    ],
+    "answer": "D",
+    "explanations": {
+      "A": "Incorrect — supported. Returns above a threshold are referred to inspectors, who decide whether to open an audit.",
+      "B": "Incorrect — supported. The internal review found that these audits recovered more unpaid tax per inspector hour.",
+      "C": "Incorrect — supported. The review warned that taxpayers in rarely audited groups may be under-represented in the data.",
+      "D": "Correct — not supported. The authority has only been asked by an oversight body to explain how taxpayers can find this out; no such procedure is said to exist."
+    }
+  }
+]

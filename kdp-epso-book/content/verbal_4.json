@@ -1,0 +1,502 @@
+[
+  {
+    "id": "V4-01",
+    "difficulty": "foundation",
+    "topic": "Agriculture: crop rotation",
+    "passage": "For centuries, farmers in many parts of Europe have alternated the crops grown on a given field rather than planting the same crop year after year. This practice, known as crop rotation, serves several purposes. Pests and diseases that specialise in one crop tend to build up in the soil when that crop is grown repeatedly; changing the crop interrupts their life cycle and reduces the pressure they exert. Rotation can also improve soil fertility. Leguminous plants such as peas, beans and clover host bacteria in their root nodules that convert nitrogen from the air into a form plants can use, so a cereal sown after a legume often requires less added fertiliser. In the traditional four-field system that spread across parts of northern Europe, a fodder crop such as turnips or clover replaced the fallow year, in which land had previously been left unplanted to recover. Livestock fed on these fodder crops produced manure that was returned to the fields. Rotation is not without drawbacks: it demands more careful planning, and farmers may be unable to specialise in the single crop that would fetch the highest price in a given season.",
+    "question": "Which of the following statements is correct?",
+    "options": [
+      "Crop rotation removes the need to apply fertiliser to cereal fields.",
+      "Crop rotation was first developed in northern Europe as part of the four-field system.",
+      "The four-field system used formerly fallow land to grow animal feed.",
+      "Rotation allows farmers to concentrate on whichever crop is most profitable in a given season."
+    ],
+    "answer": "C",
+    "explanations": {
+      "A": "Incorrect — extreme wording. A cereal sown after a legume “often requires less” fertiliser; the need is reduced, not removed.",
+      "B": "Incorrect — unsupported inference. The four-field system spread across parts of northern Europe, but the passage says nothing about where crop rotation began.",
+      "C": "Correct. In the four-field system a fodder crop replaced the fallow year, in which land had previously been left unplanted.",
+      "D": "Incorrect — contradiction. The inability to specialise in the most lucrative crop is presented as a drawback of rotation."
+    }
+  },
+  {
+    "id": "V4-02",
+    "difficulty": "foundation",
+    "topic": "Agriculture: short food supply chains",
+    "passage": "A regional authority has launched a three-year pilot scheme to strengthen links between local farmers and consumers. Under the scheme, producers located within 80 kilometres of the regional capital may apply for a grant towards the cost of setting up stalls at weekly markets or establishing online ordering systems. Grants cover up to half of eligible costs, with the remainder to be met by the producers themselves. Participating farms must sell at least a third of the relevant products directly to consumers or through no more than one intermediary. The authority’s stated aims are to increase the share of the sale price retained by farmers and to give consumers clearer information about where their food comes from. Officials have acknowledged that shorter supply chains do not automatically reduce the environmental footprint of food: a large number of small deliveries by van may generate more emissions per kilogram than a single lorry delivering to a supermarket. For this reason, transport emissions will be monitored during the pilot, and the authority will decide at its end whether to extend the scheme across the whole region.",
+    "question": "Which of the following statements is correct?",
+    "options": [
+      "Producers receiving a grant must themselves fund at least half of the eligible costs of their project.",
+      "The authority expects the scheme to reduce the emissions associated with transporting food.",
+      "Participating farms are required to sell all their products without any intermediary.",
+      "The scheme has already been extended to producers throughout the region."
+    ],
+    "answer": "A",
+    "explanations": {
+      "A": "Correct. Grants cover up to half of eligible costs and producers meet the remainder, so their share is at least half.",
+      "B": "Incorrect — unsupported inference. Officials say shorter chains do not automatically cut emissions, which is why emissions will be monitored; no expected reduction is stated.",
+      "C": "Incorrect — extreme wording. Farms must sell at least a third of the relevant products directly or through no more than one intermediary.",
+      "D": "Incorrect — contradiction. Extension across the region will be decided at the end of the pilot; eligibility is currently limited to producers within 80 kilometres of the capital."
+    }
+  },
+  {
+    "id": "V4-03",
+    "difficulty": "advanced",
+    "topic": "Energy: heat pumps",
+    "passage": "Heat pumps are often described as devices that generate heat, but this is misleading: they move heat from one place to another. A domestic air-source heat pump extracts thermal energy from outdoor air, even when the air is cold, and transfers it into a building by means of a refrigerant that is repeatedly compressed and expanded. Because the electricity consumed powers the transfer rather than producing the heat directly, a well-designed unit can deliver several units of heat for each unit of electricity used. This ratio, called the coefficient of performance, is not fixed. It declines as the temperature difference between the heat source and the building’s heating system increases, which means that performance tends to fall on the coldest days, precisely when demand is highest. Engineers therefore recommend pairing heat pumps with well-insulated buildings and with radiators or underfloor systems designed to operate at lower water temperatures than conventional boilers typically use. Ground-source models, which draw heat from below the surface, where temperatures are more stable through the year, usually achieve a higher average coefficient, although their installation costs are generally greater because of the excavation required.",
+    "question": "Which of the following statements is correct?",
+    "options": [
+      "Air-source heat pumps cannot operate when the outdoor air is cold.",
+      "Because ground-source heat pumps are more efficient on average, they are the most cost-effective choice for households.",
+      "A heat pump’s coefficient of performance is at its highest on the coldest days, when demand for heating peaks.",
+      "Lower heating-water temperatures should raise a heat pump’s coefficient of performance."
+    ],
+    "answer": "D",
+    "explanations": {
+      "A": "Incorrect — contradiction. Air-source units extract heat from outdoor air “even when the air is cold”.",
+      "B": "Incorrect — unsupported inference. Ground-source models are more efficient on average but cost more to install; the passage draws no conclusion about overall cost-effectiveness.",
+      "C": "Incorrect — contradiction. The coefficient falls as the temperature gap widens, so it tends to be lowest on the coldest days.",
+      "D": "Correct. Lower water temperatures narrow the gap between heat source and heating system, and the coefficient declines as that gap widens; hence the engineers’ recommendation."
+    }
+  },
+  {
+    "id": "V4-04",
+    "difficulty": "intermediate",
+    "topic": "Oceans: thermohaline circulation",
+    "passage": "Beneath the familiar wind-driven currents at the ocean surface lies a slower, global pattern of circulation driven by differences in water density. Density depends chiefly on temperature and salinity: colder and saltier water is denser and tends to sink. In certain high-latitude regions, notably parts of the North Atlantic, surface water cools as it releases heat to the atmosphere, and the formation of sea ice leaves salt behind in the remaining water. This dense water sinks to great depths and spreads slowly southwards, while warmer surface water flows northwards to replace it. Because of the roles of temperature and salt, the system is known as the thermohaline circulation. Oceanographers estimate that an individual parcel of water may take on the order of a thousand years to complete the full circuit. The northward flow of warm surface water in the Atlantic carries substantial amounts of heat and is one of several factors contributing to the comparatively mild climate of north-western Europe. Scientists have long studied whether large inflows of fresh water, for example from melting ice, could weaken the sinking process by making surface water less dense.",
+    "question": "Which of the following statements is correct?",
+    "options": [
+      "The thermohaline circulation is driven mainly by winds at the ocean surface.",
+      "Sea-ice formation can aid sinking by making the remaining water saltier.",
+      "The mild climate of north-western Europe is due entirely to the northward flow of warm Atlantic water.",
+      "Melting ice is known to have weakened the circulation."
+    ],
+    "answer": "B",
+    "explanations": {
+      "A": "Incorrect — contradiction. The circulation is contrasted with wind-driven surface currents; it is driven by differences in density.",
+      "B": "Correct. Sea-ice formation leaves salt behind, and saltier water is denser and tends to sink.",
+      "C": "Incorrect — extreme wording. The warm northward flow is “one of several factors”, not the sole cause of the mild climate.",
+      "D": "Incorrect — unsupported inference. Scientists have studied whether fresh water could weaken the circulation; no established finding is reported."
+    }
+  },
+  {
+    "id": "V4-05",
+    "difficulty": "foundation",
+    "topic": "Climate science: the ice–albedo feedback",
+    "passage": "Albedo is the proportion of incoming sunlight that a surface reflects. Fresh snow and sea ice are highly reflective, returning most of the solar radiation that reaches them to space, whereas open ocean water is dark and absorbs the great majority of it. This contrast underlies one of the best-understood amplifying mechanisms in the climate system, the ice–albedo feedback. When warming causes sea ice to retreat, more dark water is exposed; the water absorbs more solar energy and warms further, which in turn makes it harder for new ice to form and easier for the remaining ice to melt. Because a change in one direction triggers further change in the same direction, scientists describe this as a positive feedback, a term that refers to reinforcement rather than to any beneficial effect. The mechanism helps to explain why the Arctic has been observed to warm faster than the global average. Its strength varies with the seasons: it operates mainly in spring and summer, since during the polar night there is little or no sunlight to absorb. Other processes, including changes in cloud cover and in the transport of heat by the atmosphere and the oceans, also contribute to Arctic warming.",
+    "question": "Which of the following statements is NOT supported by the passage?",
+    "options": [
+      "Open water absorbs a larger share of incoming sunlight than sea ice does.",
+      "The ice–albedo feedback alone explains the Arctic’s rapid warming.",
+      "Here, the word “positive” does not imply that the effect is desirable.",
+      "The feedback achieves little during the months of polar darkness."
+    ],
+    "answer": "B",
+    "explanations": {
+      "A": "Incorrect — supported. Open ocean water absorbs “the great majority” of sunlight, whereas sea ice reflects most of it.",
+      "B": "Correct — not supported. The feedback only “helps to explain” Arctic warming, and the passage names other contributing processes, so “alone” is unjustified.",
+      "C": "Incorrect — supported. The passage states that “positive” refers to reinforcement rather than to any beneficial effect.",
+      "D": "Incorrect — supported. The feedback operates mainly in spring and summer, as there is little or no sunlight to absorb during the polar night."
+    }
+  },
+  {
+    "id": "V4-06",
+    "difficulty": "advanced",
+    "topic": "Environment: groundwater over-abstraction",
+    "passage": "Groundwater—water held in the pores and fractures of rocks and sediments known as aquifers—supplies drinking water to a large share of the world’s population and irrigates a substantial part of its farmland. Aquifers are replenished, or recharged, mainly by rainfall and snowmelt seeping down from the surface, but recharge can be extremely slow; some deep aquifers contain water that accumulated thousands of years ago and is effectively not being replaced. When abstraction persistently exceeds recharge, the water table falls. Wells must then be deepened, and pumping costs rise because water has to be lifted further. In coastal areas, a falling water table can allow seawater to move inland into the aquifer, making the water too salty for drinking or irrigation; such contamination can take decades to reverse. Where aquifers consist of compressible clays, prolonged pumping can also cause the ground to subside, and this compaction is largely permanent: even if water levels later recover, the aquifer’s storage capacity may not. Hydrologists stress that the sustainable rate of abstraction is not simply equal to the recharge rate, since rivers, wetlands and springs fed by groundwater also depend on part of that inflow.",
+    "question": "Which of the following statements is correct?",
+    "options": [
+      "Abstraction that matches an aquifer’s recharge rate is, by definition, sustainable.",
+      "Once water levels recover, land that subsided over clay aquifers will return to its former level.",
+      "Wherever a water table falls, seawater can be expected to move into the aquifer.",
+      "Sustained pumping from an aquifer with negligible recharge will lower its water table and raise the cost of pumping."
+    ],
+    "answer": "D",
+    "explanations": {
+      "A": "Incorrect — contradiction. Hydrologists stress that the sustainable rate is not simply equal to recharge, because rivers, wetlands and springs also depend on part of the inflow.",
+      "B": "Incorrect — contradiction. Compaction of clay aquifers is “largely permanent”, so a recovery in water levels need not reverse it.",
+      "C": "Incorrect — scope shift. The passage links seawater intrusion to falling water tables in coastal areas only.",
+      "D": "Correct. Some deep aquifers are effectively not being replenished; when abstraction persistently exceeds recharge, the water table falls and pumping costs rise because water must be lifted further."
+    }
+  },
+  {
+    "id": "V4-07",
+    "difficulty": "foundation",
+    "topic": "Consumer protection: distance-selling withdrawal rights",
+    "passage": "In many jurisdictions, consumers who buy goods or services at a distance—online, by telephone or by mail order—are entitled to a cooling-off period during which they may withdraw from the contract without giving a reason. The rationale is that a buyer who cannot inspect a product before purchase is at a disadvantage compared with someone shopping in a physical store. Under a typical scheme of this kind, the period for goods runs for a fixed number of days from the moment they are delivered, rather than from the date of the order, so that the consumer has a genuine opportunity to examine them. The seller must refund the price, normally including the standard delivery charge, although the consumer may be asked to bear the direct cost of returning the item. Certain categories are usually excluded, such as perishable food, goods made to the buyer’s personal specifications and sealed audio or video recordings that have been unsealed after delivery. If the seller fails to inform the consumer of the right to withdraw, the period is commonly extended considerably.",
+    "question": "Which of the following statements is correct?",
+    "options": [
+      "Under the typical scheme described, the cooling-off period for goods starts when the consumer receives them.",
+      "Withdrawing consumers never have to bear any costs.",
+      "The cooling-off period applies equally to purchases made in physical shops.",
+      "Consumers must explain their reasons for withdrawing before they can obtain a refund."
+    ],
+    "answer": "A",
+    "explanations": {
+      "A": "Correct. The period runs from delivery of the goods rather than from the date of the order.",
+      "B": "Incorrect — extreme wording. The consumer may be asked to pay the direct cost of returning the item.",
+      "C": "Incorrect — scope shift. The right concerns distance purchases; its rationale is that such buyers, unlike shoppers in physical stores, cannot inspect goods beforehand.",
+      "D": "Incorrect — contradiction. Consumers may withdraw “without giving a reason”."
+    }
+  },
+  {
+    "id": "V4-08",
+    "difficulty": "intermediate",
+    "topic": "History of ideas: the Encyclopédie",
+    "passage": "The Encyclopédie, published in France in the middle of the eighteenth century under the editorship of Denis Diderot and, in its early years, Jean le Rond d’Alembert, is often regarded as a defining work of the Enlightenment. Its ambition was to gather and organise the knowledge of the age, from philosophy and theology to the crafts and trades. The attention paid to the practical arts was itself significant: by describing in detail how artisans worked, and illustrating their tools in numerous plates, the editors implied that manual skill deserved the same respect as abstract learning. The work was also a vehicle for criticism. Because open attacks on religious and political authority were dangerous, contributors sometimes placed critical remarks in unexpected articles and used cross-references to guide attentive readers from an orthodox entry to a subversive one. The project met repeated opposition; at one point the royal authorities withdrew permission for its publication, and the remaining volumes of text were later issued with misleading indications of where they had been printed. Despite these obstacles, the work was completed and found readers well beyond France.",
+    "question": "Which of the following statements is correct?",
+    "options": [
+      "The Encyclopédie was devoted mainly to the crafts and trades rather than to philosophy.",
+      "Diderot and d’Alembert edited the Encyclopédie jointly from its beginning to its completion.",
+      "Cross-references were used to steer readers towards criticism.",
+      "Losing official permission ended the project prematurely."
+    ],
+    "answer": "C",
+    "explanations": {
+      "A": "Incorrect — unsupported inference. The work ranged “from philosophy and theology to the crafts and trades”; the passage never says crafts were its main subject.",
+      "B": "Incorrect — partial truth. D’Alembert co-edited the work only in its early years.",
+      "C": "Correct. Contributors used cross-references to lead attentive readers from orthodox entries to subversive ones.",
+      "D": "Incorrect — contradiction. Despite the withdrawal of permission, the remaining volumes were issued and the work was completed."
+    }
+  },
+  {
+    "id": "V4-09",
+    "difficulty": "advanced",
+    "topic": "Research policy: open access in a research consortium",
+    "passage": "A European research consortium of universities and public laboratories has been debating how the results of its jointly funded projects should be shared. At present, the consortium agreement requires peer-reviewed articles arising from joint projects to be made freely available to readers within twelve months of publication, but it leaves the treatment of underlying data to each project team. A working group has now recommended two changes. First, the embargo on articles would be removed, so that they became freely available immediately on publication. Second, research data would have to be deposited in an open repository unless a project team could justify an exception, for instance on grounds of personal-data protection or of commercial confidentiality agreed with an industrial partner. The working group argues that earlier access accelerates follow-on research; several member institutions, however, are concerned about the publication fees that some journals charge for immediate open access. The consortium’s governing board will vote on the recommendations at its next meeting. If they are adopted, they will apply only to projects that begin after that date.",
+    "question": "Which of the following statements is correct?",
+    "options": [
+      "Current rules let an article stay behind a paywall for some months.",
+      "Project teams are currently obliged to deposit their research data in an open repository.",
+      "If adopted, the new rules would require ongoing projects to make their articles freely available immediately.",
+      "The working group’s proposals would oblige every project to share its data openly without exception."
+    ],
+    "answer": "A",
+    "explanations": {
+      "A": "Correct. Articles must currently be made freely available within twelve months of publication, so a delay of some months complies with the rules.",
+      "B": "Incorrect — contradiction. Mandatory data deposit is only a recommendation; at present, data handling is left to each project team.",
+      "C": "Incorrect — partial truth. Any new rules would apply only to projects that begin after the board’s vote, not to ongoing ones.",
+      "D": "Incorrect — extreme wording. The proposal allows justified exceptions, such as personal-data protection or agreed commercial confidentiality."
+    }
+  },
+  {
+    "id": "V4-10",
+    "difficulty": "intermediate",
+    "topic": "Energy: pumped-storage hydroelectricity",
+    "passage": "As the share of electricity generated from wind and solar power grows, grid operators face the challenge of matching supply, which varies with the weather, to demand, which follows its own daily and seasonal patterns. Energy storage is one response. The oldest large-scale storage technology is pumped-storage hydroelectricity. When electricity is plentiful and cheap, water is pumped from a lower reservoir to an upper one; when demand rises, the water is released through turbines to generate power. Some energy is lost in each cycle, so a plant returns less electricity than it consumes, yet the arrangement can still be economically attractive because it buys power when prices are low and sells it when they are high. Pumped storage can respond within minutes and can supply power for many hours. Its main limitation is geographical: it requires two reservoirs at substantially different heights, together with suitable geology and water resources, and new sites often face environmental objections. Batteries, by contrast, can be installed almost anywhere and react even faster, but they are generally used to supply power over shorter periods.",
+    "question": "Which of the following statements is correct?",
+    "options": [
+      "Pumped-storage plants generate more electricity than they consume.",
+      "Batteries are replacing pumped storage as the principal form of grid storage.",
+      "Pumped-storage plants can be built wherever an adequate supply of water is available, whatever the surrounding terrain.",
+      "A pumped-storage plant can be profitable even though it loses energy in each cycle of pumping and generation."
+    ],
+    "answer": "D",
+    "explanations": {
+      "A": "Incorrect — contradiction. A plant “returns less electricity than it consumes”.",
+      "B": "Incorrect — outside knowledge. The passage compares the two technologies but says nothing about batteries displacing pumped storage.",
+      "C": "Incorrect — partial truth. Water is not enough: two reservoirs at substantially different heights and suitable geology are also required.",
+      "D": "Correct. Despite cycle losses, the plant can be economically attractive because it buys power when prices are low and sells it when they are high."
+    }
+  },
+  {
+    "id": "V4-11",
+    "difficulty": "advanced",
+    "topic": "Agriculture: the Green Revolution",
+    "passage": "The term “Green Revolution” refers to the spread, from the mid-twentieth century onwards, of high-yielding varieties of staple cereals, notably wheat and rice, together with synthetic fertilisers, pesticides and irrigation. The new varieties were bred to be shorter and sturdier, so that they could carry heavier grain without falling over, and to respond strongly to fertiliser. In regions where these inputs were available, yields rose dramatically, and the threat of famine receded in several countries that had previously depended on food imports. Historians and economists nonetheless offer a mixed assessment. The gains were concentrated in irrigated areas; farmers in rain-fed regions, where the new varieties performed less reliably, benefited far less. Because the full package required purchased inputs, wealthier farmers with access to credit were often able to adopt it more quickly than smallholders. Heavy use of irrigation and agrochemicals has also been linked, in some districts, to falling groundwater levels and soil degradation. Supporters reply that without higher yields, far more forest and grassland would have had to be converted to farmland to feed growing populations.",
+    "question": "Which of the following statements is correct?",
+    "options": [
+      "The Green Revolution raised yields to a similar extent in irrigated and rain-fed regions.",
+      "Smallholders were unable to adopt the new package of varieties and inputs.",
+      "Supporters of the Green Revolution maintain that it lessened the need to turn natural land over to farming.",
+      "The Green Revolution caused groundwater levels to fall and soils to degrade in every region where the new package was adopted."
+    ],
+    "answer": "C",
+    "explanations": {
+      "A": "Incorrect — contradiction. Gains were concentrated in irrigated areas, and rain-fed regions benefited far less.",
+      "B": "Incorrect — extreme wording. Wealthier farmers were often able to adopt the package more quickly than smallholders; slower adoption is not inability.",
+      "C": "Correct. Supporters argue that, without higher yields, far more forest and grassland would have been converted to farmland.",
+      "D": "Incorrect — cause and effect. Intensive irrigation and agrochemical use have been “linked, in some districts” to these problems; the passage asserts neither causation nor universal effects."
+    }
+  },
+  {
+    "id": "V4-12",
+    "difficulty": "intermediate",
+    "topic": "Urban planning: the garden city",
+    "passage": "At the close of the nineteenth century, the English reformer Ebenezer Howard proposed a model of urban development that he called the garden city. Howard was troubled both by the overcrowding and poor sanitation of large industrial cities and by the depopulation and limited opportunities of the countryside. His solution was to combine the advantages of town and country in planned settlements of limited size, each surrounded by a permanent agricultural belt. Once a garden city reached its intended population, growth would continue through the founding of a new settlement nearby rather than through the expansion of the existing one, producing a cluster of towns linked by rail. Crucially, Howard intended the land to be held collectively, so that the rise in land values resulting from development would benefit the community rather than private landlords. Two English towns were built on garden-city principles in the early twentieth century, and the idea influenced planners in many countries. Critics have observed, however, that communal ownership of land was only partly realised in practice, and that many later “garden suburbs” borrowed the low-density design while abandoning the self-contained character of Howard’s scheme.",
+    "question": "Which of the following statements is correct?",
+    "options": [
+      "Howard believed that garden cities should keep expanding outwards as their populations grew.",
+      "Howard wanted gains in land value from development to go to residents collectively.",
+      "Later garden suburbs kept all the essentials of Howard’s model.",
+      "Howard’s proposal was motivated solely by poor living conditions in industrial cities."
+    ],
+    "answer": "B",
+    "explanations": {
+      "A": "Incorrect — contradiction. Once a garden city reached its intended size, growth was to occur through a new settlement nearby, not through expansion.",
+      "B": "Correct. Land was to be held collectively so that rising land values would benefit the community rather than private landlords.",
+      "C": "Incorrect — contradiction. Critics note that later garden suburbs abandoned the self-contained character of Howard’s scheme.",
+      "D": "Incorrect — extreme wording. Howard was also troubled by the depopulation and limited opportunities of the countryside."
+    }
+  },
+  {
+    "id": "V4-13",
+    "difficulty": "intermediate",
+    "topic": "Consumer protection: unit pricing",
+    "passage": "Comparing prices in a supermarket is less straightforward than it appears. Products are sold in packages of differing sizes, and a larger pack is not always cheaper per kilogram or per litre than a smaller one, particularly when the smaller pack is on promotion. To help shoppers, many consumer-protection regimes require retailers to display a unit price—the price per standard quantity—alongside the selling price. A consumer organisation in one country examined how effectively this information was being used. It found that shoppers who reported noticing unit prices were more likely to choose the option that was cheaper per unit than those who did not. However, the organisation cautioned that this association did not prove that the labels themselves changed behaviour, since shoppers who are already price-conscious may be more inclined to look for such information. It also found that unit prices were sometimes expressed in different units for similar products—per 100 grams for one brand and per kilogram for another—which made comparison harder. The organisation recommended clearer and more consistent presentation, and suggested that unit prices be printed in a font size comparable to that of the selling price.",
+    "question": "Which of the following statements is correct?",
+    "options": [
+      "The study demonstrated that unit-price labels lead shoppers to choose cheaper products.",
+      "Bigger packs always cost less per kilogram.",
+      "Retailers in every country are legally obliged to display unit prices.",
+      "Inconsistent units made some unit prices hard to compare."
+    ],
+    "answer": "D",
+    "explanations": {
+      "A": "Incorrect — cause and effect. The organisation warned that the association “did not prove” that the labels changed behaviour.",
+      "B": "Incorrect — extreme wording. A larger pack is “not always” cheaper per unit, especially when a smaller pack is on promotion.",
+      "C": "Incorrect — scope shift. The passage refers to “many” consumer-protection regimes, not to every country.",
+      "D": "Correct. Unit prices were shown, but sometimes per 100 grams for one brand and per kilogram for another, which hindered comparison."
+    }
+  },
+  {
+    "id": "V4-14",
+    "difficulty": "advanced",
+    "topic": "History of ideas: Hobbes and Locke",
+    "passage": "Social contract theory seeks to explain the legitimacy of political authority by imagining how individuals might agree to form a government. Thomas Hobbes, writing in the mid-seventeenth century amid civil war in England, described life in a hypothetical “state of nature” without government as a condition of constant insecurity. Rational individuals, he argued, would therefore surrender extensive powers to a sovereign capable of keeping the peace; even a harsh ruler was preferable to a return to anarchy. John Locke, writing later in the same century, took a less bleak view of the state of nature, in which people already possessed natural rights to life, liberty and property. For Locke, government was established to protect these rights more securely, and its authority depended on the consent of the governed. If a government persistently violated the rights it had been created to protect, the people were entitled to resist and replace it. Both thinkers thus grounded authority in agreement rather than in divine appointment or hereditary claim, but they drew sharply different conclusions about the limits of that authority.",
+    "question": "Which of the following statements is correct?",
+    "options": [
+      "Locke’s account implies that a government’s claim to obedience depends on how it behaves.",
+      "The passage presents the civil war as the cause of Hobbes’s pessimism.",
+      "Locke regarded any violation of natural rights by a government as sufficient grounds for replacing it.",
+      "Hobbes held that a sovereign’s harshness justified a return to the state of nature."
+    ],
+    "answer": "A",
+    "explanations": {
+      "A": "Correct. For Locke, persistent violation of rights entitles the people to resist and replace a government, so obedience is conditional on its conduct.",
+      "B": "Incorrect — cause and effect. The passage notes only that Hobbes wrote during the civil war; it does not say that the war caused his view.",
+      "C": "Incorrect — extreme wording. Locke justified resistance when a government “persistently” violated rights, not after any single violation.",
+      "D": "Incorrect — contradiction. Hobbes argued that even a harsh ruler was preferable to a return to anarchy."
+    }
+  },
+  {
+    "id": "V4-15",
+    "difficulty": "intermediate",
+    "topic": "Oceans: coral bleaching",
+    "passage": "Reef-building corals live in partnership with microscopic algae that inhabit their tissues. The algae photosynthesise and supply the coral with much of the energy it needs, while the coral provides shelter and compounds that the algae use. The algae also give many corals their colour. When water temperatures remain unusually high for a prolonged period, this partnership breaks down: the coral expels the algae, and its white calcium carbonate skeleton becomes visible through its now translucent tissue. This is known as bleaching. A bleached coral is not necessarily dead. If temperatures return to normal reasonably quickly, the algae can recolonise the coral and it may recover, although repeated or prolonged episodes leave less time for recovery and increase the likelihood of death. Heat stress is the main cause of mass bleaching events, but other stresses, such as pollution or unusually low tides that expose corals to the air, can also trigger bleaching locally. Because reefs shelter a great variety of fish and invertebrates, extensive coral mortality can have consequences well beyond the corals themselves.",
+    "question": "Which of the following statements is NOT supported by the passage?",
+    "options": [
+      "Corals obtain much of their energy from the algae living in their tissues.",
+      "Bleaching can be triggered by factors other than high water temperatures.",
+      "A coral that has bleached is unable to survive.",
+      "The loss of corals can affect other species that depend on reefs."
+    ],
+    "answer": "C",
+    "explanations": {
+      "A": "Incorrect — supported. The algae “supply the coral with much of the energy it needs”.",
+      "B": "Incorrect — supported. Pollution and unusually low tides can also trigger bleaching locally.",
+      "C": "Correct — not supported. A bleached coral “is not necessarily dead” and may recover if temperatures return to normal.",
+      "D": "Incorrect — supported. Extensive coral mortality can affect the many fish and invertebrates that reefs shelter."
+    }
+  },
+  {
+    "id": "V4-16",
+    "difficulty": "foundation",
+    "topic": "Food: date labelling",
+    "passage": "Date labels on food are intended to inform consumers, yet they are frequently misunderstood, and confusion between the two most common types is thought to contribute to avoidable household food waste. A “use by” date relates to safety. It appears on highly perishable products, such as fresh meat or ready-prepared salads, which could pose a health risk after a short period. Such food should not be eaten after the date shown, even if it looks and smells acceptable, because some harmful bacteria produce no visible signs of spoilage. A “best before” date, by contrast, relates to quality. It is used on products such as dried pasta, tinned goods and biscuits, which may lose some flavour or texture over time but generally remain safe to eat after the date, provided they have been stored correctly and the packaging is undamaged. Both kinds of date assume that the storage instructions on the label have been followed; a product kept in a warm place may deteriorate before its date. Several public campaigns have therefore sought to explain the difference to consumers.",
+    "question": "Which of the following statements is correct?",
+    "options": [
+      "Food past its “use by” date is safe to eat as long as it smells normal.",
+      "A product that has not been stored as instructed may deteriorate before the date printed on it.",
+      "Products labelled with a “best before” date must be thrown away once that date has passed.",
+      "Confusion over date labels is the main cause of the food that households throw away unnecessarily."
+    ],
+    "answer": "B",
+    "explanations": {
+      "A": "Incorrect — contradiction. Such food should not be eaten after the date “even if it looks and smells acceptable”.",
+      "B": "Correct. Both kinds of date assume correct storage, and a product kept in a warm place may deteriorate before its date.",
+      "C": "Incorrect — contradiction. “Best before” products generally remain safe after the date if stored correctly and undamaged.",
+      "D": "Incorrect — extreme wording. Confusion is said to “contribute to” avoidable waste, not to be its main cause."
+    }
+  },
+  {
+    "id": "V4-17",
+    "difficulty": "intermediate",
+    "topic": "Research policy: mission-oriented funding",
+    "passage": "Public research funding has traditionally been allocated through two broad channels. In the first, researchers propose projects on topics of their own choosing, and independent experts select the most promising through peer review. This “bottom-up” model is valued for protecting scientific freedom and for supporting curiosity-driven research whose practical applications may emerge only decades later. In the second, funders define priority areas in advance and invite proposals that address them. A variant of this approach, sometimes called mission-oriented funding, goes further by setting a concrete, measurable objective—for example, a specified reduction in the energy consumption of buildings—and mobilising researchers, firms and public authorities from several disciplines to achieve it. Advocates argue that missions give research a clearer sense of direction and make its contribution to society more visible. Critics respond that governments are not necessarily well placed to pick the right targets, and that an excessive focus on missions could crowd out fundamental research. Many funding systems therefore combine both approaches, reserving a substantial share of their budgets for researcher-led projects.",
+    "question": "Which of the following statements is correct?",
+    "options": [
+      "Missions differ from ordinary priority areas in having a quantified target.",
+      "Bottom-up funding has been shown to yield more useful applications than mission-oriented funding.",
+      "Missions draw on a single discipline only.",
+      "Critics of mission-oriented funding consider that missions should replace fundamental research."
+    ],
+    "answer": "A",
+    "explanations": {
+      "A": "Correct. Missions are described as a variant of priority-setting that goes further by setting a concrete, measurable objective.",
+      "B": "Incorrect — unsupported comparison. The passage reports arguments on both sides but no evidence on which model yields more useful applications.",
+      "C": "Incorrect — contradiction. Missions mobilise participants “from several disciplines”.",
+      "D": "Incorrect — contradiction. Critics fear that missions could crowd out fundamental research, the opposite of wanting them to replace it."
+    }
+  },
+  {
+    "id": "V4-18",
+    "difficulty": "advanced",
+    "topic": "Energy: the merit-order effect",
+    "passage": "In many wholesale electricity markets, the price for a given hour is set through an auction. Generators submit offers stating how much electricity they can supply and at what price, and the offers are ranked from the cheapest upwards—the so-called merit order. Plants are called upon in this sequence until demand is met, and in a common design all successful generators then receive the price offered by the last, most expensive plant needed. Because wind and solar installations have almost no fuel costs, they can offer their output at very low prices and are usually placed at the front of the queue. When they produce a great deal of electricity, they push more expensive plants, typically those burning gas, out of the merit order, and the price paid to all generators tends to fall. This is known as the merit-order effect. It has a paradoxical consequence: the more wind and solar capacity is installed, the lower the market prices those same installations may receive when they are generating strongly. Conversely, when renewable output is low and gas-fired plants set the price, a rise in the cost of gas can raise the price of all electricity traded in that hour, whatever its source.",
+    "question": "Which of the following statements is correct?",
+    "options": [
+      "Under the design described, each successful generator is paid the price that it offered.",
+      "Wind and solar generators always determine the wholesale price of electricity.",
+      "The merit-order effect guarantees that expanding renewable capacity will lower households’ electricity bills.",
+      "A wind farm can be paid the price set by a gas-fired plant."
+    ],
+    "answer": "D",
+    "explanations": {
+      "A": "Incorrect — contradiction. In the design described, all successful generators receive the price offered by the last, most expensive plant needed.",
+      "B": "Incorrect — extreme wording. Renewables are usually at the front of the queue; the price is set by the last plant needed, often a gas-fired one.",
+      "C": "Incorrect — outside knowledge. The passage concerns wholesale prices and says nothing about household bills; “guarantees” also overstates a tendency.",
+      "D": "Correct. Every successful generator receives the price of the last plant needed, so in an hour when that plant burns gas, a wind farm is paid the gas-set price."
+    }
+  },
+  {
+    "id": "V4-19",
+    "difficulty": "advanced",
+    "topic": "Oceans and climate: sea-level rise",
+    "passage": "Global mean sea level has been rising since at least the late nineteenth century, and two processes account for most of the increase. The first is thermal expansion: as seawater warms, it occupies a greater volume. The second is the addition of water from land-based ice, namely mountain glaciers and the large ice sheets of Greenland and Antarctica. The melting of floating sea ice, by contrast, makes almost no direct contribution, because floating ice already displaces a mass of water roughly equal to its own. Sea level does not change uniformly around the world. Ocean currents, prevailing winds and variations in the Earth’s gravitational field all cause regional departures from the global average. In some places the land itself is moving: regions that were weighed down by thick ice sheets during the last glacial period are still slowly rising, while other coasts are subsiding, sometimes because of the compaction of sediments. For coastal communities, therefore, the relevant measure is relative sea-level change—the combined effect of changes in the water level and vertical movement of the land.",
+    "question": "Which of the following statements is correct?",
+    "options": [
+      "The melting of Arctic sea ice is one of the two main drivers of global sea-level rise.",
+      "Every coastal area must be seeing a rise in relative sea level.",
+      "A coastal town on land that is rising could experience a smaller relative sea-level rise than the global average would suggest.",
+      "Sediment compaction is the main reason why some coasts are subsiding."
+    ],
+    "answer": "C",
+    "explanations": {
+      "A": "Incorrect — contradiction. Floating sea ice makes “almost no direct contribution”; the main drivers are thermal expansion and land-based ice.",
+      "B": "Incorrect — scope shift. A global average need not hold at every coast: relative change also reflects land movement, and some regions are rising.",
+      "C": "Correct. Relative sea-level change combines changes in water level with vertical land movement, so uplift offsets part of the rise.",
+      "D": "Incorrect — partial truth. Compaction of sediments is “sometimes” the cause of subsidence; it is not identified as the main one."
+    }
+  },
+  {
+    "id": "V4-20",
+    "difficulty": "foundation",
+    "topic": "Urban planning: Jane Jacobs and mixed use",
+    "passage": "In the mid-twentieth century, many planners favoured separating urban functions into distinct zones: housing in one area, offices in another, industry and shopping elsewhere. Separation promised to protect residents from noise and pollution, and it suited a growing reliance on the private car. The American writer and activist Jane Jacobs became one of the most influential critics of this approach. Drawing on her observations of city neighbourhoods, she argued that streets are safest and liveliest when they are used by different people for different purposes at different times of day. A street with homes, shops, workshops and cafés, she suggested, has “eyes on the street”: residents and shopkeepers who notice what is happening and informally discourage crime. She also defended short blocks, older buildings that offer low rents to new businesses, and a dense concentration of people. Her ideas were at first dismissed by many professionals, but they later shaped the revival of mixed-use development in numerous cities. Some critics have since argued that her prescriptions, when applied to fashionable districts, can contribute to rising property prices that displace the very residents and small businesses she valued.",
+    "question": "Which of the following statements is correct?",
+    "options": [
+      "Jacobs argued that separating housing from commerce made streets safer.",
+      "Jacobs believed that informal watchfulness by people using a street could help to deter crime.",
+      "Jacobs’s ideas were immediately accepted by most urban planners.",
+      "Jacobs opposed keeping older buildings, arguing that they held back the new businesses on which lively streets depend."
+    ],
+    "answer": "B",
+    "explanations": {
+      "A": "Incorrect — contradiction. Jacobs criticised the separation of functions and argued that mixed use makes streets safest.",
+      "B": "Correct. Her idea of “eyes on the street” holds that residents and shopkeepers who notice what happens informally discourage crime.",
+      "C": "Incorrect — contradiction. Her ideas were at first dismissed by many professionals and only later became influential.",
+      "D": "Incorrect — contradiction. She defended older buildings because their low rents help new businesses."
+    }
+  },
+  {
+    "id": "V4-21",
+    "difficulty": "advanced",
+    "topic": "History of ideas: induction and falsifiability",
+    "passage": "How can scientific theories be distinguished from claims that merely look scientific? In the early seventeenth century, Francis Bacon championed induction: the careful accumulation of observations from which general laws could gradually be inferred. Later philosophers pointed out a difficulty. However many confirming instances are observed, they cannot logically guarantee that a universal statement is true; the next observation might contradict it. In the twentieth century, Karl Popper proposed a different criterion. A theory, he argued, is scientific only if it is falsifiable—that is, if it forbids certain observable outcomes, so that it could in principle be shown to be false by experience. On this view, a theory that can accommodate any conceivable result is not thereby strengthened but rendered unscientific. Popper did not claim that falsifiable theories are true, nor that unfalsifiable claims are meaningless; he sought only to mark the boundary of empirical science. His critics noted that, in practice, scientists confronted with an anomalous result often adjust auxiliary assumptions rather than abandon a theory, which makes the decisive refutation Popper described harder to achieve than his account suggests.",
+    "question": "Which of the following statements is correct?",
+    "options": [
+      "For Popper, a theory compatible with every possible result is not scientific.",
+      "Popper held that a falsifiable theory which has withstood testing has thereby been proved true.",
+      "Popper regarded claims that cannot be falsified as meaningless.",
+      "Bacon maintained that a sufficient number of observations can logically guarantee the truth of a general law."
+    ],
+    "answer": "A",
+    "explanations": {
+      "A": "Correct. A theory that can accommodate any conceivable result is, on Popper’s view, rendered unscientific rather than strengthened.",
+      "B": "Incorrect — contradiction. Popper “did not claim that falsifiable theories are true”.",
+      "C": "Incorrect — contradiction. Popper did not hold that unfalsifiable claims are meaningless; he sought only to mark the boundary of empirical science.",
+      "D": "Incorrect — unsupported inference. The point about logical guarantees is raised by later philosophers; no such claim is attributed to Bacon."
+    }
+  },
+  {
+    "id": "V4-22",
+    "difficulty": "intermediate",
+    "topic": "Oceans: fisheries and maximum sustainable yield",
+    "passage": "Fisheries scientists often use the concept of maximum sustainable yield (MSY) to guide catch limits. The idea rests on the observation that a fish population grows most rapidly at an intermediate size: when a stock is very small, there are too few adults to produce many young, while a stock close to the carrying capacity of its environment grows slowly because individuals compete for food and space. In theory, by keeping a stock at the size at which growth is fastest and harvesting only the surplus each year, a fishery could take the largest catch that can be sustained indefinitely. In practice, the approach faces several difficulties. Estimates of stock size are uncertain, and natural fluctuations in recruitment—the number of young fish entering the population—can be large. Single-species models also overlook interactions within the ecosystem, for instance when the target species is food for other fish, seabirds or marine mammals. For these reasons, many scientists advise setting catches somewhat below the theoretical maximum, as a buffer against error.",
+    "question": "Which of the following statements is NOT supported by the passage?",
+    "options": [
+      "A fish population close to the carrying capacity of its environment tends to grow slowly.",
+      "Uncertainty about the size of stocks is one of the obstacles to applying MSY in practice.",
+      "Many scientists favour a safety margin below the theoretical maximum catch.",
+      "Single-species MSY models fully account for effects on the target species’ predators."
+    ],
+    "answer": "D",
+    "explanations": {
+      "A": "Incorrect — supported. A stock near carrying capacity grows slowly because individuals compete for food and space.",
+      "B": "Incorrect — supported. Uncertain estimates of stock size are listed among the practical difficulties.",
+      "C": "Incorrect — supported. Many scientists advise catches somewhat below the theoretical maximum, as a buffer against error.",
+      "D": "Correct — not supported. Single-species models “overlook interactions within the ecosystem”, such as the target species being food for predators."
+    }
+  },
+  {
+    "id": "V4-23",
+    "difficulty": "advanced",
+    "topic": "Consumer protection: unfair contract terms",
+    "passage": "Standard-form contracts, drafted in advance by a business and offered to consumers on a take-it-or-leave-it basis, are a familiar feature of modern commerce. Because consumers rarely read such terms in full and have no opportunity to negotiate them, many legal systems allow courts to set aside terms that are found to be unfair. Under a typical regime of this kind, a term is regarded as unfair if, contrary to the requirement of good faith, it causes a significant imbalance in the parties’ rights and obligations to the detriment of the consumer. An unfair term is not binding on the consumer, but the rest of the contract continues to apply if it can operate without that term. Terms that have been individually negotiated generally fall outside this protection. So, in many such regimes, do the terms defining the main subject matter of the contract and the adequacy of the price, provided that they are written in plain and intelligible language. The reasoning is that consumers can be expected to pay attention to these core elements, whereas they cannot be expected to scrutinise the small print governing, for example, cancellation fees or the seller’s liability.",
+    "question": "Which of the following statements is correct?",
+    "options": [
+      "Under a regime of the kind described, a contract containing an unfair term is void in its entirety.",
+      "Under such a regime, consumers can challenge a price as unfair whenever it exceeds the usual market rate.",
+      "An obscurely drafted price term may be open to review for unfairness.",
+      "Under such a regime, a clearly worded term defining the main subject matter of the contract will always be open to review for unfairness."
+    ],
+    "answer": "C",
+    "explanations": {
+      "A": "Incorrect — contradiction. The rest of the contract continues to apply if it can operate without the unfair term.",
+      "B": "Incorrect — contradiction. The adequacy of the price is, in many such regimes, excluded from review where it is expressed in plain and intelligible language.",
+      "C": "Correct. The exclusion of core terms such as the price applies only if they are written in plain and intelligible language, so an obscurely drafted price term loses that protection.",
+      "D": "Incorrect — extreme wording. In many such regimes, plainly worded terms defining the main subject matter are excluded from review."
+    }
+  },
+  {
+    "id": "V4-24",
+    "difficulty": "foundation",
+    "topic": "Energy and urban planning: district heating",
+    "passage": "A provincial city is considering whether to expand its district heating network, which currently supplies hot water to around a fifth of households through insulated underground pipes. The heat comes mainly from a combined heat and power plant on the edge of the city. Conventional power stations release a large share of the energy in their fuel as waste heat, typically through cooling towers; a combined heat and power plant captures much of this heat and puts it to use, so that a greater proportion of the fuel’s energy is used overall. Supporters of expansion argue that a single central source is easier to switch to cleaner fuels than thousands of individual boilers, and that the network could also take in heat from other sources, such as industrial processes or large heat pumps. Opponents point to the high cost of laying new pipes in streets already crowded with other utilities, and to the disruption that the works would cause. They also note that a network is most economical in densely built areas, where many customers can be connected per kilometre of pipe. The city council has commissioned a feasibility study before taking a decision.",
+    "question": "Which of the following statements is correct?",
+    "options": [
+      "Most households in the city already receive heat from the district network.",
+      "Combined heat and power plants make use of heat that conventional power stations generally waste.",
+      "The council has decided to extend the network to all parts of the city.",
+      "District heating networks are equally economical in sparsely and densely built areas, since the cost of laying pipe is the same everywhere."
+    ],
+    "answer": "B",
+    "explanations": {
+      "A": "Incorrect — contradiction. The network currently serves “around a fifth” of households.",
+      "B": "Correct. Conventional stations release much of their fuel’s energy as waste heat, which a combined heat and power plant captures and uses.",
+      "C": "Incorrect — contradiction. The council has only commissioned a feasibility study and has not yet taken a decision.",
+      "D": "Incorrect — contradiction. Opponents note that a network is most economical in densely built areas."
+    }
+  },
+  {
+    "id": "V4-25",
+    "difficulty": "advanced",
+    "topic": "Research and innovation: the economics of patents",
+    "passage": "Patents grant inventors a temporary right to prevent others from exploiting their inventions, in exchange for public disclosure of how those inventions work. The system rests on a trade-off. Without some protection, rivals could copy a new product at little cost, and inventors might be unwilling to invest in costly research whose results others could freely appropriate. With protection, however, the patent holder can charge prices above those that would prevail under competition, restricting access to the invention for the duration of the patent. Disclosure is intended to offset this cost: once the patent expires, anyone may use the invention, and even before then, others can learn from the published description and build upon it. Economists disagree about where the balance lies. The importance of patents appears to vary considerably between sectors. In fields such as pharmaceuticals, where development costs are high and products are easy to imitate, firms tend to regard patents as essential, whereas in other industries firms often rely more on secrecy, speed to market or complementary services. Some researchers also argue that overlapping patents in complex technologies can impede, rather than encourage, further innovation.",
+    "question": "Which of the following statements is NOT supported by the passage?",
+    "options": [
+      "The disclosure required by the patent system benefits other inventors only once the patent has expired.",
+      "A patent may allow its holder to set prices higher than would be possible in a competitive market.",
+      "The value that firms attach to patents is likely to depend partly on how easily their products can be imitated.",
+      "It has been suggested that patents can, in some circumstances, hinder innovation."
+    ],
+    "answer": "A",
+    "explanations": {
+      "A": "Correct — not supported. The passage states that “even before” expiry others can learn from the published description and build on it.",
+      "B": "Incorrect — supported. The patent holder “can charge prices above those that would prevail under competition”.",
+      "C": "Incorrect — supported. Patents are regarded as essential where products are easy to imitate but less so elsewhere, implying that ease of imitation is one relevant factor.",
+      "D": "Incorrect — supported. Some researchers argue that overlapping patents in complex technologies can impede further innovation."
+    }
+  }
+]

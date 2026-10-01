@@ -1,0 +1,2858 @@
+[
+ {
+  "kind": "field",
+  "reference": [
+   {
+    "ref": "CN-2592/LY",
+    "name": "Nieminen, Mika",
+    "cc": "FI",
+    "amount": "10,162.90"
+   },
+   {
+    "ref": "MS-4145/KR",
+    "name": "Bērziņš, Jānis",
+    "cc": "LV",
+    "amount": "66,435.50"
+   },
+   {
+    "ref": "GR-1585/PT",
+    "name": "Lindqvist, Sofia",
+    "cc": "SE",
+    "amount": "50,112.50"
+   },
+   {
+    "ref": "FN-5155/EH",
+    "name": "Borg, Joseph",
+    "cc": "MT",
+    "amount": "8,225.25"
+   },
+   {
+    "ref": "AD-4814/PX",
+    "name": "Ivanov, Ivan",
+    "cc": "BG",
+    "amount": "11,873.15"
+   },
+   {
+    "ref": "MS-4911/YW",
+    "name": "García, Tomás",
+    "cc": "ES",
+    "amount": "66,021.75"
+   },
+   {
+    "ref": "TR-7330/LX",
+    "name": "Ferrari, Luca",
+    "cc": "IT",
+    "amount": "82,725.15"
+   },
+   {
+    "ref": "FN-7180/EY",
+    "name": "Peeters, Emma",
+    "cc": "BE",
+    "amount": "17,124.25"
+   }
+  ],
+  "record": {
+   "ref": "FN-7180/EY",
+   "name": "Peeters, Emma",
+   "cc": "BG",
+   "amount": "17,124.25"
+  },
+  "row": 8,
+  "question": "The record below was copied from row 8 of the reference table. Which part of the copy, if any, contains an error?",
+  "options": [
+   "Reference",
+   "Amount (€)",
+   "Country code",
+   "No error"
+  ],
+  "answer": "C",
+  "explanation": "Compare the copy with row 8: the country code differs (BE → BG); all other fields match, so the answer is “Country code”. Method: compare one field at a time; read codes in chunks of two characters, check accents letter by letter, and check amounts digit by digit from the left.",
+  "difficulty": "foundation",
+  "id": "AP-01"
+ },
+ {
+  "kind": "field",
+  "reference": [
+   {
+    "ref": "FN-7505/LV",
+    "name": "Kowalska, Anna",
+    "cc": "PL",
+    "amount": "50,441.15"
+   },
+   {
+    "ref": "AD-7388/TG",
+    "name": "Ivanov, Ivan",
+    "cc": "BG",
+    "amount": "62,708.25"
+   },
+   {
+    "ref": "CN-9071/XW",
+    "name": "Papadopoulos, Nikos",
+    "cc": "EL",
+    "amount": "20,111.50"
+   },
+   {
+    "ref": "TR-1003/DL",
+    "name": "Petrović, Ana",
+    "cc": "SI",
+    "amount": "65,160.75"
+   },
+   {
+    "ref": "GR-7471/KY",
+    "name": "Popescu, Elena",
+    "cc": "RO",
+    "amount": "56,254.25"
+   },
+   {
+    "ref": "MS-3986/VA",
+    "name": "Novotný, Matej",
+    "cc": "SK",
+    "amount": "97,407.50"
+   },
+   {
+    "ref": "CN-2088/GF",
+    "name": "Borg, Joseph",
+    "cc": "MT",
+    "amount": "51,648.40"
+   },
+   {
+    "ref": "FN-3458/HY",
+    "name": "Kovač, Katarina",
+    "cc": "HR",
+    "amount": "51,151.25"
+   }
+  ],
+  "record": {
+   "ref": "GR-7471/KY",
+   "name": "Popescu, Elena",
+   "cc": "RO",
+   "amount": "56,254.25"
+  },
+  "row": 5,
+  "question": "The record below was copied from row 5 of the reference table. Which part of the copy, if any, contains an error?",
+  "options": [
+   "Country code",
+   "Reference",
+   "Amount (€)",
+   "No error"
+  ],
+  "answer": "D",
+  "explanation": "Compare the copy with row 5: every field of the copy matches row 5 exactly, so “No error” is correct. Method: compare one field at a time; read codes in chunks of two characters, check accents letter by letter, and check amounts digit by digit from the left.",
+  "difficulty": "intermediate",
+  "id": "AP-02"
+ },
+ {
+  "kind": "field",
+  "reference": [
+   {
+    "ref": "TR-3461/TC",
+    "name": "Murphy, Aoife",
+    "cc": "IE",
+    "amount": "97,943.50"
+   },
+   {
+    "ref": "CN-6093/XK",
+    "name": "Kowalska, Anna",
+    "cc": "PL",
+    "amount": "69,764.75"
+   },
+   {
+    "ref": "CN-7186/DH",
+    "name": "O’Brien, Seán",
+    "cc": "IE",
+    "amount": "50,722.40"
+   },
+   {
+    "ref": "FN-7321/GM",
+    "name": "Kask, Liis",
+    "cc": "EE",
+    "amount": "54,830.75"
+   },
+   {
+    "ref": "FN-1020/TV",
+    "name": "Popescu, Elena",
+    "cc": "RO",
+    "amount": "43,427.50"
+   },
+   {
+    "ref": "AD-5413/HJ",
+    "name": "García, Tomás",
+    "cc": "ES",
+    "amount": "9,629.25"
+   },
+   {
+    "ref": "GR-1279/VF",
+    "name": "Silva, Inês",
+    "cc": "PT",
+    "amount": "65,206.00"
+   },
+   {
+    "ref": "FN-3880/CT",
+    "name": "Janssen, Pieter",
+    "cc": "BE",
+    "amount": "18,769.50"
+   }
+  ],
+  "record": {
+   "ref": "FN-3880/TC",
+   "name": "Janssen, Pieter",
+   "cc": "BE",
+   "amount": "18,769.50"
+  },
+  "row": 8,
+  "question": "The record below was copied from row 8 of the reference table. Which part of the copy, if any, contains an error?",
+  "options": [
+   "Amount (€)",
+   "Reference",
+   "Country code",
+   "No error"
+  ],
+  "answer": "B",
+  "explanation": "Compare the copy with row 8: the final two letters of the reference are reversed (CT → TC); all other fields match, so the answer is “Reference”. Method: compare one field at a time; read codes in chunks of two characters, check accents letter by letter, and check amounts digit by digit from the left.",
+  "difficulty": "intermediate",
+  "id": "AP-03"
+ },
+ {
+  "kind": "field",
+  "reference": [
+   {
+    "ref": "FN-8133/TA",
+    "name": "Horváth, Zofia",
+    "cc": "HU",
+    "amount": "22,221.75"
+   },
+   {
+    "ref": "GR-5501/PG",
+    "name": "Georgiou, Maria",
+    "cc": "CY",
+    "amount": "74,441.40"
+   },
+   {
+    "ref": "AD-4140/FY",
+    "name": "Silva, Inês",
+    "cc": "PT",
+    "amount": "35,264.25"
+   },
+   {
+    "ref": "GR-7742/FA",
+    "name": "Moreau, Lucas",
+    "cc": "FR",
+    "amount": "7,676.00"
+   },
+   {
+    "ref": "FN-1085/EV",
+    "name": "Lindqvist, Sofia",
+    "cc": "SE",
+    "amount": "20,596.25"
+   },
+   {
+    "ref": "MS-2075/YH",
+    "name": "Weber, Sophie",
+    "cc": "LU",
+    "amount": "42,187.90"
+   },
+   {
+    "ref": "MS-8450/TN",
+    "name": "García, Tomás",
+    "cc": "ES",
+    "amount": "7,327.00"
+   },
+   {
+    "ref": "TR-4777/MG",
+    "name": "Novotný, Matej",
+    "cc": "SK",
+    "amount": "53,799.15"
+   }
+  ],
+  "record": {
+   "ref": "GR-7742/FA",
+   "name": "Moreau, Lucas",
+   "cc": "FR",
+   "amount": "7,766.00"
+  },
+  "row": 4,
+  "question": "The record below was copied from row 4 of the reference table. Which part of the copy, if any, contains an error?",
+  "options": [
+   "Amount (€)",
+   "Country code",
+   "Beneficiary",
+   "No error"
+  ],
+  "answer": "A",
+  "explanation": "Compare the copy with row 4: the amount differs (7,676.00 → 7,766.00); all other fields match, so the answer is “Amount (€)”. Method: compare one field at a time; read codes in chunks of two characters, check accents letter by letter, and check amounts digit by digit from the left.",
+  "difficulty": "intermediate",
+  "id": "AP-04"
+ },
+ {
+  "kind": "field",
+  "reference": [
+   {
+    "ref": "TR-7559/DC",
+    "name": "Hansen, Lars",
+    "cc": "DK",
+    "amount": "11,234.00"
+   },
+   {
+    "ref": "FN-8710/HU",
+    "name": "Georgiou, Maria",
+    "cc": "CY",
+    "amount": "63,387.90"
+   },
+   {
+    "ref": "FN-1824/KP",
+    "name": "Kowalska, Anna",
+    "cc": "PL",
+    "amount": "40,193.25"
+   },
+   {
+    "ref": "AD-1588/NP",
+    "name": "Janssen, Pieter",
+    "cc": "BE",
+    "amount": "51,469.90"
+   },
+   {
+    "ref": "MS-7275/XD",
+    "name": "Novák, Eva",
+    "cc": "CZ",
+    "amount": "48,438.40"
+   },
+   {
+    "ref": "TR-7625/EE",
+    "name": "Peeters, Emma",
+    "cc": "BE",
+    "amount": "68,495.40"
+   },
+   {
+    "ref": "MS-2837/EU",
+    "name": "Popescu, Elena",
+    "cc": "RO",
+    "amount": "77,636.15"
+   },
+   {
+    "ref": "FN-5906/AU",
+    "name": "Murphy, Aoife",
+    "cc": "IE",
+    "amount": "21,658.15"
+   }
+  ],
+  "record": {
+   "ref": "TR-7625/EE",
+   "name": "Peeters, Emma",
+   "cc": "BE",
+   "amount": "68,495.40"
+  },
+  "row": 6,
+  "question": "The record below was copied from row 6 of the reference table. Which part of the copy, if any, contains an error?",
+  "options": [
+   "Amount (€)",
+   "Beneficiary",
+   "Reference",
+   "No error"
+  ],
+  "answer": "D",
+  "explanation": "Compare the copy with row 6: every field of the copy matches row 6 exactly, so “No error” is correct. Method: compare one field at a time; read codes in chunks of two characters, check accents letter by letter, and check amounts digit by digit from the left.",
+  "difficulty": "intermediate",
+  "id": "AP-05"
+ },
+ {
+  "kind": "field",
+  "reference": [
+   {
+    "ref": "GR-9837/WW",
+    "name": "Ivanov, Ivan",
+    "cc": "BG",
+    "amount": "56,918.90"
+   },
+   {
+    "ref": "AD-7718/VH",
+    "name": "O’Brien, Seán",
+    "cc": "IE",
+    "amount": "75,238.15"
+   },
+   {
+    "ref": "AD-6675/MM",
+    "name": "Nieminen, Mika",
+    "cc": "FI",
+    "amount": "2,215.40"
+   },
+   {
+    "ref": "FN-2205/PH",
+    "name": "Petraitis, Jonas",
+    "cc": "LT",
+    "amount": "31,485.40"
+   },
+   {
+    "ref": "AD-6809/UU",
+    "name": "Dumont, Marie",
+    "cc": "BE",
+    "amount": "50,403.00"
+   },
+   {
+    "ref": "AD-1990/XY",
+    "name": "Peeters, Emma",
+    "cc": "BE",
+    "amount": "26,027.40"
+   },
+   {
+    "ref": "FN-8068/DW",
+    "name": "Wiśniewski, Piotr",
+    "cc": "PL",
+    "amount": "14,324.25"
+   },
+   {
+    "ref": "CN-5255/FJ",
+    "name": "Popescu, Elena",
+    "cc": "RO",
+    "amount": "59,164.25"
+   }
+  ],
+  "record": {
+   "ref": "AD-7718/VH",
+   "name": "O’Brien, Seán",
+   "cc": "IE",
+   "amount": "75,328.15"
+  },
+  "row": 2,
+  "question": "The record below was copied from row 2 of the reference table. Which part of the copy, if any, contains an error?",
+  "options": [
+   "Beneficiary",
+   "Amount (€)",
+   "Reference",
+   "No error"
+  ],
+  "answer": "B",
+  "explanation": "Compare the copy with row 2: the amount differs (75,238.15 → 75,328.15); all other fields match, so the answer is “Amount (€)”. Method: compare one field at a time; read codes in chunks of two characters, check accents letter by letter, and check amounts digit by digit from the left.",
+  "difficulty": "intermediate",
+  "id": "AP-06"
+ },
+ {
+  "kind": "field",
+  "reference": [
+   {
+    "ref": "AD-6655/VL",
+    "name": "Wiśniewski, Piotr",
+    "cc": "PL",
+    "amount": "41,755.90"
+   },
+   {
+    "ref": "MS-9201/RM",
+    "name": "Fischer, Georg",
+    "cc": "AT",
+    "amount": "68,892.75"
+   },
+   {
+    "ref": "MS-4071/TF",
+    "name": "Virtanen, Hanna",
+    "cc": "FI",
+    "amount": "51,729.90"
+   },
+   {
+    "ref": "GR-2442/XN",
+    "name": "García, Tomás",
+    "cc": "ES",
+    "amount": "32,352.90"
+   },
+   {
+    "ref": "TR-4931/FY",
+    "name": "Kowalska, Anna",
+    "cc": "PL",
+    "amount": "32,213.25"
+   },
+   {
+    "ref": "MS-7710/WF",
+    "name": "O’Brien, Seán",
+    "cc": "IE",
+    "amount": "55,887.75"
+   },
+   {
+    "ref": "FN-3588/NU",
+    "name": "Kovač, Katarina",
+    "cc": "HR",
+    "amount": "51,406.00"
+   },
+   {
+    "ref": "GR-1577/TX",
+    "name": "Horváth, Zofia",
+    "cc": "HU",
+    "amount": "39,175.25"
+   }
+  ],
+  "record": {
+   "ref": "TR-4391/FY",
+   "name": "Kowalska, Anna",
+   "cc": "PL",
+   "amount": "32,213.25"
+  },
+  "row": 5,
+  "question": "The record below was copied from row 5 of the reference table. Which part of the copy, if any, contains an error?",
+  "options": [
+   "Amount (€)",
+   "Country code",
+   "Reference",
+   "No error"
+  ],
+  "answer": "C",
+  "explanation": "Compare the copy with row 5: two digits of the reference are transposed (TR-4931/FY → TR-4391/FY); all other fields match, so the answer is “Reference”. Method: compare one field at a time; read codes in chunks of two characters, check accents letter by letter, and check amounts digit by digit from the left.",
+  "difficulty": "intermediate",
+  "id": "AP-07"
+ },
+ {
+  "kind": "field",
+  "reference": [
+   {
+    "ref": "TR-1986/RG",
+    "name": "Kask, Liis",
+    "cc": "EE",
+    "amount": "65,811.40"
+   },
+   {
+    "ref": "CN-6300/AD",
+    "name": "Weber, Sophie",
+    "cc": "LU",
+    "amount": "8,792.00"
+   },
+   {
+    "ref": "GR-2619/VD",
+    "name": "Silva, Inês",
+    "cc": "PT",
+    "amount": "4,699.75"
+   },
+   {
+    "ref": "MS-1251/VD",
+    "name": "Bērziņš, Jānis",
+    "cc": "LV",
+    "amount": "45,875.75"
+   },
+   {
+    "ref": "CN-8504/TK",
+    "name": "Papadopoulos, Nikos",
+    "cc": "EL",
+    "amount": "53,625.00"
+   },
+   {
+    "ref": "TR-3859/JJ",
+    "name": "Kovač, Katarina",
+    "cc": "HR",
+    "amount": "82,453.75"
+   },
+   {
+    "ref": "CN-8150/FG",
+    "name": "Schmidt, Clara",
+    "cc": "DE",
+    "amount": "39,378.90"
+   },
+   {
+    "ref": "TR-7311/FU",
+    "name": "Borg, Joseph",
+    "cc": "MT",
+    "amount": "44,575.40"
+   }
+  ],
+  "record": {
+   "ref": "MS-1251/VD",
+   "name": "Brēziņš, Jānis",
+   "cc": "LV",
+   "amount": "45,875.75"
+  },
+  "row": 4,
+  "question": "The record below was copied from row 4 of the reference table. Which part of the copy, if any, contains an error?",
+  "options": [
+   "Beneficiary",
+   "Reference",
+   "Amount (€)",
+   "No error"
+  ],
+  "answer": "A",
+  "explanation": "Compare the copy with row 4: two letters of the surname are transposed (Bērziņš → Brēziņš); all other fields match, so the answer is “Beneficiary”. Method: compare one field at a time; read codes in chunks of two characters, check accents letter by letter, and check amounts digit by digit from the left.",
+  "difficulty": "intermediate",
+  "id": "AP-08"
+ },
+ {
+  "kind": "field",
+  "reference": [
+   {
+    "ref": "FN-5841/MP",
+    "name": "Janssen, Pieter",
+    "cc": "BE",
+    "amount": "62,036.40"
+   },
+   {
+    "ref": "MS-8688/AU",
+    "name": "Hansen, Lars",
+    "cc": "DK",
+    "amount": "77,966.75"
+   },
+   {
+    "ref": "FN-4801/VD",
+    "name": "Papadopoulos, Nikos",
+    "cc": "EL",
+    "amount": "1,481.50"
+   },
+   {
+    "ref": "FN-6155/RC",
+    "name": "García, Tomás",
+    "cc": "ES",
+    "amount": "28,045.15"
+   },
+   {
+    "ref": "MS-7389/PD",
+    "name": "Kask, Liis",
+    "cc": "EE",
+    "amount": "94,535.25"
+   },
+   {
+    "ref": "MS-1617/LX",
+    "name": "Georgiou, Maria",
+    "cc": "CY",
+    "amount": "30,937.40"
+   },
+   {
+    "ref": "CN-9245/GN",
+    "name": "Moreau, Lucas",
+    "cc": "FR",
+    "amount": "74,409.25"
+   },
+   {
+    "ref": "CN-1316/GT",
+    "name": "Nowak, Mateusz",
+    "cc": "PL",
+    "amount": "51,325.15"
+   }
+  ],
+  "record": {
+   "ref": "FN-6155/RC",
+   "name": "García, Tomás",
+   "cc": "EE",
+   "amount": "28,045.15"
+  },
+  "row": 4,
+  "question": "The record below was copied from row 4 of the reference table. Which part of the copy, if any, contains an error?",
+  "options": [
+   "Beneficiary",
+   "Country code",
+   "Reference",
+   "No error"
+  ],
+  "answer": "B",
+  "explanation": "Compare the copy with row 4: the country code differs (ES → EE); all other fields match, so the answer is “Country code”. Method: compare one field at a time; read codes in chunks of two characters, check accents letter by letter, and check amounts digit by digit from the left.",
+  "difficulty": "foundation",
+  "id": "AP-09"
+ },
+ {
+  "kind": "field",
+  "reference": [
+   {
+    "ref": "GR-8640/DY",
+    "name": "Janssen, Pieter",
+    "cc": "BE",
+    "amount": "51,857.40"
+   },
+   {
+    "ref": "MS-6338/WN",
+    "name": "O’Brien, Seán",
+    "cc": "IE",
+    "amount": "17,848.40"
+   },
+   {
+    "ref": "MS-8915/JG",
+    "name": "Dumont, Marie",
+    "cc": "BE",
+    "amount": "13,615.40"
+   },
+   {
+    "ref": "FN-7651/LR",
+    "name": "Weber, Sophie",
+    "cc": "LU",
+    "amount": "33,497.15"
+   },
+   {
+    "ref": "FN-5175/PN",
+    "name": "Kovač, Katarina",
+    "cc": "HR",
+    "amount": "79,209.50"
+   },
+   {
+    "ref": "FN-7424/WP",
+    "name": "Andersson, Henrik",
+    "cc": "SE",
+    "amount": "7,043.00"
+   },
+   {
+    "ref": "FN-4800/LK",
+    "name": "Fischer, Georg",
+    "cc": "AT",
+    "amount": "71,981.25"
+   },
+   {
+    "ref": "FN-4769/HW",
+    "name": "Novák, Eva",
+    "cc": "CZ",
+    "amount": "535.15"
+   }
+  ],
+  "record": {
+   "ref": "FN-7651/LR",
+   "name": "Wbeer, Sophie",
+   "cc": "LU",
+   "amount": "33,497.15"
+  },
+  "row": 4,
+  "question": "The record below was copied from row 4 of the reference table. Which part of the copy, if any, contains an error?",
+  "options": [
+   "Beneficiary",
+   "Reference",
+   "Amount (€)",
+   "No error"
+  ],
+  "answer": "A",
+  "explanation": "Compare the copy with row 4: two letters of the surname are transposed (Weber → Wbeer); all other fields match, so the answer is “Beneficiary”. Method: compare one field at a time; read codes in chunks of two characters, check accents letter by letter, and check amounts digit by digit from the left.",
+  "difficulty": "intermediate",
+  "id": "AP-10"
+ },
+ {
+  "kind": "field",
+  "reference": [
+   {
+    "ref": "TR-4013/MC",
+    "name": "Novotný, Matej",
+    "cc": "SK",
+    "amount": "69,597.40"
+   },
+   {
+    "ref": "CN-1023/TJ",
+    "name": "Silva, Inês",
+    "cc": "PT",
+    "amount": "10,821.00"
+   },
+   {
+    "ref": "GR-2836/UL",
+    "name": "Peeters, Emma",
+    "cc": "BE",
+    "amount": "4,417.15"
+   },
+   {
+    "ref": "AD-5515/KA",
+    "name": "Popescu, Elena",
+    "cc": "RO",
+    "amount": "96,555.75"
+   },
+   {
+    "ref": "FN-7130/PM",
+    "name": "Moreau, Lucas",
+    "cc": "FR",
+    "amount": "58,914.90"
+   },
+   {
+    "ref": "FN-7475/PM",
+    "name": "Lindqvist, Sofia",
+    "cc": "SE",
+    "amount": "9,900.25"
+   },
+   {
+    "ref": "TR-4161/NK",
+    "name": "Nieminen, Mika",
+    "cc": "FI",
+    "amount": "37,898.40"
+   },
+   {
+    "ref": "TR-4348/GV",
+    "name": "Kask, Liis",
+    "cc": "EE",
+    "amount": "33,972.90"
+   }
+  ],
+  "record": {
+   "ref": "CN-1023/TJ",
+   "name": "Silva, Inês",
+   "cc": "PT",
+   "amount": "10,812.00"
+  },
+  "row": 2,
+  "question": "The record below was copied from row 2 of the reference table. Which part of the copy, if any, contains an error?",
+  "options": [
+   "Beneficiary",
+   "Reference",
+   "Amount (€)",
+   "No error"
+  ],
+  "answer": "C",
+  "explanation": "Compare the copy with row 2: the amount differs (10,821.00 → 10,812.00); all other fields match, so the answer is “Amount (€)”. Method: compare one field at a time; read codes in chunks of two characters, check accents letter by letter, and check amounts digit by digit from the left.",
+  "difficulty": "intermediate",
+  "id": "AP-11"
+ },
+ {
+  "kind": "field",
+  "reference": [
+   {
+    "ref": "AD-7830/MA",
+    "name": "Andersson, Henrik",
+    "cc": "SE",
+    "amount": "78,696.25"
+   },
+   {
+    "ref": "AD-7216/LN",
+    "name": "Borg, Joseph",
+    "cc": "MT",
+    "amount": "48,840.40"
+   },
+   {
+    "ref": "FN-4057/VH",
+    "name": "Petraitis, Jonas",
+    "cc": "LT",
+    "amount": "2,069.00"
+   },
+   {
+    "ref": "MS-3405/RG",
+    "name": "Novák, Eva",
+    "cc": "CZ",
+    "amount": "55,536.75"
+   },
+   {
+    "ref": "TR-6118/GM",
+    "name": "Peeters, Emma",
+    "cc": "BE",
+    "amount": "68,704.15"
+   },
+   {
+    "ref": "CN-6922/RK",
+    "name": "Hansen, Lars",
+    "cc": "DK",
+    "amount": "48,592.50"
+   },
+   {
+    "ref": "GR-3961/RH",
+    "name": "Janssen, Pieter",
+    "cc": "BE",
+    "amount": "90,714.50"
+   },
+   {
+    "ref": "FN-4131/PN",
+    "name": "García, Tomás",
+    "cc": "ES",
+    "amount": "62,100.15"
+   }
+  ],
+  "record": {
+   "ref": "MS-3405/RG",
+   "name": "Novák, Eva",
+   "cc": "CZ",
+   "amount": "55,536.75"
+  },
+  "row": 4,
+  "question": "The record below was copied from row 4 of the reference table. Which part of the copy, if any, contains an error?",
+  "options": [
+   "Reference",
+   "Beneficiary",
+   "Amount (€)",
+   "No error"
+  ],
+  "answer": "D",
+  "explanation": "Compare the copy with row 4: every field of the copy matches row 4 exactly, so “No error” is correct. Method: compare one field at a time; read codes in chunks of two characters, check accents letter by letter, and check amounts digit by digit from the left.",
+  "difficulty": "intermediate",
+  "id": "AP-12"
+ },
+ {
+  "kind": "match",
+  "reference": [
+   {
+    "ref": "AD-8503/DM",
+    "name": "Papadopoulos, Nikos",
+    "cc": "EL",
+    "amount": "41,860.50"
+   },
+   {
+    "ref": "MS-9035/PN",
+    "name": "Dumont, Marie",
+    "cc": "BE",
+    "amount": "67,715.15"
+   },
+   {
+    "ref": "CN-5256/TN",
+    "name": "Virtanen, Hanna",
+    "cc": "FI",
+    "amount": "37,154.00"
+   },
+   {
+    "ref": "MS-8844/LY",
+    "name": "Georgiou, Maria",
+    "cc": "CY",
+    "amount": "65,459.75"
+   },
+   {
+    "ref": "TR-1252/HP",
+    "name": "Lindqvist, Sofia",
+    "cc": "SE",
+    "amount": "18,999.50"
+   },
+   {
+    "ref": "TR-4550/UM",
+    "name": "Borg, Joseph",
+    "cc": "MT",
+    "amount": "34,531.90"
+   },
+   {
+    "ref": "CN-8683/DD",
+    "name": "Kowalska, Anna",
+    "cc": "PL",
+    "amount": "6,671.40"
+   },
+   {
+    "ref": "FN-8814/EY",
+    "name": "Novotný, Matej",
+    "cc": "SK",
+    "amount": "63,376.25"
+   },
+   {
+    "ref": "GR-5367/NK",
+    "name": "Petrović, Ana",
+    "cc": "SI",
+    "amount": "81,568.50"
+   },
+   {
+    "ref": "FN-9866/JG",
+    "name": "Moreau, Lucas",
+    "cc": "FR",
+    "amount": "69,071.25"
+   }
+  ],
+  "candidates": [
+   {
+    "ref": "CN-5256/TN",
+    "name": "Virtanen, Hanna",
+    "cc": "FI",
+    "amount": "37,154.00"
+   },
+   {
+    "ref": "GR-5367/NK",
+    "name": "Petrović, Ana",
+    "cc": "SK",
+    "amount": "81,568.50"
+   },
+   {
+    "ref": "TR-4850/UM",
+    "name": "Borg, Joseph",
+    "cc": "MT",
+    "amount": "34,531.90"
+   },
+   {
+    "ref": "FN-8814/YE",
+    "name": "Novotný, Matej",
+    "cc": "SK",
+    "amount": "63,376.25"
+   }
+  ],
+  "question": "Which of the following records appears in the reference table EXACTLY as shown?",
+  "options": [
+   "A",
+   "B",
+   "C",
+   "D"
+  ],
+  "answer": "A",
+  "explanation": "A: matches row 3 exactly. B: compare with row 9: the country code differs (SI → SK). C: compare with row 6: one digit of the reference is wrong (TR-4550/UM → TR-4850/UM). D: compare with row 8: the final two letters of the reference are reversed (EY → YE). Method: compare one field at a time; read codes in chunks of two characters, check accents letter by letter, and check amounts digit by digit from the left.",
+  "difficulty": "intermediate",
+  "id": "AP-13"
+ },
+ {
+  "kind": "match",
+  "reference": [
+   {
+    "ref": "GR-7709/PX",
+    "name": "Petraitis, Jonas",
+    "cc": "LT",
+    "amount": "85,201.15"
+   },
+   {
+    "ref": "CN-3025/VM",
+    "name": "Fischer, Georg",
+    "cc": "AT",
+    "amount": "14,926.40"
+   },
+   {
+    "ref": "CN-8811/MK",
+    "name": "Kask, Liis",
+    "cc": "EE",
+    "amount": "63,726.75"
+   },
+   {
+    "ref": "TR-4063/UJ",
+    "name": "Dumont, Marie",
+    "cc": "BE",
+    "amount": "67,594.75"
+   },
+   {
+    "ref": "CN-1410/HM",
+    "name": "Kovač, Katarina",
+    "cc": "HR",
+    "amount": "53,230.40"
+   },
+   {
+    "ref": "GR-7092/LJ",
+    "name": "Kowalska, Anna",
+    "cc": "PL",
+    "amount": "40,994.15"
+   },
+   {
+    "ref": "TR-2312/GA",
+    "name": "Virtanen, Hanna",
+    "cc": "FI",
+    "amount": "44,490.50"
+   },
+   {
+    "ref": "AD-1424/WJ",
+    "name": "Ferrari, Luca",
+    "cc": "IT",
+    "amount": "55,375.50"
+   },
+   {
+    "ref": "TR-7019/DP",
+    "name": "Andersson, Henrik",
+    "cc": "SE",
+    "amount": "7,450.90"
+   },
+   {
+    "ref": "MS-8156/LM",
+    "name": "Nowak, Mateusz",
+    "cc": "PL",
+    "amount": "18,640.25"
+   }
+  ],
+  "candidates": [
+   {
+    "ref": "CN-1410/HM",
+    "name": "Kovač, Katharina",
+    "cc": "HR",
+    "amount": "53,230.40"
+   },
+   {
+    "ref": "MS-8156/LM",
+    "name": "Noawk, Mateusz",
+    "cc": "PL",
+    "amount": "18,640.25"
+   },
+   {
+    "ref": "AD-1424/WJ",
+    "name": "Ferrari, Luca",
+    "cc": "IE",
+    "amount": "55,375.50"
+   },
+   {
+    "ref": "GR-7092/LJ",
+    "name": "Kowalska, Anna",
+    "cc": "PL",
+    "amount": "40,994.15"
+   }
+  ],
+  "question": "Which of the following records appears in the reference table EXACTLY as shown?",
+  "options": [
+   "A",
+   "B",
+   "C",
+   "D"
+  ],
+  "answer": "D",
+  "explanation": "A: compare with row 5: the first name is spelled differently (Katarina → Katharina). B: compare with row 10: two letters of the surname are transposed (Nowak → Noawk). C: compare with row 8: the country code differs (IT → IE). D: matches row 6 exactly. Method: compare one field at a time; read codes in chunks of two characters, check accents letter by letter, and check amounts digit by digit from the left.",
+  "difficulty": "intermediate",
+  "id": "AP-14"
+ },
+ {
+  "kind": "match",
+  "reference": [
+   {
+    "ref": "FN-4050/VW",
+    "name": "Virtanen, Hanna",
+    "cc": "FI",
+    "amount": "46,589.90"
+   },
+   {
+    "ref": "FN-8391/VW",
+    "name": "Novotný, Matej",
+    "cc": "SK",
+    "amount": "51,619.90"
+   },
+   {
+    "ref": "MS-5201/AT",
+    "name": "Borg, Joseph",
+    "cc": "MT",
+    "amount": "32,871.00"
+   },
+   {
+    "ref": "CN-8886/VM",
+    "name": "Schmidt, Clara",
+    "cc": "DE",
+    "amount": "28,370.25"
+   },
+   {
+    "ref": "AD-4122/YY",
+    "name": "Bērziņš, Jānis",
+    "cc": "LV",
+    "amount": "49,787.40"
+   },
+   {
+    "ref": "FN-8871/RJ",
+    "name": "O’Brien, Seán",
+    "cc": "IE",
+    "amount": "33,240.75"
+   },
+   {
+    "ref": "TR-3826/VA",
+    "name": "Nieminen, Mika",
+    "cc": "FI",
+    "amount": "26,024.25"
+   },
+   {
+    "ref": "FN-8208/PU",
+    "name": "Kovač, Katarina",
+    "cc": "HR",
+    "amount": "1,825.90"
+   },
+   {
+    "ref": "GR-2880/ED",
+    "name": "Janssen, Pieter",
+    "cc": "BE",
+    "amount": "69,735.50"
+   },
+   {
+    "ref": "CN-7050/VA",
+    "name": "Popescu, Elena",
+    "cc": "RO",
+    "amount": "83,328.15"
+   }
+  ],
+  "candidates": [
+   {
+    "ref": "TR-3826/VA",
+    "name": "Nieminen, Mika",
+    "cc": "FI",
+    "amount": "26,024.25"
+   },
+   {
+    "ref": "CN-7055/VA",
+    "name": "Popescu, Elena",
+    "cc": "RO",
+    "amount": "83,328.15"
+   },
+   {
+    "ref": "CN-8868/VM",
+    "name": "Schmidt, Clara",
+    "cc": "DE",
+    "amount": "28,370.25"
+   },
+   {
+    "ref": "FN-8391/VW",
+    "name": "Novotný, Matej",
+    "cc": "SK",
+    "amount": "51,169.90"
+   }
+  ],
+  "question": "Which of the following records appears in the reference table EXACTLY as shown?",
+  "options": [
+   "A",
+   "B",
+   "C",
+   "D"
+  ],
+  "answer": "A",
+  "explanation": "A: matches row 7 exactly. B: compare with row 10: one digit of the reference is wrong (CN-7050/VA → CN-7055/VA). C: compare with row 4: two digits of the reference are transposed (CN-8886/VM → CN-8868/VM). D: compare with row 2: the amount differs (51,619.90 → 51,169.90). Method: compare one field at a time; read codes in chunks of two characters, check accents letter by letter, and check amounts digit by digit from the left.",
+  "difficulty": "intermediate",
+  "id": "AP-15"
+ },
+ {
+  "kind": "match",
+  "reference": [
+   {
+    "ref": "AD-5963/RR",
+    "name": "Kask, Liis",
+    "cc": "EE",
+    "amount": "85,565.15"
+   },
+   {
+    "ref": "AD-7778/LV",
+    "name": "Silva, Inês",
+    "cc": "PT",
+    "amount": "30,940.75"
+   },
+   {
+    "ref": "CN-8384/KJ",
+    "name": "Ivanov, Ivan",
+    "cc": "BG",
+    "amount": "3,966.75"
+   },
+   {
+    "ref": "AD-7833/EM",
+    "name": "Wiśniewski, Piotr",
+    "cc": "PL",
+    "amount": "88,161.90"
+   },
+   {
+    "ref": "AD-9162/XY",
+    "name": "Popescu, Elena",
+    "cc": "RO",
+    "amount": "23,059.40"
+   },
+   {
+    "ref": "FN-3419/RE",
+    "name": "Petraitis, Jonas",
+    "cc": "LT",
+    "amount": "54,510.40"
+   },
+   {
+    "ref": "TR-4185/TA",
+    "name": "Virtanen, Hanna",
+    "cc": "FI",
+    "amount": "49,190.40"
+   },
+   {
+    "ref": "GR-6610/RE",
+    "name": "Fischer, Georg",
+    "cc": "AT",
+    "amount": "66,279.15"
+   },
+   {
+    "ref": "FN-5818/GN",
+    "name": "Ferrari, Luca",
+    "cc": "IT",
+    "amount": "17,121.25"
+   },
+   {
+    "ref": "GR-3500/XC",
+    "name": "Weber, Sophie",
+    "cc": "LU",
+    "amount": "97,110.40"
+   }
+  ],
+  "candidates": [
+   {
+    "ref": "AD-5963/RR",
+    "name": "Kask, Lis",
+    "cc": "EE",
+    "amount": "85,565.15"
+   },
+   {
+    "ref": "FN-3419/RE",
+    "name": "Petraitis, Jonas",
+    "cc": "LT",
+    "amount": "54,510.04"
+   },
+   {
+    "ref": "AD-7833/EM",
+    "name": "Wiśniewski, Piotr",
+    "cc": "PT",
+    "amount": "88,161.90"
+   },
+   {
+    "ref": "TR-4185/TA",
+    "name": "Virtanen, Hanna",
+    "cc": "FI",
+    "amount": "49,190.40"
+   }
+  ],
+  "question": "Which of the following records appears in the reference table EXACTLY as shown?",
+  "options": [
+   "A",
+   "B",
+   "C",
+   "D"
+  ],
+  "answer": "D",
+  "explanation": "A: compare with row 1: the first name is spelled differently (Liis → Lis). B: compare with row 6: the amount differs (54,510.40 → 54,510.04). C: compare with row 4: the country code differs (PL → PT). D: matches row 7 exactly. Method: compare one field at a time; read codes in chunks of two characters, check accents letter by letter, and check amounts digit by digit from the left.",
+  "difficulty": "intermediate",
+  "id": "AP-16"
+ },
+ {
+  "kind": "match",
+  "reference": [
+   {
+    "ref": "MS-1168/YE",
+    "name": "Peeters, Emma",
+    "cc": "BE",
+    "amount": "32,110.90"
+   },
+   {
+    "ref": "MS-7122/AM",
+    "name": "Virtanen, Hanna",
+    "cc": "FI",
+    "amount": "97,843.15"
+   },
+   {
+    "ref": "TR-1850/YG",
+    "name": "Hansen, Lars",
+    "cc": "DK",
+    "amount": "93,037.40"
+   },
+   {
+    "ref": "FN-4457/KW",
+    "name": "García, Tomás",
+    "cc": "ES",
+    "amount": "31,800.00"
+   },
+   {
+    "ref": "FN-1191/YK",
+    "name": "Nieminen, Mika",
+    "cc": "FI",
+    "amount": "1,796.75"
+   },
+   {
+    "ref": "GR-3021/UU",
+    "name": "Moreau, Lucas",
+    "cc": "FR",
+    "amount": "5,121.00"
+   },
+   {
+    "ref": "FN-1146/NC",
+    "name": "Wiśniewski, Piotr",
+    "cc": "PL",
+    "amount": "40,655.15"
+   },
+   {
+    "ref": "TR-1918/XL",
+    "name": "Novák, Eva",
+    "cc": "CZ",
+    "amount": "94,868.90"
+   },
+   {
+    "ref": "FN-3467/YY",
+    "name": "Andersson, Henrik",
+    "cc": "SE",
+    "amount": "52,093.00"
+   },
+   {
+    "ref": "FN-9188/JN",
+    "name": "Ivanov, Ivan",
+    "cc": "BG",
+    "amount": "13,561.75"
+   }
+  ],
+  "candidates": [
+   {
+    "ref": "TR-1850/YG",
+    "name": "Hansen, Lars",
+    "cc": "DK",
+    "amount": "93,307.40"
+   },
+   {
+    "ref": "TR-1918/XL",
+    "name": "Novák, Eva",
+    "cc": "CZ",
+    "amount": "94,868.90"
+   },
+   {
+    "ref": "FN-4457/KW",
+    "name": "García, Tomás",
+    "cc": "EE",
+    "amount": "31,800.00"
+   },
+   {
+    "ref": "FN-3467/YY",
+    "name": "Anderson, Henrik",
+    "cc": "SE",
+    "amount": "52,093.00"
+   }
+  ],
+  "question": "Which of the following records appears in the reference table EXACTLY as shown?",
+  "options": [
+   "A",
+   "B",
+   "C",
+   "D"
+  ],
+  "answer": "B",
+  "explanation": "A: compare with row 3: the amount differs (93,037.40 → 93,307.40). B: matches row 8 exactly. C: compare with row 4: the country code differs (ES → EE). D: compare with row 9: a double letter in the surname has become single (Andersson → Anderson). Method: compare one field at a time; read codes in chunks of two characters, check accents letter by letter, and check amounts digit by digit from the left.",
+  "difficulty": "intermediate",
+  "id": "AP-17"
+ },
+ {
+  "kind": "match",
+  "reference": [
+   {
+    "ref": "CN-2450/CU",
+    "name": "García, Tomás",
+    "cc": "ES",
+    "amount": "38,505.40"
+   },
+   {
+    "ref": "TR-5173/XK",
+    "name": "Wiśniewski, Piotr",
+    "cc": "PL",
+    "amount": "76,491.75"
+   },
+   {
+    "ref": "CN-1448/GN",
+    "name": "Ferrari, Luca",
+    "cc": "IT",
+    "amount": "69,985.75"
+   },
+   {
+    "ref": "AD-1791/VM",
+    "name": "Georgiou, Maria",
+    "cc": "CY",
+    "amount": "88,581.50"
+   },
+   {
+    "ref": "GR-8811/KV",
+    "name": "Peeters, Emma",
+    "cc": "BE",
+    "amount": "77,915.40"
+   },
+   {
+    "ref": "MS-7145/KE",
+    "name": "Novotný, Matej",
+    "cc": "SK",
+    "amount": "15,137.15"
+   },
+   {
+    "ref": "AD-1889/GU",
+    "name": "Rossi, Matteo",
+    "cc": "IT",
+    "amount": "31,128.75"
+   },
+   {
+    "ref": "AD-4495/KE",
+    "name": "O’Brien, Seán",
+    "cc": "IE",
+    "amount": "87,601.15"
+   },
+   {
+    "ref": "MS-1670/LK",
+    "name": "Horváth, Zofia",
+    "cc": "HU",
+    "amount": "94,020.40"
+   },
+   {
+    "ref": "GR-5711/WJ",
+    "name": "Petraitis, Jonas",
+    "cc": "LT",
+    "amount": "42,883.40"
+   }
+  ],
+  "candidates": [
+   {
+    "ref": "AD-1889/GU",
+    "name": "Rossi, Matteo",
+    "cc": "IT",
+    "amount": "31,128.75"
+   },
+   {
+    "ref": "AD-1791/VM",
+    "name": "Georigou, Maria",
+    "cc": "CY",
+    "amount": "88,581.50"
+   },
+   {
+    "ref": "GR-8911/KV",
+    "name": "Peeters, Emma",
+    "cc": "BE",
+    "amount": "77,915.40"
+   },
+   {
+    "ref": "MS-1670/LK",
+    "name": "Horvath, Zofia",
+    "cc": "HU",
+    "amount": "94,020.40"
+   }
+  ],
+  "question": "Which of the following records appears in the reference table EXACTLY as shown?",
+  "options": [
+   "A",
+   "B",
+   "C",
+   "D"
+  ],
+  "answer": "A",
+  "explanation": "A: matches row 7 exactly. B: compare with row 4: two letters of the surname are transposed (Georgiou → Georigou). C: compare with row 5: one digit of the reference is wrong (GR-8811/KV → GR-8911/KV). D: compare with row 9: an accent or diacritic is missing from the surname (Horváth → Horvath). Method: compare one field at a time; read codes in chunks of two characters, check accents letter by letter, and check amounts digit by digit from the left.",
+  "difficulty": "intermediate",
+  "id": "AP-18"
+ },
+ {
+  "kind": "match",
+  "reference": [
+   {
+    "ref": "GR-8891/RX",
+    "name": "Wiśniewski, Piotr",
+    "cc": "PL",
+    "amount": "65,015.00"
+   },
+   {
+    "ref": "CN-5765/WD",
+    "name": "Silva, Inês",
+    "cc": "PT",
+    "amount": "72,332.90"
+   },
+   {
+    "ref": "MS-8905/RC",
+    "name": "Kask, Liis",
+    "cc": "EE",
+    "amount": "8,161.40"
+   },
+   {
+    "ref": "CN-3820/EJ",
+    "name": "Ferrari, Luca",
+    "cc": "IT",
+    "amount": "18,106.90"
+   },
+   {
+    "ref": "AD-7551/PT",
+    "name": "Petrović, Ana",
+    "cc": "SI",
+    "amount": "33,739.50"
+   },
+   {
+    "ref": "FN-8319/XR",
+    "name": "Peeters, Emma",
+    "cc": "BE",
+    "amount": "80,368.00"
+   },
+   {
+    "ref": "AD-1010/DT",
+    "name": "O’Brien, Seán",
+    "cc": "IE",
+    "amount": "2,460.15"
+   },
+   {
+    "ref": "CN-8702/MR",
+    "name": "Borg, Joseph",
+    "cc": "MT",
+    "amount": "60,696.25"
+   },
+   {
+    "ref": "GR-6805/HH",
+    "name": "Kowalska, Anna",
+    "cc": "PL",
+    "amount": "9,273.15"
+   },
+   {
+    "ref": "GR-3395/KA",
+    "name": "Murphy, Aoife",
+    "cc": "IE",
+    "amount": "38,284.40"
+   }
+  ],
+  "candidates": [
+   {
+    "ref": "CN-8702/MR",
+    "name": "Borg, Joseph",
+    "cc": "MT",
+    "amount": "60,696.52"
+   },
+   {
+    "ref": "CN-3820/EJ",
+    "name": "Ferrrai, Luca",
+    "cc": "IT",
+    "amount": "18,106.90"
+   },
+   {
+    "ref": "MS-8905/RC",
+    "name": "Kask, Liis",
+    "cc": "EE",
+    "amount": "1,861.40"
+   },
+   {
+    "ref": "AD-1010/DT",
+    "name": "O’Brien, Seán",
+    "cc": "IE",
+    "amount": "2,460.15"
+   }
+  ],
+  "question": "Which of the following records appears in the reference table EXACTLY as shown?",
+  "options": [
+   "A",
+   "B",
+   "C",
+   "D"
+  ],
+  "answer": "D",
+  "explanation": "A: compare with row 8: the amount differs (60,696.25 → 60,696.52). B: compare with row 4: two letters of the surname are transposed (Ferrari → Ferrrai). C: compare with row 3: the amount differs (8,161.40 → 1,861.40). D: matches row 7 exactly. Method: compare one field at a time; read codes in chunks of two characters, check accents letter by letter, and check amounts digit by digit from the left.",
+  "difficulty": "intermediate",
+  "id": "AP-19"
+ },
+ {
+  "kind": "match",
+  "reference": [
+   {
+    "ref": "FN-9072/FV",
+    "name": "Dumont, Marie",
+    "cc": "BE",
+    "amount": "35,190.50"
+   },
+   {
+    "ref": "AD-7816/TH",
+    "name": "Moreau, Lucas",
+    "cc": "FR",
+    "amount": "65,043.90"
+   },
+   {
+    "ref": "AD-6297/EN",
+    "name": "Hansen, Lars",
+    "cc": "DK",
+    "amount": "78,795.50"
+   },
+   {
+    "ref": "CN-5201/TF",
+    "name": "Novotný, Matej",
+    "cc": "SK",
+    "amount": "64,834.00"
+   },
+   {
+    "ref": "FN-8064/ND",
+    "name": "Bērziņš, Jānis",
+    "cc": "LV",
+    "amount": "64,813.25"
+   },
+   {
+    "ref": "GR-7719/MR",
+    "name": "Weber, Sophie",
+    "cc": "LU",
+    "amount": "35,955.25"
+   },
+   {
+    "ref": "TR-1024/KD",
+    "name": "Horváth, Zofia",
+    "cc": "HU",
+    "amount": "70,239.50"
+   },
+   {
+    "ref": "GR-4632/KK",
+    "name": "Rossi, Matteo",
+    "cc": "IT",
+    "amount": "28,710.75"
+   },
+   {
+    "ref": "GR-8904/FT",
+    "name": "Kovač, Katarina",
+    "cc": "HR",
+    "amount": "25,668.90"
+   },
+   {
+    "ref": "FN-8185/XV",
+    "name": "Lindqvist, Sofia",
+    "cc": "SE",
+    "amount": "27,450.15"
+   }
+  ],
+  "candidates": [
+   {
+    "ref": "FN-8064/ND",
+    "name": "Bērziņš, Jānis",
+    "cc": "LT",
+    "amount": "64,813.25"
+   },
+   {
+    "ref": "FN-9702/FV",
+    "name": "Dumont, Marie",
+    "cc": "BE",
+    "amount": "35,190.50"
+   },
+   {
+    "ref": "FN-8185/XV",
+    "name": "Lindqvist, Sofia",
+    "cc": "SE",
+    "amount": "27,450.15"
+   },
+   {
+    "ref": "GR-8904/FT",
+    "name": "Kovač, Katarina",
+    "cc": "HR",
+    "amount": "52,668.90"
+   }
+  ],
+  "question": "Which of the following records appears in the reference table EXACTLY as shown?",
+  "options": [
+   "A",
+   "B",
+   "C",
+   "D"
+  ],
+  "answer": "C",
+  "explanation": "A: compare with row 5: the country code differs (LV → LT). B: compare with row 1: two digits of the reference are transposed (FN-9072/FV → FN-9702/FV). C: matches row 10 exactly. D: compare with row 9: the amount differs (25,668.90 → 52,668.90). Method: compare one field at a time; read codes in chunks of two characters, check accents letter by letter, and check amounts digit by digit from the left.",
+  "difficulty": "intermediate",
+  "id": "AP-20"
+ },
+ {
+  "kind": "match",
+  "reference": [
+   {
+    "ref": "FN-3011/ML",
+    "name": "Petraitis, Jonas",
+    "cc": "LT",
+    "amount": "42,822.75"
+   },
+   {
+    "ref": "MS-7203/XJ",
+    "name": "Wiśniewski, Piotr",
+    "cc": "PL",
+    "amount": "80,567.90"
+   },
+   {
+    "ref": "FN-8514/AT",
+    "name": "Weber, Sophie",
+    "cc": "LU",
+    "amount": "52,537.90"
+   },
+   {
+    "ref": "FN-7305/XL",
+    "name": "Novotný, Matej",
+    "cc": "SK",
+    "amount": "58,545.15"
+   },
+   {
+    "ref": "AD-7120/NV",
+    "name": "Popescu, Elena",
+    "cc": "RO",
+    "amount": "31,937.25"
+   },
+   {
+    "ref": "TR-4346/DU",
+    "name": "Papadopoulos, Nikos",
+    "cc": "EL",
+    "amount": "29,067.50"
+   },
+   {
+    "ref": "MS-9889/PA",
+    "name": "Novák, Eva",
+    "cc": "CZ",
+    "amount": "15,917.00"
+   },
+   {
+    "ref": "MS-7550/PF",
+    "name": "Petrović, Ana",
+    "cc": "SI",
+    "amount": "24,718.15"
+   },
+   {
+    "ref": "GR-1211/YN",
+    "name": "Nieminen, Mika",
+    "cc": "FI",
+    "amount": "36,075.40"
+   },
+   {
+    "ref": "FN-1103/YY",
+    "name": "Andersson, Henrik",
+    "cc": "SE",
+    "amount": "21,719.40"
+   }
+  ],
+  "candidates": [
+   {
+    "ref": "FN-3011/ML",
+    "name": "Petraitis, Jonas",
+    "cc": "LT",
+    "amount": "42,822.75"
+   },
+   {
+    "ref": "MS-7023/XJ",
+    "name": "Wiśniewski, Piotr",
+    "cc": "PL",
+    "amount": "80,567.90"
+   },
+   {
+    "ref": "FN-8514/AT",
+    "name": "Weber, Sophie",
+    "cc": "LT",
+    "amount": "52,537.90"
+   },
+   {
+    "ref": "MS-7550/PF",
+    "name": "Pertović, Ana",
+    "cc": "SI",
+    "amount": "24,718.15"
+   }
+  ],
+  "question": "Which of the following records appears in the reference table EXACTLY as shown?",
+  "options": [
+   "A",
+   "B",
+   "C",
+   "D"
+  ],
+  "answer": "A",
+  "explanation": "A: matches row 1 exactly. B: compare with row 2: two digits of the reference are transposed (MS-7203/XJ → MS-7023/XJ). C: compare with row 3: the country code differs (LU → LT). D: compare with row 8: two letters of the surname are transposed (Petrović → Pertović). Method: compare one field at a time; read codes in chunks of two characters, check accents letter by letter, and check amounts digit by digit from the left.",
+  "difficulty": "intermediate",
+  "id": "AP-21"
+ },
+ {
+  "kind": "match",
+  "reference": [
+   {
+    "ref": "CN-9597/XH",
+    "name": "Dumont, Marie",
+    "cc": "BE",
+    "amount": "85,558.75"
+   },
+   {
+    "ref": "AD-8713/XG",
+    "name": "Lindqvist, Sofia",
+    "cc": "SE",
+    "amount": "94,389.40"
+   },
+   {
+    "ref": "GR-4941/HG",
+    "name": "Rossi, Matteo",
+    "cc": "IT",
+    "amount": "10,504.00"
+   },
+   {
+    "ref": "CN-7284/FE",
+    "name": "Horváth, Zofia",
+    "cc": "HU",
+    "amount": "60,915.90"
+   },
+   {
+    "ref": "GR-7008/GE",
+    "name": "Hansen, Lars",
+    "cc": "DK",
+    "amount": "81,012.40"
+   },
+   {
+    "ref": "MS-8504/VP",
+    "name": "Weber, Sophie",
+    "cc": "LU",
+    "amount": "22,727.00"
+   },
+   {
+    "ref": "GR-1500/KF",
+    "name": "Silva, Inês",
+    "cc": "PT",
+    "amount": "72,251.75"
+   },
+   {
+    "ref": "TR-4859/GV",
+    "name": "Ferrari, Luca",
+    "cc": "IT",
+    "amount": "18,412.40"
+   },
+   {
+    "ref": "TR-5008/UD",
+    "name": "O’Brien, Seán",
+    "cc": "IE",
+    "amount": "48,531.00"
+   },
+   {
+    "ref": "FN-6701/LF",
+    "name": "Peeters, Emma",
+    "cc": "BE",
+    "amount": "11,557.40"
+   }
+  ],
+  "candidates": [
+   {
+    "ref": "AD-8713/XG",
+    "name": "Lindvqist, Sofia",
+    "cc": "SE",
+    "amount": "94,389.40"
+   },
+   {
+    "ref": "GR-1500/KF",
+    "name": "Sivla, Inês",
+    "cc": "PT",
+    "amount": "72,251.75"
+   },
+   {
+    "ref": "GR-7008/GE",
+    "name": "Hansen, Lars",
+    "cc": "DK",
+    "amount": "80,112.40"
+   },
+   {
+    "ref": "GR-4941/HG",
+    "name": "Rossi, Matteo",
+    "cc": "IT",
+    "amount": "10,504.00"
+   }
+  ],
+  "question": "Which of the following records appears in the reference table EXACTLY as shown?",
+  "options": [
+   "A",
+   "B",
+   "C",
+   "D"
+  ],
+  "answer": "D",
+  "explanation": "A: compare with row 2: two letters of the surname are transposed (Lindqvist → Lindvqist). B: compare with row 7: two letters of the surname are transposed (Silva → Sivla). C: compare with row 5: the amount differs (81,012.40 → 80,112.40). D: matches row 3 exactly. Method: compare one field at a time; read codes in chunks of two characters, check accents letter by letter, and check amounts digit by digit from the left.",
+  "difficulty": "intermediate",
+  "id": "AP-22"
+ },
+ {
+  "kind": "count",
+  "reference": [
+   {
+    "ref": "GR-1894/DN",
+    "name": "Kask, Liis",
+    "cc": "EE",
+    "amount": "76,736.90"
+   },
+   {
+    "ref": "AD-3311/NF",
+    "name": "Moreau, Lucas",
+    "cc": "FR",
+    "amount": "31,077.90"
+   },
+   {
+    "ref": "MS-8861/KJ",
+    "name": "Ferrari, Luca",
+    "cc": "IT",
+    "amount": "76,023.90"
+   },
+   {
+    "ref": "MS-2958/CL",
+    "name": "García, Tomás",
+    "cc": "ES",
+    "amount": "88,506.40"
+   },
+   {
+    "ref": "AD-8454/VX",
+    "name": "Petraitis, Jonas",
+    "cc": "LT",
+    "amount": "14,388.90"
+   },
+   {
+    "ref": "AD-2085/XH",
+    "name": "Kowalska, Anna",
+    "cc": "PL",
+    "amount": "92,907.40"
+   },
+   {
+    "ref": "TR-4692/PV",
+    "name": "Georgiou, Maria",
+    "cc": "CY",
+    "amount": "77,823.40"
+   },
+   {
+    "ref": "CN-1798/LK",
+    "name": "Schmidt, Clara",
+    "cc": "DE",
+    "amount": "12,049.40"
+   },
+   {
+    "ref": "FN-3581/NT",
+    "name": "Petrović, Ana",
+    "cc": "SI",
+    "amount": "16,488.00"
+   },
+   {
+    "ref": "CN-4182/JV",
+    "name": "Ivanov, Ivan",
+    "cc": "BG",
+    "amount": "80,388.15"
+   }
+  ],
+  "copies": [
+   [
+    9,
+    {
+     "ref": "FN-3581/NT",
+     "name": "Petrović, Ana",
+     "cc": "SI",
+     "amount": "16,488.00"
+    }
+   ],
+   [
+    1,
+    {
+     "ref": "GR-1894/DN",
+     "name": "Kask, Liis",
+     "cc": "EE",
+     "amount": "76,736.90"
+    }
+   ],
+   [
+    2,
+    {
+     "ref": "AD-331I/NF",
+     "name": "Moreau, Lucas",
+     "cc": "FR",
+     "amount": "31,077.90"
+    }
+   ],
+   [
+    3,
+    {
+     "ref": "MS-8861/KJ",
+     "name": "Ferrari, Luka",
+     "cc": "IT",
+     "amount": "76,023.90"
+    }
+   ],
+   [
+    4,
+    {
+     "ref": "MS-3958/CL",
+     "name": "García, Tomás",
+     "cc": "ES",
+     "amount": "88,506.40"
+    }
+   ]
+  ],
+  "question": "Five records were copied from the reference table (the source row is shown for each). How many of the copies contain at least one error?",
+  "options": [
+   "2",
+   "3",
+   "4",
+   "5"
+  ],
+  "answer": "B",
+  "explanation": "copy 1 (row 9): no error; copy 2 (row 1): no error; copy 3 (row 2): a digit has been replaced by a look-alike letter (1 → I); copy 4 (row 3): the first name is spelled differently (Luca → Luka); copy 5 (row 4): one digit of the reference is wrong (MS-2958/CL → MS-3958/CL). Copies with an error: 3. Method: compare one field at a time; read codes in chunks of two characters, check accents letter by letter, and check amounts digit by digit from the left.",
+  "difficulty": "advanced",
+  "id": "AP-23"
+ },
+ {
+  "kind": "count",
+  "reference": [
+   {
+    "ref": "TR-1606/DL",
+    "name": "García, Tomás",
+    "cc": "ES",
+    "amount": "97,960.00"
+   },
+   {
+    "ref": "MS-3971/LU",
+    "name": "Petrović, Ana",
+    "cc": "SI",
+    "amount": "17,963.75"
+   },
+   {
+    "ref": "AD-8407/DF",
+    "name": "Moreau, Lucas",
+    "cc": "FR",
+    "amount": "24,673.90"
+   },
+   {
+    "ref": "MS-3001/VC",
+    "name": "Horváth, Zofia",
+    "cc": "HU",
+    "amount": "70,149.15"
+   },
+   {
+    "ref": "FN-7885/TW",
+    "name": "Lindqvist, Sofia",
+    "cc": "SE",
+    "amount": "55,446.15"
+   },
+   {
+    "ref": "TR-1826/FH",
+    "name": "Nowak, Mateusz",
+    "cc": "PL",
+    "amount": "46,834.00"
+   },
+   {
+    "ref": "GR-5305/NF",
+    "name": "Georgiou, Maria",
+    "cc": "CY",
+    "amount": "69,607.90"
+   },
+   {
+    "ref": "FN-5440/UF",
+    "name": "Nieminen, Mika",
+    "cc": "FI",
+    "amount": "72,737.90"
+   },
+   {
+    "ref": "GR-7598/KC",
+    "name": "Weber, Sophie",
+    "cc": "LU",
+    "amount": "93,255.90"
+   },
+   {
+    "ref": "AD-7611/VG",
+    "name": "Dumont, Marie",
+    "cc": "BE",
+    "amount": "64,413.75"
+   }
+  ],
+  "copies": [
+   [
+    1,
+    {
+     "ref": "TR-1606/DL",
+     "name": "Garíca, Tomás",
+     "cc": "ES",
+     "amount": "97,960.00"
+    }
+   ],
+   [
+    2,
+    {
+     "ref": "MS-3971/LU",
+     "name": "Petroivć, Ana",
+     "cc": "SI",
+     "amount": "17,963.75"
+    }
+   ],
+   [
+    7,
+    {
+     "ref": "GR-5305/NF",
+     "name": "Georgiou, Maria",
+     "cc": "CY",
+     "amount": "69,607.90"
+    }
+   ],
+   [
+    8,
+    {
+     "ref": "FN-5440/UF",
+     "name": "Nieminen, Mika",
+     "cc": "FI",
+     "amount": "72,737.90"
+    }
+   ],
+   [
+    3,
+    {
+     "ref": "AD-8407/DF",
+     "name": "Moreau, Lucas",
+     "cc": "FR",
+     "amount": "24,673.90"
+    }
+   ]
+  ],
+  "question": "Five records were copied from the reference table (the source row is shown for each). How many of the copies contain at least one error?",
+  "options": [
+   "1",
+   "2",
+   "3",
+   "4"
+  ],
+  "answer": "B",
+  "explanation": "copy 1 (row 1): two letters of the surname are transposed (García → Garíca); copy 2 (row 2): two letters of the surname are transposed (Petrović → Petroivć); copy 3 (row 7): no error; copy 4 (row 8): no error; copy 5 (row 3): no error. Copies with an error: 2. Method: compare one field at a time; read codes in chunks of two characters, check accents letter by letter, and check amounts digit by digit from the left.",
+  "difficulty": "advanced",
+  "id": "AP-24"
+ },
+ {
+  "kind": "count",
+  "reference": [
+   {
+    "ref": "AD-1117/AT",
+    "name": "Janssen, Pieter",
+    "cc": "BE",
+    "amount": "14,998.90"
+   },
+   {
+    "ref": "MS-9058/NK",
+    "name": "García, Tomás",
+    "cc": "ES",
+    "amount": "35,137.15"
+   },
+   {
+    "ref": "GR-5895/EH",
+    "name": "Georgiou, Maria",
+    "cc": "CY",
+    "amount": "94,396.15"
+   },
+   {
+    "ref": "FN-2316/ND",
+    "name": "Novotný, Matej",
+    "cc": "SK",
+    "amount": "46,626.40"
+   },
+   {
+    "ref": "GR-8115/XC",
+    "name": "Papadopoulos, Nikos",
+    "cc": "EL",
+    "amount": "65,936.00"
+   },
+   {
+    "ref": "MS-7297/TH",
+    "name": "O’Brien, Seán",
+    "cc": "IE",
+    "amount": "32,031.00"
+   },
+   {
+    "ref": "MS-3004/VF",
+    "name": "Bērziņš, Jānis",
+    "cc": "LV",
+    "amount": "69,232.40"
+   },
+   {
+    "ref": "MS-2159/WC",
+    "name": "Rossi, Matteo",
+    "cc": "IT",
+    "amount": "56,863.40"
+   },
+   {
+    "ref": "AD-3879/UV",
+    "name": "Murphy, Aoife",
+    "cc": "IE",
+    "amount": "61,776.25"
+   },
+   {
+    "ref": "CN-1163/HY",
+    "name": "Peeters, Emma",
+    "cc": "BE",
+    "amount": "4,068.00"
+   }
+  ],
+  "copies": [
+   [
+    1,
+    {
+     "ref": "AD-1117/AT",
+     "name": "Janssen, Pieter",
+     "cc": "BE",
+     "amount": "14,998.90"
+    }
+   ],
+   [
+    6,
+    {
+     "ref": "MS-7297/TH",
+     "name": "O’Brien, Seán",
+     "cc": "IE",
+     "amount": "32,031.00"
+    }
+   ],
+   [
+    7,
+    {
+     "ref": "MS-3004/VF",
+     "name": "Bērziņš, Jānis",
+     "cc": "LT",
+     "amount": "69,232.40"
+    }
+   ],
+   [
+    3,
+    {
+     "ref": "GR-5395/EH",
+     "name": "Georgiou, Maria",
+     "cc": "CY",
+     "amount": "94,396.15"
+    }
+   ],
+   [
+    5,
+    {
+     "ref": "GR-8115/XC",
+     "name": "Papadopoulos, Nikos",
+     "cc": "EL",
+     "amount": "65,936.00"
+    }
+   ]
+  ],
+  "question": "Five records were copied from the reference table (the source row is shown for each). How many of the copies contain at least one error?",
+  "options": [
+   "2",
+   "3",
+   "4",
+   "5"
+  ],
+  "answer": "A",
+  "explanation": "copy 1 (row 1): no error; copy 2 (row 6): no error; copy 3 (row 7): the country code differs (LV → LT); copy 4 (row 3): one digit of the reference is wrong (GR-5895/EH → GR-5395/EH); copy 5 (row 5): no error. Copies with an error: 2. Method: compare one field at a time; read codes in chunks of two characters, check accents letter by letter, and check amounts digit by digit from the left.",
+  "difficulty": "advanced",
+  "id": "AP-25"
+ },
+ {
+  "kind": "count",
+  "reference": [
+   {
+    "ref": "MS-9311/TA",
+    "name": "Georgiou, Maria",
+    "cc": "CY",
+    "amount": "39,509.15"
+   },
+   {
+    "ref": "FN-1183/KU",
+    "name": "Fischer, Georg",
+    "cc": "AT",
+    "amount": "32,628.50"
+   },
+   {
+    "ref": "FN-8129/EU",
+    "name": "Petraitis, Jonas",
+    "cc": "LT",
+    "amount": "56,319.40"
+   },
+   {
+    "ref": "MS-1704/HL",
+    "name": "Papadopoulos, Nikos",
+    "cc": "EL",
+    "amount": "12,068.50"
+   },
+   {
+    "ref": "CN-5831/HJ",
+    "name": "Bērziņš, Jānis",
+    "cc": "LV",
+    "amount": "5,336.50"
+   },
+   {
+    "ref": "TR-3384/GP",
+    "name": "Lindqvist, Sofia",
+    "cc": "SE",
+    "amount": "9,036.75"
+   },
+   {
+    "ref": "CN-5608/AJ",
+    "name": "Rossi, Matteo",
+    "cc": "IT",
+    "amount": "10,013.90"
+   },
+   {
+    "ref": "MS-3991/FC",
+    "name": "Andersson, Henrik",
+    "cc": "SE",
+    "amount": "2,368.75"
+   },
+   {
+    "ref": "CN-8688/VE",
+    "name": "Moreau, Lucas",
+    "cc": "FR",
+    "amount": "45,825.75"
+   },
+   {
+    "ref": "FN-5281/JD",
+    "name": "Schmidt, Clara",
+    "cc": "DE",
+    "amount": "78,433.00"
+   }
+  ],
+  "copies": [
+   [
+    10,
+    {
+     "ref": "FN-5281/JD",
+     "name": "Schmidt, Klara",
+     "cc": "DE",
+     "amount": "78,433.00"
+    }
+   ],
+   [
+    4,
+    {
+     "ref": "MS-1704/HL",
+     "name": "Papadopoulos, Nikos",
+     "cc": "EL",
+     "amount": "12,068.50"
+    }
+   ],
+   [
+    7,
+    {
+     "ref": "CN-560B/AJ",
+     "name": "Rossi, Matteo",
+     "cc": "IT",
+     "amount": "10,013.90"
+    }
+   ],
+   [
+    1,
+    {
+     "ref": "MS-9311/TA",
+     "name": "Geogriou, Maria",
+     "cc": "CY",
+     "amount": "39,509.15"
+    }
+   ],
+   [
+    9,
+    {
+     "ref": "CN-8688/VE",
+     "name": "Moreau, Lucas",
+     "cc": "FR",
+     "amount": "45,825.57"
+    }
+   ]
+  ],
+  "question": "Five records were copied from the reference table (the source row is shown for each). How many of the copies contain at least one error?",
+  "options": [
+   "2",
+   "3",
+   "4",
+   "5"
+  ],
+  "answer": "C",
+  "explanation": "copy 1 (row 10): the first name is spelled differently (Clara → Klara); copy 2 (row 4): no error; copy 3 (row 7): a digit has been replaced by a look-alike letter (8 → B); copy 4 (row 1): two letters of the surname are transposed (Georgiou → Geogriou); copy 5 (row 9): the amount differs (45,825.75 → 45,825.57). Copies with an error: 4. Method: compare one field at a time; read codes in chunks of two characters, check accents letter by letter, and check amounts digit by digit from the left.",
+  "difficulty": "advanced",
+  "id": "AP-26"
+ },
+ {
+  "kind": "count",
+  "reference": [
+   {
+    "ref": "TR-5166/NE",
+    "name": "Wiśniewski, Piotr",
+    "cc": "PL",
+    "amount": "12,760.75"
+   },
+   {
+    "ref": "GR-1705/FY",
+    "name": "Popescu, Elena",
+    "cc": "RO",
+    "amount": "88,119.25"
+   },
+   {
+    "ref": "FN-5351/RW",
+    "name": "Janssen, Pieter",
+    "cc": "BE",
+    "amount": "38,592.90"
+   },
+   {
+    "ref": "AD-7849/HM",
+    "name": "Nieminen, Mika",
+    "cc": "FI",
+    "amount": "64,290.40"
+   },
+   {
+    "ref": "TR-4242/RC",
+    "name": "Petraitis, Jonas",
+    "cc": "LT",
+    "amount": "69,525.50"
+   },
+   {
+    "ref": "TR-1266/HM",
+    "name": "Rossi, Matteo",
+    "cc": "IT",
+    "amount": "27,132.15"
+   },
+   {
+    "ref": "CN-8608/LV",
+    "name": "Lindqvist, Sofia",
+    "cc": "SE",
+    "amount": "3,652.25"
+   },
+   {
+    "ref": "CN-4838/UV",
+    "name": "Fischer, Georg",
+    "cc": "AT",
+    "amount": "95,305.25"
+   },
+   {
+    "ref": "MS-5470/AC",
+    "name": "Hansen, Lars",
+    "cc": "DK",
+    "amount": "83,254.90"
+   },
+   {
+    "ref": "AD-1710/FP",
+    "name": "Kask, Liis",
+    "cc": "EE",
+    "amount": "71,092.15"
+   }
+  ],
+  "copies": [
+   [
+    5,
+    {
+     "ref": "TR-4242/CR",
+     "name": "Petraitis, Jonas",
+     "cc": "LT",
+     "amount": "69,525.50"
+    }
+   ],
+   [
+    3,
+    {
+     "ref": "FN-5351/RW",
+     "name": "Janssen, Pieter",
+     "cc": "BE",
+     "amount": "38,592.90"
+    }
+   ],
+   [
+    8,
+    {
+     "ref": "CN-4838/UV",
+     "name": "Fischer, Georg",
+     "cc": "AT",
+     "amount": "95,305.52"
+    }
+   ],
+   [
+    10,
+    {
+     "ref": "AD-1710/FP",
+     "name": "Kask, Liis",
+     "cc": "EE",
+     "amount": "71,092.15"
+    }
+   ],
+   [
+    7,
+    {
+     "ref": "CN-8608/LV",
+     "name": "Lindqivst, Sofia",
+     "cc": "SE",
+     "amount": "3,652.25"
+    }
+   ]
+  ],
+  "question": "Five records were copied from the reference table (the source row is shown for each). How many of the copies contain at least one error?",
+  "options": [
+   "0",
+   "1",
+   "2",
+   "3"
+  ],
+  "answer": "D",
+  "explanation": "copy 1 (row 5): the final two letters of the reference are reversed (RC → CR); copy 2 (row 3): no error; copy 3 (row 8): the amount differs (95,305.25 → 95,305.52); copy 4 (row 10): no error; copy 5 (row 7): two letters of the surname are transposed (Lindqvist → Lindqivst). Copies with an error: 3. Method: compare one field at a time; read codes in chunks of two characters, check accents letter by letter, and check amounts digit by digit from the left.",
+  "difficulty": "advanced",
+  "id": "AP-27"
+ },
+ {
+  "kind": "count",
+  "reference": [
+   {
+    "ref": "AD-5558/RC",
+    "name": "Fischer, Georg",
+    "cc": "AT",
+    "amount": "26,958.25"
+   },
+   {
+    "ref": "CN-5817/DK",
+    "name": "Silva, Inês",
+    "cc": "PT",
+    "amount": "28,099.50"
+   },
+   {
+    "ref": "AD-2851/AK",
+    "name": "Dumont, Marie",
+    "cc": "BE",
+    "amount": "20,132.40"
+   },
+   {
+    "ref": "AD-7020/TK",
+    "name": "Popescu, Elena",
+    "cc": "RO",
+    "amount": "53,087.50"
+   },
+   {
+    "ref": "AD-5358/LC",
+    "name": "Novák, Eva",
+    "cc": "CZ",
+    "amount": "10,125.75"
+   },
+   {
+    "ref": "FN-9015/TC",
+    "name": "Papadopoulos, Nikos",
+    "cc": "EL",
+    "amount": "979.75"
+   },
+   {
+    "ref": "AD-6000/NG",
+    "name": "Novotný, Matej",
+    "cc": "SK",
+    "amount": "79,170.40"
+   },
+   {
+    "ref": "AD-8782/FH",
+    "name": "Georgiou, Maria",
+    "cc": "CY",
+    "amount": "19,536.15"
+   },
+   {
+    "ref": "GR-5950/ET",
+    "name": "O’Brien, Seán",
+    "cc": "IE",
+    "amount": "45,997.25"
+   },
+   {
+    "ref": "MS-4897/CA",
+    "name": "Petraitis, Jonas",
+    "cc": "LT",
+    "amount": "26,699.15"
+   }
+  ],
+  "copies": [
+   [
+    6,
+    {
+     "ref": "FN-9O15/TC",
+     "name": "Papadopoulos, Nikos",
+     "cc": "EL",
+     "amount": "979.75"
+    }
+   ],
+   [
+    9,
+    {
+     "ref": "GR-5950/ET",
+     "name": "O’Brien, Seán",
+     "cc": "IE",
+     "amount": "45,997.25"
+    }
+   ],
+   [
+    5,
+    {
+     "ref": "AD-5358/LC",
+     "name": "Novák, Eva",
+     "cc": "CZ",
+     "amount": "10,125.75"
+    }
+   ],
+   [
+    3,
+    {
+     "ref": "AD-2851/AK",
+     "name": "Dumont, Marie",
+     "cc": "BE",
+     "amount": "20,132.40"
+    }
+   ],
+   [
+    2,
+    {
+     "ref": "CN-5817/DK",
+     "name": "Silva, Inês",
+     "cc": "PT",
+     "amount": "28,099.50"
+    }
+   ]
+  ],
+  "question": "Five records were copied from the reference table (the source row is shown for each). How many of the copies contain at least one error?",
+  "options": [
+   "0",
+   "1",
+   "2",
+   "3"
+  ],
+  "answer": "B",
+  "explanation": "copy 1 (row 6): a digit has been replaced by a look-alike letter (0 → O); copy 2 (row 9): no error; copy 3 (row 5): no error; copy 4 (row 3): no error; copy 5 (row 2): no error. Copies with an error: 1. Method: compare one field at a time; read codes in chunks of two characters, check accents letter by letter, and check amounts digit by digit from the left.",
+  "difficulty": "advanced",
+  "id": "AP-28"
+ },
+ {
+  "kind": "count",
+  "reference": [
+   {
+    "ref": "TR-7107/AU",
+    "name": "Borg, Joseph",
+    "cc": "MT",
+    "amount": "95,711.75"
+   },
+   {
+    "ref": "GR-7878/FK",
+    "name": "Peeters, Emma",
+    "cc": "BE",
+    "amount": "49,374.00"
+   },
+   {
+    "ref": "MS-2985/CG",
+    "name": "Schmidt, Clara",
+    "cc": "DE",
+    "amount": "86,119.00"
+   },
+   {
+    "ref": "CN-5583/MY",
+    "name": "O’Brien, Seán",
+    "cc": "IE",
+    "amount": "18,602.40"
+   },
+   {
+    "ref": "AD-1806/NA",
+    "name": "Kowalska, Anna",
+    "cc": "PL",
+    "amount": "57,333.40"
+   },
+   {
+    "ref": "MS-7983/KM",
+    "name": "Lindqvist, Sofia",
+    "cc": "SE",
+    "amount": "96,030.25"
+   },
+   {
+    "ref": "TR-3817/JH",
+    "name": "Virtanen, Hanna",
+    "cc": "FI",
+    "amount": "53,085.00"
+   },
+   {
+    "ref": "CN-2815/LK",
+    "name": "Fischer, Georg",
+    "cc": "AT",
+    "amount": "50,487.50"
+   },
+   {
+    "ref": "CN-7110/HV",
+    "name": "Popescu, Elena",
+    "cc": "RO",
+    "amount": "81,551.25"
+   },
+   {
+    "ref": "TR-4393/CR",
+    "name": "Nowak, Mateusz",
+    "cc": "PL",
+    "amount": "10,971.90"
+   }
+  ],
+  "copies": [
+   [
+    5,
+    {
+     "ref": "AD-1806/NA",
+     "name": "Kowalska, Anna",
+     "cc": "PL",
+     "amount": "57,333.40"
+    }
+   ],
+   [
+    3,
+    {
+     "ref": "MS-2985/CG",
+     "name": "Schmidt, Clara",
+     "cc": "DE",
+     "amount": "86,119.00"
+    }
+   ],
+   [
+    6,
+    {
+     "ref": "MS-7983/KM",
+     "name": "Lindqvist, Sofia",
+     "cc": "SE",
+     "amount": "96,030.25"
+    }
+   ],
+   [
+    10,
+    {
+     "ref": "TR-4393/CR",
+     "name": "Nowak, Mateusz",
+     "cc": "PT",
+     "amount": "10,971.90"
+    }
+   ],
+   [
+    2,
+    {
+     "ref": "GR-7878/FK",
+     "name": "Peeters, Emma",
+     "cc": "BE",
+     "amount": "49,374.00"
+    }
+   ]
+  ],
+  "question": "Five records were copied from the reference table (the source row is shown for each). How many of the copies contain at least one error?",
+  "options": [
+   "0",
+   "1",
+   "2",
+   "3"
+  ],
+  "answer": "B",
+  "explanation": "copy 1 (row 5): no error; copy 2 (row 3): no error; copy 3 (row 6): no error; copy 4 (row 10): the country code differs (PL → PT); copy 5 (row 2): no error. Copies with an error: 1. Method: compare one field at a time; read codes in chunks of two characters, check accents letter by letter, and check amounts digit by digit from the left.",
+  "difficulty": "advanced",
+  "id": "AP-29"
+ },
+ {
+  "kind": "count",
+  "reference": [
+   {
+    "ref": "FN-9671/TW",
+    "name": "Peeters, Emma",
+    "cc": "BE",
+    "amount": "4,838.15"
+   },
+   {
+    "ref": "MS-8224/WM",
+    "name": "Novotný, Matej",
+    "cc": "SK",
+    "amount": "17,837.50"
+   },
+   {
+    "ref": "FN-7087/UN",
+    "name": "Bērziņš, Jānis",
+    "cc": "LV",
+    "amount": "42,661.90"
+   },
+   {
+    "ref": "TR-4135/YW",
+    "name": "O’Brien, Seán",
+    "cc": "IE",
+    "amount": "1,545.25"
+   },
+   {
+    "ref": "TR-4018/TN",
+    "name": "Moreau, Lucas",
+    "cc": "FR",
+    "amount": "64,934.00"
+   },
+   {
+    "ref": "AD-1580/LR",
+    "name": "Kask, Liis",
+    "cc": "EE",
+    "amount": "4,750.50"
+   },
+   {
+    "ref": "CN-7811/MU",
+    "name": "Petraitis, Jonas",
+    "cc": "LT",
+    "amount": "41,915.40"
+   },
+   {
+    "ref": "MS-6113/JK",
+    "name": "Ferrari, Luca",
+    "cc": "IT",
+    "amount": "17,415.75"
+   },
+   {
+    "ref": "AD-7835/NW",
+    "name": "Nowak, Mateusz",
+    "cc": "PL",
+    "amount": "84,845.15"
+   },
+   {
+    "ref": "MS-1640/AD",
+    "name": "Andersson, Henrik",
+    "cc": "SE",
+    "amount": "37,828.75"
+   }
+  ],
+  "copies": [
+   [
+    3,
+    {
+     "ref": "FN-7087/UN",
+     "name": "Bērziņš, Jānis",
+     "cc": "LT",
+     "amount": "42,661.90"
+    }
+   ],
+   [
+    9,
+    {
+     "ref": "AD-7835/NW",
+     "name": "Nowak, Mateusz",
+     "cc": "PL",
+     "amount": "84,845.15"
+    }
+   ],
+   [
+    7,
+    {
+     "ref": "CN-7811/MU",
+     "name": "Petraitis, Jonas",
+     "cc": "LT",
+     "amount": "41,915.40"
+    }
+   ],
+   [
+    1,
+    {
+     "ref": "FN-6971/TW",
+     "name": "Peeters, Emma",
+     "cc": "BE",
+     "amount": "4,838.15"
+    }
+   ],
+   [
+    2,
+    {
+     "ref": "MS-8224/WM",
+     "name": "Novotný, Matej",
+     "cc": "SK",
+     "amount": "17,837.50"
+    }
+   ]
+  ],
+  "question": "Five records were copied from the reference table (the source row is shown for each). How many of the copies contain at least one error?",
+  "options": [
+   "0",
+   "1",
+   "2",
+   "3"
+  ],
+  "answer": "C",
+  "explanation": "copy 1 (row 3): the country code differs (LV → LT); copy 2 (row 9): no error; copy 3 (row 7): no error; copy 4 (row 1): two digits of the reference are transposed (FN-9671/TW → FN-6971/TW); copy 5 (row 2): no error. Copies with an error: 2. Method: compare one field at a time; read codes in chunks of two characters, check accents letter by letter, and check amounts digit by digit from the left.",
+  "difficulty": "advanced",
+  "id": "AP-30"
+ }
+]

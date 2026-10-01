@@ -1,0 +1,5 @@
+build/pages/
+build/review/
+build/test/
+__pycache__/
+*.pyc

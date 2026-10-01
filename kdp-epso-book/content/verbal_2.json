@@ -1,0 +1,502 @@
+[
+  {
+    "id": "V2-01",
+    "difficulty": "foundation",
+    "topic": "Science – the nitrogen cycle and fertiliser run-off",
+    "passage": "Nitrogen is essential to all living things, yet the nitrogen gas that makes up most of the atmosphere is unusable by most organisms. It must first be “fixed”, that is, converted into compounds such as ammonia that plants can absorb. In nature, this is done chiefly by certain bacteria, some of which live in nodules on the roots of certain plants, and to a lesser extent by lightning. Other bacteria later return nitrogen to the atmosphere through a process called denitrification, completing the cycle. In the early twentieth century, an industrial process was developed for fixing nitrogen from the air on a large scale, making synthetic fertilisers cheap and abundant and greatly increasing crop yields. However, crops take up only part of the nitrogen applied to fields. Much of the remainder, particularly in the form of nitrate, is washed by rain into rivers and coastal waters. There it can stimulate excessive growth of algae; when the algae die and decompose, bacteria consume the dissolved oxygen, sometimes creating zones in which fish and other animals cannot survive. Measures to limit run-off include applying fertiliser in smaller doses timed to crop needs and maintaining vegetated strips along watercourses.",
+    "question": "Which of the following statements is correct?",
+    "options": [
+      "Most organisms can make direct use of the nitrogen gas in the atmosphere.",
+      "Algal growth fed by run-off can lead indirectly to a loss of oxygen in the water.",
+      "Lightning is the main natural means by which nitrogen is fixed.",
+      "Nitrogen returns to the atmosphere mainly through lightning."
+    ],
+    "answer": "B",
+    "explanations": {
+      "A": "Incorrect — contradiction. Atmospheric nitrogen gas is “unusable by most organisms” until it has been fixed.",
+      "B": "Correct. Run-off stimulates excessive algal growth; when the algae die and decompose, bacteria “consume the dissolved oxygen”.",
+      "C": "Incorrect — contradiction. Nitrogen is fixed “chiefly” by bacteria; lightning contributes only “to a lesser extent”.",
+      "D": "Incorrect — contradiction. Lightning helps to fix nitrogen; it is “other bacteria” that return nitrogen to the atmosphere, through denitrification."
+    }
+  },
+  {
+    "id": "V2-02",
+    "difficulty": "intermediate",
+    "topic": "Health – herd immunity thresholds",
+    "passage": "Herd immunity describes the indirect protection that unvaccinated individuals receive when a sufficiently large proportion of a population is immune to an infectious disease. If most people cannot catch and transmit a pathogen, chains of transmission are broken before they reach those who remain susceptible, such as infants too young to be vaccinated or people whose immune systems are weakened. The proportion of immune individuals needed to achieve this effect is not fixed. It depends chiefly on how contagious the disease is: the more people a single infected person would infect in a fully susceptible population, the higher the threshold. For a highly contagious disease such as measles, the threshold is commonly estimated at around 95 per cent, whereas for less transmissible diseases it is considerably lower. Herd immunity can be undermined locally even when national coverage appears high, because unvaccinated people often cluster in particular communities or schools. Moreover, the concept applies only to diseases transmitted from person to person; it offers no protection against an infection such as tetanus, which is acquired from spores in the environment.",
+    "question": "Which of the following statements is correct?",
+    "options": [
+      "Once 95 per cent of a population is immune, herd immunity is achieved for any infectious disease.",
+      "High national vaccination coverage ensures that every local community is protected.",
+      "Vaccinating a high proportion of a population against tetanus indirectly protects those who remain unvaccinated.",
+      "Less contagious diseases have lower herd-immunity thresholds."
+    ],
+    "answer": "D",
+    "explanations": {
+      "A": "Incorrect — scope shift. The 95 per cent figure is given for measles only, and the passage says herd immunity does not apply at all to diseases such as tetanus.",
+      "B": "Incorrect — contradiction. Herd immunity “can be undermined locally even when national coverage appears high”.",
+      "C": "Incorrect — contradiction. Tetanus is acquired from environmental spores, so herd immunity “offers no protection” against it.",
+      "D": "Correct. The threshold rises with contagiousness, and for less transmissible diseases it is “considerably lower”."
+    }
+  },
+  {
+    "id": "V2-03",
+    "difficulty": "foundation",
+    "topic": "Science – circadian rhythms",
+    "passage": "Many organisms, from cyanobacteria to humans, display circadian rhythms, internal cycles of roughly 24 hours that regulate processes such as sleep, body temperature and hormone release. In humans, a small region of the brain called the suprachiasmatic nucleus acts as a master clock, but it does not keep perfect time on its own. Instead, it is continually reset by external cues, of which light is the most powerful. Light reaching the eyes in the morning tends to advance the clock, whereas bright light late in the evening tends to delay it. Experiments in which volunteers lived for weeks without clocks or daylight showed that their rhythms persisted but drifted, typically settling into cycles slightly longer than 24 hours. Problems arise when internal time and external demands diverge, as in night-shift work or rapid travel across several time zones. Workers on rotating night shifts frequently report poor sleep and digestive complaints, and researchers continue to investigate whether longer-term health problems can be attributed to the disruption itself or to other features of shift work.",
+    "question": "Which of the following statements is correct?",
+    "options": [
+      "Without time cues, the body clock keeps running but drifts from the 24-hour day.",
+      "Exposure to bright light late in the evening tends to make the body clock run earlier.",
+      "Research has established that rotating night shifts cause long-term illness.",
+      "Only humans and other mammals possess circadian rhythms."
+    ],
+    "answer": "A",
+    "explanations": {
+      "A": "Correct. Volunteers without clocks or daylight kept their rhythms, but these “drifted” into cycles slightly longer than 24 hours.",
+      "B": "Incorrect — partial truth. Morning light advances the clock; bright evening light “tends to delay it”.",
+      "C": "Incorrect — cause and effect. Researchers “continue to investigate” whether longer-term problems stem from the disruption itself or from other features of shift work.",
+      "D": "Incorrect — extreme wording. The passage says circadian rhythms occur in many organisms, “from cyanobacteria to humans”, so they are not confined to mammals."
+    }
+  },
+  {
+    "id": "V2-04",
+    "difficulty": "intermediate",
+    "topic": "Technology – lithium-ion battery ageing",
+    "passage": "The capacity of a lithium-ion battery declines gradually over its life, a process known as degradation. Two broad mechanisms are usually distinguished. Calendar ageing occurs even when a battery is not in use and is accelerated by high temperatures and by storing the cell at a high state of charge. Cycle ageing results from repeated charging and discharging; it tends to be more severe when cells are routinely charged to full capacity and drained almost completely, and when very high charging currents are used. For this reason, many manufacturers of electric vehicles allow drivers to set a charging limit below 100 per cent for everyday use, reserving full charges for long journeys. Cold conditions pose a different problem: they temporarily reduce the energy a battery can deliver and slow down charging, but much of this lost performance returns once the battery warms up. Battery management systems monitor the temperature and voltage of individual cells and can restrict charging power to protect them.",
+    "question": "Which of the following statements is correct?",
+    "options": [
+      "A battery that is never used will not lose any capacity.",
+      "Cold weather permanently reduces the capacity of a lithium-ion battery.",
+      "Keeping a fully charged battery in a hot place is likely to speed up the loss of its capacity.",
+      "Manufacturers of electric vehicles require drivers to keep everyday charging below 100 per cent."
+    ],
+    "answer": "C",
+    "explanations": {
+      "A": "Incorrect — contradiction. Calendar ageing “occurs even when a battery is not in use”.",
+      "B": "Incorrect — contradiction. Cold reduces performance only “temporarily”, and much of it returns once the battery warms up.",
+      "C": "Correct. Calendar ageing is accelerated both by high temperatures and by storage at a high state of charge.",
+      "D": "Incorrect — scope shift. “Many” manufacturers “allow” drivers to set a limit; this is an option offered, not a requirement."
+    }
+  },
+  {
+    "id": "V2-05",
+    "difficulty": "intermediate",
+    "topic": "Public administration – plain-language official letters",
+    "passage": "A national tax administration reviewed the standard letters it sends to citizens after finding that a large share of telephone enquiries concerned the meaning of its own correspondence. A working group rewrote a sample of letters according to plain-language principles: the main message and any required action were placed in the opening paragraph, sentences were shortened, legal terms were either replaced or explained, and deadlines were shown in bold. Legal advisers reviewed every revised letter to confirm that its legal effect was unchanged. In a controlled test, recipients of a payment reminder were randomly allocated either the original version or the revised one. Among those who received the revised letter, a higher proportion paid by the deadline and fewer telephoned for clarification. The working group cautions that the test covered only one type of letter and that results for more complex notices, such as assessments that can be appealed, may differ. The administration has decided to revise all of its payment reminders, and will consider extending the approach to other correspondence once further tests have been carried out.",
+    "question": "Which of the following statements is NOT supported by the passage?",
+    "options": [
+      "Rewriting the letters was not intended to alter their legal consequences.",
+      "Recipients of the revised reminder were less likely to telephone for an explanation.",
+      "Plain-language versions of all the administration’s letters are now in use.",
+      "The test results may not hold for more complex notices."
+    ],
+    "answer": "C",
+    "explanations": {
+      "A": "Incorrect — supported. Legal advisers reviewed every revised letter “to confirm that its legal effect was unchanged”.",
+      "B": "Incorrect — supported. Among recipients of the revised letter, fewer “telephoned for clarification”.",
+      "C": "Correct — not supported. Only payment reminders are to be revised; extending the approach to other letters will merely be considered after further tests, so a possible future step is presented as an adopted measure.",
+      "D": "Incorrect — supported. The working group cautions that results for more complex notices “may differ”."
+    }
+  },
+  {
+    "id": "V2-06",
+    "difficulty": "foundation",
+    "topic": "Transport – high-speed rail versus short-haul flights",
+    "passage": "When high-speed rail lines are built between major cities, they often compete directly with short-haul flights. The decisive factor for many travellers is total door-to-door journey time rather than the speed of the vehicle itself. Although an aircraft travels far faster than any train, air passengers must reach airports that are often located outside city centres, pass through security checks and arrive well before departure. Railway stations, by contrast, are typically central, and boarding takes only minutes, so on shorter routes the train can deliver passengers sooner despite its lower speed. As a result, analyses of a number of routes suggest that rail tends to win a large share of the combined market when the train journey takes less than about three hours, while air travel generally remains dominant where the train takes much longer. Other considerations also play a part, including ticket prices, the frequency of services and the ability to work during the journey. Building high-speed lines is very expensive, however, and the case for a new line depends heavily on the number of passengers it is expected to carry.",
+    "question": "Which of the following statements is correct?",
+    "options": [
+      "The slower mode of transport can sometimes offer the quicker overall journey.",
+      "High-speed rail always captures the majority of travellers on routes where the train takes under three hours.",
+      "Travellers choose between rail and air solely on the basis of journey time.",
+      "High-speed rail lines are cheaper to build than airports."
+    ],
+    "answer": "A",
+    "explanations": {
+      "A": "Correct. Because of airport access, security checks and early arrival, the train “can deliver passengers sooner despite its lower speed” on shorter routes.",
+      "B": "Incorrect — extreme wording. Rail “tends to win a large share” on such routes; “always” and “majority” go beyond the passage.",
+      "C": "Incorrect — extreme wording. The passage names other factors as well: ticket prices, service frequency and the ability to work during the journey.",
+      "D": "Incorrect — unsupported comparison. The passage says high-speed lines are very expensive but never compares their cost with that of airports."
+    }
+  },
+  {
+    "id": "V2-07",
+    "difficulty": "advanced",
+    "topic": "Science – from continental drift to plate tectonics",
+    "passage": "In the early twentieth century, the German meteorologist Alfred Wegener proposed that the continents had once been joined in a single landmass and had since drifted apart. He pointed to the way the coastlines of South America and Africa appear to fit together, to matching rock formations on opposite sides of the Atlantic, and to fossils of the same land-dwelling species found on continents now separated by ocean. Many geologists rejected the idea, chiefly because Wegener could not offer a convincing mechanism capable of moving entire continents. The theory gained acceptance only decades later, after the Second World War, when surveys of the ocean floor revealed that new crust forms at mid-ocean ridges and that the rocks on either side record reversals of the Earth’s magnetic field in symmetrical bands. These findings indicated that the sea floor spreads outwards from the ridges, providing the kind of mechanism that Wegener had lacked. The modern theory of plate tectonics holds that the Earth’s outer shell is divided into rigid plates whose movement explains not only the distribution of the continents but also the location of most earthquakes and volcanoes.",
+    "question": "Which of the following statements is correct?",
+    "options": [
+      "Wegener’s critics rejected his theory mainly because they disputed that the coastlines of South America and Africa fit together.",
+      "Wegener identified sea-floor spreading as the force that moves the continents.",
+      "Plate tectonics accounts for the location of all earthquakes and volcanoes.",
+      "The chief objection to continental drift was eventually answered by evidence obtained from the ocean floor."
+    ],
+    "answer": "D",
+    "explanations": {
+      "A": "Incorrect — partial truth. Critics did reject the theory, but “chiefly” because Wegener lacked a mechanism; the passage never says they disputed his coastline evidence.",
+      "B": "Incorrect — contradiction. Sea-floor spreading was revealed by surveys decades later, after the Second World War, and supplied the mechanism Wegener had lacked.",
+      "C": "Incorrect — extreme wording. Plate movement explains the location of “most” earthquakes and volcanoes, not all of them.",
+      "D": "Correct. The chief objection was the lack of a mechanism, and ocean-floor surveys revealed sea-floor spreading, “providing the kind of mechanism that Wegener had lacked”."
+    }
+  },
+  {
+    "id": "V2-08",
+    "difficulty": "intermediate",
+    "topic": "Health – placebo effects and blinded trials",
+    "passage": "In a clinical trial, patients who receive an inactive substance often report some improvement in their symptoms. This placebo response can arise from patients’ expectations, from the natural tendency of many conditions to fluctuate or improve over time, and from the extra attention that trial participants receive. To separate the genuine effect of a treatment from these influences, researchers compare a group receiving the treatment with a control group receiving a placebo that looks identical. In a double-blind trial, neither the patients nor the researchers assessing them know who is in which group until the results are analysed. This matters because researchers who know which patients received the active treatment may, without intending to, interpret ambiguous outcomes more favourably. Placebo responses tend to be largest for outcomes that patients report themselves, such as pain or fatigue, and smallest for objective measurements, such as blood test results. Blinding is not always possible: in trials of surgical procedures or exercise programmes, for instance, participants usually know which intervention they have received.",
+    "question": "Which of the following statements is correct?",
+    "options": [
+      "Improvements reported by patients given a placebo are caused entirely by their expectations.",
+      "Blinding assessors reduces the risk that their knowledge of the allocation leads them to favour the treatment.",
+      "Placebo responses tend to be greatest for objective measurements such as blood tests.",
+      "Trials of exercise programmes cannot produce reliable results."
+    ],
+    "answer": "B",
+    "explanations": {
+      "A": "Incorrect — extreme wording. Expectations are only one of three sources named, alongside natural fluctuation and the extra attention participants receive.",
+      "B": "Correct. Assessors who know the allocation “may, without intending to, interpret ambiguous outcomes more favourably”; blinding guards against this.",
+      "C": "Incorrect — contradiction. Placebo responses are largest for self-reported outcomes and smallest for objective measurements.",
+      "D": "Incorrect — unsupported inference. The passage says only that blinding is usually impossible in such trials; it draws no conclusion about their reliability."
+    }
+  },
+  {
+    "id": "V2-09",
+    "difficulty": "foundation",
+    "topic": "Technology – desalination",
+    "passage": "Desalination removes dissolved salts from seawater or brackish groundwater to produce fresh water. The two main approaches are thermal distillation, in which water is evaporated and the vapour condensed, and reverse osmosis, in which water is forced at high pressure through a membrane that holds back most of the salt. Reverse osmosis has become the dominant technology in many regions because it generally requires less energy than distillation, although it still uses considerably more energy than the treatment of fresh water drawn from rivers or aquifers. Membranes must be protected from clogging, so the incoming water is usually pre-treated to remove particles and organic matter. Every desalination plant produces a concentrated salt solution, or brine, as a by-product. If this brine is discharged carelessly, it can harm marine organisms near the outlet, because it is denser than seawater and tends to sink and spread along the sea bed. Plant operators can reduce the impact by diluting the brine before release or by using diffusers that disperse it more widely.",
+    "question": "Which of the following statements is correct?",
+    "options": [
+      "Reverse osmosis uses less energy than distillation but more than treating river water.",
+      "Reverse osmosis membranes remove all of the dissolved salt from the seawater passing through them.",
+      "Brine discharged from desalination plants tends to rise towards the surface.",
+      "Desalination is the cheapest way of supplying fresh water to coastal cities."
+    ],
+    "answer": "A",
+    "explanations": {
+      "A": "Correct. Reverse osmosis “generally requires less energy than distillation” but considerably more than treating water from rivers or aquifers.",
+      "B": "Incorrect — extreme wording. The membrane holds back “most of the salt”, not all of it.",
+      "C": "Incorrect — contradiction. Brine is denser than seawater and “tends to sink and spread along the sea bed”.",
+      "D": "Incorrect — outside knowledge. The passage makes no claim about cost, and its point about high energy use suggests the opposite."
+    }
+  },
+  {
+    "id": "V2-10",
+    "difficulty": "intermediate",
+    "topic": "Technology – the electric telegraph",
+    "passage": "Before the electric telegraph, information could travel overland no faster than a rider on horseback, except where chains of visual signalling stations had been built. The commercial telegraph, which spread rapidly from the 1840s, separated the movement of information from the movement of people and goods on a large scale for the first time. Its effects were felt quickly in several fields. Railway companies used it to coordinate train movements on single-track lines, improving safety and allowing more trains to run. Commodity traders could compare prices in distant markets almost immediately, which narrowed price differences between cities. Newspapers began to carry reports from far-off places within a day rather than weeks. The first lasting transatlantic cable, completed in 1866, reduced the time needed to send a message between Europe and North America from around ten days by ship to a matter of minutes. Sending telegrams remained expensive, however, so for decades most private correspondence continued to go by post, and the telegraph was used mainly by businesses, governments and the press.",
+    "question": "Which of the following statements is correct?",
+    "options": [
+      "The telegraph was the first means of sending information overland faster than a rider on horseback.",
+      "The telegraph quickly replaced the post as the main channel for private correspondence.",
+      "The telegraph helped railways to run more trains safely on lines with a single track.",
+      "Messages could be sent across the Atlantic within minutes as soon as the commercial telegraph began to spread."
+    ],
+    "answer": "C",
+    "explanations": {
+      "A": "Incorrect — contradiction. Chains of visual signalling stations already allowed faster transmission where they had been built.",
+      "B": "Incorrect — contradiction. Because telegrams were expensive, most private correspondence “continued to go by post” for decades.",
+      "C": "Correct. Railway companies used the telegraph to coordinate movements on single-track lines, improving safety and allowing more trains to run.",
+      "D": "Incorrect — partial truth. The telegraph spread from the 1840s, but the first lasting transatlantic cable was completed only in 1866."
+    }
+  },
+  {
+    "id": "V2-11",
+    "difficulty": "intermediate",
+    "topic": "Transport – a city cycling plan",
+    "passage": "A regional capital has adopted a ten-year plan to increase the share of trips made by bicycle. The plan’s first phase, now completed, created cycle lanes physically separated from motor traffic along four main radial roads. Counts on these routes show that cycling increased substantially after the lanes opened, with the largest growth among women and older residents – groups that earlier surveys had identified as particularly deterred by mixed traffic. The second phase, which the council has approved but not yet funded, would link the radial routes with an orbital lane. Officials acknowledge that part of the increase on the new lanes may reflect cyclists switching from parallel streets rather than new cycling trips. A citywide household travel survey, to be repeated every two years, is intended to clarify this point. The plan also provided secure bicycle parking at the main railway station, which is reported to be operating at full capacity on weekdays.",
+    "question": "Which of the following statements is NOT supported by the passage?",
+    "options": [
+      "Concern about sharing the road with motor vehicles had discouraged some residents from cycling.",
+      "Funding for the orbital lane has not yet been secured.",
+      "The rise in counts on the radial routes may overstate the growth in cycling across the city as a whole.",
+      "The household travel survey has confirmed that the new lanes generated additional cycling trips."
+    ],
+    "answer": "D",
+    "explanations": {
+      "A": "Incorrect — supported. Surveys had identified women and older residents as “particularly deterred by mixed traffic”.",
+      "B": "Incorrect — supported. The second phase has been “approved but not yet funded”.",
+      "C": "Incorrect — supported. Officials acknowledge that part of the increase may reflect cyclists switching from parallel streets rather than new trips.",
+      "D": "Correct — not supported. The survey “is intended to clarify” the question; no findings are reported, so a planned measure is presented as a result."
+    }
+  },
+  {
+    "id": "V2-12",
+    "difficulty": "foundation",
+    "topic": "Science – photosynthesis and C4 plants",
+    "passage": "Most plants fix carbon dioxide from the air using an enzyme known as Rubisco. Despite its central role, the enzyme is inefficient in one important respect: it can react with oxygen instead of carbon dioxide, triggering a process called photorespiration that wastes energy and releases carbon the plant has already fixed. Photorespiration becomes more frequent as temperatures rise and when plants close the pores in their leaves to conserve water, because the concentration of carbon dioxide inside the leaf then falls. Some plants, including maize and sugar cane, have evolved a mechanism known as C4 photosynthesis. These plants first capture carbon dioxide in outer leaf cells and then pump it into inner cells where Rubisco is located, keeping the concentration of carbon dioxide around the enzyme high and largely suppressing photorespiration. As a result, C4 plants tend to perform well in hot, sunny and dry conditions. The mechanism carries an energy cost, however, so in cool, moist climates plants without it are often equally or more productive.",
+    "question": "Which of the following statements is correct?",
+    "options": [
+      "C4 plants avoid photorespiration because they do not use the enzyme Rubisco at all.",
+      "Closing its leaf pores to save water can make a plant fix carbon less efficiently.",
+      "C4 plants are more productive than other plants in every climate.",
+      "Photorespiration becomes less frequent as temperatures rise."
+    ],
+    "answer": "B",
+    "explanations": {
+      "A": "Incorrect — contradiction. C4 plants pump carbon dioxide into inner cells “where Rubisco is located”, and photorespiration is only “largely” suppressed.",
+      "B": "Correct. Closing the pores lowers the carbon dioxide inside the leaf, making wasteful photorespiration, which releases already-fixed carbon, more frequent.",
+      "C": "Incorrect — extreme wording. In cool, moist climates, plants without the mechanism are “often equally or more productive”.",
+      "D": "Incorrect — contradiction. Photorespiration becomes more frequent as temperatures rise."
+    }
+  },
+  {
+    "id": "V2-13",
+    "difficulty": "intermediate",
+    "topic": "Health – sleep and memory",
+    "passage": "Research over several decades suggests that sleep plays an active role in memory, rather than simply protecting newly learned information from interference. In typical experiments, participants learn a task or a list of word pairs and are tested after an interval that contains either sleep or an equivalent period of wakefulness. Those who have slept generally perform better, and the benefit is often linked to specific stages of sleep. Deep, slow-wave sleep appears particularly important for remembering facts and events, while some studies associate rapid eye movement (REM) sleep with emotional memories and certain skills. During slow-wave sleep, patterns of brain activity recorded during learning are replayed, which is thought to help transfer memories from temporary storage in the hippocampus to longer-term networks in the cortex. The findings have practical implications for students, although researchers caution that most experiments involve simple laboratory tasks and short intervals, and that the effect of sleep on complex learning over weeks or months is less well understood.",
+    "question": "Which of the following statements is correct?",
+    "options": [
+      "Sleep benefits memory only by shielding new information from interference.",
+      "REM sleep appears to be the stage most important for remembering facts and events.",
+      "Findings from short, simple laboratory tasks may not fully apply to complex learning over several months.",
+      "Students who sleep more than their peers will achieve better examination results."
+    ],
+    "answer": "C",
+    "explanations": {
+      "A": "Incorrect — contradiction. Research suggests that sleep plays an active role “rather than simply” protecting new information from interference.",
+      "B": "Incorrect — partial truth. Slow-wave sleep is linked to facts and events; REM sleep to emotional memories and certain skills.",
+      "C": "Correct. Researchers caution that most experiments use simple tasks and short intervals, and that effects on complex learning over weeks or months are “less well understood”.",
+      "D": "Incorrect — unsupported inference. The passage compares sleep with wakefulness after learning; it makes no prediction about examination results or relative amounts of sleep."
+    }
+  },
+  {
+    "id": "V2-14",
+    "difficulty": "advanced",
+    "topic": "Transport – the container revolution in shipping",
+    "passage": "Before the middle of the twentieth century, general cargo was loaded onto ships piece by piece: sacks, barrels and crates were handled individually by large teams of dockworkers, and a vessel could spend as long in port as at sea. The introduction of standardised steel containers changed this. Because containers of agreed dimensions could be lifted by crane directly between ships, lorries and railway wagons, goods no longer had to be unpacked and repacked at each stage. Loading times fell sharply, theft and damage declined, and ships could spend a far greater proportion of their time travelling. The benefits depended on standardisation: early container systems used incompatible sizes, and the advantages multiplied only once international dimensions were agreed. The change also had costs. Employment in traditional docks fell steeply, and many old city-centre ports, lacking space for container cranes and storage yards, lost traffic to new terminals built elsewhere. Economists continue to debate how much of the post-war growth in world trade should be attributed to containerisation as opposed to falling tariffs and other factors.",
+    "question": "Which of the following statements is correct?",
+    "options": [
+      "The full benefits of containers depended on agreeing standard international sizes.",
+      "Containerisation was the main cause of the growth in world trade after the Second World War.",
+      "Old city-centre ports lost traffic because their dockworkers resisted the introduction of containers.",
+      "Once containers were introduced, ships spent more of their time in port than at sea."
+    ],
+    "answer": "A",
+    "explanations": {
+      "A": "Correct. The benefits “depended on standardisation” and multiplied only once international dimensions were agreed.",
+      "B": "Incorrect — cause and effect. Economists “continue to debate” how much of the growth reflects containerisation rather than falling tariffs and other factors.",
+      "C": "Incorrect — partial truth. Old ports did lose traffic, but the passage attributes this to a lack of space for cranes and storage yards, not to resistance by workers.",
+      "D": "Incorrect — contradiction. Before containers a ship could spend as long in port as at sea; afterwards ships spent “a far greater proportion of their time travelling”."
+    }
+  },
+  {
+    "id": "V2-15",
+    "difficulty": "intermediate",
+    "topic": "Technology – public-key cryptography",
+    "passage": "For most of history, encrypted communication required both parties to share a secret key in advance, which made secure communication between strangers difficult. Public-key cryptography, developed in the 1970s, solved this problem by using a pair of mathematically related keys. The public key can be distributed openly, while the private key is kept secret by its owner. A message encrypted with someone’s public key can be decrypted only with the corresponding private key, so anyone can send that person a confidential message without first agreeing a secret. The same pair of keys can be used in reverse to create a digital signature: the owner applies the private key to a message, and anyone holding the public key can verify that the message came from the owner and has not been altered. The security of widely used schemes rests on mathematical problems, such as factoring very large numbers, that are believed to be extremely hard for conventional computers to solve. Because public-key operations are relatively slow, practical systems usually use them only to exchange a shorter secret key, which then encrypts the bulk of the data by faster methods.",
+    "question": "Which of the following statements is correct?",
+    "options": [
+      "Public-key cryptography requires the two parties to agree on a secret key before they communicate.",
+      "A digital signature is created by applying the recipient’s public key to a message.",
+      "It has been proven that conventional computers cannot factor very large numbers.",
+      "Public-key methods are usually paired with faster ones for encrypting bulk data."
+    ],
+    "answer": "D",
+    "explanations": {
+      "A": "Incorrect — contradiction. The method lets anyone send a confidential message “without first agreeing a secret”.",
+      "B": "Incorrect — partial truth. The owner signs with his or her own private key; others verify the signature with the public key.",
+      "C": "Incorrect — extreme wording. Such problems are only “believed to be extremely hard”; this is neither a proof nor a claim of impossibility.",
+      "D": "Correct. Because public-key operations are slow, they are typically used to exchange a shorter secret key, which encrypts the bulk of the data “by faster methods”."
+    }
+  },
+  {
+    "id": "V2-16",
+    "difficulty": "intermediate",
+    "topic": "Environment – ocean acidification",
+    "passage": "The oceans absorb a substantial share of the carbon dioxide released into the atmosphere by human activities. This uptake slows the rise of atmospheric concentrations, but it alters seawater chemistry. Dissolved carbon dioxide forms carbonic acid, lowering the water’s pH, and, through a series of reactions, reduces the concentration of carbonate ions. Many marine organisms, including corals, oysters, mussels and some types of plankton, use carbonate to build shells or skeletons, and laboratory experiments show that some of them grow more slowly or form weaker structures when carbonate is scarce. Responses vary considerably between species, however, and a few organisms appear unaffected or even benefit, such as certain seagrasses that use the additional carbon dioxide for photosynthesis. The term “acidification” can mislead: seawater remains slightly alkaline, and the word refers to a shift towards the acidic end of the scale rather than to the oceans actually becoming acidic. Because colder water absorbs carbon dioxide more readily, polar seas are expected to experience some of the earliest and largest effects.",
+    "question": "Which of the following statements is correct?",
+    "options": [
+      "The oceans have become acidic as a result of absorbing carbon dioxide.",
+      "Ocean uptake of carbon dioxide slows its rise in the air but can harm some shell-builders.",
+      "All organisms that build shells are harmed by lower carbonate concentrations.",
+      "Warm tropical seas absorb carbon dioxide more readily than the colder waters of polar regions."
+    ],
+    "answer": "B",
+    "explanations": {
+      "A": "Incorrect — contradiction. Seawater “remains slightly alkaline”; the term describes a shift along the pH scale, not acidic oceans.",
+      "B": "Correct. Ocean uptake “slows the rise of atmospheric concentrations” but reduces carbonate, so some shell-builders grow more slowly or form weaker structures.",
+      "C": "Incorrect — extreme wording. Only “some of them” are affected, and responses “vary considerably between species”.",
+      "D": "Incorrect — contradiction. Colder water absorbs carbon dioxide more readily, which is why polar seas are expected to be affected early."
+    }
+  },
+  {
+    "id": "V2-17",
+    "difficulty": "advanced",
+    "topic": "Health – Semmelweis and hand hygiene",
+    "passage": "In the 1840s, Ignaz Semmelweis, a physician at a large maternity hospital in Vienna, investigated why one of the hospital’s two maternity clinics had a far higher death rate from puerperal fever than the other. The clinic with the higher rate was staffed by doctors and medical students, who often came directly from performing autopsies; the other was staffed by midwives, who did not perform them. After a colleague died from an infection contracted through a cut received during an autopsy, Semmelweis concluded that “cadaverous particles” carried on the hands were responsible. He introduced compulsory handwashing with a chlorinated lime solution, and the death rate in the doctors’ clinic fell sharply. Yet his ideas were widely resisted. He published a full account only years later, his explanation did not fit prevailing theories of disease, and some doctors were offended by the suggestion that they themselves transmitted illness. Wider acceptance of hand hygiene came only in the following decades, once the work of later scientists had established the germ theory of disease.",
+    "question": "Which of the following statements is NOT supported by the passage?",
+    "options": [
+      "Semmelweis’s explanation conflicted with the dominant medical thinking of his time.",
+      "The difference in death rates between the two clinics was linked to the work of the staff in each.",
+      "Semmelweis drew on the germ theory of disease when reaching his conclusion.",
+      "Some of the resistance to Semmelweis’s ideas reflected doctors’ reluctance to accept that they spread illness."
+    ],
+    "answer": "C",
+    "explanations": {
+      "A": "Incorrect — supported. His explanation “did not fit prevailing theories of disease”.",
+      "B": "Incorrect — supported. The high-mortality clinic was staffed by doctors and students coming from autopsies, the source Semmelweis identified; the midwives’ clinic was not.",
+      "C": "Correct — not supported. The germ theory was established only “in the following decades”, after Semmelweis had reached his conclusion, so the chronology is reversed.",
+      "D": "Incorrect — supported. Some doctors “were offended by the suggestion that they themselves transmitted illness”."
+    }
+  },
+  {
+    "id": "V2-18",
+    "difficulty": "foundation",
+    "topic": "Technology – relativity and satellite navigation",
+    "passage": "Satellite navigation systems determine a receiver’s position by measuring how long signals take to arrive from several satellites whose positions are precisely known. Because the signals travel at the speed of light, even tiny timing errors translate into large positional errors: an error of one millionth of a second corresponds to roughly 300 metres. Each satellite therefore carries highly accurate atomic clocks. Remarkably, the system must also allow for effects predicted by Einstein’s theories of relativity. Owing to their high speed, the satellites’ clocks run slightly slow compared with clocks on the ground; owing to the weaker gravity at their altitude, they run slightly fast. The gravitational effect is the larger of the two, so the net result is that the satellite clocks gain a small amount of time each day. Engineers compensate by adjusting the clocks’ frequency before launch and by applying corrections in the system’s calculations. Without these adjustments, positioning errors would accumulate rapidly. A receiver needs signals from at least four satellites, since it must solve for its own clock error as well as its three-dimensional position.",
+    "question": "Which of the following statements is correct?",
+    "options": [
+      "Without correction, satellite clocks would run increasingly ahead of clocks on the ground as each day passed.",
+      "The high speed of the satellites makes their clocks run faster than clocks on Earth.",
+      "Signals from two satellites are sufficient for a receiver to calculate its position.",
+      "Relativistic corrections are needed only for military users of satellite navigation."
+    ],
+    "answer": "A",
+    "explanations": {
+      "A": "Correct. The gravitational effect (running fast) outweighs the speed effect (running slow), so uncorrected satellite clocks “gain a small amount of time each day”.",
+      "B": "Incorrect — partial truth. Speed makes the satellites’ clocks run slow; it is the weaker gravity that makes them run fast.",
+      "C": "Incorrect — contradiction. A receiver needs signals from “at least four satellites”.",
+      "D": "Incorrect — outside knowledge. The passage says nothing about categories of user; it presents the corrections as necessary for the system as a whole."
+    }
+  },
+  {
+    "id": "V2-19",
+    "difficulty": "advanced",
+    "topic": "Transport – a driverless shuttle trial",
+    "passage": "A partnership of universities and transport operators has completed an eighteen-month trial of driverless electric shuttles on a fixed route linking a suburban railway station with a business park. Throughout the trial, a safety operator remained on board with the ability to stop the vehicle, and intervened on average once every few kilometres, most often when parked vehicles or pedestrians obstructed the lane. The shuttles carried passengers without any injury-causing collision. Passenger surveys recorded high satisfaction, although respondents were mostly regular commuters who had volunteered to take part. The partnership’s final report concludes that the technology is ready for operation without an on-board operator on fully segregated routes, but not yet in mixed traffic. It recommends that the participating authorities consider a second phase in which a single remote supervisor would monitor several vehicles at once. The authorities have welcomed the report but have not committed to a second phase, citing uncertainty over insurance arrangements and the cost of adapting the route.",
+    "question": "Which of the following statements is correct?",
+    "options": [
+      "The trial showed that the shuttles can operate safely in mixed traffic without human supervision.",
+      "The participating authorities have agreed to launch a second phase with remote supervision.",
+      "The high satisfaction recorded in the surveys can be taken to reflect the views of the general public.",
+      "The trial’s safety record was achieved with an on-board operator who regularly had to intervene."
+    ],
+    "answer": "D",
+    "explanations": {
+      "A": "Incorrect — contradiction. An operator was on board throughout, and the report concludes that the technology is “not yet” ready for mixed traffic.",
+      "B": "Incorrect — partial truth. The partnership recommends that a second phase be considered, but the authorities “have not committed” to it; a proposal is presented as a decision.",
+      "C": "Incorrect — scope shift. Respondents were mostly regular commuters who had volunteered, so the results cannot be generalised to the public.",
+      "D": "Correct. There were no injury-causing collisions, but a safety operator was present throughout and intervened “on average once every few kilometres”."
+    }
+  },
+  {
+    "id": "V2-20",
+    "difficulty": "advanced",
+    "topic": "Health – a regional telemedicine pilot",
+    "passage": "A regional health authority piloted video consultations for follow-up appointments in three outpatient specialties: dermatology, diabetes care and mental health. Patients were offered the choice between a video consultation and a traditional visit, and about two-fifths chose video. Those who did so were, on average, younger and lived further from the hospital than those who attended in person. Video consultations saved patients an average of more than an hour of travel and waiting time, and missed appointments were less frequent in the video group. Clinicians in mental health and diabetes care rated video consultations as generally adequate, but dermatologists reported that image quality was often insufficient to assess skin lesions, and a notable share of their video patients had to be called in for a further in-person visit. The authority’s evaluation team cautions that, because patients selected their own type of appointment, differences between the groups cannot be attributed with confidence to the consultation format itself. The authority intends to continue offering video follow-ups in two of the three specialties.",
+    "question": "Which of the following statements is correct?",
+    "options": [
+      "Video consultations caused patients to miss fewer appointments.",
+      "Video follow-ups seemed less suitable for dermatology than for the other specialties.",
+      "Most patients preferred a video consultation to a visit to the hospital.",
+      "Patients living far from the hospital were less likely than others to choose video consultations."
+    ],
+    "answer": "B",
+    "explanations": {
+      "A": "Incorrect — cause and effect. Missed appointments were less frequent in the video group, but because patients chose their format, differences “cannot be attributed with confidence” to it.",
+      "B": "Correct. Mental health and diabetes clinicians rated video as generally adequate, whereas dermatologists often found image quality insufficient and had to recall a notable share of patients.",
+      "C": "Incorrect — contradiction. Only about two-fifths of patients chose video.",
+      "D": "Incorrect — contradiction. Patients who chose video lived, on average, further from the hospital."
+    }
+  },
+  {
+    "id": "V2-21",
+    "difficulty": "foundation",
+    "topic": "Transport – the canal age",
+    "passage": "Before railways, moving heavy goods overland was slow and costly. A horse could pull only a modest load in a cart on the poor roads of the eighteenth century, but the same horse towing a barge on still water could move many times as much. This advantage drove a wave of canal building in several European countries in the late eighteenth and early nineteenth centuries, much of it financed by private investors and promoted by mine owners and manufacturers seeking cheaper access to markets for coal, iron and pottery. Canals were not easy to build in hilly country: changes in level required locks, tunnels or aqueducts, all of which added to costs and, in the case of locks, to journey times. Reliable water supplies were also needed to refill the locks, particularly on the highest sections of a route. From the 1830s onwards, railways offered faster transport that was less constrained by terrain, and many canal companies saw their traffic and income decline, although some canals continued to carry bulk cargoes for decades.",
+    "question": "Which of the following statements is correct?",
+    "options": [
+      "Canals were built mainly with money provided by governments.",
+      "The arrival of railways brought all canal traffic to an end within a few years, even for bulk cargoes such as coal.",
+      "A key attraction of canals was that a horse could move a far heavier load on water than on land.",
+      "Locks shortened journey times on canals in hilly areas."
+    ],
+    "answer": "C",
+    "explanations": {
+      "A": "Incorrect — contradiction. Much canal building was “financed by private investors”.",
+      "B": "Incorrect — extreme wording. Some canals “continued to carry bulk cargoes for decades”.",
+      "C": "Correct. A horse towing a barge could move “many times as much” as it could pull in a cart, and this advantage drove canal building.",
+      "D": "Incorrect — contradiction. Locks added to journey times."
+    }
+  },
+  {
+    "id": "V2-22",
+    "difficulty": "advanced",
+    "topic": "Science – superconductivity",
+    "passage": "Superconductivity is a state in which certain materials conduct electricity with no resistance at all. It was discovered in 1911, when mercury cooled to a few degrees above absolute zero was found to lose its electrical resistance abruptly. For most of the twentieth century, known superconductors worked only at such extremely low temperatures, which required cooling with costly liquid helium. In 1986, researchers found a class of ceramic materials that became superconducting at much higher temperatures, and soon afterwards related materials were found that could be cooled with liquid nitrogen, which is far cheaper and easier to handle. Even these “high-temperature” superconductors, however, must still be kept far below the freezing point of water. Superconducting magnets are already used routinely in hospital scanners for magnetic resonance imaging and in particle accelerators. Wider uses, such as loss-free power transmission, have been demonstrated in limited trials, but cooling costs and the brittleness of ceramic materials have so far restricted their adoption. A material that is superconducting at room temperature would transform many technologies, but claims of such a discovery have repeatedly failed to be confirmed.",
+    "question": "Which of the following statements is correct?",
+    "options": [
+      "Superconductors known before 1986 needed a costlier coolant than some found later.",
+      "Every superconductor discovered since 1986 can be cooled with liquid nitrogen.",
+      "Brittleness is the only obstacle to the wider use of superconductors for power transmission.",
+      "A room-temperature superconductor has been discovered but has not yet been put to practical use."
+    ],
+    "answer": "A",
+    "explanations": {
+      "A": "Correct. Until 1986 known superconductors needed costly liquid helium, whereas some later materials can be cooled with far cheaper liquid nitrogen.",
+      "B": "Incorrect — scope shift. The passage says only that some related materials found “soon afterwards” could be cooled with liquid nitrogen.",
+      "C": "Incorrect — extreme wording. Cooling costs are named as an obstacle alongside brittleness.",
+      "D": "Incorrect — contradiction. Claims of a room-temperature superconductor “have repeatedly failed to be confirmed”."
+    }
+  },
+  {
+    "id": "V2-23",
+    "difficulty": "intermediate",
+    "topic": "Environment – reducing urban road noise",
+    "passage": "Road traffic is the main source of environmental noise in most urban areas, and long-term exposure has been associated with sleep disturbance and stress. A city transport department has assessed several measures for reducing it. Above speeds of roughly 30 to 50 kilometres per hour, noise from cars comes mainly from the contact between tyres and the road surface rather than from engines, so engine-related measures matter most in slow, stop-start traffic. Porous asphalt, which absorbs part of the sound, can reduce noise noticeably on faster roads, but its pores gradually become clogged and it must be cleaned or replaced more often than conventional surfaces. Lowering speed limits reduces tyre noise and is cheap to implement, although its effect depends on enforcement. Noise barriers are effective for buildings directly behind them but are unsuitable for most city streets, where they would block access to homes and shops. The department notes that a shift to electric vehicles will reduce noise mainly at low speeds, because at higher speeds tyre noise dominates regardless of how a vehicle is powered.",
+    "question": "Which of the following statements is NOT supported by the passage?",
+    "options": [
+      "Electric vehicles are likely to bring the greatest noise benefit in slow-moving traffic.",
+      "Porous asphalt requires more maintenance than standard road surfaces.",
+      "The noise benefit of a lower speed limit may be limited if drivers do not comply with it.",
+      "Noise barriers are the most effective way of reducing noise on city streets."
+    ],
+    "answer": "D",
+    "explanations": {
+      "A": "Incorrect — supported. The department expects electric vehicles to reduce noise “mainly at low speeds”.",
+      "B": "Incorrect — supported. Porous asphalt must be cleaned or replaced more often than conventional surfaces.",
+      "C": "Incorrect — supported. The effect of lower speed limits “depends on enforcement”.",
+      "D": "Correct — not supported. Barriers help only buildings directly behind them and are “unsuitable for most city streets”; the superlative has no basis in the passage."
+    }
+  },
+  {
+    "id": "V2-24",
+    "difficulty": "foundation",
+    "topic": "Health – pasteurisation",
+    "passage": "Pasteurisation, named after the French scientist Louis Pasteur, is a heat treatment that reduces the number of harmful micro-organisms in food and drink. Pasteur developed the technique in the 1860s, initially to prevent the spoilage of wine, before it was applied to milk. Unlike sterilisation, pasteurisation does not aim to kill all micro-organisms. It uses temperatures that destroy the most common disease-causing bacteria while limiting changes to flavour and nutritional value. Milk, for example, is commonly heated to around 72 degrees Celsius for about fifteen seconds and then rapidly cooled. Because some heat-resistant bacteria and spores survive, pasteurised milk must still be refrigerated and has a limited shelf life. Ultra-high-temperature treatment, which heats milk to around 135 degrees for a few seconds, produces a product that can be stored unopened at room temperature for months, though many consumers notice a difference in taste. The widespread adoption of milk pasteurisation in the late nineteenth and early twentieth centuries contributed to a marked decline in diseases transmitted through milk, such as tuberculosis.",
+    "question": "Which of the following statements is correct?",
+    "options": [
+      "Pasteurised milk contains no living bacteria.",
+      "Pasteur first used the method to stop wine spoiling; milk came later.",
+      "Many consumers find that ultra-high-temperature milk tastes the same as pasteurised milk.",
+      "Pasteurisation was the only reason for the decline in milk-borne tuberculosis."
+    ],
+    "answer": "B",
+    "explanations": {
+      "A": "Incorrect — contradiction. Pasteurisation does not aim to kill all micro-organisms, and some heat-resistant bacteria and spores survive.",
+      "B": "Correct. Pasteur developed the technique initially to prevent the spoilage of wine, and only afterwards was it applied to milk.",
+      "C": "Incorrect — contradiction. “Many consumers notice a difference in taste”.",
+      "D": "Incorrect — extreme wording. Pasteurisation “contributed to” the decline; the passage does not present it as the sole cause."
+    }
+  },
+  {
+    "id": "V2-25",
+    "difficulty": "advanced",
+    "topic": "Transport – replacing diesel trains on rural lines",
+    "passage": "A regional transport authority must replace an ageing fleet of diesel trains on several rural lines that have no overhead electrification. Its options appraisal compared three alternatives. Full electrification would allow conventional electric trains to be used but would require substantial civil works, including the reconstruction of some bridges, and would take the longest to deliver. Battery-electric trains could recharge from short electrified sections at terminal stations; they performed well in the appraisal on the shorter lines but, with current battery capacities, would be unable to complete the longest line without an additional charging point midway. Hydrogen fuel-cell trains could serve all the lines without new electrification, but would require a refuelling depot and a reliable supply of hydrogen, and their overall energy efficiency is lower than that of battery trains. The appraisal recommends battery-electric trains for the shorter lines and further study of the longest line, where either a midway charging point or hydrogen traction may prove preferable. The authority’s board has endorsed the recommendation for the shorter lines and will decide on the longest line once the further study is complete.",
+    "question": "Which of the following statements is correct?",
+    "options": [
+      "The authority has decided to use hydrogen trains on the longest line.",
+      "The appraisal found battery-electric trains unsuitable for all of the authority’s lines.",
+      "Battery trains could currently serve the longest line only with an added midway charging point.",
+      "The appraisal rejected hydrogen trains because of their lower energy efficiency."
+    ],
+    "answer": "C",
+    "explanations": {
+      "A": "Incorrect — unsupported inference. Hydrogen is one of two options still under study for the longest line; the board will decide only after the further study.",
+      "B": "Incorrect — contradiction. Battery trains performed well on the shorter lines and are recommended there.",
+      "C": "Correct. With current battery capacities, they “would be unable to complete the longest line without an additional charging point midway”.",
+      "D": "Incorrect — partial truth. Hydrogen trains are less efficient, but the appraisal keeps them as a possible option for the longest line rather than rejecting them."
+    }
+  }
+]
