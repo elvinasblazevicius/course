@@ -154,7 +154,7 @@ def tick_o(c, x, base, size):
     p = c.beginPath()
     p.moveTo(cx - ow * 0.30, cy - cap * 0.02)
     p.lineTo(cx - ow * 0.05, cy - cap * 0.16)
-    p.lineTo(cx + ow * 0.45, cy + cap * 0.30)
+    p.lineTo(cx + ow * 0.36, cy + cap * 0.28)
     c.saveState()
     c.setLineCap(1); c.setLineJoin(1)
     c.setStrokeColor(BLUE); c.setLineWidth(size * 0.085); c.drawPath(p, stroke=1, fill=0)
@@ -205,7 +205,7 @@ def front(c, x0, y0, H_in=TRIM_H):
     c.setLineWidth(0.8); c.circle(0, 0, r - 11, stroke=1, fill=0)
     c.setFillColor(BLUE_DEEP); c.setFont("Display", r * 1.10)
     c.drawCentredString(0, -r * 0.06, "3")
-    c.setStrokeColor(BLUE_DEEP); c.setLineWidth(1.0); c.line(-r * 0.34, -r * 0.17, r * 0.34, -r * 0.17)
+    c.setStrokeColor(BLUE_DEEP); c.setLineWidth(1.4); c.line(-r * 0.34, -r * 0.17, r * 0.34, -r * 0.17)
     lab = r * 0.135
     c.restoreState()
     c.saveState(); c.translate(sx, sy)
