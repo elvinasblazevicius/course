@@ -66,7 +66,7 @@
    "No error"
   ],
   "answer": "C",
-  "explanation": "Compare the copy with row 8: the country code differs (BE → BG); all other fields match, so the answer is “Country code”. Method: compare one field at a time; read codes in chunks of two characters, check accents letter by letter, and check amounts digit by digit from the left.",
+  "explanation": "Compare the copy with row 8: the country code differs (BE → BG); all other fields match, so the answer is “Country code”. Fast route: compare both letters of a country code, not just the first.",
   "difficulty": "foundation",
   "id": "AP-01"
  },
@@ -137,7 +137,7 @@
    "No error"
   ],
   "answer": "D",
-  "explanation": "Compare the copy with row 5: every field of the copy matches row 5 exactly, so “No error” is correct. Method: compare one field at a time; read codes in chunks of two characters, check accents letter by letter, and check amounts digit by digit from the left.",
+  "explanation": "Compare the copy with row 5: every field of the copy matches row 5 exactly, so “No error” is correct. Fast route: when every field matches, trust it. “No error” is a real answer, not a trick.",
   "difficulty": "intermediate",
   "id": "AP-02"
  },
@@ -208,7 +208,7 @@
    "No error"
   ],
   "answer": "B",
-  "explanation": "Compare the copy with row 8: the final two letters of the reference are reversed (CT → TC); all other fields match, so the answer is “Reference”. Method: compare one field at a time; read codes in chunks of two characters, check accents letter by letter, and check amounts digit by digit from the left.",
+  "explanation": "Compare the copy with row 8: the final two letters of the reference are reversed (CT → TC); all other fields match, so the answer is “Reference”. Fast route: read reference codes in pairs (48 | 21), because swapped neighbours jump out that way.",
   "difficulty": "intermediate",
   "id": "AP-03"
  },
@@ -279,7 +279,7 @@
    "No error"
   ],
   "answer": "A",
-  "explanation": "Compare the copy with row 4: the amount differs (7,676.00 → 7,766.00); all other fields match, so the answer is “Amount (€)”. Method: compare one field at a time; read codes in chunks of two characters, check accents letter by letter, and check amounts digit by digit from the left.",
+  "explanation": "Compare the copy with row 4: the amount differs (7,676.00 → 7,766.00); all other fields match, so the answer is “Amount (€)”. Fast route: compare amounts from the left, digit by digit, including the cents.",
   "difficulty": "intermediate",
   "id": "AP-04"
  },
@@ -350,7 +350,7 @@
    "No error"
   ],
   "answer": "D",
-  "explanation": "Compare the copy with row 6: every field of the copy matches row 6 exactly, so “No error” is correct. Method: compare one field at a time; read codes in chunks of two characters, check accents letter by letter, and check amounts digit by digit from the left.",
+  "explanation": "Compare the copy with row 6: every field of the copy matches row 6 exactly, so “No error” is correct. Fast route: when every field matches, trust it. “No error” is a real answer, not a trick.",
   "difficulty": "intermediate",
   "id": "AP-05"
  },
@@ -421,7 +421,7 @@
    "No error"
   ],
   "answer": "B",
-  "explanation": "Compare the copy with row 2: the amount differs (75,238.15 → 75,328.15); all other fields match, so the answer is “Amount (€)”. Method: compare one field at a time; read codes in chunks of two characters, check accents letter by letter, and check amounts digit by digit from the left.",
+  "explanation": "Compare the copy with row 2: the amount differs (75,238.15 → 75,328.15); all other fields match, so the answer is “Amount (€)”. Fast route: compare amounts from the left, digit by digit, including the cents.",
   "difficulty": "intermediate",
   "id": "AP-06"
  },
@@ -492,7 +492,7 @@
    "No error"
   ],
   "answer": "C",
-  "explanation": "Compare the copy with row 5: two digits of the reference are transposed (TR-4931/FY → TR-4391/FY); all other fields match, so the answer is “Reference”. Method: compare one field at a time; read codes in chunks of two characters, check accents letter by letter, and check amounts digit by digit from the left.",
+  "explanation": "Compare the copy with row 5: two digits of the reference are transposed (TR-4931/FY → TR-4391/FY); all other fields match, so the answer is “Reference”. Fast route: read reference codes in pairs (48 | 21), because swapped neighbours jump out that way.",
   "difficulty": "intermediate",
   "id": "AP-07"
  },
@@ -563,7 +563,7 @@
    "No error"
   ],
   "answer": "A",
-  "explanation": "Compare the copy with row 4: two letters of the surname are transposed (Bērziņš → Brēziņš); all other fields match, so the answer is “Beneficiary”. Method: compare one field at a time; read codes in chunks of two characters, check accents letter by letter, and check amounts digit by digit from the left.",
+  "explanation": "Compare the copy with row 4: two letters of the surname are transposed (Bērziņš → Brēziņš); all other fields match, so the answer is “Beneficiary”. Fast route: read reference codes in pairs (48 | 21), because swapped neighbours jump out that way; check names letter by letter, including accents and doubled letters.",
   "difficulty": "intermediate",
   "id": "AP-08"
  },
@@ -634,7 +634,7 @@
    "No error"
   ],
   "answer": "B",
-  "explanation": "Compare the copy with row 4: the country code differs (ES → EE); all other fields match, so the answer is “Country code”. Method: compare one field at a time; read codes in chunks of two characters, check accents letter by letter, and check amounts digit by digit from the left.",
+  "explanation": "Compare the copy with row 4: the country code differs (ES → EE); all other fields match, so the answer is “Country code”. Fast route: compare both letters of a country code, not just the first.",
   "difficulty": "foundation",
   "id": "AP-09"
  },
@@ -705,7 +705,7 @@
    "No error"
   ],
   "answer": "A",
-  "explanation": "Compare the copy with row 4: two letters of the surname are transposed (Weber → Wbeer); all other fields match, so the answer is “Beneficiary”. Method: compare one field at a time; read codes in chunks of two characters, check accents letter by letter, and check amounts digit by digit from the left.",
+  "explanation": "Compare the copy with row 4: two letters of the surname are transposed (Weber → Wbeer); all other fields match, so the answer is “Beneficiary”. Fast route: read reference codes in pairs (48 | 21), because swapped neighbours jump out that way; check names letter by letter, including accents and doubled letters.",
   "difficulty": "intermediate",
   "id": "AP-10"
  },
@@ -776,7 +776,7 @@
    "No error"
   ],
   "answer": "C",
-  "explanation": "Compare the copy with row 2: the amount differs (10,821.00 → 10,812.00); all other fields match, so the answer is “Amount (€)”. Method: compare one field at a time; read codes in chunks of two characters, check accents letter by letter, and check amounts digit by digit from the left.",
+  "explanation": "Compare the copy with row 2: the amount differs (10,821.00 → 10,812.00); all other fields match, so the answer is “Amount (€)”. Fast route: compare amounts from the left, digit by digit, including the cents.",
   "difficulty": "intermediate",
   "id": "AP-11"
  },
@@ -847,7 +847,7 @@
    "No error"
   ],
   "answer": "D",
-  "explanation": "Compare the copy with row 4: every field of the copy matches row 4 exactly, so “No error” is correct. Method: compare one field at a time; read codes in chunks of two characters, check accents letter by letter, and check amounts digit by digit from the left.",
+  "explanation": "Compare the copy with row 4: every field of the copy matches row 4 exactly, so “No error” is correct. Fast route: when every field matches, trust it. “No error” is a real answer, not a trick.",
   "difficulty": "intermediate",
   "id": "AP-12"
  },
@@ -949,7 +949,7 @@
    "D"
   ],
   "answer": "A",
-  "explanation": "A: matches row 3 exactly. B: compare with row 9: the country code differs (SI → SK). C: compare with row 6: one digit of the reference is wrong (TR-4550/UM → TR-4850/UM). D: compare with row 8: the final two letters of the reference are reversed (EY → YE). Method: compare one field at a time; read codes in chunks of two characters, check accents letter by letter, and check amounts digit by digit from the left.",
+  "explanation": "A: matches row 3 exactly. B: compare with row 9: the country code differs (SI → SK). C: compare with row 6: one digit of the reference is wrong (TR-4550/UM → TR-4850/UM). D: compare with row 8: the final two letters of the reference are reversed (EY → YE). Fast route: read reference codes in pairs (48 | 21), because swapped neighbours jump out that way; compare both letters of a country code, not just the first; check every digit of the reference, not just its shape.",
   "difficulty": "intermediate",
   "id": "AP-13"
  },
@@ -1051,7 +1051,7 @@
    "D"
   ],
   "answer": "D",
-  "explanation": "A: compare with row 5: the first name is spelled differently (Katarina → Katharina). B: compare with row 10: two letters of the surname are transposed (Nowak → Noawk). C: compare with row 8: the country code differs (IT → IE). D: matches row 6 exactly. Method: compare one field at a time; read codes in chunks of two characters, check accents letter by letter, and check amounts digit by digit from the left.",
+  "explanation": "A: compare with row 5: the first name is spelled differently (Katarina → Katharina). B: compare with row 10: two letters of the surname are transposed (Nowak → Noawk). C: compare with row 8: the country code differs (IT → IE). D: matches row 6 exactly. Fast route: read reference codes in pairs (48 | 21), because swapped neighbours jump out that way; check names letter by letter, including accents and doubled letters; compare both letters of a country code, not just the first.",
   "difficulty": "intermediate",
   "id": "AP-14"
  },
@@ -1153,7 +1153,7 @@
    "D"
   ],
   "answer": "A",
-  "explanation": "A: matches row 7 exactly. B: compare with row 10: one digit of the reference is wrong (CN-7050/VA → CN-7055/VA). C: compare with row 4: two digits of the reference are transposed (CN-8886/VM → CN-8868/VM). D: compare with row 2: the amount differs (51,619.90 → 51,169.90). Method: compare one field at a time; read codes in chunks of two characters, check accents letter by letter, and check amounts digit by digit from the left.",
+  "explanation": "A: matches row 7 exactly. B: compare with row 10: one digit of the reference is wrong (CN-7050/VA → CN-7055/VA). C: compare with row 4: two digits of the reference are transposed (CN-8886/VM → CN-8868/VM). D: compare with row 2: the amount differs (51,619.90 → 51,169.90). Fast route: read reference codes in pairs (48 | 21), because swapped neighbours jump out that way; compare amounts from the left, digit by digit, including the cents; check every digit of the reference, not just its shape.",
   "difficulty": "intermediate",
   "id": "AP-15"
  },
@@ -1255,7 +1255,7 @@
    "D"
   ],
   "answer": "D",
-  "explanation": "A: compare with row 1: the first name is spelled differently (Liis → Lis). B: compare with row 6: the amount differs (54,510.40 → 54,510.04). C: compare with row 4: the country code differs (PL → PT). D: matches row 7 exactly. Method: compare one field at a time; read codes in chunks of two characters, check accents letter by letter, and check amounts digit by digit from the left.",
+  "explanation": "A: compare with row 1: the first name is spelled differently (Liis → Lis). B: compare with row 6: the amount differs (54,510.40 → 54,510.04). C: compare with row 4: the country code differs (PL → PT). D: matches row 7 exactly. Fast route: check names letter by letter, including accents and doubled letters; compare both letters of a country code, not just the first; compare amounts from the left, digit by digit, including the cents.",
   "difficulty": "intermediate",
   "id": "AP-16"
  },
@@ -1357,7 +1357,7 @@
    "D"
   ],
   "answer": "B",
-  "explanation": "A: compare with row 3: the amount differs (93,037.40 → 93,307.40). B: matches row 8 exactly. C: compare with row 4: the country code differs (ES → EE). D: compare with row 9: a double letter in the surname has become single (Andersson → Anderson). Method: compare one field at a time; read codes in chunks of two characters, check accents letter by letter, and check amounts digit by digit from the left.",
+  "explanation": "A: compare with row 3: the amount differs (93,037.40 → 93,307.40). B: matches row 8 exactly. C: compare with row 4: the country code differs (ES → EE). D: compare with row 9: a double letter in the surname has become single (Andersson → Anderson). Fast route: check names letter by letter, including accents and doubled letters; compare both letters of a country code, not just the first; compare amounts from the left, digit by digit, including the cents.",
   "difficulty": "intermediate",
   "id": "AP-17"
  },
@@ -1459,7 +1459,7 @@
    "D"
   ],
   "answer": "A",
-  "explanation": "A: matches row 7 exactly. B: compare with row 4: two letters of the surname are transposed (Georgiou → Georigou). C: compare with row 5: one digit of the reference is wrong (GR-8811/KV → GR-8911/KV). D: compare with row 9: an accent or diacritic is missing from the surname (Horváth → Horvath). Method: compare one field at a time; read codes in chunks of two characters, check accents letter by letter, and check amounts digit by digit from the left.",
+  "explanation": "A: matches row 7 exactly. B: compare with row 4: two letters of the surname are transposed (Georgiou → Georigou). C: compare with row 5: one digit of the reference is wrong (GR-8811/KV → GR-8911/KV). D: compare with row 9: an accent or diacritic is missing from the surname (Horváth → Horvath). Fast route: read reference codes in pairs (48 | 21), because swapped neighbours jump out that way; check names letter by letter, including accents and doubled letters; check every digit of the reference, not just its shape.",
   "difficulty": "intermediate",
   "id": "AP-18"
  },
@@ -1561,7 +1561,7 @@
    "D"
   ],
   "answer": "D",
-  "explanation": "A: compare with row 8: the amount differs (60,696.25 → 60,696.52). B: compare with row 4: two letters of the surname are transposed (Ferrari → Ferrrai). C: compare with row 3: the amount differs (8,161.40 → 1,861.40). D: matches row 7 exactly. Method: compare one field at a time; read codes in chunks of two characters, check accents letter by letter, and check amounts digit by digit from the left.",
+  "explanation": "A: compare with row 8: the amount differs (60,696.25 → 60,696.52). B: compare with row 4: two letters of the surname are transposed (Ferrari → Ferrrai). C: compare with row 3: the amount differs (8,161.40 → 1,861.40). D: matches row 7 exactly. Fast route: read reference codes in pairs (48 | 21), because swapped neighbours jump out that way; check names letter by letter, including accents and doubled letters; compare amounts from the left, digit by digit, including the cents.",
   "difficulty": "intermediate",
   "id": "AP-19"
  },
@@ -1663,7 +1663,7 @@
    "D"
   ],
   "answer": "C",
-  "explanation": "A: compare with row 5: the country code differs (LV → LT). B: compare with row 1: two digits of the reference are transposed (FN-9072/FV → FN-9702/FV). C: matches row 10 exactly. D: compare with row 9: the amount differs (25,668.90 → 52,668.90). Method: compare one field at a time; read codes in chunks of two characters, check accents letter by letter, and check amounts digit by digit from the left.",
+  "explanation": "A: compare with row 5: the country code differs (LV → LT). B: compare with row 1: two digits of the reference are transposed (FN-9072/FV → FN-9702/FV). C: matches row 10 exactly. D: compare with row 9: the amount differs (25,668.90 → 52,668.90). Fast route: read reference codes in pairs (48 | 21), because swapped neighbours jump out that way; compare both letters of a country code, not just the first; compare amounts from the left, digit by digit, including the cents.",
   "difficulty": "intermediate",
   "id": "AP-20"
  },
@@ -1765,7 +1765,7 @@
    "D"
   ],
   "answer": "A",
-  "explanation": "A: matches row 1 exactly. B: compare with row 2: two digits of the reference are transposed (MS-7203/XJ → MS-7023/XJ). C: compare with row 3: the country code differs (LU → LT). D: compare with row 8: two letters of the surname are transposed (Petrović → Pertović). Method: compare one field at a time; read codes in chunks of two characters, check accents letter by letter, and check amounts digit by digit from the left.",
+  "explanation": "A: matches row 1 exactly. B: compare with row 2: two digits of the reference are transposed (MS-7203/XJ → MS-7023/XJ). C: compare with row 3: the country code differs (LU → LT). D: compare with row 8: two letters of the surname are transposed (Petrović → Pertović). Fast route: read reference codes in pairs (48 | 21), because swapped neighbours jump out that way; check names letter by letter, including accents and doubled letters; compare both letters of a country code, not just the first.",
   "difficulty": "intermediate",
   "id": "AP-21"
  },
@@ -1867,7 +1867,7 @@
    "D"
   ],
   "answer": "D",
-  "explanation": "A: compare with row 2: two letters of the surname are transposed (Lindqvist → Lindvqist). B: compare with row 7: two letters of the surname are transposed (Silva → Sivla). C: compare with row 5: the amount differs (81,012.40 → 80,112.40). D: matches row 3 exactly. Method: compare one field at a time; read codes in chunks of two characters, check accents letter by letter, and check amounts digit by digit from the left.",
+  "explanation": "A: compare with row 2: two letters of the surname are transposed (Lindqvist → Lindvqist). B: compare with row 7: two letters of the surname are transposed (Silva → Sivla). C: compare with row 5: the amount differs (81,012.40 → 80,112.40). D: matches row 3 exactly. Fast route: read reference codes in pairs (48 | 21), because swapped neighbours jump out that way; check names letter by letter, including accents and doubled letters; compare amounts from the left, digit by digit, including the cents.",
   "difficulty": "intermediate",
   "id": "AP-22"
  },
@@ -1990,7 +1990,7 @@
    "5"
   ],
   "answer": "B",
-  "explanation": "copy 1 (row 9): no error; copy 2 (row 1): no error; copy 3 (row 2): a digit has been replaced by a look-alike letter (1 → I); copy 4 (row 3): the first name is spelled differently (Luca → Luka); copy 5 (row 4): one digit of the reference is wrong (MS-2958/CL → MS-3958/CL). Copies with an error: 3. Method: compare one field at a time; read codes in chunks of two characters, check accents letter by letter, and check amounts digit by digit from the left.",
+  "explanation": "copy 1 (row 9): no error; copy 2 (row 1): no error; copy 3 (row 2): a digit has been replaced by a look-alike letter (1 → I); copy 4 (row 3): the first name is spelled differently (Luca → Luka); copy 5 (row 4): one digit of the reference is wrong (MS-2958/CL → MS-3958/CL). Copies with an error: 3. Fast route: watch for letters standing in for digits (O for 0, I for 1, B for 8, S for 5); check names letter by letter, including accents and doubled letters; check every digit of the reference, not just its shape.",
   "difficulty": "advanced",
   "id": "AP-23"
  },
@@ -2113,7 +2113,7 @@
    "4"
   ],
   "answer": "B",
-  "explanation": "copy 1 (row 1): two letters of the surname are transposed (García → Garíca); copy 2 (row 2): two letters of the surname are transposed (Petrović → Petroivć); copy 3 (row 7): no error; copy 4 (row 8): no error; copy 5 (row 3): no error. Copies with an error: 2. Method: compare one field at a time; read codes in chunks of two characters, check accents letter by letter, and check amounts digit by digit from the left.",
+  "explanation": "copy 1 (row 1): two letters of the surname are transposed (García → Garíca); copy 2 (row 2): two letters of the surname are transposed (Petrović → Petroivć); copy 3 (row 7): no error; copy 4 (row 8): no error; copy 5 (row 3): no error. Copies with an error: 2. Fast route: read reference codes in pairs (48 | 21), because swapped neighbours jump out that way; check names letter by letter, including accents and doubled letters.",
   "difficulty": "advanced",
   "id": "AP-24"
  },
@@ -2236,7 +2236,7 @@
    "5"
   ],
   "answer": "A",
-  "explanation": "copy 1 (row 1): no error; copy 2 (row 6): no error; copy 3 (row 7): the country code differs (LV → LT); copy 4 (row 3): one digit of the reference is wrong (GR-5895/EH → GR-5395/EH); copy 5 (row 5): no error. Copies with an error: 2. Method: compare one field at a time; read codes in chunks of two characters, check accents letter by letter, and check amounts digit by digit from the left.",
+  "explanation": "copy 1 (row 1): no error; copy 2 (row 6): no error; copy 3 (row 7): the country code differs (LV → LT); copy 4 (row 3): one digit of the reference is wrong (GR-5895/EH → GR-5395/EH); copy 5 (row 5): no error. Copies with an error: 2. Fast route: compare both letters of a country code, not just the first; check every digit of the reference, not just its shape.",
   "difficulty": "advanced",
   "id": "AP-25"
  },
@@ -2359,7 +2359,7 @@
    "5"
   ],
   "answer": "C",
-  "explanation": "copy 1 (row 10): the first name is spelled differently (Clara → Klara); copy 2 (row 4): no error; copy 3 (row 7): a digit has been replaced by a look-alike letter (8 → B); copy 4 (row 1): two letters of the surname are transposed (Georgiou → Geogriou); copy 5 (row 9): the amount differs (45,825.75 → 45,825.57). Copies with an error: 4. Method: compare one field at a time; read codes in chunks of two characters, check accents letter by letter, and check amounts digit by digit from the left.",
+  "explanation": "copy 1 (row 10): the first name is spelled differently (Clara → Klara); copy 2 (row 4): no error; copy 3 (row 7): a digit has been replaced by a look-alike letter (8 → B); copy 4 (row 1): two letters of the surname are transposed (Georgiou → Geogriou); copy 5 (row 9): the amount differs (45,825.75 → 45,825.57). Copies with an error: 4. Fast route: read reference codes in pairs (48 | 21), because swapped neighbours jump out that way; watch for letters standing in for digits (O for 0, I for 1, B for 8, S for 5); check names letter by letter, including accents and doubled letters; compare amounts from the left, digit by digit, including the cents.",
   "difficulty": "advanced",
   "id": "AP-26"
  },
@@ -2482,7 +2482,7 @@
    "3"
   ],
   "answer": "D",
-  "explanation": "copy 1 (row 5): the final two letters of the reference are reversed (RC → CR); copy 2 (row 3): no error; copy 3 (row 8): the amount differs (95,305.25 → 95,305.52); copy 4 (row 10): no error; copy 5 (row 7): two letters of the surname are transposed (Lindqvist → Lindqivst). Copies with an error: 3. Method: compare one field at a time; read codes in chunks of two characters, check accents letter by letter, and check amounts digit by digit from the left.",
+  "explanation": "copy 1 (row 5): the final two letters of the reference are reversed (RC → CR); copy 2 (row 3): no error; copy 3 (row 8): the amount differs (95,305.25 → 95,305.52); copy 4 (row 10): no error; copy 5 (row 7): two letters of the surname are transposed (Lindqvist → Lindqivst). Copies with an error: 3. Fast route: read reference codes in pairs (48 | 21), because swapped neighbours jump out that way; check names letter by letter, including accents and doubled letters; compare amounts from the left, digit by digit, including the cents.",
   "difficulty": "advanced",
   "id": "AP-27"
  },
@@ -2605,7 +2605,7 @@
    "3"
   ],
   "answer": "B",
-  "explanation": "copy 1 (row 6): a digit has been replaced by a look-alike letter (0 → O); copy 2 (row 9): no error; copy 3 (row 5): no error; copy 4 (row 3): no error; copy 5 (row 2): no error. Copies with an error: 1. Method: compare one field at a time; read codes in chunks of two characters, check accents letter by letter, and check amounts digit by digit from the left.",
+  "explanation": "copy 1 (row 6): a digit has been replaced by a look-alike letter (0 → O); copy 2 (row 9): no error; copy 3 (row 5): no error; copy 4 (row 3): no error; copy 5 (row 2): no error. Copies with an error: 1. Fast route: watch for letters standing in for digits (O for 0, I for 1, B for 8, S for 5).",
   "difficulty": "advanced",
   "id": "AP-28"
  },
@@ -2728,7 +2728,7 @@
    "3"
   ],
   "answer": "B",
-  "explanation": "copy 1 (row 5): no error; copy 2 (row 3): no error; copy 3 (row 6): no error; copy 4 (row 10): the country code differs (PL → PT); copy 5 (row 2): no error. Copies with an error: 1. Method: compare one field at a time; read codes in chunks of two characters, check accents letter by letter, and check amounts digit by digit from the left.",
+  "explanation": "copy 1 (row 5): no error; copy 2 (row 3): no error; copy 3 (row 6): no error; copy 4 (row 10): the country code differs (PL → PT); copy 5 (row 2): no error. Copies with an error: 1. Fast route: compare both letters of a country code, not just the first.",
   "difficulty": "advanced",
   "id": "AP-29"
  },
@@ -2851,7 +2851,7 @@
    "3"
   ],
   "answer": "C",
-  "explanation": "copy 1 (row 3): the country code differs (LV → LT); copy 2 (row 9): no error; copy 3 (row 7): no error; copy 4 (row 1): two digits of the reference are transposed (FN-9671/TW → FN-6971/TW); copy 5 (row 2): no error. Copies with an error: 2. Method: compare one field at a time; read codes in chunks of two characters, check accents letter by letter, and check amounts digit by digit from the left.",
+  "explanation": "copy 1 (row 3): the country code differs (LV → LT); copy 2 (row 9): no error; copy 3 (row 7): no error; copy 4 (row 1): two digits of the reference are transposed (FN-9671/TW → FN-6971/TW); copy 5 (row 2): no error. Copies with an error: 2. Fast route: read reference codes in pairs (48 | 21), because swapped neighbours jump out that way; compare both letters of a country code, not just the first.",
   "difficulty": "advanced",
   "id": "AP-30"
  }

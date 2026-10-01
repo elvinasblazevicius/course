@@ -115,8 +115,26 @@ def alter(rng, field, val):
     return new, f"the amount differs ({val} → {new})"
 
 
-AP_TIP = ("Method: compare one field at a time; read codes in chunks of two characters, check accents letter by letter, "
-          "and check amounts digit by digit from the left.")
+def fast_route(descs):
+    """Item-specific tip derived from the kinds of error actually present."""
+    d = " ".join(descs)
+    if not descs or all("no error" in x or "matches" in x for x in descs):
+        return "Fast route: when every field matches, trust it. “No error” is a real answer, not a trick."
+    tips = []
+    if "transposed" in d or "reversed" in d:
+        tips.append("read reference codes in pairs (48 | 21), because swapped neighbours jump out that way")
+    if "look-alike" in d:
+        tips.append("watch for letters standing in for digits (O for 0, I for 1, B for 8, S for 5)")
+    if "accent" in d or "double letter" in d or "surname" in d or "first name" in d:
+        tips.append("check names letter by letter, including accents and doubled letters")
+    if "country code" in d:
+        tips.append("compare both letters of a country code, not just the first")
+    if "amount" in d:
+        tips.append("compare amounts from the left, digit by digit, including the cents")
+    if "one digit of the reference is wrong" in d:
+        tips.append("check every digit of the reference, not just its shape")
+    return "Fast route: " + "; ".join(dict.fromkeys(tips)) + "."
+
 
 
 def ap_field(rng, tgt):
@@ -136,7 +154,7 @@ def ap_field(rng, tgt):
             level = "foundation"
     return {"kind": "field", "reference": rows, "record": rec, "row": r + 1,
             "question": f"The record below was copied from row {r + 1} of the reference table. Which part of the copy, if any, contains an error?",
-            "options": opts, "answer": L4[tgt], "explanation": f"Compare the copy with row {r + 1}: {why}. {AP_TIP}",
+            "options": opts, "answer": L4[tgt], "explanation": f"Compare the copy with row {r + 1}: {why}. {fast_route([] if tgt == 3 else [why])}",
             "difficulty": level}
 
 
@@ -156,7 +174,7 @@ def ap_match(rng, tgt):
     return {"kind": "match", "reference": rows, "candidates": cands,
             "question": "Which of the following records appears in the reference table EXACTLY as shown?",
             "options": [L4[i] for i in range(4)], "answer": L4[tgt],
-            "explanation": " ".join(f"{L4[i]}: {w}." for i, w in enumerate(whys)) + " " + AP_TIP, "difficulty": "intermediate"}
+            "explanation": " ".join(f"{L4[i]}: {w}." for i, w in enumerate(whys)) + " " + fast_route([w for w in whys if "matches" not in w]), "difficulty": "intermediate"}
 
 
 def ap_count(rng, tgt):
@@ -180,7 +198,7 @@ def ap_count(rng, tgt):
     return {"kind": "count", "reference": rows, "copies": copies,
             "question": "Five records were copied from the reference table (the source row is shown for each). How many of the copies contain at least one error?",
             "options": [str(c) for c in counts], "answer": L4[tgt],
-            "explanation": "; ".join(whys) + f". Copies with an error: {n_err}. " + AP_TIP, "difficulty": "advanced"}
+            "explanation": "; ".join(whys) + f". Copies with an error: {n_err}. " + fast_route([w for w in whys if "no error" not in w]), "difficulty": "advanced"}
 
 
 # ------------------------------------------------------------------ prioritising & organising
@@ -255,7 +273,9 @@ def po_meeting(rng, tgt, ans_day):
         return {"kind": "meeting", "grid": {"columns": ["Start"] + DAYS, "rows": grid,
                                              "legend": ", ".join(f"{p[0]} = {p}" for p in ppl), "note": GRID_NOTE},
                 "question": q, "options": [lab(x) for x in opts], "answer": L4[tgt],
-                "explanation": "Check the slots in time order, applying every condition. " + "; ".join(whys) + ".",
+                "explanation": (f"Fast route: cross out {DAYS_FULL[excl_day]} and every slot after {SLOTS[latest]}, ignore {opt}, then scan the "
+                                f"remaining slots in time order for the first one without {req[0][0]}, {req[1][0]} or {req[2][0]}. "
+                                + "; ".join(whys) + "."),
                 "difficulty": "intermediate"}
     raise RuntimeError
 

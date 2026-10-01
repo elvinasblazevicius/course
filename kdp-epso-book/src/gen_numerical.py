@@ -2,6 +2,7 @@
 import json
 import math
 import random
+import re
 from collections import Counter
 from pathlib import Path
 
@@ -79,6 +80,20 @@ class Builder:
                 if ok(p, chosen):
                     chosen.append(p); FALLBACKS["fallback"] += 1
         assert len(chosen) == 3, (correct, pool)
+        if abs_gap is None and min(abs(p - correct) / correct for p in chosen) > 0.10:
+            # exam-realistic near miss: make one option close (5-8%) so estimation alone cannot decide
+            def num(t):
+                mm = re.search(r"[\d,]+(?:\.(\d+))?", t)
+                return float(mm.group(0).replace(",", "")), len(mm.group(1) or "")
+            cv, dec = num(cf)
+            for m in self.rng.sample([1.06, 0.94, 1.07, 0.93, 1.05, 0.95, 1.08, 0.92], 8):
+                v = correct * m
+                nv, _ = num(fmt(v))
+                if abs(nv - cv) < 2 * 10 ** (-dec) - 1e-9:
+                    continue
+                if ok(v, chosen[:2]):
+                    chosen[2] = v; FALLBACKS["near"] += 1
+                    break
         self.rng.shuffle(chosen)
         vals = chosen[:target_idx] + [correct] + chosen[target_idx:]
         strs = [fmt(v) for v in vals]
@@ -254,11 +269,20 @@ def t_per_capita(rng, B, tgt):
                 difficulty="intermediate", skill="Per-capita comparison")
 
 
+WEIGHTED_CTX = [
+    ("Staff numbers and average monthly salary by unit", "Unit", "Staff", "Average monthly salary (€)", "monthly salary across all staff", 38, 92, 100, fmt_eur),
+    ("Candidates and average test score by test centre", "Centre", "Candidates", "Average score (points)", "score across all candidates", 52, 88, 1, lambda x: f"{x:.1f} points"),
+    ("Training participants and average course length by department", "Department", "Participants", "Average hours", "number of training hours per participant", 6, 38, 1, lambda x: f"{x:.1f} hours"),
+    ("Translation requests and average turnaround by language unit", "Unit", "Requests", "Average days", "turnaround time per request", 3, 19, 1, lambda x: f"{x:.2f} days"),
+]
+
+
 def t_weighted(rng, B, tgt):
+    title, col0, col1, col2, what, lo, hi, mult, ff = rng.choice(WEIGHTED_CTX)
     while True:
-        units = rng.sample(UNITS, 4)
+        units = rng.sample(["North", "South", "East", "West", "Central"] if col0 != "Unit" else UNITS, 4)
         staff = [rng.randint(6, 48) for _ in units]
-        sal = [rng.randint(38, 92) * 100 for _ in units]
+        sal = [rng.randint(lo, hi) * mult for _ in units]
         tot = sum(s * w for s, w in zip(staff, sal))
         ans = tot / sum(staff)
         simple = sum(sal) / 4
@@ -269,13 +293,12 @@ def t_weighted(rng, B, tgt):
     two = sorted(range(4), key=lambda k: -staff[k])[:2]
     two_avg = sum(staff[k] * sal[k] for k in two) / sum(staff[k] for k in two)
     pool = [simple, excl, (max(sal) + min(sal)) / 2, two_avg]
-    opts, key = B.options(ans, pool, fmt_eur, tgt, 0.02)
-    fig = table_fig("Staff numbers and average monthly salary by unit", ["Unit", "Staff", "Average monthly salary (€)"],
-                    [[u, str(s), fmt_num(w)] for u, s, w in zip(units, staff, sal)])
-    q = "What is the average monthly salary across all staff in the four units combined (to the nearest euro)?"
-    expl = ["Total salary bill = " + " + ".join(f"{s} × {fmt_num(w)}" for s, w in zip(staff, sal)) + f" = {fmt_eur(tot)}.",
-            f"Total staff = {sum(staff)}. Weighted average = {fmt_eur(tot)} ÷ {sum(staff)} ≈ {fmt_eur(ans)}.",
-            f"Typical error: the simple average of the four unit averages ({fmt_eur(simple)}) ignores the different unit sizes."]
+    opts, key = B.options(ans, pool, ff, tgt, 0.02)
+    fig = table_fig(title, [col0, col1, col2], [[u, str(s), fmt_num(w)] for u, s, w in zip(units, staff, sal)])
+    q = f"What is the average {what} in the four {col0.lower()}s combined?"
+    expl = ["Weighted total = " + " + ".join(f"{s} × {fmt_num(w)}" for s, w in zip(staff, sal)) + f" = {fmt_num(tot)}.",
+            f"Total {col1.lower()} = {sum(staff)}. Weighted average = {fmt_num(tot)} ÷ {sum(staff)} ≈ {ff(ans)}.",
+            f"Typical error: the simple average of the four averages ({ff(simple)}) ignores the different group sizes."]
     return dict(figure=fig, question=q, options=opts, answer=key, steps=expl, difficulty="intermediate", skill="Weighted average")
 
 
@@ -293,8 +316,15 @@ def t_projection(rng, B, tgt):
                     [[c, fmt_num(v), f"{r}%"] for c, v, r in zip(towns, vals, rates)])
     q = (f"If the amount collected in {towns[k]} grows at its expected annual rate, compounded, approximately how many tonnes "
          f"will be collected three years from now?")
-    expl = [f"Compound growth: {fmt_num(vals[k])} × {g:g}³ = {fmt_num(vals[k])} × {g ** n:.4f} ≈ {fmt_num(ans)} tonnes.",
-            f"Typical error: simple growth, {fmt_num(vals[k])} × (1 + 3 × {rates[k] / 100:g}) = {fmt_num(pool[0])} tonnes, ignores compounding; others apply the rate for the wrong number of years."]
+    f = lambda x: fmt_num(x) + " t"
+    names = [(pool[0], f"simple growth, {fmt_num(vals[k])} × (1 + 3 × {rates[k] / 100:g}) = {f(pool[0])}, ignores compounding"),
+             (pool[1], f"compounding for only two years gives {f(pool[1])}"),
+             (pool[2], f"compounding for four years gives {f(pool[2])}"),
+             (pool[3], f"simple growth over four years gives {f(pool[3])}")]
+    printed = [t for v, t in names if f(v) in opts]
+    expl = [f"Compound growth: {fmt_num(vals[k])} × {g:g}³ = {fmt_num(vals[k])} × {g ** n:.4f} ≈ {fmt_num(ans)} tonnes."]
+    if printed:
+        expl.append("Traps among the options: " + "; ".join(printed) + ".")
     return dict(figure=fig, question=q, options=opts, answer=key, steps=expl, difficulty="advanced", skill="Compound growth")
 
 
@@ -321,7 +351,8 @@ def t_scaling(rng, B, tgt):
          f"how many women will {units[k]} employ?")
     expl = [f"{units[k]} has {women[k]} women and {men[k]} men ({tot} staff).",
             f"New total = {tot} × {1 + inc / 100:g} = {total_new:g}; women = {total_new:g} × {women[k]}/{tot} = {ans:g}.",
-            f"Shortcut: if the proportion is unchanged, the number of women also grows by {inc}%: {women[k]} × {1 + inc / 100:g} = {ans:g}."]
+            f"Shortcut: if the proportion is unchanged, the number of women also grows by {inc}%: {women[k]} × {1 + inc / 100:g} = {ans:g}.",
+            f"Typical errors: applying the whole increase to women only ({women[k] + round(tot * inc / 100)}) or calculating the number of men instead."]
     return dict(figure=fig, question=q, options=opts, answer=key, steps=expl, difficulty="foundation", skill="Proportional scaling")
 
 
@@ -341,7 +372,7 @@ def t_reverse(rng, B, tgt):
     expl = [f"This year = last year × {1 + ch[k] / 100:g}, so last year = this year ÷ {1 + ch[k] / 100:g}.",
             f"{fmt_num(new[k], 1)} ÷ {1 + ch[k] / 100:g} = {fmt_num(ans, 1)} (€ thousand).",
             f"Typical error: {'reducing' if ch[k] > 0 else 'increasing'} this year’s figure by {abs(ch[k])}% applies the percentage to the wrong base."]
-    return dict(figure=fig, question=q, options=opts, answer=key, steps=expl, difficulty="advanced", skill="Reverse percentage")
+    return dict(figure=fig, question=q, options=opts, answer=key, steps=expl, difficulty="intermediate", skill="Reverse percentage")
 
 
 def t_bar_increase(rng, B, tgt):
@@ -433,7 +464,8 @@ def t_ratio_missing(rng, B, tgt):
         opts, key = B.options(ans, pool, lambda x: fmt_num(round(x)), tgt, 0.04)
         q = f"How many applications from {the(ctry[k])} were rejected?"
         expl = [f"Approved = {fmt_num(apps[k])} × {rates[k]}% = {fmt_num(approved[k])}.",
-                f"Rejected = {fmt_num(apps[k])} − {fmt_num(approved[k])} = {fmt_num(ans)}."]
+                f"Rejected = {fmt_num(apps[k])} − {fmt_num(approved[k])} = {fmt_num(ans)}.",
+                "Typical errors: giving the number approved instead of rejected, or reading another country’s row."]
         diff = "foundation"
     else:
         tr = rng.choice([30, 40, 45, 50])
@@ -445,7 +477,8 @@ def t_ratio_missing(rng, B, tgt):
         q = (f"If the number of applications stayed the same, how many additional applications from {the(ctry[k])} would need to be approved "
              f"for its approval rate to reach {tr}%?")
         expl = [f"Approvals needed = {fmt_num(apps[k])} × {tr}% = {fmt_num(apps[k] * tr // 100)}.",
-                f"Currently approved = {fmt_num(apps[k])} × {rates[k]}% = {fmt_num(approved[k])}. Additional approvals = {fmt_num(ans)}."]
+                f"Currently approved = {fmt_num(apps[k])} × {rates[k]}% = {fmt_num(approved[k])}. Additional approvals = {fmt_num(ans)}.",
+                "Typical error: giving the total number of approvals needed instead of the additional ones."]
         diff = "intermediate"
     fig = table_fig("Grant applications received and approval rate", ["Country", "Applications", "Approval rate"],
                     [[c, fmt_num(a), f"{r}%"] for c, a, r in zip(ctry, apps, rates)])
@@ -559,8 +592,98 @@ def t_avg_time(rng, B, tgt):
     return dict(figure=fig, question=q, options=opts, answer=key, steps=expl, difficulty="intermediate", skill="Averages over time")
 
 
+def t_share_pp(rng, B, tgt):
+    secs = rng.sample(SECTORS, 5)
+    y1 = [rng.randint(15, 90) * 10 for _ in secs]
+    y2 = [round(v * rng.uniform(0.85, 1.35) / 10) * 10 for v in y1]
+    k = rng.randrange(5)
+    s1, s2 = y1[k] / sum(y1) * 100, y2[k] / sum(y2) * 100
+    if abs(s2 - s1) < 1.0:
+        y2[k] = round(y2[k] * (1.3 if s2 >= s1 else 0.7) / 10) * 10
+        s2 = y2[k] / sum(y2) * 100
+    ans = abs(s2 - s1)
+    word = "rise" if s2 > s1 else "fall"
+    pool = [abs(y2[k] - y1[k]) / y1[k] * 100, abs(s2 - s1) / s1 * 100, abs(y2[k] / sum(y1) - y1[k] / sum(y1)) * 100, s2 if s2 != ans else None]
+    opts, key = B.options(ans, pool, lambda x: f"{x:.1f} percentage points", tgt, 0.06, band=(0.15, 8))
+    fig = table_fig("Programme spending by sector (€ million)", ["Sector", "Year 1", "Year 2"],
+                    [[c, fmt_num(a), fmt_num(b)] for c, a, b in zip(secs, y1, y2)] + [["Total", fmt_num(sum(y1)), fmt_num(sum(y2))]])
+    q = f"By how many percentage points did {secs[k]}’s share of total spending {word} between Year 1 and Year 2?"
+    expl = [f"Year 1 share = {fmt_num(y1[k])} ÷ {fmt_num(sum(y1))} = {s1:.2f}%. Year 2 share = {fmt_num(y2[k])} ÷ {fmt_num(sum(y2))} = {s2:.2f}%.",
+            f"Change = {s2:.2f} − {s1:.2f} = {signed(s2 - s1, 2)} points, i.e. a {word} of about {ans:.1f} percentage points.",
+            "Typical errors: giving the percentage change in the amount spent, or the relative change in the share, instead of the change in percentage points."]
+    return dict(figure=fig, question=q, options=opts, answer=key, steps=expl, difficulty="advanced", skill="Shares and percentage points")
+
+
+def t_harmonic(rng, B, tgt):
+    while True:
+        towns = rng.sample(TOWNS, 2)
+        d = rng.choice([60, 80, 90, 120, 150, 180])
+        v1, v2 = rng.sample([40, 45, 50, 60, 72, 75, 80, 90, 100, 120], 2)
+        ans = 2 * d / (d / v1 + d / v2)
+        if abs(ans - round(ans, 1)) < 1e-9 or True:
+            break
+    simple = (v1 + v2) / 2
+    pool = [simple, max(v1, v2) - (max(v1, v2) - min(v1, v2)) / 4, ans * 2 / 1.9 if False else None, min(v1, v2) + (simple - min(v1, v2)) * 0.5]
+    opts, key = B.options(ans, pool, lambda x: f"{x:.1f} km/h", tgt, 0.03, band=(0.5, 2))
+    fig = table_fig("Delivery van journey between two depots", ["Leg", "Distance (km)", "Average speed (km/h)"],
+                    [[f"{towns[0]} → {towns[1]}", str(d), str(v1)], [f"{towns[1]} → {towns[0]}", str(d), str(v2)]])
+    q = "What was the van’s average speed for the whole round trip?"
+    t1, t2 = d / v1, d / v2
+    expl = [f"Average speed = total distance ÷ total time. Times: {d} ÷ {v1} = {t1:.3f} h and {d} ÷ {v2} = {t2:.3f} h.",
+            f"Average = {2 * d} ÷ {t1 + t2:.3f} ≈ {ans:.1f} km/h.",
+            f"Typical error: averaging the two speeds ({simple:.1f} km/h). The van spends longer at the lower speed, so the true average is lower."]
+    return dict(figure=fig, question=q, options=opts, answer=key, steps=expl, difficulty="advanced", skill="Average speed")
+
+
+def t_successive(rng, B, tgt):
+    progs = rng.sample(["Membership fees", "Software licences", "Office rents", "Conference fees", "Translation tariffs"], 3)
+    ch1 = [rng.choice([-20, -15, -10, 10, 15, 20, 25, 30]) for _ in progs]
+    ch2 = [rng.choice([-25, -20, -15, -10, 10, 15, 20]) for _ in progs]
+    k = rng.randrange(3)
+    if ch1[k] + ch2[k] == 0 or ch1[k] * ch2[k] > 0 and rng.random() < 0.5:
+        ch2[k] = -ch2[k] if ch2[k] * ch1[k] > 0 else ch2[k]
+    net = ((1 + ch1[k] / 100) * (1 + ch2[k] / 100) - 1) * 100
+    if abs(net) < 1:
+        ch2[k] += 5; net = ((1 + ch1[k] / 100) * (1 + ch2[k] / 100) - 1) * 100
+    ans = abs(net)
+    word = "higher" if net > 0 else "lower"
+    pool = [abs(ch1[k] + ch2[k]), abs(ch1[k]) + abs(ch2[k]), abs(ch1[k] * ch2[k]) / 100, ans * 1.5]
+    opts, key = B.options(ans, pool, lambda x: f"{x:.1f}%", tgt, 0.05, band=(0.1, 10))
+    fig = table_fig("Price changes over two years", ["Item", "Change in Year 1", "Change in Year 2"],
+                    [[pname, signed(a, 0) + "%", signed(b, 0) + "%"] for pname, a, b in zip(progs, ch1, ch2)])
+    q = f"Compared with the start of Year 1, by what percentage are {progs[k].lower()} {word} at the end of Year 2?"
+    expl = [f"Successive changes multiply: (1 {'+' if ch1[k] > 0 else '−'} {abs(ch1[k]) / 100:g}) × (1 {'+' if ch2[k] > 0 else '−'} {abs(ch2[k]) / 100:g}) = {(1 + ch1[k] / 100) * (1 + ch2[k] / 100):.4f}.",
+            f"So the price is {signed(net, 1)}% compared with the start, i.e. about {ans:.1f}% {word}.",
+            f"Typical error: adding the two changes ({signed(ch1[k] + ch2[k], 0)}%). Percentages applied one after another do not add."]
+    return dict(figure=fig, question=q, options=opts, answer=key, steps=expl, difficulty="advanced", skill="Successive percentage changes")
+
+
+def t_currency_change(rng, B, tgt):
+    n, code, r0, dp = rng.choice(CURRENCIES)
+    r1 = round(r0 * rng.uniform(0.95, 1.0), dp); r2 = round(r0 * rng.uniform(1.03, 1.12), dp)
+    if rng.random() < 0.5:
+        r1, r2 = r2, r1
+    p1 = round(r1 * rng.uniform(300, 700) / (10 if r0 > 50 else 1)) * (10 if r0 > 50 else 1)
+    inc = rng.choice([4, 5, 6, 8, 10, 12])
+    p2 = round(p1 * (1 + inc / 100), 2 if r0 < 50 else 0)
+    e1, e2 = p1 / r1, p2 / r2
+    net = (e2 - e1) / e1 * 100
+    ans = abs(net); word = "risen" if net > 0 else "fallen"
+    pool = [inc, abs((r2 - r1) / r1 * 100), abs(inc - (r2 - r1) / r1 * 100), abs(p2 * r2 - p1 * r1) / (p1 * r1) * 100]
+    opts, key = B.options(ans, pool, lambda x: f"{x:.1f}%", tgt, 0.06, band=(0.05, 20))
+    fig = table_fig(f"A supplier’s price in {n} and the exchange rate", ["", "Year 1", "Year 2"],
+                    [[f"Price ({code})", fmt_num(p1, 0 if r0 > 50 else 2), fmt_num(p2, 0 if r0 > 50 else 2)],
+                     [f"{code} per €1", f"{r1:.{dp}f}", f"{r2:.{dp}f}"]])
+    q = f"In euro terms, by approximately what percentage has the supplier’s price {word} between Year 1 and Year 2?"
+    expl = [f"Convert each year to euros: Year 1 {fmt_num(p1, 2)} ÷ {r1:.{dp}f} = {fmt_eur(e1, 2)}; Year 2 {fmt_num(p2, 2)} ÷ {r2:.{dp}f} = {fmt_eur(e2, 2)}.",
+            f"Change = ({fmt_eur(e2, 2)} − {fmt_eur(e1, 2)}) ÷ {fmt_eur(e1, 2)} ≈ {signed(net, 1)}%.",
+            f"Typical errors: quoting the {inc}% rise in local currency, or the change in the exchange rate alone; both ignore the other effect."]
+    return dict(figure=fig, question=q, options=opts, answer=key, steps=expl, difficulty="advanced", skill="Currency and percentage change")
+
+
 TEMPLATES = [t_pct_change, t_share, t_currency, t_points, t_per_capita, t_weighted, t_projection, t_scaling,
-             t_reverse, t_bar_increase, t_pie, t_speed, t_ratio_missing, t_two_tables, t_index, t_ratio, t_avg_time]
+             t_reverse, t_bar_increase, t_pie, t_speed, t_ratio_missing, t_two_tables, t_index, t_ratio, t_avg_time,
+             t_share_pp, t_harmonic, t_successive, t_currency_change]
 
 
 def balanced_targets(n, rng):
@@ -601,7 +724,7 @@ def main(n=105, seed=20261002):
     # keys in final practice order must not run 3+ identical
     out = {"practice": practice, "mocks": mocks}
     (ROOT / "content" / "numerical.json").write_text(json.dumps(out, ensure_ascii=False, indent=1))
-    print("numerical", len(practice), len(mocks), Counter(i["answer"] for i in items), FALLBACKS["fallback"])
+    print("numerical", len(practice), len(mocks), Counter(i["answer"] for i in items), dict(FALLBACKS))
     print(Counter(i["skill"] for i in items))
     print(Counter(i["difficulty"] for i in practice))
     seq = "".join(i["answer"] for i in practice)

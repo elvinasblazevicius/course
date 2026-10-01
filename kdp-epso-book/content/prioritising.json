@@ -71,7 +71,7 @@
    "Thursday 15:00"
   ],
   "answer": "A",
-  "explanation": "Check the slots in time order, applying every condition. Thursday 09:00: Bruno, Chiara, Eleni are all free and no earlier slot meets every condition — correct (Filip is busy, but attendance is optional); Wednesday 10:00: everyone required is free, but Wednesday is excluded; Tuesday 09:00: Bruno is busy; Thursday 15:00: possible, but not the earliest suitable slot.",
+  "explanation": "Fast route: cross out Wednesday and every slot after 15:00, ignore Filip, then scan the remaining slots in time order for the first one without B, C or E. Thursday 09:00: Bruno, Chiara, Eleni are all free and no earlier slot meets every condition — correct (Filip is busy, but attendance is optional); Wednesday 10:00: everyone required is free, but Wednesday is excluded; Tuesday 09:00: Bruno is busy; Thursday 15:00: possible, but not the earliest suitable slot.",
   "difficulty": "intermediate",
   "id": "PO-01"
  },
@@ -147,7 +147,7 @@
    "Wednesday 09:00"
   ],
   "answer": "D",
-  "explanation": "Check the slots in time order, applying every condition. Monday 09:00: everyone required is free, but Monday is excluded; Tuesday 10:00: Chiara is busy; Thursday 10:00: possible, but not the earliest suitable slot; Wednesday 09:00: Filip, Chiara, Bruno are all free and no earlier slot meets every condition — correct (Eleni is busy, but attendance is optional).",
+  "explanation": "Fast route: cross out Monday and every slot after 14:00, ignore Eleni, then scan the remaining slots in time order for the first one without F, C or B. Monday 09:00: everyone required is free, but Monday is excluded; Tuesday 10:00: Chiara is busy; Thursday 10:00: possible, but not the earliest suitable slot; Wednesday 09:00: Filip, Chiara, Bruno are all free and no earlier slot meets every condition — correct (Eleni is busy, but attendance is optional).",
   "difficulty": "intermediate",
   "id": "PO-02"
  },
@@ -223,7 +223,7 @@
    "Thursday 10:00"
   ],
   "answer": "C",
-  "explanation": "Check the slots in time order, applying every condition. Monday 10:00: everyone required is free, but Monday is excluded; Tuesday 09:00: Filip is busy; Tuesday 15:00: Bruno, Dawid, Filip are all free and no earlier slot meets every condition — correct (Chiara is busy, but attendance is optional); Thursday 10:00: possible, but not the earliest suitable slot.",
+  "explanation": "Fast route: cross out Monday and every slot after 15:00, ignore Chiara, then scan the remaining slots in time order for the first one without B, D or F. Monday 10:00: everyone required is free, but Monday is excluded; Tuesday 09:00: Filip is busy; Tuesday 15:00: Bruno, Dawid, Filip are all free and no earlier slot meets every condition — correct (Chiara is busy, but attendance is optional); Thursday 10:00: possible, but not the earliest suitable slot.",
   "difficulty": "intermediate",
   "id": "PO-03"
  },
@@ -299,7 +299,7 @@
    "Monday 11:00"
   ],
   "answer": "B",
-  "explanation": "Check the slots in time order, applying every condition. Wednesday 10:00: everyone required is free, but Wednesday is excluded; Thursday 11:00: Filip, Eleni, Chiara are all free and no earlier slot meets every condition — correct (Dawid is busy, but attendance is optional); Monday 16:00: everyone required is free, but it starts after 15:00; Monday 11:00: Filip is busy.",
+  "explanation": "Fast route: cross out Wednesday and every slot after 15:00, ignore Dawid, then scan the remaining slots in time order for the first one without F, E or C. Wednesday 10:00: everyone required is free, but Wednesday is excluded; Thursday 11:00: Filip, Eleni, Chiara are all free and no earlier slot meets every condition — correct (Dawid is busy, but attendance is optional); Monday 16:00: everyone required is free, but it starts after 15:00; Monday 11:00: Filip is busy.",
   "difficulty": "intermediate",
   "id": "PO-04"
  },
@@ -375,7 +375,7 @@
    "Wednesday 10:00"
   ],
   "answer": "C",
-  "explanation": "Check the slots in time order, applying every condition. Monday 09:00: everyone required is free, but Monday is excluded; Tuesday 09:00: Filip is busy; Tuesday 11:00: Chiara, Bruno, Filip are all free and no earlier slot meets every condition — correct (Eleni is busy, but attendance is optional); Wednesday 10:00: possible, but not the earliest suitable slot.",
+  "explanation": "Fast route: cross out Monday and every slot after 15:00, ignore Eleni, then scan the remaining slots in time order for the first one without C, B or F. Monday 09:00: everyone required is free, but Monday is excluded; Tuesday 09:00: Filip is busy; Tuesday 11:00: Chiara, Bruno, Filip are all free and no earlier slot meets every condition — correct (Eleni is busy, but attendance is optional); Wednesday 10:00: possible, but not the earliest suitable slot.",
   "difficulty": "intermediate",
   "id": "PO-05"
  },
@@ -451,7 +451,7 @@
    "Wednesday 10:00"
   ],
   "answer": "D",
-  "explanation": "Check the slots in time order, applying every condition. Monday 11:00: everyone required is free, but Monday is excluded; Thursday 09:00: possible, but not the earliest suitable slot; Tuesday 09:00: Chiara is busy; Wednesday 10:00: Dawid, Filip, Chiara are all free and no earlier slot meets every condition — correct (Anna is busy, but attendance is optional).",
+  "explanation": "Fast route: cross out Monday and every slot after 15:00, ignore Anna, then scan the remaining slots in time order for the first one without D, F or C. Monday 11:00: everyone required is free, but Monday is excluded; Thursday 09:00: possible, but not the earliest suitable slot; Tuesday 09:00: Chiara is busy; Wednesday 10:00: Dawid, Filip, Chiara are all free and no earlier slot meets every condition — correct (Anna is busy, but attendance is optional).",
   "difficulty": "intermediate",
   "id": "PO-06"
  },
@@ -527,7 +527,7 @@
    "Monday 14:00"
   ],
   "answer": "B",
-  "explanation": "Check the slots in time order, applying every condition. Thursday 15:00: possible, but not the earliest suitable slot; Tuesday 09:00: Anna, Eleni, Bruno are all free and no earlier slot meets every condition — correct (Dawid is busy, but attendance is optional); Monday 16:00: everyone required is free, but it starts after 15:00; Monday 14:00: Anna is busy.",
+  "explanation": "Fast route: cross out Wednesday and every slot after 15:00, ignore Dawid, then scan the remaining slots in time order for the first one without A, E or B. Thursday 15:00: possible, but not the earliest suitable slot; Tuesday 09:00: Anna, Eleni, Bruno are all free and no earlier slot meets every condition — correct (Dawid is busy, but attendance is optional); Monday 16:00: everyone required is free, but it starts after 15:00; Monday 14:00: Anna is busy.",
   "difficulty": "intermediate",
   "id": "PO-07"
  },
@@ -603,7 +603,7 @@
    "Thursday 10:00"
   ],
   "answer": "A",
-  "explanation": "Check the slots in time order, applying every condition. Thursday 09:00: Bruno, Anna, Chiara are all free and no earlier slot meets every condition — correct (Dawid is busy, but attendance is optional); Tuesday 10:00: everyone required is free, but Tuesday is excluded; Wednesday 09:00: Anna is busy; Thursday 10:00: possible, but not the earliest suitable slot.",
+  "explanation": "Fast route: cross out Tuesday and every slot after 15:00, ignore Dawid, then scan the remaining slots in time order for the first one without B, A or C. Thursday 09:00: Bruno, Anna, Chiara are all free and no earlier slot meets every condition — correct (Dawid is busy, but attendance is optional); Tuesday 10:00: everyone required is free, but Tuesday is excluded; Wednesday 09:00: Anna is busy; Thursday 10:00: possible, but not the earliest suitable slot.",
   "difficulty": "intermediate",
   "id": "PO-08"
  },
@@ -679,7 +679,7 @@
    "Wednesday 09:00"
   ],
   "answer": "C",
-  "explanation": "Check the slots in time order, applying every condition. Monday 09:00: everyone required is free, but Monday is excluded; Thursday 10:00: possible, but not the earliest suitable slot; Wednesday 15:00: Bruno, Filip, Anna are all free and no earlier slot meets every condition — correct (Dawid is busy, but attendance is optional); Wednesday 09:00: Bruno is busy.",
+  "explanation": "Fast route: cross out Monday and every slot after 15:00, ignore Dawid, then scan the remaining slots in time order for the first one without B, F or A. Monday 09:00: everyone required is free, but Monday is excluded; Thursday 10:00: possible, but not the earliest suitable slot; Wednesday 15:00: Bruno, Filip, Anna are all free and no earlier slot meets every condition — correct (Dawid is busy, but attendance is optional); Wednesday 09:00: Bruno is busy.",
   "difficulty": "intermediate",
   "id": "PO-09"
  },

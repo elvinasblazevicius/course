@@ -4,11 +4,11 @@ All files are in `build/`. To regenerate everything, run `./build.sh` (it needs 
 
 | Format | Manuscript | Cover | Trim / spec |
 |---|---|---|---|
-| Paperback | `interior.pdf` (343 pp) | `cover_paperback.pdf` (17.5224 × 11.25 in, spine 0.7724 in) | 8.25 × 11 in, black & white, white paper, **no bleed**, matte |
-| Hardcover (case laminate) | `interior.pdf` (same file) | `cover_hardcover.pdf` (19.0354 × 12.418 in, spine 0.9594 in) | 8.25 × 11 in, black & white, white paper, matte |
-| Kindle eBook | `kindle.epub` (EPUBCheck: 0 errors/0 warnings, 1.2 MB) | `kindle_cover.jpg` (1600 × 2560 px) | Reflowable |
+| Paperback | `interior.pdf` (377 pp) | `cover_paperback.pdf` (17.5990 × 11.25 in, spine 0.8490 in) | 8.25 × 11 in, black & white, white paper, **no bleed**, matte |
+| Hardcover (case laminate) | `interior.pdf` (same file) | `cover_hardcover.pdf` (19.1120 × 12.418 in, spine 1.0360 in) | 8.25 × 11 in, black & white, white paper, matte |
+| Kindle eBook | `kindle.epub` (EPUBCheck: 0 errors/0 warnings, 1.1 MB) | `kindle_cover.jpg` (1600 × 2560 px) | Reflowable |
 
-> **Hardcover cover check (do this once):** in KDP, open *Cover → Download template* for 8.25 × 11 in, white paper and 343 pages. If the template's total width, height or spine differ from the values above, regenerate with the exact numbers:
+> **Hardcover cover check (do this once):** in KDP, open *Cover → Download template* for 8.25 × 11 in, white paper and 377 pages. If the template's total width, height or spine differ from the values above, regenerate with the exact numbers:
 > `python src/cover.py --hc-width <W> --hc-height <H> --hc-spine <S>`
 > All text sits well inside the safe zone, so a small difference only changes the background.
 
@@ -71,9 +71,9 @@ All files are in `build/`. To regenerate everything, run `./build.sh` (it needs 
 
 | Format | Suggested list price | Approx. US print cost | Approx. royalty per sale |
 |---|---|---|---|
-| Paperback | $24.99 / €24.99 / £21.99 | large trim: $1.00 + 343 × $0.017 ≈ $6.83 | 60% × 24.99 − 6.83 ≈ **$8.16** |
-| Hardcover | $34.99 / €34.99 / £29.99 | large trim: roughly $6.80 + 343 × $0.017 ≈ $12.63 (confirm) | 60% × 34.99 − 12.63 ≈ **$8.36** |
-| Kindle | $9.99 / €9.99 / £8.99 (70% band) | delivery ≈ 1.2 MB × $0.15 ≈ $0.18 | ≈ **$6.87** |
+| Paperback | $24.99 / €24.99 / £21.99 | large trim: $1.00 + 377 × $0.017 ≈ $7.41 | 60% × 24.99 − 7.41 ≈ **$7.58** |
+| Hardcover | $34.99 / €34.99 / £29.99 | large trim: roughly $6.80 + 377 × $0.017 ≈ $13.21 (confirm) | 60% × 34.99 − 13.21 ≈ **$7.78** |
+| Kindle | $9.99 / €9.99 / £8.99 (70% band) | delivery ≈ 1.1 MB × $0.15 ≈ $0.17 | ≈ **$6.88** |
 
 The core EU markets are **Amazon.de, .fr, .es, .it, .nl, .pl, .se and .com.be**. Enable expanded distribution for the paperback.
 

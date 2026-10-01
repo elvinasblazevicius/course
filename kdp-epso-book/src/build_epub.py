@@ -188,11 +188,33 @@ def sol_html(it, anchor, q_href, label):
     return h + f'<p class="small"><a href="{q_href}">Back to the question</a></p>'
 
 
+ABS_EXAMPLE = {
+    "series": [[{"kind": "arrow", "rot": r}, {"kind": "orbit", "shape": "circle", "pos": p, "fill": "black"}]
+               for r, p in ((0, 2), (2, 1), (4, 0), (6, 7), (0, 6))],
+    "options": [[{"kind": "arrow", "rot": r}, {"kind": "orbit", "shape": "circle", "pos": p, "fill": "black"}]
+                for r, p in ((2, 6), (4, 5), (2, 5), (6, 5), (2, 4))],
+}
+
+
 def guide_html(text):
     chapters = []
     cur = None
     in_list = None
-    for line in text.splitlines():
+    table = []
+    for line in text.splitlines() + [""]:
+        if line.startswith("|"):
+            table.append([c.strip() for c in line.strip().strip("|").split("|")])
+            continue
+        if table and cur is not None:
+            h = "<table><tr>" + "".join(f"<th>{md_inline(c)}</th>" for c in table[0]) + "</tr>"
+            h += "".join("<tr>" + "".join(f"<td>{md_inline(c)}</td>" for c in r) + "</tr>" for r in table[1:])
+            cur[1] += h + "</table>"; table = []
+        if line.strip() == "[[abstract-example]]" and cur is not None:
+            s1 = png_of(abstract_row(ABS_EXAMPLE["series"], size=60, question_mark=True), "guide_abs_s", dpi=230, colors=4)
+            s2 = png_of(abstract_row(ABS_EXAMPLE["options"], size=60, labels=list("ABCDE")), "guide_abs_o", dpi=230, colors=4)
+            cur[1] += (f'<div class="fig"><img src="{s1}" alt="Worked example series"/></div><p class="stem">Answer options</p>'
+                       f'<div class="fig"><img src="{s2}" alt="Worked example options A to E"/></div>')
+            continue
         if line.startswith("# "):
             cur = [line[2:].strip(), ""]; chapters.append(cur); in_list = None; continue
         if cur is None:

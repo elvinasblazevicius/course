@@ -150,11 +150,22 @@ def quad_track(rng):
             "sig": [("quad", d)]}
 
 
+def fshape_track(rng, level):
+    start = rng.randrange(4)
+    d = rng.choice([1, -1])
+    rot = [(start + d * i) % 4 for i in range(6)]
+    m0 = rng.randrange(2)
+    mir = [(m0 + i) % 2 for i in range(6)]
+    return {"kind": "fshape", "rot4": rot, "mir": mir,
+            "desc": [f"the F-shape turns 90° {DIR[d]} each time", "it is also mirrored (flipped left to right) in every other figure"],
+            "sig": [("frot", d), ("mir",)]}
+
+
 TEMPLATES = {
     "foundation": ["pos", "rot", "dots", "posfill", "pos", "rot"],
-    "intermediate": ["rot+pos", "polyfill", "dots+pos", "quad+pos", "posfill", "rot+dots", "poly+pos"],
+    "intermediate": ["rot+pos", "polyfill", "dots+pos", "quad+pos", "posfill", "rot+dots", "poly+pos", "flip", "flip"],
     "advanced": ["rot+posfill", "polyfill+pos", "dots+posfill", "rot+pos+pos2", "quad+posfill",
-                 "polyfill+posfill", "rot+posfill+pos2", "quad+pos+pos2"],
+                 "polyfill+posfill", "rot+posfill+pos2", "quad+pos+pos2", "flip+pos", "flip+posfill"],
 }
 
 
@@ -179,11 +190,13 @@ def build_tracks(rng, level, tmpl):
             t.append(dots_track(rng, level))
         elif p == "quad":
             t.append(quad_track(rng))
+        elif p == "flip":
+            t.append(fshape_track(rng, level))
     return t
 
 
 ATTRS = {"orbit": [("pos", 8), ("fill", 3)], "arrow": [("rot", 8)], "polygon": [("sides", None), ("fill", 3)],
-         "dots": [("count", None)], "quadrant": [("quad", 4)]}
+         "dots": [("count", None)], "quadrant": [("quad", 4)], "fshape": [("rot4", 4), ("mir", 2)]}
 
 
 def frame(tracks, i):
@@ -229,8 +242,10 @@ def wrong_values(tr, a):
     if a in ("pos", "rot"):
         step = (vals[5] - vals[4]) % 8
         cands = [prev, (ans + 1) % 8, (ans - 1) % 8, (prev - step) % 8, (ans + 4) % 8, (ans + 2) % 8, (ans - 2) % 8]
-    elif a == "quad":
+    elif a in ("quad", "rot4"):
         cands = [prev, (ans + 2) % 4, (ans + 1) % 4, (ans + 3) % 4]
+    elif a == "mir":
+        cands = [1 - ans]
     elif a == "fill":
         cands = [prev] + [f for f in FILLS if f != prev]
     elif a == "sides":
@@ -264,6 +279,13 @@ def describe(tr, a, v, ans):
         return f"the central shape is a {POLY_NAMES[v]} instead of a {POLY_NAMES[ans]}"
     if a == "count":
         return f"there {'is' if v == 1 else 'are'} {v} dot{'s' if v != 1 else ''} instead of {ans}"
+    if a == "rot4":
+        if v == tr["rot4"][4]:
+            return "the F-shape has not turned on from the fifth figure"
+        return {1: "the F-shape is turned 90° too far clockwise", 3: "the F-shape is turned 90° too far anticlockwise",
+                2: "the F-shape is upside down relative to the answer"}[(v - ans) % 4]
+    if a == "mir":
+        return "the F-shape is mirrored the wrong way"
     return "the wrong quarter of the square is shaded"
 
 

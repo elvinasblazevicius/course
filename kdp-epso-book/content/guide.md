@@ -1,4 +1,6 @@
 # How to Use This Book
+Welcome. Over the next few weeks you will read about fictional regional authorities, count dots in little squares and convert Swiss francs into euros. It is less glamorous than the career you are aiming for, but it is the door to it, and this book is designed to get you through that door with as little wasted effort as possible.
+
 This workbook is built around one idea: you improve fastest when you practise under realistic conditions and then study every mistake. Each of the 413 questions in this book is original and has a full worked solution, so a wrong answer becomes a lesson rather than a mystery.
 
 ## What is inside
@@ -16,6 +18,17 @@ This workbook is built around one idea: you improve fastest when you practise un
 5. **Simulate the real thing.** Sit the mock exams in one go, at a desk, with the suggested time limit and no interruptions.
 
 > **Tip.** Accuracy comes before speed. Candidates who rush early practice build bad habits that are hard to unlearn. Get the method right, and speed follows.
+
+> **Coach’s note.** Nobody has ever regretted keeping an error log. Plenty of people have regretted making the same mistake for the fourth time, usually on test day.
+
+## How the solutions work
+- Under every practice question you will find the page of its worked solution, and every solution points back to its question.
+- **Verbal:** each option is marked *Correct* or *Incorrect*, and every wrong option names its trap (for example, *scope shift*).
+- **Numerical:** the skill being tested, the calculation step by step, and the typical errors that produce the wrong options.
+- **Abstract:** the rule or rules in plain words, and exactly why each wrong figure fails.
+- **Situational judgement:** the full ranking of all four actions and the competency behind it.
+- **Accuracy and prioritising:** where the discrepancy or constraint is, plus a *fast route* for doing it quicker next time.
+- **Mock exams:** a diagnostic table after each answer key shows which skill every question tests and which chapter to revisit.
 
 ## Study plans
 **Four-week plan (about 1 hour a day)**
@@ -59,6 +72,16 @@ Some procedures, mainly assistant-level (secretaries/clerks, AST-SC), contract-a
 ## How results are used
 Reasoning tests are often combined into a single score or marked against pass thresholds. In some procedures, a high mark in one test can compensate for a lower mark in another; in others, each test has its own minimum. Either way, aim to be solid in **all three** reasoning tests rather than brilliant in one.
 
+> **Pass marks are a floor, not a target.** In competitive procedures, passing is often not enough: only the best-placed candidates go forward. Aim well above the minimum.
+
+## Timing at a glance
+These are the timings used for the mock exams in this book. They reflect typical past formats; the Notice of Competition sets the real ones for your procedure.
+
+| Test | Questions | Minutes | Time per question | Checkpoint |
+| Verbal reasoning | 20 | 35 | about 1 min 45 s | question 10 by minute 17 |
+| Numerical reasoning | 10 | 20 | 2 min | question 5 by minute 10 |
+| Abstract reasoning | 10 | 10 | 1 min | question 5 by minute 5 |
+
 # Chapter 2 — Verbal Reasoning
 In a verbal reasoning question you read a short passage, typically 120–220 words, and choose the one statement that the passage supports. The skill being measured is disciplined reading: separating what the text actually says from what you know, assume or expect.
 
@@ -66,6 +89,8 @@ In a verbal reasoning question you read a short passage, typically 120–220 wor
 Treat the passage as the only source of truth. A statement can be accurate in the real world and still be the wrong answer, because the passage does not say it. Equally, the correct answer may sound surprising, as long as the passage supports it.
 
 > **The test question to ask of every option:** “Where exactly in the passage is this stated or necessarily implied?” If you cannot point to the words, the option is wrong.
+
+> **Coach’s note.** The passage does not care what you know about medieval trade, coral reefs or tax policy. If a fact is not on the screen, it does not exist, however proud of it you are.
 
 ## The six classic traps
 Most wrong options use one of a small number of traps. Learn to name them and you will spot them quickly.
@@ -90,6 +115,23 @@ Watch for two more advanced variants. *Unsupported comparison* turns a statement
 - Choosing the option that *sounds* most sensible or most like the main idea, rather than the one the text supports.
 - Accepting a paraphrase that quietly changes “may” to “will” or “some” to “most”.
 - Spending too long on one passage. Make your best choice, flag it and move on.
+- Falling for an option because it is exactly what you would argue at a dinner party. The test is not asking for your opinion.
+
+## Worked example
+*A regional authority introduced free bus travel for residents over 65 in three of its five districts. In the first year, bus journeys by older residents in those districts rose by 30%, while their car journeys fell slightly. Officials noted that some of the increase came from trips that had previously not been made at all, such as visits to relatives. The authority has proposed extending the scheme to the remaining two districts, subject to a review of its cost next year.*
+
+Which of the following statements is correct?
+
+- **A.** Free bus travel led older residents in all five districts to drive less.
+- **B.** The scheme now covers all five districts.
+- **C.** Part of the rise in bus use came from journeys that older residents would not otherwise have made.
+- **D.** Car journeys by older residents in the three districts fell by 30%.
+
+**How to solve it.**
+- **A — scope shift (and cause and effect).** The scheme ran in three districts, not five, and the passage reports a slight fall in driving without claiming that the scheme caused it.
+- **B — a proposal is not a decision.** Extension has only been proposed, and it depends on a cost review.
+- **C — correct.** It paraphrases “some of the increase came from trips that had previously not been made at all”.
+- **D — partial truth.** The 30% figure belongs to bus journeys; car journeys fell only “slightly”.
 
 # Chapter 3 — Numerical Reasoning
 Numerical reasoning questions give you one or more tables or charts and ask a question that requires one to three calculation steps. The maths is rarely beyond lower-secondary level. The difficulty lies in choosing the right numbers, using the right method and working accurately under time pressure. An on-screen calculator is normally available, but check what your procedure allows.
@@ -125,6 +167,19 @@ If €1 = 1.50 units of a currency, a price of 300 units is 300 ÷ 1.50 = €200
 **Rates and time.**
 Time = distance ÷ speed. A 20% rise in speed does not cut journey time by 20%.
 
+## Mental-maths shortcuts
+| Fraction | Per cent | Fraction | Per cent |
+| 1/2 | 50% | 1/6 | 16.7% |
+| 1/3 | 33.3% | 1/8 | 12.5% |
+| 1/4 | 25% | 1/10 | 10% |
+| 1/5 | 20% | 1/12 | 8.3% |
+
+- Multiplying by 1.25 is the same as dividing by 0.8; dividing by 1.25 is the same as multiplying by 0.8.
+- A rise of 20% followed by a fall of 20% leaves you 4% down (1.2 × 0.8 = 0.96).
+- To find 15%, take 10%, then add half of it.
+
+> **Coach’s note.** Percentages are the most polite liars in the building. A 50% fall followed by a 50% rise does not take you back to where you started; it leaves you 25% down. Make every percentage show you its base.
+
 ## A reliable method
 1. **Read the question before the data.** Identify exactly what is being asked, including units (thousands? millions? per cent?) and the time period.
 2. **Locate the numbers.** Find the precise row, column and year. Many errors are reading errors, not maths errors.
@@ -140,6 +195,14 @@ Time = distance ÷ speed. A 20% rise in speed does not cut journey time by 20%.
 - With line charts, identify the series by marker shape and line style, not position alone.
 - With pie charts, every slice is a share of the stated total; amounts = share × total.
 
+## Worked example: two tables, two steps
+Unit A has **40** staff and a training budget of **€600** per person. Unit B has **25** staff and **€840** per person. *By what percentage is Unit B’s total training budget lower than Unit A’s?*
+
+1. **Totals first.** Unit A: 40 × €600 = €24,000. Unit B: 25 × €840 = €21,000.
+2. **Change against the right base.** The question compares B with A, so A is the base: (24,000 − 21,000) ÷ 24,000 = 12.5%.
+
+**Traps the options would contain:** 40% (comparing the per-person amounts instead of the totals), 14.3% (dividing by B instead of A) and €3,000 (the difference in euros, not in per cent).
+
 # Chapter 4 — Abstract Reasoning
 Abstract reasoning questions show a series of five figures and ask which of five options comes next. Each figure contains one or more elements that change according to a rule. The test measures your ability to spot patterns, form a hypothesis and check it systematically, with no words or numbers to help you.
 
@@ -150,6 +213,7 @@ The figures in this book (and in typical tests) are built from a small set of va
 - **Shading:** an element cycles through white, grey and black, or alternates between two of them.
 - **Number:** the count of elements rises or falls steadily, or alternates (for example +2, −1, +2, −1).
 - **Shape:** a shape gains a side each time, or cycles through a fixed sequence (triangle, square, pentagon, …).
+- **Reflection:** an asymmetric shape (such as an F) is mirrored left to right, often in every other figure and combined with a rotation. Compare figures with the same orientation first.
 
 ## The rule-hunting checklist
 Work through the variables one at a time, for one element at a time.
@@ -166,6 +230,13 @@ Work through the variables one at a time, for one element at a time.
 - **Growing steps:** movements of 1, 2, 3, 4 … positions.
 - **Independent rules:** two elements following different rules in the same frame. Treat them separately.
 - **Option traps:** the right element in the wrong position, the right position with the wrong shading, or a figure that simply repeats the fifth one.
+
+## Worked example
+[[abstract-example]]
+
+**Element 1, the arrow:** it points up, right, down, left, up. That is a 90° clockwise turn each time, so next it points **right**.
+**Element 2, the black circle:** it moves one position anticlockwise around the frame each time, so next it sits at the **bottom middle**.
+Only **option C** satisfies both rules. A leaves the circle where it was; B over-rotates the arrow; D turns the arrow the wrong way; E moves the circle two positions instead of one.
 
 # Chapter 5 — Situational Judgement
 Situational judgement tests (SJTs) present realistic workplace scenarios and four possible actions. You choose the **most** effective and the **least** effective. In procedures that use them, SJTs assess behavioural competencies such as working with others, communicating and delivering quality.
@@ -192,6 +263,18 @@ Ineffective actions tend to avoid the problem, shift blame, break rules or confi
 
 > **Answer as an effective colleague would, not as you might under stress.** Think about what the institution would consider best practice. Bear in mind that the most effective option is not always the longest or the most cautious.
 
+## Worked example
+*You and your colleague Lena are preparing a briefing for your head of unit, due on Thursday. On Tuesday you notice that Lena’s section still uses last year’s figures. Lena is in meetings all day.*
+
+- **A.** Correct the figures yourself and say nothing.
+- **B.** Send Lena a short message flagging the figures and offering to update them if she agrees, so that the briefing stays on schedule.
+- **C.** Tell your head of unit that Lena’s section is out of date.
+- **D.** Wait until Thursday morning and raise it with Lena then.
+
+**Most effective: B.** It fixes the problem early, respects your colleague’s ownership of her section and protects the deadline. **Least effective: C.** It escalates before you have tried the obvious direct step, and it damages trust. A solves the problem but bypasses Lena, so it is acceptable but weaker. D is late and puts the deadline at risk. **Ranking: B > A > D > C.**
+
+> **Coach’s note.** The heroic option (staying up all night to fix everything yourself and telling nobody) is rarely the best one. Institutions value colleagues who flag problems early far more than colleagues who suffer in silence.
+
 # Chapter 6 — Accuracy & Precision and Prioritising & Organising
 These tests have been used mainly in assistant-level and contract-agent procedures. Both reward careful, systematic work under time pressure.
 
@@ -202,12 +285,23 @@ You compare information, such as reference numbers, names, amounts and codes, ag
 - **Use a pointer.** Following the line with a finger or the cursor reduces skipped characters.
 - **“No error” is a real option.** Do not invent a discrepancy because you expect one.
 
+> **Coach’s note.** Your brain is a very helpful autocorrect. In this test, that is exactly the problem: it will cheerfully read “Novak” as “Novák”. Slow your eyes down, not your thinking.
+
 ## Prioritising & organising
 You plan meetings, sequence tasks or allocate work under constraints.
 - **Write the constraints down as a list** before looking at the options.
 - **For scheduling,** check every required person for each candidate slot, and remember any excluded days and time limits. If the question asks for the *earliest* slot, check slots in time order.
 - **For task sequencing,** work out the earliest finish time of each task: its own duration plus the latest finish among its prerequisites. The project length is the longest chain (the critical path), not the sum of all durations.
 - **For allocation,** start with the task or person that has the fewest possible options; one forced choice usually unlocks the rest.
+
+## Worked example: the critical path
+| Task | Working days | Can start only after | Earliest finish |
+| A. Draft | 3 | — | day 3 |
+| B. Legal check | 2 | A | day 5 |
+| C. Translation | 4 | A | day 7 |
+| D. Final approval | 1 | B and C | day 8 |
+
+B and C run in parallel after A, so D can start only when the slower of the two (C) has finished. The project takes **8 days**. Adding all the durations (10 days) is the classic trap: it ignores the work that runs in parallel.
 
 # Chapter 7 — Test-Day Strategy
 ## Pacing
@@ -223,5 +317,20 @@ Eliminate what you can, then choose from the options that remain. In numerical q
 - Know the rules on the calculator, scrap paper and breaks for your sitting.
 - Sleep, eat and arrive (or log in) early. A calm start is worth several marks.
 
+> **Coach’s note.** The night before the test is not the moment to try a new technique, a new energy drink or a new box set. Boring preparation produces exciting results.
+
 ## After each mock exam
-Score it, enter the result in the tracker and spend at least as long reviewing it as you spent sitting it. That review is where the improvement happens.
+Score it, enter the result in the tracker and spend at least as long reviewing it as you spent sitting it. That review is where the improvement happens. A mock exam you do not review is just a long way of feeling bad about yourself.
+
+## Self-diagnosis checklist
+Look at your error log after each mock exam and find the row that matches your most common mistake.
+
+| If most of your errors are… | Re-read | Then redo |
+| Verbal: options that sounded right but the text never said | Chapter 2, “The six classic traps” | The advanced verbal questions |
+| Verbal: missing words such as “some”, “may” or “proposed” | Chapter 2, worked example | Your wrong verbal answers, aloud |
+| Numerical: right method, wrong base or percentage points | Chapter 3, the essential toolkit | All percentage and index questions |
+| Numerical: correct but too slow | Chapter 3, mental-maths shortcuts | Ten numerical questions at 90 s each |
+| Abstract: found one rule but missed a second | Chapter 4, the rule-hunting checklist | The advanced abstract questions |
+| Situational judgement: picking the heroic or cautious option | Chapter 5, how to rate the options | All 24 scenarios, without the key |
+| Accuracy: missed accents, transpositions or look-alikes | Chapter 6, accuracy & precision | The “count” questions |
+| Running out of time in every test | Chapter 7, pacing | A mock exam with checkpoint times |

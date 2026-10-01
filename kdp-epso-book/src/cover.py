@@ -70,10 +70,12 @@ def background(c, w, h):
     c.saveState(); c.setFillColor(BLUE); c.rect(0, 0, w, h, stroke=0, fill=1); c.restoreState()
 
 
-def glow(c, cx, cy, r):
+def glow(c, cx, cy, r, panel=None):
     c.saveState()
+    if panel:
+        q = c.beginPath(); q.rect(*panel); c.clipPath(q, stroke=0)
     p = c.beginPath(); p.circle(cx, cy, r); c.clipPath(p, stroke=0)
-    c.radialGradient(cx, cy, r, (BLUE_LIGHT, BLUE), extend=False)
+    c.radialGradient(cx, cy, r, (BLUE_LIGHT, BLUE, BLUE), positions=(0, 0.62, 1), extend=False)
     c.restoreState()
 
 
@@ -104,44 +106,72 @@ def building_lines(c, cx, base, W, H, x0, panel_w):
 
 
 def building_hero(c, cx, base, W, H, panel_w):
-    """Solid tone-on-tone illustration of a Brussels-style institutional building (curved glass wings, louvres,
-    central core). Kept below #C4D6FA in brightness so white and gold stay reserved for the type."""
-    core = W * 0.06
-    floors = 12
+    """Solid tone-on-tone Brussels-style institutional building: raised on pilotis, curved glass wings with
+    horizontal louvres, a slightly taller central block with vertical fins. Nothing brighter than #C4D6FA."""
     outline = HexColor("#C4D6FA")
+    pod = H * 0.16
+    core = W * 0.075
+    floors = 11
+    top_base = base + pod
+    hh = H - pod
+
+    # podium on pilotis
+    c.saveState()
+    c.setFillColor(HexColor("#0E2F7A")); c.rect(cx - W / 2 + W * 0.03, base, W - W * 0.06, pod, stroke=0, fill=1)
+    c.setFillColor(HexColor("#3A6BCF"))
+    n = 16
+    span = W * 0.90
+    colw = span / n * 0.32
+    for k in range(n + 1):
+        x = cx - span / 2 + span * k / n
+        c.rect(x - colw / 2, base, colw, pod, stroke=0, fill=1)
+    c.restoreState()
 
     def wing(sign, hmul, c_top, c_bot):
         x_in, x_out = cx + sign * core, cx + sign * W / 2
-        top_in, top_out = base + H * hmul, base + H * 0.80 * hmul
+        top_in, top_out = top_base + hh * hmul, top_base + hh * 0.74 * hmul
         p = c.beginPath()
-        p.moveTo(x_in, base); p.lineTo(x_out, base); p.lineTo(x_out, top_out)
-        p.curveTo(x_out - sign * W * 0.12, top_out + H * 0.1 * hmul, x_in + sign * W * 0.12, top_in + H * 0.01, x_in, top_in)
+        p.moveTo(x_in, top_base); p.lineTo(x_out, top_base); p.lineTo(x_out, top_out)
+        p.curveTo(x_out - sign * W * 0.16, top_out + hh * 0.17 * hmul, x_in + sign * W * 0.10, top_in, x_in, top_in)
         p.close()
         c.saveState()
         c.clipPath(p, stroke=0)
-        c.linearGradient(x_in, top_in, x_in, base, (c_top, c_bot), extend=True)
+        c.linearGradient(x_in, top_in, x_in, top_base, (c_top, c_bot), extend=True)
         for i in range(1, floors + 1):
             t = i / (floors + 1)
-            c.setStrokeColor(HexColor("#9DBBF4")); c.setStrokeAlpha(0.6); c.setLineWidth(1.2)
-            c.line(x_in, base + H * hmul * t, x_out, base + H * 0.80 * hmul * t)
+            c.setStrokeColor(HexColor("#9DBBF4")); c.setStrokeAlpha(0.6); c.setLineWidth(1.3)
+            c.line(x_in, top_base + hh * hmul * t, x_out, top_base + hh * 0.74 * hmul * t)
         c.restoreState()
         c.saveState(); c.setStrokeColor(outline); c.setLineWidth(1.4); c.drawPath(p, stroke=1, fill=0); c.restoreState()
+        # darker end face for volume
+        ew = W * 0.05
+        q = c.beginPath()
+        xe = x_out if sign > 0 else x_out
+        q.moveTo(xe, top_base); q.lineTo(xe + sign * ew, top_base + hh * 0.03)
+        q.lineTo(xe + sign * ew, top_out - hh * 0.04); q.lineTo(xe, top_out); q.close()
+        c.saveState(); c.setFillColor(HexColor("#22509F")); c.setStrokeColor(outline); c.setLineWidth(1.0)
+        c.drawPath(q, stroke=1, fill=1); c.restoreState()
 
-    wing(-1, 1.05, HexColor("#4A80E6"), HexColor("#2A5BC0"))   # sunlit
-    wing(1, 0.97, HexColor("#3569CF"), HexColor("#22509F"))    # shade
+    wing(-1, 1.0, HexColor("#4A80E6"), HexColor("#2A5BC0"))
+    wing(1, 0.95, HexColor("#3569CF"), HexColor("#22509F"))
+    # central block: same family of blues, taller, vertical fins (reads as architecture, not a doorway)
+    ch = hh * 1.12
     c.saveState()
-    c.setFillColor(HexColor("#1A3F92")); c.rect(cx - core, base, 2 * core, H * 1.14, stroke=0, fill=1)
-    c.setStrokeColor(outline); c.setLineWidth(1.4); c.rect(cx - core, base, 2 * core, H * 1.14, stroke=1, fill=0)
-    c.setFillColor(outline); c.rect(cx - core * 1.1, base + H * 1.14, core * 2.2, H * 0.025, stroke=0, fill=1)
+    c.setFillColor(HexColor("#3466CC")); c.rect(cx - core, top_base, 2 * core, ch, stroke=0, fill=1)
+    c.setStrokeColor(HexColor("#9DBBF4")); c.setStrokeAlpha(0.7); c.setLineWidth(1.0)
+    for k in (-0.5, 0, 0.5):
+        c.line(cx + core * k, top_base, cx + core * k, top_base + ch)
+    c.setStrokeAlpha(1); c.setStrokeColor(outline); c.setLineWidth(1.4)
+    c.rect(cx - core, top_base, 2 * core, ch, stroke=1, fill=0)
+    c.setFillColor(outline); c.rect(cx - core * 1.12, top_base + ch, core * 2.24, H * 0.04, stroke=0, fill=1)
     c.restoreState()
-    # fade the bottom 0.4 in into the background (stepped overlay; no hard edge above the imprint)
-    steps, fade_h = 24, 0.4 * inch
-    half = W / 2 + 2
+    # soft fade at the very bottom
+    steps, fade_h = 14, 0.12 * inch
     c.saveState(); c.setFillColor(BLUE)
     for k in range(steps):
-        y = base + fade_h * k / steps
-        c.setFillAlpha(min(1.0, (1 - k / steps) * 0.95))
-        c.rect(cx - half, y - 2, 2 * half, fade_h / steps + 2.2, stroke=0, fill=1)
+        y = base - fade_h + fade_h * k / steps
+        c.setFillAlpha(min(1.0, (1 - k / steps) * 0.9))
+        c.rect(cx - W / 2 - 2, y - 2, W + 4, fade_h / steps + 2.2, stroke=0, fill=1)
     c.restoreState()
 
 
@@ -152,37 +182,37 @@ def tick_o(c, x, base, size):
     cap = size * ANTON_CAP
     cx, cy = x + ow / 2, base + cap / 2
     p = c.beginPath()
-    p.moveTo(cx - ow * 0.30, cy - cap * 0.02)
-    p.lineTo(cx - ow * 0.05, cy - cap * 0.16)
-    p.lineTo(cx + ow * 0.36, cy + cap * 0.28)
+    p.moveTo(cx - ow * 0.32, cy - cap * 0.02)
+    p.lineTo(cx - ow * 0.06, cy - cap * 0.18)
+    p.lineTo(cx + ow * 0.40, cy + cap * 0.34)
     c.saveState()
     c.setLineCap(1); c.setLineJoin(1)
-    c.setStrokeColor(BLUE); c.setLineWidth(size * 0.085); c.drawPath(p, stroke=1, fill=0)
-    c.setStrokeColor(WHITE); c.setLineWidth(size * 0.055); c.drawPath(p, stroke=1, fill=0)
+    c.setStrokeColor(BLUE); c.setLineWidth(size * 0.10); c.drawPath(p, stroke=1, fill=0)
+    c.setStrokeColor(WHITE); c.setLineWidth(size * 0.065); c.drawPath(p, stroke=1, fill=0)
     c.restoreState()
 
 
 def front(c, x0, y0, H_in=TRIM_H):
     W, H = TRIM_W * inch, H_in * inch
     extra = (H_in - TRIM_H) * inch
+    k = 1 + extra * 0.7 / (4 * inch)
     cx = x0 + W / 2
-    glow(c, cx, y0 + H * 0.62, W * (0.62 if extra == 0 else 0.72))
+    glow(c, cx, y0 + H * 0.62, W * 0.66, panel=(x0, y0, W, H))
 
-    top = y0 + H - 0.78 * inch - extra * 0.18
-    title_w = W - 1.2 * inch
+    top = y0 + H - 0.78 * inch - extra * 0.12
+    title_w = W - 0.9 * inch
     s1 = fit_size("REASONING", "Display", title_w)
     cap1 = s1 * ANTON_CAP
-    b1 = top - 0.48 * inch - cap1
-    b2 = b1 - cap1 - 0.20 * inch
-    b3 = b2 - 0.55 * inch
-    s3 = fit_size("EPSO EXAMS", "Display", title_w * 0.80)
-    b4 = b3 - 0.28 * inch - s3 * ANTON_CAP
-    b5 = b4 - 0.55 * inch
-    # lower third: building fills the space under the text (core top 0.39-0.45 in below the categories line)
-    base = y0 + 1.40 * inch + extra * 0.05
-    gap = 0.39 * inch if extra == 0 else 0.45 * inch
-    bh = (b5 - gap - base) / 1.12
-    building_hero(c, cx, base, W * 0.88, bh, W)
+    b1 = top - 0.48 * inch * k - cap1
+    b2 = b1 - cap1 - 0.18 * inch * k
+    b3 = b2 - 0.62 * inch * k
+    s3 = fit_size("EPSO EXAMS", "Display", title_w * 0.92)
+    b4 = b3 - 0.30 * inch * k - s3 * ANTON_CAP
+    b5 = b4 - 0.62 * inch * k
+    base = y0 + 1.24 * inch
+    gap = 0.42 * inch if extra == 0 else 0.50 * inch
+    bh = min((b5 - gap - base) / 1.04, 2.0 * inch if extra == 0 else 2.6 * inch)
+    building_hero(c, cx, base, W * 0.72, bh, W)
 
     tracked(c, cx, top, "400+ QUESTIONS · FULL WORKED SOLUTIONS", "Frank-Bold", 12.5, 3.2, GOLD)
     xs = cx - stringWidth("REASONING", "Display", s1) / 2
@@ -191,26 +221,25 @@ def front(c, x0, y0, H_in=TRIM_H):
     tick_o(c, xo, b1, s1)
     c.setFillColor(WHITE); c.setFont("Display", s1)
     c.drawString(xo + stringWidth("O", "Display", s1), b1, "NING")
-    # TESTS + seal balanced as one unit; seal diameter = cap height
     tests_w = stringWidth("TESTS", "Display", s1)
-    r = cap1 / 2
-    sgap = 0.25 * inch
+    r = cap1 * 0.45
+    sgap = 0.28 * inch
     gx = cx - (tests_w + sgap + 2 * r) / 2
     c.drawString(gx, b2, "TESTS")
     sx, sy = gx + tests_w + sgap + r, b2 + cap1 / 2
     c.saveState()
     c.translate(sx, sy)
-    c.setFillColor(GOLD); c.circle(0, 0, r, stroke=0, fill=1)
-    c.setStrokeColor(BLUE_DEEP); c.setLineWidth(2.2); c.circle(0, 0, r - 7, stroke=1, fill=0)
-    c.setLineWidth(0.8); c.circle(0, 0, r - 11, stroke=1, fill=0)
-    c.setFillColor(BLUE_DEEP); c.setFont("Display", r * 1.10)
+    c.setFillColor(BLUE_DEEP); c.circle(0, 0, r, stroke=0, fill=1)
+    c.setStrokeColor(GOLD); c.setLineWidth(2.4); c.circle(0, 0, r - 6, stroke=1, fill=0)
+    c.setLineWidth(0.9); c.circle(0, 0, r - 10.5, stroke=1, fill=0)
+    c.setFillColor(WHITE); c.setFont("Display", r * 1.10)
     c.drawCentredString(0, -r * 0.06, "3")
-    c.setStrokeColor(BLUE_DEEP); c.setLineWidth(1.4); c.line(-r * 0.34, -r * 0.17, r * 0.34, -r * 0.17)
+    c.setStrokeColor(GOLD); c.setLineWidth(1.4); c.line(-r * 0.34, -r * 0.17, r * 0.34, -r * 0.17)
     lab = r * 0.135
     c.restoreState()
     c.saveState(); c.translate(sx, sy)
-    tracked(c, 0, -r * 0.36, "TIMED MOCK", "Frank-Black", lab, 1.0, BLUE_DEEP)
-    tracked(c, 0, -r * 0.36 - lab * 1.25, "EXAMS", "Frank-Black", lab, 1.0, BLUE_DEEP)
+    tracked(c, 0, -r * 0.36, "TIMED MOCK", "Frank-Black", lab, 1.0, GOLD)
+    tracked(c, 0, -r * 0.36 - lab * 1.25, "EXAMS", "Frank-Black", lab, 1.0, GOLD)
     c.restoreState()
     w = tracked(c, cx, b3, "WORKBOOK FOR", "Frank-Bold", 15, 4, WHITE)
     c.setStrokeColor(GOLD); c.setLineWidth(1.6)
@@ -242,14 +271,14 @@ BACK_BULLETS = [
 def back(c, x0, y0):
     W, H = TRIM_W * inch, TRIM_H * inch
     left = x0 + 0.65 * inch
-    c.setFillColor(WHITE); c.setFont("Display", 34)
-    c.drawString(left, y0 + H - 1.25 * inch, "PRACTISE LIKE IT’S")
-    c.setFillColor(GOLD); c.drawString(left, y0 + H - 1.25 * inch - 40, "THE REAL TEST.")
-    st = ParagraphStyle("b", fontName="Serif", fontSize=11.8, leading=16.6, textColor=WHITE)
+    c.setFillColor(WHITE); c.setFont("Display", 50)
+    c.drawString(left, y0 + H - 1.2 * inch, "PRACTISE LIKE IT’S")
+    c.setFillColor(GOLD); c.drawString(left, y0 + H - 1.2 * inch - 52, "THE REAL TEST.")
+    st = ParagraphStyle("b", fontName="Serif", fontSize=12.2, leading=17.2, textColor=WHITE)
     bl = ParagraphStyle("bl", parent=st, fontSize=11.2, leading=15.2, leftIndent=18, bulletIndent=0, spaceAfter=5,
                         bulletFontName="DejaVu", bulletColor=GOLD)
     who = ParagraphStyle("w", parent=st, fontSize=10.8, leading=15)
-    f = Frame(left, y0 + 3.98 * inch, W - 1.3 * inch, H - 1.25 * inch - 64 - 3.98 * inch, showBoundary=0, leftPadding=0, rightPadding=0,
+    f = Frame(left, y0 + 3.15 * inch, W - 1.3 * inch, H - 1.2 * inch - 52 - 26 - 3.15 * inch, showBoundary=0, leftPadding=0, rightPadding=0,
               topPadding=0, bottomPadding=0)
     gap = ParagraphStyle("sp", parent=st, fontSize=5, leading=7)
     story = [Paragraph(BACK_BLURB, st), Paragraph("&nbsp;", gap)]
@@ -260,7 +289,7 @@ def back(c, x0, y0):
         "even when test formats change, so always check your Notice of Competition.", who)]
     f.addFromList(story, c)
     assert not story, "back-cover copy does not fit its frame"
-    sy = y0 + 3.15 * inch
+    sy = y0 + 2.35 * inch
     c.saveState(); c.setFillColor(BLUE_DEEP); c.setFillAlpha(0.55)
     c.roundRect(left, sy, W - 1.3 * inch, 0.66 * inch, 8, stroke=0, fill=1); c.restoreState()
     items = [("413", "QUESTIONS"), ("3", "TIMED MOCK EXAMS"), ("6", "TEST TYPES"), ("4 & 8", "WEEK STUDY PLANS")]
@@ -269,10 +298,10 @@ def back(c, x0, y0):
         cxx = left + colw * (i + 0.5)
         c.setFillColor(GOLD); c.setFont("Display", 20); c.drawCentredString(cxx, sy + 0.30 * inch, n)
         tracked(c, cxx, sy + 0.11 * inch, lab, "Frank-Semi", 7.5, 0.8, WHITE)
-    tracked(c, left, y0 + 2.72 * inch, AUTHOR, "Frank-XBold", 12.5, 3, WHITE, anchor="left")
+    tracked(c, left, y0 + 1.95 * inch, AUTHOR, "Frank-XBold", 12.5, 3, WHITE, anchor="left")
     c.setFillColor(PALE); c.setFont("Serif-It", 10.5)
-    c.drawString(left, y0 + 2.49 * inch, "Every question checked for a single, defensible correct answer,")
-    c.drawString(left, y0 + 2.31 * inch, "with explanations written to teach the method, not just the result.")
+    c.drawString(left, y0 + 1.72 * inch, "Every question checked for a single, defensible correct answer,")
+    c.drawString(left, y0 + 1.54 * inch, "with explanations written to teach the method, not just the result.")
     c.setFont("Frank-Med", 8.2)
     c.drawString(left, y0 + 0.78 * inch, "Independent publication. Not affiliated with, authorised or endorsed by the European")
     c.drawString(left, y0 + 0.63 * inch, "Personnel Selection Office (EPSO), the European Union or any EU institution.")
@@ -288,13 +317,14 @@ def spine(c, x, w, y_trim, trim_h):
     half = (top - bot) / 2
     c.saveState()
     c.translate(cx, (top + bot) / 2); c.rotate(-90)
-    fs = min(22, w / inch * 27)
+    fs = min(34, w / inch * 44)
     capoff = fs * ANTON_CAP / 2
-    start = -half + 0.9 * inch
-    c.setFillColor(WHITE); c.setFont("Display", fs); c.drawString(start, -capoff, "REASONING TESTS WORKBOOK")
-    tw = stringWidth("REASONING TESTS WORKBOOK", "Display", fs)
-    c.setFillColor(GOLD); c.drawString(start + tw + 12, -capoff, "FOR EPSO EXAMS")
-    tracked(c, half - 0.5 * inch, -fs * 0.22, AUTHOR, "Frank-XBold", fs * 0.5, 1.5, PALE, anchor="right")
+    x = -half + 0.85 * inch
+    c.setFillColor(WHITE); c.setFont("Display", fs); c.drawString(x, -capoff, "REASONING TESTS")
+    x += stringWidth("REASONING TESTS", "Display", fs) + 12
+    x += tracked(c, x, -fs * 0.14, "WORKBOOK FOR", "Frank-Bold", fs * 0.4, 2, PALE, anchor="left") + 12
+    c.setFillColor(GOLD); c.setFont("Display", fs); c.drawString(x, -capoff, "EPSO EXAMS")
+    tracked(c, half - 0.5 * inch, -fs * 0.14, AUTHOR, "Frank-XBold", fs * 0.36, 1.5, PALE, anchor="right")
     c.restoreState()
 
 

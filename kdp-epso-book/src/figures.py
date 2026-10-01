@@ -81,7 +81,7 @@ def abstract_frame(elements, size=72, label=None):
     cx, cy = S / 2, S / 2
     d.add(Rect(0.5, 0.5, S - 1, S - 1, fillColor=WHITE, strokeColor=INK, strokeWidth=0.9))
     kinds = {e["kind"] for e in elements}
-    centre_taken = bool(kinds & {"arrow", "polygon", "quadrant"})
+    centre_taken = bool(kinds & {"arrow", "polygon", "quadrant", "fshape"})
     has_orbit = "orbit" in kinds
     # faint orbit guide points help readers see the 8 positions
     if has_orbit:
@@ -99,6 +99,14 @@ def abstract_frame(elements, size=72, label=None):
             pts = [(0, L), (w * 2.1, L - w * 2.4), (w * 0.7, L - w * 2.4), (w * 0.7, -L), (-w * 0.7, -L),
                    (-w * 0.7, L - w * 2.4), (-w * 2.1, L - w * 2.4)]
             d.add(Polygon(_flat(_rotate(pts, e["rot"] * 45, cx, acy)), fillColor=BLACK, strokeColor=BLACK, strokeWidth=0.4))
+        elif k == "fshape":
+            u = S * 0.2
+            pts = [(-0.5, -1), (-0.1, -1), (-0.1, -0.1), (0.4, -0.1), (0.4, 0.25), (-0.1, 0.25), (-0.1, 0.6),
+                   (0.6, 0.6), (0.6, 1), (-0.5, 1)]
+            if e["mir"]:
+                pts = [(-x, y) for x, y in pts]
+            pts = [(x * u, y * u) for x, y in pts]
+            d.add(Polygon(_flat(_rotate(pts, e["rot4"] * 90, cx, cy)), fillColor=BLACK, strokeColor=BLACK, strokeWidth=0.4))
         elif k == "polygon":
             n = e["sides"]; r = S * 0.19
             off = math.pi / n if n % 2 == 0 else 0.0

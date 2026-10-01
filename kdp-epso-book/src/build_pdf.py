@@ -64,7 +64,7 @@ ST = {
     "toc1": ParagraphStyle("toc1", fontName="Serif", fontSize=10.2, leading=14, leftIndent=16),
 }
 
-SPECIAL = {"→": "→", "≈": "≈"}
+SPECIAL = {c: c for c in "→≈Σⁿ₁₂"}
 
 
 def esc(t):
@@ -86,6 +86,54 @@ def P(t, st="body", raw=False):
 
 
 # ------------------------------------------------------------------ special flowables
+REFS = {}  # page numbers recorded in the previous pass (multiBuild runs at least twice)
+
+
+class RefMark(Flowable):
+    """Zero-size flowable that records the page it lands on."""
+
+    def __init__(self, key):
+        super().__init__(); self.key = key
+
+    def wrap(self, aw, ah):
+        return 0, 0
+
+    def draw(self):
+        REFS[self.key] = self.canv._doctemplate.page
+
+
+class PageRef(Flowable):
+    """One small right-aligned line such as 'Solution: p. 281', filled from the previous pass."""
+
+    def __init__(self, template, key, h=12):
+        super().__init__(); self.template, self.key, self.h = template, key, h
+
+    def wrap(self, aw, ah):
+        self.aw = aw
+        return aw, self.h
+
+    def draw(self):
+        self.canv.setFont("Sans-It", 8.2); self.canv.setFillColor(MID)
+        self.canv.drawRightString(self.aw, 2, self.template.format(REFS.get(self.key, "…")))
+
+
+class SolHead(Flowable):
+    """Solution heading with a right-aligned back-reference to the question page."""
+
+    def __init__(self, text, key):
+        super().__init__(); self.text, self.key = text, key
+
+    def wrap(self, aw, ah):
+        self.aw = aw
+        return aw, 20
+
+    def draw(self):
+        c = self.canv
+        c.setFont("Sans-Bold", 9.8); c.setFillColor(INK); c.drawString(0, 4, self.text)
+        c.setFont("Sans-It", 8.2); c.setFillColor(MID)
+        c.drawRightString(self.aw, 4, f"question on p. {REFS.get('q:' + self.key, '…')}")
+
+
 class Marker(Flowable):
     """Zero-size marker: sets running header, no-header pages, TOC entries."""
 
@@ -233,7 +281,7 @@ def tip_box(text):
 NUMERIC = re.compile(r"^[€−\-+]?[\d,.]+%?k?$")
 
 
-def data_table(fig, mono_cols=(), width=None, rownums=False, zebra=True):
+def data_table(fig, mono_cols=(), width=None, rownums=False, zebra=True, align_numeric=True):
     cols = list(fig["columns"])
     rows = [list(r) for r in fig["rows"]]
     if rownums:
@@ -266,7 +314,7 @@ def data_table(fig, mono_cols=(), width=None, rownums=False, zebra=True):
         for i in range(2, len(data), 2):
             style.append(("BACKGROUND", (0, i), (-1, i), colors.Color(0.965, 0.965, 0.965)))
     # right-align numeric columns
-    for j in range(len(cols)):
+    for j in range(len(cols) if align_numeric else 0):
         if all(NUMERIC.match(str(r[j]).replace(" ", "")) for r in rows if str(r[j]) not in ("—", "")):
             for i in range(1, len(data)):
                 data[i][j].style = ParagraphStyle("r", parent=data[i][j].style, alignment=2)
@@ -396,6 +444,25 @@ RENDER = {"verbal": r_verbal, "numerical": r_numerical, "abstract": r_abstract, 
 
 
 # ------------------------------------------------------------------ solutions
+ABS_SKILL = {"pos": "position", "posfill": "position + shading", "pos2": "second moving element", "rot": "rotation",
+             "dots": "counting", "quad": "quarter shading", "poly": "shape sequence", "polyfill": "shape sequence + shading",
+             "flip": "rotation + reflection"}
+
+
+def mock_diagnostic(mk):
+    rows = [["1–20", "Verbal reasoning (all question types)", "Chapter 2"]]
+    for it in mk["items"]:
+        if it["type"] == "numerical":
+            rows.append([str(it["n"]), f"Numerical: {it['skill']}", "Chapter 3"])
+        elif it["type"] == "abstract":
+            sk = " · ".join(dict.fromkeys(ABS_SKILL[p] for p in it["template"].split("+")))
+            rows.append([str(it["n"]), f"Abstract: {sk}", "Chapter 4"])
+    t = data_table({"columns": ["Question", "Skill tested", "Review"], "rows": rows}, zebra=True)
+    return [P("Diagnostic: what each question tests", "h3"), t,
+            P("Two or more misses on the same skill? Re-read that chapter, then redo the matching block of the practice set "
+              "before the next mock.", "figinfo"), Spacer(1, 8)]
+
+
 def sol_head(it):
     if "most" in it:
         return f"Question {it['n']} — Most effective: {it['most']} · Least effective: {it['least']}"
@@ -411,7 +478,7 @@ def sol_verbal(it):
 
 def sol_numerical(it):
     i = "ABCD".index(it["answer"])
-    out = [Paragraph(esc(s), ST["solb"], bulletText="›") for s in it["steps"]]
+    out = [Paragraph(f"<i>Skill: {esc(it['skill'])}</i>", ST["sol"])] + [Paragraph(esc(s), ST["solb"], bulletText="›") for s in it["steps"]]
     out.append(Paragraph(f"<b>Correct option: {it['answer']}</b> ({esc(it['options'][i])})", ST["sol"]))
     return out
 
@@ -486,15 +553,44 @@ def copyright_page(meta, total):
         lines.append(f"ISBN (paperback): {meta['isbn_paperback']}")
     if meta.get("isbn_hardcover"):
         lines.append(f"ISBN (hardcover): {meta['isbn_hardcover']}")
+    lines.append("First edition.")
+    lines.append("<b>How this book was checked.</b> Every question was written for this book. The calculated question types are generated "
+                 "and verified by computer, so each has exactly one correct option, and every answer key was re-solved independently, without "
+                 "sight of the key, as part of a multi-stage quality review covering accuracy, wording, layout and fairness.")
     lines.append(f"Published by {esc(meta['imprint'])}. Typeset in Source Serif 4 and Source Sans 3.")
     return [Marker(noheader=True, nofooter=True), Spacer(1, 4.2 * inch)] + [Paragraph(x, s) for x in lines]
+
+
+ABS_EXAMPLE = {
+    "series": [[{"kind": "arrow", "rot": r}, {"kind": "orbit", "shape": "circle", "pos": p, "fill": "black"}]
+               for r, p in ((0, 2), (2, 1), (4, 0), (6, 7), (0, 6))],
+    "options": [[{"kind": "arrow", "rot": r}, {"kind": "orbit", "shape": "circle", "pos": p, "fill": "black"}]
+                for r, p in ((2, 6), (4, 5), (2, 5), (6, 5), (2, 4))],
+}
+
+
+def guide_table(rows):
+    data = [[Paragraph(md(c), ST["cellb"]) for c in rows[0]]] + [[Paragraph(md(c), ST["cell"]) for c in r] for r in rows[1:]]
+    n = len(rows[0])
+    t = Table(data, colWidths=[FW / n] * n, hAlign="LEFT", repeatRows=1)
+    t.setStyle(TableStyle([("GRID", (0, 0), (-1, -1), 0.4, RULE), ("BACKGROUND", (0, 0), (-1, 0), SHADE2),
+                           ("VALIGN", (0, 0), (-1, -1), "MIDDLE"), ("TOPPADDING", (0, 0), (-1, -1), 3.5),
+                           ("BOTTOMPADDING", (0, 0), (-1, -1), 3.5), ("LEFTPADDING", (0, 0), (-1, -1), 5)]))
+    return [Spacer(1, 4), t, Spacer(1, 10)]
 
 
 def guide_story(text, first_section_is_front=True):
     """Convert guide markdown to flowables; returns list of (title, flowables)."""
     sections = []
     cur = None
-    for line in text.splitlines():
+    table = []
+    lines = text.splitlines() + [""]
+    for line in lines:
+        if line.startswith("|"):
+            table.append([c.strip() for c in line.strip().strip("|").split("|")])
+            continue
+        if table and cur is not None:
+            cur[1].extend(guide_table(table)); table = []
         if line.startswith("# "):
             cur = [line[2:].strip(), []]; sections.append(cur); continue
         if cur is None:
@@ -502,6 +598,11 @@ def guide_story(text, first_section_is_front=True):
         fl = cur[1]
         s = line.rstrip()
         if not s:
+            continue
+        if s == "[[abstract-example]]":
+            fl += [KeepTogether([abstract_row(ABS_EXAMPLE["series"], size=FR, question_mark=True, gap=10), Spacer(1, 8),
+                                 P("Answer options", "figtitle"),
+                                 abstract_row(ABS_EXAMPLE["options"], size=FR, labels=list("ABCDE"), gap=10)]), Spacer(1, 8)]
             continue
         if s.startswith("## "):
             fl.append(CondPageBreak(1.3 * inch)); fl.append(P(s[3:], "h2"))
@@ -518,7 +619,8 @@ def guide_story(text, first_section_is_front=True):
 
 
 SET_INTRO = {
-    "verbal": ("Read each passage and choose the ONE statement that is supported by the passage alone. Do not use outside knowledge. "
+    "verbal": ("Read each passage and answer exactly what the question asks: most questions ask which statement is correct, and some ask "
+               "which statement is NOT supported by the passage. Use the passage alone, not outside knowledge. "
                "Suggested pace: about 1 minute 45 seconds per question once you move on to timed practice."),
     "numerical": ("Use the data provided to answer each question. A basic calculator is allowed. All data are fictitious. "
                   "Suggested pace: about 2 minutes per question."),
@@ -594,7 +696,9 @@ def build(path=OUT / "interior.pdf"):
             if s["type"] in ("verbal", "numerical", "abstract") and d != last:
                 story += [CondPageBreak(2.5 * inch), P(DIFF_HEAD[d], "h2"), HRule(FW, 0.5, RULE), Spacer(1, 8)]
                 last = d
-            story.append(RENDER[s["type"]](it, f"Question {it['n']}"))
+            key = f"{s['key']}-{it['n']}"
+            blk = RENDER[s["type"]](it, f"Question {it['n']}")
+            story += [RefMark("q:" + key), blk, PageRef("Answer and worked solution: p. {}", "s:" + key), Spacer(1, 4)]
 
     # Part III
     story += part_divider("III", "Mock Exams",
@@ -620,7 +724,9 @@ def build(path=OUT / "interior.pdf"):
                 if cur != "verbal":
                     story.append(PageBreak())
                 story += [P(name, "h2"), HRule(FW, 0.5, RULE), Spacer(1, 8)]
-            story.append(RENDER[it["type"]](it, f"Question {it['n']}"))
+            key = f"{mk['key']}-{it['n']}"
+            blk = RENDER[it["type"]](it, f"Question {it['n']}")
+            story += [RefMark("q:" + key), blk]
 
     # Part IV
     story += part_divider("IV", "Answers and Worked Solutions",
@@ -629,30 +735,82 @@ def build(path=OUT / "interior.pdf"):
         story += heading_chapter(f"Solutions — {s['title']}", section=f"Solutions — {s['title']}", key=f"sol_{s['key']}")
         story += [P("Answer key", "h3"), answer_key_table(s["items"]), Spacer(1, 10), P("Worked solutions", "h3")]
         for it in s["items"]:
-            body = [P(sol_head(it), "solh")] + SOL[s["type"]](it)
+            key = f"{s['key']}-{it['n']}"
+            body = [RefMark("s:" + key), Spacer(1, 5), SolHead(sol_head(it), key)] + SOL[s["type"]](it)
             story.append(KeepTogether(body))
     for mk in book["mocks"]:
         story += heading_chapter(f"Solutions — {mk['title']}", section=f"Solutions — {mk['title']}", key=f"sol_{mk['key']}")
-        story += [P("Answer key", "h3"), answer_key_table(mk["items"]), Spacer(1, 10), P("Worked solutions", "h3")]
+        story += [P("Answer key", "h3"), answer_key_table(mk["items"]), Spacer(1, 10)]
+        story += mock_diagnostic(mk)
+        story += [P("Worked solutions", "h3")]
         for it in mk["items"]:
-            body = [P(sol_head(it), "solh")] + SOL[it["type"]](it)
+            key = f"{mk['key']}-{it['n']}"
+            body = [RefMark("s:" + key), Spacer(1, 5), SolHead(sol_head(it), key)] + SOL[it["type"]](it)
             story.append(KeepTogether(body))
 
     # Back matter
+    story += heading_chapter("Quick-Reference Card", toc_level=0, key="quickref")
+    qr = [["Percentage change", "(new − old) ÷ old × 100", "Base = the earlier or reference value"],
+          ["Percentage points", "new rate − old rate", "10% → 8% is −2 points, i.e. −20%"],
+          ["Reverse percentage", "original = new ÷ (1 + rate)", "after +25%, 500 → 400, not 375"],
+          ["Successive changes", "multiply the factors", "+20% then −20% = 0.96, i.e. −4%"],
+          ["Compound growth", "value × (1 + r)ⁿ", "10% for 3 years = ×1.331, not ×1.30"],
+          ["Weighted average", "Σ(size × average) ÷ Σ size", "never average the averages"],
+          ["Index numbers", "(I₂ − I₁) ÷ I₁ × 100", "points are not per cent"],
+          ["Currency into euros", "local price ÷ units per €1", "divide in, multiply out"],
+          ["Average speed", "total distance ÷ total time", "not the mean of the speeds"],
+          ["Critical path", "longest chain of dependent tasks", "not the sum of all durations"]]
+    story += [data_table({"columns": ["Situation", "Formula or method", "Remember"], "rows": qr}, zebra=True), Spacer(1, 12),
+              P("Verbal traps", "h3"),
+              P("Extreme wording · scope shift · cause and effect · outside knowledge · partial truth · contradiction · "
+                "unsupported comparison · unsupported inference · a proposal is not a decision.", "body"),
+              P("Abstract checklist", "h3"),
+              P("One element at a time: position · rotation · shading · number · shape · reflection. Look for constant, alternating "
+                "and growing steps. Eliminate options rule by rule.", "body"),
+              P("Situational judgement", "h3"),
+              P("Proactive and proportionate · direct and respectful first · rule-aware and service-minded · transparent early.", "body")]
+
+    story += heading_chapter("Skill Index", toc_level=0, key="skillindex")
+    story += [P("Use this index to target a weakness: every practice question is listed under the skill it trains.", "body")]
+    from collections import OrderedDict
+    num = OrderedDict()
+    for it in book["sets"][1]["items"]:
+        num.setdefault(it["skill"], []).append(str(it["n"]))
+    ab = OrderedDict()
+    for it in book["sets"][2]["items"]:
+        for part in dict.fromkeys(it["template"].split("+")):
+            ab.setdefault(ABS_SKILL[part], []).append(str(it["n"]))
+    vb = OrderedDict([("Which statement is correct?", []), ("Which statement is NOT supported?", [])])
+    for it in book["sets"][0]["items"]:
+        vb["Which statement is NOT supported?" if "NOT" in it["question"] else "Which statement is correct?"].append(str(it["n"]))
+    for title, d in (("Verbal reasoning", vb), ("Numerical reasoning", num), ("Abstract reasoning", ab)):
+        rows = [[k[0].upper() + k[1:], ", ".join(v)] for k, v in sorted(d.items())]
+        story += [P(title, "h3"), data_table({"columns": ["Skill", "Practice questions"], "rows": rows}, zebra=True, align_numeric=False),
+                  Spacer(1, 8)]
+
     story += heading_chapter("Score Tracker", toc_level=0, key="tracker")
-    rows = [[s["title"], str(len(s["items"]))] for s in book["sets"]] + [[m["title"], "40"] for m in book["mocks"]]
-    data = [[Paragraph(esc(c), ST["cellb"]) for c in ["Set", "Questions", "Attempt 1 score", "Date", "Attempt 2 score", "Date"]]]
-    data += [[Paragraph(esc(r[0]), ST["cell"]), Paragraph(r[1], ST["cell"]), "", "", "", ""] for r in rows]
-    t = Table(data, colWidths=[FW * 0.3, FW * 0.12, FW * 0.17, FW * 0.12, FW * 0.17, FW * 0.12], rowHeights=[20] + [30] * len(rows))
+    hdr = ["Set", "Attempt", "Foundation", "Intermediate", "Advanced", "Total", "Date"]
+    data = [[Paragraph(esc(c), ST["cellb"]) for c in hdr]]
+    for st in book["sets"]:
+        for att in ("1", "2"):
+            data.append([Paragraph(esc(st["title"]) if att == "1" else "", ST["cell"]), Paragraph(att, ST["cell"]), "", "", "", "", ""])
+    for mk in book["mocks"]:
+        for att in ("1", "2"):
+            data.append([Paragraph(esc(mk["title"]) if att == "1" else "", ST["cell"]), Paragraph(att, ST["cell"]), "", "", "", "", ""])
+    t = Table(data, colWidths=[FW * 0.27, FW * 0.09, FW * 0.13, FW * 0.14, FW * 0.12, FW * 0.11, FW * 0.14],
+              rowHeights=[20] + [22] * (len(data) - 1), repeatRows=1)
     t.setStyle(TableStyle([("GRID", (0, 0), (-1, -1), 0.4, RULE), ("BACKGROUND", (0, 0), (-1, 0), SHADE2), ("VALIGN", (0, 0), (-1, -1), "MIDDLE")]))
-    story += [P("Record every attempt. Seeing your scores rise is one of the best motivators there is.", "body"), Spacer(1, 6), t]
+    story += [P("Record each attempt by difficulty band: the band where your score drops is the one to practise next. "
+                "For the mock exams, use the columns for verbal, numerical and abstract instead.", "body"), Spacer(1, 6), t]
 
     story += heading_chapter("Error Log", toc_level=0, key="errorlog")
-    story += [P("For every question you get wrong, write one line. Re-read this log before each mock exam and on the day before your test.", "body"),
-              Spacer(1, 6), lined_table(["Set / Q", "What I did", "What I should have done", "Rule to remember"],
-                                        [FW * 0.13, FW * 0.29, FW * 0.29, FW * 0.29], 19)]
-    story += [PageBreak(), lined_table(["Set / Q", "What I did", "What I should have done", "Rule to remember"],
-                                       [FW * 0.13, FW * 0.29, FW * 0.29, FW * 0.29], 25)]
+    cols = ["Set / Q", "Trap type", "What I did", "What I should have done", "Rule to remember"]
+    widths = [FW * 0.11, FW * 0.15, FW * 0.24, FW * 0.25, FW * 0.25]
+    story += [P("For every question you get wrong, write one line. Name the trap (for example “wrong base” or “scope shift”) "
+                "so that patterns become visible. Re-read this log before each mock exam and on the day before your test.", "body"),
+              Spacer(1, 6), lined_table(cols, widths, 19)]
+    for _ in range(3):
+        story += [PageBreak(), lined_table(cols, widths, 25)]
 
     story += heading_chapter("Answer Sheets", toc_level=0, key="sheets")
     story += [P("Photocopy or tear out these sheets for the mock exams.", "body")]
