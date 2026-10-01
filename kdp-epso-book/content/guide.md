@@ -8,7 +8,7 @@ This workbook is built around one idea: you improve fastest when you practise un
 - **Part II — Practice sets.** 65 verbal, 75 numerical and 75 abstract reasoning questions, graded from foundation to advanced, plus 24 situational judgement scenarios, 30 accuracy & precision questions and 24 prioritising & organising questions.
 - **Part III — Three timed mock exams.** Each mock combines 20 verbal, 10 numerical and 10 abstract reasoning questions.
 - **Part IV — Answers and worked solutions.** A quick answer key for every set, then a full explanation of every question, including why each wrong option is wrong.
-- **Back matter.** Answer sheets, a score tracker and an error log.
+- **Back matter.** A quick-reference card of formulas and traps, a skill index for targeted practice, a score tracker, a four-page error log and answer sheets.
 
 ## A simple routine that works
 1. **Learn the method first.** Read the Part I chapter for a test type before you attempt its practice set.
@@ -108,6 +108,9 @@ Watch for two more advanced variants. *Unsupported comparison* turns a statement
 2. **Read the passage once, actively.** Note the main claim, and circle qualifiers (*some, most, may, unless*), numbers and conditions.
 3. **Test each option against the text.** For each one, find the relevant sentence and compare the wording closely. Cross out any option you can name a trap for.
 4. **Choose the option that survives.** If two seem to survive, re-read the qualifiers: one of them almost always overstates.
+
+## “NOT supported” questions
+Some questions flip the task and ask which statement is **not** supported. Three options will then be backed by the passage. Find the sentence for each one and tick it; the option you cannot tick is your answer. Be careful: an option that contradicts the passage and one the passage never mentions are both “not supported”.
 
 > **Speed tip.** Do not try to memorise the passage. Read it for structure, then go back to the exact sentence each option refers to. Most errors come from relying on memory instead of re-checking.
 

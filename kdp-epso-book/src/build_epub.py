@@ -297,12 +297,33 @@ def build(path=OUT / "kindle.epub"):
         for it in s["items"]:
             body += sol_html(it, sid("s" + s["key"], it), f"set_{s['key']}.xhtml#{sid('q' + s['key'], it)}", f"Question {it['n']}")
         docs.append((fn, f"Solutions — {s['title']}", xhtml("Solutions", body), 1))
+    from build_pdf import verbal_traps, ABS_SKILL
     for mk in book["mocks"]:
         fn = f"sol_{mk['key']}.xhtml"
         body = f"<h1>Solutions — {e(mk['title'])}</h1>"
+        rows = []
+        for it in mk["items"]:
+            if it["type"] == "verbal":
+                rows.append([str(it["n"]), "Verbal: " + ", ".join(verbal_traps(it)), "Chapter 2"])
+            elif it["type"] == "numerical":
+                rows.append([str(it["n"]), "Numerical: " + it["skill"], "Chapter 3"])
+            else:
+                rows.append([str(it["n"]), "Abstract: " + " · ".join(dict.fromkeys(ABS_SKILL[p] for p in it["template"].split("+"))), "Chapter 4"])
+        body += ("<h2>Answer key</h2><p>" + " · ".join(f"{it['n']}: {it['answer']}" for it in mk["items"]) + "</p>"
+                 "<h2>Diagnostic: what each question tests</h2>" + table_html({"columns": ["Q", "Skill tested", "Review"], "rows": rows})
+                 + "<p>Two or more misses on the same skill? Re-read that chapter and redo the matching practice block.</p>")
         for it in mk["items"]:
             body += sol_html(it, f"s{mk['key']}-{it['n']}", f"{mk['key']}.xhtml#q{mk['key']}-{it['n']}", f"Question {it['n']}")
         docs.append((fn, f"Solutions — {mk['title']}", xhtml("Solutions", body), 1))
+    qr = [["Percentage change", "(new − old) ÷ old × 100"], ["Percentage points", "new rate − old rate"],
+          ["Reverse percentage", "original = new ÷ (1 + rate)"], ["Successive changes", "multiply the factors"],
+          ["Compound growth", "value × (1 + r)^n"], ["Weighted average", "sum of (size × average) ÷ total size"],
+          ["Index numbers", "(later − earlier) ÷ earlier × 100"], ["Currency into euros", "local price ÷ units per €1"],
+          ["Average speed", "total distance ÷ total time"], ["Critical path", "longest chain of dependent tasks"]]
+    docs.append(("quickref.xhtml", "Quick-Reference Card", xhtml("Quick reference", "<h1>Quick-Reference Card</h1>" +
+                 table_html({"columns": ["Situation", "Formula or method"], "rows": qr}) +
+                 "<h2>Verbal traps</h2><p>Extreme wording · scope shift · cause and effect · outside knowledge · partial truth · "
+                 "contradiction · unsupported comparison · unsupported inference · a proposal is not a decision.</p>"), 0))
     track = ("<h1>Score Tracker and Error Log</h1><p>Keep a simple notebook: for each set, record the date, your score and your time. For "
              "every wrong answer, write one line: what you did, what you should have done, and the rule to remember. Re-read it before "
              "each mock exam.</p><h2>A final word</h2><p>Reasoning tests reward method, calm and practice, and all three can be learned. "
@@ -322,6 +343,7 @@ def build(path=OUT / "kindle.epub"):
         members = [(fn, title) for fn, title, _, lvl in docs if lvl is not None and pred(fn)]
         sub = "".join(f'<li><a href="text/{fn}">{e(title)}</a></li>' for fn, title in members)
         lis.append(f'<li><a href="text/{members[0][0]}">{e(gname)}</a><ol>{sub}</ol></li>')
+    lis.append('<li><a href="text/quickref.xhtml">Quick-Reference Card</a></li>')
     lis.append('<li><a href="text/final.xhtml">Score Tracker and Final Word</a></li>')
     nav = f"""<?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE html>

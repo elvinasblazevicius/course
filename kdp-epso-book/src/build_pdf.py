@@ -444,15 +444,32 @@ RENDER = {"verbal": r_verbal, "numerical": r_numerical, "abstract": r_abstract, 
 
 
 # ------------------------------------------------------------------ solutions
+TRAP_ORDER = ["extreme wording", "scope shift", "cause and effect", "outside knowledge", "partial truth", "contradiction",
+              "unsupported comparison", "unsupported inference"]
+
+
+def verbal_traps(it):
+    if "NOT" in it["question"]:
+        return ["“NOT supported” question"]
+    found = []
+    for L, e in it["explanations"].items():
+        m = re.match(r"Incorrect\s*[–—-]\s*([a-z ]+)\.", e)
+        if m and m.group(1).strip() in TRAP_ORDER:
+            found.append(m.group(1).strip())
+    return sorted(dict.fromkeys(found), key=TRAP_ORDER.index) or ["general"]
+
+
 ABS_SKILL = {"pos": "position", "posfill": "position + shading", "pos2": "second moving element", "rot": "rotation",
              "dots": "counting", "quad": "quarter shading", "poly": "shape sequence", "polyfill": "shape sequence + shading",
              "flip": "rotation + reflection"}
 
 
 def mock_diagnostic(mk):
-    rows = [["1–20", "Verbal reasoning (all question types)", "Chapter 2"]]
+    rows = []
     for it in mk["items"]:
-        if it["type"] == "numerical":
+        if it["type"] == "verbal":
+            rows.append([str(it["n"]), "Verbal: traps — " + ", ".join(verbal_traps(it)), "Chapter 2"])
+        elif it["type"] == "numerical":
             rows.append([str(it["n"]), f"Numerical: {it['skill']}", "Chapter 3"])
         elif it["type"] == "abstract":
             sk = " · ".join(dict.fromkeys(ABS_SKILL[p] for p in it["template"].split("+")))
@@ -555,8 +572,9 @@ def copyright_page(meta, total):
         lines.append(f"ISBN (hardcover): {meta['isbn_hardcover']}")
     lines.append("First edition.")
     lines.append("<b>How this book was checked.</b> Every question was written for this book. The calculated question types are generated "
-                 "and verified by computer, so each has exactly one correct option, and every answer key was re-solved independently, without "
-                 "sight of the key, as part of a multi-stage quality review covering accuracy, wording, layout and fairness.")
+                 "and verified by computer, so each has exactly one correct option. The answer keys were audited by independent reviewers who "
+                 "solved large samples of every question type without sight of the key, as part of a multi-stage quality review covering "
+                 "accuracy, wording, layout and fairness.")
     lines.append(f"Published by {esc(meta['imprint'])}. Typeset in Source Serif 4 and Source Sans 3.")
     return [Marker(noheader=True, nofooter=True), Spacer(1, 4.2 * inch)] + [Paragraph(x, s) for x in lines]
 
@@ -605,7 +623,7 @@ def guide_story(text, first_section_is_front=True):
                                  abstract_row(ABS_EXAMPLE["options"], size=FR, labels=list("ABCDE"), gap=10)]), Spacer(1, 8)]
             continue
         if s.startswith("## "):
-            fl.append(CondPageBreak(1.3 * inch)); fl.append(P(s[3:], "h2"))
+            fl.append(CondPageBreak((4.2 if s[3:].startswith("Worked example") else 1.3) * inch)); fl.append(P(s[3:], "h2"))
         elif s.startswith("> "):
             fl += tip_box(s[2:])
         elif s.startswith("- "):
@@ -780,16 +798,17 @@ def build(path=OUT / "interior.pdf"):
     for it in book["sets"][2]["items"]:
         for part in dict.fromkeys(it["template"].split("+")):
             ab.setdefault(ABS_SKILL[part], []).append(str(it["n"]))
-    vb = OrderedDict([("Which statement is correct?", []), ("Which statement is NOT supported?", [])])
+    vb = OrderedDict()
     for it in book["sets"][0]["items"]:
-        vb["Which statement is NOT supported?" if "NOT" in it["question"] else "Which statement is correct?"].append(str(it["n"]))
+        for tr in verbal_traps(it):
+            vb.setdefault(tr, []).append(str(it["n"]))
     for title, d in (("Verbal reasoning", vb), ("Numerical reasoning", num), ("Abstract reasoning", ab)):
         rows = [[k[0].upper() + k[1:], ", ".join(v)] for k, v in sorted(d.items())]
         story += [P(title, "h3"), data_table({"columns": ["Skill", "Practice questions"], "rows": rows}, zebra=True, align_numeric=False),
                   Spacer(1, 8)]
 
     story += heading_chapter("Score Tracker", toc_level=0, key="tracker")
-    hdr = ["Set", "Attempt", "Foundation", "Intermediate", "Advanced", "Total", "Date"]
+    hdr = ["Set", "Try", "Foundation", "Intermediate", "Advanced", "Total", "Date"]
     data = [[Paragraph(esc(c), ST["cellb"]) for c in hdr]]
     for st in book["sets"]:
         for att in ("1", "2"):

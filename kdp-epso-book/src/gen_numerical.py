@@ -164,9 +164,12 @@ def t_share(rng, B, tgt):
             val / sum(data[x][si] for x in regions if x != r) * 100]
     ans = val / tot_r * 100
     opts, key = B.options(ans, pool, fmt_pct, tgt, 0.05)
-    fig = table_fig("Regional development fund allocations by sector (€ million)", ["Region"] + secs + ["Total"],
+    tt, unit_word = rng.choice([("Regional development fund allocations by sector (€ million)", "allocation"),
+                                ("Research grants awarded by field and region (€ million)", "grant funding"),
+                                ("Infrastructure investment by sector and region (€ million)", "investment")])
+    fig = table_fig(tt, ["Region"] + secs + ["Total"],
                     [[x] + [fmt_num(v) for v in data[x]] + [fmt_num(sum(data[x]))] for x in regions])
-    q = f"What percentage of the {r} region’s total allocation went to {secs[si]}?"
+    q = f"What percentage of the {r} region’s total {unit_word} went to {secs[si]}?"
     expl = [f"The {r} region’s total allocation is €{fmt_num(tot_r)} million, of which {secs[si]} received €{fmt_num(val)} million.",
             f"{fmt_num(val)} ÷ {fmt_num(tot_r)} × 100 ≈ {fmt_pct(ans)}.",
             f"Typical errors: dividing by the {secs[si]} column total (the region’s share of that sector) or by the remainder instead of the total."]
@@ -310,19 +313,23 @@ def t_projection(rng, B, tgt):
     g = 1 + rates[k] / 100
     ans = vals[k] * g ** n
     pool = [vals[k] * (1 + rates[k] * n / 100), vals[k] * g ** (n - 1), vals[k] * g ** (n + 1), vals[k] * (1 + rates[k] / 100 * (n + 1))]
-    opts, key = B.options(ans, pool, lambda x: fmt_num(x) + " t", tgt, 0.012)
-    fig = table_fig("Plastic collected for recycling by four municipal schemes this year, and expected annual growth",
-                    ["Municipality", "Collected this year (tonnes)", "Expected annual growth"],
+    tt, colh, noun, verb = rng.choice([
+        ("Plastic collected for recycling by four municipal schemes this year, and expected annual growth", "Collected this year (tonnes)", "tonnes", "collected"),
+        ("Solar capacity installed on public buildings this year, and expected annual growth", "Installed this year (kW)", "kW", "installed"),
+        ("Users of four e-government services this year, and expected annual growth", "Users this year", "users", "registered")])
+    unit_sfx = {"tonnes": " t", "kW": " kW", "users": ""}[noun]
+    opts, key = B.options(ans, pool, lambda x: fmt_num(x) + unit_sfx, tgt, 0.012)
+    fig = table_fig(tt, ["Municipality", colh, "Expected annual growth"],
                     [[c, fmt_num(v), f"{r}%"] for c, v, r in zip(towns, vals, rates)])
-    q = (f"If the amount collected in {towns[k]} grows at its expected annual rate, compounded, approximately how many tonnes "
-         f"will be collected three years from now?")
-    f = lambda x: fmt_num(x) + " t"
+    q = (f"If the figure for {towns[k]} grows at its expected annual rate, compounded, approximately how many {noun} "
+         f"will be {verb} three years from now?")
+    f = lambda x: fmt_num(x) + unit_sfx
     names = [(pool[0], f"simple growth, {fmt_num(vals[k])} × (1 + 3 × {rates[k] / 100:g}) = {f(pool[0])}, ignores compounding"),
              (pool[1], f"compounding for only two years gives {f(pool[1])}"),
              (pool[2], f"compounding for four years gives {f(pool[2])}"),
              (pool[3], f"simple growth over four years gives {f(pool[3])}")]
     printed = [t for v, t in names if f(v) in opts]
-    expl = [f"Compound growth: {fmt_num(vals[k])} × {g:g}³ = {fmt_num(vals[k])} × {g ** n:.4f} ≈ {fmt_num(ans)} tonnes."]
+    expl = [f"Compound growth: {fmt_num(vals[k])} × {g:g}³ = {fmt_num(vals[k])} × {g ** n:.4f} ≈ {fmt_num(ans)} {noun}."]
     if printed:
         expl.append("Traps among the options: " + "; ".join(printed) + ".")
     return dict(figure=fig, question=q, options=opts, answer=key, steps=expl, difficulty="advanced", skill="Compound growth")
@@ -346,13 +353,16 @@ def t_scaling(rng, B, tgt):
     pool = [women[k] + tot * inc / 100, total_new * men[k] / tot, women[k] + inc, total_new / 2]
     pool = [round(x) for x in pool]
     opts, key = B.options(ans, pool, lambda x: f"{x:.0f}", tgt, 0.04)
-    fig = bar_fig("Staff by gender in four units", units, [{"name": "Women", "values": women}, {"name": "Men", "values": men}], "number of staff")
-    q = (f"If the total staff of {units[k]} increases by {inc}% and the proportion of women stays the same, "
-         f"how many women will {units[k]} employ?")
-    expl = [f"{units[k]} has {women[k]} women and {men[k]} men ({tot} staff).",
-            f"New total = {tot} × {1 + inc / 100:g} = {total_new:g}; women = {total_new:g} × {women[k]}/{tot} = {ans:g}.",
-            f"Shortcut: if the proportion is unchanged, the number of women also grows by {inc}%: {women[k]} × {1 + inc / 100:g} = {ans:g}.",
-            f"Typical errors: applying the whole increase to women only ({women[k] + round(tot * inc / 100)}) or calculating the number of men instead."]
+    grp_t, a_nm, b_nm, whole = rng.choice([("Staff by gender in four units", "Women", "Men", "staff"),
+                                         ("Trainees by contract type in four units", "Permanent", "Temporary", "trainees"),
+                                         ("Interpreters by booth language in four teams", "French booth", "German booth", "interpreters")])
+    fig = bar_fig(grp_t, units, [{"name": a_nm, "values": women}, {"name": b_nm, "values": men}], f"number of {whole}")
+    q = (f"If the total number of {whole} in {units[k]} increases by {inc}% and the proportion of the “{a_nm}” group stays the same, "
+         f"how many will be in the “{a_nm}” group?")
+    expl = [f"{units[k]} has {women[k]} ({a_nm}) and {men[k]} ({b_nm}), {tot} in total.",
+            f"New total = {tot} × {1 + inc / 100:g} = {total_new:g}; “{a_nm}” = {total_new:g} × {women[k]}/{tot} = {ans:g}.",
+            f"Shortcut: if the proportion is unchanged, the “{a_nm}” group also grows by {inc}%: {women[k]} × {1 + inc / 100:g} = {ans:g}.",
+            f"Typical errors: adding the whole increase to one group ({women[k] + round(tot * inc / 100)}) or calculating the other group instead."]
     return dict(figure=fig, question=q, options=opts, answer=key, steps=expl, difficulty="foundation", skill="Proportional scaling")
 
 
@@ -366,9 +376,13 @@ def t_reverse(rng, B, tgt):
     ans = old[k]
     pool = [new[k] * (1 - ch[k] / 100), new[k] / (1 - ch[k] / 100), new[k] - ch[k] * 10, new[k]]
     opts, key = B.options(ans, pool, lambda x: f"€{fmt_num(x, 1)}k", tgt, 0.015)
-    fig = table_fig("Budget for this year and change compared with last year", ["Programme", "This year (€ thousand)", "Change on last year"],
+    tt = rng.choice(["Budget for this year and change compared with last year", "Grant envelope this year and change on last year",
+                     "Spending this year by programme and change compared with last year"])
+    fig = table_fig(tt, ["Programme", "This year (€ thousand)", "Change on last year"],
                     [[p, fmt_num(n, 1), signed(c, 0) + "%"] for p, n, c in zip(progs, new, ch)])
-    q = f"What was last year’s budget for the “{progs[k]}” programme?"
+    q = rng.choice([f"What was last year’s budget for the “{progs[k]}” programme?",
+                    f"How much was allocated to “{progs[k]}” last year?",
+                    f"Before this year’s change, what was the budget for “{progs[k]}”?"])
     expl = [f"This year = last year × {1 + ch[k] / 100:g}, so last year = this year ÷ {1 + ch[k] / 100:g}.",
             f"{fmt_num(new[k], 1)} ÷ {1 + ch[k] / 100:g} = {fmt_num(ans, 1)} (€ thousand).",
             f"Typical error: {'reducing' if ch[k] > 0 else 'increasing'} this year’s figure by {abs(ch[k])}% applies the percentage to the wrong base."]
@@ -390,9 +404,11 @@ def t_bar_increase(rng, B, tgt):
     rng.shuffle(others)
     chosen = [trap] + others[:2]; rng.shuffle(chosen)
     order = order_choices(best, chosen, tgt)
-    fig = bar_fig("Containers handled at five ports (thousand units)", ports,
-                  [{"name": "Year 1", "values": y1}, {"name": "Year 2", "values": y2}], "thousand containers")
-    q = "Which of the following ports recorded the largest percentage increase in containers handled between Year 1 and Year 2?"
+    tt, place, what, unit = rng.choice([("Containers handled at five ports (thousand units)", "ports", "containers handled", "thousand containers"),
+                                        ("Passengers at five regional airports (thousands)", "airports", "passenger numbers", "thousand passengers"),
+                                        ("Visits to five public libraries (thousands)", "libraries", "visits", "thousand visits")])
+    fig = bar_fig(tt, ports, [{"name": "Year 1", "values": y1}, {"name": "Year 2", "values": y2}], unit)
+    q = f"Which of the following {place} recorded the largest percentage increase in {what} between Year 1 and Year 2?"
     steps = ["Percentage change = (Year 2 − Year 1) ÷ Year 1 × 100:",
              "; ".join(f"{ports[k]}: ({y2[k]} − {y1[k]}) ÷ {y1[k]} ≈ {fmt_pct(inc[k] * 100)}" for k in order) + ".",
              f"Largest: {ports[best]}. Trap: {ports[trap]} has the largest increase in absolute terms (+{absd[trap]} thousand), but from a larger base."]
@@ -416,9 +432,12 @@ def t_pie(rng, B, tgt):
     ans = ai * (1 + nxt / 100) - aj
     pool = [ai - aj, total * (shares[i] + nxt - shares[j]) / 100, (ai - aj) * (1 + nxt / 100), ai * nxt / 100]
     opts, key = B.options(ans, pool, lambda x: fmt_eur(x, 1) + " million", tgt, 0.025, band=(0.05, 4))
-    fig = pie_fig(f"Breakdown of an agency’s annual budget (total €{total} million)", cats, shares, f"Total: €{total} million")
-    q = (f"Next year the {cats[i]} budget is to rise by {nxt}% while all other items stay unchanged. By how much will the "
-         f"{cats[i]} budget then exceed the {cats[j]} budget?")
+    owner = rng.choice(["an agency’s", "a directorate’s", "a regional office’s"])
+    fig = pie_fig(f"Breakdown of {owner} annual budget (total €{total} million)", cats, shares, f"Total: €{total} million")
+    q = rng.choice([
+        f"Next year the {cats[i]} budget is to rise by {nxt}% while all other items stay unchanged. By how much will the {cats[i]} budget then exceed the {cats[j]} budget?",
+        f"If spending on {cats[i]} grows by {nxt}% and every other item is frozen, what will the gap be between {cats[i]} and {cats[j]}?",
+        f"After a {nxt}% increase in the {cats[i]} line (all other lines unchanged), how much larger than {cats[j]} will {cats[i]} be?"])
     expl = [f"{cats[i]} now = {shares[i]}% × €{total} million = €{ai:g} million; after +{nxt}%: €{ai * (1 + nxt / 100):.2f} million.",
             f"{cats[j]} = {shares[j]}% × €{total} million = €{aj:g} million.",
             f"Difference = €{ans:.2f} million ≈ €{ans:.1f} million. Typical error: adding {nxt} percentage points to the share instead of raising the amount by {nxt}%."]
@@ -441,9 +460,11 @@ def t_speed(rng, B, tgt):
     pool = [round(t_old * (new_spd - spd[k]) / spd[k]), round(t_new), round(ans * 1.5), round(ans / 2),
             round(dist[k] / (new_spd - spd[k]) * 60 / 6)]
     opts, key = B.options(ans_r, pool, lambda x: f"{x:.0f} minutes", tgt, abs_gap=3, band=(0.3, 4))
-    fig = table_fig("Rail routes: distance and average train speed", ["Route", "Distance (km)", "Average speed (km/h)"],
+    mode_t, vehicle = rng.choice([("Rail routes: distance and average train speed", "train"), ("Bus routes: distance and average coach speed", "coach"),
+                                  ("Ferry routes: distance and average ferry speed", "ferry")])
+    fig = table_fig(mode_t, ["Route", "Distance (km)", "Average speed (km/h)"],
                     [[r, str(d), str(s)] for r, d, s in zip(routes, dist, spd)])
-    q = f"If the average speed on the {routes[k]} route rose to {new_spd} km/h, approximately how many minutes would the journey save?"
+    q = f"If the {vehicle}’s average speed on the {routes[k]} route rose to {new_spd} km/h, approximately how many minutes would each journey save?"
     expl = [f"Time = distance ÷ speed. Now: {dist[k]} ÷ {spd[k]} × 60 = {t_old:.1f} minutes. New: {dist[k]} ÷ {new_spd} × 60 = {t_new:.1f} minutes.",
             f"Saving = {t_old:.1f} − {t_new:.1f} = {ans:.1f}, i.e. about {ans_r} minutes.",
             "Typical error: assuming journey time falls by the same percentage as speed rises."]
@@ -505,7 +526,9 @@ def t_two_tables(rng, B, tgt):
                   [[x] + [str(v) for v in parts[x]] for x in courses]),
         table_fig("Table 2 — Cost per participant (€)", ["Course", "Cost (€)"], [[x, fmt_num(cost[x])] for x in courses])]}
     qtxt = f"{quarters[q0]} to {quarters[q1]} inclusive"
-    q = f"What was the total cost of the “{c}” course for {qtxt}?"
+    q = rng.choice([f"What was the total cost of the “{c}” course for {qtxt}?",
+                    f"How much did the “{c}” course cost in total over {qtxt}?",
+                    f"Over {qtxt}, what did the “{c}” course cost altogether?"])
     expl = [f"Participants {qtxt}: " + " + ".join(str(parts[c][x]) for x in sel) + f" = {n}.",
             f"Total cost = {n} × €{fmt_num(cost[c])} = {fmt_eur(ans)}.",
             "Typical errors: including the wrong quarters, using the whole year, or reading the wrong row of either table."]
@@ -529,9 +552,12 @@ def t_index(rng, B, tgt):
     ans = (ib - ia) / ia * 100
     pool = [ib - ia, ib - 100, (ib - ia) / ib * 100, (ib - data[c][1]) / data[c][1] * 100, ia - 100]
     opts, key = B.options(ans, pool, fmt_pct, tgt, 0.06, band=(0.2, 5))
-    fig = table_fig("Index of average house prices (Year 1 = 100)", ["Country"] + yrs,
+    idx_t, idx_w = rng.choice([("Index of average house prices (Year 1 = 100)", "average house prices"),
+                               ("Index of consumer prices for public transport (Year 1 = 100)", "public-transport prices"),
+                               ("Index of average energy bills (Year 1 = 100)", "average energy bills")])
+    fig = table_fig(idx_t, ["Country"] + yrs,
                     [[k] + [f"{v:.1f}" for v in data[k]] for k in ctry])
-    q = f"By approximately what percentage did average house prices in {the(c)} rise between Year 3 and Year 5?"
+    q = f"By approximately what percentage did {idx_w} in {the(c)} rise between Year 3 and Year 5?"
     expl = ["With index numbers, the percentage change between two years is (later index − earlier index) ÷ earlier index × 100.",
             f"({ib:.1f} − {ia:.1f}) ÷ {ia:.1f} × 100 ≈ {fmt_pct(ans)}.",
             f"Typical errors: subtracting the indices ({ib - ia:.1f} is a change in index points, not per cent) or measuring from the base year (index − 100)."]
@@ -559,9 +585,11 @@ def t_ratio(rng, B, tgt):
     opts_d = [opts_d[0]] + rng.sample(opts_d[1:], 2)
     rng.shuffle(opts_d)
     opts = opts_d[:tgt] + [key_s] + opts_d[tgt:]
-    fig = table_fig("Translation requests received by a language unit in one month, by source language",
-                    ["Source language", "Requests"], [[l, str(v)] for l, v in rows])
-    q = f"What is the ratio of requests from {langs[0]} to requests from {langs[1]}, in its simplest form?"
+    tt, noun = rng.choice([("Translation requests received by a language unit in one month, by source language", "requests"),
+                           ("Interpreting assignments in one quarter, by booth language", "assignments"),
+                           ("Documents published in one year, by original language", "documents")])
+    fig = table_fig(tt, ["Language", noun.capitalize()], [[l, str(v)] for l, v in rows])
+    q = f"What is the ratio of {noun} in {langs[0]} to {noun} in {langs[1]}, in its simplest form?"
     g = math.gcd(x, y)
     expl = [f"{langs[0]} : {langs[1]} = {x} : {y}. Both numbers divide by {g}, giving {a}:{b}.",
             f"Typical error: reversing the order of the ratio ({b}:{a})."]
@@ -582,13 +610,14 @@ def t_avg_time(rng, B, tgt):
     data[t][5] = None
     pool = [target, round(first5 / 5), target * 5 - first5 if target * 5 - first5 > 0 else None, need + target // 5 * 2, need - target // 5 * 2]
     opts, key = B.options(need, pool, lambda v: f"{v:.0f}", tgt, 0.06, band=(0.15, 6))
-    q = f"How many cases would {t} need to close in June for its average over January to June to be exactly {target} cases per month?"
+    noun_avg = rng.choice(["cases", "files", "requests"])
+    q = f"How many {noun_avg} would {t} need to close in June for its average over January to June to be exactly {target} per month?"
     expl = [f"For an average of {target} over 6 months, the total must be {target} × 6 = {target * 6}.",
             "January–May total = " + " + ".join(str(v) for v in data[t][:5]) + f" = {first5}.",
             f"June must therefore be {target * 6} − {first5} = {need}.",
             f"Typical errors: answering with the target itself ({target}) or with the current average (about {first5 / 5:.0f})."]
     rows = [[x] + [("—" if v is None else str(v)) for v in data[x]] for x in teams]
-    fig = table_fig("Cases closed per month by three teams", ["Team"] + months, rows, note="— = figure not yet available")
+    fig = table_fig(f"{noun_avg.capitalize()} closed per month by three teams", ["Team"] + months, rows, note="— = figure not yet available")
     return dict(figure=fig, question=q, options=opts, answer=key, steps=expl, difficulty="intermediate", skill="Averages over time")
 
 
@@ -625,13 +654,15 @@ def t_harmonic(rng, B, tgt):
     simple = (v1 + v2) / 2
     pool = [simple, max(v1, v2) - (max(v1, v2) - min(v1, v2)) / 4, ans * 2 / 1.9 if False else None, min(v1, v2) + (simple - min(v1, v2)) * 0.5]
     opts, key = B.options(ans, pool, lambda x: f"{x:.1f} km/h", tgt, 0.03, band=(0.5, 2))
-    fig = table_fig("Delivery van journey between two depots", ["Leg", "Distance (km)", "Average speed (km/h)"],
+    vt, vn = rng.choice([("Delivery van journey between two depots", "van"), ("Courier cyclist’s round trip between two offices", "courier"),
+                         ("Shuttle bus round trip between two sites", "shuttle bus")])
+    fig = table_fig(vt, ["Leg", "Distance (km)", "Average speed (km/h)"],
                     [[f"{towns[0]} → {towns[1]}", str(d), str(v1)], [f"{towns[1]} → {towns[0]}", str(d), str(v2)]])
-    q = "What was the van’s average speed for the whole round trip?"
+    q = f"What was the {vn}’s average speed for the whole round trip?"
     t1, t2 = d / v1, d / v2
     expl = [f"Average speed = total distance ÷ total time. Times: {d} ÷ {v1} = {t1:.3f} h and {d} ÷ {v2} = {t2:.3f} h.",
             f"Average = {2 * d} ÷ {t1 + t2:.3f} ≈ {ans:.1f} km/h.",
-            f"Typical error: averaging the two speeds ({simple:.1f} km/h). The van spends longer at the lower speed, so the true average is lower."]
+            f"Typical error: averaging the two speeds ({simple:.1f} km/h). More time is spent at the lower speed, so the true average is lower."]
     return dict(figure=fig, question=q, options=opts, answer=key, steps=expl, difficulty="advanced", skill="Average speed")
 
 
