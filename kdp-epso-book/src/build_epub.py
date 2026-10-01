@@ -65,6 +65,7 @@ table { border-collapse: collapse; margin: 0.4em 0 0.6em; font-family: sans-seri
 th, td { border: 1px solid #888; padding: 0.15em 0.4em; }
 th { background: #e6e6e6; }
 td.n { text-align: right; }
+.keynote { font-size: 1em; font-style: normal; color: inherit; margin: 0.3em 0 0.6em; }
 .note { font-size: 0.8em; font-style: italic; color: #555; }
 .tip { background: #eee; border-left: 4px solid #222; padding: 0.5em 0.7em; margin: 0.8em 0; }
 .fig { text-align: center; margin: 0.4em 0; }
@@ -102,7 +103,7 @@ def figure_html(fig, name):
     elif fig["type"] == "table":
         out += f'<p class="stem">{e(fig["title"])}</p>' + table_html(fig)
         if fig.get("note"):
-            out += f'<p class="note">{e(fig["note"])}</p>'
+            out += f'<p class="keynote">{e(fig["note"])}</p>'
     else:
         out += f'<p class="stem">{e(fig["title"])}</p>'
         src = png_of(chart(fig, width=430), name, dpi=170, colors=12)
@@ -153,7 +154,7 @@ def q_html(it, anchor, sol_href, label):
         if it["kind"] == "meeting":
             g = it["grid"]
             h += '<p class="stem">Who is busy, by day and start time</p>' + table_html({"columns": g["columns"], "rows": g["rows"]})
-            h += f'<p class="note">{e(g["note"])} Key: {e(g["legend"])}.</p>'
+            h += f'<p class="keynote">{e(g["note"])} Key: {e(g["legend"])}.</p>'
         elif it["kind"] == "critical":
             h += '<p class="stem">Project tasks</p>' + table_html(it["table"])
         else:
