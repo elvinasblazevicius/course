@@ -104,26 +104,13 @@ def building_lines(c, cx, base, W, H, x0, panel_w):
 
 
 def building_hero(c, cx, base, W, H, panel_w):
-    """Filled illustration of a Brussels-style EU institutional building (cross plan, curved glass wings, louvres)
-    with a row of flagpoles in front. Abstract flags only: no national flags, no EU emblem."""
+    """Solid tone-on-tone illustration of a Brussels-style institutional building (curved glass wings, louvres,
+    central core). Kept below #C4D6FA in brightness so white and gold stay reserved for the type."""
     core = W * 0.06
     floors = 12
-    c.saveState()
-    # soft shadow / plaza glow
-    c.setFillColor(HexColor("#0B2766")); c.setFillAlpha(0.45)
-    c.ellipse(cx - W * 0.6, base - H * 0.10, cx + W * 0.6, base + H * 0.06, stroke=0, fill=1)
-    c.restoreState()
-    # rear wings of the cross plan, receding behind the core
-    for sign in (-1, 1):
-        q = c.beginPath()
-        q.moveTo(cx + sign * core, base + H * 0.50)
-        q.lineTo(cx + sign * W * 0.20, base + H * 0.86)
-        q.lineTo(cx + sign * W * 0.20, base + H * 0.98)
-        q.lineTo(cx + sign * core, base + H * 1.04)
-        q.close()
-        c.saveState(); c.setFillColor(HexColor("#6F94E0")); c.drawPath(q, stroke=0, fill=1); c.restoreState()
+    outline = HexColor("#C4D6FA")
 
-    def wing(sign, hmul, c_top, c_bot, louvre):
+    def wing(sign, hmul, c_top, c_bot):
         x_in, x_out = cx + sign * core, cx + sign * W / 2
         top_in, top_out = base + H * hmul, base + H * 0.80 * hmul
         p = c.beginPath()
@@ -135,53 +122,27 @@ def building_hero(c, cx, base, W, H, panel_w):
         c.linearGradient(x_in, top_in, x_in, base, (c_top, c_bot), extend=True)
         for i in range(1, floors + 1):
             t = i / (floors + 1)
-            c.setStrokeColor(louvre); c.setStrokeAlpha(0.55); c.setLineWidth(1.6)
+            c.setStrokeColor(HexColor("#9DBBF4")); c.setStrokeAlpha(0.6); c.setLineWidth(1.2)
             c.line(x_in, base + H * hmul * t, x_out, base + H * 0.80 * hmul * t)
-        # glass reflection band
-        c.setFillColor(WHITE); c.setFillAlpha(0.22)
-        r = c.beginPath()
-        r.moveTo(x_in + sign * W * 0.10, base); r.lineTo(x_in + sign * W * 0.17, base)
-        r.lineTo(x_in + sign * W * 0.27, base + H * 1.1); r.lineTo(x_in + sign * W * 0.20, base + H * 1.1); r.close()
-        c.drawPath(r, stroke=0, fill=1)
         c.restoreState()
-        c.saveState(); c.setStrokeColor(WHITE); c.setStrokeAlpha(0.9); c.setLineWidth(1.4)
-        c.drawPath(p, stroke=1, fill=0); c.restoreState()
+        c.saveState(); c.setStrokeColor(outline); c.setLineWidth(1.4); c.drawPath(p, stroke=1, fill=0); c.restoreState()
 
-    wing(-1, 1.05, HexColor("#F4F8FF"), HexColor("#B8CDF6"), HexColor("#3D6CC9"))   # sunlit
-    wing(1, 0.97, HexColor("#C9D9F8"), HexColor("#8EAAE6"), HexColor("#2C59B5"))    # shade
-    # central core
+    wing(-1, 1.05, HexColor("#4A80E6"), HexColor("#2A5BC0"))   # sunlit
+    wing(1, 0.97, HexColor("#3569CF"), HexColor("#22509F"))    # shade
     c.saveState()
     c.setFillColor(BLUE_DEEP); c.rect(cx - core, base, 2 * core, H * 1.14, stroke=0, fill=1)
-    for i in range(1, floors + 1):
-        y = base + H * 1.08 * i / (floors + 1)
-        c.setStrokeColor(GOLD); c.setStrokeAlpha(0.75); c.setLineWidth(1.0)
-        c.line(cx - core * 0.62, y, cx + core * 0.62, y)
-    c.setFillColor(WHITE); c.rect(cx - core * 1.4, base + H * 1.14, core * 2.8, H * 0.03, stroke=0, fill=1)
+    c.setStrokeColor(outline); c.setLineWidth(1.4); c.rect(cx - core, base, 2 * core, H * 1.14, stroke=1, fill=0)
+    c.setFillColor(outline); c.rect(cx - core * 1.4, base + H * 1.14, core * 2.8, H * 0.025, stroke=0, fill=1)
     c.restoreState()
-    # plaza line
-    half = min(W / 2 + 0.15 * inch, panel_w / 2 - 0.3 * inch)
-    c.saveState(); c.setStrokeColor(WHITE); c.setStrokeAlpha(0.85); c.setLineWidth(1.6)
-    c.line(cx - half, base, cx + half, base); c.restoreState()
-    # flagpoles in front of the building, abstract gold/white flags
-    n = 7
-    span = W * 0.74
-    pole_h = H * 0.58
-    for k in range(n):
-        px = cx - span / 2 + span * k / (n - 1)
-        if abs(px - cx) < core * 1.2:
-            continue
-        c.saveState()
-        c.setStrokeColor(BLUE_DEEP); c.setLineWidth(1.6); c.line(px, base - 2, px, base + pole_h)
-        fw, fh = W * 0.05, H * 0.13
-        fy = base + pole_h - fh
-        f = c.beginPath()
-        f.moveTo(px, fy + fh)
-        f.curveTo(px + fw * 0.35, fy + fh * 1.12, px + fw * 0.65, fy + fh * 0.88, px + fw, fy + fh)
-        f.lineTo(px + fw, fy)
-        f.curveTo(px + fw * 0.65, fy - fh * 0.12, px + fw * 0.35, fy + fh * 0.12, px, fy)
-        f.close()
-        c.setFillColor(GOLD if k % 2 == 0 else BLUE_DEEP); c.drawPath(f, stroke=0, fill=1)
-        c.restoreState()
+    # fade the bottom 0.4 in into the background (stepped overlay; no hard edge above the imprint)
+    steps, fade_h = 24, 0.4 * inch
+    half = W / 2 + 2
+    c.saveState(); c.setFillColor(BLUE)
+    for k in range(steps):
+        y = base + fade_h * k / steps
+        c.setFillAlpha(min(1.0, (1 - k / steps) * 0.95))
+        c.rect(cx - half, y - 2, 2 * half, fade_h / steps + 2.2, stroke=0, fill=1)
+    c.restoreState()
 
 
 def tick_o(c, x, base, size):
