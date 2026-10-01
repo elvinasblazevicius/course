@@ -144,7 +144,8 @@ def t_pct_change(rng, B, tgt):
     opts, key = B.options(a, pool, fmt_pct, tgt, 0.04)
     title, measure = rng.choice([("Visitors to national science museums (thousands)", "the number of visitors to science museums"),
                                  ("Visitors to national art galleries (thousands)", "the number of visitors to art galleries"),
-                                 ("Overnight stays in campsites (thousands)", "the number of overnight stays in campsites")])
+                                 ("Overnight stays in campsites (thousands)", "the number of overnight stays in campsites"),
+                                 ("Passengers at regional airports (thousands)", "passenger numbers at regional airports")])
     fig = table_fig(title, ["Country", "Year 1", "Year 2", "Year 3"], [[k] + [fmt_num(x) for x in data[k]] for k in ctry])
     q = f"By approximately what percentage did {measure} in {the(c)} {direction} between Year 1 and Year 3?"
     expl = [f"Percentage change uses the earlier value as the base: ({fmt_num(v3)} − {fmt_num(v1)}) ÷ {fmt_num(v1)} × 100.",
@@ -280,8 +281,12 @@ WEIGHTED_CTX = [
 ]
 
 
+_WTURN = [0]
+
+
 def t_weighted(rng, B, tgt):
-    title, col0, col1, col2, what, lo, hi, mult, ff = rng.choice(WEIGHTED_CTX)
+    title, col0, col1, col2, what, lo, hi, mult, ff = WEIGHTED_CTX[_WTURN[0] % len(WEIGHTED_CTX)]  # rotate contexts
+    _WTURN[0] += 1
     while True:
         units = rng.sample(["North", "South", "East", "West", "Central"] if col0 != "Unit" else UNITS, 4)
         staff = [rng.randint(6, 48) for _ in units]
@@ -702,10 +707,15 @@ def t_currency_change(rng, B, tgt):
     ans = abs(net); word = "risen" if net > 0 else "fallen"
     pool = [inc, abs((r2 - r1) / r1 * 100), abs(inc - (r2 - r1) / r1 * 100), abs(p2 * r2 - p1 * r1) / (p1 * r1) * 100]
     opts, key = B.options(ans, pool, lambda x: f"{x:.1f}%", tgt, 0.06, band=(0.05, 20))
-    fig = table_fig(f"A supplier’s price in {n} and the exchange rate", ["", "Year 1", "Year 2"],
-                    [[f"Price ({code})", fmt_num(p1, 0 if r0 > 50 else 2), fmt_num(p2, 0 if r0 > 50 else 2)],
+    what, title, stem = rng.choice([
+        ("price", "A supplier’s price in {n} and the exchange rate", "In euro terms, by approximately what percentage has the supplier’s price {w} between Year 1 and Year 2?"),
+        ("fee", "An annual software licence billed in {n}", "Measured in euros, by about what percentage has the licence fee {w} from Year 1 to Year 2?"),
+        ("rent", "Monthly rent of a liaison office in {n}", "Once both years are converted into euros, approximately what is the percentage by which the rent has {w}?"),
+        ("rate", "A conference hotel’s room rate in {n}", "For a delegation paying in euros, by roughly what percentage has the room rate {w} since Year 1?")])
+    fig = table_fig(title.format(n=n), ["", "Year 1", "Year 2"],
+                    [[f"{what.capitalize()} ({code})", fmt_num(p1, 0 if r0 > 50 else 2), fmt_num(p2, 0 if r0 > 50 else 2)],
                      [f"{code} per €1", f"{r1:.{dp}f}", f"{r2:.{dp}f}"]])
-    q = f"In euro terms, by approximately what percentage has the supplier’s price {word} between Year 1 and Year 2?"
+    q = stem.format(w=word)
     expl = [f"Convert each year to euros: Year 1 {fmt_num(p1, 2)} ÷ {r1:.{dp}f} = {fmt_eur(e1, 2)}; Year 2 {fmt_num(p2, 2)} ÷ {r2:.{dp}f} = {fmt_eur(e2, 2)}.",
             f"Change = ({fmt_eur(e2, 2)} − {fmt_eur(e1, 2)}) ÷ {fmt_eur(e1, 2)} ≈ {signed(net, 1)}%.",
             f"Typical errors: quoting the {inc}% rise in local currency, or the change in the exchange rate alone; both ignore the other effect."]

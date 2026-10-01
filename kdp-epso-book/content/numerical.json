@@ -189,42 +189,42 @@
   {
    "figure": {
     "type": "table",
-    "title": "Documents published in one year, by original language",
+    "title": "Translation requests received by a language unit in one month, by source language",
     "columns": [
      "Language",
-     "Documents"
+     "Requests"
     ],
     "rows": [
      [
-      "English",
-      "153"
-     ],
-     [
-      "Polish",
-      "51"
-     ],
-     [
-      "German",
-      "72"
+      "Spanish",
+      "80"
      ],
      [
       "French",
-      "90"
+      "113"
+     ],
+     [
+      "Dutch",
+      "99"
+     ],
+     [
+      "Italian",
+      "112"
      ]
     ],
     "note": null
    },
-   "question": "What is the ratio of documents in French to documents in German, in its simplest form?",
+   "question": "What is the ratio of requests in Italian to requests in Spanish, in its simplest form?",
    "options": [
-    "5:4",
-    "5:3",
-    "4:5",
-    "7:5"
+    "7:5",
+    "7:4",
+    "5:7",
+    "7:6"
    ],
    "answer": "A",
    "steps": [
-    "French : German = 90 : 72. Both numbers divide by 18, giving 5:4.",
-    "Typical error: reversing the order of the ratio (4:5)."
+    "Italian : Spanish = 112 : 80. Both numbers divide by 16, giving 7:5.",
+    "Typical error: reversing the order of the ratio (5:7)."
    ],
    "difficulty": "foundation",
    "skill": "Ratios",
@@ -233,7 +233,7 @@
   {
    "figure": {
     "type": "table",
-    "title": "Overnight stays in campsites (thousands)",
+    "title": "Passengers at regional airports (thousands)",
     "columns": [
      "Country",
      "Year 1",
@@ -242,324 +242,54 @@
     ],
     "rows": [
      [
-      "Latvia",
-      "880",
-      "956",
-      "1,086"
+      "Belgium",
+      "214",
+      "206",
+      "209"
      ],
      [
-      "Netherlands",
-      "464",
-      "544",
-      "513"
+      "Hungary",
+      "639",
+      "645",
+      "729"
      ],
      [
       "Slovakia",
-      "885",
-      "839",
-      "836"
+      "310",
+      "283",
+      "343"
      ],
      [
-      "Austria",
-      "891",
-      "933",
-      "1,002"
+      "Ireland",
+      "378",
+      "443",
+      "481"
      ],
      [
-      "Slovenia",
-      "524",
-      "478",
-      "568"
+      "Estonia",
+      "328",
+      "353",
+      "379"
      ]
     ],
     "note": null
    },
-   "question": "By approximately what percentage did the number of overnight stays in campsites in Slovenia increase between Year 1 and Year 3?",
+   "question": "By approximately what percentage did passenger numbers at regional airports in Estonia increase between Year 1 and Year 3?",
    "options": [
-    "8.4%",
-    "18.8%",
-    "10.0%",
-    "7.7%"
+    "15.5%",
+    "14.4%",
+    "7.4%",
+    "13.5%"
    ],
    "answer": "A",
    "steps": [
-    "Percentage change uses the earlier value as the base: (568 − 524) ÷ 524 × 100.",
-    "= 44 ÷ 524 × 100 ≈ 8.4%, i.e. an increase of about 8.4%.",
+    "Percentage change uses the earlier value as the base: (379 − 328) ÷ 328 × 100.",
+    "= 51 ÷ 328 × 100 ≈ 15.5%, i.e. an increase of about 15.5%.",
     "Typical errors: dividing by the Year 3 value (wrong base), or adding the two year-on-year percentage changes (percentages do not add)."
    ],
    "difficulty": "foundation",
    "skill": "Percentage change",
    "id": "N-005"
-  },
-  {
-   "figure": {
-    "type": "table",
-    "title": "Grant applications received and approval rate",
-    "columns": [
-     "Country",
-     "Applications",
-     "Approval rate"
-    ],
-    "rows": [
-     [
-      "Lithuania",
-      "1,000",
-      "18%"
-     ],
-     [
-      "Poland",
-      "2,100",
-      "18%"
-     ],
-     [
-      "Belgium",
-      "1,800",
-      "40%"
-     ],
-     [
-      "Portugal",
-      "2,000",
-      "12%"
-     ]
-    ],
-    "note": null
-   },
-   "question": "How many applications from Belgium were rejected?",
-   "options": [
-    "1,015",
-    "720",
-    "1,760",
-    "1,080"
-   ],
-   "answer": "D",
-   "steps": [
-    "Approved = 1,800 × 40% = 720.",
-    "Rejected = 1,800 − 720 = 1,080.",
-    "Typical errors: giving the number approved instead of rejected, or reading another country’s row."
-   ],
-   "difficulty": "foundation",
-   "skill": "Rates and counts",
-   "id": "N-006"
-  },
-  {
-   "figure": {
-    "type": "table",
-    "title": "Visitors to national science museums (thousands)",
-    "columns": [
-     "Country",
-     "Year 1",
-     "Year 2",
-     "Year 3"
-    ],
-    "rows": [
-     [
-      "Portugal",
-      "629",
-      "631",
-      "616"
-     ],
-     [
-      "Germany",
-      "603",
-      "587",
-      "546"
-     ],
-     [
-      "Croatia",
-      "626",
-      "680",
-      "812"
-     ],
-     [
-      "Romania",
-      "894",
-      "1,009",
-      "1,162"
-     ],
-     [
-      "Slovenia",
-      "399",
-      "353",
-      "324"
-     ]
-    ],
-    "note": null
-   },
-   "question": "By approximately what percentage did the number of visitors to science museums in Slovenia decrease between Year 1 and Year 3?",
-   "options": [
-    "23.1%",
-    "19.7%",
-    "8.2%",
-    "18.8%"
-   ],
-   "answer": "D",
-   "steps": [
-    "Percentage change uses the earlier value as the base: (324 − 399) ÷ 399 × 100.",
-    "= −75 ÷ 399 × 100 ≈ −18.8%, i.e. a decrease of about 18.8%.",
-    "Typical errors: dividing by the Year 3 value (wrong base), or adding the two year-on-year percentage changes (percentages do not add)."
-   ],
-   "difficulty": "foundation",
-   "skill": "Percentage change",
-   "id": "N-007"
-  },
-  {
-   "figure": {
-    "type": "bar",
-    "title": "Interpreters by booth language in four teams",
-    "categories": [
-     "Unit D",
-     "Unit C",
-     "Unit A",
-     "Unit E"
-    ],
-    "series": [
-     {
-      "name": "French booth",
-      "values": [
-       36,
-       40,
-       8,
-       13
-      ]
-     },
-     {
-      "name": "German booth",
-      "values": [
-       15,
-       35,
-       11,
-       27
-      ]
-     }
-    ],
-    "unit": "number of interpreters"
-   },
-   "question": "If the total number of interpreters in Unit C increases by 40% and the proportion of the “French booth” group stays the same, how many will be in the “French booth” group?",
-   "options": [
-    "52",
-    "49",
-    "56",
-    "70"
-   ],
-   "answer": "C",
-   "steps": [
-    "Unit C has 40 (French booth) and 35 (German booth), 75 in total.",
-    "New total = 75 × 1.4 = 105; “French booth” = 105 × 40/75 = 56.",
-    "Shortcut: if the proportion is unchanged, the “French booth” group also grows by 40%: 40 × 1.4 = 56.",
-    "Typical errors: adding the whole increase to one group (70) or calculating the other group instead."
-   ],
-   "difficulty": "foundation",
-   "skill": "Proportional scaling",
-   "id": "N-008"
-  },
-  {
-   "figure": {
-    "type": "table",
-    "title": "Infrastructure investment by sector and region (€ million)",
-    "columns": [
-     "Region",
-     "Transport",
-     "Education",
-     "Agriculture",
-     "Health",
-     "Total"
-    ],
-    "rows": [
-     [
-      "West",
-      "150",
-      "510",
-      "640",
-      "420",
-      "1,720"
-     ],
-     [
-      "South",
-      "120",
-      "830",
-      "430",
-      "430",
-      "1,810"
-     ],
-     [
-      "East",
-      "600",
-      "950",
-      "690",
-      "650",
-      "2,890"
-     ],
-     [
-      "Central",
-      "340",
-      "210",
-      "600",
-      "810",
-      "1,960"
-     ]
-    ],
-    "note": null
-   },
-   "question": "What percentage of the East region’s total investment went to Health?",
-   "options": [
-    "53.6%",
-    "21.4%",
-    "28.1%",
-    "22.5%"
-   ],
-   "answer": "D",
-   "steps": [
-    "The East region’s total allocation is €2,890 million, of which Health received €650 million.",
-    "650 ÷ 2,890 × 100 ≈ 22.5%.",
-    "Typical errors: dividing by the Health column total (the region’s share of that sector) or by the remainder instead of the total."
-   ],
-   "difficulty": "foundation",
-   "skill": "Share of total",
-   "id": "N-009"
-  },
-  {
-   "figure": {
-    "type": "table",
-    "title": "Documents published in one year, by original language",
-    "columns": [
-     "Language",
-     "Documents"
-    ],
-    "rows": [
-     [
-      "Dutch",
-      "21"
-     ],
-     [
-      "English",
-      "82"
-     ],
-     [
-      "Swedish",
-      "22"
-     ],
-     [
-      "Italian",
-      "14"
-     ]
-    ],
-    "note": null
-   },
-   "question": "What is the ratio of documents in Dutch to documents in Italian, in its simplest form?",
-   "options": [
-    "2:3",
-    "3:1",
-    "3:2",
-    "5:3"
-   ],
-   "answer": "C",
-   "steps": [
-    "Dutch : Italian = 21 : 14. Both numbers divide by 7, giving 3:2.",
-    "Typical error: reversing the order of the ratio (2:3)."
-   ],
-   "difficulty": "foundation",
-   "skill": "Ratios",
-   "id": "N-010"
   },
   {
    "figure": {
@@ -574,62 +304,332 @@
     ],
     "series": [
      {
-      "name": "Portugal",
+      "name": "Sweden",
       "values": [
-       5.2,
-       6.2,
-       5.8,
-       6.0,
-       5.2
+       6.1,
+       4.9,
+       4.4,
+       3.2,
+       3.6
       ]
      },
      {
       "name": "Slovakia",
       "values": [
-       8.1,
-       8.6,
-       7.6,
-       8.2,
-       7.0
+       5.7,
+       6.0,
+       4.8,
+       5.2,
+       4.6
       ]
      },
      {
-      "name": "Slovenia",
+      "name": "Spain",
       "values": [
-       10.2,
-       11.2,
-       9.9,
-       9.1,
-       9.6
+       8.5,
+       9.3,
+       10.0,
+       8.9,
+       7.9
       ]
      },
      {
-      "name": "Austria",
+      "name": "Estonia",
       "values": [
-       6.6,
-       6.9,
-       8.1,
-       7.6,
-       8.6
+       9.4,
+       10.6,
+       10.3,
+       10.3,
+       10.2
       ]
      }
     ],
     "unit": "%"
    },
-   "question": "By how many percentage points did the unemployment rate in Slovenia fall between Year 2 and Year 4?",
+   "question": "By how many percentage points did the unemployment rate in Sweden fall between Year 3 and Year 4?",
    "options": [
-    "1.0 percentage points",
-    "2.1 percentage points",
-    "1.3 percentage points",
-    "2.3 percentage points"
+    "0.5 percentage points",
+    "1.7 percentage points",
+    "1.2 percentage points",
+    "0.8 percentage points"
    ],
-   "answer": "B",
+   "answer": "C",
    "steps": [
-    "A change in percentage points is the simple difference between the two rates: 9.1 − 11.2 = −2.1 points, i.e. a fall of 2.1 percentage points.",
+    "A change in percentage points is the simple difference between the two rates: 3.2 − 4.4 = −1.2 points, i.e. a fall of 1.2 percentage points.",
     "Typical error: computing the relative (percentage) change instead."
    ],
    "difficulty": "foundation",
    "skill": "Percentage points vs percent",
+   "id": "N-006"
+  },
+  {
+   "figure": {
+    "type": "bar",
+    "title": "Trainees by contract type in four units",
+    "categories": [
+     "Unit C",
+     "Unit D",
+     "Unit A",
+     "Unit E"
+    ],
+    "series": [
+     {
+      "name": "Permanent",
+      "values": [
+       34,
+       40,
+       25,
+       19
+      ]
+     },
+     {
+      "name": "Temporary",
+      "values": [
+       17,
+       20,
+       27,
+       36
+      ]
+     }
+    ],
+    "unit": "number of trainees"
+   },
+   "question": "If the total number of trainees in Unit D increases by 40% and the proportion of the “Permanent” group stays the same, how many will be in the “Permanent” group?",
+   "options": [
+    "52",
+    "56",
+    "28",
+    "64"
+   ],
+   "answer": "B",
+   "steps": [
+    "Unit D has 40 (Permanent) and 20 (Temporary), 60 in total.",
+    "New total = 60 × 1.4 = 84; “Permanent” = 84 × 40/60 = 56.",
+    "Shortcut: if the proportion is unchanged, the “Permanent” group also grows by 40%: 40 × 1.4 = 56.",
+    "Typical errors: adding the whole increase to one group (64) or calculating the other group instead."
+   ],
+   "difficulty": "foundation",
+   "skill": "Proportional scaling",
+   "id": "N-007"
+  },
+  {
+   "figure": {
+    "type": "table",
+    "title": "Infrastructure investment by sector and region (€ million)",
+    "columns": [
+     "Region",
+     "Culture",
+     "Research",
+     "Health",
+     "Digital",
+     "Total"
+    ],
+    "rows": [
+     [
+      "North",
+      "340",
+      "620",
+      "590",
+      "720",
+      "2,270"
+     ],
+     [
+      "East",
+      "860",
+      "290",
+      "920",
+      "610",
+      "2,680"
+     ],
+     [
+      "West",
+      "310",
+      "620",
+      "200",
+      "690",
+      "1,820"
+     ],
+     [
+      "Central",
+      "750",
+      "280",
+      "730",
+      "620",
+      "2,380"
+     ]
+    ],
+    "note": null
+   },
+   "question": "What percentage of the Central region’s total investment went to Research?",
+   "options": [
+    "15.5%",
+    "11.8%",
+    "13.3%",
+    "12.5%"
+   ],
+   "answer": "B",
+   "steps": [
+    "The Central region’s total allocation is €2,380 million, of which Research received €280 million.",
+    "280 ÷ 2,380 × 100 ≈ 11.8%.",
+    "Typical errors: dividing by the Research column total (the region’s share of that sector) or by the remainder instead of the total."
+   ],
+   "difficulty": "foundation",
+   "skill": "Share of total",
+   "id": "N-008"
+  },
+  {
+   "figure": {
+    "type": "table",
+    "title": "Translation requests received by a language unit in one month, by source language",
+    "columns": [
+     "Language",
+     "Requests"
+    ],
+    "rows": [
+     [
+      "Swedish",
+      "37"
+     ],
+     [
+      "Polish",
+      "122"
+     ],
+     [
+      "Spanish",
+      "40"
+     ],
+     [
+      "Italian",
+      "30"
+     ]
+    ],
+    "note": null
+   },
+   "question": "What is the ratio of requests in Italian to requests in Spanish, in its simplest form?",
+   "options": [
+    "3:4",
+    "3:5",
+    "4:5",
+    "4:3"
+   ],
+   "answer": "A",
+   "steps": [
+    "Italian : Spanish = 30 : 40. Both numbers divide by 10, giving 3:4.",
+    "Typical error: reversing the order of the ratio (4:3)."
+   ],
+   "difficulty": "foundation",
+   "skill": "Ratios",
+   "id": "N-009"
+  },
+  {
+   "figure": {
+    "type": "table",
+    "title": "Grant applications received and approval rate",
+    "columns": [
+     "Country",
+     "Applications",
+     "Approval rate"
+    ],
+    "rows": [
+     [
+      "Czechia",
+      "2,000",
+      "20%"
+     ],
+     [
+      "Sweden",
+      "1,000",
+      "30%"
+     ],
+     [
+      "Slovakia",
+      "2,900",
+      "20%"
+     ],
+     [
+      "Poland",
+      "2,500",
+      "40%"
+     ]
+    ],
+    "note": null
+   },
+   "question": "How many applications from Czechia were rejected?",
+   "options": [
+    "700",
+    "1,728",
+    "1,600",
+    "1,200"
+   ],
+   "answer": "C",
+   "steps": [
+    "Approved = 2,000 × 20% = 400.",
+    "Rejected = 2,000 − 400 = 1,600.",
+    "Typical errors: giving the number approved instead of rejected, or reading another country’s row."
+   ],
+   "difficulty": "foundation",
+   "skill": "Rates and counts",
+   "id": "N-010"
+  },
+  {
+   "figure": {
+    "type": "table",
+    "title": "Overnight stays in campsites (thousands)",
+    "columns": [
+     "Country",
+     "Year 1",
+     "Year 2",
+     "Year 3"
+    ],
+    "rows": [
+     [
+      "Denmark",
+      "785",
+      "865",
+      "809"
+     ],
+     [
+      "Latvia",
+      "201",
+      "179",
+      "208"
+     ],
+     [
+      "Czechia",
+      "431",
+      "404",
+      "490"
+     ],
+     [
+      "Netherlands",
+      "728",
+      "829",
+      "822"
+     ],
+     [
+      "Spain",
+      "630",
+      "674",
+      "694"
+     ]
+    ],
+    "note": null
+   },
+   "question": "By approximately what percentage did the number of overnight stays in campsites in the Netherlands increase between Year 1 and Year 3?",
+   "options": [
+    "13.9%",
+    "11.4%",
+    "12.0%",
+    "12.9%"
+   ],
+   "answer": "D",
+   "steps": [
+    "Percentage change uses the earlier value as the base: (822 − 728) ÷ 728 × 100.",
+    "= 94 ÷ 728 × 100 ≈ 12.9%, i.e. an increase of about 12.9%.",
+    "Typical errors: dividing by the Year 3 value (wrong base), or adding the two year-on-year percentage changes (percentages do not add)."
+   ],
+   "difficulty": "foundation",
+   "skill": "Percentage change",
    "id": "N-011"
   },
   {
@@ -643,39 +643,39 @@
     ],
     "rows": [
      [
-      "Sweden",
-      "2,700",
-      "24%"
+      "France",
+      "2,400",
+      "35%"
      ],
      [
-      "Ireland",
+      "Sweden",
       "1,900",
-      "30%"
+      "18%"
+     ],
+     [
+      "Austria",
+      "500",
+      "25%"
      ],
      [
       "Croatia",
-      "1,500",
-      "12%"
-     ],
-     [
-      "Italy",
-      "2,300",
-      "40%"
+      "3,000",
+      "24%"
      ]
     ],
     "note": null
    },
-   "question": "How many applications from Sweden were rejected?",
+   "question": "How many applications from France were rejected?",
    "options": [
-    "2,052",
-    "1,404",
-    "1,929",
-    "1,330"
+    "720",
+    "1,451",
+    "1,560",
+    "840"
    ],
-   "answer": "A",
+   "answer": "C",
    "steps": [
-    "Approved = 2,700 × 24% = 648.",
-    "Rejected = 2,700 − 648 = 2,052.",
+    "Approved = 2,400 × 35% = 840.",
+    "Rejected = 2,400 − 840 = 1,560.",
     "Typical errors: giving the number approved instead of rejected, or reading another country’s row."
    ],
    "difficulty": "foundation",
@@ -687,46 +687,46 @@
     "type": "bar",
     "title": "Staff by gender in four units",
     "categories": [
+     "Unit E",
      "Unit B",
-     "Unit D",
-     "Unit A",
-     "Unit E"
+     "Unit C",
+     "Unit A"
     ],
     "series": [
      {
       "name": "Women",
       "values": [
        34,
-       16,
-       22,
-       35
+       50,
+       14,
+       40
       ]
      },
      {
       "name": "Men",
       "values": [
-       22,
+       24,
+       30,
        15,
-       12,
-       40
+       27
       ]
      }
     ],
     "unit": "number of staff"
    },
-   "question": "If the total number of staff in Unit E increases by 40% and the proportion of the “Women” group stays the same, how many will be in the “Women” group?",
+   "question": "If the total number of staff in Unit B increases by 10% and the proportion of the “Women” group stays the same, how many will be in the “Women” group?",
    "options": [
-    "56",
-    "65",
-    "49",
-    "53"
+    "44",
+    "58",
+    "55",
+    "33"
    ],
    "answer": "C",
    "steps": [
-    "Unit E has 35 (Women) and 40 (Men), 75 in total.",
-    "New total = 75 × 1.4 = 105; “Women” = 105 × 35/75 = 49.",
-    "Shortcut: if the proportion is unchanged, the “Women” group also grows by 40%: 35 × 1.4 = 49.",
-    "Typical errors: adding the whole increase to one group (65) or calculating the other group instead."
+    "Unit B has 50 (Women) and 30 (Men), 80 in total.",
+    "New total = 80 × 1.1 = 88; “Women” = 88 × 50/80 = 55.",
+    "Shortcut: if the proportion is unchanged, the “Women” group also grows by 10%: 50 × 1.1 = 55.",
+    "Typical errors: adding the whole increase to one group (58) or calculating the other group instead."
    ],
    "difficulty": "foundation",
    "skill": "Proportional scaling",
@@ -738,60 +738,60 @@
     "title": "Research grants awarded by field and region (€ million)",
     "columns": [
      "Region",
-     "Energy",
      "Agriculture",
-     "Health",
      "Digital",
+     "Energy",
+     "Transport",
      "Total"
     ],
     "rows": [
      [
-      "West",
-      "460",
-      "670",
-      "510",
-      "470",
-      "2,110"
-     ],
-     [
       "East",
-      "730",
-      "870",
-      "560",
-      "680",
-      "2,840"
+      "700",
+      "140",
+      "280",
+      "340",
+      "1,460"
      ],
      [
-      "North",
-      "300",
+      "West",
+      "820",
+      "940",
+      "420",
       "210",
-      "190",
-      "320",
-      "1,020"
+      "2,390"
+     ],
+     [
+      "South",
+      "630",
+      "240",
+      "400",
+      "370",
+      "1,640"
      ],
      [
       "Central",
-      "690",
-      "220",
-      "650",
-      "850",
-      "2,410"
+      "340",
+      "500",
+      "380",
+      "260",
+      "1,480"
      ]
     ],
     "note": null
    },
-   "question": "What percentage of the East region’s total grant funding went to Digital?",
+   "question": "What percentage of the West region’s total grant funding went to Transport?",
    "options": [
-    "31.5%",
-    "22.7%",
-    "29.3%",
-    "23.9%"
+    "21.6%",
+    "9.6%",
+    "8.8%",
+    "17.8%"
    ],
-   "answer": "D",
+   "answer": "C",
    "steps": [
-    "The East region’s total allocation is €2,840 million, of which Digital received €680 million.",
-    "680 ÷ 2,840 × 100 ≈ 23.9%.",
-    "Typical errors: dividing by the Digital column total (the region’s share of that sector) or by the remainder instead of the total."
+    "The West region’s total allocation is €2,390 million, of which Transport received €210 million.",
+    "210 ÷ 2,390 × 100 ≈ 8.8%.",
+    "Typical errors: dividing by the Transport column total (the region’s share of that sector) or by the remainder instead of the total."
    ],
    "difficulty": "foundation",
    "skill": "Share of total",
@@ -800,42 +800,42 @@
   {
    "figure": {
     "type": "table",
-    "title": "Translation requests received by a language unit in one month, by source language",
+    "title": "Documents published in one year, by original language",
     "columns": [
      "Language",
-     "Requests"
+     "Documents"
     ],
     "rows": [
      [
-      "French",
-      "22"
+      "German",
+      "47"
      ],
      [
-      "English",
-      "57"
+      "French",
+      "93"
      ],
      [
       "Italian",
-      "55"
+      "84"
      ],
      [
-      "Dutch",
-      "26"
+      "Polish",
+      "63"
      ]
     ],
     "note": null
    },
-   "question": "What is the ratio of requests in Italian to requests in French, in its simplest form?",
+   "question": "What is the ratio of documents in Polish to documents in Italian, in its simplest form?",
    "options": [
-    "5:1",
-    "7:3",
-    "5:2",
-    "2:5"
+    "4:3",
+    "3:5",
+    "3:4",
+    "4:5"
    ],
    "answer": "C",
    "steps": [
-    "Italian : French = 55 : 22. Both numbers divide by 11, giving 5:2.",
-    "Typical error: reversing the order of the ratio (2:5)."
+    "Polish : Italian = 63 : 84. Both numbers divide by 21, giving 3:4.",
+    "Typical error: reversing the order of the ratio (4:3)."
    ],
    "difficulty": "foundation",
    "skill": "Ratios",
@@ -853,49 +853,49 @@
     ],
     "rows": [
      [
-      "Lithuania",
-      "500",
-      "441",
-      "469"
-     ],
-     [
-      "Spain",
-      "635",
-      "590",
-      "756"
-     ],
-     [
-      "Germany",
-      "410",
-      "440",
-      "491"
-     ],
-     [
       "Slovakia",
-      "912",
-      "1,026",
-      "1,182"
+      "842",
+      "789",
+      "768"
      ],
      [
-      "Hungary",
-      "850",
-      "898",
-      "876"
+      "Austria",
+      "517",
+      "460",
+      "528"
+     ],
+     [
+      "Estonia",
+      "804",
+      "888",
+      "984"
+     ],
+     [
+      "Lithuania",
+      "906",
+      "859",
+      "940"
+     ],
+     [
+      "Romania",
+      "246",
+      "277",
+      "327"
      ]
     ],
     "note": null
    },
-   "question": "By approximately what percentage did the number of visitors to art galleries in Spain increase between Year 1 and Year 3?",
+   "question": "By approximately what percentage did the number of visitors to art galleries in Estonia increase between Year 1 and Year 3?",
    "options": [
-    "19.1%",
-    "16.0%",
-    "21.0%",
-    "18.1%"
+    "21.3%",
+    "22.4%",
+    "18.3%",
+    "10.8%"
    ],
-   "answer": "A",
+   "answer": "B",
    "steps": [
-    "Percentage change uses the earlier value as the base: (756 − 635) ÷ 635 × 100.",
-    "= 121 ÷ 635 × 100 ≈ 19.1%, i.e. an increase of about 19.1%.",
+    "Percentage change uses the earlier value as the base: (984 − 804) ÷ 804 × 100.",
+    "= 180 ÷ 804 × 100 ≈ 22.4%, i.e. an increase of about 22.4%.",
     "Typical errors: dividing by the Year 3 value (wrong base), or adding the two year-on-year percentage changes (percentages do not add)."
    ],
    "difficulty": "foundation",
@@ -904,182 +904,157 @@
   },
   {
    "figure": {
-    "type": "line",
-    "title": "Unemployment rate (% of labour force)",
-    "categories": [
-     "Year 1",
-     "Year 2",
-     "Year 3",
-     "Year 4",
-     "Year 5"
-    ],
-    "series": [
-     {
-      "name": "Slovakia",
-      "values": [
-       11.8,
-       13.0,
-       12.1,
-       14.7,
-       12.9
-      ]
-     },
-     {
-      "name": "Hungary",
-      "values": [
-       11.2,
-       10.2,
-       9.7,
-       10.0,
-       9.3
-      ]
-     },
-     {
-      "name": "Belgium",
-      "values": [
-       5.2,
-       5.8,
-       6.4,
-       7.0,
-       7.3
-      ]
-     },
-     {
-      "name": "Greece",
-      "values": [
-       9.9,
-       9.7,
-       8.5,
-       7.5,
-       7.4
-      ]
-     }
-    ],
-    "unit": "%"
-   },
-   "question": "By how many percentage points did the unemployment rate in Slovakia rise between Year 2 and Year 4?",
-   "options": [
-    "0.9 percentage points",
-    "2.2 percentage points",
-    "1.2 percentage points",
-    "1.7 percentage points"
-   ],
-   "answer": "D",
-   "steps": [
-    "A change in percentage points is the simple difference between the two rates: 14.7 − 13.0 = +1.7 points, i.e. a rise of 1.7 percentage points.",
-    "Typical error: computing the relative (percentage) change instead."
-   ],
-   "difficulty": "foundation",
-   "skill": "Percentage points vs percent",
-   "id": "N-017"
-  },
-  {
-   "figure": {
     "type": "table",
-    "title": "Research grants awarded by field and region (€ million)",
+    "title": "Documents published in one year, by original language",
     "columns": [
-     "Region",
-     "Research",
-     "Health",
-     "Transport",
-     "Digital",
-     "Total"
+     "Language",
+     "Documents"
     ],
     "rows": [
      [
-      "East",
-      "220",
-      "930",
-      "950",
-      "940",
-      "3,040"
+      "English",
+      "89"
      ],
      [
-      "Central",
-      "930",
-      "690",
-      "770",
-      "730",
-      "3,120"
+      "French",
+      "102"
      ],
      [
-      "North",
-      "640",
-      "230",
-      "690",
-      "780",
-      "2,340"
+      "Italian",
+      "35"
      ],
      [
-      "West",
-      "790",
-      "120",
-      "860",
-      "770",
-      "2,540"
+      "Dutch",
+      "28"
      ]
     ],
     "note": null
    },
-   "question": "What percentage of the East region’s total grant funding went to Research?",
+   "question": "What is the ratio of documents in Italian to documents in Dutch, in its simplest form?",
    "options": [
-    "9.3%",
-    "7.2%",
-    "8.5%",
-    "7.8%"
+    "7:5",
+    "5:4",
+    "4:5",
+    "6:5"
    ],
    "answer": "B",
    "steps": [
-    "The East region’s total allocation is €3,040 million, of which Research received €220 million.",
-    "220 ÷ 3,040 × 100 ≈ 7.2%.",
-    "Typical errors: dividing by the Research column total (the region’s share of that sector) or by the remainder instead of the total."
+    "Italian : Dutch = 35 : 28. Both numbers divide by 7, giving 5:4.",
+    "Typical error: reversing the order of the ratio (4:5)."
    ],
    "difficulty": "foundation",
-   "skill": "Share of total",
+   "skill": "Ratios",
+   "id": "N-017"
+  },
+  {
+   "figure": {
+    "type": "bar",
+    "title": "Interpreters by booth language in four teams",
+    "categories": [
+     "Unit B",
+     "Unit A",
+     "Unit D",
+     "Unit C"
+    ],
+    "series": [
+     {
+      "name": "French booth",
+      "values": [
+       25,
+       20,
+       22,
+       18
+      ]
+     },
+     {
+      "name": "German booth",
+      "values": [
+       25,
+       10,
+       34,
+       33
+      ]
+     }
+    ],
+    "unit": "number of interpreters"
+   },
+   "question": "If the total number of interpreters in Unit A increases by 20% and the proportion of the “French booth” group stays the same, how many will be in the “French booth” group?",
+   "options": [
+    "12",
+    "26",
+    "24",
+    "40"
+   ],
+   "answer": "C",
+   "steps": [
+    "Unit A has 20 (French booth) and 10 (German booth), 30 in total.",
+    "New total = 30 × 1.2 = 36; “French booth” = 36 × 20/30 = 24.",
+    "Shortcut: if the proportion is unchanged, the “French booth” group also grows by 20%: 20 × 1.2 = 24.",
+    "Typical errors: adding the whole increase to one group (26) or calculating the other group instead."
+   ],
+   "difficulty": "foundation",
+   "skill": "Proportional scaling",
    "id": "N-018"
   },
   {
    "figure": {
     "type": "table",
-    "title": "Translation requests received by a language unit in one month, by source language",
+    "title": "Visitors to national science museums (thousands)",
     "columns": [
-     "Language",
-     "Requests"
+     "Country",
+     "Year 1",
+     "Year 2",
+     "Year 3"
     ],
     "rows": [
      [
-      "Dutch",
-      "44"
+      "France",
+      "551",
+      "485",
+      "509"
      ],
      [
-      "Swedish",
-      "95"
+      "Finland",
+      "208",
+      "222",
+      "245"
      ],
      [
-      "French",
-      "30"
+      "Spain",
+      "830",
+      "946",
+      "988"
      ],
      [
-      "Polish",
-      "38"
+      "Denmark",
+      "380",
+      "376",
+      "388"
+     ],
+     [
+      "Lithuania",
+      "278",
+      "247",
+      "244"
      ]
     ],
     "note": null
    },
-   "question": "What is the ratio of requests in Polish to requests in Swedish, in its simplest form?",
+   "question": "By approximately what percentage did the number of visitors to science museums in Spain increase between Year 1 and Year 3?",
    "options": [
-    "3:5",
-    "1:5",
-    "2:5",
-    "5:2"
+    "14.0%",
+    "17.9%",
+    "16.0%",
+    "19.0%"
    ],
-   "answer": "C",
+   "answer": "D",
    "steps": [
-    "Polish : Swedish = 38 : 95. Both numbers divide by 19, giving 2:5.",
-    "Typical error: reversing the order of the ratio (5:2)."
+    "Percentage change uses the earlier value as the base: (988 − 830) ÷ 830 × 100.",
+    "= 158 ÷ 830 × 100 ≈ 19.0%, i.e. an increase of about 19.0%.",
+    "Typical errors: dividing by the Year 3 value (wrong base), or adding the two year-on-year percentage changes (percentages do not add)."
    ],
    "difficulty": "foundation",
-   "skill": "Ratios",
+   "skill": "Percentage change",
    "id": "N-019"
   },
   {
@@ -1483,32 +1458,32 @@
       ],
       "rows": [
        [
-        "Negotiation skills",
-        "22",
-        "12",
-        "18",
-        "23"
-       ],
-       [
-        "Data analysis",
+        "Leadership basics",
+        "23",
         "27",
         "12",
-        "15",
-        "9"
+        "15"
        ],
        [
         "Public speaking",
+        "9",
         "14",
         "12",
-        "26",
-        "28"
+        "26"
        ],
        [
-        "Financial rules",
+        "Data analysis",
+        "28",
         "26",
         "11",
-        "5",
-        "28"
+        "5"
+       ],
+       [
+        "Drafting legislation",
+        "28",
+        "4",
+        "8",
+        "24"
        ]
       ],
       "note": null
@@ -1522,37 +1497,37 @@
       ],
       "rows": [
        [
-        "Negotiation skills",
-        "130"
-       ],
-       [
-        "Data analysis",
-        "200"
+        "Leadership basics",
+        "570"
        ],
        [
         "Public speaking",
-        "520"
+        "290"
        ],
        [
-        "Financial rules",
-        "570"
+        "Data analysis",
+        "340"
+       ],
+       [
+        "Drafting legislation",
+        "130"
        ]
       ],
       "note": null
      }
     ]
    },
-   "question": "What was the total cost of the “Public speaking” course for Q2 to Q3 inclusive?",
+   "question": "What was the total cost of the “Leadership basics” course for Q1 to Q2 inclusive?",
    "options": [
-    "€41,600",
-    "€21,660",
-    "€34,320",
-    "€19,760"
+    "€26,220",
+    "€35,340",
+    "€43,890",
+    "€28,500"
    ],
    "answer": "D",
    "steps": [
-    "Participants Q2 to Q3 inclusive: 12 + 26 = 38.",
-    "Total cost = 38 × €520 = €19,760.",
+    "Participants Q1 to Q2 inclusive: 23 + 27 = 50.",
+    "Total cost = 50 × €570 = €28,500.",
     "Typical errors: including the wrong quarters, using the whole year, or reading the wrong row of either table."
    ],
    "difficulty": "intermediate",
@@ -1562,48 +1537,48 @@
   {
    "figure": {
     "type": "table",
-    "title": "Translation requests and average turnaround by language unit",
+    "title": "Staff numbers and average monthly salary by unit",
     "columns": [
      "Unit",
-     "Requests",
-     "Average days"
+     "Staff",
+     "Average monthly salary (€)"
     ],
     "rows": [
      [
       "Unit C",
-      "32",
-      "4"
+      "47",
+      "5,300"
      ],
      [
       "Unit B",
-      "30",
-      "14"
-     ],
-     [
-      "Unit E",
-      "10",
-      "8"
+      "11",
+      "6,300"
      ],
      [
       "Unit A",
-      "15",
-      "3"
+      "22",
+      "4,500"
+     ],
+     [
+      "Unit E",
+      "12",
+      "7,100"
      ]
     ],
     "note": null
    },
-   "question": "What is the average turnaround time per request in the four units combined?",
+   "question": "What is the average monthly salary across all staff in the four units combined?",
    "options": [
-    "9.91 days",
-    "7.74 days",
-    "7.25 days",
-    "8.50 days"
+    "€5,045",
+    "€5,463",
+    "€5,633",
+    "€5,800"
    ],
    "answer": "B",
    "steps": [
-    "Weighted total = 32 × 4 + 30 × 14 + 10 × 8 + 15 × 3 = 673.",
-    "Total requests = 87. Weighted average = 673 ÷ 87 ≈ 7.74 days.",
-    "Typical error: the simple average of the four averages (7.25 days) ignores the different group sizes."
+    "Weighted total = 47 × 5,300 + 11 × 6,300 + 22 × 4,500 + 12 × 7,100 = 502,600.",
+    "Total staff = 92. Weighted average = 502,600 ÷ 92 ≈ €5,463.",
+    "Typical error: the simple average of the four averages (€5,800) ignores the different group sizes."
    ],
    "difficulty": "intermediate",
    "skill": "Weighted average",
@@ -1620,49 +1595,155 @@
     ],
     "rows": [
      [
+      "Island region",
+      "3.37",
+      "813.3"
+     ],
+     [
+      "Western region",
+      "1.06",
+      "191.4"
+     ],
+     [
+      "Southern region",
+      "5.89",
+      "1,269.9"
+     ],
+     [
       "Coastal region",
-      "2.85",
-      "650.6"
+      "3.54",
+      "651.5"
      ],
      [
       "Eastern region",
-      "4.61",
-      "714.3"
-     ],
-     [
-      "Alpine region",
-      "5.63",
-      "663.6"
-     ],
-     [
-      "Northern region",
-      "4.13",
-      "524.2"
-     ],
-     [
-      "Central region",
-      "0.96",
-      "86.5"
+      "1.20",
+      "189.4"
      ]
     ],
     "note": null
    },
    "question": "Which of the following regions had the highest spending on culture per inhabitant?",
    "options": [
-    "Eastern region",
-    "Central region",
-    "Coastal region",
-    "Alpine region"
+    "Southern region",
+    "Western region",
+    "Island region",
+    "Coastal region"
    ],
    "answer": "C",
    "steps": [
     "Spending per inhabitant = spending ÷ population (€ million ÷ million inhabitants = € per inhabitant):",
-    "Eastern region ≈ €155; Central region ≈ €90; Coastal region ≈ €228; Alpine region ≈ €118.",
-    "The highest figure is for the Coastal region. Trap: the Eastern region has the largest total spending, but not the highest spending per inhabitant."
+    "Southern region ≈ €216; Western region ≈ €181; Island region ≈ €241; Coastal region ≈ €184.",
+    "The highest figure is for the Island region. Trap: the Southern region has the largest total spending, but not the highest spending per inhabitant."
    ],
    "difficulty": "intermediate",
    "skill": "Per-capita comparison",
    "id": "N-029"
+  },
+  {
+   "figure": {
+    "type": "table",
+    "title": "Price of an annual museum pass in four markets (fictitious prices and rates)",
+    "columns": [
+     "Currency",
+     "Code",
+     "Units per €1",
+     "Local price"
+    ],
+    "rows": [
+     [
+      "Swiss franc",
+      "CHF",
+      "0.93",
+      "570"
+     ],
+     [
+      "Pound sterling",
+      "GBP",
+      "0.87",
+      "534"
+     ],
+     [
+      "Canadian dollar",
+      "CAD",
+      "1.47",
+      "964"
+     ],
+     [
+      "Norwegian krone",
+      "NOK",
+      "11.61",
+      "7,964"
+     ]
+    ],
+    "note": null
+   },
+   "question": "In euros, approximately how much more does an annual museum pass cost in the most expensive of the four markets than in the cheapest?",
+   "options": [
+    "€30",
+    "€110",
+    "€43",
+    "€73"
+   ],
+   "answer": "D",
+   "steps": [
+    "Convert every price to euros by DIVIDING the local price by the number of units per €1:",
+    "CHF: 570 ÷ 0.93 ≈ €612.90; GBP: 534 ÷ 0.87 ≈ €613.79; CAD: 964 ÷ 1.47 ≈ €655.78; NOK: 7,964 ÷ 11.61 ≈ €685.96.",
+    "Most expensive (NOK) − cheapest (CHF) ≈ €685.96 − €612.90 = €73.06, i.e. about €73.",
+    "Typical errors: ranking the markets by local price (the currencies are not comparable) or comparing the wrong pair of markets."
+   ],
+   "difficulty": "intermediate",
+   "skill": "Currency conversion",
+   "id": "N-030"
+  },
+  {
+   "figure": {
+    "type": "table",
+    "title": "Grant envelope this year and change on last year",
+    "columns": [
+     "Programme",
+     "This year (€ thousand)",
+     "Change on last year"
+    ],
+    "rows": [
+     [
+      "Clean-bus procurement",
+      "4,368.0",
+      "+12%"
+     ],
+     [
+      "Student mobility grants",
+      "1,863.0",
+      "+15%"
+     ],
+     [
+      "Coastal flood defences",
+      "1,382.4",
+      "+8%"
+     ],
+     [
+      "Youth employment schemes",
+      "1,032.0",
+      "+20%"
+     ]
+    ],
+    "note": null
+   },
+   "question": "Before this year’s change, what was the budget for “Coastal flood defences”?",
+   "options": [
+    "€1,382.4k",
+    "€1,502.6k",
+    "€1,280.0k",
+    "€1,302.4k"
+   ],
+   "answer": "C",
+   "steps": [
+    "This year = last year × 1.08, so last year = this year ÷ 1.08.",
+    "1,382.4 ÷ 1.08 = 1,280.0 (€ thousand).",
+    "Typical error: reducing this year’s figure by 8% applies the percentage to the wrong base."
+   ],
+   "difficulty": "intermediate",
+   "skill": "Reverse percentage",
+   "id": "N-031"
   },
   {
    "figure": {
@@ -1679,104 +1760,311 @@
     ],
     "rows": [
      [
-      "Team North",
-      "60",
-      "45",
-      "31",
-      "62",
-      "28",
-      "28"
-     ],
-     [
       "Team West",
-      "45",
-      "44",
+      "39",
+      "64",
+      "21",
+      "50",
       "63",
-      "26",
-      "35",
-      "—"
+      "61"
      ],
      [
       "Team East",
-      "27",
-      "27",
-      "37",
-      "54",
       "46",
-      "36"
+      "19",
+      "37",
+      "44",
+      "33",
+      "18"
+     ],
+     [
+      "Team North",
+      "53",
+      "33",
+      "33",
+      "42",
+      "59",
+      "—"
      ]
     ],
     "note": "— = figure not yet available"
    },
-   "question": "How many files would Team West need to close in June for its average over January to June to be exactly 45 per month?",
+   "question": "How many files would Team North need to close in June for its average over January to June to be exactly 55 per month?",
    "options": [
-    "52",
-    "12",
-    "57",
-    "45"
+    "55",
+    "118",
+    "110",
+    "44"
    ],
    "answer": "C",
    "steps": [
-    "For an average of 45 over 6 months, the total must be 45 × 6 = 270.",
-    "January–May total = 45 + 44 + 63 + 26 + 35 = 213.",
-    "June must therefore be 270 − 213 = 57.",
-    "Typical errors: answering with the target itself (45) or with the current average (about 43)."
+    "For an average of 55 over 6 months, the total must be 55 × 6 = 330.",
+    "January–May total = 53 + 33 + 33 + 42 + 59 = 220.",
+    "June must therefore be 330 − 220 = 110.",
+    "Typical errors: answering with the target itself (55) or with the current average (about 44)."
    ],
    "difficulty": "intermediate",
    "skill": "Averages over time",
-   "id": "N-030"
+   "id": "N-032"
+  },
+  {
+   "figure": {
+    "type": "table",
+    "title": "Bus routes: distance and average coach speed",
+    "columns": [
+     "Route",
+     "Distance (km)",
+     "Average speed (km/h)"
+    ],
+    "rows": [
+     [
+      "Eastbay–Southmere",
+      "99",
+      "100"
+     ],
+     [
+      "Riverton–Westfield",
+      "117",
+      "100"
+     ],
+     [
+      "Fairhaven–Lakeside",
+      "68",
+      "100"
+     ],
+     [
+      "Stonebridge–Kingsford",
+      "356",
+      "110"
+     ]
+    ],
+    "note": null
+   },
+   "question": "If the coach’s average speed on the Riverton–Westfield route rose to 130 km/h, approximately how many minutes would each journey save?",
+   "options": [
+    "16 minutes",
+    "54 minutes",
+    "21 minutes",
+    "24 minutes"
+   ],
+   "answer": "A",
+   "steps": [
+    "Time = distance ÷ speed. Now: 117 ÷ 100 × 60 = 70.2 minutes. New: 117 ÷ 130 × 60 = 54.0 minutes.",
+    "Saving = 70.2 − 54.0 = 16.2, i.e. about 16 minutes.",
+    "Typical error: assuming journey time falls by the same percentage as speed rises."
+   ],
+   "difficulty": "intermediate",
+   "skill": "Rates and time",
+   "id": "N-033"
+  },
+  {
+   "figure": {
+    "type": "table",
+    "title": "Index of average energy bills (Year 1 = 100)",
+    "columns": [
+     "Country",
+     "Year 1",
+     "Year 2",
+     "Year 3",
+     "Year 4",
+     "Year 5"
+    ],
+    "rows": [
+     [
+      "Slovakia",
+      "100.0",
+      "108.4",
+      "116.2",
+      "122.6",
+      "130.3"
+     ],
+     [
+      "Czechia",
+      "100.0",
+      "104.2",
+      "112.6",
+      "113.6",
+      "114.2"
+     ],
+     [
+      "Poland",
+      "100.0",
+      "108.6",
+      "109.8",
+      "114.8",
+      "120.2"
+     ],
+     [
+      "Austria",
+      "100.0",
+      "106.9",
+      "115.8",
+      "123.5",
+      "131.1"
+     ]
+    ],
+    "note": null
+   },
+   "question": "By approximately what percentage did average energy bills in Slovakia rise between Year 3 and Year 5?",
+   "options": [
+    "14.1%",
+    "11.2%",
+    "30.3%",
+    "12.1%"
+   ],
+   "answer": "D",
+   "steps": [
+    "With index numbers, the percentage change between two years is (later index − earlier index) ÷ earlier index × 100.",
+    "(130.3 − 116.2) ÷ 116.2 × 100 ≈ 12.1%.",
+    "Typical errors: subtracting the indices (14.1 is a change in index points, not per cent) or measuring from the base year (index − 100)."
+   ],
+   "difficulty": "intermediate",
+   "skill": "Index numbers",
+   "id": "N-034"
+  },
+  {
+   "figure": {
+    "type": "tables",
+    "tables": [
+     {
+      "type": "table",
+      "title": "Table 1 — Participants per training course",
+      "columns": [
+       "Course",
+       "Q1",
+       "Q2",
+       "Q3",
+       "Q4"
+      ],
+      "rows": [
+       [
+        "Project management",
+        "21",
+        "5",
+        "16",
+        "15"
+       ],
+       [
+        "Data analysis",
+        "19",
+        "5",
+        "14",
+        "26"
+       ],
+       [
+        "Drafting legislation",
+        "28",
+        "24",
+        "30",
+        "25"
+       ],
+       [
+        "Financial rules",
+        "18",
+        "9",
+        "21",
+        "5"
+       ]
+      ],
+      "note": null
+     },
+     {
+      "type": "table",
+      "title": "Table 2 — Cost per participant (€)",
+      "columns": [
+       "Course",
+       "Cost (€)"
+      ],
+      "rows": [
+       [
+        "Project management",
+        "520"
+       ],
+       [
+        "Data analysis",
+        "470"
+       ],
+       [
+        "Drafting legislation",
+        "480"
+       ],
+       [
+        "Financial rules",
+        "410"
+       ]
+      ],
+      "note": null
+     }
+    ]
+   },
+   "question": "Over Q2 to Q3 inclusive, what did the “Data analysis” course cost altogether?",
+   "options": [
+    "€21,150",
+    "€8,930",
+    "€8,216",
+    "€10,537"
+   ],
+   "answer": "B",
+   "steps": [
+    "Participants Q2 to Q3 inclusive: 5 + 14 = 19.",
+    "Total cost = 19 × €470 = €8,930.",
+    "Typical errors: including the wrong quarters, using the whole year, or reading the wrong row of either table."
+   ],
+   "difficulty": "intermediate",
+   "skill": "Combining two tables",
+   "id": "N-035"
   },
   {
    "figure": {
     "type": "bar",
-    "title": "Passengers at five regional airports (thousands)",
+    "title": "Containers handled at five ports (thousand units)",
     "categories": [
+     "Riverton",
      "Kingsford",
-     "Fairhaven",
      "Midvale",
-     "Northport",
-     "Westfield"
+     "Hillcrest",
+     "Brookhaven"
     ],
     "series": [
      {
       "name": "Year 1",
       "values": [
-       860,
-       670,
-       370,
-       260,
-       880
+       660,
+       550,
+       760,
+       330,
+       790
       ]
      },
      {
       "name": "Year 2",
       "values": [
-       1120,
-       700,
-       530,
-       300,
-       850
+       630,
+       770,
+       1020,
+       420,
+       940
       ]
      }
     ],
-    "unit": "thousand passengers"
+    "unit": "thousand containers"
    },
-   "question": "Which of the following airports recorded the largest percentage increase in passenger numbers between Year 1 and Year 2?",
+   "question": "Which of the following ports recorded the largest percentage increase in containers handled between Year 1 and Year 2?",
    "options": [
     "Kingsford",
     "Midvale",
-    "Fairhaven",
-    "Northport"
+    "Brookhaven",
+    "Riverton"
    ],
-   "answer": "B",
+   "answer": "A",
    "steps": [
     "Percentage change = (Year 2 − Year 1) ÷ Year 1 × 100:",
-    "Kingsford: (1120 − 860) ÷ 860 ≈ 30.2%; Midvale: (530 − 370) ÷ 370 ≈ 43.2%; Fairhaven: (700 − 670) ÷ 670 ≈ 4.5%; Northport: (300 − 260) ÷ 260 ≈ 15.4%.",
-    "Largest: Midvale. Trap: Kingsford has the largest increase in absolute terms (+260 thousand), but from a larger base."
+    "Kingsford: (770 − 550) ÷ 550 ≈ 40.0%; Midvale: (1020 − 760) ÷ 760 ≈ 34.2%; Brookhaven: (940 − 790) ÷ 790 ≈ 19.0%; Riverton: (630 − 660) ÷ 660 ≈ −4.5%.",
+    "Largest: Kingsford. Trap: Midvale has the largest increase in absolute terms (+260 thousand), but from a larger base."
    ],
    "difficulty": "intermediate",
    "skill": "Chart comparison",
-   "id": "N-031"
+   "id": "N-036"
   },
   {
    "figure": {
@@ -1790,386 +2078,94 @@
     "rows": [
      [
       "Alpine region",
-      "2.83",
-      "407.3"
+      "5.40",
+      "1,198.8"
+     ],
+     [
+      "Coastal region",
+      "3.43",
+      "570.7"
      ],
      [
       "Eastern region",
-      "1.70",
-      "251.5"
+      "2.11",
+      "246.4"
      ],
      [
-      "Western region",
-      "3.81",
-      "498.7"
+      "Island region",
+      "1.03",
+      "177.0"
      ],
      [
       "Southern region",
-      "4.84",
-      "465.2"
-     ],
-     [
-      "Central region",
-      "0.82",
-      "160.0"
+      "3.07",
+      "550.4"
      ]
     ],
     "note": null
    },
    "question": "Which of the following regions had the lowest spending on culture per inhabitant?",
    "options": [
-    "Central region",
-    "Western region",
+    "Island region",
+    "Southern region",
     "Eastern region",
-    "Southern region"
-   ],
-   "answer": "D",
-   "steps": [
-    "Spending per inhabitant = spending ÷ population (€ million ÷ million inhabitants = € per inhabitant):",
-    "Central region ≈ €195; Western region ≈ €131; Eastern region ≈ €148; Southern region ≈ €96.",
-    "The lowest figure is for the Southern region. Trap: the Central region has the smallest total spending, but not the lowest spending per inhabitant."
-   ],
-   "difficulty": "intermediate",
-   "skill": "Per-capita comparison",
-   "id": "N-032"
-  },
-  {
-   "figure": {
-    "type": "table",
-    "title": "Price of an ergonomic office chair in four markets (fictitious prices and rates)",
-    "columns": [
-     "Currency",
-     "Code",
-     "Units per €1",
-     "Local price"
-    ],
-    "rows": [
-     [
-      "Icelandic króna",
-      "ISK",
-      "149.0",
-      "104,280"
-     ],
-     [
-      "Norwegian krone",
-      "NOK",
-      "11.30",
-      "7,127"
-     ],
-     [
-      "US dollar",
-      "USD",
-      "1.11",
-      "591"
-     ],
-     [
-      "Pound sterling",
-      "GBP",
-      "0.87",
-      "562"
-     ]
-    ],
-    "note": null
-   },
-   "question": "In euros, approximately how much more does an ergonomic office chair cost in the most expensive of the four markets than in the cheapest?",
-   "options": [
-    "€167",
-    "€114",
-    "€54",
-    "€69"
-   ],
-   "answer": "A",
-   "steps": [
-    "Convert every price to euros by DIVIDING the local price by the number of units per €1:",
-    "ISK: 104,280 ÷ 149.0 ≈ €699.87; NOK: 7,127 ÷ 11.30 ≈ €630.71; USD: 591 ÷ 1.11 ≈ €532.43; GBP: 562 ÷ 0.87 ≈ €645.98.",
-    "Most expensive (ISK) − cheapest (USD) ≈ €699.87 − €532.43 = €167.43, i.e. about €167.",
-    "Typical errors: ranking the markets by local price (the currencies are not comparable) or comparing the wrong pair of markets."
-   ],
-   "difficulty": "intermediate",
-   "skill": "Currency conversion",
-   "id": "N-033"
-  },
-  {
-   "figure": {
-    "type": "table",
-    "title": "Index of average house prices (Year 1 = 100)",
-    "columns": [
-     "Country",
-     "Year 1",
-     "Year 2",
-     "Year 3",
-     "Year 4",
-     "Year 5"
-    ],
-    "rows": [
-     [
-      "Greece",
-      "100.0",
-      "108.2",
-      "114.9",
-      "119.6",
-      "128.3"
-     ],
-     [
-      "Denmark",
-      "100.0",
-      "106.4",
-      "114.4",
-      "120.6",
-      "130.3"
-     ],
-     [
-      "Ireland",
-      "100.0",
-      "107.6",
-      "114.8",
-      "115.3",
-      "125.2"
-     ],
-     [
-      "Finland",
-      "100.0",
-      "101.0",
-      "101.5",
-      "102.0",
-      "103.8"
-     ]
-    ],
-    "note": null
-   },
-   "question": "By approximately what percentage did average house prices in Ireland rise between Year 3 and Year 5?",
-   "options": [
-    "25.2%",
-    "10.4%",
-    "9.1%",
-    "8.3%"
+    "Alpine region"
    ],
    "answer": "C",
    "steps": [
-    "With index numbers, the percentage change between two years is (later index − earlier index) ÷ earlier index × 100.",
-    "(125.2 − 114.8) ÷ 114.8 × 100 ≈ 9.1%.",
-    "Typical errors: subtracting the indices (10.4 is a change in index points, not per cent) or measuring from the base year (index − 100)."
+    "Spending per inhabitant = spending ÷ population (€ million ÷ million inhabitants = € per inhabitant):",
+    "Island region ≈ €172; Southern region ≈ €179; Eastern region ≈ €117; Alpine region ≈ €222.",
+    "The lowest figure is for the Eastern region. Trap: the Island region has the smallest total spending, but not the lowest spending per inhabitant."
    ],
    "difficulty": "intermediate",
-   "skill": "Index numbers",
-   "id": "N-034"
-  },
-  {
-   "figure": {
-    "type": "table",
-    "title": "Rail routes: distance and average train speed",
-    "columns": [
-     "Route",
-     "Distance (km)",
-     "Average speed (km/h)"
-    ],
-    "rows": [
-     [
-      "Westfield–Northport",
-      "281",
-      "80"
-     ],
-     [
-      "Brookhaven–Hillcrest",
-      "136",
-      "100"
-     ],
-     [
-      "Midvale–Southmere",
-      "94",
-      "80"
-     ],
-     [
-      "Stonebridge–Riverton",
-      "264",
-      "100"
-     ]
-    ],
-    "note": null
-   },
-   "question": "If the train’s average speed on the Westfield–Northport route rose to 100 km/h, approximately how many minutes would each journey save?",
-   "options": [
-    "42 minutes",
-    "53 minutes",
-    "63 minutes",
-    "21 minutes"
-   ],
-   "answer": "A",
-   "steps": [
-    "Time = distance ÷ speed. Now: 281 ÷ 80 × 60 = 210.8 minutes. New: 281 ÷ 100 × 60 = 168.6 minutes.",
-    "Saving = 210.8 − 168.6 = 42.2, i.e. about 42 minutes.",
-    "Typical error: assuming journey time falls by the same percentage as speed rises."
-   ],
-   "difficulty": "intermediate",
-   "skill": "Rates and time",
-   "id": "N-035"
-  },
-  {
-   "figure": {
-    "type": "line",
-    "title": "Unemployment rate (% of labour force)",
-    "categories": [
-     "Year 1",
-     "Year 2",
-     "Year 3",
-     "Year 4",
-     "Year 5"
-    ],
-    "series": [
-     {
-      "name": "Lithuania",
-      "values": [
-       9.8,
-       8.5,
-       8.8,
-       9.3,
-       10.4
-      ]
-     },
-     {
-      "name": "Germany",
-      "values": [
-       7.1,
-       8.1,
-       7.7,
-       8.6,
-       7.3
-      ]
-     },
-     {
-      "name": "Greece",
-      "values": [
-       9.6,
-       9.9,
-       11.0,
-       10.0,
-       7.8
-      ]
-     },
-     {
-      "name": "Hungary",
-      "values": [
-       8.9,
-       8.7,
-       8.7,
-       8.3,
-       7.1
-      ]
-     }
-    ],
-    "unit": "%"
-   },
-   "question": "By approximately what percentage did the unemployment rate in Greece fall between Year 2 and Year 5?",
-   "options": [
-    "3.0%",
-    "21.2%",
-    "26.9%",
-    "22.9%"
-   ],
-   "answer": "B",
-   "steps": [
-    "Relative change = (new − old) ÷ old × 100 = (7.8 − 9.9) ÷ 9.9 × 100 ≈ −21.2%, i.e. a fall of about 21.2%.",
-    "Typical errors: 2.1 is the change in percentage points, not a percentage change; another is dividing by the later value."
-   ],
-   "difficulty": "intermediate",
-   "skill": "Percentage points vs percent",
-   "id": "N-036"
-  },
-  {
-   "figure": {
-    "type": "table",
-    "title": "Spending this year by programme and change compared with last year",
-    "columns": [
-     "Programme",
-     "This year (€ thousand)",
-     "Change on last year"
-    ],
-    "rows": [
-     [
-      "Coastal flood defences",
-      "2,465.6",
-      "−8%"
-     ],
-     [
-      "Rural broadband support",
-      "1,700.0",
-      "+25%"
-     ],
-     [
-      "Youth employment schemes",
-      "3,043.0",
-      "−15%"
-     ],
-     [
-      "Cultural heritage restoration",
-      "932.8",
-      "−12%"
-     ]
-    ],
-    "note": null
-   },
-   "question": "What was last year’s budget for the “Youth employment schemes” programme?",
-   "options": [
-    "€3,193.0k",
-    "€2,646.1k",
-    "€3,499.4k",
-    "€3,580.0k"
-   ],
-   "answer": "D",
-   "steps": [
-    "This year = last year × 0.85, so last year = this year ÷ 0.85.",
-    "3,043.0 ÷ 0.85 = 3,580.0 (€ thousand).",
-    "Typical error: increasing this year’s figure by 15% applies the percentage to the wrong base."
-   ],
-   "difficulty": "intermediate",
-   "skill": "Reverse percentage",
+   "skill": "Per-capita comparison",
    "id": "N-037"
   },
   {
    "figure": {
     "type": "table",
-    "title": "Translation requests and average turnaround by language unit",
+    "title": "Candidates and average test score by test centre",
     "columns": [
-     "Unit",
-     "Requests",
-     "Average days"
+     "Centre",
+     "Candidates",
+     "Average score (points)"
     ],
     "rows": [
      [
-      "Unit E",
-      "17",
-      "19"
+      "South",
+      "43",
+      "83"
      ],
      [
-      "Unit C",
-      "10",
-      "16"
-     ],
-     [
-      "Unit B",
+      "North",
       "12",
-      "17"
+      "55"
      ],
      [
-      "Unit A",
-      "41",
-      "7"
+      "East",
+      "9",
+      "65"
+     ],
+     [
+      "Central",
+      "43",
+      "82"
      ]
     ],
     "note": null
    },
-   "question": "What is the average turnaround time per request in the four units combined?",
+   "question": "What is the average score across all candidates in the four centres combined?",
    "options": [
-    "12.18 days",
-    "13.00 days",
-    "14.75 days",
-    "17.62 days"
+    "77.9 points",
+    "69.0 points",
+    "74.5 points",
+    "71.2 points"
    ],
    "answer": "A",
    "steps": [
-    "Weighted total = 17 × 19 + 10 × 16 + 12 × 17 + 41 × 7 = 974.",
-    "Total requests = 80. Weighted average = 974 ÷ 80 ≈ 12.18 days.",
-    "Typical error: the simple average of the four averages (14.75 days) ignores the different group sizes."
+    "Weighted total = 43 × 83 + 12 × 55 + 9 × 65 + 43 × 82 = 8,340.",
+    "Total candidates = 107. Weighted average = 8,340 ÷ 107 ≈ 77.9 points.",
+    "Typical error: the simple average of the four averages (71.2 points) ignores the different group sizes."
    ],
    "difficulty": "intermediate",
    "skill": "Weighted average",
@@ -2191,32 +2187,32 @@
       ],
       "rows": [
        [
-        "Drafting legislation",
-        "15",
-        "15",
-        "28",
+        "Data analysis",
+        "18",
+        "6",
+        "10",
+        "15"
+       ],
+       [
+        "Project management",
+        "21",
+        "12",
+        "26",
+        "20"
+       ],
+       [
+        "Leadership basics",
+        "26",
+        "18",
+        "9",
         "13"
        ],
        [
         "Public speaking",
+        "17",
         "19",
-        "23",
-        "18",
-        "8"
-       ],
-       [
-        "Project management",
-        "22",
-        "9",
-        "18",
-        "10"
-       ],
-       [
-        "Data analysis",
-        "29",
         "24",
-        "22",
-        "10"
+        "7"
        ]
       ],
       "note": null
@@ -2230,37 +2226,37 @@
       ],
       "rows": [
        [
-        "Drafting legislation",
-        "220"
-       ],
-       [
-        "Public speaking",
-        "160"
+        "Data analysis",
+        "390"
        ],
        [
         "Project management",
-        "240"
+        "350"
        ],
        [
-        "Data analysis",
-        "400"
+        "Leadership basics",
+        "600"
+       ],
+       [
+        "Public speaking",
+        "380"
        ]
       ],
       "note": null
      }
     ]
    },
-   "question": "How much did the “Public speaking” course cost in total over Q2 to Q3 inclusive?",
+   "question": "What was the total cost of the “Project management” course for Q1 to Q2 inclusive?",
    "options": [
-    "€6,560",
-    "€6,232",
-    "€7,840",
-    "€10,880"
+    "€20,650",
+    "€12,243",
+    "€27,650",
+    "€11,550"
    ],
-   "answer": "A",
+   "answer": "D",
    "steps": [
-    "Participants Q2 to Q3 inclusive: 23 + 18 = 41.",
-    "Total cost = 41 × €160 = €6,560.",
+    "Participants Q1 to Q2 inclusive: 21 + 12 = 33.",
+    "Total cost = 33 × €350 = €11,550.",
     "Typical errors: including the wrong quarters, using the whole year, or reading the wrong row of either table."
    ],
    "difficulty": "intermediate",
@@ -2269,34 +2265,84 @@
   },
   {
    "figure": {
+    "type": "table",
+    "title": "Rail routes: distance and average train speed",
+    "columns": [
+     "Route",
+     "Distance (km)",
+     "Average speed (km/h)"
+    ],
+    "rows": [
+     [
+      "Fairhaven–Westfield",
+      "258",
+      "110"
+     ],
+     [
+      "Kingsford–Riverton",
+      "328",
+      "80"
+     ],
+     [
+      "Midvale–Northport",
+      "193",
+      "140"
+     ],
+     [
+      "Brookhaven–Hillcrest",
+      "371",
+      "120"
+     ]
+    ],
+    "note": null
+   },
+   "question": "If the train’s average speed on the Fairhaven–Westfield route rose to 140 km/h, approximately how many minutes would each journey save?",
+   "options": [
+    "30 minutes",
+    "111 minutes",
+    "45 minutes",
+    "38 minutes"
+   ],
+   "answer": "A",
+   "steps": [
+    "Time = distance ÷ speed. Now: 258 ÷ 110 × 60 = 140.7 minutes. New: 258 ÷ 140 × 60 = 110.6 minutes.",
+    "Saving = 140.7 − 110.6 = 30.2, i.e. about 30 minutes.",
+    "Typical error: assuming journey time falls by the same percentage as speed rises."
+   ],
+   "difficulty": "intermediate",
+   "skill": "Rates and time",
+   "id": "N-040"
+  },
+  {
+   "figure": {
     "type": "bar",
     "title": "Visits to five public libraries (thousands)",
     "categories": [
-     "Eastbay",
-     "Fairhaven",
      "Southmere",
-     "Westfield",
+     "Brookhaven",
+     "Midvale",
+     "Riverton",
      "Lakeside"
     ],
     "series": [
      {
       "name": "Year 1",
       "values": [
-       400,
-       390,
-       650,
-       570,
-       880
+       800,
+       480,
+       590,
+       410,
+       490
       ]
      },
      {
       "name": "Year 2",
       "values": [
-       530,
-       460,
-       630,
-       630,
-       1030
+       1090,
+       580,
+       710,
+       590,
+       540
       ]
      }
     ],
@@ -2304,20 +2350,126 @@
    },
    "question": "Which of the following libraries recorded the largest percentage increase in visits between Year 1 and Year 2?",
    "options": [
-    "Lakeside",
-    "Westfield",
     "Southmere",
-    "Eastbay"
+    "Midvale",
+    "Lakeside",
+    "Riverton"
    ],
    "answer": "D",
    "steps": [
     "Percentage change = (Year 2 − Year 1) ÷ Year 1 × 100:",
-    "Lakeside: (1030 − 880) ÷ 880 ≈ 17.0%; Westfield: (630 − 570) ÷ 570 ≈ 10.5%; Southmere: (630 − 650) ÷ 650 ≈ −3.1%; Eastbay: (530 − 400) ÷ 400 ≈ 32.5%.",
-    "Largest: Eastbay. Trap: Lakeside has the largest increase in absolute terms (+150 thousand), but from a larger base."
+    "Southmere: (1090 − 800) ÷ 800 ≈ 36.2%; Midvale: (710 − 590) ÷ 590 ≈ 20.3%; Lakeside: (540 − 490) ÷ 490 ≈ 10.2%; Riverton: (590 − 410) ÷ 410 ≈ 43.9%.",
+    "Largest: Riverton. Trap: Southmere has the largest increase in absolute terms (+290 thousand), but from a larger base."
    ],
    "difficulty": "intermediate",
    "skill": "Chart comparison",
-   "id": "N-040"
+   "id": "N-041"
+  },
+  {
+   "figure": {
+    "type": "table",
+    "title": "Training participants and average course length by department",
+    "columns": [
+     "Department",
+     "Participants",
+     "Average hours"
+    ],
+    "rows": [
+     [
+      "Central",
+      "32",
+      "24"
+     ],
+     [
+      "West",
+      "6",
+      "19"
+     ],
+     [
+      "North",
+      "17",
+      "38"
+     ],
+     [
+      "South",
+      "48",
+      "6"
+     ]
+    ],
+    "note": null
+   },
+   "question": "What is the average number of training hours per participant in the four departments combined?",
+   "options": [
+    "27.8 hours",
+    "17.6 hours",
+    "16.7 hours",
+    "21.8 hours"
+   ],
+   "answer": "B",
+   "steps": [
+    "Weighted total = 32 × 24 + 6 × 19 + 17 × 38 + 48 × 6 = 1,816.",
+    "Total participants = 103. Weighted average = 1,816 ÷ 103 ≈ 17.6 hours.",
+    "Typical error: the simple average of the four averages (21.8 hours) ignores the different group sizes."
+   ],
+   "difficulty": "intermediate",
+   "skill": "Weighted average",
+   "id": "N-042"
+  },
+  {
+   "figure": {
+    "type": "table",
+    "title": "Price of an ergonomic office chair in four markets (fictitious prices and rates)",
+    "columns": [
+     "Currency",
+     "Code",
+     "Units per €1",
+     "Local price"
+    ],
+    "rows": [
+     [
+      "Icelandic króna",
+      "ISK",
+      "151.7",
+      "74,930"
+     ],
+     [
+      "Swiss franc",
+      "CHF",
+      "0.94",
+      "563"
+     ],
+     [
+      "US dollar",
+      "USD",
+      "1.06",
+      "545"
+     ],
+     [
+      "Norwegian krone",
+      "NOK",
+      "11.32",
+      "6,245"
+     ]
+    ],
+    "note": null
+   },
+   "question": "In euros, approximately how much more does an ergonomic office chair cost in the most expensive of the four markets than in the cheapest?",
+   "options": [
+    "€47",
+    "€85",
+    "€58",
+    "€105"
+   ],
+   "answer": "D",
+   "steps": [
+    "Convert every price to euros by DIVIDING the local price by the number of units per €1:",
+    "ISK: 74,930 ÷ 151.7 ≈ €493.94; CHF: 563 ÷ 0.94 ≈ €598.94; USD: 545 ÷ 1.06 ≈ €514.15; NOK: 6,245 ÷ 11.32 ≈ €551.68.",
+    "Most expensive (CHF) − cheapest (ISK) ≈ €598.94 − €493.94 = €105.00, i.e. about €105.",
+    "Typical errors: ranking the markets by local price (the currencies are not comparable) or comparing the wrong pair of markets."
+   ],
+   "difficulty": "intermediate",
+   "skill": "Currency conversion",
+   "id": "N-043"
   },
   {
    "figure": {
@@ -2330,49 +2482,185 @@
     ],
     "rows": [
      [
-      "Island region",
-      "3.14",
-      "708.8"
-     ],
-     [
       "Southern region",
-      "2.70",
-      "669.0"
+      "3.82",
+      "860.8"
      ],
      [
-      "Eastern region",
-      "5.10",
-      "883.9"
+      "Alpine region",
+      "1.49",
+      "225.2"
      ],
      [
-      "Western region",
-      "1.10",
-      "222.9"
+      "Coastal region",
+      "6.19",
+      "1,247.0"
      ],
      [
       "Central region",
-      "6.13",
-      "1,328.9"
+      "2.55",
+      "243.0"
+     ],
+     [
+      "Island region",
+      "2.92",
+      "580.4"
      ]
     ],
     "note": null
    },
    "question": "Which of the following regions had the highest spending on culture per inhabitant?",
    "options": [
-    "Central region",
     "Southern region",
-    "Western region",
-    "Eastern region"
+    "Coastal region",
+    "Alpine region",
+    "Island region"
    ],
-   "answer": "B",
+   "answer": "A",
    "steps": [
     "Spending per inhabitant = spending ÷ population (€ million ÷ million inhabitants = € per inhabitant):",
-    "Central region ≈ €217; Southern region ≈ €248; Western region ≈ €203; Eastern region ≈ €173.",
-    "The highest figure is for the Southern region. Trap: the Central region has the largest total spending, but not the highest spending per inhabitant."
+    "Southern region ≈ €225; Coastal region ≈ €201; Alpine region ≈ €151; Island region ≈ €199.",
+    "The highest figure is for the Southern region. Trap: the Coastal region has the largest total spending, but not the highest spending per inhabitant."
    ],
    "difficulty": "intermediate",
    "skill": "Per-capita comparison",
-   "id": "N-041"
+   "id": "N-044"
+  },
+  {
+   "figure": {
+    "type": "table",
+    "title": "Index of consumer prices for public transport (Year 1 = 100)",
+    "columns": [
+     "Country",
+     "Year 1",
+     "Year 2",
+     "Year 3",
+     "Year 4",
+     "Year 5"
+    ],
+    "rows": [
+     [
+      "Greece",
+      "100.0",
+      "102.5",
+      "104.4",
+      "112.1",
+      "113.9"
+     ],
+     [
+      "Germany",
+      "100.0",
+      "105.6",
+      "107.7",
+      "110.1",
+      "115.4"
+     ],
+     [
+      "France",
+      "100.0",
+      "107.5",
+      "110.2",
+      "117.2",
+      "120.6"
+     ],
+     [
+      "Czechia",
+      "100.0",
+      "101.7",
+      "106.3",
+      "110.9",
+      "120.2"
+     ]
+    ],
+    "note": null
+   },
+   "question": "By approximately what percentage did public-transport prices in France rise between Year 3 and Year 5?",
+   "options": [
+    "10.4%",
+    "20.6%",
+    "9.4%",
+    "8.6%"
+   ],
+   "answer": "C",
+   "steps": [
+    "With index numbers, the percentage change between two years is (later index − earlier index) ÷ earlier index × 100.",
+    "(120.6 − 110.2) ÷ 110.2 × 100 ≈ 9.4%.",
+    "Typical errors: subtracting the indices (10.4 is a change in index points, not per cent) or measuring from the base year (index − 100)."
+   ],
+   "difficulty": "intermediate",
+   "skill": "Index numbers",
+   "id": "N-045"
+  },
+  {
+   "figure": {
+    "type": "line",
+    "title": "Unemployment rate (% of labour force)",
+    "categories": [
+     "Year 1",
+     "Year 2",
+     "Year 3",
+     "Year 4",
+     "Year 5"
+    ],
+    "series": [
+     {
+      "name": "Belgium",
+      "values": [
+       7.8,
+       6.6,
+       6.5,
+       5.4,
+       6.4
+      ]
+     },
+     {
+      "name": "Finland",
+      "values": [
+       10.0,
+       10.9,
+       10.7,
+       10.4,
+       9.7
+      ]
+     },
+     {
+      "name": "Latvia",
+      "values": [
+       5.6,
+       5.7,
+       8.0,
+       3.8,
+       3.0
+      ]
+     },
+     {
+      "name": "Poland",
+      "values": [
+       11.3,
+       10.9,
+       10.2,
+       8.9,
+       9.3
+      ]
+     }
+    ],
+    "unit": "%"
+   },
+   "question": "By approximately what percentage did the unemployment rate in Latvia rise between Year 1 and Year 3?",
+   "options": [
+    "30.0%",
+    "24.0%",
+    "46.4%",
+    "42.9%"
+   ],
+   "answer": "D",
+   "steps": [
+    "Relative change = (new − old) ÷ old × 100 = (8.0 − 5.6) ÷ 5.6 × 100 ≈ +42.9%, i.e. a rise of about 42.9%.",
+    "Typical errors: 2.4 is the change in percentage points, not a percentage change; another is dividing by the later value."
+   ],
+   "difficulty": "intermediate",
+   "skill": "Percentage points vs percent",
+   "id": "N-046"
   },
   {
    "figure": {
@@ -2390,157 +2678,51 @@
     "rows": [
      [
       "Team North",
+      "59",
+      "55",
       "33",
-      "51",
-      "36",
-      "40",
-      "62",
+      "39",
+      "29",
       "—"
      ],
      [
-      "Team West",
-      "48",
-      "32",
-      "57",
-      "59",
-      "59",
-      "37"
+      "Team South",
+      "27",
+      "41",
+      "26",
+      "47",
+      "38",
+      "62"
      ],
      [
-      "Team East",
-      "58",
+      "Team West",
+      "59",
+      "47",
+      "44",
       "56",
-      "28",
-      "32",
-      "31",
-      "51"
+      "41",
+      "47"
      ]
     ],
     "note": "— = figure not yet available"
    },
-   "question": "How many requests would Team North need to close in June for its average over January to June to be exactly 40 per month?",
+   "question": "How many requests would Team North need to close in June for its average over January to June to be exactly 45 per month?",
    "options": [
-    "40",
-    "34",
-    "44",
-    "18"
+    "55",
+    "45",
+    "10",
+    "59"
    ],
-   "answer": "D",
+   "answer": "A",
    "steps": [
-    "For an average of 40 over 6 months, the total must be 40 × 6 = 240.",
-    "January–May total = 33 + 51 + 36 + 40 + 62 = 222.",
-    "June must therefore be 240 − 222 = 18.",
-    "Typical errors: answering with the target itself (40) or with the current average (about 44)."
+    "For an average of 45 over 6 months, the total must be 45 × 6 = 270.",
+    "January–May total = 59 + 55 + 33 + 39 + 29 = 215.",
+    "June must therefore be 270 − 215 = 55.",
+    "Typical errors: answering with the target itself (45) or with the current average (about 43)."
    ],
    "difficulty": "intermediate",
    "skill": "Averages over time",
-   "id": "N-042"
-  },
-  {
-   "figure": {
-    "type": "table",
-    "title": "Price of a standard office laptop in four markets (fictitious prices and rates)",
-    "columns": [
-     "Currency",
-     "Code",
-     "Units per €1",
-     "Local price"
-    ],
-    "rows": [
-     [
-      "Canadian dollar",
-      "CAD",
-      "1.53",
-      "919"
-     ],
-     [
-      "US dollar",
-      "USD",
-      "1.05",
-      "524"
-     ],
-     [
-      "Norwegian krone",
-      "NOK",
-      "11.30",
-      "5,401"
-     ],
-     [
-      "Japanese yen",
-      "JPY",
-      "155.2",
-      "72,570"
-     ]
-    ],
-    "note": null
-   },
-   "question": "In euros, approximately how much more does a standard office laptop cost in the most expensive of the four markets than in the cheapest?",
-   "options": [
-    "€200",
-    "€31",
-    "€133",
-    "€102"
-   ],
-   "answer": "C",
-   "steps": [
-    "Convert every price to euros by DIVIDING the local price by the number of units per €1:",
-    "CAD: 919 ÷ 1.53 ≈ €600.65; USD: 524 ÷ 1.05 ≈ €499.05; NOK: 5,401 ÷ 11.30 ≈ €477.96; JPY: 72,570 ÷ 155.2 ≈ €467.59.",
-    "Most expensive (CAD) − cheapest (JPY) ≈ €600.65 − €467.59 = €133.06, i.e. about €133.",
-    "Typical errors: ranking the markets by local price (the currencies are not comparable) or comparing the wrong pair of markets."
-   ],
-   "difficulty": "intermediate",
-   "skill": "Currency conversion",
-   "id": "N-043"
-  },
-  {
-   "figure": {
-    "type": "table",
-    "title": "Staff numbers and average monthly salary by unit",
-    "columns": [
-     "Unit",
-     "Staff",
-     "Average monthly salary (€)"
-    ],
-    "rows": [
-     [
-      "Unit C",
-      "7",
-      "9,200"
-     ],
-     [
-      "Unit B",
-      "14",
-      "7,900"
-     ],
-     [
-      "Unit A",
-      "17",
-      "5,300"
-     ],
-     [
-      "Unit D",
-      "41",
-      "4,200"
-     ]
-    ],
-    "note": null
-   },
-   "question": "What is the average monthly salary across all staff in the four units combined?",
-   "options": [
-    "€6,976",
-    "€5,978",
-    "€6,650",
-    "€5,535"
-   ],
-   "answer": "D",
-   "steps": [
-    "Weighted total = 7 × 9,200 + 14 × 7,900 + 17 × 5,300 + 41 × 4,200 = 437,300.",
-    "Total staff = 79. Weighted average = 437,300 ÷ 79 ≈ €5,535.",
-    "Typical error: the simple average of the four averages (€6,650) ignores the different group sizes."
-   ],
-   "difficulty": "intermediate",
-   "skill": "Weighted average",
-   "id": "N-044"
+   "id": "N-047"
   },
   {
    "figure": {
@@ -2553,515 +2735,49 @@
     ],
     "rows": [
      [
-      "Coastal flood defences",
-      "3,661.6",
-      "−8%"
+      "Student mobility grants",
+      "3,111.0",
+      "−15%"
+     ],
+     [
+      "Youth employment schemes",
+      "3,203.2",
+      "−12%"
+     ],
+     [
+      "Cultural heritage restoration",
+      "1,080.0",
+      "+20%"
      ],
      [
       "Clean-bus procurement",
       "2,376.0",
-      "−12%"
-     ],
-     [
-      "Rural broadband support",
-      "2,999.2",
-      "−8%"
-     ],
-     [
-      "Cultural heritage restoration",
-      "5,219.2",
-      "+12%"
+      "+20%"
      ]
     ],
     "note": null
    },
-   "question": "How much was allocated to “Rural broadband support” last year?",
+   "question": "Before this year’s change, what was the budget for “Youth employment schemes”?",
    "options": [
-    "€3,079.2k",
-    "€3,260.0k",
-    "€2,777.0k",
-    "€2,999.2k"
-   ],
-   "answer": "B",
-   "steps": [
-    "This year = last year × 0.92, so last year = this year ÷ 0.92.",
-    "2,999.2 ÷ 0.92 = 3,260.0 (€ thousand).",
-    "Typical error: increasing this year’s figure by 8% applies the percentage to the wrong base."
-   ],
-   "difficulty": "intermediate",
-   "skill": "Reverse percentage",
-   "id": "N-045"
-  },
-  {
-   "figure": {
-    "type": "table",
-    "title": "Index of average house prices (Year 1 = 100)",
-    "columns": [
-     "Country",
-     "Year 1",
-     "Year 2",
-     "Year 3",
-     "Year 4",
-     "Year 5"
-    ],
-    "rows": [
-     [
-      "Finland",
-      "100.0",
-      "105.6",
-      "107.7",
-      "110.1",
-      "115.4"
-     ],
-     [
-      "Austria",
-      "100.0",
-      "107.5",
-      "110.2",
-      "117.2",
-      "120.6"
-     ],
-     [
-      "Estonia",
-      "100.0",
-      "101.7",
-      "106.3",
-      "110.9",
-      "120.2"
-     ],
-     [
-      "Belgium",
-      "100.0",
-      "104.6",
-      "112.5",
-      "116.8",
-      "117.5"
-     ]
-    ],
-    "note": null
-   },
-   "question": "By approximately what percentage did average house prices in Estonia rise between Year 3 and Year 5?",
-   "options": [
-    "13.9%",
-    "11.6%",
-    "13.1%",
-    "20.2%"
-   ],
-   "answer": "C",
-   "steps": [
-    "With index numbers, the percentage change between two years is (later index − earlier index) ÷ earlier index × 100.",
-    "(120.2 − 106.3) ÷ 106.3 × 100 ≈ 13.1%.",
-    "Typical errors: subtracting the indices (13.9 is a change in index points, not per cent) or measuring from the base year (index − 100)."
-   ],
-   "difficulty": "intermediate",
-   "skill": "Index numbers",
-   "id": "N-046"
-  },
-  {
-   "figure": {
-    "type": "table",
-    "title": "Rail routes: distance and average train speed",
-    "columns": [
-     "Route",
-     "Distance (km)",
-     "Average speed (km/h)"
-    ],
-    "rows": [
-     [
-      "Midvale–Southmere",
-      "159",
-      "100"
-     ],
-     [
-      "Northport–Riverton",
-      "129",
-      "120"
-     ],
-     [
-      "Brookhaven–Westfield",
-      "354",
-      "80"
-     ],
-     [
-      "Eastbay–Stonebridge",
-      "211",
-      "110"
-     ]
-    ],
-    "note": null
-   },
-   "question": "If the train’s average speed on the Midvale–Southmere route rose to 150 km/h, approximately how many minutes would each journey save?",
-   "options": [
-    "32 minutes",
-    "16 minutes",
-    "64 minutes",
-    "48 minutes"
+    "€3,640.0k",
+    "€3,323.2k",
+    "€3,203.2k",
+    "€2,860.0k"
    ],
    "answer": "A",
    "steps": [
-    "Time = distance ÷ speed. Now: 159 ÷ 100 × 60 = 95.4 minutes. New: 159 ÷ 150 × 60 = 63.6 minutes.",
-    "Saving = 95.4 − 63.6 = 31.8, i.e. about 32 minutes.",
-    "Typical error: assuming journey time falls by the same percentage as speed rises."
+    "This year = last year × 0.88, so last year = this year ÷ 0.88.",
+    "3,203.2 ÷ 0.88 = 3,640.0 (€ thousand).",
+    "Typical error: increasing this year’s figure by 12% applies the percentage to the wrong base."
    ],
    "difficulty": "intermediate",
-   "skill": "Rates and time",
-   "id": "N-047"
-  },
-  {
-   "figure": {
-    "type": "tables",
-    "tables": [
-     {
-      "type": "table",
-      "title": "Table 1 — Participants per training course",
-      "columns": [
-       "Course",
-       "Q1",
-       "Q2",
-       "Q3",
-       "Q4"
-      ],
-      "rows": [
-       [
-        "Public speaking",
-        "29",
-        "21",
-        "29",
-        "7"
-       ],
-       [
-        "Leadership basics",
-        "18",
-        "6",
-        "4",
-        "16"
-       ],
-       [
-        "Negotiation skills",
-        "26",
-        "13",
-        "26",
-        "10"
-       ],
-       [
-        "Drafting legislation",
-        "12",
-        "16",
-        "8",
-        "28"
-       ]
-      ],
-      "note": null
-     },
-     {
-      "type": "table",
-      "title": "Table 2 — Cost per participant (€)",
-      "columns": [
-       "Course",
-       "Cost (€)"
-      ],
-      "rows": [
-       [
-        "Public speaking",
-        "580"
-       ],
-       [
-        "Leadership basics",
-        "140"
-       ],
-       [
-        "Negotiation skills",
-        "290"
-       ],
-       [
-        "Drafting legislation",
-        "420"
-       ]
-      ],
-      "note": null
-     }
-    ]
-   },
-   "question": "How much did the “Negotiation skills” course cost in total over Q1 to Q2 inclusive?",
-   "options": [
-    "€18,850",
-    "€11,310",
-    "€10,518",
-    "€21,750"
-   ],
-   "answer": "B",
-   "steps": [
-    "Participants Q1 to Q2 inclusive: 26 + 13 = 39.",
-    "Total cost = 39 × €290 = €11,310.",
-    "Typical errors: including the wrong quarters, using the whole year, or reading the wrong row of either table."
-   ],
-   "difficulty": "intermediate",
-   "skill": "Combining two tables",
+   "skill": "Reverse percentage",
    "id": "N-048"
   },
   {
    "figure": {
-    "type": "tables",
-    "tables": [
-     {
-      "type": "table",
-      "title": "Table 1 — Participants per training course",
-      "columns": [
-       "Course",
-       "Q1",
-       "Q2",
-       "Q3",
-       "Q4"
-      ],
-      "rows": [
-       [
-        "Leadership basics",
-        "4",
-        "28",
-        "26",
-        "30"
-       ],
-       [
-        "Financial rules",
-        "13",
-        "13",
-        "28",
-        "4"
-       ],
-       [
-        "Project management",
-        "29",
-        "29",
-        "9",
-        "11"
-       ],
-       [
-        "Data analysis",
-        "5",
-        "12",
-        "14",
-        "9"
-       ]
-      ],
-      "note": null
-     },
-     {
-      "type": "table",
-      "title": "Table 2 — Cost per participant (€)",
-      "columns": [
-       "Course",
-       "Cost (€)"
-      ],
-      "rows": [
-       [
-        "Leadership basics",
-        "190"
-       ],
-       [
-        "Financial rules",
-        "300"
-       ],
-       [
-        "Project management",
-        "220"
-       ],
-       [
-        "Data analysis",
-        "580"
-       ]
-      ],
-      "note": null
-     }
-    ]
-   },
-   "question": "What was the total cost of the “Leadership basics” course for Q2 to Q3 inclusive?",
-   "options": [
-    "€7,790",
-    "€15,960",
-    "€10,978",
-    "€10,260"
-   ],
-   "answer": "D",
-   "steps": [
-    "Participants Q2 to Q3 inclusive: 28 + 26 = 54.",
-    "Total cost = 54 × €190 = €10,260.",
-    "Typical errors: including the wrong quarters, using the whole year, or reading the wrong row of either table."
-   ],
-   "difficulty": "intermediate",
-   "skill": "Combining two tables",
-   "id": "N-049"
-  },
-  {
-   "figure": {
     "type": "table",
-    "title": "Bus routes: distance and average coach speed",
-    "columns": [
-     "Route",
-     "Distance (km)",
-     "Average speed (km/h)"
-    ],
-    "rows": [
-     [
-      "Northport–Kingsford",
-      "296",
-      "110"
-     ],
-     [
-      "Riverton–Midvale",
-      "236",
-      "160"
-     ],
-     [
-      "Brookhaven–Eastbay",
-      "158",
-      "140"
-     ],
-     [
-      "Southmere–Stonebridge",
-      "192",
-      "160"
-     ]
-    ],
-    "note": null
-   },
-   "question": "If the coach’s average speed on the Northport–Kingsford route rose to 130 km/h, approximately how many minutes would each journey save?",
-   "options": [
-    "25 minutes",
-    "37 minutes",
-    "29 minutes",
-    "12 minutes"
-   ],
-   "answer": "A",
-   "steps": [
-    "Time = distance ÷ speed. Now: 296 ÷ 110 × 60 = 161.5 minutes. New: 296 ÷ 130 × 60 = 136.6 minutes.",
-    "Saving = 161.5 − 136.6 = 24.8, i.e. about 25 minutes.",
-    "Typical error: assuming journey time falls by the same percentage as speed rises."
-   ],
-   "difficulty": "intermediate",
-   "skill": "Rates and time",
-   "id": "N-050"
-  },
-  {
-   "figure": {
-    "type": "table",
-    "title": "Index of average energy bills (Year 1 = 100)",
-    "columns": [
-     "Country",
-     "Year 1",
-     "Year 2",
-     "Year 3",
-     "Year 4",
-     "Year 5"
-    ],
-    "rows": [
-     [
-      "Portugal",
-      "100.0",
-      "100.2",
-      "102.3",
-      "108.4",
-      "111.1"
-     ],
-     [
-      "Denmark",
-      "100.0",
-      "105.2",
-      "111.2",
-      "118.0",
-      "127.6"
-     ],
-     [
-      "Czechia",
-      "100.0",
-      "106.1",
-      "108.0",
-      "112.0",
-      "116.1"
-     ],
-     [
-      "Austria",
-      "100.0",
-      "107.9",
-      "114.2",
-      "122.5",
-      "124.8"
-     ]
-    ],
-    "note": null
-   },
-   "question": "By approximately what percentage did average energy bills in Denmark rise between Year 3 and Year 5?",
-   "options": [
-    "27.6%",
-    "13.7%",
-    "16.4%",
-    "14.7%"
-   ],
-   "answer": "D",
-   "steps": [
-    "With index numbers, the percentage change between two years is (later index − earlier index) ÷ earlier index × 100.",
-    "(127.6 − 111.2) ÷ 111.2 × 100 ≈ 14.7%.",
-    "Typical errors: subtracting the indices (16.4 is a change in index points, not per cent) or measuring from the base year (index − 100)."
-   ],
-   "difficulty": "intermediate",
-   "skill": "Index numbers",
-   "id": "N-051"
-  },
-  {
-   "figure": {
-    "type": "bar",
-    "title": "Visits to five public libraries (thousands)",
-    "categories": [
-     "Southmere",
-     "Riverton",
-     "Hillcrest",
-     "Stonebridge",
-     "Kingsford"
-    ],
-    "series": [
-     {
-      "name": "Year 1",
-      "values": [
-       380,
-       570,
-       620,
-       820,
-       560
-      ]
-     },
-     {
-      "name": "Year 2",
-      "values": [
-       370,
-       640,
-       890,
-       1120,
-       620
-      ]
-     }
-    ],
-    "unit": "thousand visits"
-   },
-   "question": "Which of the following libraries recorded the largest percentage increase in visits between Year 1 and Year 2?",
-   "options": [
-    "Kingsford",
-    "Hillcrest",
-    "Stonebridge",
-    "Southmere"
-   ],
-   "answer": "B",
-   "steps": [
-    "Percentage change = (Year 2 − Year 1) ÷ Year 1 × 100:",
-    "Kingsford: (620 − 560) ÷ 560 ≈ 10.7%; Hillcrest: (890 − 620) ÷ 620 ≈ 43.5%; Stonebridge: (1120 − 820) ÷ 820 ≈ 36.6%; Southmere: (370 − 380) ÷ 380 ≈ −2.6%.",
-    "Largest: Hillcrest. Trap: Stonebridge has the largest increase in absolute terms (+300 thousand), but from a larger base."
-   ],
-   "difficulty": "intermediate",
-   "skill": "Chart comparison",
-   "id": "N-052"
-  },
-  {
-   "figure": {
-    "type": "table",
-    "title": "Spending this year by programme and change compared with last year",
+    "title": "Grant envelope this year and change on last year",
     "columns": [
      "Programme",
      "This year (€ thousand)",
@@ -3069,93 +2785,373 @@
     ],
     "rows": [
      [
-      "Coastal flood defences",
-      "2,548.0",
+      "Rural broadband support",
+      "2,132.0",
       "+30%"
      ],
      [
       "Cultural heritage restoration",
-      "2,688.0",
-      "+20%"
-     ],
-     [
-      "Student mobility grants",
-      "2,116.0",
-      "+15%"
+      "3,570.0",
+      "−15%"
      ],
      [
       "Youth employment schemes",
-      "2,768.0",
-      "−20%"
+      "809.6",
+      "−8%"
+     ],
+     [
+      "Coastal flood defences",
+      "598.4",
+      "−12%"
      ]
     ],
     "note": null
    },
-   "question": "How much was allocated to “Cultural heritage restoration” last year?",
+   "question": "Before this year’s change, what was the budget for “Rural broadband support”?",
    "options": [
-    "€3,360.0k",
-    "€2,240.0k",
-    "€2,150.4k",
-    "€2,488.0k"
+    "€1,832.0k",
+    "€3,045.7k",
+    "€1,492.4k",
+    "€1,640.0k"
    ],
-   "answer": "B",
+   "answer": "D",
    "steps": [
-    "This year = last year × 1.2, so last year = this year ÷ 1.2.",
-    "2,688.0 ÷ 1.2 = 2,240.0 (€ thousand).",
-    "Typical error: reducing this year’s figure by 20% applies the percentage to the wrong base."
+    "This year = last year × 1.3, so last year = this year ÷ 1.3.",
+    "2,132.0 ÷ 1.3 = 1,640.0 (€ thousand).",
+    "Typical error: reducing this year’s figure by 30% applies the percentage to the wrong base."
    ],
    "difficulty": "intermediate",
    "skill": "Reverse percentage",
+   "id": "N-049"
+  },
+  {
+   "figure": {
+    "type": "tables",
+    "tables": [
+     {
+      "type": "table",
+      "title": "Table 1 — Participants per training course",
+      "columns": [
+       "Course",
+       "Q1",
+       "Q2",
+       "Q3",
+       "Q4"
+      ],
+      "rows": [
+       [
+        "Data analysis",
+        "18",
+        "27",
+        "15",
+        "10"
+       ],
+       [
+        "Negotiation skills",
+        "12",
+        "19",
+        "30",
+        "24"
+       ],
+       [
+        "Drafting legislation",
+        "30",
+        "28",
+        "23",
+        "24"
+       ],
+       [
+        "Public speaking",
+        "6",
+        "6",
+        "30",
+        "26"
+       ]
+      ],
+      "note": null
+     },
+     {
+      "type": "table",
+      "title": "Table 2 — Cost per participant (€)",
+      "columns": [
+       "Course",
+       "Cost (€)"
+      ],
+      "rows": [
+       [
+        "Data analysis",
+        "510"
+       ],
+       [
+        "Negotiation skills",
+        "500"
+       ],
+       [
+        "Drafting legislation",
+        "140"
+       ],
+       [
+        "Public speaking",
+        "410"
+       ]
+      ],
+      "note": null
+     }
+    ]
+   },
+   "question": "How much did the “Data analysis” course cost in total over Q1 to Q3 inclusive?",
+   "options": [
+    "€30,600",
+    "€35,700",
+    "€16,830",
+    "€32,130"
+   ],
+   "answer": "A",
+   "steps": [
+    "Participants Q1 to Q3 inclusive: 18 + 27 + 15 = 60.",
+    "Total cost = 60 × €510 = €30,600.",
+    "Typical errors: including the wrong quarters, using the whole year, or reading the wrong row of either table."
+   ],
+   "difficulty": "intermediate",
+   "skill": "Combining two tables",
+   "id": "N-050"
+  },
+  {
+   "figure": {
+    "type": "table",
+    "title": "Cases closed per month by three teams",
+    "columns": [
+     "Team",
+     "Jan",
+     "Feb",
+     "Mar",
+     "Apr",
+     "May",
+     "Jun"
+    ],
+    "rows": [
+     [
+      "Team East",
+      "31",
+      "39",
+      "33",
+      "30",
+      "24",
+      "33"
+     ],
+     [
+      "Team West",
+      "52",
+      "25",
+      "54",
+      "46",
+      "38",
+      "61"
+     ],
+     [
+      "Team North",
+      "40",
+      "59",
+      "45",
+      "42",
+      "25",
+      "—"
+     ]
+    ],
+    "note": "— = figure not yet available"
+   },
+   "question": "How many cases would Team North need to close in June for its average over January to June to be exactly 50 per month?",
+   "options": [
+    "50",
+    "42",
+    "89",
+    "84"
+   ],
+   "answer": "C",
+   "steps": [
+    "For an average of 50 over 6 months, the total must be 50 × 6 = 300.",
+    "January–May total = 40 + 59 + 45 + 42 + 25 = 211.",
+    "June must therefore be 300 − 211 = 89.",
+    "Typical errors: answering with the target itself (50) or with the current average (about 42)."
+   ],
+   "difficulty": "intermediate",
+   "skill": "Averages over time",
+   "id": "N-051"
+  },
+  {
+   "figure": {
+    "type": "table",
+    "title": "Index of consumer prices for public transport (Year 1 = 100)",
+    "columns": [
+     "Country",
+     "Year 1",
+     "Year 2",
+     "Year 3",
+     "Year 4",
+     "Year 5"
+    ],
+    "rows": [
+     [
+      "Slovenia",
+      "100.0",
+      "104.8",
+      "107.6",
+      "113.3",
+      "117.8"
+     ],
+     [
+      "Lithuania",
+      "100.0",
+      "102.9",
+      "104.5",
+      "105.0",
+      "112.8"
+     ],
+     [
+      "Denmark",
+      "100.0",
+      "108.9",
+      "110.9",
+      "116.8",
+      "118.3"
+     ],
+     [
+      "Croatia",
+      "100.0",
+      "105.1",
+      "106.1",
+      "113.1",
+      "115.9"
+     ]
+    ],
+    "note": null
+   },
+   "question": "By approximately what percentage did public-transport prices in Slovenia rise between Year 3 and Year 5?",
+   "options": [
+    "8.7%",
+    "17.8%",
+    "9.5%",
+    "10.2%"
+   ],
+   "answer": "C",
+   "steps": [
+    "With index numbers, the percentage change between two years is (later index − earlier index) ÷ earlier index × 100.",
+    "(117.8 − 107.6) ÷ 107.6 × 100 ≈ 9.5%.",
+    "Typical errors: subtracting the indices (10.2 is a change in index points, not per cent) or measuring from the base year (index − 100)."
+   ],
+   "difficulty": "intermediate",
+   "skill": "Index numbers",
+   "id": "N-052"
+  },
+  {
+   "figure": {
+    "type": "table",
+    "title": "Population and public spending on culture in five regions of one country",
+    "columns": [
+     "Region",
+     "Population (million)",
+     "Spending (€ million)"
+    ],
+    "rows": [
+     [
+      "Northern region",
+      "5.74",
+      "1,204.8"
+     ],
+     [
+      "Eastern region",
+      "2.11",
+      "388.2"
+     ],
+     [
+      "Alpine region",
+      "6.14",
+      "879.4"
+     ],
+     [
+      "Southern region",
+      "5.85",
+      "1,514.1"
+     ],
+     [
+      "Central region",
+      "5.36",
+      "837.0"
+     ]
+    ],
+    "note": null
+   },
+   "question": "Which of the following regions had the lowest spending on culture per inhabitant?",
+   "options": [
+    "Eastern region",
+    "Alpine region",
+    "Northern region",
+    "Southern region"
+   ],
+   "answer": "B",
+   "steps": [
+    "Spending per inhabitant = spending ÷ population (€ million ÷ million inhabitants = € per inhabitant):",
+    "Eastern region ≈ €184; Alpine region ≈ €143; Northern region ≈ €210; Southern region ≈ €259.",
+    "The lowest figure is for the Alpine region. Trap: the Eastern region has the smallest total spending, but not the lowest spending per inhabitant."
+   ],
+   "difficulty": "intermediate",
+   "skill": "Per-capita comparison",
    "id": "N-053"
   },
   {
    "figure": {
     "type": "table",
-    "title": "Staff numbers and average monthly salary by unit",
+    "title": "Price of an annual museum pass in four markets (fictitious prices and rates)",
     "columns": [
-     "Unit",
-     "Staff",
-     "Average monthly salary (€)"
+     "Currency",
+     "Code",
+     "Units per €1",
+     "Local price"
     ],
     "rows": [
      [
-      "Unit E",
-      "30",
-      "6,400"
+      "US dollar",
+      "USD",
+      "1.05",
+      "510"
      ],
      [
-      "Unit B",
-      "23",
-      "6,400"
+      "Norwegian krone",
+      "NOK",
+      "11.33",
+      "4,997"
      ],
      [
-      "Unit D",
-      "41",
-      "4,600"
+      "Swiss franc",
+      "CHF",
+      "0.93",
+      "409"
      ],
      [
-      "Unit A",
-      "46",
-      "4,500"
+      "Japanese yen",
+      "JPY",
+      "162.1",
+      "90,490"
      ]
     ],
     "note": null
    },
-   "question": "What is the average monthly salary across all staff in the four units combined?",
+   "question": "In euros, approximately how much more does an annual museum pass cost in the most expensive of the four markets than in the cheapest?",
    "options": [
-    "€5,615",
-    "€4,547",
-    "€5,475",
-    "€5,249"
+    "€178",
+    "€73",
+    "€46",
+    "€118"
    ],
    "answer": "D",
    "steps": [
-    "Weighted total = 30 × 6,400 + 23 × 6,400 + 41 × 4,600 + 46 × 4,500 = 734,800.",
-    "Total staff = 140. Weighted average = 734,800 ÷ 140 ≈ €5,249.",
-    "Typical error: the simple average of the four averages (€5,475) ignores the different group sizes."
+    "Convert every price to euros by DIVIDING the local price by the number of units per €1:",
+    "USD: 510 ÷ 1.05 ≈ €485.71; NOK: 4,997 ÷ 11.33 ≈ €441.04; CHF: 409 ÷ 0.93 ≈ €439.78; JPY: 90,490 ÷ 162.1 ≈ €558.24.",
+    "Most expensive (JPY) − cheapest (CHF) ≈ €558.24 − €439.78 = €118.45, i.e. about €118.",
+    "Typical errors: ranking the markets by local price (the currencies are not comparable) or comparing the wrong pair of markets."
    ],
    "difficulty": "intermediate",
-   "skill": "Weighted average",
+   "skill": "Currency conversion",
    "id": "N-054"
   },
   {
@@ -3395,35 +3391,35 @@
     ],
     "rows": [
      [
-      "Translation tariffs",
-      "+10%",
-      "−25%"
-     ],
-     [
-      "Membership fees",
-      "+10%",
+      "Software licences",
+      "−15%",
       "+15%"
      ],
      [
-      "Conference fees",
-      "−15%",
+      "Translation tariffs",
+      "−20%",
+      "−15%"
+     ],
+     [
+      "Membership fees",
+      "+25%",
       "+15%"
      ]
     ],
     "note": null
    },
-   "question": "Compared with the start of Year 1, by what percentage are membership fees higher at the end of Year 2?",
+   "question": "Compared with the start of Year 1, by what percentage are translation tariffs lower at the end of Year 2?",
    "options": [
-    "25.0%",
-    "39.7%",
-    "26.5%",
-    "28.0%"
+    "35.0%",
+    "29.0%",
+    "32.0%",
+    "48.0%"
    ],
    "answer": "C",
    "steps": [
-    "Successive changes multiply: (1 + 0.1) × (1 + 0.15) = 1.2650.",
-    "So the price is +26.5% compared with the start, i.e. about 26.5% higher.",
-    "Typical error: adding the two changes (+25%). Percentages applied one after another do not add."
+    "Successive changes multiply: (1 − 0.2) × (1 − 0.15) = 0.6800.",
+    "So the price is −32.0% compared with the start, i.e. about 32.0% lower.",
+    "Typical error: adding the two changes (−35%). Percentages applied one after another do not add."
    ],
    "difficulty": "advanced",
    "skill": "Successive percentage changes",
@@ -3440,49 +3436,49 @@
     ],
     "rows": [
      [
+      "Education",
+      "780",
+      "790"
+     ],
+     [
       "Research",
-      "890",
-      "1,200"
-     ],
-     [
-      "Transport",
-      "410",
-      "480"
-     ],
-     [
-      "Energy",
-      "330",
-      "400"
-     ],
-     [
-      "Agriculture",
-      "830",
+      "840",
       "860"
      ],
      [
-      "Digital",
-      "840",
-      "740"
+      "Culture",
+      "290",
+      "360"
+     ],
+     [
+      "Agriculture",
+      "470",
+      "520"
+     ],
+     [
+      "Transport",
+      "310",
+      "320"
      ],
      [
       "Total",
-      "3,300",
-      "3,680"
+      "2,690",
+      "2,850"
      ]
     ],
     "note": null
    },
-   "question": "By how many percentage points did Digital’s share of total spending fall between Year 1 and Year 2?",
+   "question": "By how many percentage points did Culture’s share of total spending rise between Year 1 and Year 2?",
    "options": [
-    "21.0 percentage points",
-    "5.8 percentage points",
-    "5.3 percentage points",
-    "11.9 percentage points"
+    "12.6 percentage points",
+    "1.7 percentage points",
+    "2.6 percentage points",
+    "1.9 percentage points"
    ],
-   "answer": "C",
+   "answer": "D",
    "steps": [
-    "Year 1 share = 840 ÷ 3,300 = 25.45%. Year 2 share = 740 ÷ 3,680 = 20.11%.",
-    "Change = 20.11 − 25.45 = −5.35 points, i.e. a fall of about 5.3 percentage points.",
+    "Year 1 share = 290 ÷ 2,690 = 10.78%. Year 2 share = 360 ÷ 2,850 = 12.63%.",
+    "Change = 12.63 − 10.78 = +1.85 points, i.e. a rise of about 1.9 percentage points.",
     "Typical errors: giving the percentage change in the amount spent, or the relative change in the share, instead of the change in percentage points."
    ],
    "difficulty": "advanced",
@@ -3491,42 +3487,39 @@
   },
   {
    "figure": {
-    "type": "table",
-    "title": "A supplier’s price in Pound sterling and the exchange rate",
-    "columns": [
-     "",
-     "Year 1",
-     "Year 2"
+    "type": "pie",
+    "title": "Breakdown of an agency’s annual budget (total €295 million)",
+    "labels": [
+     "Translation",
+     "Travel",
+     "Staff",
+     "Buildings",
+     "Communication"
     ],
-    "rows": [
-     [
-      "Price (GBP)",
-      "258.00",
-      "273.48"
-     ],
-     [
-      "GBP per €1",
-      "0.83",
-      "0.94"
-     ]
+    "values": [
+     18,
+     11,
+     15,
+     24,
+     32
     ],
-    "note": null
+    "total_label": "Total: €295 million"
    },
-   "question": "In euro terms, by approximately what percentage has the supplier’s price fallen between Year 1 and Year 2?",
+   "question": "Next year the Communication budget is to rise by 10% while all other items stay unchanged. By how much will the Communication budget then exceed the Buildings budget?",
    "options": [
-    "13.3%",
-    "6.4%",
-    "7.3%",
-    "6.0%"
+    "€35.0 million",
+    "€33.0 million",
+    "€23.6 million",
+    "€53.1 million"
    ],
    "answer": "B",
    "steps": [
-    "Convert each year to euros: Year 1 258.00 ÷ 0.83 = €310.84; Year 2 273.48 ÷ 0.94 = €290.94.",
-    "Change = (€290.94 − €310.84) ÷ €310.84 ≈ −6.4%.",
-    "Typical errors: quoting the 6% rise in local currency, or the change in the exchange rate alone; both ignore the other effect."
+    "Communication now = 32% × €295 million = €94.4 million; after +10%: €103.84 million.",
+    "Buildings = 24% × €295 million = €70.8 million.",
+    "Difference = €33.04 million ≈ €33.0 million. Typical error: adding 10 percentage points to the share instead of raising the amount by 10%."
    ],
    "difficulty": "advanced",
-   "skill": "Currency and percentage change",
+   "skill": "Pie chart, two-step",
    "id": "N-062"
   },
   {
@@ -3540,33 +3533,33 @@
     ],
     "rows": [
      [
-      "Translation tariffs",
-      "+20%",
-      "−15%"
+      "Office rents",
+      "−10%",
+      "−20%"
      ],
      [
       "Software licences",
-      "−15%",
-      "+15%"
+      "+25%",
+      "+10%"
      ],
      [
-      "Membership fees",
-      "−10%",
-      "+15%"
+      "Translation tariffs",
+      "+15%",
+      "−15%"
      ]
     ],
     "note": null
    },
-   "question": "Compared with the start of Year 1, by what percentage are software licences lower at the end of Year 2?",
+   "question": "Compared with the start of Year 1, by what percentage are translation tariffs lower at the end of Year 2?",
    "options": [
-    "3.4%",
     "2.3%",
     "1.1%",
+    "3.4%",
     "2.1%"
    ],
-   "answer": "B",
+   "answer": "A",
    "steps": [
-    "Successive changes multiply: (1 − 0.15) × (1 + 0.15) = 0.9775.",
+    "Successive changes multiply: (1 + 0.15) × (1 − 0.15) = 0.9775.",
     "So the price is −2.3% compared with the start, i.e. about 2.3% lower.",
     "Typical error: adding the two changes (+0%). Percentages applied one after another do not add."
    ],
@@ -3577,7 +3570,7 @@
   {
    "figure": {
     "type": "table",
-    "title": "Courier cyclist’s round trip between two offices",
+    "title": "Delivery van journey between two depots",
     "columns": [
      "Leg",
      "Distance (km)",
@@ -3585,30 +3578,30 @@
     ],
     "rows": [
      [
-      "Fairhaven → Midvale",
-      "90",
-      "120"
+      "Eastbay → Westfield",
+      "150",
+      "60"
      ],
      [
-      "Midvale → Fairhaven",
-      "90",
-      "40"
+      "Westfield → Eastbay",
+      "150",
+      "72"
      ]
     ],
     "note": null
    },
-   "question": "What was the courier’s average speed for the whole round trip?",
+   "question": "What was the van’s average speed for the whole round trip?",
    "options": [
-    "60.0 km/h",
-    "80.0 km/h",
-    "55.2 km/h",
-    "100.0 km/h"
+    "63.0 km/h",
+    "77.2 km/h",
+    "65.5 km/h",
+    "69.0 km/h"
    ],
-   "answer": "A",
+   "answer": "C",
    "steps": [
-    "Average speed = total distance ÷ total time. Times: 90 ÷ 120 = 0.750 h and 90 ÷ 40 = 2.250 h.",
-    "Average = 180 ÷ 3.000 ≈ 60.0 km/h.",
-    "Typical error: averaging the two speeds (80.0 km/h). More time is spent at the lower speed, so the true average is lower."
+    "Average speed = total distance ÷ total time. Times: 150 ÷ 60 = 2.500 h and 150 ÷ 72 = 2.083 h.",
+    "Average = 300 ÷ 4.583 ≈ 65.5 km/h.",
+    "Typical error: averaging the two speeds (66.0 km/h). More time is spent at the lower speed, so the true average is lower."
    ],
    "difficulty": "advanced",
    "skill": "Average speed",
@@ -3616,170 +3609,171 @@
   },
   {
    "figure": {
-    "type": "pie",
-    "title": "Breakdown of a directorate’s annual budget (total €380 million)",
-    "labels": [
-     "IT systems",
-     "Translation",
-     "Staff",
-     "Training",
-     "Studies"
+    "type": "table",
+    "title": "Plastic collected for recycling by four municipal schemes this year, and expected annual growth",
+    "columns": [
+     "Municipality",
+     "Collected this year (tonnes)",
+     "Expected annual growth"
     ],
-    "values": [
-     21,
-     7,
-     33,
-     19,
-     20
+    "rows": [
+     [
+      "Hillcrest",
+      "3,240",
+      "8%"
+     ],
+     [
+      "Eastbay",
+      "1,680",
+      "20%"
+     ],
+     [
+      "Westfield",
+      "3,040",
+      "12%"
+     ],
+     [
+      "Northport",
+      "3,230",
+      "10%"
+     ]
     ],
-    "total_label": "Total: €380 million"
+    "note": null
    },
-   "question": "After a 5% increase in the Staff line (all other lines unchanged), how much larger than Training will Staff be?",
+   "question": "If the figure for Eastbay grows at its expected annual rate, compounded, approximately how many tonnes will be collected three years from now?",
    "options": [
-    "€55.9 million",
-    "€59.5 million",
-    "€53.2 million",
-    "€72.2 million"
+    "3,484 t",
+    "2,419 t",
+    "2,688 t",
+    "2,903 t"
    ],
-   "answer": "B",
+   "answer": "D",
    "steps": [
-    "Staff now = 33% × €380 million = €125.4 million; after +5%: €131.67 million.",
-    "Training = 19% × €380 million = €72.2 million.",
-    "Difference = €59.47 million ≈ €59.5 million. Typical error: adding 5 percentage points to the share instead of raising the amount by 5%."
+    "Compound growth: 1,680 × 1.2³ = 1,680 × 1.7280 ≈ 2,903 tonnes.",
+    "Traps among the options: simple growth, 1,680 × (1 + 3 × 0.2) = 2,688 t, ignores compounding; compounding for only two years gives 2,419 t; compounding for four years gives 3,484 t."
    ],
    "difficulty": "advanced",
-   "skill": "Pie chart, two-step",
+   "skill": "Compound growth",
    "id": "N-065"
   },
   {
    "figure": {
     "type": "table",
-    "title": "Users of four e-government services this year, and expected annual growth",
+    "title": "A conference hotel’s room rate in US dollar",
     "columns": [
-     "Municipality",
-     "Users this year",
-     "Expected annual growth"
+     "",
+     "Year 1",
+     "Year 2"
     ],
     "rows": [
      [
-      "Eastbay",
-      "4,980",
-      "8%"
+      "Rate (USD)",
+      "388.00",
+      "403.52"
      ],
      [
-      "Hillcrest",
-      "1,860",
-      "12%"
-     ],
-     [
-      "Midvale",
-      "5,250",
-      "20%"
-     ],
-     [
-      "Kingsford",
-      "6,150",
-      "8%"
+      "USD per €1",
+      "1.18",
+      "1.08"
      ]
     ],
     "note": null
    },
-   "question": "If the figure for Kingsford grows at its expected annual rate, compounded, approximately how many users will be registered three years from now?",
+   "question": "For a delegation paying in euros, by roughly what percentage has the room rate risen since Year 1?",
    "options": [
-    "8,367",
-    "7,626",
-    "7,747",
-    "7,173"
+    "4.0%",
+    "13.6%",
+    "8.5%",
+    "12.5%"
    ],
-   "answer": "C",
+   "answer": "B",
    "steps": [
-    "Compound growth: 6,150 × 1.08³ = 6,150 × 1.2597 ≈ 7,747 users.",
-    "Traps among the options: simple growth, 6,150 × (1 + 3 × 0.08) = 7,626, ignores compounding; compounding for only two years gives 7,173; compounding for four years gives 8,367."
+    "Convert each year to euros: Year 1 388.00 ÷ 1.18 = €328.81; Year 2 403.52 ÷ 1.08 = €373.63.",
+    "Change = (€373.63 − €328.81) ÷ €328.81 ≈ +13.6%.",
+    "Typical errors: quoting the 4% rise in local currency, or the change in the exchange rate alone; both ignore the other effect."
    ],
    "difficulty": "advanced",
-   "skill": "Compound growth",
+   "skill": "Currency and percentage change",
    "id": "N-066"
   },
   {
    "figure": {
     "type": "table",
-    "title": "Price changes over two years",
+    "title": "A conference hotel’s room rate in Canadian dollar",
     "columns": [
-     "Item",
-     "Change in Year 1",
-     "Change in Year 2"
+     "",
+     "Year 1",
+     "Year 2"
     ],
     "rows": [
      [
-      "Conference fees",
-      "+15%",
-      "−20%"
+      "Rate (CAD)",
+      "947.00",
+      "1,041.70"
      ],
      [
-      "Software licences",
-      "−20%",
-      "+15%"
-     ],
-     [
-      "Translation tariffs",
-      "−15%",
-      "−15%"
+      "CAD per €1",
+      "1.44",
+      "1.62"
      ]
     ],
     "note": null
    },
-   "question": "Compared with the start of Year 1, by what percentage are translation tariffs lower at the end of Year 2?",
+   "question": "For a delegation paying in euros, by roughly what percentage has the room rate fallen since Year 1?",
    "options": [
-    "30.0%",
-    "25.5%",
-    "27.8%",
-    "41.6%"
+    "12.5%",
+    "2.2%",
+    "10.0%",
+    "2.4%"
    ],
-   "answer": "C",
+   "answer": "B",
    "steps": [
-    "Successive changes multiply: (1 − 0.15) × (1 − 0.15) = 0.7225.",
-    "So the price is −27.8% compared with the start, i.e. about 27.8% lower.",
-    "Typical error: adding the two changes (−30%). Percentages applied one after another do not add."
+    "Convert each year to euros: Year 1 947.00 ÷ 1.44 = €657.64; Year 2 1,041.70 ÷ 1.62 = €643.02.",
+    "Change = (€643.02 − €657.64) ÷ €657.64 ≈ −2.2%.",
+    "Typical errors: quoting the 10% rise in local currency, or the change in the exchange rate alone; both ignore the other effect."
    ],
    "difficulty": "advanced",
-   "skill": "Successive percentage changes",
+   "skill": "Currency and percentage change",
    "id": "N-067"
   },
   {
    "figure": {
-    "type": "pie",
-    "title": "Breakdown of an agency’s annual budget (total €275 million)",
-    "labels": [
-     "Travel",
-     "Training",
-     "Studies",
-     "IT systems",
-     "Staff"
+    "type": "table",
+    "title": "Shuttle bus round trip between two sites",
+    "columns": [
+     "Leg",
+     "Distance (km)",
+     "Average speed (km/h)"
     ],
-    "values": [
-     10,
-     23,
-     7,
-     42,
-     18
+    "rows": [
+     [
+      "Hillcrest → Lakeside",
+      "80",
+      "40"
+     ],
+     [
+      "Lakeside → Hillcrest",
+      "80",
+      "45"
+     ]
     ],
-    "total_label": "Total: €275 million"
+    "note": null
    },
-   "question": "After a 15% increase in the Training line (all other lines unchanged), how much larger than Travel will Training be?",
+   "question": "What was the shuttle bus’s average speed for the whole round trip?",
    "options": [
-    "€45.2 million",
-    "€77.0 million",
-    "€41.1 million",
-    "€35.8 million"
+    "43.8 km/h",
+    "42.4 km/h",
+    "50.0 km/h",
+    "41.0 km/h"
    ],
-   "answer": "A",
+   "answer": "B",
    "steps": [
-    "Training now = 23% × €275 million = €63.25 million; after +15%: €72.74 million.",
-    "Travel = 10% × €275 million = €27.5 million.",
-    "Difference = €45.24 million ≈ €45.2 million. Typical error: adding 15 percentage points to the share instead of raising the amount by 15%."
+    "Average speed = total distance ÷ total time. Times: 80 ÷ 40 = 2.000 h and 80 ÷ 45 = 1.778 h.",
+    "Average = 160 ÷ 3.778 ≈ 42.4 km/h.",
+    "Typical error: averaging the two speeds (42.5 km/h). More time is spent at the lower speed, so the true average is lower."
    ],
    "difficulty": "advanced",
-   "skill": "Pie chart, two-step",
+   "skill": "Average speed",
    "id": "N-068"
   },
   {
@@ -3793,49 +3787,49 @@
     ],
     "rows": [
      [
-      "Research",
-      "780",
-      "990"
+      "Health",
+      "260",
+      "240"
+     ],
+     [
+      "Culture",
+      "430",
+      "380"
      ],
      [
       "Digital",
-      "160",
-      "210"
-     ],
-     [
-      "Health",
-      "640",
-      "770"
+      "200",
+      "200"
      ],
      [
       "Energy",
-      "200",
-      "150"
+      "500",
+      "450"
      ],
      [
-      "Transport",
-      "840",
-      "980"
+      "Research",
+      "900",
+      "1,140"
      ],
      [
       "Total",
-      "2,620",
-      "3,100"
+      "2,290",
+      "2,410"
      ]
     ],
     "note": null
    },
-   "question": "By how many percentage points did Energy’s share of total spending fall between Year 1 and Year 2?",
+   "question": "By how many percentage points did Culture’s share of total spending fall between Year 1 and Year 2?",
    "options": [
     "3.0 percentage points",
-    "2.8 percentage points",
-    "1.9 percentage points",
-    "4.8 percentage points"
+    "3.2 percentage points",
+    "16.0 percentage points",
+    "11.6 percentage points"
    ],
-   "answer": "B",
+   "answer": "A",
    "steps": [
-    "Year 1 share = 200 ÷ 2,620 = 7.63%. Year 2 share = 150 ÷ 3,100 = 4.84%.",
-    "Change = 4.84 − 7.63 = −2.79 points, i.e. a fall of about 2.8 percentage points.",
+    "Year 1 share = 430 ÷ 2,290 = 18.78%. Year 2 share = 380 ÷ 2,410 = 15.77%.",
+    "Change = 15.77 − 18.78 = −3.01 points, i.e. a fall of about 3.0 percentage points.",
     "Typical errors: giving the percentage change in the amount spent, or the relative change in the share, instead of the change in percentage points."
    ],
    "difficulty": "advanced",
@@ -3845,127 +3839,129 @@
   {
    "figure": {
     "type": "table",
-    "title": "Shuttle bus round trip between two sites",
+    "title": "Price changes over two years",
     "columns": [
-     "Leg",
-     "Distance (km)",
-     "Average speed (km/h)"
+     "Item",
+     "Change in Year 1",
+     "Change in Year 2"
     ],
     "rows": [
      [
-      "Fairhaven → Midvale",
-      "120",
-      "75"
+      "Conference fees",
+      "+10%",
+      "−25%"
      ],
      [
-      "Midvale → Fairhaven",
-      "120",
-      "120"
+      "Translation tariffs",
+      "+10%",
+      "−25%"
+     ],
+     [
+      "Membership fees",
+      "+10%",
+      "+10%"
      ]
     ],
     "note": null
    },
-   "question": "What was the shuttle bus’s average speed for the whole round trip?",
+   "question": "Compared with the start of Year 1, by what percentage are conference fees lower at the end of Year 2?",
    "options": [
-    "92.3 km/h",
-    "86.2 km/h",
-    "97.5 km/h",
-    "108.8 km/h"
+    "35.0%",
+    "17.5%",
+    "15.0%",
+    "18.9%"
    ],
-   "answer": "A",
+   "answer": "B",
    "steps": [
-    "Average speed = total distance ÷ total time. Times: 120 ÷ 75 = 1.600 h and 120 ÷ 120 = 1.000 h.",
-    "Average = 240 ÷ 2.600 ≈ 92.3 km/h.",
-    "Typical error: averaging the two speeds (97.5 km/h). More time is spent at the lower speed, so the true average is lower."
+    "Successive changes multiply: (1 + 0.1) × (1 − 0.25) = 0.8250.",
+    "So the price is −17.5% compared with the start, i.e. about 17.5% lower.",
+    "Typical error: adding the two changes (−15%). Percentages applied one after another do not add."
    ],
    "difficulty": "advanced",
-   "skill": "Average speed",
+   "skill": "Successive percentage changes",
    "id": "N-070"
   },
   {
    "figure": {
-    "type": "table",
-    "title": "A supplier’s price in Swiss franc and the exchange rate",
-    "columns": [
-     "",
-     "Year 1",
-     "Year 2"
+    "type": "pie",
+    "title": "Breakdown of a directorate’s annual budget (total €190 million)",
+    "labels": [
+     "Translation",
+     "Training",
+     "IT systems",
+     "Studies",
+     "Buildings"
     ],
-    "rows": [
-     [
-      "Price (CHF)",
-      "572.00",
-      "606.32"
-     ],
-     [
-      "CHF per €1",
-      "0.91",
-      "1.05"
-     ]
+    "values": [
+     14,
+     9,
+     26,
+     12,
+     39
     ],
-    "note": null
+    "total_label": "Total: €190 million"
    },
-   "question": "In euro terms, by approximately what percentage has the supplier’s price fallen between Year 1 and Year 2?",
+   "question": "If spending on Studies grows by 5% and every other item is frozen, what will the gap be between Studies and Training?",
    "options": [
-    "7.5%",
-    "6.0%",
-    "15.4%",
-    "8.1%"
+    "€5.7 million",
+    "€15.2 million",
+    "€7.4 million",
+    "€6.8 million"
    ],
    "answer": "D",
    "steps": [
-    "Convert each year to euros: Year 1 572.00 ÷ 0.91 = €628.57; Year 2 606.32 ÷ 1.05 = €577.45.",
-    "Change = (€577.45 − €628.57) ÷ €628.57 ≈ −8.1%.",
-    "Typical errors: quoting the 6% rise in local currency, or the change in the exchange rate alone; both ignore the other effect."
+    "Studies now = 12% × €190 million = €22.8 million; after +5%: €23.94 million.",
+    "Training = 9% × €190 million = €17.1 million.",
+    "Difference = €6.84 million ≈ €6.8 million. Typical error: adding 5 percentage points to the share instead of raising the amount by 5%."
    ],
    "difficulty": "advanced",
-   "skill": "Currency and percentage change",
+   "skill": "Pie chart, two-step",
    "id": "N-071"
   },
   {
    "figure": {
     "type": "table",
-    "title": "Users of four e-government services this year, and expected annual growth",
+    "title": "Plastic collected for recycling by four municipal schemes this year, and expected annual growth",
     "columns": [
      "Municipality",
-     "Users this year",
+     "Collected this year (tonnes)",
      "Expected annual growth"
     ],
     "rows": [
      [
-      "Eastbay",
-      "8,450",
+      "Southmere",
+      "8,600",
+      "12%"
+     ],
+     [
+      "Midvale",
+      "1,630",
       "8%"
      ],
      [
-      "Kingsford",
-      "5,740",
-      "8%"
-     ],
-     [
-      "Riverton",
-      "3,980",
-      "15%"
+      "Lakeside",
+      "3,960",
+      "10%"
      ],
      [
       "Westfield",
-      "3,400",
-      "12%"
+      "6,110",
+      "10%"
      ]
     ],
     "note": null
    },
-   "question": "If the figure for Riverton grows at its expected annual rate, compounded, approximately how many users will be registered three years from now?",
+   "question": "If the figure for Midvale grows at its expected annual rate, compounded, approximately how many tonnes will be collected three years from now?",
    "options": [
-    "5,264",
-    "6,053",
-    "5,771",
-    "6,961"
+    "2,218 t",
+    "2,053 t",
+    "1,901 t",
+    "2,021 t"
    ],
    "answer": "B",
    "steps": [
-    "Compound growth: 3,980 × 1.15³ = 3,980 × 1.5209 ≈ 6,053 users.",
-    "Traps among the options: simple growth, 3,980 × (1 + 3 × 0.15) = 5,771, ignores compounding; compounding for only two years gives 5,264; compounding for four years gives 6,961."
+    "Compound growth: 1,630 × 1.08³ = 1,630 × 1.2597 ≈ 2,053 tonnes.",
+    "Traps among the options: simple growth, 1,630 × (1 + 3 × 0.08) = 2,021 t, ignores compounding; compounding for only two years gives 1,901 t; compounding for four years gives 2,218 t."
    ],
    "difficulty": "advanced",
    "skill": "Compound growth",
@@ -3974,131 +3970,63 @@
   {
    "figure": {
     "type": "table",
-    "title": "Users of four e-government services this year, and expected annual growth",
+    "title": "Programme spending by sector (€ million)",
     "columns": [
-     "Municipality",
-     "Users this year",
-     "Expected annual growth"
+     "Sector",
+     "Year 1",
+     "Year 2"
     ],
     "rows": [
      [
-      "Northport",
-      "4,340",
-      "15%"
+      "Digital",
+      "800",
+      "620"
      ],
      [
-      "Eastbay",
-      "2,550",
-      "10%"
+      "Transport",
+      "760",
+      "1,010"
      ],
      [
-      "Midvale",
-      "7,730",
-      "10%"
+      "Health",
+      "670",
+      "570"
      ],
      [
-      "Brookhaven",
-      "3,830",
-      "20%"
+      "Culture",
+      "260",
+      "300"
+     ],
+     [
+      "Agriculture",
+      "720",
+      "890"
+     ],
+     [
+      "Total",
+      "3,210",
+      "3,390"
      ]
     ],
     "note": null
    },
-   "question": "If the figure for Northport grows at its expected annual rate, compounded, approximately how many users will be registered three years from now?",
+   "question": "By how many percentage points did Digital’s share of total spending fall between Year 1 and Year 2?",
    "options": [
-    "5,740",
-    "6,293",
-    "6,601",
-    "7,591"
+    "6.2 percentage points",
+    "26.6 percentage points",
+    "22.5 percentage points",
+    "6.6 percentage points"
    ],
-   "answer": "C",
+   "answer": "D",
    "steps": [
-    "Compound growth: 4,340 × 1.15³ = 4,340 × 1.5209 ≈ 6,601 users.",
-    "Traps among the options: simple growth, 4,340 × (1 + 3 × 0.15) = 6,293, ignores compounding; compounding for only two years gives 5,740; compounding for four years gives 7,591."
+    "Year 1 share = 800 ÷ 3,210 = 24.92%. Year 2 share = 620 ÷ 3,390 = 18.29%.",
+    "Change = 18.29 − 24.92 = −6.63 points, i.e. a fall of about 6.6 percentage points.",
+    "Typical errors: giving the percentage change in the amount spent, or the relative change in the share, instead of the change in percentage points."
    ],
    "difficulty": "advanced",
-   "skill": "Compound growth",
+   "skill": "Shares and percentage points",
    "id": "N-073"
   },
-  {
-   "figure": {
-    "type": "table",
-    "title": "Shuttle bus round trip between two sites",
-    "columns": [
-     "Leg",
-     "Distance (km)",
-     "Average speed (km/h)"
-    ],
-    "rows": [
-     [
-      "Southmere → Stonebridge",
-      "60",
-      "60"
-     ],
-     [
-      "Stonebridge → Southmere",
-      "60",
-      "75"
-     ]
-    ],
-    "note": null
-   },
-   "question": "What was the shuttle bus’s average speed for the whole round trip?",
-   "options": [
-    "66.7 km/h",
-    "63.8 km/h",
-    "78.7 km/h",
-    "71.2 km/h"
-   ],
-   "answer": "A",
-   "steps": [
-    "Average speed = total distance ÷ total time. Times: 60 ÷ 60 = 1.000 h and 60 ÷ 75 = 0.800 h.",
-    "Average = 120 ÷ 1.800 ≈ 66.7 km/h.",
-    "Typical error: averaging the two speeds (67.5 km/h). More time is spent at the lower speed, so the true average is lower."
-   ],
-   "difficulty": "advanced",
-   "skill": "Average speed",
-   "id": "N-074"
-  },
-  {
-   "figure": {
-    "type": "pie",
-    "title": "Breakdown of an agency’s annual budget (total €765 million)",
-    "labels": [
-     "Communication",
-     "Studies",
-     "Training",
-     "IT systems",
-     "Buildings"
-    ],
-    "values": [
-     16,
-     18,
-     8,
-     31,
-     27
-    ],
-    "total_label": "Total: €765 million"
-   },
-   "question": "If spending on Buildings grows by 20% and every other item is frozen, what will the gap be between Buildings and Studies?",
-   "options": [
-    "€221.8 million",
-    "€104.7 million",
-    "€110.2 million",
-    "€68.9 million"
-   ],
-   "answer": "C",
-   "steps": [
-    "Buildings now = 27% × €765 million = €206.55 million; after +20%: €247.86 million.",
-    "Studies = 18% × €765 million = €137.7 million.",
-    "Difference = €110.16 million ≈ €110.2 million. Typical error: adding 20 percentage points to the share instead of raising the amount by 20%."
-   ],
-   "difficulty": "advanced",
-   "skill": "Pie chart, two-step",
-   "id": "N-075"
-  }
- ],
- "mocks": [
   {
    "figure": {
     "type": "table",
@@ -4112,536 +4040,37 @@
      [
       "Software licences",
       "+10%",
-      "−20%"
-     ],
-     [
-      "Office rents",
-      "+10%",
-      "−25%"
+      "+10%"
      ],
      [
       "Conference fees",
+      "−10%",
+      "+15%"
+     ],
+     [
+      "Translation tariffs",
       "+15%",
-      "−25%"
+      "+10%"
      ]
     ],
     "note": null
    },
-   "question": "Compared with the start of Year 1, by what percentage are office rents lower at the end of Year 2?",
+   "question": "Compared with the start of Year 1, by what percentage are conference fees higher at the end of Year 2?",
    "options": [
-    "17.5%",
-    "16.1%",
-    "35.0%",
-    "15.0%"
+    "25.0%",
+    "3.5%",
+    "5.0%",
+    "3.3%"
    ],
-   "answer": "A",
+   "answer": "B",
    "steps": [
-    "Successive changes multiply: (1 + 0.1) × (1 − 0.25) = 0.8250.",
-    "So the price is −17.5% compared with the start, i.e. about 17.5% lower.",
-    "Typical error: adding the two changes (−15%). Percentages applied one after another do not add."
+    "Successive changes multiply: (1 − 0.1) × (1 + 0.15) = 1.0350.",
+    "So the price is +3.5% compared with the start, i.e. about 3.5% higher.",
+    "Typical error: adding the two changes (+5%). Percentages applied one after another do not add."
    ],
    "difficulty": "advanced",
    "skill": "Successive percentage changes",
-   "id": "NM-01"
-  },
-  {
-   "figure": {
-    "type": "table",
-    "title": "Files closed per month by three teams",
-    "columns": [
-     "Team",
-     "Jan",
-     "Feb",
-     "Mar",
-     "Apr",
-     "May",
-     "Jun"
-    ],
-    "rows": [
-     [
-      "Team East",
-      "22",
-      "62",
-      "45",
-      "31",
-      "32",
-      "57"
-     ],
-     [
-      "Team South",
-      "57",
-      "43",
-      "27",
-      "59",
-      "56",
-      "27"
-     ],
-     [
-      "Team North",
-      "55",
-      "33",
-      "34",
-      "51",
-      "19",
-      "—"
-     ]
-    ],
-    "note": "— = figure not yet available"
-   },
-   "question": "How many files would Team North need to close in June for its average over January to June to be exactly 45 per month?",
-   "options": [
-    "38",
-    "78",
-    "45",
-    "73"
-   ],
-   "answer": "B",
-   "steps": [
-    "For an average of 45 over 6 months, the total must be 45 × 6 = 270.",
-    "January–May total = 55 + 33 + 34 + 51 + 19 = 192.",
-    "June must therefore be 270 − 192 = 78.",
-    "Typical errors: answering with the target itself (45) or with the current average (about 38)."
-   ],
-   "difficulty": "intermediate",
-   "skill": "Averages over time",
-   "id": "NM-02"
-  },
-  {
-   "figure": {
-    "type": "table",
-    "title": "Price of a standard office laptop in four markets (fictitious prices and rates)",
-    "columns": [
-     "Currency",
-     "Code",
-     "Units per €1",
-     "Local price"
-    ],
-    "rows": [
-     [
-      "Canadian dollar",
-      "CAD",
-      "1.48",
-      "980"
-     ],
-     [
-      "Pound sterling",
-      "GBP",
-      "0.84",
-      "596"
-     ],
-     [
-      "Swiss franc",
-      "CHF",
-      "0.94",
-      "614"
-     ],
-     [
-      "Icelandic króna",
-      "ISK",
-      "155.5",
-      "106,160"
-     ]
-    ],
-    "note": null
-   },
-   "question": "In euros, approximately how much more does a standard office laptop cost in the most expensive of the four markets than in the cheapest?",
-   "options": [
-    "€56",
-    "€84",
-    "€47",
-    "€30"
-   ],
-   "answer": "A",
-   "steps": [
-    "Convert every price to euros by DIVIDING the local price by the number of units per €1:",
-    "CAD: 980 ÷ 1.48 ≈ €662.16; GBP: 596 ÷ 0.84 ≈ €709.52; CHF: 614 ÷ 0.94 ≈ €653.19; ISK: 106,160 ÷ 155.5 ≈ €682.70.",
-    "Most expensive (GBP) − cheapest (CHF) ≈ €709.52 − €653.19 = €56.33, i.e. about €56.",
-    "Typical errors: ranking the markets by local price (the currencies are not comparable) or comparing the wrong pair of markets."
-   ],
-   "difficulty": "intermediate",
-   "skill": "Currency conversion",
-   "id": "NM-03"
-  },
-  {
-   "figure": {
-    "type": "table",
-    "title": "Grant applications received and approval rate",
-    "columns": [
-     "Country",
-     "Applications",
-     "Approval rate"
-    ],
-    "rows": [
-     [
-      "Romania",
-      "700",
-      "24%"
-     ],
-     [
-      "Slovakia",
-      "1,700",
-      "25%"
-     ],
-     [
-      "Estonia",
-      "2,800",
-      "35%"
-     ],
-     [
-      "Austria",
-      "2,000",
-      "18%"
-     ]
-    ],
-    "note": null
-   },
-   "question": "How many applications from Estonia were rejected?",
-   "options": [
-    "840",
-    "980",
-    "1,640",
-    "1,820"
-   ],
-   "answer": "D",
-   "steps": [
-    "Approved = 2,800 × 35% = 980.",
-    "Rejected = 2,800 − 980 = 1,820.",
-    "Typical errors: giving the number approved instead of rejected, or reading another country’s row."
-   ],
-   "difficulty": "foundation",
-   "skill": "Rates and counts",
-   "id": "NM-04"
-  },
-  {
-   "figure": {
-    "type": "table",
-    "title": "Overnight stays in campsites (thousands)",
-    "columns": [
-     "Country",
-     "Year 1",
-     "Year 2",
-     "Year 3"
-    ],
-    "rows": [
-     [
-      "Finland",
-      "469",
-      "532",
-      "579"
-     ],
-     [
-      "Portugal",
-      "364",
-      "378",
-      "362"
-     ],
-     [
-      "Slovenia",
-      "669",
-      "630",
-      "796"
-     ],
-     [
-      "Hungary",
-      "697",
-      "681",
-      "799"
-     ],
-     [
-      "Lithuania",
-      "805",
-      "908",
-      "1,082"
-     ]
-    ],
-    "note": null
-   },
-   "question": "By approximately what percentage did the number of overnight stays in campsites in Slovenia increase between Year 1 and Year 3?",
-   "options": [
-    "20.5%",
-    "16.0%",
-    "19.0%",
-    "26.3%"
-   ],
-   "answer": "C",
-   "steps": [
-    "Percentage change uses the earlier value as the base: (796 − 669) ÷ 669 × 100.",
-    "= 127 ÷ 669 × 100 ≈ 19.0%, i.e. an increase of about 19.0%.",
-    "Typical errors: dividing by the Year 3 value (wrong base), or adding the two year-on-year percentage changes (percentages do not add)."
-   ],
-   "difficulty": "foundation",
-   "skill": "Percentage change",
-   "id": "NM-05"
-  },
-  {
-   "figure": {
-    "type": "table",
-    "title": "Programme spending by sector (€ million)",
-    "columns": [
-     "Sector",
-     "Year 1",
-     "Year 2"
-    ],
-    "rows": [
-     [
-      "Energy",
-      "570",
-      "580"
-     ],
-     [
-      "Digital",
-      "290",
-      "260"
-     ],
-     [
-      "Research",
-      "560",
-      "750"
-     ],
-     [
-      "Transport",
-      "200",
-      "210"
-     ],
-     [
-      "Health",
-      "650",
-      "580"
-     ],
-     [
-      "Total",
-      "2,270",
-      "2,380"
-     ]
-    ],
-    "note": null
-   },
-   "question": "By how many percentage points did Digital’s share of total spending fall between Year 1 and Year 2?",
-   "options": [
-    "1.9 percentage points",
-    "1.7 percentage points",
-    "10.3 percentage points",
-    "14.5 percentage points"
-   ],
-   "answer": "A",
-   "steps": [
-    "Year 1 share = 290 ÷ 2,270 = 12.78%. Year 2 share = 260 ÷ 2,380 = 10.92%.",
-    "Change = 10.92 − 12.78 = −1.85 points, i.e. a fall of about 1.9 percentage points.",
-    "Typical errors: giving the percentage change in the amount spent, or the relative change in the share, instead of the change in percentage points."
-   ],
-   "difficulty": "advanced",
-   "skill": "Shares and percentage points",
-   "id": "NM-06"
-  },
-  {
-   "figure": {
-    "type": "bar",
-    "title": "Interpreters by booth language in four teams",
-    "categories": [
-     "Unit D",
-     "Unit E",
-     "Unit B",
-     "Unit A"
-    ],
-    "series": [
-     {
-      "name": "French booth",
-      "values": [
-       16,
-       40,
-       28,
-       33
-      ]
-     },
-     {
-      "name": "German booth",
-      "values": [
-       25,
-       20,
-       28,
-       10
-      ]
-     }
-    ],
-    "unit": "number of interpreters"
-   },
-   "question": "If the total number of interpreters in Unit E increases by 10% and the proportion of the “French booth” group stays the same, how many will be in the “French booth” group?",
-   "options": [
-    "22",
-    "46",
-    "44",
-    "50"
-   ],
-   "answer": "C",
-   "steps": [
-    "Unit E has 40 (French booth) and 20 (German booth), 60 in total.",
-    "New total = 60 × 1.1 = 66; “French booth” = 66 × 40/60 = 44.",
-    "Shortcut: if the proportion is unchanged, the “French booth” group also grows by 10%: 40 × 1.1 = 44.",
-    "Typical errors: adding the whole increase to one group (46) or calculating the other group instead."
-   ],
-   "difficulty": "foundation",
-   "skill": "Proportional scaling",
-   "id": "NM-07"
-  },
-  {
-   "figure": {
-    "type": "table",
-    "title": "A supplier’s price in Canadian dollar and the exchange rate",
-    "columns": [
-     "",
-     "Year 1",
-     "Year 2"
-    ],
-    "rows": [
-     [
-      "Price (CAD)",
-      "814.00",
-      "846.56"
-     ],
-     [
-      "CAD per €1",
-      "1.63",
-      "1.45"
-     ]
-    ],
-    "note": null
-   },
-   "question": "In euro terms, by approximately what percentage has the supplier’s price risen between Year 1 and Year 2?",
-   "options": [
-    "4.0%",
-    "16.9%",
-    "15.9%",
-    "11.0%"
-   ],
-   "answer": "B",
-   "steps": [
-    "Convert each year to euros: Year 1 814.00 ÷ 1.63 = €499.39; Year 2 846.56 ÷ 1.45 = €583.83.",
-    "Change = (€583.83 − €499.39) ÷ €499.39 ≈ +16.9%.",
-    "Typical errors: quoting the 4% rise in local currency, or the change in the exchange rate alone; both ignore the other effect."
-   ],
-   "difficulty": "advanced",
-   "skill": "Currency and percentage change",
-   "id": "NM-08"
-  },
-  {
-   "figure": {
-    "type": "table",
-    "title": "Population and public spending on culture in five regions of one country",
-    "columns": [
-     "Region",
-     "Population (million)",
-     "Spending (€ million)"
-    ],
-    "rows": [
-     [
-      "Northern region",
-      "0.51",
-      "116.4"
-     ],
-     [
-      "Southern region",
-      "2.53",
-      "453.8"
-     ],
-     [
-      "Central region",
-      "4.46",
-      "1,007.5"
-     ],
-     [
-      "Island region",
-      "4.55",
-      "1,041.4"
-     ],
-     [
-      "Coastal region",
-      "1.31",
-      "204.5"
-     ]
-    ],
-    "note": null
-   },
-   "question": "Which of the following regions had the lowest spending on culture per inhabitant?",
-   "options": [
-    "Northern region",
-    "Central region",
-    "Southern region",
-    "Coastal region"
-   ],
-   "answer": "D",
-   "steps": [
-    "Spending per inhabitant = spending ÷ population (€ million ÷ million inhabitants = € per inhabitant):",
-    "Northern region ≈ €228; Central region ≈ €226; Southern region ≈ €179; Coastal region ≈ €156.",
-    "The lowest figure is for the Coastal region. Trap: the Northern region has the smallest total spending, but not the lowest spending per inhabitant."
-   ],
-   "difficulty": "intermediate",
-   "skill": "Per-capita comparison",
-   "id": "NM-09"
-  },
-  {
-   "figure": {
-    "type": "table",
-    "title": "Index of average energy bills (Year 1 = 100)",
-    "columns": [
-     "Country",
-     "Year 1",
-     "Year 2",
-     "Year 3",
-     "Year 4",
-     "Year 5"
-    ],
-    "rows": [
-     [
-      "Italy",
-      "100.0",
-      "101.1",
-      "101.9",
-      "105.5",
-      "112.7"
-     ],
-     [
-      "Austria",
-      "100.0",
-      "106.1",
-      "113.6",
-      "116.9",
-      "117.5"
-     ],
-     [
-      "Croatia",
-      "100.0",
-      "105.2",
-      "106.9",
-      "114.3",
-      "124.0"
-     ],
-     [
-      "Slovakia",
-      "100.0",
-      "108.4",
-      "117.9",
-      "123.8",
-      "132.3"
-     ]
-    ],
-    "note": null
-   },
-   "question": "By approximately what percentage did average energy bills in Italy rise between Year 3 and Year 5?",
-   "options": [
-    "9.6%",
-    "11.5%",
-    "10.6%",
-    "12.7%"
-   ],
-   "answer": "C",
-   "steps": [
-    "With index numbers, the percentage change between two years is (later index − earlier index) ÷ earlier index × 100.",
-    "(112.7 − 101.9) ÷ 101.9 × 100 ≈ 10.6%.",
-    "Typical errors: subtracting the indices (10.8 is a change in index points, not per cent) or measuring from the base year (index − 100)."
-   ],
-   "difficulty": "intermediate",
-   "skill": "Index numbers",
-   "id": "NM-10"
+   "id": "N-074"
   },
   {
    "figure": {
@@ -4654,34 +4083,429 @@
     ],
     "rows": [
      [
-      "Eastbay → Westfield",
-      "90",
-      "50"
+      "Stonebridge → Northport",
+      "80",
+      "75"
      ],
      [
-      "Westfield → Eastbay",
-      "90",
-      "45"
+      "Northport → Stonebridge",
+      "80",
+      "40"
      ]
     ],
     "note": null
    },
    "question": "What was the shuttle bus’s average speed for the whole round trip?",
    "options": [
-    "47.4 km/h",
-    "55.9 km/h",
-    "39.8 km/h",
-    "49.7 km/h"
+    "52.2 km/h",
+    "48.8 km/h",
+    "66.2 km/h",
+    "57.5 km/h"
    ],
    "answer": "A",
    "steps": [
-    "Average speed = total distance ÷ total time. Times: 90 ÷ 50 = 1.800 h and 90 ÷ 45 = 2.000 h.",
-    "Average = 180 ÷ 3.800 ≈ 47.4 km/h.",
-    "Typical error: averaging the two speeds (47.5 km/h). More time is spent at the lower speed, so the true average is lower."
+    "Average speed = total distance ÷ total time. Times: 80 ÷ 75 = 1.067 h and 80 ÷ 40 = 2.000 h.",
+    "Average = 160 ÷ 3.067 ≈ 52.2 km/h.",
+    "Typical error: averaging the two speeds (57.5 km/h). More time is spent at the lower speed, so the true average is lower."
    ],
    "difficulty": "advanced",
    "skill": "Average speed",
-   "id": "NM-11"
+   "id": "N-075"
+  }
+ ],
+ "mocks": [
+  {
+   "figure": {
+    "type": "table",
+    "title": "Plastic collected for recycling by four municipal schemes this year, and expected annual growth",
+    "columns": [
+     "Municipality",
+     "Collected this year (tonnes)",
+     "Expected annual growth"
+    ],
+    "rows": [
+     [
+      "Stonebridge",
+      "6,340",
+      "10%"
+     ],
+     [
+      "Midvale",
+      "1,920",
+      "10%"
+     ],
+     [
+      "Lakeside",
+      "8,340",
+      "20%"
+     ],
+     [
+      "Westfield",
+      "5,520",
+      "20%"
+     ]
+    ],
+    "note": null
+   },
+   "question": "If the figure for Westfield grows at its expected annual rate, compounded, approximately how many tonnes will be collected three years from now?",
+   "options": [
+    "9,539 t",
+    "7,949 t",
+    "8,832 t",
+    "11,446 t"
+   ],
+   "answer": "A",
+   "steps": [
+    "Compound growth: 5,520 × 1.2³ = 5,520 × 1.7280 ≈ 9,539 tonnes.",
+    "Traps among the options: simple growth, 5,520 × (1 + 3 × 0.2) = 8,832 t, ignores compounding; compounding for only two years gives 7,949 t; compounding for four years gives 11,446 t."
+   ],
+   "difficulty": "advanced",
+   "skill": "Compound growth",
+   "id": "NM-01"
+  },
+  {
+   "figure": {
+    "type": "table",
+    "title": "Regional development fund allocations by sector (€ million)",
+    "columns": [
+     "Region",
+     "Digital",
+     "Energy",
+     "Culture",
+     "Health",
+     "Total"
+    ],
+    "rows": [
+     [
+      "Central",
+      "320",
+      "210",
+      "270",
+      "310",
+      "1,110"
+     ],
+     [
+      "South",
+      "360",
+      "400",
+      "620",
+      "520",
+      "1,900"
+     ],
+     [
+      "West",
+      "270",
+      "810",
+      "540",
+      "820",
+      "2,440"
+     ],
+     [
+      "North",
+      "800",
+      "620",
+      "280",
+      "550",
+      "2,250"
+     ]
+    ],
+    "note": null
+   },
+   "question": "What percentage of the West region’s total allocation went to Digital?",
+   "options": [
+    "15.4%",
+    "11.1%",
+    "11.7%",
+    "12.4%"
+   ],
+   "answer": "B",
+   "steps": [
+    "The West region’s total allocation is €2,440 million, of which Digital received €270 million.",
+    "270 ÷ 2,440 × 100 ≈ 11.1%.",
+    "Typical errors: dividing by the Digital column total (the region’s share of that sector) or by the remainder instead of the total."
+   ],
+   "difficulty": "foundation",
+   "skill": "Share of total",
+   "id": "NM-02"
+  },
+  {
+   "figure": {
+    "type": "table",
+    "title": "Rail routes: distance and average train speed",
+    "columns": [
+     "Route",
+     "Distance (km)",
+     "Average speed (km/h)"
+    ],
+    "rows": [
+     [
+      "Riverton–Eastbay",
+      "193",
+      "120"
+     ],
+     [
+      "Hillcrest–Westfield",
+      "220",
+      "90"
+     ],
+     [
+      "Northport–Fairhaven",
+      "290",
+      "100"
+     ],
+     [
+      "Southmere–Midvale",
+      "358",
+      "120"
+     ]
+    ],
+    "note": null
+   },
+   "question": "If the train’s average speed on the Riverton–Eastbay route rose to 160 km/h, approximately how many minutes would each journey save?",
+   "options": [
+    "24 minutes",
+    "72 minutes",
+    "32 minutes",
+    "36 minutes"
+   ],
+   "answer": "A",
+   "steps": [
+    "Time = distance ÷ speed. Now: 193 ÷ 120 × 60 = 96.5 minutes. New: 193 ÷ 160 × 60 = 72.4 minutes.",
+    "Saving = 96.5 − 72.4 = 24.1, i.e. about 24 minutes.",
+    "Typical error: assuming journey time falls by the same percentage as speed rises."
+   ],
+   "difficulty": "intermediate",
+   "skill": "Rates and time",
+   "id": "NM-03"
+  },
+  {
+   "figure": {
+    "type": "bar",
+    "title": "Containers handled at five ports (thousand units)",
+    "categories": [
+     "Hillcrest",
+     "Brookhaven",
+     "Stonebridge",
+     "Kingsford",
+     "Riverton"
+    ],
+    "series": [
+     {
+      "name": "Year 1",
+      "values": [
+       240,
+       870,
+       750,
+       620,
+       340
+      ]
+     },
+     {
+      "name": "Year 2",
+      "values": [
+       270,
+       1000,
+       960,
+       820,
+       370
+      ]
+     }
+    ],
+    "unit": "thousand containers"
+   },
+   "question": "Which of the following ports recorded the largest percentage increase in containers handled between Year 1 and Year 2?",
+   "options": [
+    "Hillcrest",
+    "Stonebridge",
+    "Riverton",
+    "Kingsford"
+   ],
+   "answer": "D",
+   "steps": [
+    "Percentage change = (Year 2 − Year 1) ÷ Year 1 × 100:",
+    "Hillcrest: (270 − 240) ÷ 240 ≈ 12.5%; Stonebridge: (960 − 750) ÷ 750 ≈ 28.0%; Riverton: (370 − 340) ÷ 340 ≈ 8.8%; Kingsford: (820 − 620) ÷ 620 ≈ 32.3%.",
+    "Largest: Kingsford. Trap: Stonebridge has the largest increase in absolute terms (+210 thousand), but from a larger base."
+   ],
+   "difficulty": "intermediate",
+   "skill": "Chart comparison",
+   "id": "NM-04"
+  },
+  {
+   "figure": {
+    "type": "table",
+    "title": "Translation requests and average turnaround by language unit",
+    "columns": [
+     "Unit",
+     "Requests",
+     "Average days"
+    ],
+    "rows": [
+     [
+      "Unit B",
+      "8",
+      "19"
+     ],
+     [
+      "Unit A",
+      "48",
+      "10"
+     ],
+     [
+      "Unit D",
+      "15",
+      "8"
+     ],
+     [
+      "Unit E",
+      "43",
+      "15"
+     ]
+    ],
+    "note": null
+   },
+   "question": "What is the average turnaround time per request in the four units combined?",
+   "options": [
+    "13.50 days",
+    "13.00 days",
+    "12.25 days",
+    "13.89 days"
+   ],
+   "answer": "C",
+   "steps": [
+    "Weighted total = 8 × 19 + 48 × 10 + 15 × 8 + 43 × 15 = 1,397.",
+    "Total requests = 114. Weighted average = 1,397 ÷ 114 ≈ 12.25 days.",
+    "Typical error: the simple average of the four averages (13.00 days) ignores the different group sizes."
+   ],
+   "difficulty": "intermediate",
+   "skill": "Weighted average",
+   "id": "NM-05"
+  },
+  {
+   "figure": {
+    "type": "table",
+    "title": "Grant applications received and approval rate",
+    "columns": [
+     "Country",
+     "Applications",
+     "Approval rate"
+    ],
+    "rows": [
+     [
+      "Portugal",
+      "2,400",
+      "24%"
+     ],
+     [
+      "Germany",
+      "2,600",
+      "15%"
+     ],
+     [
+      "Sweden",
+      "900",
+      "18%"
+     ],
+     [
+      "Czechia",
+      "1,100",
+      "20%"
+     ]
+    ],
+    "note": null
+   },
+   "question": "If the number of applications stayed the same, how many additional applications from Sweden would need to be approved for its approval rate to reach 40%?",
+   "options": [
+    "198",
+    "186",
+    "360",
+    "220"
+   ],
+   "answer": "A",
+   "steps": [
+    "Approvals needed = 900 × 40% = 360.",
+    "Currently approved = 900 × 18% = 162. Additional approvals = 198.",
+    "Typical error: giving the total number of approvals needed instead of the additional ones."
+   ],
+   "difficulty": "intermediate",
+   "skill": "Rates and counts",
+   "id": "NM-06"
+  },
+  {
+   "figure": {
+    "type": "table",
+    "title": "A supplier’s price in Swiss franc and the exchange rate",
+    "columns": [
+     "",
+     "Year 1",
+     "Year 2"
+    ],
+    "rows": [
+     [
+      "Price (CHF)",
+      "394.00",
+      "417.64"
+     ],
+     [
+      "CHF per €1",
+      "1.01",
+      "0.94"
+     ]
+    ],
+    "note": null
+   },
+   "question": "In euro terms, by approximately what percentage has the supplier’s price risen between Year 1 and Year 2?",
+   "options": [
+    "12.9%",
+    "6.0%",
+    "13.9%",
+    "6.9%"
+   ],
+   "answer": "C",
+   "steps": [
+    "Convert each year to euros: Year 1 394.00 ÷ 1.01 = €390.10; Year 2 417.64 ÷ 0.94 = €444.30.",
+    "Change = (€444.30 − €390.10) ÷ €390.10 ≈ +13.9%.",
+    "Typical errors: quoting the 6% rise in local currency, or the change in the exchange rate alone; both ignore the other effect."
+   ],
+   "difficulty": "advanced",
+   "skill": "Currency and percentage change",
+   "id": "NM-07"
+  },
+  {
+   "figure": {
+    "type": "pie",
+    "title": "Breakdown of an agency’s annual budget (total €605 million)",
+    "labels": [
+     "IT systems",
+     "Studies",
+     "Staff",
+     "Buildings",
+     "Travel"
+    ],
+    "values": [
+     28,
+     30,
+     17,
+     6,
+     19
+    ],
+    "total_label": "Total: €605 million"
+   },
+   "question": "If spending on IT systems grows by 5% and every other item is frozen, what will the gap be between IT systems and Buildings?",
+   "options": [
+    "€163.3 million",
+    "€141.6 million",
+    "€8.5 million",
+    "€133.1 million"
+   ],
+   "answer": "B",
+   "steps": [
+    "IT systems now = 28% × €605 million = €169.4 million; after +5%: €177.87 million.",
+    "Buildings = 6% × €605 million = €36.3 million.",
+    "Difference = €141.57 million ≈ €141.6 million. Typical error: adding 5 percentage points to the share instead of raising the amount by 5%."
+   ],
+   "difficulty": "advanced",
+   "skill": "Pie chart, two-step",
+   "id": "NM-08"
   },
   {
    "figure": {
@@ -4696,278 +4520,467 @@
     ],
     "series": [
      {
-      "name": "Spain",
+      "name": "Estonia",
       "values": [
+       6.2,
+       5.0,
        5.3,
-       5.0,
-       5.0,
-       3.7,
-       3.0
+       6.3,
+       5.0
       ]
      },
      {
-      "name": "Slovakia",
+      "name": "Czechia",
       "values": [
-       8.7,
-       7.5,
+       10.3,
+       11.3,
+       11.9,
+       12.6,
+       12.9
+      ]
+     },
+     {
+      "name": "Greece",
+      "values": [
+       6.8,
        6.6,
-       7.3,
-       5.9
+       5.5,
+       4.4,
+       4.9
       ]
      },
      {
-      "name": "Romania",
+      "name": "Hungary",
       "values": [
-       8.1,
-       9.1,
-       9.9,
-       10.8,
-       10.2
-      ]
-     },
-     {
-      "name": "Italy",
-      "values": [
-       10.2,
-       9.4,
        8.7,
-       7.5,
-       8.3
+       8.6,
+       7.2,
+       8.2,
+       9.6
       ]
      }
     ],
     "unit": "%"
    },
-   "question": "By approximately what percentage did the unemployment rate in Slovakia fall between Year 2 and Year 5?",
+   "question": "By how many percentage points did the unemployment rate in Hungary rise between Year 3 and Year 5?",
    "options": [
-    "16.0%",
-    "21.3%",
-    "27.1%",
-    "19.6%"
+    "1.0 percentage points",
+    "2.6 percentage points",
+    "1.5 percentage points",
+    "2.4 percentage points"
+   ],
+   "answer": "D",
+   "steps": [
+    "A change in percentage points is the simple difference between the two rates: 9.6 − 7.2 = +2.4 points, i.e. a rise of 2.4 percentage points.",
+    "Typical error: computing the relative (percentage) change instead."
+   ],
+   "difficulty": "foundation",
+   "skill": "Percentage points vs percent",
+   "id": "NM-09"
+  },
+  {
+   "figure": {
+    "type": "table",
+    "title": "Research grants awarded by field and region (€ million)",
+    "columns": [
+     "Region",
+     "Digital",
+     "Transport",
+     "Education",
+     "Energy",
+     "Total"
+    ],
+    "rows": [
+     [
+      "South",
+      "850",
+      "360",
+      "690",
+      "400",
+      "2,300"
+     ],
+     [
+      "East",
+      "280",
+      "900",
+      "530",
+      "660",
+      "2,370"
+     ],
+     [
+      "Central",
+      "310",
+      "830",
+      "650",
+      "810",
+      "2,600"
+     ],
+     [
+      "North",
+      "720",
+      "130",
+      "250",
+      "640",
+      "1,740"
+     ]
+    ],
+    "note": null
+   },
+   "question": "What percentage of the North region’s total grant funding went to Digital?",
+   "options": [
+    "70.6%",
+    "43.4%",
+    "41.4%",
+    "33.3%"
+   ],
+   "answer": "C",
+   "steps": [
+    "The North region’s total allocation is €1,740 million, of which Digital received €720 million.",
+    "720 ÷ 1,740 × 100 ≈ 41.4%.",
+    "Typical errors: dividing by the Digital column total (the region’s share of that sector) or by the remainder instead of the total."
+   ],
+   "difficulty": "foundation",
+   "skill": "Share of total",
+   "id": "NM-10"
+  },
+  {
+   "figure": {
+    "type": "line",
+    "title": "Unemployment rate (% of labour force)",
+    "categories": [
+     "Year 1",
+     "Year 2",
+     "Year 3",
+     "Year 4",
+     "Year 5"
+    ],
+    "series": [
+     {
+      "name": "Romania",
+      "values": [
+       7.0,
+       5.9,
+       5.6,
+       4.2,
+       4.1
+      ]
+     },
+     {
+      "name": "Lithuania",
+      "values": [
+       10.2,
+       10.8,
+       11.2,
+       11.9,
+       12.2
+      ]
+     },
+     {
+      "name": "Greece",
+      "values": [
+       11.7,
+       11.4,
+       10.2,
+       10.7,
+       11.3
+      ]
+     },
+     {
+      "name": "Austria",
+      "values": [
+       10.8,
+       11.1,
+       10.8,
+       9.5,
+       9.6
+      ]
+     }
+    ],
+    "unit": "%"
+   },
+   "question": "By how many percentage points did the unemployment rate in Romania fall between Year 1 and Year 5?",
+   "options": [
+    "2.9 percentage points",
+    "1.1 percentage points",
+    "3.1 percentage points",
+    "1.4 percentage points"
+   ],
+   "answer": "A",
+   "steps": [
+    "A change in percentage points is the simple difference between the two rates: 4.1 − 7.0 = −2.9 points, i.e. a fall of 2.9 percentage points.",
+    "Typical error: computing the relative (percentage) change instead."
+   ],
+   "difficulty": "foundation",
+   "skill": "Percentage points vs percent",
+   "id": "NM-11"
+  },
+  {
+   "figure": {
+    "type": "table",
+    "title": "Interpreting assignments in one quarter, by booth language",
+    "columns": [
+     "Language",
+     "Assignments"
+    ],
+    "rows": [
+     [
+      "Swedish",
+      "40"
+     ],
+     [
+      "Dutch",
+      "129"
+     ],
+     [
+      "French",
+      "146"
+     ],
+     [
+      "Italian",
+      "56"
+     ]
+    ],
+    "note": null
+   },
+   "question": "What is the ratio of assignments in Italian to assignments in Swedish, in its simplest form?",
+   "options": [
+    "8:5",
+    "7:5",
+    "7:4",
+    "5:7"
    ],
    "answer": "B",
    "steps": [
-    "Relative change = (new − old) ÷ old × 100 = (5.9 − 7.5) ÷ 7.5 × 100 ≈ −21.3%, i.e. a fall of about 21.3%.",
-    "Typical errors: 1.6 is the change in percentage points, not a percentage change; another is dividing by the later value."
+    "Italian : Swedish = 56 : 40. Both numbers divide by 8, giving 7:5.",
+    "Typical error: reversing the order of the ratio (5:7)."
    ],
-   "difficulty": "intermediate",
-   "skill": "Percentage points vs percent",
+   "difficulty": "foundation",
+   "skill": "Ratios",
    "id": "NM-12"
   },
   {
    "figure": {
     "type": "table",
-    "title": "Users of four e-government services this year, and expected annual growth",
+    "title": "Staff numbers and average monthly salary by unit",
     "columns": [
-     "Municipality",
-     "Users this year",
-     "Expected annual growth"
+     "Unit",
+     "Staff",
+     "Average monthly salary (€)"
     ],
     "rows": [
      [
-      "Southmere",
-      "2,290",
-      "12%"
+      "Unit D",
+      "9",
+      "4,000"
      ],
      [
-      "Lakeside",
-      "1,390",
-      "8%"
+      "Unit B",
+      "23",
+      "9,000"
      ],
      [
-      "Midvale",
-      "3,230",
-      "15%"
+      "Unit C",
+      "13",
+      "6,000"
      ],
      [
-      "Northport",
-      "4,240",
-      "8%"
+      "Unit A",
+      "21",
+      "8,600"
      ]
     ],
     "note": null
    },
-   "question": "If the figure for Lakeside grows at its expected annual rate, compounded, approximately how many users will be registered three years from now?",
+   "question": "What is the average monthly salary across all staff in the four units combined?",
    "options": [
-    "1,891",
-    "1,621",
-    "1,724",
-    "1,751"
+    "€6,500",
+    "€6,900",
+    "€8,809",
+    "€7,600"
    ],
    "answer": "D",
    "steps": [
-    "Compound growth: 1,390 × 1.08³ = 1,390 × 1.2597 ≈ 1,751 users.",
-    "Traps among the options: simple growth, 1,390 × (1 + 3 × 0.08) = 1,724, ignores compounding; compounding for only two years gives 1,621; compounding for four years gives 1,891."
+    "Weighted total = 9 × 4,000 + 23 × 9,000 + 13 × 6,000 + 21 × 8,600 = 501,600.",
+    "Total staff = 66. Weighted average = 501,600 ÷ 66 ≈ €7,600.",
+    "Typical error: the simple average of the four averages (€6,900) ignores the different group sizes."
    ],
-   "difficulty": "advanced",
-   "skill": "Compound growth",
+   "difficulty": "intermediate",
+   "skill": "Weighted average",
    "id": "NM-13"
   },
   {
    "figure": {
     "type": "table",
-    "title": "Spending this year by programme and change compared with last year",
+    "title": "Programme spending by sector (€ million)",
     "columns": [
-     "Programme",
-     "This year (€ thousand)",
-     "Change on last year"
+     "Sector",
+     "Year 1",
+     "Year 2"
     ],
     "rows": [
      [
-      "Rural broadband support",
-      "3,713.6",
-      "−12%"
+      "Culture",
+      "880",
+      "750"
      ],
      [
-      "Coastal flood defences",
-      "3,775.0",
-      "+25%"
+      "Agriculture",
+      "520",
+      "500"
      ],
      [
-      "Cultural heritage restoration",
-      "759.0",
-      "+15%"
+      "Transport",
+      "510",
+      "660"
      ],
      [
-      "Clean-bus procurement",
-      "5,600.0",
-      "+25%"
+      "Digital",
+      "570",
+      "600"
+     ],
+     [
+      "Health",
+      "610",
+      "820"
+     ],
+     [
+      "Total",
+      "3,090",
+      "3,330"
      ]
     ],
     "note": null
    },
-   "question": "How much was allocated to “Rural broadband support” last year?",
+   "question": "By how many percentage points did Health’s share of total spending rise between Year 1 and Year 2?",
    "options": [
-    "€4,220.0k",
-    "€3,315.7k",
-    "€3,833.6k",
-    "€3,713.6k"
+    "4.9 percentage points",
+    "24.7 percentage points",
+    "5.2 percentage points",
+    "34.4 percentage points"
    ],
    "answer": "A",
    "steps": [
-    "This year = last year × 0.88, so last year = this year ÷ 0.88.",
-    "3,713.6 ÷ 0.88 = 4,220.0 (€ thousand).",
-    "Typical error: increasing this year’s figure by 12% applies the percentage to the wrong base."
+    "Year 1 share = 610 ÷ 3,090 = 19.74%. Year 2 share = 820 ÷ 3,330 = 24.62%.",
+    "Change = 24.62 − 19.74 = +4.88 points, i.e. a rise of about 4.9 percentage points.",
+    "Typical errors: giving the percentage change in the amount spent, or the relative change in the share, instead of the change in percentage points."
    ],
-   "difficulty": "intermediate",
-   "skill": "Reverse percentage",
+   "difficulty": "advanced",
+   "skill": "Shares and percentage points",
    "id": "NM-14"
   },
   {
    "figure": {
-    "type": "bar",
-    "title": "Containers handled at five ports (thousand units)",
-    "categories": [
-     "Eastbay",
-     "Midvale",
-     "Riverton",
-     "Northport",
-     "Westfield"
+    "type": "table",
+    "title": "Grant applications received and approval rate",
+    "columns": [
+     "Country",
+     "Applications",
+     "Approval rate"
     ],
-    "series": [
-     {
-      "name": "Year 1",
-      "values": [
-       370,
-       720,
-       250,
-       220,
-       270
-      ]
-     },
-     {
-      "name": "Year 2",
-      "values": [
-       440,
-       740,
-       330,
-       300,
-       350
-      ]
-     }
+    "rows": [
+     [
+      "France",
+      "3,000",
+      "24%"
+     ],
+     [
+      "Romania",
+      "1,800",
+      "12%"
+     ],
+     [
+      "Greece",
+      "1,400",
+      "40%"
+     ],
+     [
+      "Italy",
+      "2,200",
+      "18%"
+     ]
     ],
-    "unit": "thousand containers"
+    "note": null
    },
-   "question": "Which of the following ports recorded the largest percentage increase in containers handled between Year 1 and Year 2?",
+   "question": "If the number of applications stayed the same, how many additional applications from France would need to be approved for its approval rate to reach 45%?",
    "options": [
-    "Westfield",
-    "Riverton",
-    "Eastbay",
-    "Northport"
+    "592",
+    "788",
+    "1,350",
+    "630"
    ],
    "answer": "D",
    "steps": [
-    "Percentage change = (Year 2 − Year 1) ÷ Year 1 × 100:",
-    "Westfield: (350 − 270) ÷ 270 ≈ 29.6%; Riverton: (330 − 250) ÷ 250 ≈ 32.0%; Eastbay: (440 − 370) ÷ 370 ≈ 18.9%; Northport: (300 − 220) ÷ 220 ≈ 36.4%.",
-    "Largest: Northport. Trap: Riverton has the largest increase in absolute terms (+80 thousand), but from a larger base."
+    "Approvals needed = 3,000 × 45% = 1,350.",
+    "Currently approved = 3,000 × 24% = 720. Additional approvals = 630.",
+    "Typical error: giving the total number of approvals needed instead of the additional ones."
    ],
    "difficulty": "intermediate",
-   "skill": "Chart comparison",
+   "skill": "Rates and counts",
    "id": "NM-15"
   },
   {
    "figure": {
     "type": "table",
-    "title": "Regional development fund allocations by sector (€ million)",
+    "title": "Index of average house prices (Year 1 = 100)",
     "columns": [
-     "Region",
-     "Digital",
-     "Health",
-     "Research",
-     "Transport",
-     "Total"
+     "Country",
+     "Year 1",
+     "Year 2",
+     "Year 3",
+     "Year 4",
+     "Year 5"
     ],
     "rows": [
      [
-      "North",
-      "310",
-      "840",
-      "250",
-      "830",
-      "2,230"
+      "Greece",
+      "100.0",
+      "104.6",
+      "108.4",
+      "108.5",
+      "117.9"
      ],
      [
-      "West",
-      "160",
-      "200",
-      "820",
-      "200",
-      "1,380"
+      "Hungary",
+      "100.0",
+      "108.8",
+      "110.5",
+      "111.6",
+      "118.1"
      ],
      [
-      "South",
-      "850",
-      "680",
-      "510",
-      "780",
-      "2,820"
+      "Italy",
+      "100.0",
+      "102.0",
+      "104.1",
+      "110.1",
+      "111.8"
      ],
      [
-      "Central",
-      "400",
-      "120",
-      "230",
-      "490",
-      "1,240"
+      "Belgium",
+      "100.0",
+      "107.8",
+      "112.1",
+      "121.0",
+      "126.5"
      ]
     ],
     "note": null
    },
-   "question": "What percentage of the Central region’s total allocation went to Health?",
+   "question": "By approximately what percentage did average house prices in Greece rise between Year 3 and Year 5?",
    "options": [
-    "9.2%",
-    "6.5%",
-    "9.7%",
-    "10.7%"
+    "17.9%",
+    "9.5%",
+    "8.8%",
+    "8.1%"
    ],
    "answer": "C",
    "steps": [
-    "The Central region’s total allocation is €1,240 million, of which Health received €120 million.",
-    "120 ÷ 1,240 × 100 ≈ 9.7%.",
-    "Typical errors: dividing by the Health column total (the region’s share of that sector) or by the remainder instead of the total."
+    "With index numbers, the percentage change between two years is (later index − earlier index) ÷ earlier index × 100.",
+    "(117.9 − 108.4) ÷ 108.4 × 100 ≈ 8.8%.",
+    "Typical errors: subtracting the indices (9.5 is a change in index points, not per cent) or measuring from the base year (index − 100)."
    ],
-   "difficulty": "foundation",
-   "skill": "Share of total",
+   "difficulty": "intermediate",
+   "skill": "Index numbers",
    "id": "NM-16"
   },
   {
@@ -4986,32 +4999,32 @@
       ],
       "rows": [
        [
-        "Negotiation skills",
-        "12",
-        "14",
-        "11",
-        "14"
+        "Project management",
+        "24",
+        "21",
+        "19",
+        "6"
        ],
        [
         "Drafting legislation",
-        "13",
-        "28",
-        "18",
-        "21"
-       ],
-       [
-        "Project management",
-        "4",
-        "13",
-        "27",
-        "30"
-       ],
-       [
-        "Leadership basics",
-        "14",
-        "20",
         "25",
-        "29"
+        "24",
+        "4",
+        "16"
+       ],
+       [
+        "Public speaking",
+        "9",
+        "12",
+        "15",
+        "11"
+       ],
+       [
+        "Financial rules",
+        "18",
+        "5",
+        "28",
+        "14"
        ]
       ],
       "note": null
@@ -5025,19 +5038,19 @@
       ],
       "rows": [
        [
-        "Negotiation skills",
-        "400"
+        "Project management",
+        "210"
        ],
        [
         "Drafting legislation",
-        "200"
+        "570"
        ],
        [
-        "Project management",
-        "270"
+        "Public speaking",
+        "400"
        ],
        [
-        "Leadership basics",
+        "Financial rules",
         "130"
        ]
       ],
@@ -5045,17 +5058,17 @@
      }
     ]
    },
-   "question": "What was the total cost of the “Negotiation skills” course for Q2 to Q4 inclusive?",
+   "question": "How much did the “Drafting legislation” course cost in total over Q1 to Q2 inclusive?",
    "options": [
-    "€16,692",
-    "€15,600",
-    "€11,200",
-    "€20,400"
+    "€39,330",
+    "€27,930",
+    "€30,210",
+    "€19,600"
    ],
    "answer": "B",
    "steps": [
-    "Participants Q2 to Q4 inclusive: 14 + 11 + 14 = 39.",
-    "Total cost = 39 × €400 = €15,600.",
+    "Participants Q1 to Q2 inclusive: 25 + 24 = 49.",
+    "Total cost = 49 × €570 = €27,930.",
     "Typical errors: including the wrong quarters, using the whole year, or reading the wrong row of either table."
    ],
    "difficulty": "intermediate",
@@ -5065,58 +5078,116 @@
   {
    "figure": {
     "type": "table",
-    "title": "Price of a conference registration in four markets (fictitious prices and rates)",
+    "title": "Cases closed per month by three teams",
     "columns": [
-     "Currency",
-     "Code",
-     "Units per €1",
-     "Local price"
+     "Team",
+     "Jan",
+     "Feb",
+     "Mar",
+     "Apr",
+     "May",
+     "Jun"
     ],
     "rows": [
      [
-      "Swiss franc",
-      "CHF",
-      "0.97",
-      "436"
+      "Team West",
+      "19",
+      "39",
+      "37",
+      "30",
+      "43",
+      "32"
      ],
      [
-      "Pound sterling",
-      "GBP",
-      "0.82",
-      "327"
+      "Team East",
+      "21",
+      "31",
+      "37",
+      "29",
+      "43",
+      "—"
      ],
      [
-      "Canadian dollar",
-      "CAD",
-      "1.51",
-      "662"
-     ],
-     [
-      "US dollar",
-      "USD",
-      "1.09",
-      "483"
+      "Team North",
+      "40",
+      "36",
+      "37",
+      "26",
+      "60",
+      "52"
      ]
     ],
-    "note": null
+    "note": "— = figure not yet available"
    },
-   "question": "In euros, approximately how much more does a conference registration cost in the most expensive of the four markets than in the cheapest?",
+   "question": "How many cases would Team East need to close in June for its average over January to June to be exactly 45 per month?",
    "options": [
-    "€44",
-    "€76",
-    "€51",
-    "€11"
+    "45",
+    "32",
+    "109",
+    "102"
    ],
    "answer": "C",
    "steps": [
-    "Convert every price to euros by DIVIDING the local price by the number of units per €1:",
-    "CHF: 436 ÷ 0.97 ≈ €449.48; GBP: 327 ÷ 0.82 ≈ €398.78; CAD: 662 ÷ 1.51 ≈ €438.41; USD: 483 ÷ 1.09 ≈ €443.12.",
-    "Most expensive (CHF) − cheapest (GBP) ≈ €449.48 − €398.78 = €50.70, i.e. about €51.",
-    "Typical errors: ranking the markets by local price (the currencies are not comparable) or comparing the wrong pair of markets."
+    "For an average of 45 over 6 months, the total must be 45 × 6 = 270.",
+    "January–May total = 21 + 31 + 37 + 29 + 43 = 161.",
+    "June must therefore be 270 − 161 = 109.",
+    "Typical errors: answering with the target itself (45) or with the current average (about 32)."
    ],
    "difficulty": "intermediate",
-   "skill": "Currency conversion",
+   "skill": "Averages over time",
    "id": "NM-18"
+  },
+  {
+   "figure": {
+    "type": "bar",
+    "title": "Passengers at five regional airports (thousands)",
+    "categories": [
+     "Eastbay",
+     "Riverton",
+     "Lakeside",
+     "Stonebridge",
+     "Westfield"
+    ],
+    "series": [
+     {
+      "name": "Year 1",
+      "values": [
+       850,
+       880,
+       730,
+       260,
+       460
+      ]
+     },
+     {
+      "name": "Year 2",
+      "values": [
+       1010,
+       1040,
+       770,
+       290,
+       580
+      ]
+     }
+    ],
+    "unit": "thousand passengers"
+   },
+   "question": "Which of the following airports recorded the largest percentage increase in passenger numbers between Year 1 and Year 2?",
+   "options": [
+    "Stonebridge",
+    "Westfield",
+    "Lakeside",
+    "Eastbay"
+   ],
+   "answer": "B",
+   "steps": [
+    "Percentage change = (Year 2 − Year 1) ÷ Year 1 × 100:",
+    "Stonebridge: (290 − 260) ÷ 260 ≈ 11.5%; Westfield: (580 − 460) ÷ 460 ≈ 26.1%; Lakeside: (770 − 730) ÷ 730 ≈ 5.5%; Eastbay: (1010 − 850) ÷ 850 ≈ 18.8%.",
+    "Largest: Westfield. Trap: Eastbay has the largest increase in absolute terms (+160 thousand), but from a larger base."
+   ],
+   "difficulty": "intermediate",
+   "skill": "Chart comparison",
+   "id": "NM-19"
   },
   {
    "figure": {
@@ -5129,39 +5200,423 @@
     ],
     "rows": [
      [
-      "Conference fees",
+      "Translation tariffs",
       "−10%",
+      "+10%"
+     ],
+     [
+      "Software licences",
+      "−15%",
       "+15%"
      ],
      [
-      "Membership fees",
-      "+10%",
+      "Conference fees",
+      "−20%",
       "+20%"
-     ],
-     [
-      "Office rents",
-      "+15%",
-      "−10%"
      ]
     ],
     "note": null
    },
-   "question": "Compared with the start of Year 1, by what percentage are membership fees higher at the end of Year 2?",
+   "question": "Compared with the start of Year 1, by what percentage are conference fees lower at the end of Year 2?",
    "options": [
-    "48.0%",
-    "32.0%",
-    "30.0%",
-    "34.0%"
+    "6.0%",
+    "3.8%",
+    "40.0%",
+    "4.0%"
    ],
-   "answer": "B",
+   "answer": "D",
    "steps": [
-    "Successive changes multiply: (1 + 0.1) × (1 + 0.2) = 1.3200.",
-    "So the price is +32.0% compared with the start, i.e. about 32.0% higher.",
-    "Typical error: adding the two changes (+30%). Percentages applied one after another do not add."
+    "Successive changes multiply: (1 − 0.2) × (1 + 0.2) = 0.9600.",
+    "So the price is −4.0% compared with the start, i.e. about 4.0% lower.",
+    "Typical error: adding the two changes (+0%). Percentages applied one after another do not add."
    ],
    "difficulty": "advanced",
    "skill": "Successive percentage changes",
-   "id": "NM-19"
+   "id": "NM-20"
+  },
+  {
+   "figure": {
+    "type": "table",
+    "title": "Shuttle bus round trip between two sites",
+    "columns": [
+     "Leg",
+     "Distance (km)",
+     "Average speed (km/h)"
+    ],
+    "rows": [
+     [
+      "Riverton → Southmere",
+      "80",
+      "50"
+     ],
+     [
+      "Southmere → Riverton",
+      "80",
+      "90"
+     ]
+    ],
+    "note": null
+   },
+   "question": "What was the shuttle bus’s average speed for the whole round trip?",
+   "options": [
+    "64.3 km/h",
+    "60.0 km/h",
+    "80.0 km/h",
+    "70.0 km/h"
+   ],
+   "answer": "A",
+   "steps": [
+    "Average speed = total distance ÷ total time. Times: 80 ÷ 50 = 1.600 h and 80 ÷ 90 = 0.889 h.",
+    "Average = 160 ÷ 2.489 ≈ 64.3 km/h.",
+    "Typical error: averaging the two speeds (70.0 km/h). More time is spent at the lower speed, so the true average is lower."
+   ],
+   "difficulty": "advanced",
+   "skill": "Average speed",
+   "id": "NM-21"
+  },
+  {
+   "figure": {
+    "type": "table",
+    "title": "Spending this year by programme and change compared with last year",
+    "columns": [
+     "Programme",
+     "This year (€ thousand)",
+     "Change on last year"
+    ],
+    "rows": [
+     [
+      "Youth employment schemes",
+      "2,964.0",
+      "+30%"
+     ],
+     [
+      "Rural broadband support",
+      "4,975.0",
+      "+25%"
+     ],
+     [
+      "Clean-bus procurement",
+      "2,175.0",
+      "+25%"
+     ],
+     [
+      "Student mobility grants",
+      "5,175.0",
+      "+25%"
+     ]
+    ],
+    "note": null
+   },
+   "question": "Before this year’s change, what was the budget for “Youth employment schemes”?",
+   "options": [
+    "€4,234.3k",
+    "€2,280.0k",
+    "€2,664.0k",
+    "€2,074.8k"
+   ],
+   "answer": "B",
+   "steps": [
+    "This year = last year × 1.3, so last year = this year ÷ 1.3.",
+    "2,964.0 ÷ 1.3 = 2,280.0 (€ thousand).",
+    "Typical error: reducing this year’s figure by 30% applies the percentage to the wrong base."
+   ],
+   "difficulty": "intermediate",
+   "skill": "Reverse percentage",
+   "id": "NM-22"
+  },
+  {
+   "figure": {
+    "type": "table",
+    "title": "Price of a standard office laptop in four markets (fictitious prices and rates)",
+    "columns": [
+     "Currency",
+     "Code",
+     "Units per €1",
+     "Local price"
+    ],
+    "rows": [
+     [
+      "US dollar",
+      "USD",
+      "1.08",
+      "511"
+     ],
+     [
+      "Pound sterling",
+      "GBP",
+      "0.83",
+      "353"
+     ],
+     [
+      "Japanese yen",
+      "JPY",
+      "165.0",
+      "80,590"
+     ],
+     [
+      "Icelandic króna",
+      "ISK",
+      "151.2",
+      "61,820"
+     ]
+    ],
+    "note": null
+   },
+   "question": "In euros, approximately how much more does a standard office laptop cost in the most expensive of the four markets than in the cheapest?",
+   "options": [
+    "€119",
+    "€16",
+    "€80",
+    "€63"
+   ],
+   "answer": "C",
+   "steps": [
+    "Convert every price to euros by DIVIDING the local price by the number of units per €1:",
+    "USD: 511 ÷ 1.08 ≈ €473.15; GBP: 353 ÷ 0.83 ≈ €425.30; JPY: 80,590 ÷ 165.0 ≈ €488.42; ISK: 61,820 ÷ 151.2 ≈ €408.86.",
+    "Most expensive (JPY) − cheapest (ISK) ≈ €488.42 − €408.86 = €79.56, i.e. about €80.",
+    "Typical errors: ranking the markets by local price (the currencies are not comparable) or comparing the wrong pair of markets."
+   ],
+   "difficulty": "intermediate",
+   "skill": "Currency conversion",
+   "id": "NM-23"
+  },
+  {
+   "figure": {
+    "type": "table",
+    "title": "Monthly rent of a liaison office in Japanese yen",
+    "columns": [
+     "",
+     "Year 1",
+     "Year 2"
+    ],
+    "rows": [
+     [
+      "Rent (JPY)",
+      "75,730",
+      "83,303"
+     ],
+     [
+      "JPY per €1",
+      "178.5",
+      "156.2"
+     ]
+    ],
+    "note": null
+   },
+   "question": "Once both years are converted into euros, approximately what is the percentage by which the rent has risen?",
+   "options": [
+    "12.5%",
+    "23.9%",
+    "10.0%",
+    "25.7%"
+   ],
+   "answer": "D",
+   "steps": [
+    "Convert each year to euros: Year 1 75,730.00 ÷ 178.5 = €424.26; Year 2 83,303.00 ÷ 156.2 = €533.31.",
+    "Change = (€533.31 − €424.26) ÷ €424.26 ≈ +25.7%.",
+    "Typical errors: quoting the 10% rise in local currency, or the change in the exchange rate alone; both ignore the other effect."
+   ],
+   "difficulty": "advanced",
+   "skill": "Currency and percentage change",
+   "id": "NM-24"
+  },
+  {
+   "figure": {
+    "type": "pie",
+    "title": "Breakdown of an agency’s annual budget (total €590 million)",
+    "labels": [
+     "Staff",
+     "Training",
+     "Buildings",
+     "Translation",
+     "Studies"
+    ],
+    "values": [
+     13,
+     7,
+     31,
+     12,
+     37
+    ],
+    "total_label": "Total: €590 million"
+   },
+   "question": "Next year the Staff budget is to rise by 10% while all other items stay unchanged. By how much will the Staff budget then exceed the Training budget?",
+   "options": [
+    "€43.1 million",
+    "€38.9 million",
+    "€94.4 million",
+    "€35.4 million"
+   ],
+   "answer": "A",
+   "steps": [
+    "Staff now = 13% × €590 million = €76.7 million; after +10%: €84.37 million.",
+    "Training = 7% × €590 million = €41.3 million.",
+    "Difference = €43.07 million ≈ €43.1 million. Typical error: adding 10 percentage points to the share instead of raising the amount by 10%."
+   ],
+   "difficulty": "advanced",
+   "skill": "Pie chart, two-step",
+   "id": "NM-25"
+  },
+  {
+   "figure": {
+    "type": "bar",
+    "title": "Staff by gender in four units",
+    "categories": [
+     "Unit B",
+     "Unit D",
+     "Unit C",
+     "Unit A"
+    ],
+    "series": [
+     {
+      "name": "Women",
+      "values": [
+       11,
+       30,
+       25,
+       20
+      ]
+     },
+     {
+      "name": "Men",
+      "values": [
+       11,
+       30,
+       20,
+       11
+      ]
+     }
+    ],
+    "unit": "number of staff"
+   },
+   "question": "If the total number of staff in Unit C increases by 40% and the proportion of the “Women” group stays the same, how many will be in the “Women” group?",
+   "options": [
+    "43",
+    "35",
+    "32",
+    "28"
+   ],
+   "answer": "B",
+   "steps": [
+    "Unit C has 25 (Women) and 20 (Men), 45 in total.",
+    "New total = 45 × 1.4 = 63; “Women” = 63 × 25/45 = 35.",
+    "Shortcut: if the proportion is unchanged, the “Women” group also grows by 40%: 25 × 1.4 = 35.",
+    "Typical errors: adding the whole increase to one group (43) or calculating the other group instead."
+   ],
+   "difficulty": "foundation",
+   "skill": "Proportional scaling",
+   "id": "NM-26"
+  },
+  {
+   "figure": {
+    "type": "table",
+    "title": "Passengers at regional airports (thousands)",
+    "columns": [
+     "Country",
+     "Year 1",
+     "Year 2",
+     "Year 3"
+    ],
+    "rows": [
+     [
+      "Belgium",
+      "353",
+      "390",
+      "414"
+     ],
+     [
+      "Greece",
+      "304",
+      "291",
+      "337"
+     ],
+     [
+      "Sweden",
+      "845",
+      "921",
+      "930"
+     ],
+     [
+      "Latvia",
+      "193",
+      "210",
+      "233"
+     ],
+     [
+      "Slovenia",
+      "515",
+      "604",
+      "602"
+     ]
+    ],
+    "note": null
+   },
+   "question": "By approximately what percentage did passenger numbers at regional airports in Sweden increase between Year 1 and Year 3?",
+   "options": [
+    "9.1%",
+    "11.0%",
+    "11.9%",
+    "10.1%"
+   ],
+   "answer": "D",
+   "steps": [
+    "Percentage change uses the earlier value as the base: (930 − 845) ÷ 845 × 100.",
+    "= 85 ÷ 845 × 100 ≈ 10.1%, i.e. an increase of about 10.1%.",
+    "Typical errors: dividing by the Year 3 value (wrong base), or adding the two year-on-year percentage changes (percentages do not add)."
+   ],
+   "difficulty": "foundation",
+   "skill": "Percentage change",
+   "id": "NM-27"
+  },
+  {
+   "figure": {
+    "type": "table",
+    "title": "Rail routes: distance and average train speed",
+    "columns": [
+     "Route",
+     "Distance (km)",
+     "Average speed (km/h)"
+    ],
+    "rows": [
+     [
+      "Kingsford–Southmere",
+      "128",
+      "90"
+     ],
+     [
+      "Brookhaven–Fairhaven",
+      "328",
+      "90"
+     ],
+     [
+      "Northport–Stonebridge",
+      "334",
+      "140"
+     ],
+     [
+      "Westfield–Eastbay",
+      "162",
+      "90"
+     ]
+    ],
+    "note": null
+   },
+   "question": "If the train’s average speed on the Westfield–Eastbay route rose to 120 km/h, approximately how many minutes would each journey save?",
+   "options": [
+    "81 minutes",
+    "40 minutes",
+    "27 minutes",
+    "36 minutes"
+   ],
+   "answer": "C",
+   "steps": [
+    "Time = distance ÷ speed. Now: 162 ÷ 90 × 60 = 108.0 minutes. New: 162 ÷ 120 × 60 = 81.0 minutes.",
+    "Saving = 108.0 − 81.0 = 27.0, i.e. about 27 minutes.",
+    "Typical error: assuming journey time falls by the same percentage as speed rises."
+   ],
+   "difficulty": "intermediate",
+   "skill": "Rates and time",
+   "id": "NM-28"
   },
   {
    "figure": {
@@ -5174,552 +5629,97 @@
     ],
     "rows": [
      [
-      "Eastern region",
-      "2.08",
-      "479.2"
-     ],
-     [
       "Northern region",
-      "4.41",
-      "602.3"
-     ],
-     [
-      "Western region",
-      "6.05",
-      "672.0"
+      "4.96",
+      "846.9"
      ],
      [
       "Island region",
-      "0.67",
-      "76.6"
+      "3.47",
+      "830.1"
      ],
      [
-      "Central region",
-      "5.94",
-      "1,136.2"
+      "Southern region",
+      "5.61",
+      "509.6"
+     ],
+     [
+      "Coastal region",
+      "2.64",
+      "468.7"
+     ],
+     [
+      "Alpine region",
+      "3.70",
+      "468.7"
      ]
     ],
     "note": null
    },
    "question": "Which of the following regions had the highest spending on culture per inhabitant?",
    "options": [
-    "Central region",
     "Island region",
-    "Western region",
-    "Eastern region"
+    "Northern region",
+    "Coastal region",
+    "Southern region"
    ],
-   "answer": "D",
+   "answer": "A",
    "steps": [
     "Spending per inhabitant = spending ÷ population (€ million ÷ million inhabitants = € per inhabitant):",
-    "Central region ≈ €191; Island region ≈ €114; Western region ≈ €111; Eastern region ≈ €230.",
-    "The highest figure is for the Eastern region. Trap: the Central region has the largest total spending, but not the highest spending per inhabitant."
+    "Island region ≈ €239; Northern region ≈ €171; Coastal region ≈ €178; Southern region ≈ €91.",
+    "The highest figure is for the Island region. Trap: the Northern region has the largest total spending, but not the highest spending per inhabitant."
    ],
    "difficulty": "intermediate",
    "skill": "Per-capita comparison",
-   "id": "NM-20"
-  },
-  {
-   "figure": {
-    "type": "table",
-    "title": "Documents published in one year, by original language",
-    "columns": [
-     "Language",
-     "Documents"
-    ],
-    "rows": [
-     [
-      "Polish",
-      "132"
-     ],
-     [
-      "Spanish",
-      "77"
-     ],
-     [
-      "French",
-      "34"
-     ],
-     [
-      "German",
-      "44"
-     ]
-    ],
-    "note": null
-   },
-   "question": "What is the ratio of documents in Spanish to documents in German, in its simplest form?",
-   "options": [
-    "7:4",
-    "9:5",
-    "7:5",
-    "4:7"
-   ],
-   "answer": "A",
-   "steps": [
-    "Spanish : German = 77 : 44. Both numbers divide by 11, giving 7:4.",
-    "Typical error: reversing the order of the ratio (4:7)."
-   ],
-   "difficulty": "foundation",
-   "skill": "Ratios",
-   "id": "NM-21"
-  },
-  {
-   "figure": {
-    "type": "pie",
-    "title": "Breakdown of a directorate’s annual budget (total €325 million)",
-    "labels": [
-     "Training",
-     "Translation",
-     "Studies",
-     "Travel",
-     "Staff"
-    ],
-    "values": [
-     8,
-     47,
-     30,
-     7,
-     8
-    ],
-    "total_label": "Total: €325 million"
-   },
-   "question": "Next year the Studies budget is to rise by 10% while all other items stay unchanged. By how much will the Studies budget then exceed the Staff budget?",
-   "options": [
-    "€78.7 million",
-    "€81.3 million",
-    "€71.5 million",
-    "€104.0 million"
-   ],
-   "answer": "B",
-   "steps": [
-    "Studies now = 30% × €325 million = €97.5 million; after +10%: €107.25 million.",
-    "Staff = 8% × €325 million = €26 million.",
-    "Difference = €81.25 million ≈ €81.3 million. Typical error: adding 10 percentage points to the share instead of raising the amount by 10%."
-   ],
-   "difficulty": "advanced",
-   "skill": "Pie chart, two-step",
-   "id": "NM-22"
-  },
-  {
-   "figure": {
-    "type": "table",
-    "title": "Ferry routes: distance and average ferry speed",
-    "columns": [
-     "Route",
-     "Distance (km)",
-     "Average speed (km/h)"
-    ],
-    "rows": [
-     [
-      "Kingsford–Hillcrest",
-      "70",
-      "90"
-     ],
-     [
-      "Northport–Southmere",
-      "188",
-      "100"
-     ],
-     [
-      "Brookhaven–Stonebridge",
-      "281",
-      "120"
-     ],
-     [
-      "Midvale–Riverton",
-      "333",
-      "140"
-     ]
-    ],
-    "note": null
-   },
-   "question": "If the ferry’s average speed on the Northport–Southmere route rose to 140 km/h, approximately how many minutes would each journey save?",
-   "options": [
-    "48 minutes",
-    "81 minutes",
-    "32 minutes",
-    "45 minutes"
-   ],
-   "answer": "C",
-   "steps": [
-    "Time = distance ÷ speed. Now: 188 ÷ 100 × 60 = 112.8 minutes. New: 188 ÷ 140 × 60 = 80.6 minutes.",
-    "Saving = 112.8 − 80.6 = 32.2, i.e. about 32 minutes.",
-    "Typical error: assuming journey time falls by the same percentage as speed rises."
-   ],
-   "difficulty": "intermediate",
-   "skill": "Rates and time",
-   "id": "NM-23"
-  },
-  {
-   "figure": {
-    "type": "table",
-    "title": "Programme spending by sector (€ million)",
-    "columns": [
-     "Sector",
-     "Year 1",
-     "Year 2"
-    ],
-    "rows": [
-     [
-      "Education",
-      "780",
-      "1,040"
-     ],
-     [
-      "Research",
-      "840",
-      "790"
-     ],
-     [
-      "Culture",
-      "660",
-      "630"
-     ],
-     [
-      "Transport",
-      "520",
-      "490"
-     ],
-     [
-      "Digital",
-      "810",
-      "880"
-     ],
-     [
-      "Total",
-      "3,610",
-      "3,830"
-     ]
-    ],
-    "note": null
-   },
-   "question": "By how many percentage points did Education’s share of total spending rise between Year 1 and Year 2?",
-   "options": [
-    "5.2 percentage points",
-    "25.7 percentage points",
-    "33.3 percentage points",
-    "5.5 percentage points"
-   ],
-   "answer": "D",
-   "steps": [
-    "Year 1 share = 780 ÷ 3,610 = 21.61%. Year 2 share = 1,040 ÷ 3,830 = 27.15%.",
-    "Change = 27.15 − 21.61 = +5.55 points, i.e. a rise of about 5.5 percentage points.",
-    "Typical errors: giving the percentage change in the amount spent, or the relative change in the share, instead of the change in percentage points."
-   ],
-   "difficulty": "advanced",
-   "skill": "Shares and percentage points",
-   "id": "NM-24"
-  },
-  {
-   "figure": {
-    "type": "table",
-    "title": "Grant applications received and approval rate",
-    "columns": [
-     "Country",
-     "Applications",
-     "Approval rate"
-    ],
-    "rows": [
-     [
-      "France",
-      "2,600",
-      "35%"
-     ],
-     [
-      "Belgium",
-      "800",
-      "25%"
-     ],
-     [
-      "Finland",
-      "2,900",
-      "24%"
-     ],
-     [
-      "Ireland",
-      "1,500",
-      "24%"
-     ]
-    ],
-    "note": null
-   },
-   "question": "How many applications from Belgium were rejected?",
-   "options": [
-    "600",
-    "400",
-    "700",
-    "570"
-   ],
-   "answer": "A",
-   "steps": [
-    "Approved = 800 × 25% = 200.",
-    "Rejected = 800 − 200 = 600.",
-    "Typical errors: giving the number approved instead of rejected, or reading another country’s row."
-   ],
-   "difficulty": "foundation",
-   "skill": "Rates and counts",
-   "id": "NM-25"
-  },
-  {
-   "figure": {
-    "type": "table",
-    "title": "A supplier’s price in Canadian dollar and the exchange rate",
-    "columns": [
-     "",
-     "Year 1",
-     "Year 2"
-    ],
-    "rows": [
-     [
-      "Price (CAD)",
-      "826.00",
-      "867.30"
-     ],
-     [
-      "CAD per €1",
-      "1.53",
-      "1.41"
-     ]
-    ],
-    "note": null
-   },
-   "question": "In euro terms, by approximately what percentage has the supplier’s price risen between Year 1 and Year 2?",
-   "options": [
-    "7.8%",
-    "13.9%",
-    "5.0%",
-    "12.8%"
-   ],
-   "answer": "B",
-   "steps": [
-    "Convert each year to euros: Year 1 826.00 ÷ 1.53 = €539.87; Year 2 867.30 ÷ 1.41 = €615.11.",
-    "Change = (€615.11 − €539.87) ÷ €539.87 ≈ +13.9%.",
-    "Typical errors: quoting the 5% rise in local currency, or the change in the exchange rate alone; both ignore the other effect."
-   ],
-   "difficulty": "advanced",
-   "skill": "Currency and percentage change",
-   "id": "NM-26"
-  },
-  {
-   "figure": {
-    "type": "bar",
-    "title": "Trainees by contract type in four units",
-    "categories": [
-     "Unit A",
-     "Unit D",
-     "Unit B",
-     "Unit E"
-    ],
-    "series": [
-     {
-      "name": "Permanent",
-      "values": [
-       35,
-       37,
-       80,
-       32
-      ]
-     },
-     {
-      "name": "Temporary",
-      "values": [
-       18,
-       27,
-       30,
-       18
-      ]
-     }
-    ],
-    "unit": "number of trainees"
-   },
-   "question": "If the total number of trainees in Unit B increases by 10% and the proportion of the “Permanent” group stays the same, how many will be in the “Permanent” group?",
-   "options": [
-    "93",
-    "33",
-    "61",
-    "88"
-   ],
-   "answer": "D",
-   "steps": [
-    "Unit B has 80 (Permanent) and 30 (Temporary), 110 in total.",
-    "New total = 110 × 1.1 = 121; “Permanent” = 121 × 80/110 = 88.",
-    "Shortcut: if the proportion is unchanged, the “Permanent” group also grows by 10%: 80 × 1.1 = 88.",
-    "Typical errors: adding the whole increase to one group (91) or calculating the other group instead."
-   ],
-   "difficulty": "foundation",
-   "skill": "Proportional scaling",
-   "id": "NM-27"
-  },
-  {
-   "figure": {
-    "type": "table",
-    "title": "Visitors to national science museums (thousands)",
-    "columns": [
-     "Country",
-     "Year 1",
-     "Year 2",
-     "Year 3"
-    ],
-    "rows": [
-     [
-      "Finland",
-      "220",
-      "219",
-      "208"
-     ],
-     [
-      "Italy",
-      "771",
-      "730",
-      "881"
-     ],
-     [
-      "Latvia",
-      "927",
-      "1,094",
-      "1,204"
-     ],
-     [
-      "Spain",
-      "869",
-      "949",
-      "887"
-     ],
-     [
-      "Hungary",
-      "732",
-      "804",
-      "980"
-     ]
-    ],
-    "note": null
-   },
-   "question": "By approximately what percentage did the number of visitors to science museums in Latvia increase between Year 1 and Year 3?",
-   "options": [
-    "18.0%",
-    "23.0%",
-    "29.9%",
-    "28.1%"
-   ],
-   "answer": "C",
-   "steps": [
-    "Percentage change uses the earlier value as the base: (1,204 − 927) ÷ 927 × 100.",
-    "= 277 ÷ 927 × 100 ≈ 29.9%, i.e. an increase of about 29.9%.",
-    "Typical errors: dividing by the Year 3 value (wrong base), or adding the two year-on-year percentage changes (percentages do not add)."
-   ],
-   "difficulty": "foundation",
-   "skill": "Percentage change",
-   "id": "NM-28"
-  },
-  {
-   "figure": {
-    "type": "table",
-    "title": "Candidates and average test score by test centre",
-    "columns": [
-     "Centre",
-     "Candidates",
-     "Average score (points)"
-    ],
-    "rows": [
-     [
-      "North",
-      "31",
-      "75"
-     ],
-     [
-      "East",
-      "13",
-      "52"
-     ],
-     [
-      "Central",
-      "45",
-      "84"
-     ],
-     [
-      "South",
-      "37",
-      "88"
-     ]
-    ],
-    "note": null
-   },
-   "question": "What is the average score across all candidates in the four centres combined?",
-   "options": [
-    "79.7 points",
-    "77.2 points",
-    "74.8 points",
-    "70.0 points"
-   ],
-   "answer": "A",
-   "steps": [
-    "Weighted total = 31 × 75 + 13 × 52 + 45 × 84 + 37 × 88 = 10,037.",
-    "Total candidates = 126. Weighted average = 10,037 ÷ 126 ≈ 79.7 points.",
-    "Typical error: the simple average of the four averages (74.8 points) ignores the different group sizes."
-   ],
-   "difficulty": "intermediate",
-   "skill": "Weighted average",
    "id": "NM-29"
   },
   {
    "figure": {
     "type": "table",
-    "title": "Files closed per month by three teams",
+    "title": "Solar capacity installed on public buildings this year, and expected annual growth",
     "columns": [
-     "Team",
-     "Jan",
-     "Feb",
-     "Mar",
-     "Apr",
-     "May",
-     "Jun"
+     "Municipality",
+     "Installed this year (kW)",
+     "Expected annual growth"
     ],
     "rows": [
      [
-      "Team North",
-      "49",
-      "18",
-      "31",
-      "41",
-      "54",
-      "19"
+      "Brookhaven",
+      "5,480",
+      "15%"
      ],
      [
-      "Team South",
-      "32",
-      "60",
-      "27",
-      "32",
-      "25",
-      "22"
+      "Stonebridge",
+      "6,770",
+      "15%"
      ],
      [
-      "Team East",
-      "41",
-      "47",
-      "41",
-      "24",
-      "26",
-      "—"
+      "Lakeside",
+      "1,510",
+      "15%"
+     ],
+     [
+      "Hillcrest",
+      "6,520",
+      "20%"
      ]
     ],
-    "note": "— = figure not yet available"
+    "note": null
    },
-   "question": "How many files would Team East need to close in June for its average over January to June to be exactly 45 per month?",
+   "question": "If the figure for Brookhaven grows at its expected annual rate, compounded, approximately how many kW will be installed three years from now?",
    "options": [
-    "86",
-    "45",
-    "91",
-    "36"
+    "9,585 kW",
+    "7,247 kW",
+    "8,334 kW",
+    "7,946 kW"
    ],
    "answer": "C",
    "steps": [
-    "For an average of 45 over 6 months, the total must be 45 × 6 = 270.",
-    "January–May total = 41 + 47 + 41 + 24 + 26 = 179.",
-    "June must therefore be 270 − 179 = 91.",
-    "Typical errors: answering with the target itself (45) or with the current average (about 36)."
+    "Compound growth: 5,480 × 1.15³ = 5,480 × 1.5209 ≈ 8,334 kW.",
+    "Traps among the options: simple growth, 5,480 × (1 + 3 × 0.15) = 7,946 kW, ignores compounding; compounding for only two years gives 7,247 kW; compounding for four years gives 9,585 kW."
    ],
-   "difficulty": "intermediate",
-   "skill": "Averages over time",
+   "difficulty": "advanced",
+   "skill": "Compound growth",
    "id": "NM-30"
   }
  ]

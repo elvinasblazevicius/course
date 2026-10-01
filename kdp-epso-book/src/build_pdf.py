@@ -281,7 +281,7 @@ def tip_box(text):
 NUMERIC = re.compile(r"^[€−\-+]?[\d,.]+%?k?$")
 
 
-def data_table(fig, mono_cols=(), width=None, rownums=False, zebra=True, align_numeric=True):
+def data_table(fig, mono_cols=(), width=None, rownums=False, zebra=True, align_numeric=True, col_widths=None):
     cols = list(fig["columns"])
     rows = [list(r) for r in fig["rows"]]
     if rownums:
@@ -306,6 +306,8 @@ def data_table(fig, mono_cols=(), width=None, rownums=False, zebra=True, align_n
         widths = [w * avail / sum(widths) for w in widths]
     elif sum(widths) < avail * 0.55:
         widths = [w * (avail * 0.55) / sum(widths) for w in widths]
+    if col_widths:
+        widths = col_widths
     t = Table(data, colWidths=widths, repeatRows=1, hAlign="LEFT")
     style = [("GRID", (0, 0), (-1, -1), 0.4, RULE), ("BACKGROUND", (0, 0), (-1, 0), SHADE2),
              ("VALIGN", (0, 0), (-1, -1), "MIDDLE"), ("TOPPADDING", (0, 0), (-1, -1), 3), ("BOTTOMPADDING", (0, 0), (-1, -1), 3),
@@ -448,6 +450,16 @@ TRAP_ORDER = ["extreme wording", "scope shift", "cause and effect", "outside kno
               "unsupported comparison", "unsupported inference"]
 
 
+MAIN_TRAP = ["outside knowledge", "cause and effect", "unsupported comparison", "scope shift", "partial truth",
+             "unsupported inference", "extreme wording", "contradiction"]
+
+
+def main_trap(it):
+    """The single most specific trap in a verbal item (rarer, subtler traps first) for the Skill Index."""
+    tr = verbal_traps(it)
+    return min(tr, key=lambda t: MAIN_TRAP.index(t) if t in MAIN_TRAP else -1)
+
+
 def verbal_traps(it):
     if "NOT" in it["question"]:
         return ["“NOT supported” question"]
@@ -461,7 +473,7 @@ def verbal_traps(it):
 
 ABS_SKILL = {"pos": "position", "posfill": "position + shading", "pos2": "second moving element", "rot": "rotation",
              "dots": "counting", "quad": "quarter shading", "poly": "shape sequence", "polyfill": "shape sequence + shading",
-             "flip": "rotation + reflection"}
+             "flip": "rotation + reflection", "flipalt": "rotation + reflection"}
 
 
 def mock_diagnostic(mk):
@@ -716,7 +728,8 @@ def build(path=OUT / "interior.pdf"):
                 last = d
             key = f"{s['key']}-{it['n']}"
             blk = RENDER[s["type"]](it, f"Question {it['n']}")
-            story += [RefMark("q:" + key), blk, PageRef("Answer and worked solution: p. {}", "s:" + key), Spacer(1, 4)]
+            blk._content.insert(0, RefMark("q:" + key))  # inside the block, so it records the page the question prints on
+            story += [blk, PageRef("Answer and worked solution: p. {}", "s:" + key), Spacer(1, 4)]
 
     # Part III
     story += part_divider("III", "Mock Exams",
@@ -744,7 +757,8 @@ def build(path=OUT / "interior.pdf"):
                 story += [P(name, "h2"), HRule(FW, 0.5, RULE), Spacer(1, 8)]
             key = f"{mk['key']}-{it['n']}"
             blk = RENDER[it["type"]](it, f"Question {it['n']}")
-            story += [RefMark("q:" + key), blk]
+            blk._content.insert(0, RefMark("q:" + key))
+            story.append(blk)
 
     # Part IV
     story += part_divider("IV", "Answers and Worked Solutions",
@@ -789,7 +803,7 @@ def build(path=OUT / "interior.pdf"):
               P("Proactive and proportionate · direct and respectful first · rule-aware and service-minded · transparent early.", "body")]
 
     story += heading_chapter("Skill Index", toc_level=0, key="skillindex")
-    story += [P("Use this index to target a weakness: every practice question is listed under the skill it trains.", "body")]
+    story += [P("Use this index to target a weakness: every practice question is listed under the skill or trap it trains.", "body")]
     from collections import OrderedDict
     num = OrderedDict()
     for it in book["sets"][1]["items"]:
@@ -800,12 +814,15 @@ def build(path=OUT / "interior.pdf"):
             ab.setdefault(ABS_SKILL[part], []).append(str(it["n"]))
     vb = OrderedDict()
     for it in book["sets"][0]["items"]:
-        for tr in verbal_traps(it):
-            vb.setdefault(tr, []).append(str(it["n"]))
-    for title, d in (("Verbal reasoning", vb), ("Numerical reasoning", num), ("Abstract reasoning", ab)):
+        vb.setdefault(main_trap(it), []).append(str(it["n"]))
+    for title, d, col in (("Verbal reasoning", vb, "Main trap"), ("Numerical reasoning", num, "Skill"), ("Abstract reasoning", ab, "Skill")):
         rows = [[k[0].upper() + k[1:], ", ".join(v)] for k, v in sorted(d.items())]
-        story += [P(title, "h3"), data_table({"columns": ["Skill", "Practice questions"], "rows": rows}, zebra=True, align_numeric=False),
+        story += [P(title, "h3"), data_table({"columns": [col, "Practice questions"], "rows": rows}, zebra=True, align_numeric=False,
+                                             col_widths=[FW * 0.32, FW * 0.68]),
                   Spacer(1, 8)]
+        if title == "Verbal reasoning":
+            story.append(P("Each verbal question is listed once, under the subtlest trap among its wrong options; the worked "
+                           "solution names every trap.", "figinfo"))
 
     story += heading_chapter("Score Tracker", toc_level=0, key="tracker")
     hdr = ["Set", "Try", "Foundation", "Intermediate", "Advanced", "Total", "Date"]

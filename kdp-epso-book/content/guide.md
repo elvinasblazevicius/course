@@ -216,7 +216,7 @@ The figures in this book (and in typical tests) are built from a small set of va
 - **Shading:** an element cycles through white, grey and black, or alternates between two of them.
 - **Number:** the count of elements rises or falls steadily, or alternates (for example +2, −1, +2, −1).
 - **Shape:** a shape gains a side each time, or cycles through a fixed sequence (triangle, square, pentagon, …).
-- **Reflection:** an asymmetric shape (such as an F) is mirrored left to right, often in every other figure and combined with a rotation. Compare figures with the same orientation first.
+- **Reflection:** an asymmetric shape (such as an F) is mirrored left to right, often in every other figure and combined with a rotation. Compare figures with the same orientation first. Tip: follow the F’s upright stroke (the end that carries the top bar). A left-to-right mirror never changes which way that stroke points, so you can read the turns straight off it and judge the mirroring separately.
 
 ## The rule-hunting checklist
 Work through the variables one at a time, for one element at a time.

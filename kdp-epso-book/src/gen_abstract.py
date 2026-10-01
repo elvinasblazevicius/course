@@ -150,22 +150,30 @@ def quad_track(rng):
             "sig": [("quad", d)]}
 
 
-def fshape_track(rng, level):
+def fshape_track(rng, level, alt=False):
     start = rng.randrange(4)
     d = rng.choice([1, -1])
-    rot = [(start + d * i) % 4 for i in range(6)]
     m0 = rng.randrange(2)
     mir = [(m0 + i) % 2 for i in range(6)]
+    mir_desc = "the F-shape is shown in mirror image (flipped left to right) in every other figure"
+    if alt:
+        s1, s2 = rng.choice([(1, 2), (2, 1)])
+        rot = seq_alt(start, s1 * d % 4, s2 * d % 4, 4)
+        return {"kind": "fshape", "rot4": rot, "mir": mir,
+                "desc": [f"the F-shape’s upright stroke (follow the end that carries the top bar) turns {DIR[d]}, "
+                         f"alternately by {90 * s1}° and {90 * s2}°", mir_desc],
+                "sig": [("frot-alt", s1, s2, d), ("mir",)]}
+    rot = [(start + d * i) % 4 for i in range(6)]
     return {"kind": "fshape", "rot4": rot, "mir": mir,
-            "desc": [f"the F-shape turns 90° {DIR[d]} each time", "it is also mirrored (flipped left to right) in every other figure"],
+            "desc": [f"the F-shape’s upright stroke (follow the end that carries the top bar) turns 90° {DIR[d]} each time", mir_desc],
             "sig": [("frot", d), ("mir",)]}
 
 
 TEMPLATES = {
     "foundation": ["pos", "rot", "dots", "posfill", "pos", "rot"],
-    "intermediate": ["rot+pos", "polyfill", "dots+pos", "quad+pos", "posfill", "rot+dots", "poly+pos", "flip", "flip"],
+    "intermediate": ["rot+pos", "polyfill", "dots+pos", "quad+pos", "posfill", "rot+dots", "poly+pos", "flipalt"],
     "advanced": ["rot+posfill", "polyfill+pos", "dots+posfill", "rot+pos+pos2", "quad+posfill",
-                 "polyfill+posfill", "rot+posfill+pos2", "quad+pos+pos2", "flip+pos", "flip+posfill"],
+                 "polyfill+posfill", "rot+posfill+pos2", "quad+pos+pos2", "flipalt+pos"],
 }
 
 
@@ -190,8 +198,8 @@ def build_tracks(rng, level, tmpl):
             t.append(dots_track(rng, level))
         elif p == "quad":
             t.append(quad_track(rng))
-        elif p == "flip":
-            t.append(fshape_track(rng, level))
+        elif p in ("flip", "flipalt"):
+            t.append(fshape_track(rng, level, alt=(p == "flipalt")))
     return t
 
 
@@ -353,15 +361,19 @@ def difficulty_score(tracks):
     return s
 
 
-def make_item(rng, level, seen_geom, sig_count):
+def make_item(rng, level, seen_geom, sig_count, no_flip=False):
     for _ in range(5000):
         tmpl = rng.choice(TEMPLATES[level])
+        if no_flip and "flip" in tmpl:
+            continue
         tracks = build_tracks(rng, level, tmpl)
         frames = [frame(tracks, i) for i in range(6)]
         if any(collide(f) for f in frames) or len({key_of(f) for f in frames[:5]}) < 4:
             continue
         if not unambiguous(tracks):
             continue
+        if "flip" in tmpl and key_of(frames[5]) in {key_of(f) for f in frames[:5]}:
+            continue  # the answer must never be a copy of a figure already shown
         geom = json.dumps(sorted([[tr["kind"]] + [tr[a] for a, _ in ATTRS[tr["kind"]] if a != "fill"] for tr in tracks]))
         if geom in seen_geom:
             continue
@@ -409,11 +421,20 @@ def main(seed=8128):
                 [make_item(rng, "advanced", seen, sigc) for _ in range(25)])
     order = {"foundation": 0, "intermediate": 1, "advanced": 2}
     practice.sort(key=lambda x: (order[x["difficulty"]], x["score"]))
-    for i in range(1, len(practice)):
-        if practice[i]["template"] == practice[i - 1]["template"]:
-            for j in range(i + 1, len(practice)):
-                if practice[j]["difficulty"] == practice[i]["difficulty"] and practice[j]["template"] != practice[i - 1]["template"]:
-                    practice[i], practice[j] = practice[j], practice[i]; break
+    def clash(i):
+        return 0 < i < len(practice) and practice[i]["template"] == practice[i - 1]["template"]
+    for _ in range(500):  # no two neighbours share a template (swaps stay within a difficulty band)
+        bad = [i for i in range(1, len(practice)) if clash(i)]
+        if not bad:
+            break
+        i = bad[0]
+        for j in sorted(range(len(practice)), key=lambda j: abs(j - i)):
+            if j in (i, i - 1) or practice[j]["difficulty"] != practice[i]["difficulty"]:
+                continue
+            practice[i], practice[j] = practice[j], practice[i]
+            if not any(clash(k) for k in (i, i + 1, j, j + 1)):
+                break
+            practice[i], practice[j] = practice[j], practice[i]
     for i in range(1, len(practice)):
         if practice[i]["sig"] == practice[i - 1]["sig"]:
             for j in range(i + 1, len(practice)):
@@ -421,7 +442,9 @@ def main(seed=8128):
                     practice[i], practice[j] = practice[j], practice[i]; break
     mocks = []
     for _ in range(3):
-        block = [make_item(rng, "intermediate", seen, sigc) for _ in range(3)] + [make_item(rng, "advanced", seen, sigc) for _ in range(7)]
+        block = []
+        for lv in ["intermediate"] * 3 + ["advanced"] * 7:  # at most two F-shape series per mock
+            block.append(make_item(rng, lv, seen, sigc, no_flip=sum("flip" in b["template"] for b in block) >= 2))
         block.sort(key=lambda x: x["score"])
         mocks += block
     place(practice, rng)
