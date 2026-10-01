@@ -15,7 +15,7 @@ All files are in `build/`. To regenerate everything, run `./build.sh` (it needs 
 ## Book details (the same for all three formats)
 - **Language:** English
 - **Title:** Reasoning Tests Workbook for EPSO Exams
-- **Subtitle:** 400+ Verbal, Numerical and Abstract Reasoning Practice Questions, Situational Judgement and Assistant-Level Skills Tests, 3 Full Mock Exams and Fully Worked Solutions
+- **Subtitle:** 400+ Practice Questions: Verbal, Numerical and Abstract Reasoning, Situational Judgement and Assistant-Level Skills, 3 Timed Mock Exams and Worked Solutions
 - **Series:** leave blank (or "Concours Prep Workbooks" if more titles follow)
 - **Author / contributor:** Concours Prep. This is a neutral pen-name imprint. Change it in `src/assemble.py` (`META`) and `src/cover.py` (`AUTHOR`) if you prefer your own name, then run `./build.sh`. *Do not use "EU Careers", which is EPSO's own recruitment brand.*
 - **Edition:** 1
@@ -34,7 +34,7 @@ All files are in `build/`. To regenerate everything, run `./build.sh` (it needs 
 <li><b>Abstract reasoning:</b> 105 figure series, graded from foundation to advanced, with every rule spelled out</li>
 <li><b>Situational judgement:</b> 24 workplace scenarios built around typical EU competency themes</li>
 <li><b>Accuracy &amp; precision</b> and <b>prioritising &amp; organising:</b> 54 questions for assistant-level (AST-SC), CAST and specialist procedures</li>
-<li><b>3 timed mock tests:</b> 40 reasoning questions each, with score guides and answer sheets</li>
+<li><b>3 timed mock exams:</b> 40 reasoning questions each, with score guides and answer sheets</li>
 <li><b>Strategy chapters:</b> clear methods for every test type, 4- and 8-week study plans and test-day tactics</li>
 <li>A score tracker and an error log to turn every mistake into progress</li>
 </ul>
@@ -45,10 +45,10 @@ All files are in `build/`. To regenerate everything, run `./build.sh` (it needs 
 ```
 
 ### Keywords (7 slots)
-1. EPSO exam preparation book
+1. EU competition exam preparation
 2. EU institutions career test practice
 3. verbal numerical abstract reasoning test
-4. EPSO CBT practice questions with answers
+4. computer-based test practice questions answers
 5. European Union competition AD AST exam
 6. situational judgement test workbook
 7. psychometric aptitude test practice book
@@ -67,10 +67,12 @@ All files are in `build/`. To regenerate everything, run `./build.sh` (it needs 
 - **Large print:** No.
 
 ## Pricing (estimates; confirm in the KDP pricing calculator)
+8.25 in wide counts as a **large trim** at KDP, so per-page print costs are higher than for standard trims.
+
 | Format | Suggested list price | Approx. US print cost | Approx. royalty per sale |
 |---|---|---|---|
-| Paperback | $24.99 / €24.99 / £21.99 | $1.00 + 343 × $0.012 ≈ $5.12 | 60% × 24.99 − 5.12 ≈ **$9.87** |
-| Hardcover | $34.99 / €34.99 / £29.99 | $6.80 + 343 × $0.012 ≈ $10.92 | 60% × 34.99 − 10.92 ≈ **$10.07** |
+| Paperback | $24.99 / €24.99 / £21.99 | large trim: $1.00 + 343 × $0.017 ≈ $6.83 | 60% × 24.99 − 6.83 ≈ **$8.16** |
+| Hardcover | $34.99 / €34.99 / £29.99 | large trim: roughly $6.80 + 343 × $0.017 ≈ $12.63 (confirm) | 60% × 34.99 − 12.63 ≈ **$8.36** |
 | Kindle | $9.99 / €9.99 / £8.99 (70% band) | delivery ≈ 1.2 MB × $0.15 ≈ $0.18 | ≈ **$6.87** |
 
 The core EU markets are **Amazon.de, .fr, .es, .it, .nl, .pl, .se and .com.be**. Enable expanded distribution for the paperback.

@@ -10,8 +10,7 @@ ORDER = {"foundation": 0, "intermediate": 1, "advanced": 2}
 
 META = {
     "title": "Reasoning Tests Workbook for EPSO Exams",
-    "subtitle": ("400+ Verbal, Numerical and Abstract Reasoning Practice Questions, Situational Judgement and "
-                 "Assistant-Level Skills Tests, 3 Full Mock Exams and Fully Worked Solutions"),
+    "subtitle": "400+ Practice Questions: Verbal, Numerical and Abstract Reasoning, Situational Judgement and Assistant-Level Skills, 3 Timed Mock Exams and Worked Solutions",
     "short_title": "Reasoning Tests Workbook for EPSO Exams",
     "author": "Concours Prep",
     "imprint": "Concours Prep",

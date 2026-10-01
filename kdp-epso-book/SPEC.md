@@ -2,7 +2,7 @@
 
 ## Positioning
 - **Title:** *Reasoning Tests Workbook for EPSO Exams*
-- **Subtitle:** *400+ Verbal, Numerical and Abstract Reasoning Practice Questions, Situational Judgement and Assistant-Level Skills Tests, 3 Full Mock Exams and Fully Worked Solutions*
+- **Subtitle:** *400+ Practice Questions: Verbal, Numerical and Abstract Reasoning, Situational Judgement and Assistant-Level Skills, 3 Timed Mock Exams and Worked Solutions*
 - **Imprint / series line:** "Concours Prep" (neutral independent imprint; "EU Careers" avoided because it is EPSO’s own recruitment brand — G4 legal finding)
 - **Audience:** Candidates for EU institution selection procedures organised by EPSO (AD and AST generalist and specialist competitions, AST-SC and CAST), plus anyone preparing for European-style psychometric reasoning tests.
 - **Coverage statement (Chapter 1, the back cover and the description):**

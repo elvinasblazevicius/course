@@ -598,7 +598,7 @@ def build(path=OUT / "interior.pdf"):
 
     # Part III
     story += part_divider("III", "Mock Exams",
-                          "Three full-length timed mock exams combining verbal, numerical and abstract reasoning. Sit each one in a single session.", "part3")
+                          "Three timed mock exams combining verbal, numerical and abstract reasoning. Sit each one in a single session.", "part3")
     for mk in book["mocks"]:
         story += heading_chapter(mk["title"], section=mk["title"], key=mk["key"])
         story += [P("<b>40 questions · suggested time: 65 minutes</b>", "body", raw=True),
