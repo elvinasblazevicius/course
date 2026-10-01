@@ -728,8 +728,11 @@ def build(path=OUT / "interior.pdf"):
                 last = d
             key = f"{s['key']}-{it['n']}"
             blk = RENDER[s["type"]](it, f"Question {it['n']}")
-            blk._content.insert(0, RefMark("q:" + key))  # inside the block, so it records the page the question prints on
-            story += [blk, PageRef("Answer and worked solution: p. {}", "s:" + key), Spacer(1, 4)]
+            # both marks live inside the block: the page mark records where the question prints, and the
+            # answer link can never be stranded at the top of the next page
+            blk._content.insert(0, RefMark("q:" + key))
+            blk._content.insert(len(blk._content) - 1, PageRef("Answer and worked solution: p. {}", "s:" + key))
+            story += [blk, Spacer(1, 4)]
 
     # Part III
     story += part_divider("III", "Mock Exams",
