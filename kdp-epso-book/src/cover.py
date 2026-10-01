@@ -153,12 +153,12 @@ def tick_o(c, x, base, size):
     cx, cy = x + ow / 2, base + cap / 2
     p = c.beginPath()
     p.moveTo(cx - ow * 0.30, cy - cap * 0.02)
-    p.lineTo(cx - ow * 0.04, cy - cap * 0.26)
-    p.lineTo(cx + ow * 0.52, cy + cap * 0.45)
+    p.lineTo(cx - ow * 0.05, cy - cap * 0.16)
+    p.lineTo(cx + ow * 0.45, cy + cap * 0.30)
     c.saveState()
     c.setLineCap(1); c.setLineJoin(1)
-    c.setStrokeColor(BLUE); c.setLineWidth(size * 0.115); c.drawPath(p, stroke=1, fill=0)
-    c.setStrokeColor(WHITE); c.setLineWidth(size * 0.075); c.drawPath(p, stroke=1, fill=0)
+    c.setStrokeColor(BLUE); c.setLineWidth(size * 0.085); c.drawPath(p, stroke=1, fill=0)
+    c.setStrokeColor(WHITE); c.setLineWidth(size * 0.055); c.drawPath(p, stroke=1, fill=0)
     c.restoreState()
 
 
@@ -169,7 +169,7 @@ def front(c, x0, y0, H_in=TRIM_H):
     glow(c, cx, y0 + H * 0.62, W * (0.62 if extra == 0 else 0.72))
 
     top = y0 + H - 0.78 * inch - extra * 0.18
-    title_w = W - 1.55 * inch
+    title_w = W - 1.2 * inch
     s1 = fit_size("REASONING", "Display", title_w)
     cap1 = s1 * ANTON_CAP
     b1 = top - 0.48 * inch - cap1
@@ -199,16 +199,16 @@ def front(c, x0, y0, H_in=TRIM_H):
     c.drawString(gx, b2, "TESTS")
     sx, sy = gx + tests_w + sgap + r, b2 + cap1 / 2
     c.saveState()
-    c.translate(sx, sy); c.rotate(8)
+    c.translate(sx, sy)
     c.setFillColor(GOLD); c.circle(0, 0, r, stroke=0, fill=1)
     c.setStrokeColor(BLUE_DEEP); c.setLineWidth(2.2); c.circle(0, 0, r - 7, stroke=1, fill=0)
     c.setLineWidth(0.8); c.circle(0, 0, r - 11, stroke=1, fill=0)
-    c.setFillColor(BLUE_DEEP); c.setFont("Display", r * 0.92)
+    c.setFillColor(BLUE_DEEP); c.setFont("Display", r * 1.10)
     c.drawCentredString(0, -r * 0.06, "3")
     c.setStrokeColor(BLUE_DEEP); c.setLineWidth(1.0); c.line(-r * 0.34, -r * 0.17, r * 0.34, -r * 0.17)
     lab = r * 0.135
     c.restoreState()
-    c.saveState(); c.translate(sx, sy); c.rotate(8)
+    c.saveState(); c.translate(sx, sy)
     tracked(c, 0, -r * 0.36, "TIMED MOCK", "Frank-Black", lab, 1.0, BLUE_DEEP)
     tracked(c, 0, -r * 0.36 - lab * 1.25, "EXAMS", "Frank-Black", lab, 1.0, BLUE_DEEP)
     c.restoreState()
