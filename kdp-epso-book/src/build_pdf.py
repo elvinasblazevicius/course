@@ -224,7 +224,7 @@ class Doc(BaseDocTemplate):
 
     def afterFlowable(self, f):
         if isinstance(f, Marker) and f.toc:
-            self.notify("TOCEntry", (f.toc_level, f.toc, self.page, f.key))
+            self.notify("TOCEntry", (f.toc_level, f.toc, self.page, None))  # no links: KDP strips them from print files
 
 
 # ------------------------------------------------------------------ helpers

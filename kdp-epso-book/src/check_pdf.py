@@ -27,6 +27,11 @@ for fn in ["interior.pdf", "cover_paperback.pdf", "cover_hardcover.pdf"]:
             if not (fd and any(k in fd.get_object() for k in ("/FontFile", "/FontFile2", "/FontFile3"))):
                 errors.append(f"{fn}: font not embedded {f.get('/BaseFont')}")
 
+for fn in ["interior.pdf", "cover_paperback.pdf", "cover_hardcover.pdf"]:
+    for i, p in enumerate(PdfReader(B / fn).pages):
+        if p.get("/Annots"):
+            errors.append(f"{fn} page {i + 1}: annotations/links (KDP removes them as non-printable markup)")
+
 min_gutter = 999
 with pdfplumber.open(B / "interior.pdf") as pdf:
     for i, p in enumerate(pdf.pages):
