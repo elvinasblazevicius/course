@@ -130,9 +130,9 @@ def building_hero(c, cx, base, W, H, panel_w):
     wing(-1, 1.05, HexColor("#4A80E6"), HexColor("#2A5BC0"))   # sunlit
     wing(1, 0.97, HexColor("#3569CF"), HexColor("#22509F"))    # shade
     c.saveState()
-    c.setFillColor(BLUE_DEEP); c.rect(cx - core, base, 2 * core, H * 1.14, stroke=0, fill=1)
+    c.setFillColor(HexColor("#1A3F92")); c.rect(cx - core, base, 2 * core, H * 1.14, stroke=0, fill=1)
     c.setStrokeColor(outline); c.setLineWidth(1.4); c.rect(cx - core, base, 2 * core, H * 1.14, stroke=1, fill=0)
-    c.setFillColor(outline); c.rect(cx - core * 1.4, base + H * 1.14, core * 2.8, H * 0.025, stroke=0, fill=1)
+    c.setFillColor(outline); c.rect(cx - core * 1.1, base + H * 1.14, core * 2.2, H * 0.025, stroke=0, fill=1)
     c.restoreState()
     # fade the bottom 0.4 in into the background (stepped overlay; no hard edge above the imprint)
     steps, fade_h = 24, 0.4 * inch
