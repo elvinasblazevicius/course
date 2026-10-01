@@ -50,6 +50,7 @@ ST = {
                              bulletIndent=4, spaceAfter=3, bulletFontName="Serif"),
     "tip": ParagraphStyle("tip", fontName="Serif", fontSize=10.2, leading=14.5, textColor=INK),
     "figtitle": ParagraphStyle("figtitle", fontName="Sans-Semi", fontSize=9.5, leading=12, textColor=INK, spaceAfter=4),
+    "figinfo": ParagraphStyle("figinfo", fontName="Sans", fontSize=8.8, leading=11.5, textColor=INK, spaceBefore=3, spaceAfter=6),
     "fignote": ParagraphStyle("fignote", fontName="Sans-It", fontSize=8, leading=10, textColor=MID, spaceBefore=2, spaceAfter=6),
     "cell": ParagraphStyle("cell", fontName="Sans", fontSize=8.8, leading=11, textColor=INK),
     "cellb": ParagraphStyle("cellb", fontName="Sans-Bold", fontSize=8.8, leading=11, textColor=INK),
@@ -135,8 +136,13 @@ class Doc(BaseDocTemplate):
         self.noheader, self.nofooter, self.blank = set(), set(), set()
         odd = Frame(M_IN, M_BOT, FW, FH, id="odd", leftPadding=0, rightPadding=0, topPadding=0, bottomPadding=0)
         even = Frame(M_OUT, M_BOT, FW, FH, id="even", leftPadding=0, rightPadding=0, topPadding=0, bottomPadding=0)
-        self.addPageTemplates([PageTemplate("odd", [odd], onPageEnd=self.decorate, autoNextPageTemplate="even"),
-                               PageTemplate("even", [even], onPageEnd=self.decorate, autoNextPageTemplate="odd")])
+        self.addPageTemplates([PageTemplate("odd", [odd], onPageEnd=self.decorate),
+                               PageTemplate("even", [even], onPageEnd=self.decorate)])
+
+    def handle_pageBegin(self):
+        # recto (odd) pages carry the gutter on the left, verso (even) pages on the right
+        self.pageTemplate = self.pageTemplates[0 if (self.page + 1) % 2 == 1 else 1]
+        super().handle_pageBegin()
 
     def beforeDocument(self):
         self.section = ""
@@ -176,8 +182,11 @@ class Doc(BaseDocTemplate):
 # ------------------------------------------------------------------ helpers
 def heading_chapter(title, section=None, toc_level=1, key=None, first=False, any_page=False):
     out = [] if first else ([PageBreak()] if any_page else recto())
+    shown = esc(title)
+    if len(title) > 44 and " and " in title:
+        shown = esc(title).replace(" and ", "<br/>and ", 1)
     out += [Marker(section=section or title, toc=title, toc_level=toc_level, key=key, noheader=True), Spacer(1, 30),
-            P(title, "h1"), HRule(FW, 1.2), Spacer(1, 12)]
+            Paragraph(shown, ST["h1"]), HRule(FW, 1.2), Spacer(1, 12)]
     return out
 
 
@@ -301,7 +310,7 @@ def figure_block(fig):
     if fig["type"] == "table":
         out.append(data_table(fig))
         if fig.get("note"):
-            out.append(P(fig["note"], "fignote"))
+            out.append(P(fig["note"], "figinfo"))
     else:
         out.append(chart(fig, width=min(FW, 440)))
         if fig["type"] == "line":
@@ -370,11 +379,14 @@ def r_prioritising(it, label):
         rows = g["rows"][:3] + [["12:00–14:00", "lunch break", "", "", "", ""]] + g["rows"][3:]
         t = data_table({"columns": g["columns"], "rows": rows}, zebra=False)
         t.setStyle(TableStyle([("SPAN", (1, 4), (-1, 4)), ("BACKGROUND", (0, 4), (-1, 4), SHADE)]))
-        parts += [P("Who is busy, by day and start time", "figtitle"), t, P(g["note"] + " Key: " + g["legend"] + ".", "fignote")]
+        parts += [P("Who is busy, by day and start time", "figtitle"), t, P(g["note"] + " Key: " + g["legend"] + ".", "figinfo")]
     elif it["kind"] == "critical":
         parts += [P("Project tasks", "figtitle"), data_table(it["table"]), Spacer(1, 6)]
     else:
-        parts += [P("Constraints", "figtitle")] + [Paragraph(esc(c), ST["bullet"], bulletText="•") for c in it["constraints"]]
+        parts += [P(it["question"], "stem"), P("Constraints", "figtitle")]
+        parts += [Paragraph(esc(c), ST["bullet"], bulletText="•") for c in it["constraints"]]
+        parts += [Spacer(1, 4), options_block(it["options"])]
+        return item_block(parts)
     parts += [P(it["question"], "stem"), options_block(it["options"])]
     return item_block(parts)
 
@@ -384,6 +396,12 @@ RENDER = {"verbal": r_verbal, "numerical": r_numerical, "abstract": r_abstract, 
 
 
 # ------------------------------------------------------------------ solutions
+def sol_head(it):
+    if "most" in it:
+        return f"Question {it['n']} — Most effective: {it['most']} · Least effective: {it['least']}"
+    return f"Question {it['n']} — Answer: {it['answer']}"
+
+
 def sol_verbal(it):
     out = []
     for L in "ABCD":
@@ -394,7 +412,7 @@ def sol_verbal(it):
 def sol_numerical(it):
     i = "ABCD".index(it["answer"])
     out = [Paragraph(esc(s), ST["solb"], bulletText="›") for s in it["steps"]]
-    out.append(Paragraph(f"<b>Answer: {it['answer']}</b> ({esc(it['options'][i])})", ST["sol"]))
+    out.append(Paragraph(f"<b>Correct option: {it['answer']}</b> ({esc(it['options'][i])})", ST["sol"]))
     return out
 
 
@@ -406,8 +424,7 @@ def sol_abstract(it):
 
 
 def sol_sjt(it):
-    out = [Paragraph(f"<b>Most effective: {it['most']} · Least effective: {it['least']} · Ranking: {esc(it['ranking'])}</b> "
-                     f"<i>({esc(it['competency'])})</i>", ST["sol"])]
+    out = [Paragraph(f"<b>Ranking: {esc(it['ranking'])}</b> <i>({esc(it['competency'])})</i>", ST["sol"])]
     for L in "ABCD":
         out.append(Paragraph(f"<b>{L}.</b> " + esc(it["explanations"][L]), ST["solb"]))
     return out
@@ -442,7 +459,8 @@ def answer_key_table(items, key="answer", label_fn=None):
 def title_page(meta):
     big = ParagraphStyle("tt", fontName="Sans-Bold", fontSize=30, leading=36, alignment=TA_CENTER, textColor=INK)
     sub = ParagraphStyle("ts", fontName="Serif-It", fontSize=13, leading=19, alignment=TA_CENTER, textColor=INK)
-    return [Marker(noheader=True, nofooter=True), Spacer(1, 1.9 * inch), Paragraph(esc(meta["title"]), big), Spacer(1, 18),
+    t = esc(meta["title"]).replace(" for EPSO", "<br/>for EPSO")
+    return [Marker(noheader=True, nofooter=True), Spacer(1, 1.9 * inch), Paragraph(t, big), Spacer(1, 18),
             HRuleCentered(1.6 * inch), Spacer(1, 18), Paragraph(esc(meta["subtitle"]), sub), Spacer(1, 2.6 * inch),
             Paragraph(esc(meta["author"]).upper(), ParagraphStyle("ta", fontName="Sans-Semi", fontSize=11, leading=14, alignment=TA_CENTER))]
 
@@ -537,7 +555,7 @@ def answer_sheet(mock_title):
 
 def lined_table(cols, widths, nrows, h=26):
     data = [[Paragraph(esc(c), ST["cellb"]) for c in cols]] + [[""] * len(cols) for _ in range(nrows)]
-    t = Table(data, colWidths=widths, rowHeights=[18] + [h] * nrows, hAlign="LEFT")
+    t = Table(data, colWidths=widths, rowHeights=[18] + [h] * nrows, hAlign="LEFT", repeatRows=1)
     t.setStyle(TableStyle([("GRID", (0, 0), (-1, -1), 0.4, RULE), ("BACKGROUND", (0, 0), (-1, 0), SHADE2)]))
     return t
 
@@ -611,13 +629,13 @@ def build(path=OUT / "interior.pdf"):
         story += heading_chapter(f"Solutions — {s['title']}", section=f"Solutions — {s['title']}", key=f"sol_{s['key']}")
         story += [P("Answer key", "h3"), answer_key_table(s["items"]), Spacer(1, 10), P("Worked solutions", "h3")]
         for it in s["items"]:
-            body = [P(f"Question {it['n']}", "solh")] + SOL[s["type"]](it)
+            body = [P(sol_head(it), "solh")] + SOL[s["type"]](it)
             story.append(KeepTogether(body))
     for mk in book["mocks"]:
         story += heading_chapter(f"Solutions — {mk['title']}", section=f"Solutions — {mk['title']}", key=f"sol_{mk['key']}")
         story += [P("Answer key", "h3"), answer_key_table(mk["items"]), Spacer(1, 10), P("Worked solutions", "h3")]
         for it in mk["items"]:
-            body = [P(f"Question {it['n']}", "solh")] + SOL[it["type"]](it)
+            body = [P(sol_head(it), "solh")] + SOL[it["type"]](it)
             story.append(KeepTogether(body))
 
     # Back matter
@@ -632,15 +650,15 @@ def build(path=OUT / "interior.pdf"):
     story += heading_chapter("Error Log", toc_level=0, key="errorlog")
     story += [P("For every question you get wrong, write one line. Re-read this log before each mock exam and on the day before your test.", "body"),
               Spacer(1, 6), lined_table(["Set / Q", "What I did", "What I should have done", "Rule to remember"],
-                                        [FW * 0.13, FW * 0.29, FW * 0.29, FW * 0.29], 22)]
+                                        [FW * 0.13, FW * 0.29, FW * 0.29, FW * 0.29], 19)]
     story += [PageBreak(), lined_table(["Set / Q", "What I did", "What I should have done", "Rule to remember"],
-                                       [FW * 0.13, FW * 0.29, FW * 0.29, FW * 0.29], 24)]
+                                       [FW * 0.13, FW * 0.29, FW * 0.29, FW * 0.29], 25)]
 
     story += heading_chapter("Answer Sheets", toc_level=0, key="sheets")
     story += [P("Photocopy or tear out these sheets for the mock exams.", "body")]
     for i, mk in enumerate(book["mocks"]):
         if i:
-            story.append(PageBreak())
+            story += recto()
         story += [Spacer(1, 8), answer_sheet(mk["title"])]
 
     story += heading_chapter("A Final Word", toc_level=0, key="final")

@@ -111,11 +111,11 @@ def abstract_frame(elements, size=72, label=None):
                 d.add(Rect(cx + qx * h, cy + qy * h, h, h, fillColor=BLACK if qi == e["quad"] else WHITE,
                            strokeColor=BLACK, strokeWidth=0.9))
         elif k == "dots":
-            n = e["count"]; r = S * 0.028
-            gap = S * 0.09
+            n = e["count"]; r = S * 0.04
+            gap = S * 0.115
             rows = [n] if n <= 3 else ([3, n - 3] if n <= 6 else [3, 3, n - 6])
             if centre_taken and not has_orbit:
-                y0 = S * 0.31
+                y0 = S * 0.33
             else:
                 y0 = cy + gap * (len(rows) - 1) / 2
             for ri, cnt in enumerate(rows):

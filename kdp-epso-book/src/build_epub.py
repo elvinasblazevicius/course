@@ -68,7 +68,7 @@ td.n { text-align: right; }
 .note { font-size: 0.8em; font-style: italic; color: #555; }
 .tip { background: #eee; border-left: 4px solid #222; padding: 0.5em 0.7em; margin: 0.8em 0; }
 .fig { text-align: center; margin: 0.4em 0; }
-.fig img { max-width: 100%; }
+.fig img { width: 100%; max-width: 100%; }
 .key { font-family: sans-serif; }
 .back { font-size: 0.85em; font-family: sans-serif; }
 .center { text-align: center; }
@@ -125,8 +125,8 @@ def q_html(it, anchor, sol_href, label):
     elif t == "numerical":
         h += figure_html(it["figure"], anchor) + f'<p class="stem">{e(it["question"])}</p>' + opts_html(it["options"])
     elif t == "abstract":
-        s1 = png_of(abstract_row(it["series"], size=60, question_mark=True), anchor + "_s", dpi=120, colors=4)
-        s2 = png_of(abstract_row(it["options"], size=60, labels=list("ABCDE")), anchor + "_o", dpi=120, colors=4)
+        s1 = png_of(abstract_row(it["series"], size=60, question_mark=True), anchor + "_s", dpi=230, colors=4)
+        s2 = png_of(abstract_row(it["options"], size=60, labels=list("ABCDE")), anchor + "_o", dpi=230, colors=4)
         h += ('<p class="stem">Which figure comes next in the series?</p>'
               f'<div class="fig"><img src="{s1}" alt="Series of five figures"/></div><p class="stem">Answer options</p>'
               f'<div class="fig"><img src="{s2}" alt="Answer options A to E"/></div>')
@@ -157,7 +157,9 @@ def q_html(it, anchor, sol_href, label):
         elif it["kind"] == "critical":
             h += '<p class="stem">Project tasks</p>' + table_html(it["table"])
         else:
-            h += '<p class="stem">Constraints</p><ul>' + "".join(f"<li>{e(c)}</li>" for c in it["constraints"]) + "</ul>"
+            h += f'<p class="stem">{e(it["question"])}</p><p class="stem">Constraints</p><ul>' + "".join(f"<li>{e(c)}</li>" for c in it["constraints"]) + "</ul>"
+            h += opts_html(it["options"]) + f'<p class="small"><a href="{sol_href}">Go to the solution</a></p>'
+            return h
         h += f'<p class="stem">{e(it["question"])}</p>' + opts_html(it["options"])
     h += f'<p class="small"><a href="{sol_href}">Go to the solution</a></p>'
     return h
@@ -288,10 +290,16 @@ def build(path=OUT / "kindle.epub"):
     nav_items = ""
     groups = [("Front matter", [d for d in docs[:2]]), ]
     lis = []
-    for fn, title, _, lvl in docs:
-        if lvl is None:
-            continue
-        lis.append(f'<li><a href="text/{fn}">{e(title)}</a></li>')
+    groups = [("Part I — Understanding the Tests", lambda f: f.startswith("guide") and f != "guide0.xhtml"),
+              ("Part II — Practice Sets", lambda f: f.startswith("set_")),
+              ("Part III — Mock Exams", lambda f: f.startswith("mock")),
+              ("Part IV — Answers and Worked Solutions", lambda f: f.startswith("sol_"))]
+    lis.append('<li><a href="text/guide0.xhtml">How to Use This Book</a></li>')
+    for gname, pred in groups:
+        members = [(fn, title) for fn, title, _, lvl in docs if lvl is not None and pred(fn)]
+        sub = "".join(f'<li><a href="text/{fn}">{e(title)}</a></li>' for fn, title in members)
+        lis.append(f'<li><a href="text/{members[0][0]}">{e(gname)}</a><ol>{sub}</ol></li>')
+    lis.append('<li><a href="text/final.xhtml">Score Tracker and Final Word</a></li>')
     nav = f"""<?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml" xmlns:epub="http://www.idpf.org/2007/ops" xml:lang="en" lang="en">

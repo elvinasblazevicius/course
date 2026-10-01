@@ -1116,7 +1116,7 @@
    "Bruno must take either the press summary or the event logistics.",
    "Chiara cannot take the website update."
   ],
-  "question": "Four colleagues — Bruno, Chiara, Dawid, Filip — must each take exactly one of four tasks: the budget report, the event logistics, the website update and the press summary. Taking all the constraints below into account, who must take the budget report?",
+  "question": "Four colleagues — Bruno, Chiara, Dawid, Filip — must each take exactly one of four tasks: the budget report, the event logistics, the website update and the press summary. Taking all the constraints listed into account, who must take the budget report?",
   "options": [
    "Bruno",
    "Dawid",
@@ -1138,7 +1138,7 @@
    "Chiara cannot take the event logistics.",
    "Chiara cannot take the budget report."
   ],
-  "question": "Four colleagues — Bruno, Chiara, Dawid, Filip — must each take exactly one of four tasks: the budget report, the event logistics, the website update and the press summary. Taking all the constraints below into account, who must take the press summary?",
+  "question": "Four colleagues — Bruno, Chiara, Dawid, Filip — must each take exactly one of four tasks: the budget report, the event logistics, the website update and the press summary. Taking all the constraints listed into account, who must take the press summary?",
   "options": [
    "Dawid",
    "Chiara",
@@ -1160,7 +1160,7 @@
    "Filip cannot take the event logistics.",
    "Dawid cannot take the event logistics."
   ],
-  "question": "Four colleagues — Dawid, Filip, Eleni, Chiara — must each take exactly one of four tasks: the budget report, the event logistics, the website update and the press summary. Taking all the constraints below into account, who must take the press summary?",
+  "question": "Four colleagues — Dawid, Filip, Eleni, Chiara — must each take exactly one of four tasks: the budget report, the event logistics, the website update and the press summary. Taking all the constraints listed into account, who must take the press summary?",
   "options": [
    "Chiara",
    "Dawid",
@@ -1182,7 +1182,7 @@
    "Bruno cannot take the website update.",
    "Bruno cannot take the event logistics."
   ],
-  "question": "Four colleagues — Dawid, Anna, Bruno, Filip — must each take exactly one of four tasks: the budget report, the event logistics, the website update and the press summary. Taking all the constraints below into account, who must take the event logistics?",
+  "question": "Four colleagues — Dawid, Anna, Bruno, Filip — must each take exactly one of four tasks: the budget report, the event logistics, the website update and the press summary. Taking all the constraints listed into account, who must take the event logistics?",
   "options": [
    "Filip",
    "Bruno",
@@ -1204,7 +1204,7 @@
    "Dawid must take either the budget report or the press summary.",
    "Anna cannot take the website update."
   ],
-  "question": "Four colleagues — Chiara, Dawid, Filip, Anna — must each take exactly one of four tasks: the budget report, the event logistics, the website update and the press summary. Taking all the constraints below into account, who must take the budget report?",
+  "question": "Four colleagues — Chiara, Dawid, Filip, Anna — must each take exactly one of four tasks: the budget report, the event logistics, the website update and the press summary. Taking all the constraints listed into account, who must take the budget report?",
   "options": [
    "Anna",
    "Dawid",
@@ -1226,7 +1226,7 @@
    "Filip cannot take the press summary.",
    "Anna cannot take the website update."
   ],
-  "question": "Four colleagues — Dawid, Filip, Bruno, Anna — must each take exactly one of four tasks: the budget report, the event logistics, the website update and the press summary. Taking all the constraints below into account, who must take the press summary?",
+  "question": "Four colleagues — Dawid, Filip, Bruno, Anna — must each take exactly one of four tasks: the budget report, the event logistics, the website update and the press summary. Taking all the constraints listed into account, who must take the press summary?",
   "options": [
    "Filip",
    "Anna",
@@ -1248,7 +1248,7 @@
    "Filip cannot take the budget report.",
    "Anna cannot take the budget report."
   ],
-  "question": "Four colleagues — Eleni, Filip, Anna, Dawid — must each take exactly one of four tasks: the budget report, the event logistics, the website update and the press summary. Taking all the constraints below into account, who must take the budget report?",
+  "question": "Four colleagues — Eleni, Filip, Anna, Dawid — must each take exactly one of four tasks: the budget report, the event logistics, the website update and the press summary. Taking all the constraints listed into account, who must take the budget report?",
   "options": [
    "Eleni",
    "Anna",

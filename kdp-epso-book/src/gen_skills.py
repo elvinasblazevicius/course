@@ -377,7 +377,7 @@ def po_assign(rng, tgt):
         return {"kind": "assign", "constraints": lines,
                 "question": (f"Four colleagues — {', '.join(staff)} — must each take exactly one of four tasks: the "
                              f"{', the '.join(t.lower() for t in tasks[:-1])} and the {tasks[-1].lower()}. "
-                             f"Taking all the constraints below into account, who must take the {qt.lower()}?"),
+                             f"Taking all the constraints listed into account, who must take the {qt.lower()}?"),
                 "options": opts, "answer": L4[tgt],
                 "explanation": ("List, for each task, who is still allowed to take it, and start with the task or person that has the fewest "
                                 "possibilities; each forced choice removes that person from the other tasks. The only allocation that satisfies "

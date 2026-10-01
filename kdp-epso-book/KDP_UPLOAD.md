@@ -1,12 +1,12 @@
 # KDP Upload Guide — Reasoning Tests Workbook for EPSO Exams
 
-All files are in `build/`. To regenerate everything, run `./build.sh` (it needs Python 3.11 and `pdftoppm`).
+All files are in `build/`. To regenerate everything, run `./build.sh` (it needs Python 3.11 and `pdftoppm`). The build ends with `src/check_pdf.py`, an automated KDP pre-flight check (page size, embedded fonts, gutter-aware margins, cover width).
 
 | Format | Manuscript | Cover | Trim / spec |
 |---|---|---|---|
 | Paperback | `interior.pdf` (343 pp) | `cover_paperback.pdf` (17.5224 × 11.25 in, spine 0.7724 in) | 8.25 × 11 in, black & white, white paper, **no bleed**, matte |
 | Hardcover (case laminate) | `interior.pdf` (same file) | `cover_hardcover.pdf` (19.0354 × 12.418 in, spine 0.9594 in) | 8.25 × 11 in, black & white, white paper, matte |
-| Kindle eBook | `kindle.epub` (EPUBCheck: 0 errors/0 warnings, 0.9 MB) | `kindle_cover.jpg` (1600 × 2560 px) | Reflowable |
+| Kindle eBook | `kindle.epub` (EPUBCheck: 0 errors/0 warnings, 1.2 MB) | `kindle_cover.jpg` (1600 × 2560 px) | Reflowable |
 
 > **Hardcover cover check (do this once):** in KDP, open *Cover → Download template* for 8.25 × 11 in, white paper and 343 pages. If the template's total width, height or spine differ from the values above, regenerate with the exact numbers:
 > `python src/cover.py --hc-width <W> --hc-height <H> --hc-spine <S>`
@@ -71,7 +71,7 @@ All files are in `build/`. To regenerate everything, run `./build.sh` (it needs 
 |---|---|---|---|
 | Paperback | $24.99 / €24.99 / £21.99 | $1.00 + 343 × $0.012 ≈ $5.12 | 60% × 24.99 − 5.12 ≈ **$9.87** |
 | Hardcover | $34.99 / €34.99 / £29.99 | $6.80 + 343 × $0.012 ≈ $10.92 | 60% × 34.99 − 10.92 ≈ **$10.07** |
-| Kindle | $9.99 / €9.99 / £8.99 (70% band) | delivery ≈ 0.9 MB × $0.15 ≈ $0.14 | ≈ **$6.85** |
+| Kindle | $9.99 / €9.99 / £8.99 (70% band) | delivery ≈ 1.2 MB × $0.15 ≈ $0.18 | ≈ **$6.87** |
 
 The core EU markets are **Amazon.de, .fr, .es, .it, .nl, .pl, .se and .com.be**. Enable expanded distribution for the paperback.
 
