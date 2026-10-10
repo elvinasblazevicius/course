@@ -1,0 +1,199 @@
+<!doctype html>
+<html><head><meta charset="utf-8">
+<style>
+@font-face{font-family:Fraunces;font-weight:400;font-style:normal;src:url(fonts/fraunces-latin-400-normal.woff2)}
+@font-face{font-family:Fraunces;font-weight:400;font-style:italic;src:url(fonts/fraunces-latin-400-italic.woff2)}
+@font-face{font-family:Fraunces;font-weight:600;font-style:normal;src:url(fonts/fraunces-latin-600-normal.woff2)}
+@font-face{font-family:Fraunces;font-weight:600;font-style:italic;src:url(fonts/fraunces-latin-600-italic.woff2)}
+@font-face{font-family:Fraunces;font-weight:900;font-style:normal;src:url(fonts/fraunces-latin-900-normal.woff2)}
+@font-face{font-family:Fraunces;font-weight:900;font-style:italic;src:url(fonts/fraunces-latin-900-italic.woff2)}
+@font-face{font-family:Brico;font-weight:400;src:url(fonts/bricolage-grotesque-latin-400-normal.woff2)}
+@font-face{font-family:Brico;font-weight:600;src:url(fonts/bricolage-grotesque-latin-600-normal.woff2)}
+@font-face{font-family:Brico;font-weight:800;src:url(fonts/bricolage-grotesque-latin-800-normal.woff2)}
+
+:root{
+  --cream:#FFF6EC; --sun:#FFD84A; --wine:#5E0626; --deep:#8E0B3E;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html,body{width:12.6in;height:9.25in;overflow:hidden;background:#B80D4D}
+.abs{position:absolute}
+#wrap{position:relative;width:12.6in;height:9.25in;overflow:hidden}
+
+/* ---------- grounds ---------- */
+#ground{left:0;top:0;width:12.6in;height:9.25in;
+  background:
+    radial-gradient(3.3in 2.7in at 9.475in 4.6in, rgba(255,140,90,.9), rgba(255,95,95,.5) 45%, rgba(255,60,110,0) 100%),
+    radial-gradient(7in 6in at 9.5in 3.5in, #F0245F 0%, #D6125A 45%, #B00C4E 80%, #8F0943 100%),
+    #B00C4E;}
+#background{left:0;top:0;width:6.125in;height:9.25in;
+  background:radial-gradient(7in 7in at 3.2in 2.6in,#B81052 0%,#A20C4B 55%,#860940 100%);}
+#spine{left:6.125in;top:0;width:0.35in;height:9.25in;background:linear-gradient(90deg,#7D0838,#930B43 30%,#930B43 70%,#7D0838)}
+#grain{left:0;top:0;width:12.6in;height:9.25in;opacity:.10;mix-blend-mode:overlay}
+
+/* ---------- front ---------- */
+#front{left:6.475in;top:0;width:6.125in;height:9.25in}
+/* trim-centred column: trim is 0..6in of this panel (right 0.125 is bleed) */
+.col{position:absolute;left:0;width:6in;text-align:center}
+
+#kicker{top:0.52in;font:italic 400 17pt/1 Fraunces;color:var(--cream);letter-spacing:.01em}
+#kicker span{display:inline-block;padding:0 .14in;position:relative}
+#kicker span:before,#kicker span:after{content:"";position:absolute;top:52%;width:.42in;height:1.2pt;background:var(--sun)}
+#kicker span:before{right:100%}#kicker span:after{left:100%}
+
+#hundred{top:0.66in;font:900 176pt/1 Fraunces;color:var(--cream);letter-spacing:-.02em;
+  font-variation-settings:"SOFT" 100,"WONK" 1;
+  text-shadow:
+   3.0px 0.0px 0 #5E0626,2.77px 1.15px 0 #5E0626,2.12px 2.12px 0 #5E0626,1.15px 2.77px 0 #5E0626,0.0px 3.0px 0 #5E0626,-1.15px 2.77px 0 #5E0626,-2.12px 2.12px 0 #5E0626,-2.77px 1.15px 0 #5E0626,-3.0px 0.0px 0 #5E0626,-2.77px -1.15px 0 #5E0626,-2.12px -2.12px 0 #5E0626,-1.15px -2.77px 0 #5E0626,-0.0px -3.0px 0 #5E0626,1.15px -2.77px 0 #5E0626,2.12px -2.12px 0 #5E0626,2.77px -1.15px 0 #5E0626,
+   1px 1px 0 #F6C9A8, 2px 2px 0 #E9A27F, 3px 3px 0 #C8466A,4px 4px 0 #A51A4B,5px 5px 0 #8E0B3E,
+   6px 6px 0 #8E0B3E,7px 7px 0 #7E0837,8px 8px 0 #7E0837,9px 9px 0 #6E0730,10px 10px 0 #6E0730,
+   11px 11px 0 #5E0626,12px 12px 0 #5E0626,
+   14px 18px 22px rgba(60,0,20,.45);}
+
+#tips{top:2.98in;font:800 30pt/1 Brico;color:var(--sun);letter-spacing:.045em;
+  text-shadow:2.0px 0.0px 0 #5E0626,1.85px 0.77px 0 #5E0626,1.41px 1.41px 0 #5E0626,0.77px 1.85px 0 #5E0626,0.0px 2.0px 0 #5E0626,-0.77px 1.85px 0 #5E0626,-1.41px 1.41px 0 #5E0626,-1.85px 0.77px 0 #5E0626,-2.0px 0.0px 0 #5E0626,-1.85px -0.77px 0 #5E0626,-1.41px -1.41px 0 #5E0626,-0.77px -1.85px 0 #5E0626,-0.0px -2.0px 0 #5E0626,0.77px -1.85px 0 #5E0626,1.41px -1.41px 0 #5E0626,1.85px -0.77px 0 #5E0626,0 3px 0 #5E0626, 0 6px 14px rgba(60,0,20,.35)}
+
+#dating{top:4.10in;left:0;font:italic 900 115pt/1 Fraunces;color:var(--cream);letter-spacing:-.015em;
+  font-variation-settings:"SOFT" 100,"WONK" 1;
+  text-shadow:
+   2.6px 0.0px 0 #5E0626,2.4px 0.99px 0 #5E0626,1.84px 1.84px 0 #5E0626,0.99px 2.4px 0 #5E0626,0.0px 2.6px 0 #5E0626,-0.99px 2.4px 0 #5E0626,-1.84px 1.84px 0 #5E0626,-2.4px 0.99px 0 #5E0626,-2.6px 0.0px 0 #5E0626,-2.4px -0.99px 0 #5E0626,-1.84px -1.84px 0 #5E0626,-0.99px -2.4px 0 #5E0626,-0.0px -2.6px 0 #5E0626,0.99px -2.4px 0 #5E0626,1.84px -1.84px 0 #5E0626,2.4px -0.99px 0 #5E0626,
+   1px 1px 0 #F6C9A8, 2px 2px 0 #E9A27F, 3px 3px 0 #C8466A,4px 4px 0 #A51A4B,5px 5px 0 #8E0B3E,
+   6px 6px 0 #8E0B3E,7px 7px 0 #7E0837,8px 8px 0 #6E0730,9px 9px 0 #5E0626,
+   12px 16px 20px rgba(60,0,20,.45);}
+
+#apps{top:6.14in;font:800 30pt/1 Brico;color:var(--sun);letter-spacing:.045em;
+  text-shadow:2.0px 0.0px 0 #5E0626,1.85px 0.77px 0 #5E0626,1.41px 1.41px 0 #5E0626,0.77px 1.85px 0 #5E0626,0.0px 2.0px 0 #5E0626,-0.77px 1.85px 0 #5E0626,-1.41px 1.41px 0 #5E0626,-1.85px 0.77px 0 #5E0626,-2.0px 0.0px 0 #5E0626,-1.85px -0.77px 0 #5E0626,-1.41px -1.41px 0 #5E0626,-0.77px -1.85px 0 #5E0626,-0.0px -2.0px 0 #5E0626,0.77px -1.85px 0 #5E0626,1.41px -1.41px 0 #5E0626,1.85px -0.77px 0 #5E0626,0 3px 0 #5E0626, 0 6px 14px rgba(60,0,20,.35)}
+
+#sub{top:6.76in;font:italic 400 17pt/1.32 Fraunces;color:var(--cream);text-shadow:0 1px 2px rgba(80,0,30,.55),0 0 10px rgba(110,0,40,.45)}
+
+#author{top:8.28in;font:600 20pt/1 Brico;color:var(--cream);letter-spacing:.16em}
+
+#art{left:0;top:0;width:6in;height:9.25in;pointer-events:none}
+
+/* ---------- spine ---------- */
+#spinetext{left:6.125in;top:0;width:0.35in;height:9.25in}
+#spinetext .rot{position:absolute;left:50%;top:50%;width:8.6in;transform:translate(-50%,-50%) rotate(90deg);
+  display:flex;align-items:center;justify-content:space-between;height:0.35in}
+.sp-title{font:900 13.5pt/1 Fraunces;color:var(--cream);letter-spacing:.01em;white-space:nowrap}
+.sp-title b{color:var(--sun);font-weight:900}
+.sp-author{font:600 10.5pt/1 Brico;color:var(--sun);letter-spacing:.14em;white-space:nowrap}
+
+/* ---------- back ---------- */
+#back{left:0;top:0;width:6.125in;height:9.25in}
+/* live area: trim from x=.125; keep .5in safe */
+#backflow{position:absolute;left:0.72in;top:0.78in;width:4.8in;color:var(--cream)}
+.bk{position:relative}
+#hook{font:italic 600 17.5pt/1.24 Fraunces;color:var(--cream)}
+#hook em{font-style:italic;color:var(--sun)}
+#rule{margin:.26in 0 .2in;width:.6in;height:2pt;background:var(--sun)}
+#body{font:400 11.2pt/1.45 Brico;color:var(--cream)}
+#inside{margin-top:.24in;font:800 11pt/1 Brico;color:var(--sun);letter-spacing:.06em}
+#list{margin-top:.13in;font:400 11pt/1.32 Brico;color:var(--cream);list-style:none}
+#list li{position:relative;padding-left:.24in;margin-bottom:.055in}
+#list li:before{content:"";position:absolute;left:0;top:.055in;width:.11in;height:.11in;
+  background:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 22'%3E%3Cpath fill='%23FFD84A' d='M12 21.4 10.3 19.9C4.1 14.3 0 10.6 0 6.1 0 2.6 2.7 0 6.2 0c2 0 3.9.9 5.8 2.6C13.9.9 15.8 0 17.8 0 21.3 0 24 2.6 24 6.1c0 4.5-4.1 8.2-10.3 13.8z'/%3E%3C/svg%3E") no-repeat center/contain}
+#close{margin-top:.16in;font:italic 400 12pt/1.38 Fraunces;color:var(--cream)}
+#imprint{position:absolute;left:.72in;top:8.22in;font:800 10.5pt/1 Brico;color:var(--cream);letter-spacing:.12em}
+#shelf{position:absolute;left:.72in;top:8.45in;font:400 9pt/1 Brico;color:#FFE3EA;letter-spacing:.08em}
+</style></head>
+<body><div id="wrap">
+<div id="ground" class="abs"></div>
+<div id="background" class="abs"></div>
+<div id="spine" class="abs"></div>
+
+<!-- FRONT -->
+<div id="front" class="abs">
+  <div id="kicker" class="col"><span>A Practical Guide for Women</span></div>
+  <div id="hundred" class="col">100</div>
+  <div id="tips" class="col">TIPS FOR SUCCESSFUL</div>
+  <!-- focal object: glossy heart (the connection) + incoming-message bubble, sitting behind "Dating" -->
+  <svg id="art" class="abs" viewBox="0 0 576 888">
+    <defs>
+      <radialGradient id="heart" cx=".36" cy=".28" r=".85">
+        <stop offset="0" stop-color="#FF8A5C"/><stop offset=".35" stop-color="#FF3A3A"/><stop offset=".75" stop-color="#E0102F"/><stop offset="1" stop-color="#A3001F"/>
+      </radialGradient>
+      <linearGradient id="shine" x1="0" y1="0" x2="0" y2="1">
+        <stop offset="0" stop-color="#fff" stop-opacity=".95"/><stop offset="1" stop-color="#fff" stop-opacity="0"/>
+      </linearGradient>
+      <linearGradient id="bub" x1="0" y1="0" x2=".3" y2="1">
+        <stop offset="0" stop-color="#FFFFFF"/><stop offset="1" stop-color="#FFE1E7"/>
+      </linearGradient>
+      <filter id="shadow" x="-30%" y="-30%" width="160%" height="170%">
+        <feGaussianBlur in="SourceAlpha" stdDeviation="3"/><feOffset dx="3" dy="5"/>
+        <feComponentTransfer><feFuncA type="linear" slope=".5"/></feComponentTransfer>
+        <feFlood flood-color="#4A0019"/><feComposite operator="in" in2="SourceAlpha"/>
+        <feMerge><feMergeNode/><feMergeNode in="SourceGraphic"/></feMerge>
+      </filter>
+      <filter id="bigshadow" x="-30%" y="-30%" width="160%" height="170%">
+        <feGaussianBlur in="SourceAlpha" stdDeviation="14"/><feOffset dx="10" dy="22"/>
+        <feComponentTransfer><feFuncA type="linear" slope=".5"/></feComponentTransfer>
+        <feFlood flood-color="#4A0019"/><feComposite operator="in" in2="SourceAlpha"/>
+        <feMerge><feMergeNode/><feMergeNode in="SourceGraphic"/></feMerge>
+      </filter>
+      <path id="hp" d="M0 30 C-6 18 -30 4 -30 -14 C-30 -28 -20 -36 -9 -36 C-3 -36 0 -31 0 -27 C0 -31 3 -36 9 -36 C20 -36 30 -28 30 -14 C30 4 6 18 0 30Z"/>
+      <path id="spark" d="M0 -14 C2 -3 3 -2 14 0 C3 2 2 3 0 14 C-2 3 -3 2 -14 0 C-3 -2 -2 -3 0 -14Z"/>
+    </defs>
+
+    <!-- the heart -->
+    <g transform="translate(288 478) rotate(-6) scale(3.85)" filter="url(#bigshadow)">
+      <use href="#hp" fill="#FFF6EC" transform="scale(1.075) translate(0 .6)"/>
+      <use href="#hp" fill="url(#heart)"/>
+      <path fill="url(#shine)" opacity=".9" d="M-24 -15 C-24 -26 -16 -32 -9 -32 C-4 -32 -1.5 -29 -1.5 -26 C-7 -23 -15 -19 -24 -12Z"/>
+      <ellipse cx="15" cy="-24" rx="5" ry="2.6" fill="#fff" opacity=".6" transform="rotate(32 15 -24)"/>
+      <path d="M22 4 C17 12 10 18 4 23" stroke="#fff" stroke-opacity=".35" stroke-width="1.6" fill="none" stroke-linecap="round"/>
+    </g>
+
+    <!-- incoming message: typing bubble at the heart's shoulder -->
+    <g transform="translate(468 372) rotate(8)" filter="url(#shadow)">
+      <path fill="url(#bub)" d="M-52 -30 H52 Q74 -30 74 -8 V8 Q74 30 52 30 H-30 L-58 50 L-50 30 H-52 Q-74 30 -74 8 V-8 Q-74 -30 -52 -30Z"/>
+      <circle cx="-26" cy="0" r="9" fill="#E0104A"/><circle cx="0" cy="0" r="9" fill="#F0406E"/><circle cx="26" cy="0" r="9" fill="#F98BA6"/>
+    </g>
+
+    <!-- small hearts and sparkles -->
+    <g transform="translate(58 612) rotate(-16) scale(.5)" filter="url(#shadow)"><use href="#hp" fill="#FFD84A"/></g>
+    <g transform="translate(40 380) rotate(12) scale(.3)"><use href="#hp" fill="#FFF6EC"/></g>
+    <g transform="translate(520 560) rotate(14) scale(.38)"><use href="#hp" fill="#FFB3C4"/></g>
+    <use href="#spark" fill="#FFF6EC" transform="translate(138 360)"/>
+    <use href="#spark" fill="#FFD84A" transform="translate(526 262) scale(.8)"/>
+    <use href="#spark" fill="#FFF6EC" transform="translate(526 664) scale(.6)"/>
+  </svg>
+  <div id="dating" class="col">Dating</div>
+  <div id="apps" class="col">ON DATING APPS</div>
+  <div id="sub" class="col">To Better Profiles, Clearer Conversations,<br>and More Meaningful Connections</div>
+  <div id="author" class="col">ELENA MARLOWE VALE</div>
+
+
+</div>
+
+<!-- SPINE -->
+<div id="spinetext" class="abs"><div class="rot">
+  <span class="sp-title">100 Tips for Successful <b>Dating on Dating Apps</b></span>
+  <span class="sp-author">ELENA MARLOWE VALE</span>
+</div></div>
+
+<!-- BACK -->
+<div id="back" class="abs">
+  <div id="backflow"><div id="hook" class="bk">Every dating app book tells you to “just be yourself” and “stay positive.” <em>Neither one tells you what to actually write in a bio</em>, how to tell a real match from a time-waster in the first three messages, or when to stop swiping and go outside instead.</div>
+  <div id="rule" class="bk"></div>
+  <div id="body" class="bk">This book is the practical half. One hundred concrete moves for the profile, the opening message, the in-app conversation, and the leap to a real first date – built for the apps as they actually work, not as the marketing copy describes them.</div>
+  <div id="inside" class="bk">INSIDE, AMONG THE HUNDRED</div>
+  <ul id="list" class="bk">
+    <li>A profile and photo set that actually gets matches, not just views</li>
+    <li>Opening lines that get replies, and the ones that kill a conversation</li>
+    <li>Reading red flags in a bio and in the first few messages</li>
+    <li>Getting from chatting to a real date without it fizzling out</li>
+    <li>Staying safe: verification, video calls, and the first meetup</li>
+    <li>Handling ghosting, rejection, and matches that go nowhere</li>
+    <li>Avoiding burnout and swipe fatigue over a long search</li>
+    <li>Knowing when an app conversation is worth your time at all</li>
+  </ul>
+  <div id="close" class="bk">One hundred concrete actions for dating apps, each ending with one thing to do today. No generic positivity, and no pretending every match deserves your time.</div>
+  </div>
+  <div id="imprint">MARLOWE VALE PRESS</div>
+  <div id="shelf">SELF-HELP / DATING &amp; RELATIONSHIPS</div>
+</div>
+
+<svg id="grain" class="abs" viewBox="0 0 1260 925" preserveAspectRatio="none">
+  <filter id="n"><feTurbulence type="fractalNoise" baseFrequency=".9" numOctaves="2" stitchTiles="stitch"/><feColorMatrix type="saturate" values="0"/></filter>
+  <rect width="100%" height="100%" filter="url(#n)"/>
+</svg>
+</div></body></html>
