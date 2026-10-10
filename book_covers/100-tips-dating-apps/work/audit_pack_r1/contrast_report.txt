@@ -1,0 +1,27 @@
+#kicker span      4.78:1 OK
+#hundred          3.62:1 LOW
+#tips             2.59:1 LOW
+#dating           1.00:1 LOW
+#apps             1.01:1 LOW
+#sub              4.75:1 OK
+#author           6.41:1 OK
+.sp-title         7.93:1 OK
+.sp-title b       6.13:1 OK
+.sp-author        6.13:1 OK
+#hook             6.06:1 OK
+#hook em          4.92:1 OK
+#hook em          4.80:1 OK
+#body             6.15:1 OK
+#inside           4.95:1 OK
+#list li          6.52:1 OK
+#list li#1        6.63:1 OK
+#list li#2        6.75:1 OK
+#list li#3        6.86:1 OK
+#list li#4        6.92:1 OK
+#list li#5        6.99:1 OK
+#list li#6        7.10:1 OK
+#list li#7        7.22:1 OK
+#close            7.46:1 OK
+#imprint          8.06:1 OK
+#shelf            7.27:1 OK
+worst 1.00:1

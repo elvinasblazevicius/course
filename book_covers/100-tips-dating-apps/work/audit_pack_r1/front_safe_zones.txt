@@ -1,0 +1,7 @@
+#kicker    left 1.32 right 1.32 top 0.36 bottom 8.34
+#hundred   left 0.67 right 0.67 top 0.24 bottom 5.75
+#tips      left 0.49 right 0.49 top 2.81 bottom 5.69
+#dating    left 0.28 right 0.28 top 3.79 bottom 3.24
+#apps      left 1.13 right 1.13 top 5.97 bottom 2.53
+#sub       left 0.83 right 0.83 top 6.63 bottom 1.76
+#author    left 1.06 right 1.06 top 8.12 bottom 0.54
