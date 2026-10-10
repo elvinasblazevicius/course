@@ -1,0 +1,14 @@
+Wrap 12.6 x 9.25 in (907.2 x 666 pt), 1 page, 300 ppi JPEG q95. Trim 6x9, cream 140 pp, spine 0.35 in, bleed 0.125 in.
+Front cream display ink: 0.32 in from left trim, 0.33 in from right trim, 0.40 in from top trim.
+.sp-title: em box 0.067 / 0.064 in from folds
+.sp-title: em box 0.067 / 0.064 in from folds
+.sp-title: em box 0.067 / 0.064 in from folds
+.sp-author: em box 0.106 / 0.088 in from folds
+Front art (table) is clipped at the front fold; spine and back are flat #CB2A37, so there is no colour step at either fold.
+Back #close: bottom 6.78 in, right 5.61 in. KDP barcode box: x 3.875-5.875, y 7.675-8.875 in.
+Back #close: bottom 7.01 in, right 5.46 in. KDP barcode box: x 3.875-5.875, y 7.675-8.875 in.
+Back #close: bottom 7.24 in, right 3.19 in. KDP barcode box: x 3.875-5.875, y 7.675-8.875 in.
+Back #imprint: bottom 8.14 in, right 2.70 in. KDP barcode box: x 3.875-5.875, y 7.675-8.875 in.
+Back #shelf: bottom 8.35 in, right 3.33 in. KDP barcode box: x 3.875-5.875, y 7.675-8.875 in.
+Contrast: see contrast_report.txt (cream #FFF3E3 on red #CB2A37 = 4.92:1; author ink #2E0F2A on yellow table = 11.6:1).
+Fonts: Fraunces and Bricolage Grotesque (both OFL), rendered to raster.

@@ -1,0 +1,37 @@
+#hundred          4.92:1 OK
+#tips             4.92:1 OK
+#tips             4.92:1 OK
+#dating           4.92:1 OK
+#apps             4.92:1 OK
+#sub              4.92:1 OK
+#sub              4.92:1 OK
+#author          11.59:1 OK
+.sp-title         4.92:1 OK
+.sp-title         4.92:1 OK
+.sp-title         4.92:1 OK
+.sp-author        4.92:1 OK
+#hook             4.92:1 OK
+#hook             4.92:1 OK
+#hook             4.92:1 OK
+#hook             4.92:1 OK
+#hook             4.92:1 OK
+#hook             4.92:1 OK
+#body             4.92:1 OK
+#body             4.92:1 OK
+#body             4.92:1 OK
+#body             4.92:1 OK
+#inside           4.92:1 OK
+#list li          4.92:1 OK
+#list li#1        4.92:1 OK
+#list li#2        4.92:1 OK
+#list li#3        4.92:1 OK
+#list li#4        4.92:1 OK
+#list li#5        4.92:1 OK
+#list li#6        4.92:1 OK
+#list li#7        4.92:1 OK
+#close            4.92:1 OK
+#close            4.92:1 OK
+#close            4.92:1 OK
+#imprint          4.92:1 OK
+#shelf            4.92:1 OK
+worst 4.92:1
