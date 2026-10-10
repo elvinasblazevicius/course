@@ -20,28 +20,28 @@ html,body{width:12.6in;height:9.25in;overflow:hidden;background:#B80D4D}
 #wrap{position:relative;width:12.6in;height:9.25in;overflow:hidden}
 
 /* ---------- grounds: one continuous ground across back, spine and front ---------- */
-#ground{left:0;top:0;width:12.6in;height:9.25in;
+#ground{left:0;top:0;width:12.6in;height:9.25in;background:#A30D4C}
+#frontground{left:6.30in;top:0;width:6.30in;height:9.25in;
   background:
-    radial-gradient(2.9in 0.75in at 9.475in 6.92in, rgba(105,0,42,.42), rgba(105,0,42,0)),
-    radial-gradient(3.1in 5.2in at 9.475in 4.35in, #FF3A72 0%, #EE2468 40%, #CF175F 75%, #A30D4C 100%),
-    radial-gradient(3.2in 5.6in at 3.05in 3.6in, #B91253 0%, #AB0F4F 60%, #A30D4C 100%),
-    #A30D4C;}
+    radial-gradient(2.6in 2.4in at 3.175in 4.15in, rgba(255,120,150,.35), rgba(255,120,150,0)),
+    linear-gradient(180deg,#E8256D 0%,#DF2169 45%,#C81A5E 80%,#B8155A 100%);
+  -webkit-mask-image:linear-gradient(90deg,transparent 0,#000 .35in);mask-image:linear-gradient(90deg,transparent 0,#000 .35in)}
 #grain{left:0;top:0;width:12.6in;height:9.25in;opacity:.10;mix-blend-mode:overlay}
 
 /* ---------- front ---------- */
 #front{left:6.475in;top:0;width:6.125in;height:9.25in}
 .col{position:absolute;left:0;width:6in;text-align:center}
 
-#hundred{top:0.58in;font:900 140pt/1 Fraunces;color:var(--cream);letter-spacing:-.02em;
+#hundred{top:0.62in;font:900 128pt/1 Fraunces;color:var(--cream);letter-spacing:-.02em;
   font-variation-settings:"SOFT" 100,"WONK" 1;
-  text-shadow:3.0px 0.0px 0 #5E0626,2.77px 1.15px 0 #5E0626,2.12px 2.12px 0 #5E0626,1.15px 2.77px 0 #5E0626,0.0px 3.0px 0 #5E0626,-1.15px 2.77px 0 #5E0626,-2.12px 2.12px 0 #5E0626,-2.77px 1.15px 0 #5E0626,-3.0px 0.0px 0 #5E0626,-2.77px -1.15px 0 #5E0626,-2.12px -2.12px 0 #5E0626,-1.15px -2.77px 0 #5E0626,-0.0px -3.0px 0 #5E0626,1.15px -2.77px 0 #5E0626,2.12px -2.12px 0 #5E0626,2.77px -1.15px 0 #5E0626, 3px 3px 0 #5E0626, 5px 5px 0 #5E0626;}
-#tips{top:2.62in;font:800 28pt/1 Brico;color:var(--sun);letter-spacing:.08em;text-shadow:2.0px 0.0px 0 #5E0626,1.85px 0.77px 0 #5E0626,1.41px 1.41px 0 #5E0626,0.77px 1.85px 0 #5E0626,0.0px 2.0px 0 #5E0626,-0.77px 1.85px 0 #5E0626,-1.41px 1.41px 0 #5E0626,-1.85px 0.77px 0 #5E0626,-2.0px 0.0px 0 #5E0626,-1.85px -0.77px 0 #5E0626,-1.41px -1.41px 0 #5E0626,-0.77px -1.85px 0 #5E0626,-0.0px -2.0px 0 #5E0626,0.77px -1.85px 0 #5E0626,1.41px -1.41px 0 #5E0626,1.85px -0.77px 0 #5E0626}
+  text-shadow:3.0px 0.0px 0 #5E0626,2.77px 1.15px 0 #5E0626,2.12px 2.12px 0 #5E0626,1.15px 2.77px 0 #5E0626,0.0px 3.0px 0 #5E0626,-1.15px 2.77px 0 #5E0626,-2.12px 2.12px 0 #5E0626,-2.77px 1.15px 0 #5E0626,-3.0px 0.0px 0 #5E0626,-2.77px -1.15px 0 #5E0626,-2.12px -2.12px 0 #5E0626,-1.15px -2.77px 0 #5E0626,-0.0px -3.0px 0 #5E0626,1.15px -2.77px 0 #5E0626,2.12px -2.12px 0 #5E0626,2.77px -1.15px 0 #5E0626, 3px 3px 0 #5E0626;}
+#tips{top:2.50in;font:800 28pt/1 Brico;color:var(--sun);letter-spacing:.08em;text-shadow:2.0px 0.0px 0 #5E0626,1.85px 0.77px 0 #5E0626,1.41px 1.41px 0 #5E0626,0.77px 1.85px 0 #5E0626,0.0px 2.0px 0 #5E0626,-0.77px 1.85px 0 #5E0626,-1.41px 1.41px 0 #5E0626,-1.85px 0.77px 0 #5E0626,-2.0px 0.0px 0 #5E0626,-1.85px -0.77px 0 #5E0626,-1.41px -1.41px 0 #5E0626,-0.77px -1.85px 0 #5E0626,-0.0px -2.0px 0 #5E0626,0.77px -1.85px 0 #5E0626,1.41px -1.41px 0 #5E0626,1.85px -0.77px 0 #5E0626}
 #dating{top:4.02in;left:0;font:italic 900 112pt/1 Fraunces;color:var(--cream);letter-spacing:-.015em;
   font-variation-settings:"SOFT" 100,"WONK" 1;
-  text-shadow:2.6px 0.0px 0 #5E0626,2.4px 0.99px 0 #5E0626,1.84px 1.84px 0 #5E0626,0.99px 2.4px 0 #5E0626,0.0px 2.6px 0 #5E0626,-0.99px 2.4px 0 #5E0626,-1.84px 1.84px 0 #5E0626,-2.4px 0.99px 0 #5E0626,-2.6px 0.0px 0 #5E0626,-2.4px -0.99px 0 #5E0626,-1.84px -1.84px 0 #5E0626,-0.99px -2.4px 0 #5E0626,-0.0px -2.6px 0 #5E0626,0.99px -2.4px 0 #5E0626,1.84px -1.84px 0 #5E0626,2.4px -0.99px 0 #5E0626, 3px 3px 0 #5E0626, 5px 5px 0 #5E0626;}
-#apps{top:6.02in;font:800 28pt/1 Brico;color:var(--sun);letter-spacing:.08em;text-shadow:2.0px 0.0px 0 #5E0626,1.85px 0.77px 0 #5E0626,1.41px 1.41px 0 #5E0626,0.77px 1.85px 0 #5E0626,0.0px 2.0px 0 #5E0626,-0.77px 1.85px 0 #5E0626,-1.41px 1.41px 0 #5E0626,-1.85px 0.77px 0 #5E0626,-2.0px 0.0px 0 #5E0626,-1.85px -0.77px 0 #5E0626,-1.41px -1.41px 0 #5E0626,-0.77px -1.85px 0 #5E0626,-0.0px -2.0px 0 #5E0626,0.77px -1.85px 0 #5E0626,1.41px -1.41px 0 #5E0626,1.85px -0.77px 0 #5E0626}
-#sub{top:6.62in;font:italic 400 17pt/1.32 Fraunces;color:#FFFFFF;text-shadow:0 1px 2px rgba(80,0,30,.55),0 0 10px rgba(110,0,40,.45)}
-#author{top:8.16in;font:600 21pt/1 Brico;color:var(--cream);letter-spacing:.11em}
+  text-shadow:2.6px 0.0px 0 #5E0626,2.4px 0.99px 0 #5E0626,1.84px 1.84px 0 #5E0626,0.99px 2.4px 0 #5E0626,0.0px 2.6px 0 #5E0626,-0.99px 2.4px 0 #5E0626,-1.84px 1.84px 0 #5E0626,-2.4px 0.99px 0 #5E0626,-2.6px 0.0px 0 #5E0626,-2.4px -0.99px 0 #5E0626,-1.84px -1.84px 0 #5E0626,-0.99px -2.4px 0 #5E0626,-0.0px -2.6px 0 #5E0626,0.99px -2.4px 0 #5E0626,1.84px -1.84px 0 #5E0626,2.4px -0.99px 0 #5E0626, 3px 3px 0 #5E0626;}
+#apps{top:6.17in;font:800 28pt/1 Brico;color:var(--sun);letter-spacing:.08em;text-shadow:2.0px 0.0px 0 #5E0626,1.85px 0.77px 0 #5E0626,1.41px 1.41px 0 #5E0626,0.77px 1.85px 0 #5E0626,0.0px 2.0px 0 #5E0626,-0.77px 1.85px 0 #5E0626,-1.41px 1.41px 0 #5E0626,-1.85px 0.77px 0 #5E0626,-2.0px 0.0px 0 #5E0626,-1.85px -0.77px 0 #5E0626,-1.41px -1.41px 0 #5E0626,-0.77px -1.85px 0 #5E0626,-0.0px -2.0px 0 #5E0626,0.77px -1.85px 0 #5E0626,1.41px -1.41px 0 #5E0626,1.85px -0.77px 0 #5E0626}
+#sub{top:6.80in;font:italic 400 16.5pt/1.32 Fraunces;color:#FFFFFF}
+#author{top:7.98in;font:600 21pt/1 Brico;color:var(--cream);letter-spacing:.11em}
 #art{left:0;top:0;width:6in;height:9.25in;pointer-events:none}
 
 /* ---------- spine ---------- */
@@ -66,31 +66,26 @@ html,body{width:12.6in;height:9.25in;overflow:hidden;background:#B80D4D}
 #list li{position:relative;padding-left:.2in;margin-bottom:.05in}
 #list li:before{content:"";position:absolute;left:.02in;top:.06in;width:.075in;height:.075in;border-radius:50%;background:var(--sun)}
 #close{margin-top:.16in;font:italic 400 12pt/1.38 Fraunces;color:var(--cream)}
-#imprint{position:absolute;left:.72in;top:8.22in;font:800 10.5pt/1 Brico;color:var(--cream);letter-spacing:.12em}
-#shelf{position:absolute;left:.72in;top:8.45in;font:400 9pt/1 Brico;color:#FFE3EA;letter-spacing:.08em}
+#imprint{position:absolute;left:.72in;top:7.98in;font:800 10.5pt/1 Brico;color:var(--cream);letter-spacing:.12em}
+#shelf{position:absolute;left:.72in;top:8.21in;font:400 9pt/1 Brico;color:#FFE3EA;letter-spacing:.08em}
 </style></head>
 <body><div id="wrap">
 <div id="ground" class="abs"></div>
+<div id="frontground" class="abs"></div>
 
 <!-- FRONT -->
 <div id="front" class="abs">
-  <!-- focal object: a heart made of two speech bubbles (a message and its reply) -->
+  <!-- focal object: one heart-shaped speech bubble; the heart's point curls into a chat tail -->
   <svg id="art" class="abs" viewBox="0 0 576 888">
     <defs>
-      <path id="lh" d="M0.6 30 C-6 18 -30 4 -30 -14 C-30 -28 -20 -36 -9 -36 C-3 -36 0.6 -31 0.6 -27 Z"/>
-      <path id="rh" d="M0 30 C6 18 30 4 30 -14 C30 -28 20 -36 9 -36 C3 -36 0 -31 0 -27 Z"/>
-      <path id="spark" d="M0 -14 C2 -3 3 -2 14 0 C3 2 2 3 0 14 C-2 3 -3 2 -14 0 C-3 -2 -2 -3 0 -14Z"/>
+      <path id="hb" d="M-3 22 C-9 15 -30 2 -30 -14 C-30 -28 -20 -36 -9 -36 C-3 -36 0 -31 0 -27 C0 -31 3 -36 9 -36 C20 -36 30 -28 30 -14 C30 2 13 13 6 21 Q3 30 -12 37 Q-5 29 -3 22 Z"/>
     </defs>
-    <g transform="translate(288 442) rotate(-4) scale(4.4)">
-      <g fill="#5E0626" transform="translate(1.3 1.3)"><use href="#lh"/><use href="#rh"/></g>
-      <g stroke="#5E0626" stroke-width="1.5" stroke-linejoin="round" fill="#5E0626"><use href="#lh"/></g>
-      <g fill="#FFF6EC"><use href="#lh"/></g>
-      <g stroke="#5E0626" stroke-width="1.5" stroke-linejoin="round" fill="#5E0626"><use href="#rh"/></g>
-      <g fill="#FFD84A"><use href="#rh"/></g>
-      <g fill="#C2135A"><circle cx="-21" cy="-17" r="2.3"/><circle cx="-14" cy="-17" r="2.3"/><circle cx="-7" cy="-17" r="2.3"/></g>
-      <path fill="#C2135A" transform="translate(14 -17) scale(.17)" d="M0 30 C-6 18 -30 4 -30 -14 C-30 -28 -20 -36 -9 -36 C-3 -36 0 -31 0 -27 C0 -31 3 -36 9 -36 C20 -36 30 -28 30 -14 C30 4 6 18 0 30Z"/>
+    <g transform="translate(292 452) scale(4.15)">
+      <use href="#hb" fill="#5E0626" transform="translate(.9 .9)"/>
+      <use href="#hb" fill="#5E0626" stroke="#5E0626" stroke-width="1.6" stroke-linejoin="round"/>
+      <use href="#hb" fill="#FFD84A"/>
+      <g fill="#C2135A"><circle cx="-12.5" cy="-19.5" r="3"/><circle cx="-2.5" cy="-19.5" r="3"/><circle cx="7.5" cy="-19.5" r="3"/></g>
     </g>
-    <use href="#spark" fill="#FFF6EC" transform="translate(500 300) scale(.9)"/>
   </svg>
   <div id="hundred" class="col">100</div>
   <div id="tips" class="col">TIPS FOR SUCCESSFUL</div>
@@ -104,6 +99,11 @@ html,body{width:12.6in;height:9.25in;overflow:hidden;background:#B80D4D}
 </div>
 
 <!-- SPINE -->
+<svg class="abs" style="left:6.125in;top:5.68in;width:0.35in;height:0.35in" viewBox="-40 -40 80 80">
+  <g transform="rotate(90) scale(.62)">
+    <path d="M-3 22 C-9 15 -30 2 -30 -14 C-30 -28 -20 -36 -9 -36 C-3 -36 0 -31 0 -27 C0 -31 3 -36 9 -36 C20 -36 30 -28 30 -14 C30 2 13 13 6 21 Q3 30 -12 37 Q-5 29 -3 22 Z" fill="#FFD84A"/>
+  </g>
+</svg>
 <div id="spinetext" class="abs"><div class="rot">
   <span class="sp-title">100 Tips for Successful <b>Dating on Dating Apps</b></span>
   <span class="sp-author">ELENA MARLOWE VALE</span>
