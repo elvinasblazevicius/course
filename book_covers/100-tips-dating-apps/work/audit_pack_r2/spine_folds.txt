@@ -1,0 +1,4 @@
+fold 6.125 in: mean RGB 0.05in left [165.  14.  78.] / right [165.  14.  78.]
+fold 6.475 in: mean RGB 0.05in left [166.  14.  78.] / right [167.  15.  79.]
+spine text >= 0.08 in from each fold; title starts 0.2 in from head trim, author ends 0.2 in from foot trim
+back: closing paragraph ends at 7.27 in from top edge; KDP barcode box spans y 7.675-8.875, x 3.875-5.875 in

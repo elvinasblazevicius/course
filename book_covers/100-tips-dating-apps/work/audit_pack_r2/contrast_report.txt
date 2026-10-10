@@ -1,0 +1,26 @@
+#hundred          3.85:1 LOW
+#tips             2.79:1 LOW
+#dating           1.00:1 LOW
+#apps             2.88:1 LOW
+#sub              5.56:1 OK
+#author           4.89:1 OK
+.sp-title         6.96:1 OK
+.sp-title b       5.37:1 OK
+.sp-author        5.38:1 OK
+#hook             6.96:1 OK
+#hook em          5.38:1 OK
+#hook em          5.38:1 OK
+#body             6.96:1 OK
+#inside           5.38:1 OK
+#list li          6.97:1 OK
+#list li#1        6.96:1 OK
+#list li#2        6.96:1 OK
+#list li#3        6.96:1 OK
+#list li#4        6.96:1 OK
+#list li#5        6.96:1 OK
+#list li#6        6.97:1 OK
+#list li#7        6.96:1 OK
+#close            6.96:1 OK
+#imprint          6.96:1 OK
+#shelf            6.18:1 OK
+worst 1.00:1

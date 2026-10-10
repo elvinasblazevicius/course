@@ -1,0 +1,6 @@
+#hundred   left 1.15 right 1.15 top 0.22 bottom 6.38
+#tips      left 0.53 right 0.53 top 2.45 bottom 6.08
+#dating    left 0.35 right 0.35 top 3.71 bottom 3.38
+#apps      left 1.16 right 1.16 top 5.85 bottom 2.68
+#sub       left 0.83 right 0.83 top 6.49 bottom 1.90
+#author    left 1.09 right 1.09 top 8.00 bottom 0.64
