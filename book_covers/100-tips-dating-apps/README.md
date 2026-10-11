@@ -9,6 +9,8 @@
 | `paperback_cover.pdf` | **Upload this to KDP.** Paperback, then Cover, then "Upload a cover you already have" |
 | `front_cover_6x9.jpg` | Front only, at trim size: 1800 × 2700 px at 300 DPI. For previews, ads and A+ |
 | `preview_full_wrap.png` | Low-resolution preview of the full wrap |
+| `hardcover_cover.pdf` | **Hardcover (case laminate) wrap.** Same design, built to KDP hardcover geometry (see below) |
+| `preview_hardcover_wrap.png` | Low-resolution preview of the hardcover wrap |
 | `source/build.py` | Generates `source/cover.html`. Render it with `render.js` (Playwright + Chromium) |
 | `source/concepts/` | The three concept mockups (A type-led, B match flame, C café table) |
 | `work/` | Audit packs for rounds 1–3 and the concept pack |
@@ -20,6 +22,23 @@
 - Full wrap with 0.125 in bleed: 12.6 × 9.25 in (907.2 × 666 pt), one page.
 - 300 DPI raster (3778 × 2775 px), JPEG quality 95, RGB.
 - Title, subtitle, author, imprint and all back-cover wording are unchanged.
+
+## Hardcover specification
+
+The dimensions were derived, not taken from KDP's own template: KDP's site could not be reached from the build environment.
+
+- **Spine:** 140 × 0.0025 + 0.1885 board allowance = **0.5385 in**.
+- **Width:** 0.591 wrap + 6 board + 0.197 hinge + 0.5385 spine + 0.197 hinge + 6 board + 0.591 wrap = **14.115 in**.
+- **Height:** 0.591 wrap + 9.236 board (9 in + 0.236 in overhang) + 0.591 wrap = **10.417 in**.
+- **Cross-check:** the same formula reproduces the published 120-page white-paper example (0.459 in spine, 14.034 × 10.417 in).
+- **File:** 14.115 × 10.417 in (1016.2 × 750.0 pt), 4234 × 3125 px at 300 PPI.
+- **Checks:**
+  - every text item at least 0.72 in from the outer edges (KDP needs 0.635 in);
+  - spine text at least 0.13 in from each spine edge;
+  - nothing inside the hinge keep-clear zone;
+  - contrast at least 4.92:1;
+  - barcode area clear.
+- **Before uploading:** download KDP's hardcover template for 6 × 9 in, 140 pages, cream paper, and confirm it shows the same overall size. If KDP's numbers differ, change `WRAP`, `HINGE`, `SPINE` or `H` in `source/build_hc.py` and rebuild with `python3 build_hc.py`, then render `cover_hc.html` with `render2.js` at 14.1145 × 10.417 in.
 
 ## Design
 
