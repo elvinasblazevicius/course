@@ -172,3 +172,27 @@ Sources: Amazon.com product and review pages as scraped on 2026-10-15; USPTO rec
 1. **Downsizing your home after 50 (a "100 Steps" guide).** Fits the series format, carries strong emotion (leaving the family home), targets over-50 readers, and new 2026 indies are selling. Needs adjacent-keyword checks and a review matrix.
 2. **The first year of retirement (non-financial: purpose, days, identity).** The indie *9 Habits of Happy Retirees* sits at #21.8k.
 3. **The faith-in-business devotional, re-angled** (round 1 panel: 5.0–7.5).
+
+## 10. Exam-prep and budgeting screens (2026-10-15, TinyFish free fetch; raw data in screen_A/B/C/budget.tsv)
+
+40 searches, top 6 books each, BSR read from product pages (some blocked by Amazon's bot wall; gaps marked in the TSVs).
+
+| Niche | Best 3 BSRs | Sellers <100k (of 6) | …with <200 ratings | 2025–26 titles | Verdict |
+|---|---|---|---|---|---|
+| **Life in the UK test (.co.uk)** | 471 / 1,788 / 1,797 | 6 | 3 | 3 | **Shortlist.** Official handbook dominates; indie at #7,982 with 7 ratings |
+| **UK driving theory (.co.uk)** | 518 / 1,873 / 3,286 | 6 | 4 | 5 | **Shortlist.** DVSA #1, indies #1.9k–7.5k with 5–39 ratings; check DVSA question-bank licensing |
+| **FAA Part 107 (drone pilot)** | 7,405 / 20,028 / 39,967 | 5 | 3 | 3 | **Shortlist.** FAA material is US-government public domain |
+| **CNA exam** | 47,703 / 75,408 / 84,240 | 3 | 3 | 6 | **Shortlist.** No dominant publisher |
+| Journeyman electrician | 31,886 / 32,470 / 35,844 | 3 | 1 | 3 | Strong; needs real trade expertise; NEC text is NFPA-copyrighted |
+| Firefighter | 43,724 / 48,041 / 122k | 2 | 1 | 4 | Leader is a 2003 book |
+| Notary | 14,818 / 46,142 / 68,813 | 3 | 1 | 0 | Bolton Prep dominates; state-specific |
+| Ham radio General | 6,423 / 15,920 / 23,613 | 4 | 2 | 0 | Pool changes July 2027; revisit early 2027 |
+| Ham radio Technician | – | – | – | many | Crowded since the July 2026 pool change |
+| Private pilot written | 7,405 / 25,435 / 42,892 | 3 | 2 | 2 | ASA/FAA dominate |
+| US citizenship | 3,447 / 4,615 / 30,008 | 5 | 2 | 5 | Current, well rated (4.6–4.7); little opening |
+| Pharmacy tech | 14,802 / 17,742 / 69,494 | 4 | 0 | 4 | Leaders have 333–3,925 ratings |
+| Nursing entrance (TEAS) | 1,164 / 2,989 / 24,737 | 3 | 1 | 1 | Mometrix/Kaplan; trademark |
+| Medical assistant, phlebotomy, EPA 608, real estate, DMV permit, CDL, police, insurance, HVAC | 20k–60k best | 1–4 | 0–2 | – | Possible; second tier |
+| eDiscovery (CEDS) | 914k / 1.17M / 2.27M | 0 | – | 2 | **Out: no demand** |
+| Home inspector, esthetician, security guard, plumbing, Praxis, food handler, personal trainer | 96k+ | 0–1 | – | – | Out: weak demand |
+| **Budgeting** (zero-based, beginners, workbook, envelope, paycheck, couples, women, retirement, irregular income, "you need a budget") | demand only where famous authors hold it (Sethi #10.6k, O'Neal, Chatzky #1,078, Aliche, Mecham); open sub-niches at #128k–3M | – | – | – | **Out: no winnable opening** |
