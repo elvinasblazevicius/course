@@ -247,3 +247,21 @@ The voice-led deep dives (deep_rsd.md, deep_shadow.md, deep_moon.md) scored dema
 | Chess puzzles | 7.4k / 49k / 52k | Sep-2026 indie #52k with 11 ratings | Opening; engine-checked |
 | Rosary prayer book, Bible reading plan, maths for adults, money/time picture books, addition picture book | 1.2k–35k | Indies sell with few ratings | Second tier |
 | Logic grids, brain teasers, Bible stories for kids, phonics box sets, times tables, cursive, Catholic prayer book, verses by topic | – | – | Closed |
+
+## 14. Final screens (2026-10-15; W9–W13.tsv)
+
+| Niche | Best 3 BSRs | Signal | Verdict |
+|---|---|---|---|
+| **Crime / murder-mystery puzzle books** | 1 / 26 / 28 (Murdoku, Murdle) | Indies with few ratings selling hard: Kill Grid (murder word search, Jul 2026) #700 with 66 ratings; Killer Never Checked In #1,005 (90); Autumn Killer #2,016 (4); Coroner's Cold Case Files #5,236 (46); Vex Manor #7,462 (13); Black Tide House #9,730 (11) | **Frontrunner.** Code-verified puzzles + short story; Christmas window; trend risk; "Murdle"/"Murdoku" names off-limits |
+| Korean Hangul workbook | 8.9k / 63k / 69k | 2025 indie at #8.9k | Strong; code-generated script practice |
+| Arabic alphabet workbook | 43k / 45k / 48k | All indie, 2025–26 entrants selling | Moderate |
+| Hiragana / kanji / Chinese characters / HSK 1 / German | 17k–99k | Indies sell with 14–96 ratings | Second tier |
+| Stoic quotes (verified-source angle) | 197 / 45k / 73k | Daily Stoic dominates; misattribution common | Second tier |
+| Excel formulas | 5.6k / 6.2k / 18k | Indie #18k with 67 ratings | Tech accuracy risk |
+| Small engine repair | 36k / 50k / 51k | New indies with 11–23 ratings | Safety/accuracy risk (no checker) |
+| Knot tying | 2.8k / 11k / 15k | Indie #42k with 65 ratings | Diagram-heavy |
+| Russian for kids / learners (English-language) | 44k–55k | Small | Weak |
+| **Russian/Lithuanian-language books** | – | **KDP does not support either language** (kdp.amazon.com/en_US/help/topic/G200673300) | Out |
+| Vietnam expat, retire, teach English | 291k–2.4M | No demand | Out |
+| Military / Marine / Spartan quotes | 103k+ | Weak demand | Out |
+| Grammar, ESL, vocabulary, typing, French, Italian, Vietnamese, Greek workbooks, home repair, septic, chickens, canning, RV | – | – | Closed or weak |
