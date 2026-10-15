@@ -196,3 +196,19 @@ Sources: Amazon.com product and review pages as scraped on 2026-10-15; USPTO rec
 | eDiscovery (CEDS) | 914k / 1.17M / 2.27M | 0 | – | 2 | **Out: no demand** |
 | Home inspector, esthetician, security guard, plumbing, Praxis, food handler, personal trainer | 96k+ | 0–1 | – | – | Out: weak demand |
 | **Budgeting** (zero-based, beginners, workbook, envelope, paycheck, couples, women, retirement, irregular income, "you need a budget") | demand only where famous authors hold it (Sethi #10.6k, O'Neal, Chatzky #1,078, Aliche, Mecham); open sub-niches at #128k–3M | – | – | – | **Out: no winnable opening** |
+
+## 11. Exam-prep deep dives (2026-10-15; full notes in deep_*.md)
+
+| Niche | Demand | Competition (10 = easy) | Legal | Accuracy risk (10 = low) | Biggest risk |
+|---|---|---|---|---|---|
+| UK driving theory | 8 | 4 | 6 | 5 | Buyers want the DVSA bank (Crown licence, 13% royalty); unlicensed books draw "it's a lie" reviews |
+| FAA Part 107 | 7 | 4 | 8 | 5 | Chart errors draw "AI money grab" reviews; new chart format from 2026-10-26; Part 108 may date it |
+| Life in the UK | 8 | 3 | 6 | 5 | Test and materials being replaced (new contract from Nov 2027): 12–18 months of shelf life |
+| CNA | 6 | 3 | 7 | 5 | 20+ look-alike indies; vendor-specific skills; one wrong step means 1-star reviews |
+
+**Conclusion:** none of the four is likely to clear 8.5 now. Competition is 3–4 everywhere, and accuracy needs a paid human subject expert. Exam prep also plays against the house strengths (voice, emotion, 4.5-star warmth).
+
+**Watch list (timing plays):**
+- **Life in the UK:** first book for the new test (late 2027).
+- **Ham radio General:** the 2027–31 pool is due out around early 2027 and takes effect 1 July 2027.
+- **FAA Part 107:** a refresh once Part 108 is final.
