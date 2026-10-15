@@ -66,3 +66,10 @@ Filters (kdp/PREFERENCES.md): AI-hunt immunity first; high content; no human che
 5. Cozy story word-search 6x9
 6. Chess puzzles
 7. Nonograms
+- **Hangul panel, policy: 7.5, RE-ANGLE** (moot after the kill). General facts for every workbook or puzzle idea:
+  - KDP lists write-in books as unsuited for Kindle, so publish print only.
+  - KDP's language list has no Korean. Publish as an English-language book.
+  - A line far from the catalogue needs a separate imprint or pen name.
+  - Deterministic code output needs no AI disclosure; Claude-drafted instructions do.
+  - Stroke-order SVG sets (KanjiVG etc.) are CC BY-SA, so draw diagrams yourself.
+  - The accuracy auditor was stopped (moot).
