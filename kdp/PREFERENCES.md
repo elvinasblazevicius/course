@@ -4,4 +4,5 @@
 2. **No human editor or subject checker at this stage.** Avoid niches where one factual slip sinks the book (exam prep, technical licensing).
 3. **Never size a book to the budget.** Size it to the idea and the reader.
 4. **Pass bar for this pick: 8.5** on every audit angle (one-off; the skill's standard is 9).
-5. **Check every candidate against kdp/CATALOGUE.md** before researching it.
+5. **High-content books preferred** (Elvin, 2026-10-15): substantial content, not blank journals or thin planners. Best fit with point 1: content generated and verified by code (puzzles with checked solutions, engine-checked chess puzzles, computed practice drills).
+6. **Check every candidate against kdp/CATALOGUE.md** before researching it.
