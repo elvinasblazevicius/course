@@ -141,3 +141,34 @@ Sources: Amazon.com product and review pages as scraped on 2026-10-15; USPTO rec
 6. **The faith pivot needs Elvin's explicit OK.**
 
 **Settled facts for the next round:** KJV is out (UK Crown patent, Cambridge's 500-verse non-commercial limit). "Boss Babe", "She Means Business", "Proverbs 31" (in titles and series), "Kingdom CEO" and "Faith Driven Entrepreneur" are out. *Pray First, Then Price It* is dropped (reads as prosperity and pricing advice).
+
+## 9. Wide screen, any open category (2026-10-15, Elvin: "any niche is good"; pass bar 8.5 for this book)
+
+21 of 50 planned searches finished before the Apify spend cap; then Apify's monthly usage limit was reached. Of the 21, 8 are over-50 niches.
+
+| Search | Median BSR of top 3 | Sellers under #100k | Strong incumbents (1k+ ratings) | Sellers with under 200 ratings | 2025–26 titles under #200k | Note |
+|---|---|---|---|---|---|---|
+| Bible study for beginners, women | 869 | 10 | 7 | 1 | 3 | Strong incumbents |
+| Boundaries with adult children | 1,006 | 5 | 4 | 1 | 2 | Strong incumbents |
+| Menopause | 1,009 | 9 | 4 | 3 | 6 | Big names; health claims |
+| Memory exercises for seniors | 1,449 | 8 | 1 | 4 | 4 | Puzzle/activity books (excluded) |
+| Prayers for my husband / adult children / grandchildren | 4–6k | 5–7 | 3–4 | 1–3 | 1–3 | Strong incumbents |
+| New grandparents | 6,212 | 8 | 4 | 1 | 1 | |
+| Daily Stoic quotes | 8,382 | 5 | 1 | 1 | 2 | |
+| Adjusting to retirement * | 10,859 | 3 | 0 | 1 | 1 | Habits/happiness books sell (#21.8k indie) |
+| **Downsizing your home *** | 14,335 | 3 | 1 | 2 | 3 | **2026 indies selling at #52.8k and #101k** |
+| iPhone for seniors * | 26,828 | 7 | 0 | 4 | 8 | Very winnable, but "iPhone" is a trademark in the title (skill rule) and needs screenshots |
+| Balance exercises for seniors * | 34,774 | 4 | 1 | 2 | 1 | Health |
+| Devotional for caregivers | 63,605 | 4 | 0 | 3 | 3 | Close to death and dementia topics |
+| ChatGPT for seniors * | 82,817 | 2 | 0 | 1 | 2 | Trademark in title |
+| Samurai wisdom | 86,989 | 2 | 1 | 0 | 1 | |
+| Divorce after 50 *, solo travel over 50 *, budgeting for single moms, Stoicism for women, starting over at 60 * | 215k–757k | 0 | – | – | – | No demand |
+
+\* over-50.
+
+**Not screened yet (Apify limit):** home organisation room by room, get out of debt, marathon for beginners, learn Spanish, raised-bed gardening, moon rituals, divine feminine, manifestation, shadow work, sober curious, ADHD women, overthinking, highly sensitive person, making friends as an adult, conversation skills, small talk, public speaking, walking for weight loss, caregiver burnout, first-time homebuyer, estranged adult children, empty nest, living alone, Latin phrases, money for couples, teaching kids about money, letting go of control, learning new skills over 50, retirement planning for women.
+
+**Emerging shortlist:**
+1. **Downsizing your home after 50 (a "100 Steps" guide).** Fits the series format, carries strong emotion (leaving the family home), targets over-50 readers, and new 2026 indies are selling. Needs adjacent-keyword checks and a review matrix.
+2. **The first year of retirement (non-financial: purpose, days, identity).** The indie *9 Habits of Happy Retirees* sits at #21.8k.
+3. **The faith-in-business devotional, re-angled** (round 1 panel: 5.0–7.5).
