@@ -46,3 +46,9 @@ Filters (kdp/PREFERENCES.md): AI-hunt immunity first; high content; no human che
 
 ## Progress log
 - **Hangul panel, learner experience: 6.5, RE-ANGLE (light).** Basic letters are free in apps; the paid value is batchim, sound changes and real reading. Re-angle the promise to "read real Korean (menus, signs, K-drama, your kid's homework) in 14 short days" at 20–30 minutes a day. Add sound-change decoder pages, a "hear any word free" page, real-world reading panels and a parent-child column. Tuttle's K-Pop/K-Drama Hangul workbook with free audio is a competitor the deep dive missed.
+- **Hangul panel, economics and series: 5.5, RE-ANGLE.**
+  - The 8.5x11 large-trim print cost is $4.40 for 200 pp. Royalty is $3.39–4.59 at $12.99–14.99, against the leader's ~$6.28.
+  - A newcomer with no platform needs a $600–900 ad budget over 90 days and likely ends $300–400 down.
+  - Series value is overstated: about 50% of the engine is shared. KanjiVG is CC BY-SA, which carries share-alike obligations. Arabic is weak.
+  - Audio fix: a Quizlet deck (platform TTS) plus a link page to NIKL krdict human recordings.
+  - Its view of expected return per book: phonics ≥ Hangul > sudoku. Sudoku has the best return for the effort.
