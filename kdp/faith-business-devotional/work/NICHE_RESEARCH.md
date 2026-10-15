@@ -119,3 +119,25 @@ Shipping and condition complaints (about 30 of the 54: dirty, mould, bent, stick
 Apify about $3 (product scrapes about $2.10, reviews about $1.30). Claude usage: research tokens to be logged at the end of N1.
 
 Sources: Amazon.com product and review pages as scraped on 2026-10-15; USPTO records via [Justia: #BOSSBABE](https://trademark.justia.com/863/46/bossbabe-86346587.html), [Justia: BOSS BABES](https://trademark.justia.com/878/85/boss-87885253.html), [Justia: BOSSBABE](https://trademarks.justia.com/973/69/bossbabe-97369479.html), [Justia: Carrie Green trademarks](https://trademark.justia.com/owners/green-carrie-3404366).
+
+## 8. N1 gate: devil's-advocate panel, round 1 (2026-10-15)
+
+| Angle | Score | Verdict |
+|---|---|---|
+| Market demand | 5.0 | RE-ANGLE |
+| Competition and win plan | 6.5 | RE-ANGLE |
+| Target reader and emotion | 7.0 | RE-ANGLE |
+| Policy, legal, trademark, honesty | 7.5 | GO with conditions |
+| Best pick overall (portfolio fit) | 7.0 | GO with series re-angle |
+
+**Gate: NOT PASSED** (floor is 9 on every angle).
+
+**Root causes (grouped across all five):**
+1. **Exact-niche demand is unproven.** Ranks are a one-day snapshot, there is no keyword volume, and the parent demand may not reach a narrow title. Fix: track ranks for 2–3 weeks on *Faith & Business*, *The Gift of Great Work* and *Built to Shine*; get Amazon keyword volume; check the missed competitors (*90 Days of Biblical Affirmations for Christian Women in Business and Ministry* Vol. II, *Rise To Your Purpose*, *Fearless Faith + Hustle*, *By The Book*).
+2. **Positioning is too narrow.** Re-angle the reader to "a woman with her own business, any size", naming the side business and the kitchen-table shop, but not corporate leaders. Title on the owner's lived moment.
+3. **Trust gap for a pen name in a niche that buys the author** (about 63% of recent religion titles are suspected AI). Fix: one translation (WEB, "LORD" edition, quoted verbatim, with a copyright-page statement); an honest "how this book was made and what it believes" page (Apostles' Creed baseline); a paid human theology reviewer credited truthfully (needs Elvin); no implied testimony.
+4. **To-do-list risk.** Every 7th day is a Sabbath day with no task; some steps are spiritual; steps are framed "with God".
+5. **Over-50 share is 31%, below 35%**, and the series is incoherent. Re-angle the series to stay with women in business: Book 2 starting after 50, Book 3 the first year, Book 4 a prayer book. Screen more over-50 angles and "100 Steps".
+6. **The faith pivot needs Elvin's explicit OK.**
+
+**Settled facts for the next round:** KJV is out (UK Crown patent, Cambridge's 500-verse non-commercial limit). "Boss Babe", "She Means Business", "Proverbs 31" (in titles and series), "Kingdom CEO" and "Faith Driven Entrepreneur" are out. *Pray First, Then Price It* is dropped (reads as prosperity and pricing advice).
