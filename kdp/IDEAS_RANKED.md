@@ -1,4 +1,4 @@
-# Ranked book ideas (2026-10-15)
+# Ranked book ideas (2026-10-15, updated after each step)
 
 Filters (kdp/PREFERENCES.md): AI-hunt immunity first; high content; no human checker; not in kdp/CATALOGUE.md. No idea has yet passed a full panel at 8.5.
 
@@ -52,3 +52,17 @@ Filters (kdp/PREFERENCES.md): AI-hunt immunity first; high content; no human che
   - Series value is overstated: about 50% of the engine is shared. KanjiVG is CC BY-SA, which carries share-alike obligations. Arabic is weak.
   - Audio fix: a Quizlet deck (platform TTS) plus a link page to NIKL krdict human recordings.
   - Its view of expected return per book: phonics ≥ Hangul > sudoku. Sudoku has the best return for the effort.
+- **Hangul panel, demand and competition: 3.5, KILL.**
+  - The hook is taken. "Hangul Workbook: Learn to Read and Write Korean in 14 Days" (Jul 2026) has native audio by QR and a teacher-author, and sits at #4.1M.
+  - At least 6 day-count Hangul workbooks launched since July 2026, all at #600k–4M, including ones with audio and native checkers.
+  - Too little demand below the #8.9k leader. Buyers pick the leader side by side.
+  - **→ Hangul cut. Arabic cut too** (same pattern, plus no right-to-left binding and 43 new 2026 titles).
+
+**Current ranking (pending deep dives):**
+1. Decodable phonics readers
+2. Large-print sudoku / brain games
+3. Cognitive exercises for stroke recovery
+4. Large-print Bible word search
+5. Cozy story word-search 6x9
+6. Chess puzzles
+7. Nonograms
