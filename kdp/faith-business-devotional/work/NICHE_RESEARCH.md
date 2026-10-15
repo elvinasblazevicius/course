@@ -230,3 +230,20 @@ Sources: Amazon.com product and review pages as scraped on 2026-10-15; USPTO rec
 | Caring for ageing parents | 42.9k / 203k / 247k | 1 | 0 | 2 | Ad-driven |
 | Boundaries with parents, self-compassion, procrastination, small talk, new puppy, piano, write your life story, prayer journal, manifestation | 0.3k–15k | – | 0 | – | Closed: famous authors or series brands |
 | Stepmom, retirement marriage, friends after 50, long-distance grandparent, grandmother, mom rage, emotional eating, HSP, perfectionism, fear of failure, family history, speeches, rescue dog, gardening for seniors, Latin phrases, Japanese proverbs, Bible verses for anxiety, first year of retirement, loneliness | – | – | – | – | Weak demand or closed |
+
+## 13. AI-hunt-resistant, high-content formats (2026-10-15; W5–W8.tsv)
+
+The voice-led deep dives (deep_rsd.md, deep_shadow.md, deep_moon.md) scored demand 7, competition 3–4 and fit 8. All three are prose-heavy niches where readers hunt AI, so they are deprioritised by Elvin's preference (PREFERENCES.md).
+
+| Niche | Best 3 BSRs | Signal | Verdict |
+|---|---|---|---|
+| **Large-print Bible word search** | 975 / 1.5k / 2.7k | 6/6 under #100k, no big publisher; hymns title #13k with 50 ratings | **Top tier.** Code-generated, scripture public domain (WEB/KJV for US), fits the existing word-search pipeline |
+| **Nonograms** | 6.2k / 39.6k / 45.8k | All indie and thin; Aug-2026 title #6.2k with 6 ratings | **Top tier.** Fully code-generated and verified |
+| **Decodable phonics readers** | 73 / 3.5k / 8.2k | Indie sets #3k–9k with 110–482 ratings | **Top tier.** Rule-based text, code-drawn pictures; series |
+| Large-print word search | 605 / 715 / 1.5k | Aug-2026 indie #605 with 7 ratings | Strong, but already in the catalogue (KDP-000071); themed variants only |
+| Bible crosswords | 16k / 34k / 511k | Leader 3.9★; indies past #500k | Gap; fill-in-the-verse clues are checkable |
+| Large-print crosswords / sudoku / brain games | 1.1k–9.1k | Indies #1.6k–9.1k | Strong, crowded (PIL, Kappa) |
+| Cognitive exercises for stroke recovery | 24.7k / 99.7k / 105k | All indie; Jul-2026 title #24.7k with 42 ratings | Open; fits the caregiver line |
+| Chess puzzles | 7.4k / 49k / 52k | Sep-2026 indie #52k with 11 ratings | Opening; engine-checked |
+| Rosary prayer book, Bible reading plan, maths for adults, money/time picture books, addition picture book | 1.2k–35k | Indies sell with few ratings | Second tier |
+| Logic grids, brain teasers, Bible stories for kids, phonics box sets, times tables, cursive, Catholic prayer book, verses by topic | – | – | Closed |
