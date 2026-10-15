@@ -212,3 +212,21 @@ Sources: Amazon.com product and review pages as scraped on 2026-10-15; USPTO rec
 - **Life in the UK:** first book for the new test (late 2027).
 - **Ham radio General:** the 2027–31 pool is due out around early 2027 and takes effect 1 July 2027.
 - **FAA Part 107:** a refresh once Part 108 is final.
+
+## 12. Wide screen 2: voice-led niches (2026-10-15; W1–W4.tsv). Elvin: downsizing already in catalogue; no human checker at this stage
+
+| Niche | Best 3 BSRs | <100k (of 6) | …<200 ratings | 2025–26 | Verdict |
+|---|---|---|---|---|---|
+| **Estranged adult children** | 4.7k / 12.4k / 33k | 4 | 2 | 4 | **Shortlist.** Coleman (Harmony) leads; indies #33k (32 ratings), #90k (38) |
+| **Rejection sensitivity** | 1.2k / 19.3k / 22.2k | 4 | 3 | 6 | **Shortlist.** New field; indie at #95k with 20 ratings |
+| **Shadow work** | 3.1k / 4.6k / 18.8k | 5 | 3 | 5 | **Shortlist.** Indie 2025 titles at #3k (659 ratings) and #18.8k (149); Shaheen holds 2 slots |
+| Moon rituals | 10.1k / 42.3k / 62.9k | 4 | 2 | 1 | Second tier. Indies #63k, #77k |
+| Memoir writing | 14k / 27k / 54k | 3 | 0 | 2 | Second tier. Indie at #54k |
+| Forgiveness (secular) | 2.1k / 6.5k / 11.4k | 6 | 1 | 1 | Christian authors dominate; secular angle missing |
+| Wheel of the year | 1.4k / 41.6k / 51.7k | 5 | 2 | 2 | Llewellyn/Weiser; moderate |
+| Slow living | 42.9k / 56k / 210k | 2 | 1 | 2 | Small opening |
+| Overthinking | 147 / 690 / 2.2k | 6 | 1 | 3 | Huge demand, but indie mega-sellers now dominate |
+| Dating after 60 | 47.8k / 323k / 777k | 1 | 1 | 2 | Thin |
+| Caring for ageing parents | 42.9k / 203k / 247k | 1 | 0 | 2 | Ad-driven |
+| Boundaries with parents, self-compassion, procrastination, small talk, new puppy, piano, write your life story, prayer journal, manifestation | 0.3k–15k | – | 0 | – | Closed: famous authors or series brands |
+| Stepmom, retirement marriage, friends after 50, long-distance grandparent, grandmother, mom rage, emotional eating, HSP, perfectionism, fear of failure, family history, speeches, rescue dog, gardening for seniors, Latin phrases, Japanese proverbs, Bible verses for anxiety, first year of retirement, loneliness | – | – | – | – | Weak demand or closed |
