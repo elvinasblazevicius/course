@@ -43,3 +43,6 @@ Filters (kdp/PREFERENCES.md): AI-hunt immunity first; high content; no human che
   - mompreneur, boss babe
 - **Not possible on KDP:** Russian- or Lithuanian-language books (unsupported languages).
 - **Low-content / puzzles excluded by skill:** memory activity books (if just puzzles without a renderer; the renderer exists, so see #2).
+
+## Progress log
+- **Hangul panel, learner experience: 6.5, RE-ANGLE (light).** Basic letters are free in apps; the paid value is batchim, sound changes and real reading. Re-angle the promise to "read real Korean (menus, signs, K-drama, your kid's homework) in 14 short days" at 20–30 minutes a day. Add sound-change decoder pages, a "hear any word free" page, real-world reading panels and a parent-child column. Tuttle's K-Pop/K-Drama Hangul workbook with free audio is a competitor the deep dive missed.
