@@ -42,3 +42,31 @@ A **large-print cozy (non-gory) village murder mystery told through word searche
 3. The story text is the AI-hunt exposure. It must be written to the skill's voice standard, short and specific.
 4. Trend durability (wave began with Murdle in 2023).
 5. A Christmas launch (live by about Nov 15) is possible but needs Amazon Ads. Organic top rank is unlikely this season.
+
+## N1 gate: devil's-advocate panel, round 1 (2026-10-15), bar 8.5
+
+| Angle | Score | Verdict |
+|---|---|---|
+| Demand and trend | 6.0 | RE-ANGLE |
+| Competition and win plan | 5.0 | RE-ANGLE |
+| Target reader and experience | 7.5 | RE-ANGLE |
+| AI-hunt immunity and accuracy | 7.0 | RE-ANGLE |
+| Policy, IP, catalogue fit | 8.0 | RE-ANGLE (light) |
+
+**Gate: NOT PASSED.**
+
+**Root causes:**
+1. **The mechanism is not new.** About 12 cozy story word-search series already do "puzzles feed the plot":
+   - Murder for Breakfast/Oakford Springs: 4.8★, 192 ratings, #5,298.
+   - Cranberry Creek (Adams Media): #1,837, with a second series due Nov 2026.
+   - Kill Grid: #700.
+2. **Large print is unproven and counter-evidenced.** Elmbrook, an 8.5x11 large-print near-copy of this book, is at #1.09M with 2 ratings; Cozy Case Files LP is at #283k. All the winners are 6x9 novel-like books.
+3. **Winners compete on story quality,** which is prose. That is the AI-hunt exposure Elvin wants to avoid.
+4. **A fair-play mystery is hard to prove by code.** In a toy case, the checker found three possible culprits under the reader's open-world reading.
+
+**Settled facts from the panel:**
+- Print only: KDP's Kindle quality guide lists puzzle books as unsuited to Kindle.
+- Disclose AI-drafted story text on KDP.
+- The new KDP cap is 2 new titles per format per week (per a secondary source quoting KDP).
+- Christie, Marple, Poirot and Murder, She Wrote are trademarks; avoid them.
+- Brand safety next to the dementia and loss titles: death off the page, no elderly or care-home victims, never marketed as a dementia activity book.
